@@ -1,0 +1,11 @@
+T034da55d0cd7d624f285eebb287b0d0b	background_claim 1038 1057;1068 1140	Using these methods we cannot achieve visually satisfying dynamics of cloth-cloth collisions
+T15bf49ff31fcf4d52dee1154b69b1b4d	own_claim 11013 11046	this case appears to be very rare
+T9fd7b2cf780348fad82d452b397e6c0b	own_claim 4908 5016	We do not want to handle closely located CCs separately except for the case where the bending is significant
+T9bac13d0e7b332f274afad87d59e1bea	own_claim 4635 4656	there is an exception
+T8ade289f526cdcddde45db6974e57ba1	own_claim 11056 11191	we can resolve this case by maintaining the barycentric relationship between cloth surfaces and the newly introduced colliding entities
+Ta8937750bf6f7245b2fb34037b91b667	own_claim 4805 4906	Bending between CCs is considered significant in the same way as in the case of bending between faces
+T208aa92b89c417571bb8a1166caacd4d	own_claim 4507 4624	it might instantly introduce instabilities to the system by allowing closely located CCs to have different velocities
+R9426dcfa73cbb5a79c69bd5617b4876d	contradicts Arg1:T034da55d0cd7d624f285eebb287b0d0b Arg2:T034da55d0cd7d624f285eebb287b0d0b
+R362e7d263884a7473231d407bdeb5612	contradicts Arg1:T208aa92b89c417571bb8a1166caacd4d Arg2:T9bac13d0e7b332f274afad87d59e1bea
+R2ee46a9da95d68f204ce2a30055ea4dd	contradicts Arg1:Ta8937750bf6f7245b2fb34037b91b667 Arg2:T9fd7b2cf780348fad82d452b397e6c0b
+Re0ed2f4124936764d8c2819fd39fa2ea	contradicts Arg1:T15bf49ff31fcf4d52dee1154b69b1b4d Arg2:T8ade289f526cdcddde45db6974e57ba1

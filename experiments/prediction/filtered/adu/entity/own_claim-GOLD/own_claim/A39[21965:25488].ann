@@ -1,0 +1,8 @@
+T56fae8075b69cdea378bd30e74809408	own_claim-GOLD 1000 1078	the step size h must be quite small to ensure stability when using this method
+Ta3f21ca106ba76cc7f4f823c7317858a	own_claim-GOLD 1080 1139	The implicit backward Euler method appears similar at first
+T954fb6baf069d32bc6b68fdd5a17b797	own_claim-GOLD 3253 3283	proceeds forward quite blindly
+T11412e44c99cea4197ce84eb283aad0a	own_claim-GOLD 3310 3405	forces one to find an output state whose derivative at least points back to where you came from
+T5a2ff2376752e4a2c7a760067d9bc905	own_claim 1000 1078	the step size h must be quite small to ensure stability when using this method
+T9d7cba03358f4a9b958832b34af90724	own_claim 1080 1139	The implicit backward Euler method appears similar at first
+T85100b7b9dead6f2081eb1479cd97456	own_claim 3253 3283	proceeds forward quite blindly
+T0472f247b7efdfc9141b318952f9abf9	own_claim 3310 3405	forces one to find an output state whose derivative at least points back to where you came from

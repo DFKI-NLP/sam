@@ -1,0 +1,12 @@
+T2d63b491af46b57f186d686f2da29014	background_claim 351 379	To reduce visible stretching
+T0e5e49d3f7500322f324bdd4e25fc18d	background_claim 381 449	elastic models typically adopt large elastic moduli or stiff springs
+Tc7b0eaa1c51c87184578fc1c02d5c1c3	background_claim 451 480	degrading numerical stability
+Tebddaded42df6ad7da730df6384700cb	background_claim 1270 1355	the condition number of the implicit system grows with the elastic material stiffness
+T52ad57cfdb571009d7ad1cc4c5f10333	background_claim 1357 1409	forcing iterative solvers to perform many iterations
+Teb4a21b20f403c645a9dbdeefb9f5b3d	background_claim 2033 2061	Iterative enforcement Provot
+T0b7c9434763d40ecd06c6237bfee5fac	background_claim 2884 2959	it is not surprising that for finely-discretized quasi-inextensible fabrics
+T3e24e9b4c6dab9b15b8f157124509fdd	background_claim 3048 3114	Global enforcement In contrast to iterative constraint enforcement
+Teca2a67f2355bc3b678ef25613195c1d	background_claim 3137 3256	used Lagrange multipliers with CLM to treat stretching, and presented a hierarchical treatment of the constraint forces
+Tb559536f9efc69373b66586b04cd8a90	background_claim 3387 3491	House et al. later encountered difficulties in handling collision response within the proposed framework
+T7f8cf53bbd5f8131bb227bd68a528ced	background_claim 3500 3543	By building on the velocity-filter paradigm
+Td9d162cdd714f2ec38ef1b1a88ed7a62	background_claim 3609 3650	House et al. formulated constraints as in

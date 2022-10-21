@@ -1,0 +1,16 @@
+Td5433b68958f3141d10ef59b7b0c030c	own_claim-GOLD 39 193	The design goals of our measurement system are to create deformations in a sample of cloth that explore a substantial range of the material’s strain space
+Tfd32d3e585e062031567228cf4fa3073	own_claim-GOLD 199 305	to record complete information about the forces applied to the cloth and the deformation that it undergoes
+Tc0e897c12c39559237774fe33b6e2738	own_claim-GOLD 341 377	we focus primarily on tensile forces
+T7150dbca6ad1b2bf8ca04e9bfc0df284	own_claim-GOLD 3299 3471	The raw data for a single deformation consists of 20 to 200 individual measurement frames, with a set of camera images and simultaneous force sensor readings for each frame
+Td32b6e3bb01ff92f1320839ba1a69827	own_claim-GOLD 3973 4132	To represent inter-frame correspondence, we use optical flow to obtain a single triangle mesh that deforms over time, akin to the human face tracking method of
+T6deeaa8f7d200e9d56add3fbe54c563b	own_claim-GOLD 4338 4456	Back-projecting onto the reconstructed geometry for the next frame gives new position estimates for the cloth vertices
+T0f8af0e202ecc1f09c5699c1505ef9e3	own_claim-GOLD 4672 4794	To avoid drift, we subsequently match each frame independently back to the rest pose frame using the approach described in
+T6704a52b786ac787f4aae1d17edf6171	own_claim-GOLD 4998 5084	we need to determine the interaction between the rigid clips, the cloth, and the cords
+T7969371f040d884bdd22fab517d01882	own_claim-GOLD 5248 5368	The area of cloth occluded by the clips is used to automatically determine which cloth vertices are clamped by each clip
+T81c8795c67061ef9e865c3cb22770c46	own_claim-GOLD 5373 5425	will therefore be constrained to it in the simulator
+T5a681ac9e7d83a4f9780b0da374475cc	own_claim-GOLD 5427 5520	The vision system also finds the cords in the images and triangulates a 3D line for each cord
+T40a0a02ebb5a0c5ac51880ab72e9e28c	own_claim-GOLD 5522 5605	A few user scribbles on an input image indicate which cords are affecting each clip
+T3db02ae980e73b2123eb37bdc4a030cc	own_claim-GOLD 7565 7806	To reduce the risk of falling into local minima during parameter fits, we have designed deformation sequences that produce near-isolated strains, and allow estimating stretch, shear and bending properties in a separate and incremental manner
+T6ed0df8b110799bab71d13ab6e0e592f	own_claim-GOLD 7928 7971	we relax the requirement of uniform strains
+Tc35b5f79f4437868e022f8f0091eb1b5	own_claim-GOLD 7973 8116	To isolate stretching we perform a uni-axial tension experiment, with forces applied to two long bar clips attached to either side of the cloth
+Tdebe84342aecd82f7798c20b8b1d8a97	own_claim-GOLD 9450 9511	tracked 3D clip locations, and individual 3D force directions

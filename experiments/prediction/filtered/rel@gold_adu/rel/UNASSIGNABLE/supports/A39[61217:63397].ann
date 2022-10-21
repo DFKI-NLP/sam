@@ -1,0 +1,6 @@
+Tb1b26500fde344a8e0942852b3e0964a	own_claim 638 708	The trick is to recognize instability before you see it on your screen
+T3072c0efe587e9089baf1ccfeef59e11	background_claim 732 847	Stiffness, and thus any potential instability, arises almost completely from the strong stretch forces in the cloth
+T2745e2b688408d621886ac2d70b7f19d	own_claim 1232 1307	an unstable step invariably results in stretch changes that are quite large
+Tb5cacf5888a349f75ca5d7c09fd85303	own_claim 1193 1217	Subtlety is not required
+Rfe4509fc3f3be4791290ac671d33c9f2	supports Arg1:Tb1b26500fde344a8e0942852b3e0964a Arg2:T3072c0efe587e9089baf1ccfeef59e11
+R80f7de15e1d9b4b648b62f1d0c07b1bf	supports Arg1:T2745e2b688408d621886ac2d70b7f19d Arg2:Tb5cacf5888a349f75ca5d7c09fd85303

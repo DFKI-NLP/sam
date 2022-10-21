@@ -1,0 +1,21 @@
+T5e11c6254ef6db31a175077d958a9d8a	own_claim-GOLD 1531 1583	The results are too numerous to include in the paper
+T0e03ad8ca035a71c94933c7c1a518f2b	own_claim-GOLD 1585 1818	we refer the reader to the supplementary material, which illustrates the behavior of the nonlinear orthotropic variant of all three models for all four fabrics, and the behavior of the variants of the Soft Constraints model for denim
+T46dd578b246f033ac721d93189a81b47	own_claim-GOLD 2609 2667	#12 is isotropic and very compliant in stretch and bending
+Te66fa7c642ac32cb3f4c6ff1dc8974df	own_claim-GOLD 2739 2820	#14 is stiff and quite isotropic in stretch, but extremely anisotropic in bending
+T4778a67ff21d2515f89813f647fd2ce0	own_claim-GOLD 2871 2905	#18 is anisotropic both in stretch
+T48986d40987b670b864cfd94bd6966df	own_claim-GOLD 2934 2948	and in bending
+Tee2c3889310099ee5e1f0fbb554ef61c	own_claim-GOLD 3475 3579	all three cloth models fit nicely to the average of the hysteresis bands, even in highly nonlinear cases
+T7aa6239be0402aa8c7c8fae60fc403b0	own_claim-GOLD 3727 3850	linear and/or isotropic variants reach a reasonable compromise but are not always able to remain inside the hysteresis band
+T4e6756726b490a0b1f0fd95fdc3c880b	own_claim-GOLD 4095 4118	no forces are available
+Tfcef2eeb1f3eb55a2f669af8d0dd0724	own_claim-GOLD 4228 4320	The fitting residual is similar for all fabrics, but distinctly higher for the Springs model
+T97656cd3c390ce83b7568d800479bf32	own_claim-GOLD 4322 4443	Often, the residual is dominated by a difference in curl near the edge of the sample, while the overall shape is well fit
+T6f3440bba6d146e311ff0f0d1461e444	own_claim-GOLD 4821 4847	In the three other samples
+Te7cabc922e6c8f90fa2ba001c3ece73a	own_claim-GOLD 4926 4986	the stiffness is underestimated for the Soft Constraints and
+Tb0ccbe3d433274053c355cfd0d08fe2b	own_claim-GOLD 5394 5397	St.
+Tbad5185f2b1c8517da7c246ec8440ce8	own_claim-GOLD 5398 5448	VK models, and overestimated for the Springs model
+Tc37c46800515584e22f519a59cdef1bb	own_claim-GOLD 5450 5601	Visually, the mismatch is more apparent in the complex shear test, where models with underestimated stiffness exhibit wider folds than the real fabrics
+T67ad3fdc84fadee493615fd3a33b8426	own_claim-GOLD 5903 5957	The force-displacement plots of the real cloth samples
+T5f9a9c655571de0023c0ff5a02efd5fa	own_claim-GOLD 7382 7498	VK models produce results with very similar quality, which is expected as the models present only subtle differences
+T0afedf0573b879eb762946ac5f7dbd29	own_claim-GOLD 7954 8116	missing cross-modal stiffening may also be, to a large extent, the reason for stiffness underestimation in the corner pulling test for the Soft Constraints and St
+Ta87c476c0ceaa4aa107894ccf35d6870	own_claim-GOLD 8118 8127	VK models
+Te14f70dcebb9f2cbafcbec66b1b3b753	own_claim-GOLD 8129 8167	An extension to the nonlinear model of

@@ -1,0 +1,30 @@
+T2c594a8b221295b34b0b59a5eb193362	own_claim-GOLD 31 124	The goal of our acquisition pipeline is to compute correspondence using minimal neighborhoods
+T92d4f32b70a7665dd15b8f4466df8cc5	own_claim-GOLD 473 537	This iterative approach allows us to match without neighborhoods
+T243972f3f2dfff3a6aa5e3bbc2bb8941	own_claim-GOLD 539 584	This is better than label propagation methods
+Tb48ea26c6c25282a1d4686efa349cd2a	own_claim-GOLD 1246 1345	We are able to obtain significantly more information per unit cloth surface area than previous work
+Tc283a3105693a1e216f5fb5400fb8653	own_claim-GOLD 1551 1609	occluding contours are both common and difficult to detect
+Ta0fa7979e14fd44e4fe953b006efda0f	own_claim-GOLD 1624 1675	our iterative approach relies on strain constraints
+Tb3a2ddda5bc61b044ee3be1d8acbd49f	own_claim-GOLD 1813 1884	Both of these computations are easier than detecting occluding contours
+T4b302a1f0349f7dd540858186fe151f8	own_claim-GOLD 2753 2807	we can set N = 3 at the start and continue until N = 0
+T171589166c28edfe71828365735b44f3	own_claim-GOLD 2862 2884	there are few mistakes
+T638f6fdb92e9f03c0b13782f1f50b1a5	own_claim-GOLD 3177 3213	these regions are not going to match
+Tb56c2ed24398579afc6354d97dac463a	own_claim-GOLD 3987 4032	Our strain constraint is based on the work of
+T0732ab73fb1edf85c4c6893688c2db8b	own_claim-GOLD 4215 4268	we can use strain to exclude possible correspondences
+T64cb678d26dc4f71743817e921c4ccca	own_claim-GOLD 4270 4330	Strain naturally fits in to our information theory framework
+T74f51d12e754dca3a85cea73e90d083e	own_claim-GOLD 4395 4418	strain has added 3 bits
+T0c256a2b66deaaeab35e0ee9dc764033	own_claim-GOLD 5769 5844	changing it by several orders of magnitude had little effect on our results
+Ta6df77a2ab220674f04affb0ddabc4ab	own_claim 31 124	The goal of our acquisition pipeline is to compute correspondence using minimal neighborhoods
+Tcc6f6e3e2f2512208a3e3d3efbc59594	own_claim 473 537	This iterative approach allows us to match without neighborhoods
+Td722714e54ed97a5fe721ed17577971b	own_claim 539 584	This is better than label propagation methods
+T7e4a886ffe976ca1f604e2066ca4fe6a	own_claim 1246 1345	We are able to obtain significantly more information per unit cloth surface area than previous work
+T9fbd50438fd0bc3ade9da717f4579495	own_claim 1551 1609	occluding contours are both common and difficult to detect
+Tde0b49db007a6141a509916fea87367f	own_claim 1624 1675	our iterative approach relies on strain constraints
+Tf8277b7cccc588320d34adc6a481cc89	own_claim 1813 1884	Both of these computations are easier than detecting occluding contours
+Tbccc3d19dac0121c0fe73128d183b0c0	own_claim 2753 2807	we can set N = 3 at the start and continue until N = 0
+Tb27058bbc96fa59f2d4f8a68a43c4e14	own_claim 2862 2884	there are few mistakes
+T7566fda7cb6a74579a06cfb783f82135	own_claim 3177 3213	these regions are not going to match
+T061b840f418483f4b0e910e8bf23994a	own_claim 3987 4032	Our strain constraint is based on the work of
+T7ebea4ef029a215530b06b81ef54fb29	own_claim 4215 4268	we can use strain to exclude possible correspondences
+T99a2702eea576d60aea7dfe4d6f2018c	own_claim 4270 4330	Strain naturally fits in to our information theory framework
+T1b4b7dc889286404f18535c4efde43d8	own_claim 4395 4418	strain has added 3 bits
+T15f0b83915a81f2059b68c5d55c7f089	own_claim 5769 5844	changing it by several orders of magnitude had little effect on our results

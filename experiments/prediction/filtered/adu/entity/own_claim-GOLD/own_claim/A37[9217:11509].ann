@@ -1,0 +1,10 @@
+T4a52b1e05efe19e0cab2520e7828caad	own_claim-GOLD 538 621	we consider warpweft aligned quadrilateral meshes with a sparse number of triangles
+Tdcc06ab4a6242eba7887671f29e88377	own_claim-GOLD 1245 1371	under general mesh positions, the constraints are linearly independent, with a full-rank Jacobian treatable by a direct solver
+T8f365be10561efc7cbe78abeee48ec8e	own_claim-GOLD 1815 1851	fabric does indeed shear perceptibly
+T3cc7d80672e138ee31a917d8680d1799	own_claim-GOLD 1951 2089	The complete model of in-plane deformation is compatible with an existing code’s quador triangle-based treatment of bending and collisions
+Ta24caa78382db9bf6b202581d6c4087e	own_claim-GOLD 2091 2224	With this simple formulation of inextensibility constraints in place, what is needed is an efficient method for enforcing constraints
+Tbff1037ed0851ab4ae597b436259d594	own_claim 538 621	we consider warpweft aligned quadrilateral meshes with a sparse number of triangles
+Ta7ace980cd47cecad1e5de0c599d96d3	own_claim 1245 1371	under general mesh positions, the constraints are linearly independent, with a full-rank Jacobian treatable by a direct solver
+Tda9bf88e7868e2ef78026879a88fa04d	own_claim 1815 1851	fabric does indeed shear perceptibly
+T5a25a0255042063797898314a7136e33	own_claim 1951 2089	The complete model of in-plane deformation is compatible with an existing code’s quador triangle-based treatment of bending and collisions
+T6e70a1f232856a2a6407a859d69a3286	own_claim 2091 2224	With this simple formulation of inextensibility constraints in place, what is needed is an efficient method for enforcing constraints

@@ -1,0 +1,6 @@
+Td82b5bb3e2e71d1165d88837b52d6e92	background_claim 2884 2943	demonstrate accurate results across a range of fabric types
+T86dbffae1393c537de1b88aa706e640e	background_claim 1601 1644;1648 1676;1680 1871	An important exception is the work by Breen who used the Kawabata system to measure bending, shearing, and tensile parameters by subjecting a swatch of fabric to a series of mechanical tests and measuring the force needed to deform it into a standard set of shapes
+Td295020f8794c3b79c37629a34ce86bd	background_claim 2622 2747	they attacked the problem of measuring the 3D geometry of an object from the resting shape of a piece of cloth draped over it
+T7097bd993b9e4fb21f5072bdb99547d8	background_claim 1515 1599	such methods have not yet enjoyed wide-spread use in the computer graphics community
+R682e940ab58e04155dc5a08722887385	contradicts-GOLD Arg1:T7097bd993b9e4fb21f5072bdb99547d8 Arg2:T86dbffae1393c537de1b88aa706e640e
+Rc4c71852486df012da848fc8ae21fb86	contradicts-GOLD Arg1:Td295020f8794c3b79c37629a34ce86bd Arg2:Td82b5bb3e2e71d1165d88837b52d6e92

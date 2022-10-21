@@ -1,0 +1,39 @@
+Tb8c7ac54d34d0cf46bd0bf949db329a0	own_claim 30 180	We have brought cloth capture from constrained laboratory examples to real settings by providing robust methods for dealing with occlusion and folding
+T44b5b1885e9b9a365883237267f04fc9	own_claim 182 258	Like human motion capture, this tool requires significant engineering effort
+T4687c96bd49d359d22f9bebaf39e6b49	data 260 307	Camera setup and calibration are time consuming
+T15ec319f0c39489f2fe6aeaaa3d31105	own_claim 312 335	the equipment is costly
+T51d6e9482d5f88aa217f426a2cce45b3	data 351 385	these obstacles have been overcome
+T4fd24e81e479d57d09c66c4ea3fa36e0	own_claim 387 437	capturing large amounts of data is relatively easy
+T6674c89a3659d5560e6a7a4725736d8c	own_claim 447 550	other researchers can benefit from our work, we are releasing our capture data at http://www.ryanmwhite
+Tb0d9174ed74a7bf0361053f8b3edb818	own_claim 561 612	In our video, we show some of the uses of this data
+Tc5afe0938f6223e8ea4879e78b69de13	data 639 663	Kircher and Garland 2006
+Tb2d6c05b49f68b92665fb1e4370699bc	own_claim 669 681	posing using
+Tb9dd8c2a9eb0bfbcf21783afec908a4e	data 684 702	Sumner et al. 2005
+T16953eb1b64c98175d52b2ac81c3ba88	own_claim 705 780	Future work in cloth capture should involve more cameras, higher resolution
+T26b640f81677a5fd97dfe31a0c82683a	own_claim 818 860	different garments and different materials
+T09898c39e02805f967a7665b0001e8bb	own_claim 862 926	We plan to pursue more tools to edit and repurpose captured data
+Tcd353057a94423c34ecea386612877a7	background_claim 1054 1142	Simulation and image based rendering both provide methods to generate animation of cloth
+T97343fd70b8f0493923aa2be099dad12	background_claim 1144 1178	a limited simulation list includes
+T834cf31abbed60a453aa4958fbff627e	data 1181 1201	House and Breen 2000
+T5b8aced92279963e4455c43d9c444c7a	data 1203 1226	Terzopoulos et al. 1987
+Tc009e40d027115085c80806c393aecc5	data 1228 1244	Choi and Ko 2002
+T5331c49177adbe25d9c913db3c4dbac0	data 1246 1265	Bridson et al. 2003
+T6f41f63cb776aed40171d409d76943ff	data 1267 1285	Baraff et al. 2003
+Tcf994498de2f337303c0c33c020ea3c1	background_claim 1291 1336	a limited image based rendering list includes
+T9c922f18655e88e24a4f96fc8e46516b	data 1339 1358	Bradley et al. 2005
+Td3ba862e818d85e0b8a8c509c25e4e69	data 1360 1382	White and Forsyth 2006
+Tafe8ffa5ec401761d2a660fb77ec9af7	data 1384 1400	Lin and Liu 2006
+T93631e0eb19e3e1029250bdef851d43e	data 1402 1424	Scholz and Magnor 2006
+T5a3d4bbfbe4ba8c0ec912e41be3e4ecf	background_claim 1428 1465	These methods have several advantages
+T62ce8637c87df458039ed600d5222f55	background_claim 1467 1620	simulation gives significant user control and produces higher resolution meshes while image based rendering techniques produce more accurate illumination
+T42d3d71d5f9569eb9ca39a65cb102201	background_claim 1631 1767	capturing large amounts of data is far easier than simulating large amounts of data and provides more control than image based rendering
+Tea4edb28dd40b461885ab4c44cca3207	background_claim 1769 1873	Common simulation complaints include long computation times, significant parameter tweaking and tangling
+T16a498dcb825f50f3edc52da2e309bcd	background_claim 1888 1915	capture is relatively quick
+T6709f10a8657b157c4bb178415841528	data 1917 1958	our code is 8 minutes per frame in MATLAB
+T3766ae890f339e155655dfaa31f5dc34	background_claim 1961 2010	parameters are set by selecting the type of cloth
+T4d82eb6e6a5c0b8382e65bce50d7d770	data 2012 2028	Bhat et al. 2003
+Td6fca0f126ecde6a5342ced713cdee2e	background_claim 2034 2065	tangling is relatively uncommon
+T98663cb17c1b36dbe3ec85e790251891	background_claim 2067 2128	Cloth capture makes it easy to capture large amounts of cloth
+T6b50ea8263e061995504ea5279e7a056	data 2140 2197	fast light cloths that create instabilities in simulation
+Ta8d244a4901587ebd98793ebf417d90e	own_claim 2199 2339	An added attraction of cloth capture is that complex interaction between the cloth and the body is recorded without complicated human models
+

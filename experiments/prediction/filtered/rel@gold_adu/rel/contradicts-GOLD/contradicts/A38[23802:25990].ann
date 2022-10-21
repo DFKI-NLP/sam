@@ -1,0 +1,4 @@
+T7dd839081a1e01becd0d8b0a07651583	own_claim 220 273	they demonstrate the complex dynamics of cloth motion
+T4d982f18adc1fbef1fa1ee5b1daf8e69	own_claim 158 214	The experiments are easy to perform, capture, and repeat
+R0685f1d0fcabdf45b60da338b742e3fe	contradicts-GOLD Arg1:T4d982f18adc1fbef1fa1ee5b1daf8e69 Arg2:T7dd839081a1e01becd0d8b0a07651583
+R9f6e4357a10db42a15071874f42f1241	contradicts Arg1:T4d982f18adc1fbef1fa1ee5b1daf8e69 Arg2:T7dd839081a1e01becd0d8b0a07651583

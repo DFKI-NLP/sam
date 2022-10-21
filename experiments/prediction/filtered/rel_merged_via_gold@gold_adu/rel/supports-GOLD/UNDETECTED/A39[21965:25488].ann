@@ -1,0 +1,17 @@
+T9d7cba03358f4a9b958832b34af90724	own_claim 1080 1139	The implicit backward Euler method appears similar at first
+T17f78d0aec4f98e8eca5366c0d44609c	data 2147 2266	Taking the bottom row of equation (5) and substituting x = h(v 0 + v) yields v = hM −1 f 0 + ∂x ∂f h(v 0 + v) + ∂v ∂f v
+T84262ce10d05d397bf3e8fd5ec0dfd6c	own_claim 2521 2678	the backward Euler step consists of evaluating f 0 , ∂f/∂x and ∂f/∂v; forming the system in equation (6); solving the system for v; and then updating x and v
+T5a9b08afef9bb37a78b3bf4429d00465	data 809 911;920 973	The explicit forward Euler method applied to equation (3) approximates x and v as x v = h M v −1 0 f 0 where the force f 0 is defined by f 0 = f(x 0 , v 0 )
+Tc57398abea4a54849160036dfef6b662	data 1975 2049;2081 2127	Substituting this approximation into equation (4) yields the linear system v x = h M −1 (f 0 + v 0 ∂x ∂f + x v + ∂v ∂f v)
+T7e2abb0bb5bc6b2359373d4533e9d5a9	data 1889 1973	the derivative ∂f/∂x is evaluated for the state (x 0 , v 0 ) and similarly for ∂f/∂v
+T858a74736f1e0bfc52c029f9c88e6b74	own_claim 1260 1471	The difference in the two methods is that the forward method’s step is based solely on conditions at time t 0 while the backward method’s step is written in terms of conditions at the terminus of the step itself
+Ta8ea87da8cf2bc13700caac1bbfdb4c0	data 2269 2332;2364 2424;2442 2467	Letting I denote the identity matrix, and regrouping, we obtain I − hM −1 ∂v ∂f − h 2 M −1 ∂x ∂f v = hM −1 f 0 + h ∂x ∂f v 0 which we then solve for v
+Tc912264a93c60f2685304463c24b71a2	data 1475 1539	The forward method requires only an evaluation of the function f
+Tb75d52317c0208dc8adc9ff4f02dc2a5	data 1544 1634	the backward method requires that we solve for values of x and v that satisfy equation (4)
+R0e768c03a843c11267e71cff718f1eb8	supports-GOLD Arg1:T5a9b08afef9bb37a78b3bf4429d00465 Arg2:T9d7cba03358f4a9b958832b34af90724
+Rfe26f984dccfb34c6c96dde5fa348ecd	supports-GOLD Arg1:Tb75d52317c0208dc8adc9ff4f02dc2a5 Arg2:T858a74736f1e0bfc52c029f9c88e6b74
+Rb7549683950b4175cce768faa2b915d6	supports-GOLD Arg1:Tc912264a93c60f2685304463c24b71a2 Arg2:T858a74736f1e0bfc52c029f9c88e6b74
+R50ca77047a2f6e71df8bac708ffca961	supports-GOLD Arg1:Ta8ea87da8cf2bc13700caac1bbfdb4c0 Arg2:T84262ce10d05d397bf3e8fd5ec0dfd6c
+R51761a63e78b815a2cc595e0a38f5810	supports-GOLD Arg1:T17f78d0aec4f98e8eca5366c0d44609c Arg2:T84262ce10d05d397bf3e8fd5ec0dfd6c
+R7d68f071fb4fc6b7d2a6dd2fb4bd99f5	supports-GOLD Arg1:T7e2abb0bb5bc6b2359373d4533e9d5a9 Arg2:T84262ce10d05d397bf3e8fd5ec0dfd6c
+Rfcb2f7f316ecd5aed2794dc7d183a571	supports-GOLD Arg1:Tc57398abea4a54849160036dfef6b662 Arg2:T84262ce10d05d397bf3e8fd5ec0dfd6c

@@ -1,0 +1,8 @@
+Ta5d54930a12391774154028f7fd67a2a	own_claim 7190 7285;7312 7406;7423 7475	we largely alleviate these issues with the design of the five isolated deformation measurements which allow us to separately fit stiffness curves for the six deformation components described following an incremental parameter fitting procedure
+Td3b6aa1a73e09b91ee9e841522246f82	data 7410 7421	Section 4.1
+Tc7a8d15f3d04308d80d9e4f4921dbcab	data 7299 7310	Section 3.2
+T9959d3a64d10de0432954503a2a1af9b	own_claim 3614 3661	clip-orthogonal forces are dominated by stretch
+T9645f2039866cde9cf8dfd4e39ee4f5d	data 3521 3557	situations of near-homogeneous shear
+R3b495c3d6158a9ba6f99952930a02ca3	supports-GOLD Arg1:T9645f2039866cde9cf8dfd4e39ee4f5d Arg2:T9959d3a64d10de0432954503a2a1af9b
+R2087ec10814b78dc539f687441e34062	supports-GOLD Arg1:Tc7a8d15f3d04308d80d9e4f4921dbcab Arg2:Ta5d54930a12391774154028f7fd67a2a
+Rcaad707a7e961b86ec76e63ae62a5e6b	supports-GOLD Arg1:Td3b6aa1a73e09b91ee9e841522246f82 Arg2:Ta5d54930a12391774154028f7fd67a2a

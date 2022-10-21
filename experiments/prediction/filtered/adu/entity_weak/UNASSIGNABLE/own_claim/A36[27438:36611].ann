@@ -1,0 +1,13 @@
+Tf2fa91ad689344f566d3d917d5ff6a05	own_claim 306 434	We do this by solving an optimization problem, leveraging that the cloth is at static equilibrium at the measured configurations
+T830ed97d6c3391be32535e198862317e	own_claim 3271 3321	for bend tests it is based only on cloth positions
+T925dcadd4906010db80c15709eabe1f7	own_claim 3669 3772	by fitting only clip-parallel forces we reduce the sensitivity to potential errors in stretch stiffness
+Te93790df1780443f8c0da641abc46063	own_claim 3774 3820	The optimization problem contains two unknowns
+Teeaced8874d56857334f3ccc63394370	own_claim 4320 4397	we obtain a linear expression that relates node positions to parameter values
+T4a124a6a642dc7608b76569ccabdb6aa	own_claim 4430 4466	−1 ∂F n ∂F n ∂F n ∂F n ∆x n + ∆k = 0
+T4da67ac735cc5b0fcdf26a21c884111e	own_claim 4469 4480	∆x n = − ∆k
+Tfcad4c61ab16dfa04b7e5e6d4fe1af13	own_claim 5324 5405	The solution to the linear least squares problem requires solving a system Ak = b
+Tab64909ba48901e5dfd17d3835dc68b7	own_claim 5638 5692	requires solving |k| linear systems of type ∂F n y = b
+T1c259f7a8e2ddb166e5a136d505113d0	own_claim 6165 6259	The quasi-static simulations involve linear-system solves with the cloth stiffness matrix ∂F n
+T1d607a46f79a152a6bda2f4d38f5ada8	own_claim 6381 6468	we have solved the quasi-static equilibrium problems using additive Levenberg-Marquardt
+T8e84b3ab9e343d87fa6a0ab80e7db5fd	own_claim 6476 6546	effectively produces a modified stiffness matrix of the form ∂F n + μI
+Tb5923787e3b79052a3536358546a6f30	own_claim 7742 7765	they have little effect

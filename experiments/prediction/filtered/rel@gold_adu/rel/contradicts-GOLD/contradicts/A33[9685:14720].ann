@@ -1,0 +1,8 @@
+T67c849e1f8cdfcaacfe8ec67b458ea58	own_claim 3526 3573	our pattern is composed of tesselated triangles
+T1ef2fb535f0b1d9e83cfa7489513e85b	own_claim 2944 3074	larger marker regions have the disadvantage that curvature can cause local occlusions and prevent observation of the entire region
+Tae192e1df377e35251d2672b5c88a615	own_claim 2868 2933	we can detect regions by increasing N until I &gt; log 2 (M) bits
+Taa4d80feec1a2811277da733331fdd6f	own_claim 3588 3628	any shape that tiles the plane will work
+Rcc0d8f112e12dd06a0e017f0a4eff041	contradicts-GOLD Arg1:Tae192e1df377e35251d2672b5c88a615 Arg2:T1ef2fb535f0b1d9e83cfa7489513e85b
+R0ff4f1d81e73c40b98c8ad2c90ac7a39	contradicts-GOLD Arg1:T67c849e1f8cdfcaacfe8ec67b458ea58 Arg2:Taa4d80feec1a2811277da733331fdd6f
+R021665ab123c6c4064c3c260b9380583	contradicts Arg1:Tae192e1df377e35251d2672b5c88a615 Arg2:T1ef2fb535f0b1d9e83cfa7489513e85b
+R70d7d8ced3df94a70f3bdb34ee5e3f2c	contradicts Arg1:T67c849e1f8cdfcaacfe8ec67b458ea58 Arg2:Taa4d80feec1a2811277da733331fdd6f

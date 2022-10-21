@@ -1,0 +1,5 @@
+T59567e875dc8f5ae4d626bdf9ed4507f	background_claim 478 583	combines the Metropolis algorithm with the downhill simplex method for continuous n-variable optimization
+T856e1a619837f0ce3553030b4e1150a4	data 466 468	28
+Tbb2a4111584ace13d14f8888e331a8fc	own_claim 381 460	We chose to use the continuous simulated annealing method presented in Press et
+R76375e2011e11b181b69639392e6e682	supports Arg1:T856e1a619837f0ce3553030b4e1150a4 Arg2:Tbb2a4111584ace13d14f8888e331a8fc
+Rd429ef0f2c0c136fb62d993fc2178a26	supports Arg1:T59567e875dc8f5ae4d626bdf9ed4507f Arg2:Tbb2a4111584ace13d14f8888e331a8fc

@@ -1,0 +1,52 @@
+T651df913cb9fe44d9616abd12279ab78	own_claim 119 209	The constraints we discuss in this section are either automatically determined by the user
+Tdc1602e4a6571b12845628e7797a0b16	own_claim 267 293	or are contact constraints
+Tf5014510673cd95dd1569081992b8bce	own_claim 320 357	between a solid object and a particle
+T161157f9322eb1a0742ada9fa9072489	own_claim 616 685	might merge to form a single constraint on arbitrarily many particles
+T3a007e3b153874e1bdf9f9267f9cfaf7	own_claim 693 723	would be expensive to maintain
+T89524aae7a13517d1a19317073fa789f	own_claim 873 897	and “position alteration
+T6bf97968d093fd92faf726057e3df04f	own_claim 936 1024	At any given step of the simulation, a cloth particle is either completely unconstrained
+T739d2d49098c1cb02bd46f02ab594bd3	own_claim 1724 1743;1752 1900	Reduced Coordinates An obvious and quite exact method for constraining a particle is to reduce the number of coordinates describing the particle’s position and velocity
+Tb7c989a334de4e32b650aa17d1d2e019	own_claim 2225 2245	the sparsity pattern
+Td92d8dcbb453a638e51d236e4ac29ed3	own_claim 2900 2915;2924 2995	Penalty Methods We could constrain particles through the use of strong energy functions
+T140fe317351a700907364593332fd38d	own_claim 3009 3071	stiff springs that attempt to prevent illegal particle motions
+Tb6c777bce11f3d83019f50db0a3a5426	own_claim 3278 3338	it to be a not unreasonable constraint enforcement mechanism
+T9625ea45762396a23f7b5ef0c1b4cf68	own_claim 3655 3675;3684 3731	Lagrange Multipliers We could introduce additional constraint forces
+Tb6c65da10c2c5c3625a174166020128a	own_claim 4125 4214	doubling the running time and degrading the numerical conditionining of the linear system
+T7b07352397c03f3d8c37a6655f3189e6	own_claim 5311 5361	Complete control over a particle’s acceleration is
+T05a1501c9109aea4803f8b5b982a9e31	own_claim 5665 5703	Now ẍ i 0 0 0 must lie in the xy plane
+T0d5fa754a85a43a02acb294291e442ea	own_claim 5705 5751	no acceleration in the z direction is possible
+T2a68a4a0953b3a91e384a9bc4bb7ec1f	own_claim 5763 5876	an unconstrained particle can be considered to have the 3 × 3 inverse mass matrix 1 I, with I the identity matrix
+T8733c7b428d5e8fbc5e69ba90baf5a53	own_claim 5893 5948	we are not restricted to coordinate-aligned constraints
+Tc4bd165d600c9def90789e284ce9d5d0	own_claim 6098 6146	this follows from the fact that (I − pp T )p = 0
+T7ee428682bc60ba23e9fb9f930721273	own_claim 7625 7668	an unconstrained particle must have z i = 0
+T5404375fad0f428bf9d4033f722bf700	own_claim 7710 7780	Using W and z, we rewrite equation (6) to directly enforce constraints
+T12f7805eacf6eb1d611362ec201719bd	own_claim 8305 8379	For very small test systems, we solved equation (14) using a direct method
+T8bfcb1ae583e450a9a339de0ddead438	own_claim 8403 8423	without any problems
+T56e6ff66f2f8c6e8d51eb9d4038e9087	own_claim 8515 8553	immediately presents us with a problem
+Tabb41ba5904e0ec4bbee572289a5d91f	own_claim 9018 9044	a less than desirable plan
+Tf98b5b1b3ada610b407a5509ef79a338	own_claim 9062 9131	using a CG method to solve the unsymmetric problem was not acceptable
+Te700aa0b6b2f7bbcbbb9ec6fbe48c70f	own_claim 9143 9217	without constraints, applying a CG method to equation (6) is not difficult
+T693c8a51d47d5451178e3923990b5878	own_claim 9532 9579;9597 9653	M − h ∂v ∂f − h 2 ∂x ∂f v = h f 0 + h ∂x ∂f v 0 is symmetric and has the same solution v as equation (6)
+T9f4d3c402ee581bcd414e2a0e67830cd	own_claim 9847 9954	The solution to the problem of asymmetry is to modify the CG method so that it can operate on equation (15)
+T989dcb3a1964fb7c881a65eb6c9d98cb	own_claim 9962 10042	procedurally applying the constraints inherent in the matrix W at each iteration
+T9ef33b87600953e2c723dd6f6ede972b	own_claim 10044 10131	The modified method will need to know about the particles’ constraints and the vector z
+T5f2ff7d0142a44f505adb5ed78d8d523	own_claim 10475 10588	For each particle i, the component of r i in the particle’s unconstrained direction(s) will be made equal to zero
+T26fefcd39bc5b8502732789413ec57a0	own_claim 10654 10758	For each particle i, the component of v i in the particle’s constrained direction(s) will be exactly z i
+T9ca1aeacf5201492b032c08c91cfcc64	own_claim 11162 11175	The CG method
+Td81d5b3685a67ad63061aebc607b286d	own_claim 11220 11395	takes a symmetric positive semi-definite matrix A, a symmetric positive definite preconditioning matrix P of the same dimension as A, a vector b and iteratively solves A v = b
+Ta1d9aa13f915491ba11e5cb4dbe25969	own_claim 11397 11444	The iteration stops when b − A v is less than b
+T31b11ec464258e8747a6e8677d8e3fa7	own_claim 11486 11606	The preconditioning matrix P, which must be easily invertible, speeds convergence to the extent that P −1 approximates A
+Ta5979ea29a72c3752ca4f85c959fdd45	own_claim 12971 13060	The unmodified conjugate gradient method establishes a stopping criterion based on b T Pb
+T9f3f2b2d47cc294b89e69311a9414c0b	own_claim 13199 13300	The vector r measures the solution error b − A v, and should not include error due to the constraints
+T70040b53e9214560bc470821b78fbd73	own_claim 13354 13472	removing the calls to filter and changing line 2 to v = 0 yields the standard preconditioned conjugate gradient method
+Tfe5189fd0667f26028bfffe94fa5ae54	own_claim 13673 13710	there is a large speedup to be gained
+T646c0f5e2ef6d72e02c5980ce043cce2	own_claim 14024 14064	in practice, our method always converges
+T2c14d854eb99bdd7b582782cb94855ab	own_claim 14672 14695	For contact constraints
+Tece5545f20244d61dd6182beb07d5c44	own_claim 15080 15162	the residual error e = A v − b has the property that e i need not be close to zero
+T07e4c50bc7d6c05ce873a3b7b6d2c6dc	own_claim 15559 15665	The particles’ accelerations are inherently dependent on one another through the matrix A of equation (16)
+T3b9ca114e9d4f27a4305316240d3d028	own_claim 15683 15751	the correct approach to determing constraint release is combinatoric
+Tc13bbb58ea30c4c2eb48dd1739067a0d	own_claim 15847 15875	we allow contacts to release
+Tf53ccc8618d35c1cbbc5c9b5e0228758	own_claim 15987 16028	In practice, this has proven to work well
+Tdb5ebc7690ecc1599447e2942e87eccc	own_claim 16179 16210	We monitor the constraint force
+T09ecf62a4b7aaf2406442e4e023b3ff9	own_claim 16283 16328	we allow the particle to slide on the surface
+Tabcd2076dca049240e9ef5314b98137a	own_claim 16359 16473	we apply a dissipative tangential force, opposite the relative sliding direction, proportional to the normal force

@@ -1,0 +1,60 @@
+Ta18939f0c8bc8bad75e2092cf57767e8	data-GOLD 228 236	Figure 2
+Tbd4a872b9b750f8858644a257b8db08e	own_claim-GOLD 249 326	the geometry of coarse mesh would be unable to capture fine wrinkles on cloth
+Ta7b60b458e68948d7c1ad80b2fc4535c	own_claim-GOLD 328 375	Real cloth has very little in-plane deformation
+T774993fd2afa55ee4a15b949700f54bf	own_claim-GOLD 379 422	most of the deformations come from buckling
+T6bc74bf474f225c42bf308bf895f9370	data-GOLD 424 443	For the coarse mesh
+T42aadd245b0d073d9b9c5be6460fbb53	own_claim-GOLD 445 464	setting high metric
+T82bee7a3409e6bf136f3cf7c06f84704	own_claim-GOLD 488 522	stiffnesses will not work properly
+Te0103d4c2ec905450e3a4d40288ad8ee	own_claim-GOLD 626 670	Real cloth would wrinkle to this deformation
+T63e3c4a83a4cfcebb4a6ad0f6b53e710	data-GOLD 696 705	Figure 3A
+T8a6f37961d6ae6c7d4363eb13d4fed8c	own_claim-GOLD 777 820	the compression forces will buckle the edge
+Tdc0c29050309642f3a93f3d281db6a1d	own_claim-GOLD 849 892	the bending stiffness of the cloth is small
+Tfadb54dd11bd7fae240a65412eb40dac	own_claim-GOLD 894 946	the buckled edge exerts small forces on the vertices
+T40673e7b8a736ce0bc95f9e7a357b28b	data-GOLD 957 985	in the coarse mesh situation
+T34ec5b305f9d94a7a7d4772e434a6296	own_claim-GOLD 987 1059	the buckled edge is approximated by a straight line between the vertices
+T88b8af23e2b31c1294c89d96385c11c9	own_claim-GOLD 1075 1142	the real life buckling is attributed to the compression of the edge
+Tee263ee9e2c55de7bc2c0d6db748ea69	data-GOLD 1157 1211	a high metric stiffness associated to this compression
+T30e11d3a05049e38faf5beb18e8524fa	own_claim-GOLD 1213 1266	the corresponding forces on the vertices will be high
+Tc43bd489b047d961494564481ac4dc85	own_claim-GOLD 1268 1313	This is in contrast with real cloth situation
+Tad6581b4dc9f54814917f70f2fbecc9f	own_claim-GOLD 1321 1415	to animate the cloth realistically with a coarse mesh, we need to set small metric stiffnesses
+Tf00aaace2b720b12b28976edc8cfd20e	own_claim-GOLD 1417 1466	This allows otherwise possible wrinkling/buckling
+T43d2c33cda26379e914f63e28b49b84f	own_claim-GOLD 1467 1515	which is embedded in the deformation of triangle
+T3451012737e3dbec201df4862f08e7f3	own_claim-GOLD 1517 1606	Very little in-plane deformations can be looked at as area conservation property of cloth
+T620782a2ff81bdfc92a3e607495523f9	own_claim-GOLD 1898 1938	the wrinkle pattern is given by the user
+Tcce60395b97ede06eaf532951a377e45	own_claim-GOLD 2019 2062	there is a change in the area of a triangle
+T69d54f2f6c23dffad66933c925619fd9	own_claim-GOLD 2092 2153	it is invariant after applying the modulated displacement map
+T2570b22e1782ff8e2429a3c9d7ec4ab8	background_claim-GOLD 2327 2383	The method is inspired by the area conservation property
+T8d3c5a95059fd4dcd3ef887df977bcde	data-GOLD 2397 2408	Section 3.3
+T4dca2de634d544e4ee1f745bc5d6ea57	own_claim-GOLD 2425 2492	the empiricism introduced later does not actually conserve the area
+T364f2a885f71fc5c7b583571534c1e91	own_claim 58 121	We would like to animate the cloth using coarse triangular mesh
+Tdc72d4a215bd61010d531019bcc5fb50	data 228 236	Figure 2
+T493ab54ca5ff82f9a858239d241b821b	own_claim 249 326	the geometry of coarse mesh would be unable to capture fine wrinkles on cloth
+T91c9c8e26d59ee40ba0d07e43047fb6d	own_claim 328 375	Real cloth has very little in-plane deformation
+Te86a59a99d7416ea29b7c4ef5172116c	data 379 422	most of the deformations come from buckling
+T28b517d149bd86673226ba33015d85e7	data 428 443	the coarse mesh
+T5760dc904509e3dcd9df6d065bb22bea	own_claim 445 464	setting high metric
+T193a0b53278a46744099b43e736bf933	own_claim 488 522	stiffnesses will not work properly
+T490cd0b34819d3262e29b6ae2c850126	data 614 623	Figure 3A
+T6e726346ef242982ca0f17f7671c488a	own_claim 626 670	Real cloth would wrinkle to this deformation
+T53e6fa6562f198f849ff3042385d07ab	data 696 705	Figure 3A
+Tfbb048cd206f666678b21712bc4ad331	data 753 762	Figure 3B
+T4e98fcfd71a102316d8d366e869a4d64	own_claim 765 820	In reality, the compression forces will buckle the edge
+T713a2c6de7319b28beae12fa3c83893d	data 849 892	the bending stiffness of the cloth is small
+T513b5c596dfe27e1d7dc86f70107aa58	own_claim 894 946	the buckled edge exerts small forces on the vertices
+Te31473ffbe2f6611213ef3e28bd38817	own_claim 957 1059	in the coarse mesh situation, the buckled edge is approximated by a straight line between the vertices
+T657b3d6922b0c8e4e024d8f503711679	own_claim 1075 1142	the real life buckling is attributed to the compression of the edge
+T5baf95b1cdd2525a69324d14b003efb1	data 1147 1211	we assume a high metric stiffness associated to this compression
+Tab76f9a04b062820ec2fa38c619fb0a2	own_claim 1213 1266	the corresponding forces on the vertices will be high
+T59617363c91298e61146bdd29ac95d84	own_claim 1268 1313	This is in contrast with real cloth situation
+T215934b3f102d96d636590e13eb0b845	own_claim 1321 1415	to animate the cloth realistically with a coarse mesh, we need to set small metric stiffnesses
+T0c283e8a09a93d81d3be8362af705efd	own_claim 1417 1515	This allows otherwise possible wrinkling/buckling which is embedded in the deformation of triangle
+T790f20b33a6979e6c3cda5a2778304ad	own_claim 1517 1606	Very little in-plane deformations can be looked at as area conservation property of cloth
+T604f807db8b90ba81d3d6f40f792b6b7	own_claim 1613 1672	the change in area of the triangles due to the deformations
+Tee19d2299ee611904b9fb2ea022d7d33	data 1676 1684	Figure 3
+T016c4e0d804361a03d81bff6cab75baf	own_claim 1724 1830	We propose to capture gross cloth movements and deformations using a coarse mesh and the fine deformations
+Te4d98e941318b21fb9453492f6f0eca8	own_claim 2019 2062	there is a change in the area of a triangle
+Tb5b882c30f0e833589834b76a18be12c	own_claim 2092 2153	it is invariant after applying the modulated displacement map
+T37185babadd7da27d98f12d556bf8f08	own_claim 2327 2383	The method is inspired by the area conservation property
+T8b7c607de46b67605d304d881ca8ea88	data 2397 2408	Section 3.3
+T3a35196763e15ce3bdc58f056ab29a21	own_claim 2425 2492	the empiricism introduced later does not actually conserve the area
+

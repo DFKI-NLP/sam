@@ -1,0 +1,3 @@
+T8a264ad293441d68e010fec1fbaf5304	data 3660 3720	the inherent texture of the cloth is not sufficiently random
+T824ce0442e4b7b95c3f00d4f8ac22f95	background_claim 3722 3766;3780 3854	it is printed with a wavelet noise pat∗ tern to provide texture that can be used for stereo reconstruction and tracking
+Rbb1d73acccf3cbc811ca3c235bab81f4	supports Arg1:T8a264ad293441d68e010fec1fbaf5304 Arg2:T824ce0442e4b7b95c3f00d4f8ac22f95

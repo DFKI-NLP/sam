@@ -1,0 +1,17 @@
+Ta7dd3fac49fa1c7166a4780dc4a9781e	background_claim 138 188	One would like to fill these holes with real cloth
+T403d7638a47828f4e428084c037c65a8	own_claim 63 123	occlusion inevitably creates holes in the reconstructed mesh
+Tb6b99c4b3b374cd0e6e7da7e7b57f2bd	own_claim 4772 4817	We introduce flexibility preserving smoothing
+T2d62a1c5e4b4d0abd093d2a1df280b14	own_claim 3708 3756	we create complete meshes in an iterative method
+Ta193e31af320b914860aa3a105577624	own_claim 5329 5368	we use flexibility preserving smoothing
+Td9ced4cc78c189b4a7977c682c9e97a5	own_claim 4820 4861	a method similar to anisotropic diffusion
+T87604802fc4a5c6603b6c2fb9e795999	own_claim 5370 5447	a procedure that smoothes rigid movement more heavily than non-rigid movement
+T5bf2ddb3d015b63d90bd844fe5ca862b	own_claim 1132 1173	This procedure has a number of advantages
+Tc8c07f8ca67c6e0ae5bb5313d229a635	own_claim 5165 5216	small temporal errors are often difficult to notice
+T1a34b9f53a14779ebf8bf5dc1895f5ff	own_claim 1339 1458	By penalizing elements that deviate in this matrix, we have a fairly direct penalty on large changes in scale or strain
+T33c2fbcbdd817850dceda01e7ea8c2c9	background_claim 3563 3605	we never observe complete ex- ample meshes
+Re1a06ab17b6b2ba4264a7ecdc80b5db5	supports Arg1:T403d7638a47828f4e428084c037c65a8 Arg2:Ta7dd3fac49fa1c7166a4780dc4a9781e
+Rd822140ac9cf29c08b1d9404f1f09197	supports Arg1:T1a34b9f53a14779ebf8bf5dc1895f5ff Arg2:T5bf2ddb3d015b63d90bd844fe5ca862b
+Rb1447e0c2e02045f0b99553f130c0719	supports Arg1:T33c2fbcbdd817850dceda01e7ea8c2c9 Arg2:T2d62a1c5e4b4d0abd093d2a1df280b14
+Rec9eeb28751f42aebc153c77ee6e42fc	supports Arg1:Td9ced4cc78c189b4a7977c682c9e97a5 Arg2:Tb6b99c4b3b374cd0e6e7da7e7b57f2bd
+R1f6cf9f463fdf3802585f2a3ebd8e861	supports Arg1:Tc8c07f8ca67c6e0ae5bb5313d229a635 Arg2:Ta193e31af320b914860aa3a105577624
+Rcbde6fce05c7342c346ba6b1d2db29d6	supports Arg1:Ta193e31af320b914860aa3a105577624 Arg2:T87604802fc4a5c6603b6c2fb9e795999

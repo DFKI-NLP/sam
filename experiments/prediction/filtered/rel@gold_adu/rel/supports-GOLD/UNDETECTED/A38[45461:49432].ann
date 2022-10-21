@@ -1,0 +1,6 @@
+T0cc59bfe6344c593d0ad9b5055ae4ba2	own_claim 3485 3525	a statistical metric might be preferable
+T5d48b7fdd8699ee476232f9f757ee7c1	own_claim 3527 3546;3561 3699	Such a metric might compute the average number of folds across a time sequence rather than looking for a fold to appear at a particular location on the swatch
+T42b42bb6d54b8a92312d6ebda080836e	own_claim 2299 2399;2475 2516	the model might need extra parameters to handle anisotropic effects, hysteresis and coupling effects all of which would need specialized tests
+T119a311796a2e1b8d3c7152f17b1b357	data 2401 2472	stretching along one direction causing shrinking in the other direction
+R2a60f6ac973b3f1744a6f82808121ceb	supports-GOLD Arg1:T119a311796a2e1b8d3c7152f17b1b357 Arg2:T42b42bb6d54b8a92312d6ebda080836e
+Raf9e6adefa0de73141eecf675c328617	supports-GOLD Arg1:T5d48b7fdd8699ee476232f9f757ee7c1 Arg2:T0cc59bfe6344c593d0ad9b5055ae4ba2

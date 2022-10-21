@@ -1,0 +1,4 @@
+T27ca34e57da6308ded05daca65fea78e	own_claim 3199 3273	we insert proxy points for knee and hip joints in each of our basis meshes
+Tf734b3fbc144cfda38f60ce196c2dace	own_claim 3158 3188	we do not know joint locations
+R634be1ac08128dcc1fda305c9d21a959	contradicts-GOLD Arg1:Tf734b3fbc144cfda38f60ce196c2dace Arg2:T27ca34e57da6308ded05daca65fea78e
+R8410ecb5ae582885c8667071a2b902df	supports Arg1:Tf734b3fbc144cfda38f60ce196c2dace Arg2:T27ca34e57da6308ded05daca65fea78e

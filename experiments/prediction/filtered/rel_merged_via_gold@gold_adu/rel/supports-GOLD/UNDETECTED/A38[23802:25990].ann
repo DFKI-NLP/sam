@@ -1,0 +1,3 @@
+T0953bb13030d1377109ae7ca8e7e9e53	own_claim 1684 1810;1825 1850	This gives reasonable estimates for cloth parameters while avoiding the need to optimize directly on complex fabric geometries involving many collisions
+Tf2e2307cd65fcfecf228b22c41c49a01	own_claim 1574 1667	We designed the waving motion to roughly match the types of motion occurring in real garments
+R55964ee8220ddc0e62b2a9785649e4d8	supports-GOLD Arg1:T0953bb13030d1377109ae7ca8e7e9e53 Arg2:Tf2e2307cd65fcfecf228b22c41c49a01

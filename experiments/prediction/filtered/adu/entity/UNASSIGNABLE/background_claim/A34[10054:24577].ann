@@ -1,0 +1,8 @@
+T104dcf212088fe40bde0e6b52426cd2a	background_claim 136 206	the correct next positions and velocities of colliding cloth particles
+T258f681a867ee241eed0633c65b7015e	background_claim 650 689	for flexible-rigid collision resolution
+Tcd8d94fdd4257ebc992e0bfd614c6195	background_claim 826 852	is the case cloth requires
+T7b3f8a89f0c5d44ddd1973d169141ad3	background_claim 1142 1200	Adjusting particle orientations after collision resolution
+T54038f25c0003a078be0634de5839872	background_claim 1362 1402	Handling collisions in an IZ as a bundle
+T9e6ec35510795575f682b27da8acc4dc	background_claim 8945 8987	The simultaneous collision handling method
+T1bca71719a5a9bede0f41d905da03859	background_claim 9017 9099	resolves multiple rigid body collisions by solving a system of linear inequalities
+T281b69b380be644557a6a8448ed3d0a5	background_claim 9107 9202	the system of linear inequalities is based on the colliding relationships between rigid objects

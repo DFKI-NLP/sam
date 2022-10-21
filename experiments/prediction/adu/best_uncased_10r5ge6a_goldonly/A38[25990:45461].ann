@@ -1,0 +1,43 @@
+Ta238bbd11b342bb93f80df1cf96268dc	own_claim 613 696	Each trial took approximately 50 hours to converge on a 2.8GHz Intel Xeon processor
+T64e8e16179419188132c8f028a0538cf	own_claim 769 815	we started the optimizations on the two trials
+Ta1b13c15d948ce4d08a2a7ba318f461d	own_claim 829 877	with the same initial guess and chose parameters
+T6d7c714daaa2eae237ed2f738cb08f0e	own_claim 890 938	that minimized the total error on the two trials
+Ta57db3019b75b8fefbf9e0c2db9bf2ad	data 1543 1550	Figs. 8
+T70ae175cddaa781d84353c1ccdbee03a	data 1555 1556	9
+Tde2dca3d01a39563c1def661b705cc67	own_claim 1562 1646	a very good visual match between the simulations with their counterpart real fabrics
+T831ca68a961f28f9ae5c64a55732648f	own_claim 1657 1739	there is a significant disparity in the final optimized values from the two trials
+T1941d725f37331143f3b2ed3b35d7810	data 1871 1878	Table 2
+Teb6e0c5ba5399acfce35d4df903043e4	data 2003 2012	the table
+Tb4373785c8d2aaa429c138b0288d4bd2	own_claim 2014 2063	we see that the final error values are very close
+Tf16e6693ea9b3cafd0ffa6eeaab4ca53	own_claim 2065 2135	We get consistent estimates for parameters that have lower variability
+Td5d7eeefa644d5ba22a0a811c775a514	data 2143 2147	bend
+Tb49a60ad2d359903c69a74841f6fcd29	data 2149 2156	stretch
+T70cdf7b53e7bb6645ea6910e010864f1	own_claim 2159 2212	Parameters with high variability are estimated poorly
+Tc23c34f8dd11e0d73ea7d98a3914d851	own_claim 2222 2278	their values do not contribute sufficiently to the error
+T6efa5d1fe4277fc9a2ec5e0275b3170a	own_claim 2330 2514	static tests cannot be used to estimate dynamic parameters like stretch and shear damping or air drag and motivates the waving test, which excites both the static and waving parameters
+T1b5680b1bf07c2c53cb44a4adb4fd5d9	own_claim 2529 2579	We optimize for nine parameters in the waving test
+T83b409794c73b09fbf06dc6136aa51ee	own_claim 2581 2657	the six cloth stiffness and damping parameters and three air drag parameters
+T43359e7dbf79cde44b11b283c6d502af	data 2660 2667	Fig. 10
+T127c11295d194650dc5ad0097cd6b85c	own_claim 2998 3067	The final values of the parameters from the two trials differ in part
+Tda28764083b62523b873743d9bafc487	own_claim 3076 3130	the variability of the parameters is still fairly high
+Te83c0593579813ea0e3d6e18c0fcf5ee	data 3133 3140	Fig. 11
+T67e22859e0680f713347cf2f3165f776	own_claim 3144 3235	Different motions or larger sequence might further reduce the variability of the parameters
+T42d68c0a1e5ddd32c0a02915e39890c3	own_claim 3530 3623	This approach seems to produce plausible results with skirts and other validation experiments
+T0d358eebe4ad18f01cd5b77e757b042a	own_claim 3650 3788	a more general solution for parameter identification using our framework is to simultaneously optimize across multiple trials of different
+T3dcf4c5572874f0fd7be0460ba27135d	data 3825 3832	Fig. 12
+T5815cb0772e2fe8d66a79a25ad879553	data 3905 3912	Fig. 13
+T9a033d1d2fef4f11b20261c0a9363c8d	own_claim 4033 4087	the minimum corresponds to a visually compelling match
+Tcc9e80c8b4fc3512b9ecb2b9fae00b53	data 4258 4265	Fig. 14
+T63b8a8e0e1ef41e54bc6674d9addc9cf	own_claim 4390 4479	each fabric in simulation has a minimum error when compared to its counterpart in reality
+Tb14b2b5fbfa3ad88309f119071b5f554	data 4481 4488	Fig. 14
+T952de4c1860a60a6c3fed11f30c1becd	own_claim 4512 4604	our approach could be potentially useful for recognizing different types of fabrics in video
+Tec9c3dbb1b9600d022bb49759e822b6e	data 4711 4718	Fig. 10
+Tba74da33375f0c33121dcf75dad70d1d	data 4727 4746	accompanying videos
+T2d42107f93baf771bb393c999df2a05d	own_claim 4752 4824	a good visual match between corresponding frames in simulation and video
+T51880a401c927d4858b168c781e21567	data 4896 4906	The videos
+T70ec3d4d2d3dae61c26d5b0ce9b22630	own_claim 4922 4996	the parameters obtained from optimization generalize well on new sequences
+Tb3dc88f171dd95786239973d94b65de3	data 5082 5089	Fig. 15
+Td6140e1d0800f8ec83b115b0a6068b78	data 5379 5386	Fig. 16
+Tb65aed4f42b18ddde297d3afac2d0e6f	data 5656 5667	The results
+Tcc5392ad3b3751fd4e73a019db23730e	own_claim 5678 5827	the parameters obtained from our optimization approach approximately capture the static shape and dynamic properties of skirts of different materials
+

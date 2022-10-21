@@ -1,0 +1,48 @@
+T4a186e68adb0923c5de28c79d9b9ec1d	own_claim-GOLD 336 436	Our goal is high marker density in the 3D reconstruction – especially in regions with high curvature
+T305705df46345e1aa303366bcc9d2678	own_claim-GOLD 455 525	we need markers that are both small in scale and highly discriminative
+T2194335b61469cdca78adddc2e45ccc2	own_claim-GOLD 527 557	These two goals are in tension
+Tf0bcc6617e79017a5d5102a0ecc6ba92	own_claim-GOLD 611 661	we cannot increase camera resolution without bound
+T222c148109bb2f0b6745a6a4986cb05b	own_claim-GOLD 724 783	we opt for the smallest markers that we can reliably detect
+T8e0b4ab59ece747315aadc1a123f722b	own_claim-GOLD 788 826	we make small markers more distinctive
+T934a69aac0deb5872c8b31cd898acf41	own_claim-GOLD 976 1052	Marker color and strain constraints are more useful than neighboring markers
+Tda96fde10fe006ed265928e24bbb2123	own_claim-GOLD 1130 1201	neighboring markers are observed only when the cloth is relatively flat
+Ta0f1ebaf32716fb0433f0516cbdfee7e	own_claim-GOLD 1693 1796	we can accurately minimize the number of neighbors required for correspondence and observe folds better
+T2694f3e1f67715862480887adb3bd1f6	own_claim-GOLD 2031 2137	we can compute the information needed to meet this threshold by adding information from the different cues
+Tc2fbe29f7dd7ed9c2f8689b9942192c5	own_claim-GOLD 2177 2277	structural ambiguities in the pattern subtract information lost to determine which neighbor is which
+Td085be83f9e03a5de4a0cad4044994ab	own_claim-GOLD 2658 2705	This neighbor is one of four possible neighbors
+Tb199ed2f196265cfff845bd65f794ae9	own_claim-GOLD 2713 2765	it takes two bits to specify which neighbor we found
+Tfcf6624db73a1a35e2ccf22b4d5b702a	own_claim-GOLD 2789 2829	the equation reduces to I = 2 ∗C − 2 + S
+T268003c6ddf5695e56421ee5feec14bb	own_claim-GOLD 2868 2933	we can detect regions by increasing N until I &gt; log 2 (M) bits
+T800aa994fe706ebfdf1493f59dc8b757	own_claim-GOLD 2944 3074	larger marker regions have the disadvantage that curvature can cause local occlusions and prevent observation of the entire region
+T970061907d413bf5de12ca13640304c0	own_claim-GOLD 3076 3109	Our best efforts are to improve C
+T7d1c2f48751c8470f67571d7f6f3965d	own_claim-GOLD 3526 3573	our pattern is composed of tesselated triangles
+T45653a5eae70160e94cdfb7c635cff57	own_claim-GOLD 3588 3628	any shape that tiles the plane will work
+Ta9dea061bbd688111a95d975f70a5c4e	own_claim-GOLD 3786 3952	To maximize the information contained in the color of each marker, we print colors that span the gamut of the printer-camera response, then use a gaussian color model
+T3e0302dfce9db6acfe8fba0b43b1619f	own_claim-GOLD 3988 4044	the printer-camera response is a sequence of lossy steps
+T8a089f514758745dd845eecafd43343e	own_claim-GOLD 4193 4240	loss is largely attributable to camera response
+T1975b47b26f7c0b001e6421e4797f8be	own_claim-GOLD 4305 4337	Illumination is also problematic
+T62b0ef4d3fd28771bb3c957227f4c4b8	own_claim-GOLD 4809 4865	These comparisons must be made in the proper color space
+T198e1545ca8aece8bae8e770864d5873	own_claim 336 436	Our goal is high marker density in the 3D reconstruction – especially in regions with high curvature
+T1721ec41d1ae7af2bca5825b1da7d72e	own_claim 455 525	we need markers that are both small in scale and highly discriminative
+T859d9386aa5861493bc4faa98f329297	own_claim 527 557	These two goals are in tension
+T4f28fe19f4c56418a891b6f063fdd239	own_claim 611 661	we cannot increase camera resolution without bound
+T741965deeb2f84736dbda278a7cedb48	own_claim 724 783	we opt for the smallest markers that we can reliably detect
+Te7e69ed124faed524517ae6db9e2c98d	own_claim 788 826	we make small markers more distinctive
+Ta37ed7f00e29c3f51868a7882882d92a	own_claim 976 1052	Marker color and strain constraints are more useful than neighboring markers
+T0b8705ba922cb0250ceebfb24a787f73	own_claim 1130 1201	neighboring markers are observed only when the cloth is relatively flat
+T79adca1499bb1bc3e45386d31110357c	own_claim 1693 1796	we can accurately minimize the number of neighbors required for correspondence and observe folds better
+Ta0f0841ca73a8d66a07e9683038fc4e7	own_claim 2031 2137	we can compute the information needed to meet this threshold by adding information from the different cues
+Tc19a2d44bcd3dd20eca03741812bda9c	own_claim 2177 2277	structural ambiguities in the pattern subtract information lost to determine which neighbor is which
+T286780ea7ce25e5caab34615a3577ef1	own_claim 2658 2705	This neighbor is one of four possible neighbors
+T4781394aa8bf8d7112131c42ab7aa24c	own_claim 2713 2765	it takes two bits to specify which neighbor we found
+T7dbd8994428f7486136938924353f822	own_claim 2789 2829	the equation reduces to I = 2 ∗C − 2 + S
+Tae192e1df377e35251d2672b5c88a615	own_claim 2868 2933	we can detect regions by increasing N until I &gt; log 2 (M) bits
+T1ef2fb535f0b1d9e83cfa7489513e85b	own_claim 2944 3074	larger marker regions have the disadvantage that curvature can cause local occlusions and prevent observation of the entire region
+Tf1102d88845f47bd71ae3fa719b581ed	own_claim 3076 3109	Our best efforts are to improve C
+T67c849e1f8cdfcaacfe8ec67b458ea58	own_claim 3526 3573	our pattern is composed of tesselated triangles
+Taa4d80feec1a2811277da733331fdd6f	own_claim 3588 3628	any shape that tiles the plane will work
+T5890fdb9f0a5c528183724a25b2a1c2a	own_claim 3786 3952	To maximize the information contained in the color of each marker, we print colors that span the gamut of the printer-camera response, then use a gaussian color model
+T9144a712d7e40c873f788fbc9321e669	own_claim 3988 4044	the printer-camera response is a sequence of lossy steps
+T6b3361a9383ac7cac380d384b303bca5	own_claim 4193 4240	loss is largely attributable to camera response
+T8953b7d90c641d8fae5898d308e9a2fc	own_claim 4305 4337	Illumination is also problematic
+T9d82188c490d30ff46cfe52f88ff79a6	own_claim 4809 4865	These comparisons must be made in the proper color space

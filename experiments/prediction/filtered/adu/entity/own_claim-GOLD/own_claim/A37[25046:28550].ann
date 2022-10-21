@@ -1,0 +1,24 @@
+T49eebb2776ee8c647f2763dac47726bd	own_claim-GOLD 535 590	The simple 1D chain resists stretching, but not bending
+Teb3f72708abadb6ccaa11e55a4836792	own_claim-GOLD 668 749	Our method shows asymptotically better performance as permissible strain vanishes
+T415e109d4fa076b0898f8afa5b7dbe4b	own_claim-GOLD 778 851	our algorithm exhibits favorable performance as mesh resolution increases
+T53d52a84861b21ae041aab1a5f8d97bf	own_claim-GOLD 964 1072	there exists considerable difficulty in setting spring coefficients a priori to satisfy a given strain limit
+T03e2f31176467770b2bfab31975a9d93	own_claim-GOLD 1165 1178	we are unable
+Tbb8094e962d15b3986d6c63e3d99de8e	own_claim-GOLD 1209 1274	to set spring coefficients that achieve a prescribed small strain
+Tb3cd04c16bc50d7f05f76fda69d9a083	own_claim-GOLD 2086 2146	the algorithm requires extremely small timesteps to converge
+T406e83dfe2aee1520dbadf0891751941	own_claim-GOLD 2152 2191	each timestep is relatively inexpensive
+Tc9ed2f8cead211d1c37a83f042776110	own_claim-GOLD 2247 2312	ICD is able to use larger timesteps than SHAKE and still converge
+Teb115011eaa830d15eef0c056aa97853	own_claim-GOLD 2394 2420	the overall time is higher
+T2211999554a7c2d66bf9f1815999840f	own_claim-GOLD 2796 2852	the fast projection method outperforms the other methods
+Tbedad9d8c7e2512ef4300863572748f6	own_claim-GOLD 3066 3145	fast projection is capable of producing complex, realistic simulations of cloth
+Tbcbd46db99cacaf80d6ecab0de414bca	own_claim 535 590	The simple 1D chain resists stretching, but not bending
+T5929b889b1423fcfd0685086bb36738d	own_claim 668 749	Our method shows asymptotically better performance as permissible strain vanishes
+Tcdaa120de1023143c9779fe051c36dec	own_claim 778 851	our algorithm exhibits favorable performance as mesh resolution increases
+T59a67215bff8699dd94649ff18eea347	own_claim 964 1072	there exists considerable difficulty in setting spring coefficients a priori to satisfy a given strain limit
+T87be0c992b5bc90ab114b7da751631bd	own_claim 1165 1178	we are unable
+T53061e586c73c95402e7e903aaa0de3a	own_claim 1209 1274	to set spring coefficients that achieve a prescribed small strain
+Ta7c067cf645d0ef05b8f076866e495e7	own_claim 2086 2146	the algorithm requires extremely small timesteps to converge
+T251ebd20dac990d8475fa14ea0202695	own_claim 2152 2191	each timestep is relatively inexpensive
+Tae84c36ad5bc5665cf6788914797bb01	own_claim 2247 2312	ICD is able to use larger timesteps than SHAKE and still converge
+Tfdce8195786b5e6337726f3c5e77ba75	own_claim 2394 2420	the overall time is higher
+T138cfc6dc688295508e2760277b912ac	own_claim 2796 2852	the fast projection method outperforms the other methods
+Tb1ee4a65aca1a86ff303b417a32a880a	own_claim 3066 3145	fast projection is capable of producing complex, realistic simulations of cloth

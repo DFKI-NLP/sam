@@ -1,0 +1,78 @@
+T73f4333d719b35a4f23bcc30ce51f4da	own_claim 7967 8019	Completely constrained particles will have v i = z i
+Ta43141c67df416072fba84849ad59338	own_claim 2152 2245	we alter the size of the derivative matrices in equation (6), as well as the sparsity pattern
+T07b51d361389d95065d9394122bc79ea	own_claim 2450 2529	The computation of the derivative matrices’ entries is also greatly complicated
+T5b6758fdfc5ee3932d3ee74d902f8df7	own_claim 10898 10945	completely constrained particles have v i = z i
+T8b0941c741b2af2eddbd17cf66e969b1	own_claim 2424 2448	this is most unappealing
+Tb5cba7ac1d4791e13ab81d8552b0f587	own_claim 2826 2876	we immediately rejected this method of constraints
+Ta7dfe4a8526a3e98fcac14a50defa10a	own_claim 3549 3631	we turned away from penalty methods except in the case of cloth/cloth interactions
+T2135bdf5c75dd89c217637f5e6e05085	data 7785 7793;7826 7881;7899 7904	we solve I − hW ∂v ∂f − h 2 W ∂x ∂f v = hW f 0 + h ∂x ∂f v 0 + z for v
+T2a77b94835aa46c8e78758ea9b177c60	own_claim 4125 4150	doubling the running time
+Te3e7b1ca058f9d44036b4969c9dc3928	background_claim 3405 3456	they do add some additional stiffness to the system
+T4acd9f8b98f3b4cd24a800b5c2a0389a	own_claim 1752 1900	An obvious and quite exact method for constraining a particle is to reduce the number of coordinates describing the particle’s position and velocity
+Tb741fe9c19431d1d906ca477365e60bb	own_claim 6341 6465	By allowing constrained particles to have these sorts of inverse masses, we can build constraints directly into equation (6)
+T7148c87a020e734595212d7b55822a76	own_claim 8028 8139	partially constrained particles will have a v i whose component in the constrained direction(s) is equal to z i
+T7ce81a65319d852ab59733df08412471	data 9736 9749	W is singular
+T2dbde81a9178f3dfcc644ad9ab6c0260	own_claim 14967 15048	it is easy to add one more step to modified-pcg to determine the constraint force
+T49b2faff44d66c0b2b05adc4ffebe634	background_claim 3349 3399	penalty methods do not enforce constraints exactly
+T0a7a83a4f70ea04fb3371d0b4e4c8053	own_claim 15306 15428	we can compute constraint forces at the end of modified-pcg by performing one last matrixvector product to compute A v − b
+T410425bac308b5afd9ca062bb125b20e	own_claim 10496 10588	the component of r i in the particle’s unconstrained direction(s) will be made equal to zero
+Tec788633da9c7de0b1113536702082af	background_claim 4230 4337	an iterative method will generally not enforce the constraints exactly without a large number of iterations
+Tc83f3c1533084630cfca08e8e24ccb0b	own_claim 3806 3885;3904 3923	This involves augmenting the linear system of equation (6) with extra variables and extra equations
+T2c094ec32321ba45cb92ac78b0e54353	own_claim 6211 6335	we prevent a particle from accelerating in either the p or q direction by using the inverse mass matrix 1 (I − pp T − qq T )
+T859b8e973c7403a8f2f271b54c3cad40	own_claim 10675 10758	the component of v i in the particle’s constrained direction(s) will be exactly z i
+T05f54d6bac23dd87cfa5ac45681f9fe9	own_claim 5997 6096	a particle is prevented from accelerating along p by using an inverse mass matrix 1 (I − m i pp T )
+T1a99b062af4b288e4add6c2b048538a6	own_claim 8846 9009	this involves multiplying the matrix of equation (14) with its transpose which doubles the cost of each iteration while squaring the condition number of the system
+T246374b9b095b9530f2b23a04457a116	data 7388 7501	every particle i, let z i be the change in velocity we wish to enforce in the particle’s constrained direction(s)
+T669d94aac917e44b30a7906ec2f8c5d5	own_claim 9847 10042	The solution to the problem of asymmetry is to modify the CG method so that it can operate on equation (15), while procedurally applying the constraints inherent in the matrix W at each iteration
+T9db03b8e1f7042d03ccc706089f28b30	data 14136 14212	we used a penalty method and applied the standard CG method to equation (15)
+T108f1f302b1c0ce24a1513372d467ce9	own_claim 4155 4214	degrading the numerical conditionining of the linear system
+T8a709438d1a882a0b28200589bca1bc1	own_claim 9670 9726	we cannot apply the same transformation to equation (14)
+T5231d0d06895c80bae827482af47c83d	data 15652 15665	equation (16)
+T55a4a18ed6ddebf979f8b2472c492166	own_claim 4501 4547	we turned away from using Lagrange multipliers
+Tab478cd98424885f0a5347a2112f1c75	own_claim 7906 7965	we will obtain a v which is consistent with our constraints
+T6c427d58ec47dd2ae6de6b96d99f0b0c	own_claim 1969 2039	a particle with one dimension of constraint would have two coordinates
+Tb0c97ff43d9bb1d13f3cbd50c80a3356	own_claim 1902 1961	A completely constrained particle would have no coordinates
+Tc01cdc8f89853cce7f606bfe0866f61f	own_claim 1468 1560	we are constraining the particle’s velocity along either two or one mutually orthogonal axes
+T441c72088cfb43498d60fcce9133a889	own_claim 9046 9131	We decided that using a CG method to solve the unsymmetric problem was not acceptable
+Tc0141d0d015ec045c91987baf5013cc0	own_claim 3272 3338	found it to be a not unreasonable constraint enforcement mechanism
+Taaefd75571bd213b0b651577ed65c763	own_claim 15773 15811	We reject this approach as impractical
+T1cf8cd75abf715b62682a2353422aeac	own_claim 1178 1288	it is the particle’s acceleration, or equivalently, the change in the particle’s velocity, that is constrained
+Taeabdfa1d15fae845948d09d03078f56	own_claim 11000 11078	our modified CG method should produce the same result as the regular CG method
+T3133884ed30f06a552c484eee5f6be8b	own_claim 14381 14430	the two methods have similar convergence behavior
+T03859dcea81d3692e6892ed17d16b139	own_claim 1351 1400	we are explicitly setting the particle’s velocity
+T02afd7ad70a22c238ebcefeb46c9167b	own_claim 9810 9844	we cannot multiply through by W −1
+T307a614702b402e858932e0bded72de4	own_claim 3968 4031	this turns a positive definite system into an indefinite system
+Taafc106b4542af6796fbf25a54f2775a	own_claim 7725 7780	we rewrite equation (6) to directly enforce constraints
+Tcb58cada5b013a0beededda01b34d4eb	own_claim 10812 10890	these two conditions imply that unconstrained particles have r i close to zero
+Raa5de9410e42d6e346dd062208599c48	supports-GOLD Arg1:T03859dcea81d3692e6892ed17d16b139 Arg2:T1cf8cd75abf715b62682a2353422aeac
+R11c8935c1e6ef1c69896c3734b74a8de	supports-GOLD Arg1:Tc01cdc8f89853cce7f606bfe0866f61f Arg2:T1cf8cd75abf715b62682a2353422aeac
+R535af69697ded1d6ef6627607574381f	supports-GOLD Arg1:T4acd9f8b98f3b4cd24a800b5c2a0389a Arg2:Tb0c97ff43d9bb1d13f3cbd50c80a3356
+R6458345208eb20d998556af332b4ac9d	supports-GOLD Arg1:T4acd9f8b98f3b4cd24a800b5c2a0389a Arg2:T6c427d58ec47dd2ae6de6b96d99f0b0c
+R57af3ece7021ddddf1a4a24b92a3934d	supports-GOLD Arg1:T07b51d361389d95065d9394122bc79ea Arg2:Tb5cba7ac1d4791e13ab81d8552b0f587
+R2dc66881cffabbd9cd9d97e8505a32f4	supports-GOLD Arg1:T8b0941c741b2af2eddbd17cf66e969b1 Arg2:Tb5cba7ac1d4791e13ab81d8552b0f587
+R6aa929e44d2c7181094377a6daf4affb	supports-GOLD Arg1:Ta43141c67df416072fba84849ad59338 Arg2:Tb5cba7ac1d4791e13ab81d8552b0f587
+R9b7acf59a440f16c6cd2c3362388b366	supports-GOLD Arg1:T49b2faff44d66c0b2b05adc4ffebe634 Arg2:Ta7dfe4a8526a3e98fcac14a50defa10a
+R1eac8ad55fd09983624cdaad6200d33d	supports-GOLD Arg1:Te3e7b1ca058f9d44036b4969c9dc3928 Arg2:Ta7dfe4a8526a3e98fcac14a50defa10a
+R3b7fbcab704a55f2020f3122370d7622	supports-GOLD Arg1:Tc0141d0d015ec045c91987baf5013cc0 Arg2:Ta7dfe4a8526a3e98fcac14a50defa10a
+Re47f3bf33eda01085132c839ba631ff4	supports-GOLD Arg1:Tc83f3c1533084630cfca08e8e24ccb0b Arg2:T307a614702b402e858932e0bded72de4
+R457d1d88727072b9226bc382993480fb	supports-GOLD Arg1:Tec788633da9c7de0b1113536702082af Arg2:T55a4a18ed6ddebf979f8b2472c492166
+Re88e3665762d27fa0f673a6219c7fc9c	supports-GOLD Arg1:T108f1f302b1c0ce24a1513372d467ce9 Arg2:T55a4a18ed6ddebf979f8b2472c492166
+R53f6ba88f06791cd85a6d843ad6db3df	supports-GOLD Arg1:T2a77b94835aa46c8e78758ea9b177c60 Arg2:T55a4a18ed6ddebf979f8b2472c492166
+Rc56a07657e003659bfd31871d482a2db	supports-GOLD Arg1:T2c094ec32321ba45cb92ac78b0e54353 Arg2:Tb741fe9c19431d1d906ca477365e60bb
+Rfe65e8f7eeb84265062e9e2d18054f7c	supports-GOLD Arg1:T05f54d6bac23dd87cfa5ac45681f9fe9 Arg2:Tb741fe9c19431d1d906ca477365e60bb
+Rbc3fc39a4458ab0db626cfd4f4a58b2d	supports-GOLD Arg1:T246374b9b095b9530f2b23a04457a116 Arg2:Taafc106b4542af6796fbf25a54f2775a
+R3bac454122be603d58bada7c400e237e	supports-GOLD Arg1:T2135bdf5c75dd89c217637f5e6e05085 Arg2:Tab478cd98424885f0a5347a2112f1c75
+R5e9423838fa0e242257afc02722e89ac	supports-GOLD Arg1:Taafc106b4542af6796fbf25a54f2775a Arg2:Tab478cd98424885f0a5347a2112f1c75
+Rcd93058ac8c4e587556b77403f20c825	supports-GOLD Arg1:Tab478cd98424885f0a5347a2112f1c75 Arg2:T73f4333d719b35a4f23bcc30ce51f4da
+R443eb3452d6827293ea539d5c4aa3302	supports-GOLD Arg1:Tab478cd98424885f0a5347a2112f1c75 Arg2:T7148c87a020e734595212d7b55822a76
+Rd253aa66836c3159415dc57f234b19ca	supports-GOLD Arg1:T1a99b062af4b288e4add6c2b048538a6 Arg2:T441c72088cfb43498d60fcce9133a889
+R90896026d6f95ecb62618f2b9e8d3eec	supports-GOLD Arg1:T7ce81a65319d852ab59733df08412471 Arg2:T02afd7ad70a22c238ebcefeb46c9167b
+Rec085f50d4375d65a0455f1f3bfaeecb	supports-GOLD Arg1:T02afd7ad70a22c238ebcefeb46c9167b Arg2:T8a709438d1a882a0b28200589bca1bc1
+Rb230f7a088f1991b77578cf9dff2cc2e	supports-GOLD Arg1:T8a709438d1a882a0b28200589bca1bc1 Arg2:T669d94aac917e44b30a7906ec2f8c5d5
+R0037bd0641645d31472f7283642225bf	supports-GOLD Arg1:T441c72088cfb43498d60fcce9133a889 Arg2:T669d94aac917e44b30a7906ec2f8c5d5
+Rc56d7f73211f3cbc4a2236d793745346	supports-GOLD Arg1:T859b8e973c7403a8f2f271b54c3cad40 Arg2:T5b6758fdfc5ee3932d3ee74d902f8df7
+Rfcca44fd29c897195173fc22bff62c30	supports-GOLD Arg1:T410425bac308b5afd9ca062bb125b20e Arg2:Tcb58cada5b013a0beededda01b34d4eb
+R827db5ee226864e2c07571bc738bca52	supports-GOLD Arg1:Tcb58cada5b013a0beededda01b34d4eb Arg2:Taeabdfa1d15fae845948d09d03078f56
+R563d5f32daabb12f1e0e9bc0d4dfc168	supports-GOLD Arg1:T9db03b8e1f7042d03ccc706089f28b30 Arg2:T3133884ed30f06a552c484eee5f6be8b
+R4d7e2083b82a899c9b19e886f030b9e1	supports-GOLD Arg1:T0a7a83a4f70ea04fb3371d0b4e4c8053 Arg2:T2dbde81a9178f3dfcc644ad9ab6c0260
+Rbf0bae0f2df073629029b14b1271cb68	supports-GOLD Arg1:T5231d0d06895c80bae827482af47c83d Arg2:Taaefd75571bd213b0b651577ed65c763

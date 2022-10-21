@@ -1,0 +1,8 @@
+Td1ae087ac62279f899f8b0405c7b5a16	background_claim 1206 1246	all widely used cloth models are elastic
+Tb70b3717d3029ba60e62a4666e6f1ab1	own_claim 801 868	the bending tests are most accurate for samples with straight edges
+T04b19e24f21bd878fcff824c66515774	own_claim 874 894;916 950	some cloth materials tend to curl up at free boundaries
+T5b719a72167d3873bd77a122d815f2a6	own_claim 1252 1285	cloth is clearly far from elastic
+Rc56bbc47e3ab16a9567c8fab6ffd6c9b	contradicts-GOLD Arg1:Tb70b3717d3029ba60e62a4666e6f1ab1 Arg2:T04b19e24f21bd878fcff824c66515774
+R9eb1b0816e1e165a693b9f8b82c3d3be	contradicts-GOLD Arg1:Td1ae087ac62279f899f8b0405c7b5a16 Arg2:T5b719a72167d3873bd77a122d815f2a6
+R94df828faa58ad18f669389c1840a141	contradicts Arg1:Tb70b3717d3029ba60e62a4666e6f1ab1 Arg2:T04b19e24f21bd878fcff824c66515774
+R2aa332f882b4ff90b0307ca4b4f43735	contradicts Arg1:Td1ae087ac62279f899f8b0405c7b5a16 Arg2:T5b719a72167d3873bd77a122d815f2a6

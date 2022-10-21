@@ -1,0 +1,3 @@
+T46f6f6e689aefddac3f1978888504649	background_claim 260 294;317 380	the number of geometrical entities the collision detection algorithm has to handle is considerable
+T87a7e194f75774f1e4548a287418f372	background_claim 442 517	several approaches have tried to expedite the collision detection processes
+R64581b8a3a26d3befb8211f89057db28	supports Arg1:T46f6f6e689aefddac3f1978888504649 Arg2:T87a7e194f75774f1e4548a287418f372

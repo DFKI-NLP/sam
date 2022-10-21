@@ -1,0 +1,44 @@
+T37e32ba306d628002dcf5cdeb1b0fedc	own_claim-GOLD 2199 2274	the wrinkling coefficients need not to be recalculated during the animation
+Tf23db04961feae108f24c2a8e1842f68	own_claim-GOLD 5097 5135	this is a purely geometric requirement
+Te23a30020eb4fbc9634635cfe38947f4	own_claim-GOLD 6449 6510	The algorithm is computationally inexpensive during animation
+Ta0207f261994d9bace15bbc009d9f126	own_claim-GOLD 6852 6934	they depend only on quantities that are known prior to entering the animation loop
+T44b18eb25e6451af19e3b5864efe0ba8	own_claim-GOLD 7327 7388	There are several possibilities to deal with this restriction
+T5bb1ac7dd4721d9608cf0bc34d016d44	own_claim-GOLD 7390 7614	One could decide to restrict the simulations to small deformations where the approximation is valid and/or take into account the higher order terms in the series expansion to extend the range of validity of the approximation
+Tc330bafa6b5c9354d6b4f03138d9e0c4	own_claim-GOLD 7625 7656	we propose a pragmatic approach
+T4b8306dfe496ba1c117e97580c354e00	own_claim-GOLD 7674 7730	equation 5 describes the overall wrinkling behavior only
+T963dfd012750a35e56d89341355309fa	own_claim-GOLD 7732 7804	This frees us conceptually from the “burden of mathematical correctness”
+T92e9aea7c264c5688cfb37709de87993	own_claim-GOLD 7936 8000	the deformations during cloth simulation are moderate in general
+T24f405c8944828e557fe1f5d8aca49b1	own_claim-GOLD 8219 8245	h will be greater than one
+Tbf51cddc79087ded76d711c22b589cec	own_claim-GOLD 8267 8291	it will be less than one
+T5c64e6b149b514be89bad6deeb0d2888	own_claim-GOLD 8293 8385	One can scale, translate and clip it to introduce a finer control required for the animation
+T4d54aee017ca5a0135cbcf0d380463e3	own_claim-GOLD 8397 8492	this transformation of the modulation factor no longer satisfies the area conservation property
+Te30b46105b437f18534542b8a562d98e	own_claim-GOLD 8583 8651	Another very important property of our algorithm is that it is local
+Ta2ec502019976aa0f321022fc82ef114	own_claim-GOLD 8676 8751	wrinkling effects caused by deformations are confined to the deformed areas
+T44fa6b18be09eaf6ff7a45385094ab29	own_claim-GOLD 8753 8798	This is crucial to obtain realistic wrinkling
+Tc97639c77c8e179ba3dd75ba67872cdd	own_claim-GOLD 9216 9308	Wrinkling coefficients for two different patterns on the same triangle will generally differ
+T92edab750ebb1edbd0ac75f0fc4cfd96	own_claim-GOLD 9321 9407	the same deformation applied to a triangle will yield two different modulation factors
+Tc3076cd6d3fb5627db96629e915ecd01	own_claim-GOLD 9575 9731	a deformation in the orthogonal direction of one pattern will result in a smaller modulation factor as compared to a modulation factor for the other pattern
+Tb3a10bea86dd709045cb7715b6572460	own_claim-GOLD 9749 9817	the direction of the deformation “favors one pattern over the other”
+Td4e5951a152dcf494e69da59508f406f	own_claim-GOLD 9819 9891	This property can be used for developing multi-fold wrinkling techniques
+T188d5d08499e98fb16641e8ba5bb6255	own_claim 2199 2274	the wrinkling coefficients need not to be recalculated during the animation
+T45e83791d33a2e3e2a0136c31210f8b5	own_claim 5097 5135	this is a purely geometric requirement
+T306974905f558a981868a4d25dd701ac	own_claim 6449 6510	The algorithm is computationally inexpensive during animation
+Tcc0d7a6feed74fd82304f2c04eab9532	own_claim 6852 6934	they depend only on quantities that are known prior to entering the animation loop
+T796bcb520aa1e067b197609ee999d153	own_claim 7327 7388	There are several possibilities to deal with this restriction
+T8cfbad5f277fa12ada1f5dd2e3e7d3f8	own_claim 7390 7614	One could decide to restrict the simulations to small deformations where the approximation is valid and/or take into account the higher order terms in the series expansion to extend the range of validity of the approximation
+Tdfc35bea89521bd47de21d0234f8bbf5	own_claim 7625 7656	we propose a pragmatic approach
+T1c9f9faf677b8d99c81e49208d01db68	own_claim 7674 7730	equation 5 describes the overall wrinkling behavior only
+T0e16c9d0b3bd005b19541949fce97d48	own_claim 7732 7804	This frees us conceptually from the “burden of mathematical correctness”
+T70f6236179f10f5640f6e355add950e4	own_claim 7936 8000	the deformations during cloth simulation are moderate in general
+T7ae1d3e179578873e9c710308a2ff886	own_claim 8219 8245	h will be greater than one
+T655d2a32798c4cda973e75cd458693ea	own_claim 8267 8291	it will be less than one
+Tdca5b6f9d0de938dc65e7e4fe41963c6	own_claim 8293 8385	One can scale, translate and clip it to introduce a finer control required for the animation
+T6a693665d71013788cad9faca1e777a7	own_claim 8397 8492	this transformation of the modulation factor no longer satisfies the area conservation property
+T71bbd1862515a3dc141a7357d2edc5bc	own_claim 8583 8651	Another very important property of our algorithm is that it is local
+T7f959dfc8a45d43524235eb6feb8f596	own_claim 8676 8751	wrinkling effects caused by deformations are confined to the deformed areas
+T599355f4b8462685c9adad0feee5b440	own_claim 8753 8798	This is crucial to obtain realistic wrinkling
+Te0044efb36176a7dd371d77c6c3dc0d5	own_claim 9216 9308	Wrinkling coefficients for two different patterns on the same triangle will generally differ
+Tc5692dc5d05d1ca35ba19550d33d6844	own_claim 9321 9407	the same deformation applied to a triangle will yield two different modulation factors
+T9d8cde8699480b7091cbb0b48d289b00	own_claim 9575 9731	a deformation in the orthogonal direction of one pattern will result in a smaller modulation factor as compared to a modulation factor for the other pattern
+T5fbe87602c73c7f05ca44ffb59971461	own_claim 9749 9817	the direction of the deformation “favors one pattern over the other”
+T11e11b905c25da2e209cb823f18198cd	own_claim 9819 9891	This property can be used for developing multi-fold wrinkling techniques

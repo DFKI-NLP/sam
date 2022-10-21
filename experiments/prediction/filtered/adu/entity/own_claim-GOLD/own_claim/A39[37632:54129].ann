@@ -1,0 +1,128 @@
+T65fad8785699cbfd34a06dccd16e7b03	own_claim-GOLD 359 446	The techniques we describe in this section could be used for multi-particle constraints
+T3f936b57742db7e148b963f9ced35db4	own_claim-GOLD 457 512	constraints that share particle would need to be merged
+T7023d7ed9d70bcc94f1edd18d5d253c3	own_claim-GOLD 520 554	a set of four-particle constraints
+T3c1662467963ac240724ea4c9ea97cdb	own_claim-GOLD 742 792	we handle cloth/cloth contacts with strong springs
+Ta8668684932401118e15a75b818349eb	own_claim-GOLD 1178 1288	it is the particle’s acceleration, or equivalently, the change in the particle’s velocity, that is constrained
+T643f6453f0b0334120a38ffc90088ff3	own_claim-GOLD 1351 1400	we are explicitly setting the particle’s velocity
+Tda97ee760662e1020f7e36103976118d	own_claim-GOLD 1902 1961	A completely constrained particle would have no coordinates
+T3ac9441b9268f8c6bea32ffde6816e9a	own_claim-GOLD 1969 2039	a particle with one dimension of constraint would have two coordinates
+Tddaadacbc135eb7354218dfb0074b8da	own_claim-GOLD 2041 2057	This is possible
+Ta7927fde750cbef6e6eaf74714e3a177	own_claim-GOLD 2062 2097	it complicates the system immensely
+T9eae3db663ac8b91afb68e58979015b6	own_claim-GOLD 2424 2448	this is most unappealing
+T3be782deb75bf1a47da8cac179717600	own_claim-GOLD 2450 2529	The computation of the derivative matrices’ entries is also greatly complicated
+T6c27a491061781f0071c44a9078bf3c3	own_claim-GOLD 2669 2799	correct constraint-release behavior between cloth and solid objects is difficult to achieve using a reduced coordinate formulation
+T62a8c9f98320b5becb13faf48fa62b7d	own_claim-GOLD 2826 2876	we immediately rejected this method of constraints
+T1bf75016cb2cf556975a336b8c9d453c	own_claim-GOLD 3133 3191	the usual objections to enforcing constraints with springs
+T2ad1739602523886c8a516a94d1616dc	own_claim-GOLD 3213 3240	do not carry as much weight
+T47e5fd00dc55b75894d31716f2cf1232	own_claim-GOLD 3549 3631	we turned away from penalty methods except in the case of cloth/cloth interactions
+Td88b685fa72d35774c23d8d221cd310d	own_claim-GOLD 3762 3804	into our system to satisfy the constraints
+T07abf4b76c08cf8be067c1380e3cd96f	own_claim-GOLD 3806 3885	This involves augmenting the linear system of equation (6) with extra variables
+T690e38262c6b7a6e1d2ac95cbe7fa04d	own_claim-GOLD 3968 4031	this turns a positive definite system into an indefinite system
+Te5ba3eaaa4516680ed8919598be8dd4c	own_claim-GOLD 4050 4115	iterative methods such as CG will need to square the system first
+Tfaab36fc04abec59411a1b80394c0d77	own_claim-GOLD 4340 4394	A direct method for solving the augmented system would
+Tea5485cfaab0671d5da2b1e390e6cf67	own_claim-GOLD 4405 4423	avoid this problem
+T810264560eb2920bfd06ec6834c553a7	own_claim-GOLD 4433 4496	the constraint method we describe steps past these difficulties
+T0d6129fdd993a776e305e95b48644cad	own_claim-GOLD 4501 4547	we turned away from using Lagrange multipliers
+T388672f79ecc057c9fa751d11b7c9268	own_claim-GOLD 4610 4688	The idea behind our constraint enforcement mechanism is described quite simply
+T79fdb3a7082355887e1cdbe4b74ed318	own_claim-GOLD 4699 4778	the actual implementation is somewhat more complicated, to maximize performance
+T764f1df3d90569d537009e1deae9cc2c	own_claim-GOLD 4780 4858	A dynamic simulation usually requires knowledge of the inverse mass of objects
+T7a63a6b8271897f27d4baf2b4b976e0a	own_claim-GOLD 5058 5120	it becomes trivial to enforce constraints by altering the mass
+T895e8f32c8732c3b62961f1b471b0af3	own_claim-GOLD 5229 5266	we give the particle an infinite mass
+Tc6a349bceca423bbe5476acae3c3ff65	own_claim-GOLD 5538 5588	we normally think of a particle’s mass as a scalar
+Tf072fe67c05f204cf855b395496584f6	own_claim-GOLD 5590 5614	we need not always do so
+T9e71fb945f5ab46e7cdf44d1ac023e3a	own_claim-GOLD 5997 6096	a particle is prevented from accelerating along p by using an inverse mass matrix 1 (I − m i pp T )
+T3d7d115433792578e64b183cafbc62b8	own_claim-GOLD 6211 6335	we prevent a particle from accelerating in either the p or q direction by using the inverse mass matrix 1 (I − pp T − qq T )
+T1d93fa66734335b68555515d6802a585	own_claim-GOLD 7197 7290	We are not limited to constraining particles to have zero accelerations in certain directions
+Te42a54dd261608538a2544e95da249f0	own_claim-GOLD 7300 7382	we control exactly what the change in velocity is along the constrained directions
+T081f3b8dc650ce749f5e8169b1f8e455	own_claim-GOLD 7517 7585	we can choose any value of z i for a completely constrained particle
+Tbd64bd57af5ab3e44d2e508a37a7e693	own_claim-GOLD 7906 7965	we will obtain a v which is consistent with our constraints
+T61a0580041593114679edb0a698ec845	own_claim-GOLD 7967 8019	Completely constrained particles will have v i = z i
+T33baa6edd29963eb00fad3ad234594be	own_claim-GOLD 8028 8139	partially constrained particles will have a v i whose component in the constrained direction(s) is equal to z i
+Ta31ad075059fabcd1e7546189b0dff41	own_claim-GOLD 8272 8303	it worked exactly as advertised
+Tc73994149270dd0fb1ee908e92b64390	own_claim-GOLD 8738 8840	We could apply a CG method to the unsymmetric matrix of equation (14) by use of the “normal equations”
+Tb720a448b1ac7ee4c002673e8ea61953	own_claim-GOLD 8846 9009	this involves multiplying the matrix of equation (14) with its transpose which doubles the cost of each iteration while squaring the condition number of the system
+T193a0ee4612b2a3ebe8c890b72b5ba27	own_claim-GOLD 9272 9326	they work best on positive definite symmetric matrices
+T17a54874f3fec9f32245ab192e2c9318	own_claim-GOLD 9670 9726	we cannot apply the same transformation to equation (14)
+T6bd1b3586d31bf9ea6bcf3f9a27ac3f8	own_claim-GOLD 9810 9844	we cannot multiply through by W −1
+T18f8ab7de9767edb4b76f3ffd9404a32	own_claim-GOLD 10400 10471	our modified CG method will try to find v that satisfies two conditions
+Ta45c43b2b448a6594cd158c8bab5d86c	own_claim-GOLD 10812 10890	these two conditions imply that unconstrained particles have r i close to zero
+T17833d53bf0462aa3816ba0b001560cd	own_claim-GOLD 10898 10945	completely constrained particles have v i = z i
+T1d4d0a595b8c127df0e560108a05878a	own_claim-GOLD 11000 11078	our modified CG method should produce the same result as the regular CG method
+T7b8fc39c39194e799e81d33d9ec1eb33	own_claim-GOLD 13129 13166	our stopping criterion should as well
+Tc42a9b57ef78b1fe91dc19046b681096	own_claim-GOLD 13171 13197	we add filtering to line 3
+T76635c2e4ed92a1594883b41c6aa9d15	own_claim-GOLD 13308 13341	we add filtering at lines 4 and 8
+T8ec5e0674222f8f85fa763768c218ec2	own_claim-GOLD 13611 13655	More elaborate preconditioners could be used
+T92da0b26430c4ca15e7ec8fe280403ea	own_claim-GOLD 14258 14349	we did not notice any substantial change in the number of iterations required by the method
+Tf69a7714db62e48afd9e2ca003ff1d74	own_claim-GOLD 14381 14430	the two methods have similar convergence behavior
+T86a57bc5acaedeaad1aea6e99878cd72	own_claim-GOLD 14466 14586	the running time is close to O(n 1.5 ), which is what unmodified CG would be expected to deliver on this sort of problem
+T4ce33d2b6ded9fc7c77449ac63a7093e	own_claim-GOLD 14730 14838	we need to know what the actual force of constraint is, in order to determine when to terminate a constraint
+T3fa03062c56d31e436aec3d98174e990	own_claim-GOLD 14854 14952	we need to know the constraint force actually exerted in order to model frictional forces properly
+Td4cd1edd3eb6daea2998c4217529c79f	own_claim-GOLD 14967 15048	it is easy to add one more step to modified-pcg to determine the constraint force
+T5d192f26dc88f216e72d4b022b7771ea	own_claim-GOLD 15202 15298	e i is exactly the extra constraint force that must have been supplied to enforce the constraint
+T22d22a08b8ae99bb0ac4632fe66727a1	own_claim-GOLD 15306 15428	we can compute constraint forces at the end of modified-pcg by performing one last matrixvector product to compute A v − b
+T5bbd7ab70bf9ac483d4872d014ecaaab	own_claim-GOLD 15492 15556	the extra matrix-vector product to compute e really is necessary
+Tc963836e8859a113d93f77793686273b	own_claim-GOLD 16030 16065	Friction presents a similar problem
+Td5c6f928a09fec16237766924abbcbf0	own_claim 359 446	The techniques we describe in this section could be used for multi-particle constraints
+T8a3d982a495c9b71cb4e6fb53cdc8367	own_claim 457 512	constraints that share particle would need to be merged
+T5204563e9593dc63c2492bdebab56128	own_claim 520 554	a set of four-particle constraints
+T8475a09338f08d486740ae3f0fa64f43	own_claim 742 792	we handle cloth/cloth contacts with strong springs
+T1cf8cd75abf715b62682a2353422aeac	own_claim 1178 1288	it is the particle’s acceleration, or equivalently, the change in the particle’s velocity, that is constrained
+T03859dcea81d3692e6892ed17d16b139	own_claim 1351 1400	we are explicitly setting the particle’s velocity
+Tb0c97ff43d9bb1d13f3cbd50c80a3356	own_claim 1902 1961	A completely constrained particle would have no coordinates
+T6c427d58ec47dd2ae6de6b96d99f0b0c	own_claim 1969 2039	a particle with one dimension of constraint would have two coordinates
+T124272cf435b6f7d8b165eb7a5912fbc	own_claim 2041 2057	This is possible
+T3f1cab9a67aae4ff0c1a08e0a587ba77	own_claim 2062 2097	it complicates the system immensely
+T8b0941c741b2af2eddbd17cf66e969b1	own_claim 2424 2448	this is most unappealing
+T07b51d361389d95065d9394122bc79ea	own_claim 2450 2529	The computation of the derivative matrices’ entries is also greatly complicated
+Tbb72a86450b3725d27fa93aed0ab4489	own_claim 2669 2799	correct constraint-release behavior between cloth and solid objects is difficult to achieve using a reduced coordinate formulation
+Tb5cba7ac1d4791e13ab81d8552b0f587	own_claim 2826 2876	we immediately rejected this method of constraints
+T1fe6777badcb9c335ca334f245a02a6f	own_claim 3133 3191	the usual objections to enforcing constraints with springs
+T0161b3f3267f7073a709cc07e65d76bc	own_claim 3213 3240	do not carry as much weight
+Ta7dfe4a8526a3e98fcac14a50defa10a	own_claim 3549 3631	we turned away from penalty methods except in the case of cloth/cloth interactions
+Ted75c0df2a1fff3049b49d42509806ee	own_claim 3762 3804	into our system to satisfy the constraints
+Ta7d02fd13034b8962fa9e2cf199e17fe	own_claim 3806 3885	This involves augmenting the linear system of equation (6) with extra variables
+T307a614702b402e858932e0bded72de4	own_claim 3968 4031	this turns a positive definite system into an indefinite system
+Tc279e4c09261181dced53447fd9fc688	own_claim 4050 4115	iterative methods such as CG will need to square the system first
+Te9ab56d8711afa2dbdffbb6a85eccf9c	own_claim 4340 4394	A direct method for solving the augmented system would
+T8c2b61d88c6426d788afb5a095390043	own_claim 4405 4423	avoid this problem
+T12623c0e0ce4be170c6f2ed1a6f18091	own_claim 4433 4496	the constraint method we describe steps past these difficulties
+T55a4a18ed6ddebf979f8b2472c492166	own_claim 4501 4547	we turned away from using Lagrange multipliers
+Tb1600647f840169a3f9fe1086b55fc9e	own_claim 4610 4688	The idea behind our constraint enforcement mechanism is described quite simply
+T220ea7bb119b04d8f853afc445462527	own_claim 4699 4778	the actual implementation is somewhat more complicated, to maximize performance
+T7db1999016a57398c26cd0f6d9f075ac	own_claim 4780 4858	A dynamic simulation usually requires knowledge of the inverse mass of objects
+T06ea4cd6deac7b081e20e639aa38d674	own_claim 5058 5120	it becomes trivial to enforce constraints by altering the mass
+T522564047bc489eda75ccc86c09f198a	own_claim 5229 5266	we give the particle an infinite mass
+T98b96361a1291d149894ae587a644fd2	own_claim 5538 5588	we normally think of a particle’s mass as a scalar
+T5a802e4e84cb62fadbe6b5062009e3f0	own_claim 5590 5614	we need not always do so
+T05f54d6bac23dd87cfa5ac45681f9fe9	own_claim 5997 6096	a particle is prevented from accelerating along p by using an inverse mass matrix 1 (I − m i pp T )
+T2c094ec32321ba45cb92ac78b0e54353	own_claim 6211 6335	we prevent a particle from accelerating in either the p or q direction by using the inverse mass matrix 1 (I − pp T − qq T )
+T4df98fa08b9af24c03384c7a1a6e2fff	own_claim 7197 7290	We are not limited to constraining particles to have zero accelerations in certain directions
+T231ee6f7807646fbced02bba7f6ccd3c	own_claim 7300 7382	we control exactly what the change in velocity is along the constrained directions
+T89c485f6f93c3ff463b4251a07c1fad7	own_claim 7517 7585	we can choose any value of z i for a completely constrained particle
+Tab478cd98424885f0a5347a2112f1c75	own_claim 7906 7965	we will obtain a v which is consistent with our constraints
+T73f4333d719b35a4f23bcc30ce51f4da	own_claim 7967 8019	Completely constrained particles will have v i = z i
+T7148c87a020e734595212d7b55822a76	own_claim 8028 8139	partially constrained particles will have a v i whose component in the constrained direction(s) is equal to z i
+Tedeac9bced6f649a7219e2fa3e66c0b5	own_claim 8272 8303	it worked exactly as advertised
+T984b431f1bdf65d93ad12c2db83fa56a	own_claim 8738 8840	We could apply a CG method to the unsymmetric matrix of equation (14) by use of the “normal equations”
+T1a99b062af4b288e4add6c2b048538a6	own_claim 8846 9009	this involves multiplying the matrix of equation (14) with its transpose which doubles the cost of each iteration while squaring the condition number of the system
+Te429c2536f7d41dc9f14ac0c72b35ec8	own_claim 9272 9326	they work best on positive definite symmetric matrices
+T8a709438d1a882a0b28200589bca1bc1	own_claim 9670 9726	we cannot apply the same transformation to equation (14)
+T02afd7ad70a22c238ebcefeb46c9167b	own_claim 9810 9844	we cannot multiply through by W −1
+T6633a40d04da9e64ae137830fbef2053	own_claim 10400 10471	our modified CG method will try to find v that satisfies two conditions
+Tcb58cada5b013a0beededda01b34d4eb	own_claim 10812 10890	these two conditions imply that unconstrained particles have r i close to zero
+T5b6758fdfc5ee3932d3ee74d902f8df7	own_claim 10898 10945	completely constrained particles have v i = z i
+Taeabdfa1d15fae845948d09d03078f56	own_claim 11000 11078	our modified CG method should produce the same result as the regular CG method
+Tf4d576803188c46c634bb8d50ef5419e	own_claim 13129 13166	our stopping criterion should as well
+T2ee81361be9dc9c907e23f3abc2732cf	own_claim 13171 13197	we add filtering to line 3
+T7c1c7fbfdf4b4a73ccfabc066016757f	own_claim 13308 13341	we add filtering at lines 4 and 8
+Te20ad609e8baf4ec6aa86bb8529c7346	own_claim 13611 13655	More elaborate preconditioners could be used
+Tc4f1aad01c21533334b47d8f47b98203	own_claim 14258 14349	we did not notice any substantial change in the number of iterations required by the method
+T3133884ed30f06a552c484eee5f6be8b	own_claim 14381 14430	the two methods have similar convergence behavior
+T3ede4b0adce3bcd012d5098ef5d06f3f	own_claim 14466 14586	the running time is close to O(n 1.5 ), which is what unmodified CG would be expected to deliver on this sort of problem
+Tef38e923128fd70ff58c3ab8b4ef96e1	own_claim 14730 14838	we need to know what the actual force of constraint is, in order to determine when to terminate a constraint
+Tef569e202ba988aff6893c0d36a3e11b	own_claim 14854 14952	we need to know the constraint force actually exerted in order to model frictional forces properly
+T2dbde81a9178f3dfcc644ad9ab6c0260	own_claim 14967 15048	it is easy to add one more step to modified-pcg to determine the constraint force
+Ta814dece561d075f044eddaf1b6f99bd	own_claim 15202 15298	e i is exactly the extra constraint force that must have been supplied to enforce the constraint
+T0a7a83a4f70ea04fb3371d0b4e4c8053	own_claim 15306 15428	we can compute constraint forces at the end of modified-pcg by performing one last matrixvector product to compute A v − b
+T5d841e48174254058c0acff7666b08fa	own_claim 15492 15556	the extra matrix-vector product to compute e really is necessary
+T3445df49f380ba80e6228eff2156bd1f	own_claim 16030 16065	Friction presents a similar problem

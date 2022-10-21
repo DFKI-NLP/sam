@@ -1,0 +1,9 @@
+T37ab3324d6c780c9a2ef31e15b037d0c	own_claim-GOLD 4161 4224	We also introduce a simple, unified treatment of damping forces
+T325ee13811f6d3b4c7144cb393c75210	own_claim-GOLD 4440 4520	our implementation differs greatly from the implementation by Terzopoulos et al.
+T31ccccd44ebde57ec392209c81d83726	own_claim-GOLD 5063 5119	explicit methods for cloth require time O(n 2 )—or worse
+T5611c073cd14179a6dee0e203fecb7cd	own_claim-GOLD 5626 5635	The speed
+Td5e36e9cd3fb5480880120ef21f9f6ac	own_claim-GOLD 5647 5706	with which our sparse linear systems can be robustly solved
+Tf5db1803cf08b296711e39cd66712755	own_claim-GOLD 5955 6010	we treat all forces as part of the implicit formulation
+T0fd51e6f8cee175f61c2c427b263b34c	own_claim-GOLD 6046 6095	numerical stability has not been an issue for our
+Tff8ae22874a2fd82dc11b738584f1b41	own_claim-GOLD 6626 6640	is problematic
+T932120a9308af6a1a4d4ab8e272e710e	own_claim-GOLD 8449 8465	we show garments

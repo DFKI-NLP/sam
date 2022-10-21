@@ -1,0 +1,3 @@
+T2ba4f5da96e95293ce8affefd73bc1db	own_claim 6797 6922	Without a constraint on those particles’ velocities there is no guarantee that they will go exactly where we want in one step
+T2af369b3af31fdfd5e577989f0c33c2d	own_claim 6928 7064	the ability to induce sizeable jumps in position without excessively stiff spring forces adds greatly to the stability of the simulation
+R5c5d962fc90f27fa2135f0793e5a54cb	contradicts Arg1:T2ba4f5da96e95293ce8affefd73bc1db Arg2:T2af369b3af31fdfd5e577989f0c33c2d

@@ -1,0 +1,4 @@
+T3a35196763e15ce3bdc58f056ab29a21	own_claim 2425 2492	the empiricism introduced later does not actually conserve the area
+T5afd2845492d1fa26d8d3e1f60b775a5	background_claim 2327 2383	The method is inspired by the area conservation property
+R8dcecc8d41abbe4dfa6953cd1a6fb3eb	contradicts-GOLD Arg1:T5afd2845492d1fa26d8d3e1f60b775a5 Arg2:T3a35196763e15ce3bdc58f056ab29a21
+Rd1da26ccab00c680b7cc9c5e9cae26ac	contradicts Arg1:T5afd2845492d1fa26d8d3e1f60b775a5 Arg2:T3a35196763e15ce3bdc58f056ab29a21

@@ -1,0 +1,12 @@
+Tcd3111554c854d1440a1f1beb0278d23	own_claim-GOLD 613 696	Each trial took approximately 50 hours to converge on a 2.8GHz Intel Xeon processor
+T6242b24e9775ddf183ba195acfa204fc	own_claim-GOLD 769 815	we started the optimizations on the two trials
+Te50467345a043b13511d88f9177027b6	own_claim-GOLD 829 877	with the same initial guess and chose parameters
+T03a6d88090acedad3fceaec7a1a0bd79	own_claim-GOLD 890 938	that minimized the total error on the two trials
+T6b281dce33466b470996a1cbed822ac1	own_claim-GOLD 2014 2063	we see that the final error values are very close
+Tedad9e139d0ae8dadcb5f427c8e5e5d8	own_claim-GOLD 2330 2514	static tests cannot be used to estimate dynamic parameters like stretch and shear damping or air drag and motivates the waving test, which excites both the static and waving parameters
+T3f71e374b5f8571b86c7369432e91f2f	own_claim-GOLD 2529 2579	We optimize for nine parameters in the waving test
+T26e84f5083639f9247ba7c6c0dc3563c	own_claim-GOLD 2581 2657	the six cloth stiffness and damping parameters and three air drag parameters
+Tfa9cc8b6375aa6a1c25845b2a9d0d072	own_claim-GOLD 3530 3623	This approach seems to produce plausible results with skirts and other validation experiments
+Ta250f7ac96a68df493d6b6e798eb2519	own_claim-GOLD 3650 3788	a more general solution for parameter identification using our framework is to simultaneously optimize across multiple trials of different
+T06dd35dc21a31b129676ec5a3c6147fb	own_claim-GOLD 4390 4479	each fabric in simulation has a minimum error when compared to its counterpart in reality
+T5522fe390d5d685b8f3702959c57e625	own_claim-GOLD 4752 4824	a good visual match between corresponding frames in simulation and video

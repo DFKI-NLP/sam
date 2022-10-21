@@ -1,0 +1,23 @@
+T530404322afd109a0f695634b97dd4b6	data 11049 11065	Choi and Ko 2002
+T71777673bbe85b327e8fdba321a4f56b	own_claim 11218 11296	the first iteration of the fast projection method eliminates first-order error
+Tbe7ef85d8d4a2b296490ef082442c091	own_claim 11298 11353	The remaining iterations perturb F only to higher-order
+T034baeb68e17b8ffc59924876184bd7d	background_claim 10963 11016;11067 11115	F ∈ O(h 2 ) is considered acceptable in many contexts halt the Newton process after a single iteration
+T54c369befeabc0e03a11511e6647a2cc	own_claim 3195 3265	(Q3) remains, but is automatically remedied by decreasing the timestep
+T4a6b38f328e34e7734b931065d62990b	background_claim 2730 2759	in practice, they occur often
+T29277dca606a4c5a539e9262755996ff	own_claim 3165 3193	resolves (Q1), (Q2) and (Q4)
+T1089a119f22c1666fa602b38a20cd715	background_claim 2113 2177	discusses these drawbacks in SHAKE but does not offer a solution
+Tc67662f933496a6675c0214409e9f127	background_claim 2655 2728	These four cases correspond to rapid change in edge length or orientation
+T5bf9827582b68bb7be07d6eeadbfd176	data 11025 11047	Baraff and Witkin 1998
+T74b5e6d6fd692e920884034fc02412ee	data 2086 2103	Barth et al. 1994
+T07ffb5e7af7e2588f065b331447a7d53	data 2039 2047	Figure 2
+T50b32ec1ed93252d81f05fba5bc2f6a0	data 3143 3153	Appendix A
+Tdc2aa284a560cf22c36b79c6251d5947	background_claim 1895 1992	enforcing length-preserving constraints with SHAKE fails for four common geometric configurations
+R7c399d7b11b3c5a550da095c45e0bdef	supports Arg1:T50b32ec1ed93252d81f05fba5bc2f6a0 Arg2:T29277dca606a4c5a539e9262755996ff
+R31eae0cf641792a4fe962b98ffdaffd0	supports Arg1:T530404322afd109a0f695634b97dd4b6 Arg2:T034baeb68e17b8ffc59924876184bd7d
+Rbc92f4a733c63b46259c462f582f03d7	supports Arg1:T5bf9827582b68bb7be07d6eeadbfd176 Arg2:T034baeb68e17b8ffc59924876184bd7d
+R7c33b126a10d1a0179604602c8843e24	supports Arg1:T74b5e6d6fd692e920884034fc02412ee Arg2:Tdc2aa284a560cf22c36b79c6251d5947
+R4174f8b17194c5a70da86bdc3a0ee4a4	supports Arg1:T07ffb5e7af7e2588f065b331447a7d53 Arg2:T1089a119f22c1666fa602b38a20cd715
+R017b849bf96bb4c240be9766bd340535	supports Arg1:T4a6b38f328e34e7734b931065d62990b Arg2:Tc67662f933496a6675c0214409e9f127
+R67092d01ea6bd088bc49ef5384697a0b	supports Arg1:Tc67662f933496a6675c0214409e9f127 Arg2:T4a6b38f328e34e7734b931065d62990b
+R58a0869cad3786a8ddcb825433ea0959	supports Arg1:T50b32ec1ed93252d81f05fba5bc2f6a0 Arg2:T54c369befeabc0e03a11511e6647a2cc
+R6ee4c7a73d4982a92cf37cd22e4da8e4	supports Arg1:T71777673bbe85b327e8fdba321a4f56b Arg2:Tbe7ef85d8d4a2b296490ef082442c091

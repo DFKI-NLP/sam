@@ -1,0 +1,14 @@
+Tf10f5260afbd7dbf40fdf84e2e8451bf	own_claim-GOLD 1853 2016	Our method gets more information per pixel than previous methods by drawing from the full colorspace instead of a small finite set of colors in the printed pattern
+T60143333b87f05a36afb5cacd6850f6d	own_claim-GOLD 2082 2173	we use strain constraints to eliminate candidates in an iterative search for correspondence
+Tb14995a4e8832bb65a83e9af24e72b43	own_claim-GOLD 2191 2302	these two modifications eliminate the need for neighborhood information in the final iteration of our algorithm
+Te794504b6e4b781bb4cd79e32bd9da4a	own_claim-GOLD 2317 2406	we determine correspondence using regions that are 25 times smaller than in previous work
+Ta0be8576f1c0c23ca7be81dfbe266383	own_claim-GOLD 2861 2922	We suggest two tools to evaluate marker-based capture systems
+T6ad7ac344d716c2af283a5939337e606	own_claim-GOLD 3005 3028	Efficiency is important
+T30a3db482ccd1d962fc4943741eb2ae3	own_claim-GOLD 3377 3458	By doing simple bit calculations, we direct our design efforts more appropriately
+T4741f7510692b8cfff6fd2437d9c3703	own_claim 1853 2016	Our method gets more information per pixel than previous methods by drawing from the full colorspace instead of a small finite set of colors in the printed pattern
+T64f6e7fa49a9cd3711d8c32c46b652b4	own_claim 2082 2173	we use strain constraints to eliminate candidates in an iterative search for correspondence
+T70d37126c66704dff2720bd397e05b36	own_claim 2191 2302	these two modifications eliminate the need for neighborhood information in the final iteration of our algorithm
+T70dde8c2756fbc454bb56ab30e773882	own_claim 2317 2406	we determine correspondence using regions that are 25 times smaller than in previous work
+Tb3d7c854721c24eb9af648574c084cb2	own_claim 2861 2922	We suggest two tools to evaluate marker-based capture systems
+T6b2cd7a6cdf1606be671f89e3dd62e86	own_claim 3005 3028	Efficiency is important
+Te1c7e06c8df90f5a82e58f051860dfe1	own_claim 3377 3458	By doing simple bit calculations, we direct our design efforts more appropriately

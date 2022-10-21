@@ -1,0 +1,55 @@
+Tceacd0a6fd40f7a4df4bce60cc7ecf86	data 46 94	a quadrilateral mesh with n vertices and m edges
+T5e71828400c0535d429fdb224ee96fb9	background_claim 96 219	the numerical integration algorithm for constrained dynamics can be developed directly from the augmented Lagrange equation
+Td6746bc6a0588c93b4ee31c035e0b775	data 222 234	Marsden 1999
+T953a63d25f01d050b2e7f3879277a504	data 1119 1129	simulation
+Ta4152a198b2c699df3e2c2fecf78a935	own_claim 1131 1232	we must discretize (3) and (4) in time using one of various schemes, each with benefits and drawbacks
+T8d49cb1f0c956570bfc620aa3c3bbcac	own_claim 1234 1331	One may choose differing explicit or implicit schemes for the potential and the constraint forces
+Ted4293420158ec4e0df000998350cd98	data 1402 1420	Ascher et al. 1997
+T29e981f4a8c7012bb65ef3415bc88d28	background_claim 1642 1727	One widely-used family of discretizations includes SHAKE and RATTLE, which extend the
+T2ce225ee81d7f7aa866954d27264454b	background_claim 1744 1757	Verlet scheme
+Te8e1b43d76dab5f737eecb6b1f3a7b59	data 1760 1778	Hairer et al. 2002
+Ta2860bc0bab93c2978e14c0150a1fccb	background_claim 1780 1878	by considering a constraint force direction, −∇C(x) T , evaluated at the beginning of the timestep
+Tdc2aa284a560cf22c36b79c6251d5947	background_claim 1895 1992	enforcing length-preserving constraints with SHAKE fails for four common geometric configurations
+T07ffb5e7af7e2588f065b331447a7d53	data 2039 2047	Figure 2
+T74b5e6d6fd692e920884034fc02412ee	data 2086 2103	Barth et al. 1994
+T1089a119f22c1666fa602b38a20cd715	background_claim 2113 2177	discusses these drawbacks in SHAKE but does not offer a solution
+Tc67662f933496a6675c0214409e9f127	background_claim 2655 2728	These four cases correspond to rapid change in edge length or orientation
+T4a6b38f328e34e7734b931065d62990b	background_claim 2730 2759	in practice, they occur often
+Tb60bea29d35874c0ff363bbf8b99911f	own_claim 3042 3116	evaluating the constraint direction, −∇C(x) T , at the end of the timestep
+T50b32ec1ed93252d81f05fba5bc2f6a0	data 3143 3153	Appendix A
+T29277dca606a4c5a539e9262755996ff	own_claim 3165 3193	resolves (Q1), (Q2) and (Q4)
+T54c369befeabc0e03a11511e6647a2cc	own_claim 3195 3265	(Q3) remains, but is automatically remedied by decreasing the timestep
+Tee4aad896e014b53023e2551e0938583	own_claim 4274 4346	the correction of the unconstrained step is due to the constraint forces
+T4ee6ab12b555ae8bbe4c8ba889a2ef45	own_claim 4553 4586	Solving for an ICD step is costly
+T938b25f263ec0bdfa6bedab30f54162f	data 4596 4619	there are many unknowns
+Tb6689dc9ab9f65f7061dd410fe4c2db5	data 4632 4737	each Newton step requires the solution of an indefinite linear system, whose matrix is costly to assemble
+T91ff1869258f5cd9c087597972415e06	data 4742 4746	§4.3
+T8c3d2f9c082d95bb7ac88fb2ed85523c	own_claim 4748 4867	we develop an approximation to ICD that addresses these drawbacks without sacrificing constraint accuracy or robustness
+Tca8c2eced71edbd6c210bc9d1c85c7a7	background_claim 5335 5396	Methods of this form are known as manifold-projection methods
+Te24a5ed38706141f36293a0593bca047	data 5399 5417	Hairer et al. 2002
+Te09145f7a6b6b227906a46b84e7a2440	own_claim 7870 7959	Fast projection also uses a sequence of iterations, but it relaxes the requirement of SAP
+T4596cd4d7d61c898f335abe14e0fbde7	own_claim 8337 8410	Projection onto the constraint manifold occurs at a fixed instant in time
+T6d3a58d144ac9194791c047739eaa250	data 9578 9616	the linear system matrix involves M −1
+T38e2dc5c9e141955cc899aa1e7ac3aa3	own_claim 9619 9677	the assembly of this system is most efficient for diagonal
+Tf78af165baa1eb074ff0fbbbe0c54e01	data 9685 9691	lumped
+Tcd12f8046326208a36f34ac1c54528dd	own_claim 9693 9706	mass matrices
+Tedba7a8894d73912f0a169534d8e5087	own_claim 9780 9843	As with ICD/SAP, a fast projection step requires a linear solve
+T90635534fddf0ddb56593ad4c5dbfe18	own_claim 9854 9878	fast projection’s system
+T5979a6c0c3b41617dfa29f668bd7486d	data 9881 9882	7
+T2f3da528b6f1d454996b5d1d6374c76a	own_claim 9885 9895	is smaller
+Tdc827f44fc0ff2b3c79c7a15c6fd1244	data 9897 9928	≈ 2n × 2n compared to ≈ 5n × 5n
+T60b56b85f1265a4c4875e3ce2ad37116	own_claim 9931 9948	positive definite
+T2e67ddfcbfd5e2d5f1b91be4f15a0eff	own_claim 9974 9985	and sparser
+Tfa3699aacda934a19c06b4f15f845778	own_claim 9999 10087	it is considerably cheaper to evaluate, assemble, and solve than its ICD/SAP counterpart
+T34aa912c11209bda3a442ed4a4d9cdb5	own_claim 10472 10536	fast projection exactly solves C = 0 while it approximates F = 0
+T3c968675915702ed5cc9f39cf99b6526	own_claim 10538 10618	One important question is whether the fast projection’s error in F is acceptable
+Tea857e3604340ea65efd88260fb45473	background_claim 10963 11016	F ∈ O(h 2 ) is considered acceptable in many contexts
+T5bf9827582b68bb7be07d6eeadbfd176	data 11025 11047	Baraff and Witkin 1998
+T530404322afd109a0f695634b97dd4b6	data 11049 11065	Choi and Ko 2002
+T00b90779873f8fce72454f315bc230b1	background_claim 11067 11115	halt the Newton process after a single iteration
+Tcc64088ec0b04a3f47ebb8f0b9085ecc	data 11207 11215	Figure 3
+T71777673bbe85b327e8fdba321a4f56b	own_claim 11218 11296	the first iteration of the fast projection method eliminates first-order error
+Tbe7ef85d8d4a2b296490ef082442c091	own_claim 11298 11353	The remaining iterations perturb F only to higher-order
+T9e17ea62194c27a5ede1367d127b1386	own_claim 12387 12505	We implement fast projection as a velocity filter, enabling easy integration into our existing cloth simulation system
+T1a511a3c66cb5d2550ddacb8ce1f80f0	data 12516 12527	Algorithm 1
+

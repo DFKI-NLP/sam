@@ -1,0 +1,6 @@
+T4e5f4cbb3d4d55ed1e171941272a76a8	background_claim 619 761	Most methods for testing cloth move the sample into a state of near-uniform strain, exercising one or at most two components of strain at once
+T368af24bc982cc8d4b595121bd8dc045	background_claim 898 995	the resulting forcedisplacement curves are valuable in studying the differences between materials
+Tfe2b6c8cd9a7081ac9ec2bcaadacca04	own_claim 1941 2028	Having deformation and force information makes our data well suited to model validation
+Td066b27176e0fd703c4cc074a7997ee1	own_claim 2029 2118	the experiment measures the complete answer that should be predicted by a cloth simulator
+R579ca4dd47d81bd4bd7284e0ee9b6702	supports Arg1:T368af24bc982cc8d4b595121bd8dc045 Arg2:T4e5f4cbb3d4d55ed1e171941272a76a8
+R984fc533d7d7a0ff2f173ba99e8272e1	supports Arg1:Td066b27176e0fd703c4cc074a7997ee1 Arg2:Tfe2b6c8cd9a7081ac9ec2bcaadacca04

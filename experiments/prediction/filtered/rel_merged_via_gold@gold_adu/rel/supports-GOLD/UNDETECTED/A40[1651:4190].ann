@@ -1,0 +1,7 @@
+T1f3c4c8e490d2fb1a0906ee973cb0bf1	own_claim 1328 1428	we present a much simpler model based on tracing wind particles that move along a global force field
+T3e2b7844a8f4ea78ae7bbe025cbc263c	own_claim 887 968	The first method is based on modelling air flows with the Navier-Stokes equations
+Tcd8cbe0c81e5d3c8064110fcba7ab28f	own_claim 1142 1311	the solution of the sophisticated NavierStokes equations is not desired and not necessary in all situations where wind effects shall be integrated into cloth simulations
+T924588cd84348333091c5a436143bc3c	own_claim 715 753;760 800	we discuss two different approaches to model force fields describing air motion
+R81e8e98a15c9055475f997bebf3a9677	supports-GOLD Arg1:T3e2b7844a8f4ea78ae7bbe025cbc263c Arg2:T924588cd84348333091c5a436143bc3c
+R027120194e9326ad6a1cea953540e85e	supports-GOLD Arg1:Tcd8cbe0c81e5d3c8064110fcba7ab28f Arg2:T1f3c4c8e490d2fb1a0906ee973cb0bf1
+R87656f97323262ce01710887e74212db	supports-GOLD Arg1:T1f3c4c8e490d2fb1a0906ee973cb0bf1 Arg2:T924588cd84348333091c5a436143bc3c

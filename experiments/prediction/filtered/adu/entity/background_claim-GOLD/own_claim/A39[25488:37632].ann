@@ -1,0 +1,4 @@
+Tac78c8d2f6afa9630c94f79e70fdf966	background_claim-GOLD 8408 8439	Robust dynamic cloth simulation
+T892a4f18ab69891b03e7b5f5a7b1b2a1	background_claim-GOLD 8450 8553	is critically dependent on well-chosen damping forces that are a function of both position and velocity
+Td37a482e8e4acfb35f26832b7cfe0734	own_claim 8408 8439	Robust dynamic cloth simulation
+T40b684cb59478b956fcb1dfc389739b4	own_claim 8450 8553	is critically dependent on well-chosen damping forces that are a function of both position and velocity

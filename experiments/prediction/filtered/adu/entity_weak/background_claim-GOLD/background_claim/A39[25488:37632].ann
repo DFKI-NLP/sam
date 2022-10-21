@@ -1,0 +1,10 @@
+T24d6ce69ed8591f10784bd11fc470c0e	background_claim-GOLD 3474 3585	Some previous continuum formulations have modeled stretch energy along an axis as essentially (w u T w u − 1) 2
+T366e7229c5209920b160081f12392022	background_claim-GOLD 8984 9108	treatment of cloth used a simple viscous damping function which dissipated kinetic energy, independent of the type of motion
+T0990f92f2b213abcaddd0785ff42dbc4	background_claim-GOLD 9133 9207	improved upon this somewhat, borrowing a formulation due to Platt and Barr
+Tbccd5314f90e7cb4e61202083e1f4b80	background_claim-GOLD 9225 9247	their damping function
+T88254eb5d7dd2d8ca2beb4f678343d0e	background_claim-GOLD 9278 9352	does not match the quartic energy functions of their continuum formulation
+T3f4b778f7954bd5a23ddb6d26244b3f5	background_claim 3474 3585	Some previous continuum formulations have modeled stretch energy along an axis as essentially (w u T w u − 1) 2
+T4cb39985af65bb9944bf5f67b3d5732b	background_claim 8984 9108	treatment of cloth used a simple viscous damping function which dissipated kinetic energy, independent of the type of motion
+Tc240da258146194517669464aec34963	background_claim 9133 9207	improved upon this somewhat, borrowing a formulation due to Platt and Barr
+T53c6ba6622bedde2b7f050f432d277c4	background_claim 9225 9247	their damping function
+T14c6491982353f852fa054faff291b2e	background_claim 9278 9352	does not match the quartic energy functions of their continuum formulation

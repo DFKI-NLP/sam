@@ -1,0 +1,30 @@
+T0f1fbd4b0d1448a235326e4ee8cb8e97	data-GOLD 751 817	sensible damping functions cannot be derived from energy functions
+Tde1981b95489e4f83d9fa652ed7e1b9d	data-GOLD 3631 3633	15
+T226e6499c3fee15369f7cdb1b0403b61	data-GOLD 3636 3638	16
+T4dafd61cca11e38b10c7be0b89cb0bc0	data-GOLD 3641 3643	17
+T7c9c08fc18b9147e9949a0e1ab1847c3	data-GOLD 3646 3647	4
+Tc480dbead75cd1f21db83c9709dda6c0	data-GOLD 5866 5947	the stretch term prevents the magnitudes of w u and w v from changing overly much
+T18dccf1a51e78afa7cfb5bee66ede55e	data-GOLD 7542 7634	material for which bending in the u and v directions are weighted by stiffnesses k u and k v
+Tc3ddaf01b8b3267f094f8f40290865d5	data-GOLD 8651 8741	we are to prevent anomalous in-plane oscillations from arising between connected particles
+Taf08ae96dd2a84f5b9526846f9cbcfdb	data-GOLD 8973 8975	16
+T5dcdf1915c674cbb97b1cbb7d089358d	data-GOLD 8978 8980	17
+Ta2f1111fca6b53dac558462f84ef6835	data-GOLD 9128 9129	4
+Ta8169ac2e8c08952c16b6b547cd927c1	data-GOLD 9210 9212	11
+T1aba17fccb810b4bbc3553c5761c2180	data-GOLD 9748 9766	E  ̇ = (∂E/∂x) T x
+Tf0d77bd996c9d63db7fee3bcaf5ce875	data-GOLD 11527 11538	section 5.2
+Tc04121a412826932e3e480bced8b93bf	data-GOLD 11866 11890	C(x)  ̇ = (∂C(x)/∂x) T v
+T7e95d30a49955b9c473b2b1b4f48909d	data 751 817	sensible damping functions cannot be derived from energy functions
+T0e59981a83b171a05a0068dae0783148	data 3631 3633	15
+Tb4c495ce53d91257405d5c6a07747abe	data 3636 3638	16
+Taf4dc60d136d968505247a35eeda3726	data 3641 3643	17
+T680ebfdb6a37000aaeb106f544afb094	data 3646 3647	4
+Te323a4630a9518136514e5cb8d86cdff	data 5866 5947	the stretch term prevents the magnitudes of w u and w v from changing overly much
+T18bfe7fca4382f50ac91538fe39afbdf	data 7542 7634	material for which bending in the u and v directions are weighted by stiffnesses k u and k v
+T8fb814e33d37ebfee36e8e938dcce492	data 8651 8741	we are to prevent anomalous in-plane oscillations from arising between connected particles
+T349f05e9a08939becb2da57e304c9ca0	data 8973 8975	16
+T3c0a5f77f3b6e3dd8e92a689d1a961f6	data 8978 8980	17
+Tfe68e23950748b970c28484b1daa8250	data 9128 9129	4
+T68089a5e3c2a0112459a4d6e14f55e71	data 9210 9212	11
+Tbac2117cf99afac7b5f6375d8a8e8760	data 9748 9766	E  ̇ = (∂E/∂x) T x
+T1e213788c9b3206af3f308b1490f1e77	data 11527 11538	section 5.2
+Tb35bd39d5e9a24f85585cee5b534e1f7	data 11866 11890	C(x)  ̇ = (∂C(x)/∂x) T v

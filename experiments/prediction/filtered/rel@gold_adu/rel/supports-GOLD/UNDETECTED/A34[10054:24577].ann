@@ -1,0 +1,26 @@
+Tcca9116016280db32f0f91a29324c76f	data 637 639	10
+T08e59209a23efc6abcb4c0492c2dcb5f	data 633 634	1
+T37d1141d5e009bb60097f27a8d315960	own_claim 12385 12419;12448 12488	we define an objective function, X to be minimized when we solve the system
+T90da03935e509cb9ee77b19eb30acc26	background_claim 565 624;646 689;698 736	For rigid N-body collisions by graphics and robotics groups and for flexible-rigid collision resolution several approaches have been suggested
+Te9ddf83ce8510776c970235c59d9186d	data 642 643	9
+T77f88d96c86954e72ea9302cac4cb4f4	own_claim 4274 4342	This merger is performed to prevent undesirable collision resolution
+T9bac13d0e7b332f274afad87d59e1bea	own_claim 4635 4656	there is an exception
+T4aa9521366d5e9566bf685d63154276c	data 12144 12145	1
+T8dbdf51bd2ec1622f0d5e3ad2fae96cc	own_claim 12195 12376	mize When the difference we solve this between system v i;j + of and inequalities, , C e v i;j , , which we want would to minirepresent the extra energy we introduce into the system
+Tcac5d68a463a86257c9208b2b2b04180	own_claim 4208 4272	we reduce the total number of CCs by merging closely located CCs
+T8e3aac8f6ec029069eaf63fbaa99e0e7	data 7774 7775	1
+T1b64cc4cb829f4d40b68d62e77107708	data 693 694	2
+T9dea28fabcae6c98f5b235d14f9c7d0b	own_claim 12065 12140;12150 12193	This inequality relationship, first used for rigid body multiple collisions appears to serve the graphical purpose well
+Tb5ce425ddf968fe36b6c43a62e6497eb	own_claim 4728 4803	we have to resolve collisions between these CCs by handling them separately
+T38f06de1d2456b1291d0776990c55bfc	data 628 630	11
+T1a31297173279bc968c64cc31668d379	background_claim 7931 8039	The simultaneous collision approach treats multiple collisions as simultaneous collisions within a time-step
+R55ea72338177fff08604f33024f6b734	supports-GOLD Arg1:T38f06de1d2456b1291d0776990c55bfc Arg2:T90da03935e509cb9ee77b19eb30acc26
+Rddbe6575368a2be397463d6a618ff7c3	supports-GOLD Arg1:T08e59209a23efc6abcb4c0492c2dcb5f Arg2:T90da03935e509cb9ee77b19eb30acc26
+R54157a2ca92ed5c018b932b3cb30af96	supports-GOLD Arg1:Tcca9116016280db32f0f91a29324c76f Arg2:T90da03935e509cb9ee77b19eb30acc26
+R4072b6c4ee4235a48e12fc33da38e329	supports-GOLD Arg1:Te9ddf83ce8510776c970235c59d9186d Arg2:T90da03935e509cb9ee77b19eb30acc26
+R70eb2e1039da451cecf45f92e1759519	supports-GOLD Arg1:T1b64cc4cb829f4d40b68d62e77107708 Arg2:T90da03935e509cb9ee77b19eb30acc26
+R23e0259fdd0990166adb24ccdb2701ae	supports-GOLD Arg1:T77f88d96c86954e72ea9302cac4cb4f4 Arg2:Tcac5d68a463a86257c9208b2b2b04180
+Rb83e06f77cdd4d67ce4c265bf53a1745	supports-GOLD Arg1:Tb5ce425ddf968fe36b6c43a62e6497eb Arg2:T9bac13d0e7b332f274afad87d59e1bea
+R5ca8f3402f1d59490d33878b79d31fe2	supports-GOLD Arg1:T8e3aac8f6ec029069eaf63fbaa99e0e7 Arg2:T1a31297173279bc968c64cc31668d379
+R0562a9f7397d3951ff68d6e7a007efd4	supports-GOLD Arg1:T4aa9521366d5e9566bf685d63154276c Arg2:T9dea28fabcae6c98f5b235d14f9c7d0b
+Rbbc815619eb9cca15009c0f43d61b043	supports-GOLD Arg1:T8dbdf51bd2ec1622f0d5e3ad2fae96cc Arg2:T37d1141d5e009bb60097f27a8d315960

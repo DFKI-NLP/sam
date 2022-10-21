@@ -1,0 +1,54 @@
+T679b9af34aed745b61d352ca80d341c7	data-GOLD 564 614	vertex/triangle or edge/edge contacts in the cloth
+T48311e00c20e8355fc158cc4322232e5	data-GOLD 925 934	section 6
+Tf7f04b223c6b56c0350b530a09da7de5	data-GOLD 1134 1176	the differential nature of our formulation
+T068ae3689fe49c99394ec7766f2fe195	data-GOLD 1293 1344	the particle is constrained in all three dimensions
+T817fbd446f10182bbfec38c97247254b	data-GOLD 1424 1466	the constraint is in two or one dimensions
+T210e3e5192c6a2e68055c5ee23d7149e	data-GOLD 2102 2150	we change the number of coordinates per particle
+T8933b7647760ebbed98276350fa7bfbe	data-GOLD 2354 2422	the transient nature of contact constraints between cloth and solids
+Td52ab36e025812b03d48e73fb726d78e	data-GOLD 3079 3131	our entire formulation is geared to handle stiffness
+T74b3898f77cfd001879eb2a4f30e5dd8	data-GOLD 3464 3518	the mechanism we describe enforces constraints exactly
+Tf0b45e78a9f1819a4d14a276af67865e	data-GOLD 5036 5056	inverse mass is used
+T7ffe282ee65f45a706477167a59aa7d8	data-GOLD 5203 5227	we take 1/m i to be zero
+T4a9d7041d9cfbc6362dea6f55696da80	data-GOLD 5972 5994	a unit vector p ∈ IR 3
+T972046d35d2fd004e0e2e7b38d902bfb	data-GOLD 6165 6209	two mutually orthogonal unit vectors p and q
+T146f69dc67305583ec78261c94bf1eed	data-GOLD 7675 7707	it has no constrained directions
+T780a19994598e8471600fc2d8e35686e	data-GOLD 7785 7793	we solve
+T1130a1738996b80a7ee1331539b1043f	data-GOLD 7826 7881	I − hW ∂v ∂f − h 2 W ∂x ∂f v = hW f 0 + h ∂x ∂f v 0 + z
+Ta6ee088316398ad8db9db04dfebb1c2f	data-GOLD 8621 8684	neither is equation (6) unless all particles have the same mass
+T139d76561f637ddb74012ad750e609f4	data-GOLD 9012 9014	14
+T3a110bd52254d50e4fe951a40641a447	data-GOLD 9227 9262	we can transform this equation to 6
+T7fd75d8c2831041cecf23d1069feee91	data-GOLD 10970 10998	no particles are constrained
+T0d3c54bda89dbf971d4eb414859d412c	data-GOLD 11658 11660	14
+T4852371609bea1e5c5e94933c28a40a0	data-GOLD 13068 13127	our constrained formulation ignores certain components of b
+T6bbe06547d01e0627fab3955074a53de	data-GOLD 13857 13869	modified-pcg
+T71b8b9a045673b3e2da4b3d9b199ccf3	data-GOLD 14219 14256	we began using procedure modified-pcg
+Ta331029bb0f3d3c295ecbcb9f09d1070	data-GOLD 14589 14591	14
+T1416a4c6b636c12d4ce4cb42acabd72d	data-GOLD 15050 15191	When modified-pcg terminates, the residual error e = A v − b has the property that e i need not be close to zero if particle i is constrained
+Tad9158252dc973c3bf7b79d8a9fc25ed	data-GOLD 15768 15769	2
+T4a7cc0751bb06004e2f9f43aa3ee88fe	data 564 614	vertex/triangle or edge/edge contacts in the cloth
+T4618cacdaced8f2ffde97a0379e05d57	data 925 934	section 6
+T670b4b6c05f8ca3b084e05e735edefd3	data 1134 1176	the differential nature of our formulation
+Tcc030acd4191b5235900e73ed3381225	data 1293 1344	the particle is constrained in all three dimensions
+Taee957d547ad8be502d56a7811071523	data 1424 1466	the constraint is in two or one dimensions
+T08985321dd5cd342a9d95ccdf045be6d	data 2102 2150	we change the number of coordinates per particle
+Te7db60d8062e6fa51b46463b962963e4	data 2354 2422	the transient nature of contact constraints between cloth and solids
+Ta41cfbb31d3e6f0d050d2063fb0f05f7	data 3079 3131	our entire formulation is geared to handle stiffness
+Td2056ceb2824f86407b83c7b9a70dfa1	data 3464 3518	the mechanism we describe enforces constraints exactly
+T7213173744cfa4b78be57a0cb6885293	data 5036 5056	inverse mass is used
+T31c62e6aea1e7bf04489e0eebf8b6f97	data 5203 5227	we take 1/m i to be zero
+Tc20e93299feef25bef4e251cbfad6063	data 5972 5994	a unit vector p ∈ IR 3
+T666e65627e4dd8728df5d7c555777353	data 6165 6209	two mutually orthogonal unit vectors p and q
+Tfd17306ef8a0a75811e00cb4be7644c9	data 7675 7707	it has no constrained directions
+T9ec4169622114a470e7d2c64b451f3f5	data 7785 7793	we solve
+T3c23682963097a2abe6a15aec20e19b8	data 7826 7881	I − hW ∂v ∂f − h 2 W ∂x ∂f v = hW f 0 + h ∂x ∂f v 0 + z
+T9b6bc9c9c2561991f25e6cc25020db77	data 8621 8684	neither is equation (6) unless all particles have the same mass
+T1499fd12dd7d04b9bb4e05f437480019	data 9012 9014	14
+T240e9e550bc22e9e0624dfbf1dafb9ee	data 9227 9262	we can transform this equation to 6
+T1c83827121f7e57f74b4c9082c826f56	data 10970 10998	no particles are constrained
+T126a3f6485c32f8c5bdeecdbe29a8cb3	data 11658 11660	14
+T312fba357bb3d5d26300e75ab5885bbf	data 13068 13127	our constrained formulation ignores certain components of b
+T87909b92a0e39da8b17a2b957f788319	data 13857 13869	modified-pcg
+T19dff232bb06b1dfdea33791023e6660	data 14219 14256	we began using procedure modified-pcg
+T4f5c8e25280b58e8aba89b3001f91927	data 14589 14591	14
+T3ebe27f520ff265d32b517d04caa0396	data 15050 15191	When modified-pcg terminates, the residual error e = A v − b has the property that e i need not be close to zero if particle i is constrained
+Tabc0fc5ef7e8222e14d670e5ad765949	data 15768 15769	2

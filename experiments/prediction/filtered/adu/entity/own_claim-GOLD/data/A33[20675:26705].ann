@@ -1,0 +1,8 @@
+T3b5a045eddf29bd735db6d6d2f1f57e8	own_claim-GOLD 264 320	we fill holes with previously observed sections of cloth
+Ta0a13d3b249a6c9e022115cb13103075	own_claim-GOLD 376 453	our hole filling procedure does not assume a skeleton that drives the surface
+T021e92aacd2bb8d7fd2cc6684150b796	own_claim-GOLD 574 650	the missing section needs to be replaced by a section with the same topology
+T9e099f49f2266f7196bc6ae890f6b099	own_claim-GOLD 652 739	the new section needs to obey a number of point constraints around the edge of the hole
+Tadb32969853156358d6c660edb34a0b0	data 264 320	we fill holes with previously observed sections of cloth
+Tbe70b400ae95098faef88ed29d5619d2	data 376 453	our hole filling procedure does not assume a skeleton that drives the surface
+T60b8d95325050ce7fdf473d508cd1c34	data 574 650	the missing section needs to be replaced by a section with the same topology
+Tb69d23a7d5b9700a37e5cdef8ee5a9a4	data 652 739	the new section needs to obey a number of point constraints around the edge of the hole

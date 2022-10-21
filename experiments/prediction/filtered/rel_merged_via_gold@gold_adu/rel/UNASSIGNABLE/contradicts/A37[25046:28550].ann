@@ -1,0 +1,3 @@
+Tfdce8195786b5e6337726f3c5e77ba75	own_claim 2394 2420	the overall time is higher
+Tae84c36ad5bc5665cf6788914797bb01	own_claim 2247 2312	ICD is able to use larger timesteps than SHAKE and still converge
+R05712d19f67ae331670ada2a435dbde9	contradicts Arg1:Tae84c36ad5bc5665cf6788914797bb01 Arg2:Tfdce8195786b5e6337726f3c5e77ba75

@@ -1,0 +1,14 @@
+T4d982f18adc1fbef1fa1ee5b1daf8e69	own_claim 158 214	The experiments are easy to perform, capture, and repeat
+T7dd839081a1e01becd0d8b0a07651583	own_claim 220 273	they demonstrate the complex dynamics of cloth motion
+Tef5244ea48a673f5c865f57ba45ae5b0	own_claim 275 388	The parameters obtained from the simple experiments were used to simulate skirts and other complex fabric motions
+T28612be665e48b30524d0e23d058a9b1	data 1088 1094	Fig. 6
+T62a7a1f885e02c6a5a1c3e61f1adb691	own_claim 1097 1178	The static test give a good estimate for the static stiffness and bend parameters
+T15b8141f83059ff280a998d5336d32a1	own_claim 1303 1385	The waving motion of fabrics in simulation is affected by their dynamic parameters
+Tbb99a2684ecacba8386868fe879bebff	own_claim 1428 1484	real fabrics exhibit a wide range of interesting motions
+T9e28ab8f73642db7af871a1c2896be44	own_claim 1486 1572	Different fabrics also exhibit different types of motion for the same input excitation
+Tf2e2307cd65fcfecf228b22c41c49a01	own_claim 1574 1667	We designed the waving motion to roughly match the types of motion occurring in real garments
+Tdac8d0cb1ff713b4b4f82046d98fd879	data 1676 1682	skirts
+T85691728e957236c714ecad477743b55	own_claim 1684 1810	This gives reasonable estimates for cloth parameters while avoiding the need to optimize directly on complex fabric geometries
+T3fe97479ff8138d8cb3a7a4f84e255df	data 1817 1823	skirts
+Tc6857cdc5403a2be2e4dc00be8a209c1	own_claim 1825 1850	involving many collisions
+

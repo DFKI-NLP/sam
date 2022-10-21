@@ -1,0 +1,47 @@
+T8b65286730d9adea6a5157471a91deea	data 165 183	Terzopoulos et al.
+Tf6efdff8055104008522fbb634677bd8	data 195 220	Terzopoulos and Fleischer
+T433ac32f92a4541b95f39ac40a1b15d5	data 478 493	Carignan et al.
+T3649643f3665c0d7491f3e6034cf232d	data 505 518	Volino et al.
+Tf47058455d6cfe1cc454ee8de9e797b6	data 533 545	Breen et al.
+T51b183402a76ad33329cd7bbcbd0f28b	data 557 573	Eberhardt et al.
+Tcf4f5f23931b98cd0afea231214ed421	data 707 726	collision detection
+Tb81e8b5e865679078e9291f4d446ec05	data 731 749	constraint methods
+T06a9f3aa6e4eee948e49724e73848d80	data 2177 2195	Terzopoulos et al.
+T5db3921bf1ec6d8a78a42ea4737a5ffd	data 2454 2476	of energy minimization
+Tf543ff86e4ed48186852103dcf230363	data 3079 3116	the dimension n of the state vector x
+T8ba865dd032e70185ffad874fa1bfdb7	data 3184 3196	nodal points
+T31f38c0ab01d3efbc203222a589151a4	data 3264 3305	it comes to modeling flags or tablecloths
+Tfd99d81b7a4c98dc6efc47106ead1cef	data 3896 3898	15
+T4893144a30fe5c3db166c80d593928ac	data 3901 3903	16
+T2e330c070b52680e9f10eb7d07132f93	data 3906 3908	17
+Ta62dc802f44fc8e40c0ce085d88f8250	data 3911 3912	4
+Tab165392655c4ad6b05da23e5ea93506	data 4502 4520	Terzopoulos et al.
+T7acd849147126432aefa93366b19d068	data 4646 4661	Kass and Miller
+T412729188dd42a59b696480556c3cc22	data 4664 4665	8
+T0cb5616045a4b9d44e643831a21dd708	data 4669 4688	Terzopoulos and Qin
+T9ed552007b32b99b2a6db08e335f71d2	data 4692 4694	18
+Tfca911f32cbbd16bbdbb4f92c7e7e63d	data 4702 4704	Tu
+Te869fca72a4373905b4c948a7c41870c	data 4708 4710	19
+T1bc4f1de1cca3436a38c526550096824	data 5498 5584	notably between diagonally-adjacent and non-adjacent nodes involved in self-collisions
+T054b03b1652b58377c5e38fe1377c466	data 5712 5758	for systems involving 25,000 variables or more
+T70baacb318e286c8a73bca78ac110ac4	data 5856 5915	ADI methods could be applied to irregular triangular meshes
+T9168aadfc0f4dd8f182d756f0952fab5	data 6021 6044	extremely stiff systems
+Tbbfd91b5627f140b3683782325b40ad4	data 6807 6851	a modified version of the conjugate gradient
+T64b13a67135b7e76ff2fbcc8e0dc214c	data 7006 7080	they are run until the solution error drops below some tolerance threshold
+Tcc46fc6dea6e8ea369faaf28714349ff	data 7836 7867	simulating a 6, 000 node system
+T738abdd0021644af71385b18406e05f9	data 8265 8277	Breen et al.
+T669bb67a1273f8202c1600e510239dda	data 8281 8282	3
+T8db5543a2151396562bb429bfa6916f3	data 8289 8305	Eberhardt et al.
+Td896b36cdbad8b222bda1efc0000a395	data 8309 8310	5
+T7f5baddf4d9cd1e7a4981c15134a891c	data 8314 8343	draping of a 2,600 node cloth
+T908585686470e108a1112e5ba4e407a4	data 9320 9342	Choleski factorization
+Tf6988b6c37581d17b93bdab7571068f5	data 9382 9405	Gauss-Seidel relaxation
+T917c4fb1e2e97f517faa9be758177c73	data 9409 9428	conjugate gradients
+T16c80923b3b1b6dd32064efb947eba8c	data 9435 9463	a square √ system of n nodes
+Ta7d1ee8690cf24689409863102f81e7f	data 9557 9558	6
+Ta143f93a07c71abd8151562c61544d95	data 9758 9773	Carignan et al.
+T8e4026e0c0510de6c92182e52927988b	data 10462 10475	Volino et al.
+Tb5b26ebf9e3730dd716476410f5b2e1a	data 10479 10481	21
+T0f84997766d59dace30945ef28500285	data 10712 10714	21
+T5821cfa06f3badcf5c43fefa5ce4fcb3	data 11463 11479	Eberhardt et al.
+Tdbb54910b78d62a5252be68ef084dfaf	data 12143 12159	Ng and Grimsdale

@@ -1,0 +1,11 @@
+T8cd4efd1721f64dcb80ca1044c95331b	own_claim 303 327	realism and practicality
+Tb8739c8a97ea9dd2636ef252b39c4c40	own_claim 1200 1257	could potentially capture more realistic details of cloth
+T4e7c1fead7d3cbe26add550f856da9db	own_claim 1516 1748	The model developed by Baraff and Witkin formulates the energy of a particular triangle in terms of so-called condition functions C(x) such that the total potential energy associated with the system is given by E u = k s C(x)C T (x)
+T985eb9bc4edab46dbff5be4342fdb96a	own_claim 2799 2857	the resulting formula is linear in a rather than quadratic
+T9862229d4345fc51a0e4308e8453d83b	own_claim 2948 2980	that used in previous cloth work
+T07ec89b5f73e885e79b59c81def4d627	own_claim 4107 4235	The optimizer is free to eliminate this behavior or other terms of this equation by setting the corresponding parameters to zero
+Tb8f79fb7c613498452ccfde5f86565b1	own_claim 4822 4905	recent work suggests that using 2nd-order backward differences 9 or Newmark schemes
+T77e160a5a6ec5f5344cf61cc0629547b	own_claim 5007 5105	which combines repulsion forces with impulses to robustly prevent all collisions before they occur
+Tdabde205bde7f8e8288dd73506619da4	own_claim 5347 5416	the solver’s own internal error estimation can remove these artifacts
+Tb11d2f9430ba277d6da18a19609b107b	own_claim 5623 5706	To achieve acceptable performance, we used a number of collision culling algorithms
+T0e952675c9c34697a95d2912ecd1be75	own_claim 5794 5880	a curvature-based criterion for rejecting self-collisions that was first introduced by

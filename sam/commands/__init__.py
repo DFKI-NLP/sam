@@ -1,0 +1,1 @@
+from sam.commands.predict_aggregate import PredictAggregate

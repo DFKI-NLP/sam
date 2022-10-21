@@ -1,0 +1,8 @@
+T263c4e478be8460224714e4b0213394d	background_claim 1042 1122	Some parameters can be chosen based on the animator’s intuition about the fabric
+T6a7cb5f6942f726e65c71dcca01ec0bb	background_claim 1206 1321	not all the parameters of a cloth simulator are intuitive or map directly to measurements that can made by a system
+T4b048d3d58894d7225db9583377257f2	background_claim 879 970	choosing parameters that will provide a particular appearance remains a time consuming task
+Tec519bca5ac560660bc205814e23a39c	background_claim 791 877	with the right set of parameters good simulators produce very realistic looking motion
+R1546cd306beeaf20dfeca7099badfeb7	contradicts-GOLD Arg1:Tec519bca5ac560660bc205814e23a39c Arg2:T4b048d3d58894d7225db9583377257f2
+R2e922163f14ab5213dedbf7ed1d37d6e	contradicts-GOLD Arg1:T263c4e478be8460224714e4b0213394d Arg2:T6a7cb5f6942f726e65c71dcca01ec0bb
+R46b446d64babe741f1544298ef8d5e69	contradicts Arg1:Tec519bca5ac560660bc205814e23a39c Arg2:T4b048d3d58894d7225db9583377257f2
+R71bc1fb4532a9a21f5292788cda70da0	contradicts Arg1:T263c4e478be8460224714e4b0213394d Arg2:T6a7cb5f6942f726e65c71dcca01ec0bb

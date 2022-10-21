@@ -1,0 +1,50 @@
+<H1>3 GEOMETRIC WRINKLES</H1>
+        
+          <H2>3.1 Overview</H2>
+          In this subsection, we would like to give a heuristic overview of our geometric wrinkling algorithm and the context in which it is embedded. We also introduce the key terms that will be used throughout the paper, whereas their accurate definitions will be given in section 3.2. Please refer to Figure 5 , which illustrates this overview. First, let us state what serves as an input to the algorithm. We start with a user defined wrinkle pattern, which is given in the form of a texture and an initial undeformed triangular mesh in 3D space. This mesh may represent a garment or another deformable model. The wrinkle pattern is bump or displacement mapped onto the initial mesh by the user. Thus, we obtain a static wrinkled garment. Note that the texture mapping coordinates do not change throughout the computations described below. By introducing a fixed scale for the displacement or bump map on a mesh triangle, we obtain a function which, we call the wrinkle function. Using these inputs in step 1 (refer to Figure 5 ), the algorithm computes a set of four parameters termed wrinkling coefficients for each triangle of the mesh. The initial mesh serves as an input to a simulation engine, which in the context of cloth simulation would be the physical model with a numerical solver. The mesh that is the output by the simulation engine will be the deformed mesh. This deformed mesh is then further processed by the proposed algorithm. For each triangle, we compute the deformation transformation that relates the corresponding triangle of the initial and the deformed mesh. Using this deformation transformation and the already computed wrinkling coefficients, we compute the modulation factors. These modulation factors are used to compute a modulation map which modulates the wrinkle pattern. The modulated wrinkle pattern, which reflects the response of the wrinkled surface to the deformation of the underlying coarse triangular mesh, is used for the rendering. In the course of animation, as the simulation engine recalculates the deformed mesh, the procedure described above is iterated. However, note that the wrinkling coefficients need not to be recalculated during the animation. They are constant with respect to the animation process. They depend only on the initial wrinkle pattern, the initial mesh and the mapping coordinates.
+        
+        
+          <H2>3.2 Derivation of the Wrinkling Algorithm</H2>
+          This subsection introduces the mathematical formulation of our geometric wrinkling algorithm. Refer to Figure 5 and consider the grayed triangle undergoing a deformation ending up as the deformed triangle . The deformation of the triangle can be described by a general 4D homogeneous coordinate transformation. However, the rotational and translational parts of the transformation are irrelevant to the derivation of the algorithm. We introduce a local rectangular right handed two dimensional coordinate system, which is defined by choosing any edge of the triangle as the x axis ( refer to Figure 5 ). Hence, x, y denote the local coordinates of the initial triangle and x , y that of the deformed triangle . They are related by the deformation transformation
+          y x user defined wrinkle pattern initial mesh 1 wrinkling coefficient for each triangle C 1 , C 2 , C 3 , C 4 deformable models such as cloth simulation y' 2 ' x' modulation factor for each triangle (h) deformed mesh modulated wrinkle pattern bump mapping final mesh with animated wrinkles
+          
+            Figure 5: Wrinkles and coarse mesh
+          
+          
+            1
+            x a b x T : = y 0 d y T 1 (x, y) ≡ T 2 (x, y)
+          
+          The matrix elements a and d represent scaling in the x and y direction respectively, whereas b describes a shear. Let us also introduce the inverse deformation transformation and denote it by
+          
+            2
+            T −1 : x = a b x y 0 d y ! ≡ T T 1 2 −1 −1 (x (x , , y y ) )
+          
+          We define the wrinkle function f (x, y) as the function in the coordinate system xy that results from mapping the wrinkle pattern onto the initial triangular mesh. Formally, we write
+          
+            3
+            2 f (x, y) : ∈ R → R
+          
+          Further we require f (x, y) to be continuous and that its first partial derivatives exist and also be continuous. The wrinkle function f (x , y ) on the triangle is related to f (x, y) by
+          2 f (x , y ) : ∈ R → R = f T 1 −1 (x , y ), T 2 −1 (x , y ) ¡ where = T ( )
+          Now let us introduce the area A( , f (x, y)) of the wrinkle function f (x, y) over the triangle and in complete analogy the area of the deformed wrinkle function A ( , f (x , y )) over the deformed triangle . Generally, these two areas will be unequal and therefore the overall wrinkled surface area over the whole mesh will not be conserved during the animation However as pointed out in Section 2, real life examples such as in cloth wrinkling, the surface area is conserved. Note that this is a purely geometric requirement. One might think of several different approaches to meet this requirement. Our approach realizes overall area conservation by achieving area conservation on a per triangle basis of the mesh. We parameterize the area of the deformed triangle by h, that scales f (x , y ) on each triangle of the mesh. Formally, this parameterized surface area is given by Using this notation the requirement of area conservation on a per triangle basis is expressed by the following equation
+          A( , f (x, y)) = A ( , f (x , y ))
+          A (h, , f (x , y )) ≡ A ( , hf (x , y ))
+          
+            4
+            A( , f (x, y)) = A (h, , f (x , y ))
+          
+          This is an equation for h, which we call modulation factor. In Appendix A, we present an approximate solution to this equation that yields
+          
+            5
+            1 h = 1− (C 1 (a −1) + C 2 b + C 3 (d −1)) C 4
+          
+          The constants C 1 , C 2 , C 3 , C 4 are here after referred as wrinkling coefficients. The following section gives significance of the formulation.
+        
+        
+          <H2>3.3 Explanations</H2>
+          Following rather abstract and mathematical derivation in the previous subsection, we would like to point out and discuss some properties of the algorithm we have presented so far:
+          • The algorithm is computationally inexpensive during animation, as the only quantities that have to be determined for each triangle are the elements a , b , d of the inverse deformation matrix and the resulting modulation factor by using the formula given by equation 5. The wrinkling coefficients on the other hand, are computationally expensive. However, as one can see from equation 11 in Appendix A, they depend only on quantities that are known prior to entering the animation loop and can therefore be calculated once at the beginning. • As we have pointed out in the discussion so far, we have derived an algorithm that is based on the area conservation property. Here we explain the role played by the area conservation property in our work. From a mathematical point of view, it is clear that we have presented a solution within the approximation of small deformations. There are several possibilities to deal with this restriction. One could decide to restrict the simulations to small deformations where the approximation is valid and/or take into account the higher order terms in the series expansion to extend the range of validity of the approximation. Instead, we propose a pragmatic approach. We declare that equation 5 describes the overall wrinkling behavior only. This frees us conceptually from the “burden of mathematical correctness”. This is because, we are more concerned with the visual results of the animation, rather than precise area conservation. Moreover, the deformations during cloth simulation are moderate in general. Hence, higher order terms in the expansion may become significant but not predominant. The modulation factor h is a function of the deformation of triangle and has value around one. If the triangle is net compressed, h will be greater than one. For the elongation, it will be less than one. One can scale, translate and clip it to introduce a finer control required for the animation. Note that this transformation of the modulation factor no longer satisfies the area conservation property. Also, Section 4 introduces a modulation map, which further violates area conservation. • Another very important property of our algorithm is that it is local. By local, we mean that wrinkling effects caused by deformations are confined to the deformed areas. This is crucial to obtain realistic wrinkling. For example, a garment wrinkles around the shoulder of an animated character as she lifts her arm, while it is stretched on the corresponding side. Locality is introduced in our algorithm by working on a per triangle basis. The size of the mesh triangles actually governs the extension of local wrinkling effects. • Wrinkling coefficients are sensitive to the wrinkle function and therefore to the wrinkle patterns. Wrinkling coefficients for two different patterns on the same triangle will generally differ. Therefore, the same deformation applied to a triangle will yield two different modulation factors (one for each pattern). Each pattern, for instance, features a “principal wrinkling direction”. Assume that the wrinkling patterns are orthogonal to each other. Then, a deformation in the orthogonal direction of one pattern will result in a smaller modulation factor as compared to a modulation factor for the other pattern. In other words, the direction of the deformation “favors one pattern over the other”. This property can be used for developing multi-fold wrinkling techniques. Section 4.1 describes a multi-fold wrinkling implementation.
+        
+      
+      
+        

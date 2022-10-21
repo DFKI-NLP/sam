@@ -1,0 +1,15 @@
+T634141f73145e772d56b2336ddf3af7d	data 446 456	Zhang 2002
+Tf02e880e332571c2be09af2eaa4eda8e	own_claim 4314 4403	MeshIK is most useful when a basis is carefully chosen to prevent extrapolation artifacts
+T420aa512cddb17596ac23fb1ddc484e4	own_claim 1745 1774	yielding fewer bits of strain
+T07bd6ca3f46cacc7a045d24b3d7b200c	own_claim 1222 1309	it is also necessary to evaluate on several numerical criteria for each capture session
+T8f752d09bf7ed813441c2ae8cbe91d1d	own_claim 1896 1947	we terminated the correspondence algorithm at N = 2
+T7f710a7c36e8f2aabee78c6b775b07f1	background_claim 478 494	are good choices
+T75cce08e3e34194c5162638423a558da	own_claim 1084 1166	Our capture results are best evaluated by looking at our video and figures 1,12,13
+T9263a61a156699833a507d4c4b1c0553	own_claim 4405 4475	One drawback to our approach is the loss of secondary kinematic motion
+Tfb0af7c171b950de0f72c26b788b09b1	own_claim 4063 4170	the fact that no folding occurs in a small bend does not imply that folding will be absent in a larger bend
+Tc26969116ffdc009a953c192876e5267	own_claim 4560 4598	the resulting animation appears damped
+Rf1fad8bc169e7be714ae11e498cf7c96	supports-GOLD Arg1:T634141f73145e772d56b2336ddf3af7d Arg2:T7f710a7c36e8f2aabee78c6b775b07f1
+Re96d5f4bcf57489f51d8cab4dcb6d8f8	supports-GOLD Arg1:T07bd6ca3f46cacc7a045d24b3d7b200c Arg2:T75cce08e3e34194c5162638423a558da
+Rf805527e4c233627c1ef496a11c3f686	supports-GOLD Arg1:T420aa512cddb17596ac23fb1ddc484e4 Arg2:T8f752d09bf7ed813441c2ae8cbe91d1d
+Rcf65e9022ca3df25b0b0204393f6e289	supports-GOLD Arg1:Tfb0af7c171b950de0f72c26b788b09b1 Arg2:Tf02e880e332571c2be09af2eaa4eda8e
+Rca386d701dbcf62d107a5fc07394d6e6	supports-GOLD Arg1:Tc26969116ffdc009a953c192876e5267 Arg2:T9263a61a156699833a507d4c4b1c0553

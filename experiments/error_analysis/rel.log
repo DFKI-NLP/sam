@@ -1,0 +1,299 @@
+python experiments/error_analysis/rel.py
+relation     error_type      connector
+contradicts  false negative  however                 17
+                             in contrast              2
+                             while                    2
+                             contrary                 1
+                             even so                  1
+                             even then                1
+                             exception                1
+                             more                     1
+                             note that                1
+                             on the other hand        1
+                             thus far                 1
+                             unlike                   1
+             false positive  however                 11
+                             while                    5
+                             but                      3
+                             whereas                  3
+                             NONE                     1
+                             in fact                  1
+                             in practice              1
+                             instead                  1
+                             particularly             1
+                             rather                   1
+                             this                     1
+                             though                   1
+             true positive   however                 14
+                             but                      8
+                             while                    6
+                             in contrast              5
+                             though                   5
+                             despite                  1
+                             even though              1
+supports     false negative  NONE                    16
+                             as a result              2
+                             to do this               2
+                             -in real life            1
+                             -no longer               1
+                             -these methods           1
+                             -these two goals:        1
+                             -this is better than     1
+                             -works by                1
+                             COLON                    1
+                             as                       1
+                             however                  1
+                             if then                  1
+                             in this                  1
+                             refer to                 1
+                             specifically             1
+                             to achieve this          1
+             false positive  NONE                     7
+                             hence                    3
+                             in other words           3
+                             as                       2
+                             this allows              2
+                             -this                    1
+                             even though              1
+                             in order to              1
+                             refer to                 1
+                             this gives rise to       1
+                             this is because          1
+                             this is crucial          1
+                             thus                     1
+             true positive   BRACKETS                27
+                             as                      10
+                             NONE                     9
+                             if                       5
+                             because                  4
+                             for                      4
+                             such as                  4
+                             therefore                3
+                             as shown in              2
+                             as stated in             2
+                             in                       2
+                             when                     2
+                             COLON                    1
+                             SEMICOLON                1
+                             as described in          1
+                             as explained in          1
+                             assume                   1
+                             consequently             1
+                             depicts how              1
+                             due to                   1
+                             especially               1
+                             for example              1
+                             if then                  1
+                             in contrast              1
+                             in order to              1
+                             indicates that           1
+                             introduces               1
+                             once                     1
+                             particularly             1
+                             points out               1
+                             see                      1
+                             see typical              1
+                             shows that               1
+                             thus                     1
+Name: connector, dtype: int64
+relation     error_type      same sentence
+contradicts  false negative  no               25
+                             yes               5
+             false positive  no               18
+                             yes              12
+             true positive   yes              21
+                             no               19
+supports     false negative  no               29
+                             yes               5
+             false positive  no               20
+                             yes               5
+             true positive   yes              87
+                             no                9
+Name: same sentence, dtype: int64
+relation     error_type      arguments
+contradicts  false negative  own_claim                      14
+                             background_claim                8
+                             background_claim\nown_claim     8
+             false positive  own_claim                      19
+                             background_claim               10
+                             background_claim\nown_claim     1
+             true positive   own_claim                      22
+                             background_claim               14
+                             background_claim\nown_claim     4
+supports     false negative  own_claim                      17
+                             background_claim\ndata         11
+                             data\nown_claim                 4
+                             backgroun_claim\nown_claim      2
+             false positive  own_claim                      19
+                             background_claim                3
+                             data\nown_claim                 2
+                             background_claim\ndata          1
+             true positive   data\nown_claim                57
+                             background_claim\ndata         28
+                             own_claim                      11
+Name: arguments, dtype: int64
+relation     error_type      data and claim arguments in same sentence
+contradicts  false negative  no                                           30
+             false positive  no                                           30
+             true positive   no                                           40
+supports     false negative  no                                           32
+                             yes                                           2
+             false positive  no                                           22
+                             yes                                           3
+             true positive   yes                                          78
+                             no                                           18
+Name: data and claim arguments in same sentence, dtype: int64
+relation     error_type      connector
+contradicts  false negative  however                 0.566667
+                             in contrast             0.066667
+                             while                   0.066667
+                             contrary                0.033333
+                             even so                 0.033333
+                             even then               0.033333
+                             exception               0.033333
+                             more                    0.033333
+                             note that               0.033333
+                             on the other hand       0.033333
+                             thus far                0.033333
+                             unlike                  0.033333
+             false positive  however                 0.366667
+                             while                   0.166667
+                             but                     0.100000
+                             whereas                 0.100000
+                             NONE                    0.033333
+                             in fact                 0.033333
+                             in practice             0.033333
+                             instead                 0.033333
+                             particularly            0.033333
+                             rather                  0.033333
+                             this                    0.033333
+                             though                  0.033333
+             true positive   however                 0.350000
+                             but                     0.200000
+                             while                   0.150000
+                             in contrast             0.125000
+                             though                  0.125000
+                             despite                 0.025000
+                             even though             0.025000
+supports     false negative  NONE                    0.470588
+                             as a result             0.058824
+                             to do this              0.058824
+                             -in real life           0.029412
+                             -no longer              0.029412
+                             -these methods          0.029412
+                             -these two goals:       0.029412
+                             -this is better than    0.029412
+                             -works by               0.029412
+                             COLON                   0.029412
+                             as                      0.029412
+                             however                 0.029412
+                             if then                 0.029412
+                             in this                 0.029412
+                             refer to                0.029412
+                             specifically            0.029412
+                             to achieve this         0.029412
+             false positive  NONE                    0.280000
+                             hence                   0.120000
+                             in other words          0.120000
+                             as                      0.080000
+                             this allows             0.080000
+                             -this                   0.040000
+                             even though             0.040000
+                             in order to             0.040000
+                             refer to                0.040000
+                             this gives rise to      0.040000
+                             this is because         0.040000
+                             this is crucial         0.040000
+                             thus                    0.040000
+             true positive   BRACKETS                0.281250
+                             as                      0.104167
+                             NONE                    0.093750
+                             if                      0.052083
+                             because                 0.041667
+                             for                     0.041667
+                             such as                 0.041667
+                             therefore               0.031250
+                             as shown in             0.020833
+                             as stated in            0.020833
+                             in                      0.020833
+                             when                    0.020833
+                             COLON                   0.010417
+                             SEMICOLON               0.010417
+                             as described in         0.010417
+                             as explained in         0.010417
+                             assume                  0.010417
+                             consequently            0.010417
+                             depicts how             0.010417
+                             due to                  0.010417
+                             especially              0.010417
+                             for example             0.010417
+                             if then                 0.010417
+                             in contrast             0.010417
+                             in order to             0.010417
+                             indicates that          0.010417
+                             introduces              0.010417
+                             once                    0.010417
+                             particularly            0.010417
+                             points out              0.010417
+                             see                     0.010417
+                             see typical             0.010417
+                             shows that              0.010417
+                             thus                    0.010417
+dtype: float64
+relation     error_type      same sentence
+contradicts  false negative  no               0.833333
+                             yes              0.166667
+             false positive  no               0.600000
+                             yes              0.400000
+             true positive   yes              0.525000
+                             no               0.475000
+supports     false negative  no               0.852941
+                             yes              0.147059
+             false positive  no               0.800000
+                             yes              0.200000
+             true positive   yes              0.906250
+                             no               0.093750
+dtype: float64
+relation     error_type      arguments
+contradicts  false negative  own_claim                      0.466667
+                             background_claim               0.266667
+                             background_claim\nown_claim    0.266667
+             false positive  own_claim                      0.633333
+                             background_claim               0.333333
+                             background_claim\nown_claim    0.033333
+             true positive   own_claim                      0.550000
+                             background_claim               0.350000
+                             background_claim\nown_claim    0.100000
+supports     false negative  own_claim                      0.500000
+                             background_claim\ndata         0.323529
+                             data\nown_claim                0.117647
+                             backgroun_claim\nown_claim     0.058824
+             false positive  own_claim                      0.760000
+                             background_claim               0.120000
+                             data\nown_claim                0.080000
+                             background_claim\ndata         0.040000
+             true positive   data\nown_claim                0.593750
+                             background_claim\ndata         0.291667
+                             own_claim                      0.114583
+dtype: float64
+relation     error_type      data and claim arguments in same sentence
+contradicts  false negative  no                                           1.000000
+             false positive  no                                           1.000000
+             true positive   no                                           1.000000
+supports     false negative  no                                           0.941176
+                             yes                                          0.058824
+             false positive  no                                           0.880000
+                             yes                                          0.120000
+             true positive   yes                                          0.812500
+                             no                                           0.187500
+dtype: float64
+['false negative' 'false positive' 'true positive']
+['contradicts' 'supports']
+['false negative' 'false positive' 'true positive']
+['contradicts' 'supports']
+['false negative' 'false positive' 'true positive']
+['contradicts' 'supports']
+['false negative' 'false positive' 'true positive']
+['contradicts' 'supports']
+
+Process finished with exit code 0

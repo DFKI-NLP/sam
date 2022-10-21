@@ -1,0 +1,91 @@
+<H1>3. Measurement system</H1>
+        The design goals of our measurement system are to create deformations in a sample of cloth that explore a substantial range of the material’s strain space, and to record complete information about the forces applied to the cloth and the deformation that it undergoes. Like other cloth testing systems, we focus primarily on tensile forces, because it is hard to repeatably produce and measure compression forces in a sheet that is inclined to buckle. Tests are performed on 100 mm square cloth samples using two kinds of plastic clips: small, rounded clips that grab a localized area, and long clips that grip one whole side of the sample. We measure the weights of all cloth samples as well as the clips (see Table 1 ) and use these values in the optimization process. Forces are applied to the clips by fine wire cords that are pulled to defined displacements by eight linear actuators, and the tension in the cords is monitored by miniature load cells located at the actuator ends (see Figure 2). Our actuators and load cells are capable of applying and measuring tensions up to 45 N, but in our experiments the maximum force is typically on the order of 10 N. The geometry of the cloth sample and the attached clips is monitored by a vision system composed of four highresolution cameras. The location and orientation of the cords attached to the clips (which reveal the direction of the applied force) are also tracked. Each output frame of a measurement session contains: • The configuration of the cloth sample, represented as a deformed mesh with 10K regularly sampled vertices. • The positions and orientations of all clips attached to the cloth, including a list of clamped cloth vertices. • The forces applied to all clips. The magnitudes are determined by the tension measurements, and the directions are determined by the observed directions of the cords. Note that the actuator positions themselves are not part of the output, since they are superseded by the displacements measured at the clips. This prevents stretching of the cord, or other factors affecting the distance between the clip and the actuator, from affecting displacement accuracy.
+        c 2012 The Author(s) c 2012 The Eurographics Association and Blackwell Publishing Ltd.
+        Miguel et al. / Data-Driven Estimation of Cloth Simulation Models
+        4
+        2
+        Pulleys &amp; Wires 8 Force Sensors
+        
+          
+        
+        8 Linear Actuators
+        
+          Figure 2: Acquisition setup for the measurement system.
+        
+      
+      
+        <H2>3.1. Reconstruction</H2>
+        Our vision system recovers the space-time geometry of the deforming cloth and attached rigid clips, as well as the directions of the forces applied to the clips. Initialization. The cloth sample starts flat on a table and we capture the rest pose without applied tensile forces. This initial frame serves to compute the geometry of the cloth without any occlusion from clips. We then attach the clips, and the measurement process continues automatically, following a defined script of actuations, and recording images and forces. We typically deform the cloth by moving the actuators at 0.5 mm/sec and capture a frame every 2 seconds. Cloth Geometry Reconstruction. The raw data for a single deformation consists of 20 to 200 individual measurement frames, with a set of camera images and simultaneous force sensor readings for each frame. 
+We compute the per-frame geometry using a state-ofthe-art stereo reconstruction technique 
+[ BBH08 ], which was specifically tailored for reconstructing cloth geome∗ try 
+[ BPS 08 ]. If the inherent texture of the cloth is not sufficiently random, it is printed with a wavelet noise pat∗ tern 
+[ AIH 08 ]
+ to provide texture that can be used for stereo reconstruction and tracking. The pattern is printed with a flatbed inkjet printer and does not have a noticeable effect on the material behavior. To represent inter-frame correspondence, we use optical flow to obtain a single triangle mesh that deforms over time, akin to the human face tracking method of Bradley et al. [BHPS10]. To start, the cloth vertices in the rest pose frame (frame 0) are projected onto the input images, where optical flow predicts the projection of each vertex at the next time step. Back-projecting onto the reconstructed geometry for the next frame gives new position estimates for the cloth vertices. The process is then repeated using the result from frame n to obtain frame n + 1. As with all sequential tracking methods, very small errors can accumulate over time and cause temporal drift in the reconstruction. To avoid drift, we subsequently match each frame independently back to the rest pose frame using the approach described in Bradley et al. [BHPS10]. The final solution is smoothed using Laplacian regularization to remove noise. Tracking Clips and Cords. In order to measure the complete answer that a simulator should predict, we need to determine the interaction between the rigid clips, the cloth, and the cords. The clips are produced, using rapid prototyping, with embedded codes 
+[Fia05] that allow us to determine their identity, position, and orientation automatically. The area of cloth occluded by the clips is used to automatically determine which cloth vertices are clamped by each clip and will therefore be constrained to it in the simulator. The vision system also finds the cords in the images and triangulates a 3D line for each cord. A few user scribbles on an input image indicate which cords are affecting each clip. Figure 3 illustrates the force measurements and clip locations for three different frames from one experiment. The forces are rendered as red vectors with lengths proportional to the force magnitudes.
+        
+          
+            
+              
+                
+                   Cloth Sample
+                   Id
+                   Mass (g)
+                
+              
+              
+                
+                   cotton satin
+                   #4
+                   1.2
+                
+                
+                   rayon/spandex knit
+                   #12
+                   3.1
+                
+                
+                   cotton denim
+                   #14
+                   4.6
+                
+                
+                   wool/cotton blend
+                   #18
+                   2.4
+                
+                
+                   plastic clips (3 sizes)
+                  
+                   1.9, 10.1, 13.3
+                
+              
+            
+          
+          Cloth Sample Id Mass (g) cotton satin #4 1.2 rayon/spandex knit #12 3.1 cotton denim #14 4.6 wool/cotton blend #18 2.4 plastic clips (3 sizes) 1.9, 10.1, 13.3
+          Table 1: Cloth and attachment clip masses.
+        
+        c 2012 The Author(s) c 2012 The Eurographics Association and Blackwell Publishing Ltd.
+        Miguel et al. / Data-Driven Estimation of Cloth Simulation Models
+        
+          
+          Figure 3: Force measurements for selected frames of a corner pulling sequence. Forces are rendered as red vectors with magnitudes proportional to their values (in Newtons).
+        
+      
+      
+        <H2>3.2. Measurements</H2>
+        The set of deformations to measure is motivated by the goals of the parameter fitting stage (Section 5): to fit model parameters for stretch, shear and bending that best describe the cloth, and to validate the parameter fits by comparing against other measurements. To reduce the risk of falling into local minima during parameter fits, we have designed deformation sequences that produce near-isolated strains, and allow estimating stretch, shear and bending properties in a separate and incremental manner. However, unlike standard textile evaluation practices [Kaw80]
+, and thanks to our full 3D deformation capture solution, we relax the requirement of uniform strains. To isolate stretching we perform a uni-axial tension experiment, with forces applied to two long bar clips attached to either side of the cloth (see Figure 4 , 2nd column). The cloth is slowly stretched until a maximum force is reached and then slowly released back. The process is repeated three times, in both weft and warp directions separately. Shearing is captured using an approximate picture-frame experiment 
+[Cul79]
+, where four long clips fix the cloth boundaries and shear stress is applied as the cords pull on opposite corners ( Figure 4 , 3rd column). To isolate bending deformation we slowly push the flat cloth sample off the edge of a table and measure its shape as it bends under its own weight ( Figure 4 , 4th column), for both weft and warp directions. Thus we have a total of five measurements per cloth sample that will be used for parameter fitting (two stretch, one shear, and two bending). We also capture two sequences with more complex deformation ( Figure 5 ) for validation after parameter fitting. In the first test, opposite edges of the cloth are pulled in opposite directions, causing shearing and buckling ( Figure 5 , top). The second is a four-corner pulling test, where opposite pairs of corners are pulled in alternation, resulting in diagonal wrinkles ( Figure 5 , bottom). Figures 4 and 5 show that our acquisition system is able to recover the 3D cloth geometry including temporal tracking (illustrated with an overlaid checkerboard), tracked 3D clip locations, and individual 3D force directions (shown as green lines). To our knowledge, our method presents the first system able to record such extensive information about the behavior of a cloth sample.
+        
+          
+          Figure 4: Selected frames from isolated measurements of stretching, shearing, and bending. The left column shows the cloth in its rest state. One input image is shown above each 3D reconstruction. The reconstruction includes parameterized cloth geometry, clip locations and the direction of the force vectors (shown as green lines).
+        
+      
+      
+        <H2>3.3. Accuracy</H2>
+        In the vision system, the camera calibration accuracy is within 0.3 pixels, or about 0.075 millimeters at the distance of the cloth. The multi-view stereo algorithm of Bradley et al. 
+[BBH08] is among the most accurate available according to the Middlebury evaluation benchmark. It is difficult to quantify the accuracy of the temporal flow computation, but it can be visualized by compositing the reconstructed deformation on top of the input images (see accompanying video). The raw repeatability of our force sensors is about 3 millinewtons (RMS). The largest source of error in measuring the force indirectly through the cord is the internal friction in the cord as it bends around the pulleys, which introduces an artificial hysteresis of about 0.1 N.
+      
+      
+        

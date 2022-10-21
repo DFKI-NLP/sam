@@ -1,0 +1,4 @@
+T59617363c91298e61146bdd29ac95d84	own_claim 1268 1313	This is in contrast with real cloth situation
+Tab76f9a04b062820ec2fa38c619fb0a2	own_claim 1213 1266	the corresponding forces on the vertices will be high
+Rc012a73d8d3453b74babb72a34dc813e	contradicts-GOLD Arg1:Tab76f9a04b062820ec2fa38c619fb0a2 Arg2:T59617363c91298e61146bdd29ac95d84
+Rda0d318199f839b9ddf11d215f12994a	supports Arg1:Tab76f9a04b062820ec2fa38c619fb0a2 Arg2:T59617363c91298e61146bdd29ac95d84

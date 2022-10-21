@@ -1,0 +1,12 @@
+T302790bba67ea0ebc0561605003e0cea	own_claim 873 940	the adaption of the face normals in equation (3.1) is not necessary
+T91ab1cfea8edb0eea14d9de2188f9517	own_claim 1054 1100;1117 1131	the same method as described for rigid objects can be applied
+T6cacd41d897cacf7e6331296bca0e90a	data 1102 1115	section 4.2.2
+T250c0d32e2ef144457cc35eb70942fe1	own_claim 369 481	both methods produce realistic looking results which are capable of enhancing the realism of computer animations
+Td8e16e68689dde88a5e9e60c8526713b	data 815 871	three-dimensional objects define an inner and outer part
+T86fb8c9fe61664a3099cf126eb6add9f	data 352 368	previous section
+R249d5b5d02f31a650f7589e927928044	supports-GOLD Arg1:T86fb8c9fe61664a3099cf126eb6add9f Arg2:T250c0d32e2ef144457cc35eb70942fe1
+R9ceab216072bbf1f74f0e5440d033b03	supports-GOLD Arg1:Td8e16e68689dde88a5e9e60c8526713b Arg2:T302790bba67ea0ebc0561605003e0cea
+R1873e029332b7844e0bfe5c9c97f77de	supports-GOLD Arg1:T6cacd41d897cacf7e6331296bca0e90a Arg2:T91ab1cfea8edb0eea14d9de2188f9517
+R94c3e865cf2bafadd4d837dcf1db14fb	supports Arg1:T86fb8c9fe61664a3099cf126eb6add9f Arg2:T250c0d32e2ef144457cc35eb70942fe1
+R2fd8eccab473b232e9330b583a97825a	supports Arg1:Td8e16e68689dde88a5e9e60c8526713b Arg2:T302790bba67ea0ebc0561605003e0cea
+R466797676a6d9faf464b1a80c96be84a	supports Arg1:T6cacd41d897cacf7e6331296bca0e90a Arg2:T91ab1cfea8edb0eea14d9de2188f9517

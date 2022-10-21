@@ -1,0 +1,49 @@
+T93032babe558cb533dea9cd6e078d3b4	background_claim 38 92	Collision handling in Computer Graphics has two phases
+Tda37e2db5bb7062faafd8dc27ad86ec6	background_claim 94 121	One is to detect collisions
+Teb301af2580da534de86cdcd88593013	background_claim 126 160	the other is to resolve collisions
+Teb99df7db26cf537c396ec9dc8e80b80	background_claim 192 251	the computation time to detect collisions is not negligible
+Te9a05d7ee7d4adab37875cffeca7ee20	data 260 294	the number of geometrical entities
+T8b00febec6f97810073468553225d4a7	data 303 308	faces
+T974a225ba0a723112039ef924cf3cff4	data 310 315	edges
+Tc9980328e971e1c7b5dab152996e5a89	data 317 380	the collision detection algorithm has to handle is considerable
+Tc19c1896ab2932c3148bcfa010be4da6	data 382 422	over 10,000 particles for regular attire
+T87a7e194f75774f1e4548a287418f372	background_claim 442 517	several approaches have tried to expedite the collision detection processes
+T523d8d97296601244b7dca0b904e1ceb	data 520 522	16
+T812e634fbad8623ff6f29fa04a635dc6	data 525 526	3
+T1e48a36e2b0e90c174a8cb45dc672cf7	background_claim 530 624	Collision resolution is to find the correct next positions and velocities of colliding objects
+T3d7852b39cd3570f2b600c9095a063ab	background_claim 626 751	Cloth resolution methods so far have found non-penetrating positions, velocities and accelerations of cloth surface particles
+T919aa4fa3e668f962db9ecb1b62455f9	data 755 757	14
+Tbea8eb6f7f30dd2e6f4e2d042eb5d8a2	data 760 761	3
+T72aa61e52aa8d4d05a778aaf08cc224b	data 764 766	15
+Td58aa8d6df8a94771b234a0a806af743	background_claim 770 870	This scheme works fine for cloth-rigid collisions and for the special case of cloth-cloth collisions
+T887a307c802a8a8f46e33b5635abc732	data 877 979	the dynamic interactions between cloth surfaces in cloth-cloth collisions do not have to be noticeable
+T19681a6517633b06ee016a5fd7bf5151	background_claim 981 995	Volino et. al.
+T01779a724e6b7429fd3ff9557a3c82a0	data 998 1000	15
+T12176f1aff01e6d2563fa88d36a12a9f	background_claim 1004 1138	applied the conjugate gradient method to find the actual particles’ positions where a group of particles are colliding into each other
+T3a125a4f49f029432141aa37fdab2e55	background_claim 1140 1201	By preserving barycentric relationships of collision entities
+T7e2a083bb2a57922452426ab4827c1fd	background_claim 1203 1299	their method resolves collisions where numerous cloth surfaces are colliding together as a group
+T56c195a7d4c7fb9100553f31df54fbd3	background_claim 1307 1360	is a novel way to resolve multiple collisions at once
+T860e2d48a9233c9ba920d8e69449ae36	background_claim 1370 1447	it does not conserve the momentum of cloth surfaces in cloth-cloth collisions
+Tc60982aa627bce26bf008d9c18d29411	background_claim 1449 1508	Another method for cloth-cloth collisions has been proposed
+T7133985a69f9c26a5ceace0877610f3f	data 1512 1518	Provot
+T952516f6764d130418c59ba558ef4401	data 1522 1524	12
+T78f2890aae4c3be5f8dd0686675b904e	background_claim 1529 1619	which resolves collisions by giving an average velocity to all the particles of collisions
+T25c829400174f4fc0a54f451bc3db916	background_claim 1621 1657	Provot’s method is easy to implement
+T71c977e59522b043aefc3600991d23c7	background_claim 1662 1711	it cannot give proper visual effect of collisions
+Tb0c21784d1a7ddbe47f3d9e090ddaa72	data 1718 1813	we cannot get dynamic interactions between particles once the particles collide into each other
+Tbd03518e766968eac556075a76c5e7cc	background_claim 1815 1907	Cloth-cloth collision resolution is a special case of deformable N-body collision resolution
+T17564ad6a63440f0890075fa920b508f	own_claim 1909 2095	To solve deformable N-body collision resolutions, we propose a new collision resolution method which gives a visually reasonable response by ensuring the conservation of N-body momentums
+Tc14f36f048a44ea1b9dd65c043fc5629	own_claim 2097 2131	Our cloth system is particle-based
+T872641c04536676bbd1e6ae3170a6d82	background_claim 2136 2183	many systems are in other cloth research groups
+Tad9d6cf8978a11eca0613da5619625a9	data 2186 2188	14
+T2a529190a09f55367c31e044485d80f1	data 2191 2192	6
+Tabf7b30347190f3fa8b7b3fa595e2d13	data 2195 2197	12
+T7b6bdbee38d4dd2cdbaba5877dd3df8c	data 2200 2201	3
+Tf35cd6850a636cf1e09fc6c29c0035fa	own_claim 2454 2586	The system of equalities is based on the scheme adapted from the simultaneous resolution method for rigid N-body collisions proposed
+T70714b469d8f220700b39693badbe58f	data 2590 2596	Baraff
+T4fb217aa0ccb4332a1db3949ad483035	data 2600 2601	1
+T9524f3fac89ea2070db7f091576f465a	background_claim 2613 2764	his original inequality relationships between relative velocities before and after collisions are purely heuristic, which may not be physically correct
+Ta3c0568bf035867e6e2387ebb1faf711	background_claim 2773 2864	this physical inaccuracy has been an inherent problem of simultaneous collision resolutions
+T7f768d05aea7bc8ced2dd8bc061f165f	background_claim 2866 2914	it appears to give graphically agreeable results
+Te5a940f44f1a4236f2e2b26f2d989968	own_claim 2922 3043	with the help of the law of N-body momentum conservation, we found the results of our resolutions are visually acceptable
+

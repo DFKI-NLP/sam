@@ -1,0 +1,6 @@
+T5cc01cd96e90e714bd525819a7423583	own_claim-GOLD 112 314	We implemented the wind models described in sections 4.1 and 4.2 in a cloth animation system that employs a fast finite element method to simulate the drape of textiles with measured material properties
+T655014cba8f4aac7a210fb99c113f0b2	own_claim-GOLD 325 348	For collision detection
+Tb437475ff569977e468f2154df304935	own_claim-GOLD 413 453	we use k-DOP hierarchies as described in
+Tbffd9698a9027725dc1dc13d060ceb67	own_claim 112 314	We implemented the wind models described in sections 4.1 and 4.2 in a cloth animation system that employs a fast finite element method to simulate the drape of textiles with measured material properties
+T096b5ee863c9685e3079efe2de9eaf5d	own_claim 325 348	For collision detection
+T04edd3043738f29a4f322b6c36dfdf69	own_claim 413 453	we use k-DOP hierarchies as described in

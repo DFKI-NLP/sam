@@ -1,0 +1,27 @@
+Te34bec7a4a1f3d0d985c8808b9582f41	own_claim 8118 8127	VK models
+Te5d8a502eed5a35d29d88b4c97381a65	own_claim 2609 2667	#12 is isotropic and very compliant in stretch and bending
+Tb9407158fb9cb23ecc280cf32503772b	data 6936 7017	the inherent coupling of stretch and bending deformation components in this model
+T10e39fe5930031dec72f67ed3eb17073	own_claim 3581 3631	The fitting residual is larger for stiffer fabrics
+Tf1e8ac7c5aa034a49f0c5c7545fef31b	data 4858 4912	the force-displacement plot of the corner pulling test
+T308224ce4a7c39b4feb120fce37389b3	own_claim 7033 7097	the overall deformations in complex shearing fit reasonably well
+T5f114d3c6db72ee776790824f2719808	own_claim 2669 2737	#4 is also isotropic, very stiff in stretch but compliant in bending
+T7d3eef2183a6405add4a0037a02cb41b	own_claim 3637 3706	the nonlinear orthotropic model variants fit anisotropic fabrics best
+Tc0733b4bdb6e610170f83059698842fa	data 7702 7736	shear stiffening due to stretching
+T88ae744687dac58213766414791a2e23	own_claim 6580 6659	the traditional L 2 metric is not appropriate for evaluating error in this case
+Te0f2d4fa9f35028e97715b3823ec88e7	own_claim 7954 8116	missing cross-modal stiffening may also be, to a large extent, the reason for stiffness underestimation in the corner pulling test for the Soft Constraints and St
+T2bffb6eaaaa70944f6b566b6d84a6458	own_claim 7528 7582	At least three effects are missed by the tested models
+T45078206d98edfaacb5d732bfe066648	own_claim 2739 2820	#14 is stiff and quite isotropic in stretch, but extremely anisotropic in bending
+T9ba9767e1c72ad0ecc674fb4a8f56000	own_claim 6362 6450	the actual folding shapes of simulated cloth may deviate largely from the captured cloth
+T38cc8af95778c5981e789346c8eca459	data 7619 7665	the diagonalization of the standard StVK model
+T269660c6ef1193bbcc7dbfc0e3ee70c7	own_claim 7596 7610;7672 7694	Poisson effect cross-modal stiffening
+T0e13f533795e029320cc7527c6fe6d82	own_claim 4821 4847;4926 4986;5398 5448	In the three other samples the stiffness is underestimated for the Soft Constraints and VK models, and overestimated for the Springs model
+R27cac6cb7a6e40e913be1077ff6e1452	supports Arg1:Tf1e8ac7c5aa034a49f0c5c7545fef31b Arg2:T0e13f533795e029320cc7527c6fe6d82
+R0ff7961eaedf47ed02c2c70bb434a1b1	supports Arg1:T269660c6ef1193bbcc7dbfc0e3ee70c7 Arg2:T2bffb6eaaaa70944f6b566b6d84a6458
+R7a584e5a1f62d5ebb4d8dedc9b95ee92	supports Arg1:T38cc8af95778c5981e789346c8eca459 Arg2:T269660c6ef1193bbcc7dbfc0e3ee70c7
+R8983660ad629873400ef1cbab110efb7	supports Arg1:Tc0733b4bdb6e610170f83059698842fa Arg2:T269660c6ef1193bbcc7dbfc0e3ee70c7
+Re16bb5eca4d0c30337c0aa1d9fb767a9	supports Arg1:Te34bec7a4a1f3d0d985c8808b9582f41 Arg2:Te0f2d4fa9f35028e97715b3823ec88e7
+R7abfa3f7a2f6644cffe23885bb3d41eb	supports Arg1:Te5d8a502eed5a35d29d88b4c97381a65 Arg2:T5f114d3c6db72ee776790824f2719808
+R0abdc6969bcd5ab4455ef1cef890b614	supports Arg1:T5f114d3c6db72ee776790824f2719808 Arg2:T45078206d98edfaacb5d732bfe066648
+R0c3899674f0466ba3bed802c26167a1f	supports Arg1:T10e39fe5930031dec72f67ed3eb17073 Arg2:T7d3eef2183a6405add4a0037a02cb41b
+R71218df26c7f8845ddffd6182960c79e	supports Arg1:T9ba9767e1c72ad0ecc674fb4a8f56000 Arg2:T88ae744687dac58213766414791a2e23
+Rcd96af7c195bf278fd6baa54c93bd4f6	supports Arg1:Tb9407158fb9cb23ecc280cf32503772b Arg2:T308224ce4a7c39b4feb120fce37389b3

@@ -1,0 +1,25 @@
+Ta4ceefcb229c09650637e4eb983c2726	own_claim 10789 10996	This happens when objects do not move fast enough to penetrate objects outside an IZ, but just fast enough to make the result of collision resolutions penetrate the proximity region of objects outside the IZ
+T1fde87e09862494b43789e61a80cc2e6	own_claim 7537 7608	we can think of two ways to solve this multiple cloth collision problem
+T4058dc4df7933c3a92c3c7598e08af20	own_claim 7712 7770	the other way is to handle them as simultaneous collisions
+T8175400555b9bfd0a3b49bd9d0f20334	background_claim 8424 8582	we have to consider the possibility that the resolution of a collision can create new multiple collisions, which we have to employ another strategy to resolve
+T90da03935e509cb9ee77b19eb30acc26	background_claim 565 624;646 689;698 736	For rigid N-body collisions by graphics and robotics groups and for flexible-rigid collision resolution several approaches have been suggested
+T1b64cc4cb829f4d40b68d62e77107708	data 693 694	2
+Tc3a5a7d2c15ca8cd08e638b247b7429b	own_claim 10482 10483;10484 10489;10490 10497;10498 10503;10504 10507;10508 10511;10512 10513;10514 10515;10519 10564	v Using i + for eq. 1 1 i and N 2 we can deterministically find the solution of
+Tae37d19e7953473da03b6544c338e55e	own_claim 10571 10621	we use swept-volumes of faces to detect collisions
+T1935b0252a9aabeaba4a55b8c7f0b457	own_claim 11205 11249	in the worst case, this involves repetitious
+T31476ace08c8146c2ef87714db962a88	background_claim 742 818	they are not directly applicable for deformable N-body collision resolutions
+T9995374dcbdf0bf280e0dfed48e32493	own_claim 3318 3380	we cannot handle the particles in that CC as a bundle as usual
+T5f78fce1458978ea8e995d6322709148	data 10705 10787	collision resolutions of an IZ create new collisions against objects around the IZ
+T1bee6d84811e176828d748bde1136ffe	background_claim 8358 8379;8389 8414	This whole process is computationally expensive
+Tc14782fbc7b1035f72c3e1bcd86f90b3	own_claim 11263 11339	we may introduce other new collisions when we resolve the current collisions
+T32c96ef89d98a1d1cb61c9fd7a2e9555	own_claim 3388 3449	the particles in that CC will stick together after resolution
+R49c31e83a9163118585d1c3c60022e30	supports Arg1:T90da03935e509cb9ee77b19eb30acc26 Arg2:T90da03935e509cb9ee77b19eb30acc26
+R8346baa68420a7ec3fb69af606ddbd2a	supports Arg1:T1bee6d84811e176828d748bde1136ffe Arg2:T1bee6d84811e176828d748bde1136ffe
+R8db8afa7b4e12f0e7d72b856a6da930e	supports Arg1:Tc3a5a7d2c15ca8cd08e638b247b7429b Arg2:Tc3a5a7d2c15ca8cd08e638b247b7429b
+R03d70f04442d3768ca369c57810d6b15	supports Arg1:T1935b0252a9aabeaba4a55b8c7f0b457 Arg2:Tc14782fbc7b1035f72c3e1bcd86f90b3
+R3f16bf52b7e6be62c115c2eafb71e35c	supports Arg1:T1b64cc4cb829f4d40b68d62e77107708 Arg2:T31476ace08c8146c2ef87714db962a88
+R3bb88909d3460c893f520805be56ca01	supports Arg1:T9995374dcbdf0bf280e0dfed48e32493 Arg2:T32c96ef89d98a1d1cb61c9fd7a2e9555
+Re91b5d3d39f7f5410c4f60e4d4376a3f	supports Arg1:T4058dc4df7933c3a92c3c7598e08af20 Arg2:T1fde87e09862494b43789e61a80cc2e6
+Re7ad25cd416932966526e8fd353fa697	supports Arg1:T1bee6d84811e176828d748bde1136ffe Arg2:T8175400555b9bfd0a3b49bd9d0f20334
+R704c24b8d207c378927466844f0b7bf1	supports Arg1:Tae37d19e7953473da03b6544c338e55e Arg2:Tc3a5a7d2c15ca8cd08e638b247b7429b
+Rbf40305e51661ea70c2e027cba2329d0	supports Arg1:T5f78fce1458978ea8e995d6322709148 Arg2:Ta4ceefcb229c09650637e4eb983c2726

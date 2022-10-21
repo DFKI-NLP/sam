@@ -1,0 +1,8 @@
+T34a82272c91f7e02a8abaaa00b9730af	own_claim 6939 6988	can therefore be calculated once at the beginning
+T8cfbad5f277fa12ada1f5dd2e3e7d3f8	own_claim 7390 7614	One could decide to restrict the simulations to small deformations where the approximation is valid and/or take into account the higher order terms in the series expansion to extend the range of validity of the approximation
+Td70bf061c170371b592af3094c584186	own_claim 6719 6794	The wrinkling coefficients on the other hand, are computationally expensive
+Tcc0d7a6feed74fd82304f2c04eab9532	own_claim 6852 6934	they depend only on quantities that are known prior to entering the animation loop
+Tdfc35bea89521bd47de21d0234f8bbf5	own_claim 7625 7656	we propose a pragmatic approach
+Ra73f5c709b8e010d1259745b3f7b1ec1	contradicts Arg1:Td70bf061c170371b592af3094c584186 Arg2:Tcc0d7a6feed74fd82304f2c04eab9532
+R24a51693f8103253485bbdc1e86361ce	contradicts Arg1:Td70bf061c170371b592af3094c584186 Arg2:T34a82272c91f7e02a8abaaa00b9730af
+Rc7b9b5d7f775ada8c6c6e31a8e875007	contradicts Arg1:T8cfbad5f277fa12ada1f5dd2e3e7d3f8 Arg2:Tdfc35bea89521bd47de21d0234f8bbf5

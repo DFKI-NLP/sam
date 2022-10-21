@@ -1,0 +1,6 @@
+Tf2227340eec50ac201d3478e70c31a86	own_claim 407 463	Our metric captures the complex dynamics of cloth motion
+T0f8bb72e0563eb628a0a781d0e43bcec	background_claim 1574 1631	most fabrics have very complicated reflectance properties
+Td15e1833fe3c4c268c48c8d95719c854	data 1369 1371	15
+Td66bb8116f589354a191750a4e12b400	own_claim 473 519	helps to distinguish between different fabrics
+Rc8e22274d42964f5928f21746b3ea08c	supports Arg1:Tf2227340eec50ac201d3478e70c31a86 Arg2:Td66bb8116f589354a191750a4e12b400
+R2d9aae67fd32ac62e26c448fc9f16e8c	supports Arg1:Td15e1833fe3c4c268c48c8d95719c854 Arg2:T0f8bb72e0563eb628a0a781d0e43bcec

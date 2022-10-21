@@ -1,0 +1,8 @@
+T2e7ae547621bfb577368a8795471ac45	own_claim 110 148	Unaccounted overhead of the simulation
+T1eb8a50a4ecd798d54f34b2ebe1544f0	own_claim 170 184	includes tasks
+T65005c50a86b1ea2b737ff933c5974cb	data 193 217	geometry transformations
+Ta7b258df96f502ef090159474a0c6db8	data 219 236	memory allocation
+T3eb23a0cd4500ed2b34e11035baa78b3	own_claim 1048 1123	simulators based on explicit integration methods could make a similar claim
+Te588656c23b160438954bc96bc4c6f9b	own_claim 1474 1602	This is slightly better than O(n 1.5 ) performance, which is in line with the convergence rates of the conjugate gradient method
+T1a204037f3f2780bf0dd7c0023d96f9d	data 1605 1607	14
+

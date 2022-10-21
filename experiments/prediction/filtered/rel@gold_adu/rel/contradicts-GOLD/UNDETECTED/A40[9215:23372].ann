@@ -1,0 +1,5 @@
+Tac7c1e6309c89da3e43117584d5f4a3e	background_claim 13173 13358	For physically accurate simulations based on the common method in fluid dynamics the model introduced by Stam produces realistic effects which global wind field models can never achieve
+Ta596912ce17f11576e6b9bba570b3564	background_claim 13509 13566	using a high grid resolution is computationally expensive
+Tc9f703e542778c1b55b84492512a73cf	background_claim 13458 13504	implementing the fluid solver is quite complex
+R5efa6d498c4378603b1955cd6f93f24f	contradicts-GOLD Arg1:Tac7c1e6309c89da3e43117584d5f4a3e Arg2:Tc9f703e542778c1b55b84492512a73cf
+R573de47e0f00cf6d193a7d73686d5adf	contradicts-GOLD Arg1:Tac7c1e6309c89da3e43117584d5f4a3e Arg2:Ta596912ce17f11576e6b9bba570b3564

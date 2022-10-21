@@ -1,0 +1,6 @@
+Tee22750d63bb09c4ffa4cc30f43234f8	own_claim 568 623	the error space is fairly noisy, with many local minima
+Ta4566766c578dd806143ec1ef94294c3	own_claim 625 680	motivating the need for a global optimization technique
+T3e76a81b9f6f556cd96abd9d2a040d83	own_claim 857 939	The importance or sensitivity of a parameter p depends on its local gradient ∂E ∂p
+T5920527aaffde6cb5403822588dbc4bb	own_claim 942 1017	it relates a small change in parameter value to a change in the error value
+Tbaced5b97cd0d186bd9a3f0451b344e2	own_claim 1425 1528	Parameters with low variability have high sensitivity and are estimated reliably for a given experiment
+

@@ -1,0 +1,24 @@
+T831ca68a961f28f9ae5c64a55732648f	own_claim 1657 1739	there is a significant disparity in the final optimized values from the two trials
+Tdcbfb29eba7d03fb70a72fd88b60de81	own_claim 2026 2063	the final error values are very close
+Tf16e6693ea9b3cafd0ffa6eeaab4ca53	own_claim 2065 2135	We get consistent estimates for parameters that have lower variability
+T70cdf7b53e7bb6645ea6910e010864f1	own_claim 2159 2212	Parameters with high variability are estimated poorly
+T687152ebee46c84652e3878bdb178546	data 2222 2278	their values do not contribute sufficiently to the error
+T333a15501f9393268c9decb45b081250	own_claim 2330 2431	static tests cannot be used to estimate dynamic parameters like stretch and shear damping or air drag
+Tbdf04e294131c61f76fed7fd27a6379c	own_claim 2436 2461	motivates the waving test
+T11c0a938788bd56835ebc4682f4e215d	own_claim 2469 2514	excites both the static and waving parameters
+T43359e7dbf79cde44b11b283c6d502af	data 2660 2667	Fig. 10
+T127c11295d194650dc5ad0097cd6b85c	own_claim 2998 3067	The final values of the parameters from the two trials differ in part
+Tda28764083b62523b873743d9bafc487	own_claim 3076 3130	the variability of the parameters is still fairly high
+Te83c0593579813ea0e3d6e18c0fcf5ee	data 3133 3140	Fig. 11
+T67e22859e0680f713347cf2f3165f776	own_claim 3144 3235	Different motions or larger sequence might further reduce the variability of the parameters
+T42d68c0a1e5ddd32c0a02915e39890c3	own_claim 3530 3623	This approach seems to produce plausible results with skirts and other validation experiments
+T3b225825269d4f94b64e2568996f1835	own_claim 3650 3800	a more general solution for parameter identification using our framework is to simultaneously optimize across multiple trials of different experiments
+T952de4c1860a60a6c3fed11f30c1becd	own_claim 4512 4604	our approach could be potentially useful for recognizing different types of fabrics in video
+T70ec3d4d2d3dae61c26d5b0ce9b22630	own_claim 4922 4996	the parameters obtained from optimization generalize well on new sequences
+Tcc5392ad3b3751fd4e73a019db23730e	own_claim 5678 5827	the parameters obtained from our optimization approach approximately capture the static shape and dynamic properties of skirts of different materials
+Rabe4a08c20acdc90d1957385ccc79384	supports Arg1:T687152ebee46c84652e3878bdb178546 Arg2:T70cdf7b53e7bb6645ea6910e010864f1
+Recd8fe3d0a8579751f1cc00c7a8de697	supports Arg1:T333a15501f9393268c9decb45b081250 Arg2:Tbdf04e294131c61f76fed7fd27a6379c
+R6206e9870031ab2e79ebc496b336cb29	parts_of_same Arg1:Tbdf04e294131c61f76fed7fd27a6379c Arg2:T11c0a938788bd56835ebc4682f4e215d
+Rfef840bc97f8c8c75334ab68846520b6	supports Arg1:Tda28764083b62523b873743d9bafc487 Arg2:T127c11295d194650dc5ad0097cd6b85c
+R58eb38e87d3bbb3694726bafaa0c6a90	supports Arg1:Te83c0593579813ea0e3d6e18c0fcf5ee Arg2:Tda28764083b62523b873743d9bafc487
+Re729d9eefbed05a50fcf30b0d4b17346	contradicts Arg1:T42d68c0a1e5ddd32c0a02915e39890c3 Arg2:T3b225825269d4f94b64e2568996f1835

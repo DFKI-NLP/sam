@@ -1,0 +1,3 @@
+T3c882c6f2a06a3160d10974940f8033a	own_claim-GOLD 1010 1105	a constraint-based method is inherently well-suited to operate in the quasi-inextensible regime
+T1a87fb84e80ebf2f3a984c7eff0b9c17	own_claim-GOLD 1989 2067	We propose a novel CLM formulation that is implicit on the constraint gradient
+Te52e8a0831e598b5f0640e1fe1e9c09b	own_claim-GOLD 2076 2168	We prove that the implicit method’s nonlinear equations correspond to a minimization problem

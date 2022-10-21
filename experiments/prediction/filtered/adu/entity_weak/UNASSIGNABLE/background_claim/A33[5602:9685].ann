@@ -1,0 +1,10 @@
+T4997982bc13fe000559baf51ebaa8846	background_claim 687 731	markers are typically painted on the surface
+Tc61cab016de622b4c79b7f0f68d4b19e	background_claim 889 930	typically detected using SIFT descriptors
+T9ee9c4324a30c6217e9a33cf7066b8e5	background_claim 1610 1697	They use a stereo camera to acquire 3D and SIFT descriptors to establish correspondence
+Tddbfe11db114151417139f586713b909	background_claim 1771 1813	They introduce a rudimentary strain metric
+Tc3efd10e67b7eb786ab7a2c543630292	background_claim 1846 1875	to rule out incorrect matches
+Ta51da9ad49eeae98c3217ea18b6b3368	background_claim 2150 2192	This system uses a Kalman smoothing filter
+T6789335f1e8fcae65e26ae00886abaf5	background_claim 2197 2214	is heavily damped
+Ta1ec3b3d00288b4680dc64184d44a3a0	background_claim 2360 2409	by creating a non-repeating grid of color markers
+Te862ce2cdd1176352db863563be10eea	background_claim 2411 2488	Each marker has five possible colors and all three by three groups are unique
+Tcb1fba4e52caa91ac2e7ca610e6ee61b	background_claim 2795 2836	They use thin-plate splines to fill holes

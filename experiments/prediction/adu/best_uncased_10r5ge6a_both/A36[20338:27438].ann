@@ -1,0 +1,73 @@
+T9ea6f978d1f7433315aff0f1992d4acd	background_claim-GOLD 1022 1065	Most elastic cloth models separate membrane
+T643dffd9f8ce8abe3ed752cadfed8d89	data-GOLD 1073 1080	stretch
+Te457c180bdff0666a4e5415dc368dae6	data-GOLD 1085 1090	shear
+T8ac281782a2e6c505a01173e72827a23	background_claim-GOLD 1092 1124	and bending deformation energies
+Tc5fcd3ee04050aa23e9734976b66ed08	own_claim-GOLD 1680 1761	We have evaluated three models for membrane deformation that fit this description
+Taa7c84512e759ebfb6c912131848fce4	data-GOLD 1763 1777	spring systems
+T44769bb0d948a196fae04786d4cf7e56	data-GOLD 1779 1804	the soft constraint model
+Td4ec9c0d314fbd61a4758bff0d8665e2	data-GOLD 1828 1832	BW98
+T7162ec0e2f4d22855d3aad9afc675381	data-GOLD 1835 1875	and the diagonalized St.Venant-Kirchhoff
+T961c088cd160fedfb819132d5405b52b	data-GOLD 1883 1888	model
+Tc5a2056ed4efb44941ca64901e58ce71	data-GOLD 1907 1913	VMTF09
+Tba452aed55d9b88b8500376bb6d827e3	own_claim-GOLD 1917 1939	and two bending models
+T4066a9523e421425fbf7e72b81554a9f	data-GOLD 1941 1955	spring systems
+Tc79557a50e2b9d166b82ba3f0f056b6a	data-GOLD 1960 2007	the edge-based bending model in Discrete Shells
+T2243bf8768fb4f7e89b29e02e23bb9d3	data-GOLD 2009 2015	GHDS03
+T3d5aef80243b38462ceaca865cfb6f98	own_claim-GOLD 2396 2466	not all force models define the quantities below explicitly as strains
+T02e669d9828032e8fac8649c5695b782	data-GOLD 2471 2526	they often rely on the resolution of the discretization
+T07f24d93864cd67653ed14f88413b7d1	data-GOLD 2531 2608	they differ simply by scale factors that can be embedded in the stiffness k i
+Tf1bd9c506772adbc1868c75e8b97be06	data-GOLD 3978 3984	VMTF09
+Tc7f48c1f9d4f77264f41b16f64df78aa	background_claim-GOLD 3986 4097	approximate the standard StVK model zeroing out off-diagonal terms in the matrix that relates strain and stress
+T9ef8b599d9858f324953f2f736658b89	data-GOLD 4099 4105	σ = Eε
+Ta9be488121d842b473a2ffd24a843c95	background_claim-GOLD 4113 4220	in the diagonalized StVK, each membrane stress component depends only on its corresponding strain component
+Tb6969d2512bd4747fa32a6a31928a420	data-GOLD 4222 4236	σ s,i (ε s,i )
+T8521e9331be5bcaf472769654c0625b2	data-GOLD 5044 5050	GHDS03
+Tb7ae2d0a812f59eed64c1b17655bbb86	data-GOLD 5072 5077	BMF03
+Tb567170699d62a500de676c43fd4bd58	background_claim-GOLD 5080 5245	discovered concurrently the appropriate weighting of the angle change in order to model homogeneous bending on irregular triangle meshes with a homogeneous stiffness
+T7897812da60d426f0bb35b02987890a1	own_claim-GOLD 5473 5595	With our separation of weft-, warpand diagonal-bending to capture anisotropy, the bending models in Discrete Shells and by
+T03472476a49bea772945854abdd65e9a	data-GOLD 5616 5620	BW98
+T784f0720cf2c0b6482915f29861d9ce6	own_claim-GOLD 5622 5667	are equivalent up to a stiffness scale factor
+T0d6faf35c3d8bbe8bc3544d70240c99e	data-GOLD 6437 6443	VMTF09
+T5ade9782bd03bdeaa8fd13d2779a1f73	background_claim-GOLD 6445 6499	propose a general nonlinear stress-strain relationship
+Tb18cf6d7ae2232cd9839aca869354bbe	own_claim-GOLD 6564 6635	the same construction can easily be built on any of our selected models
+T7aba61151aa9b44829aca4e856c91e50	own_claim 33 98	Our goal is to study the fidelity of constitutive models of cloth
+T5707a5e25c5d724d7560695bf8d1fc26	own_claim 462 514	some of the models we look at are discrete in nature
+Tfd353b46f4641c5c2b495e563e9ed056	background_claim 1022 1065	Most elastic cloth models separate membrane
+T9f2cdbfd850020f4ebf567fa551ea1ef	background_claim 1141 1209	deformation energy density can be described by the product of strain
+T3a5cdea4da088b80adcbe4e3cc88ee69	background_claim 1264 1382	most of these models define separable scalar stress components as linear functions of individual scalar strain metrics
+T9c6c08808aaae3afc0667312f18b3e20	background_claim 1398 1486	the energy density of each deformation component i can be written as W i = 1 2 k i ε 2 i
+T5d2b94d5e64b34fc495f50eaeb5d80a4	background_claim 1595 1677	The force density due to each ε i follows as F i = − W i = −σ i ε i = −k i ε i ε i
+T155e1d7020d9de5df20cd0d79a549e44	own_claim 1680 1761	We have evaluated three models for membrane deformation that fit this description
+Tbb3ff7555408cb7d2ea02bde3512f791	own_claim 1779 1804	the soft constraint model
+Taa5e1854af90f131702fc563e0a4644a	data 1828 1832	BW98
+Ta68a0abd9c7328a0db967c2969571328	background_claim 1839 1875	the diagonalized St.Venant-Kirchhoff
+T3bdc0453d0d5b0055bc617c2229d6f73	data 1907 1913	VMTF09
+T39daf46487a92bdb712f07d7e024eec6	background_claim 1921 1939	two bending models
+Ta08e1041ab020914428c2623f6cff83c	background_claim 1960 2007	the edge-based bending model in Discrete Shells
+T7c8a88dae56f63531f22368c45584bfa	data 2009 2015	GHDS03
+Tfe548e442f849a95426e399ad2f178a7	own_claim 2396 2466	not all force models define the quantities below explicitly as strains
+Tf81a0340eff69d317856882e3b3fb3c3	data 2471 2526	they often rely on the resolution of the discretization
+T1da7590deca7252d8872c514e7907ed9	own_claim 2531 2608	they differ simply by scale factors that can be embedded in the stiffness k i
+T69a8f463df8a0118f1117dccc24e24cd	own_claim 2611 2739	We use continuum strain definitions in all cases to fit them in a common formulation that allows us to easily compare the models
+Tc9f55c9c07cc07e1043da5fb5f04aa9c	data 3482 3488	TPBF87
+T105bcf74832988c7a38faca26bb0005f	data 3978 3984	VMTF09
+Tbaa61ba2fd5d672ea9d4a3254dec0d9e	background_claim 3986 4105	approximate the standard StVK model zeroing out off-diagonal terms in the matrix that relates strain and stress, σ = Eε
+T8da309cbcd73bf4f51222395c92afb45	data 5044 5050	GHDS03
+Te8985890e9ef147d5b040f850c8a67d3	data 5072 5077	BMF03
+Tb2f0ba6373e03863022f0c503d762acd	background_claim 5080 5245	discovered concurrently the appropriate weighting of the angle change in order to model homogeneous bending on irregular triangle meshes with a homogeneous stiffness
+T45d86d981bb99f4cd2a996f690f66d20	background_claim 5358 5470	This definition implies that bending energy density is integrated over edgecentered rectangles of size l 0 × h 0
+T9bf44ee9e8a18c87144dc02602b06851	own_claim 5473 5595	With our separation of weft-, warpand diagonal-bending to capture anisotropy, the bending models in Discrete Shells and by
+T1ebcd1100025de9ef5d647aaf4fa615c	data 5616 5620	BW98
+Tcefc8f09c902299df980f0d3c7128ce1	own_claim 5622 5667	are equivalent up to a stiffness scale factor
+Tcb8d3878ab4816120785bed43388de58	own_claim 5744 5842	The generic force density model F = −σ ε defined above assumes a linear stress-strain curve σ = kε
+Tcbea080676eb3cb0e247ec9682091f97	own_claim 5853 5908	stressstrain curves are potentially nonlinear functions
+T2c3b821edaf20ee474dfc502a6a0b585	own_claim 6148 6254	The resulting nonlinear force density function, F i = −k i (ε i )ε i ε i yields a conservative force field
+Tdc592ec3b6c3c6e164ed8f60942b2a0e	own_claim 6270 6340	the elastic energy density can no longer be defined simply as 1 2 kε 2
+T60aa9e25e8bbd8cc881252a130f4a32e	own_claim 6347 6406	would now require the integration of the stiffness function
+T671273c2cc84cff2c89461f742aacb36	data 6437 6443	VMTF09
+Tf4c6dc534d065d6ee7950ab1e55e184f	background_claim 6445 6499	propose a general nonlinear stress-strain relationship
+T9e7eca04d2199b5dffcea2b31eb4dd05	own_claim 6564 6635	the same construction can easily be built on any of our selected models
+T65e13e70d106037364517c626b32daa9	data 6645 6678	linear models fit the data poorly
+Tc652a18725506dcc39bbec97e9e0bc61	own_claim 6680 6863	we used the nonlinear model in all cases, resulting in a consistent set of models, parameterized by the number of spline control points, which reduces to the widely used linear models
+T5ff5e346d4130393a65fda3da5d86b38	data 6869 6907	each spline has a single control point
+

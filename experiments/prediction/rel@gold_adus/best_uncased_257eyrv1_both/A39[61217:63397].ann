@@ -1,0 +1,31 @@
+T943488baa97b2d9ca664403bcb969e69	own_claim 42 171	The methods introduced in all of the previous sections usually allow us to take sizeable steps forward, without loss of stability
+T0c00807b53e3f532880109c8837a9bca	own_claim 182 258	there are still times when the step size must be reduced to avoid divergence
+T5e467f189f3e5fb026f67b66bd0109a8	background_claim 260 332	There are a large number of methods for altering the size of a time step
+T961b3288d78601c2369a9b07dd892a17	background_claim 382 472	these methods tend to concentrate on the accuracy of the simulation, and not the stability
+T90ffd579531db5ad6d1ccc996a5c2e23	data 474 512	Our goal is animation, not engineering
+T19ada33058d48c18d7cbecb0f4297c28	own_claim 519 636	visually pleasing results, meaning a numerically stable solution, rather than overall accuracy, is the deciding voice
+Tb1b26500fde344a8e0942852b3e0964a	own_claim 638 708	The trick is to recognize instability before you see it on your screen
+T3072c0efe587e9089baf1ccfeef59e11	background_claim 732 847	Stiffness, and thus any potential instability, arises almost completely from the strong stretch forces in the cloth
+Tb5cacf5888a349f75ca5d7c09fd85303	own_claim 1193 1217	Subtlety is not required
+T2745e2b688408d621886ac2d70b7f19d	own_claim 1232 1307	an unstable step invariably results in stretch changes that are quite large
+T9c89a82e41b56ad8ca503f6590243a33	own_claim 1313 1316	are
+T34e78e0ce858fdcea99b1c364ee91c81	own_claim 1322 1337	easily detected
+T1c7d34898447578c62465b2da3c03c98	data 1901 1963	the simulator will try increasing the step size every 40 steps
+Tb20aa6a08ad63e40f514bc5cf385b109	data 1974 2007	the user chooses too large a step
+Te0bde0a11cc5c81831ae35badaf5e1c2	own_claim 2009 2108	the simulator settles down to wasting only one out of every 40 steps in attempting too large a step
+T9714cbe8754aeec6eef992781121501b	own_claim 2110 2156	This method, though simple, has served us well
+R3cf5afe68175b5b0c2b51fb9ea11d282	contradicts-GOLD Arg1:T943488baa97b2d9ca664403bcb969e69 Arg2:T0c00807b53e3f532880109c8837a9bca
+R2c032fc65d9a03aa12912e87344d5ce9	supports Arg1:T90ffd579531db5ad6d1ccc996a5c2e23 Arg2:T19ada33058d48c18d7cbecb0f4297c28
+R20d1bbba75cf88b763064ec2776fb877	supports-GOLD Arg1:T90ffd579531db5ad6d1ccc996a5c2e23 Arg2:T19ada33058d48c18d7cbecb0f4297c28
+R0cd50d28f1d72e5a9ead9110fcaf3685	parts_of_same Arg1:T9c89a82e41b56ad8ca503f6590243a33 Arg2:T34e78e0ce858fdcea99b1c364ee91c81
+R1388c23288d8384ae63f2e0516740dfc	parts_of_same-GOLD Arg1:T9c89a82e41b56ad8ca503f6590243a33 Arg2:T34e78e0ce858fdcea99b1c364ee91c81
+R7372ab8d49adf51d2e76d6464935cc62	supports Arg1:T2745e2b688408d621886ac2d70b7f19d Arg2:T9c89a82e41b56ad8ca503f6590243a33
+R94b98a92bdf7a26e9204d9f154c1e85f	supports-GOLD Arg1:T2745e2b688408d621886ac2d70b7f19d Arg2:T9c89a82e41b56ad8ca503f6590243a33
+R393aa39afb368a34e2e8812aae99ac82	supports-GOLD Arg1:T9c89a82e41b56ad8ca503f6590243a33 Arg2:Tb5cacf5888a349f75ca5d7c09fd85303
+Ra39cb4a7ea039068f2f85ca2d7239b3c	supports Arg1:Tb20aa6a08ad63e40f514bc5cf385b109 Arg2:Te0bde0a11cc5c81831ae35badaf5e1c2
+Rc4bed7d42de7ceb1e693a3ba614f4cca	supports-GOLD Arg1:Tb20aa6a08ad63e40f514bc5cf385b109 Arg2:Te0bde0a11cc5c81831ae35badaf5e1c2
+Re0a495fe6c007b75ba364a6b6b2730dd	supports Arg1:T1c7d34898447578c62465b2da3c03c98 Arg2:Te0bde0a11cc5c81831ae35badaf5e1c2
+R00e80b48e2784d10385f97cbaf44d39d	supports-GOLD Arg1:T1c7d34898447578c62465b2da3c03c98 Arg2:Te0bde0a11cc5c81831ae35badaf5e1c2
+R829b60dcf49414f3d868472f1142d872	contradicts Arg1:T5e467f189f3e5fb026f67b66bd0109a8 Arg2:T961b3288d78601c2369a9b07dd892a17
+R4754d79edb59d1058f88e95bbca33dd5	supports Arg1:Tb1b26500fde344a8e0942852b3e0964a Arg2:T3072c0efe587e9089baf1ccfeef59e11
+Rfddd9f4ed33a548383cf8610a69ed7e6	supports Arg1:T2745e2b688408d621886ac2d70b7f19d Arg2:Tb5cacf5888a349f75ca5d7c09fd85303

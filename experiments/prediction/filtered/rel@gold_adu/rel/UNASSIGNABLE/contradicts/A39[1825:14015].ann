@@ -1,0 +1,9 @@
+T79248204523fa0ce980ac865590dc248	background_claim 11448 11479;11633 11667	Refinements by Eberhardt et al. obtain similarly realistic results
+Td5639985897563d1956e595b6d13357b	own_claim 1932 2052	Our system’s faster performance begins with the choice of an implicit numerical integration method to solve equation (1)
+Tb534a659680cf82c4ba8385d4da90816	background_claim 2082 2159	the use of implicit integration methods in cloth simulation is far from novel
+T3e4f516b1b56e0a25a97ed7231ed7fef	background_claim 11675 11773	dropping the computational cost to approximately 20–30 minutes per frame on an SGI R8000 processor
+T78f8eba61540a8f4f97e49e61bc4fbaf	background_claim 5307 5357;5384 5434	An ADI method generates a series of tightly banded linear systems rather than one large sparse system
+T6bcf4f86a12328240ef21e28d9cc7d14	background_claim 5437 5446;5457 5497;5585 5623	The price is that some of the forces in the system are treated explicitly, not implicitly
+R0947488e75894d9745e84e0d79691082	contradicts Arg1:Td5639985897563d1956e595b6d13357b Arg2:Tb534a659680cf82c4ba8385d4da90816
+Re32fde05c4b02ae0384f5be316630091	contradicts Arg1:T78f8eba61540a8f4f97e49e61bc4fbaf Arg2:T6bcf4f86a12328240ef21e28d9cc7d14
+R725e130719bc92cee2c4088af59bd1c6	contradicts Arg1:T79248204523fa0ce980ac865590dc248 Arg2:T3e4f516b1b56e0a25a97ed7231ed7fef

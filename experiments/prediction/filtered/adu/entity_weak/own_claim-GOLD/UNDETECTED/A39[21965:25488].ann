@@ -1,0 +1,6 @@
+T388e389fcd64ba80a8de27f126c3ba25	own_claim-GOLD 122 212	our goal is to determine a new position x(t 0 + h) and velocity x(t 0 + h) at time t 0 + h
+Tc77123c6173973cc4b1711c7c26805d7	own_claim-GOLD 281 358	we must first transform equation (2) into a first-order differential equation
+Te5dcef099df41e5a8fe5bd38db3a7676	own_claim-GOLD 2521 2678	the backward Euler step consists of evaluating f 0 , ∂f/∂x and ∂f/∂v; forming the system in equation (6); solving the system for v; and then updating x and v
+Te79d236ffb72b98ad80878a90e4378b9	own_claim-GOLD 2901 2938	The method is called “backward” Euler
+Tfa874b9d253114dc809fc20078d88af4	own_claim-GOLD 3187 3247	Forward Euler takes no notice of wildly changing derivatives
+Tc95bf7051f3c8ce2e5b500c19ffda433	own_claim-GOLD 3285 3299	Backward Euler

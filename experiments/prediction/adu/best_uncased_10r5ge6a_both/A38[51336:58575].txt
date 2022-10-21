@@ -1,0 +1,51 @@
+<H1>References</H1>
+        
+          1. D. J. Acheson. Elementary Fluid Dynamics. Oxford University Press, Oxford, 1990.
+          2. U. M. Ascher and L. R. Petzold. Computer Methods for Ordinary Differential Equations and DifferentialAlgebraic Equations. Society for Industrial and Applied Mathematics, Philadelphia, 1998.
+          3. D. Baraff, A. Witkin, and M. Kass. Untangling cloth. ACM Transactions on Graphics, 22(3), July 2003.
+          4. D. Baraff and A. P. Witkin. Large steps in cloth simulation. In Proceedings of SIGGRAPH 98, Computer Graphics Proceedings, Annual Conference Series, pages 43–54, July 1998.
+          5. D. E. Breen, D. H. House, and M. J. Wozny. Predicting the drape of woven cloth using interacting particles. In Proceedings of SIGGRAPH 94, Computer Graphics Proceedings, Annual Conference Series, pages 365– 372, July 1994.
+          6. R. Bridson, R. P. Fedkiw, and J. Anderson. Robust treatment of collisions, contact, and friction for cloth animation. ACM Transactions on Graphics, 21(3):594– 603, July 2002.
+          7. R. Bridson, S. Marino, and R. Fedkiw. Simulation of clothing with folds and wrinkles. In ACM SIGGRAPH Symposium on Computer Animation, July 2003.
+          8. R. L. Carceroni and K. N. Kutulakos. Multi-view scene capture by surfel sampling: From video streams to nonrigid 3d motion, shape &amp; reflectance. Proc. International conference on Computer Vision, pages 60–67, 2001.
+          9. K.-J. Choi and H.-S. Ko. Stable but responsive cloth. In Proceedings of the 29th annual conference on Computer graphics and interactive techniques, pages 604– 611. ACM Press, 2002.
+          10. G. C. DeAngelis, I. Ohzawa, and R. D. Freeman. Spatiotemporal organization of simple-cell receptive fields in the cat’s striate cortex. i. general characteristics and postnatal development. J Neurophysiol., 69(4):1091– 1117, 1993.
+          11. D. J. Field. Relations between the statistics of natural images and the response properties of cortical cells. Journal of the Optical Society of America A, 4(12):2379–2394, December 1987.
+          12. D. J. Field. What is the goal of sensory coding? Neural Computation, 6(4):559–601, July 1994.
+          13. W. T. Freeman and E. H. Adelson. The design and use of steerable filters. IEEE Trans. Pattern Analysis and Machine Intelligence, 13(9):891–906, 1991.
+          14. C. Frohlich. Aerodynamic drag crisis and its possible effect on the flight of baseballs. American Journal of Physics, 52(4):325–334, April 1984.
+          15. J. Haddon, D. Forsyth, and D. Parks. The appearance of clothing. http://http.cs.berkeley.edu/ haddon/clothingshade.ps, 1998.
+          16. J. Haddon and D. A. Forsyth. Shading primitives: finding folds and shallow grooves. Proc. International conference on Computer Vision, pages 236–41, 1998.
+          17. D. H. House and D. E. Breen, editors. Cloth Modeling and Animation. A.K. Peters, Ltd., Natick, Massachusetts, July 2000.
+          18. D. H. House, R. W. DeVaul, and D. E. Breen. Towards simulating cloth dynamics using interacting particles. International Journal of Clothing Science and Technology, 8(3):75–94, 1996.
+          19. D. H. Hubel and T. N. Wiesel. Receptive fields and functional architecture of monkey striate cortex. J. Physiol. (Lond.), 195(1):215–243, 1968.
+          20. S. Huh, D. Metaxas, and N. Badler. Collision resolutions in cloth simulation. In Computer Animation, pages 122–127. IEEE, 2001.
+          21. N. Jojic and T. S. Huang. Estimating cloth draping parameters from range data. In International Workshop on Synthetic-Natural Hybrid Coding and 3-D Imaging, pages 73–76, Rhodes, Greece, 1997.
+          22. S. Kawabata. The standardization and analysis of hand evaluation. The Textile Machinery Society of Japan, 1980.
+          23. T. J. Lahey. Modeling hysteresis in the bending of fabrics. Master’s thesis, University of Waterloo, 2002.
+          24. T. Larsson and T. Akenine-Möller. Collision detection for continuously deforming bodies. In Eurographics 2001, pages 325–333, 2001.
+          25. L. Ling. Aerodynamic effects. In D. H. House and D. E. Breen, editors, Cloth Modeling and Animation. A.K. Peters, Ltd., Natick, Massachusetts, July 2000.
+          26. T. Möller. A fast triangle-triangle intersection test. Journal of Graphics Tools, 2(2):25–30, 1997.
+          27. F. T. Peirce. The geometry of cloth structure. Journal of the Textile Institute, 28(T45–T97), 1937.
+          28. W. H. Press, B. P. Flannery, S. A. Teukolsky, and W. T. Vetterling. Numerical Recipes: The Art of Scientific  Computing, chapter 10.9, pages 444–455. Cambridge University Press, Cambridge (UK) and New York, 2nd edition, 1992.
+          29. X. Provot. Deformation constraints in a mass-spring model to describe rigid cloth behavior. In Graphics Interface ’95, pages 147–154, May 1995.
+          30. X. Provot. Collision and self-collision handling in cloth model dedicated to design. In Computer Animation and Simulation ’97, pages 177–190, September 1997.
+          31. D. Scharstein and R. Szeliski. A taxonomy and evaluation of dense two-frame stereo correspondence algorithms. International Journal on Computer Vision, 47(1):7–42, 2002.
+          32. S. Sclaroff and A. Pentland. Generalized implicit functions for computer graphics. In Computer Graphics (Proceedings of SIGGRAPH 91), volume 25, pages 247–250, July 1991.
+          33. D. Terzopoulos, J. Platt, A. Barr, and K. Fleischer. Elastically deformable models. In Computer Graphics (Proceedings of SIGGRAPH 87), volume 21, pages 205–214, July 1987.
+          34. L. Torresani, D. Yang, G. Alexander, and C. Bregler. Tracking and modelling non-rigid objects with rank constraints. Proc. Computer Vision and Pattern Recognition Conference, pages 493–500, 2001.
+          35. R. L. D. Valois, E. W. Yund, and N. Hepler. The orientation and direction selectivity of cells in macaque visual cortex. Vision Research, 22(5):531–544, 1982.
+          36. J. H. van Hateren and D. L. Ruderman. Independent component analysis of natural image sequences yields spatio-temporal filters similar to simple cells in primary visual cortex. Proc. Royal Soc. Lond. B, 265(1412):2315–2320, 1998.
+          37. P. Volino, M. Courchesne, and N. Magnenat-Thalmann. Versatile and efficient techniques for simulating cloth and other deformable objects. Computer Graphics, 29(Annual Conference Series):137–144, 1995.
+          38. P. Volino and N. Magnenat-Thalmann. Efficient selfcollision detection on smoothly discretised surface animations using geometrical shape regularity. In Computer Graphics Forum (Eurographics Proc.), volume 13, pages 155–166, 1994.
+          39. P. Volino and N. Magnenat-Thalmann. Accurate collision response on polygonal meshes. In Computer Animation 2000, pages 154–163, May 2000.
+          40. L. Zhang, B. Curless, and S. M. Seitz. Rapid shape acquisition using color structured light and multi-pass dynamic programming. In Proc. Symposium on 3D Data Processing Visualization and Transmission (3DPVT), 2002.
+        
+        c The Eurographics Association 2003.
+        Bhat et al. / Estimating Cloth Simulation Parameters from Video
+        c The Eurographics Association 2003.
+      
+    
+  
+
+</Document>

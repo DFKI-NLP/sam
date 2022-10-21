@@ -1,0 +1,65 @@
+Tea75e5e6ad49cd62bfcc0d1709fa9d7b	own_claim 256 335	the optimizer could identify appropriate simulation parameters from those tests
+Taa3849baef6f6006090c3d933c94e22f	own_claim 337 514	These parameters produced four distinct and recognizable fabrics when applied to a more complex simulation of a skirt as it was driven by motion capture data from a human figure
+T1d480caf0b0c109b5a89d4d42e40745e	own_claim 516 571	The cloth model was not the main focus of this research
+Ta3ca2aef48d6af2c244b81c9a6a6e1e7	own_claim 577 667	in early versions of the system it was often the bottleneck in achieving appealing results
+T3e6264f4683eb955ce0477a97eacc473	own_claim 669 791	To match a video sequence accurately, the cloth physics model as well as the collision algorithms must be chosen carefully
+Ta19c3a2e8c4848ea6055753f2bd45dc1	own_claim 793 888	Instabilities in the collision handling will cause perceptible quivering in the motion of cloth
+T3cad918cbb492dd32163c15f30fa2079	own_claim 901 989	extra damping introduced by the integration method makes crisp folds impossible to match
+T9a3f5d6aa5101565a9542ec8a81bf7ed	own_claim 991 1160	The parameters must also be independent of the resolution of the mesh so that they can be identified on low resolution swatches and applied to higher resolution garments
+T9986b2115fb76cb12c7f16c60604fd90	background_claim 1162 1199	Progress is being made in these areas
+T98636bf77783b27e79bf60103be42c52	background_claim 1210 1252	and cloth models are continually improving
+T3c5dd291c3ce7a2495b6035334b10de7	background_claim 1267 1281	Bridson et al.
+Tf2a0d2117ef3ce4a228abbab4fa2d73c	data 1282 1283	7
+T698b400243d84fc974af6ad832c09719	background_claim 1285 1351	introduces a scale-independent bend model with encouraging results
+Td3a8837ca4f9efa982be1b86c3ef10fd	own_claim 1353 1448	Our cloth model does not diverge significantly from previous models discussed in the literature
+Tf9037db49a0e14d9ff89c9bd84c4acb2	own_claim 1450 1533	Our only major addition was a simple nonlinearity we introduced into the drag model
+T32bdaaf6e99aa80323872cf3efe61ec6	own_claim 1542 1674	our approach should generalize to any parametrized cloth model that produces a sufficiently rich set of physically realistic motions
+T41015e70fc611af049e4376a78613af7	own_claim 1685 1775	the skirt is far more complex than the swatches that were used to determine the parameters
+T2adedce79c032451405eb74b7728a929	own_claim 1777 1814	it is not as complex as many garments
+Tdb20a9a56a45d9b8844a3e377e4ffae8	data 1829 1857	a form-fitting pair of pants
+Tb39dd27bddefb53c8cd9639d8fcd7534	data 1861 1878	a tailored blazer
+T8375290d22043a3f4eb8f91107290718	data 1884 1905	more complex garments
+Ta9499969324f518fd513a90cd03d445a	own_claim 1907 1993	choosing the parameters via optimization on small, flat swatches may not be sufficient
+Td617ffd9a2a95c6fd72b1667dd6ddbdc	data 2002 2099	the shape of the garment is determined by darts, pleats and by the interplay of different fabrics
+Tf243f4e4148cd3c409b5ef9ac969e747	own_claim 2146 2287	More complex garments may require the hand design of additional tests that mimic particular behaviors or elements of the garment in isolation
+T3830f1034cfbfa3edd01a67b77845d63	own_claim 2299 2399	the model might need extra parameters to handle anisotropic effects, hysteresis and coupling effects
+T119a311796a2e1b8d3c7152f17b1b357	data 2401 2472	stretching along one direction causing shrinking in the other direction
+Tf5b6ef73561eb38ed408b2b3cd7f6a9e	own_claim 2475 2516	all of which would need specialized tests
+Tf96351f36f01012a15eb9e900f42df2d	own_claim 2581 2615	we tried a number of other metrics
+T27beab909b23c7c76c2f555ae9b73ed6	data 2617 2657	comparing the overlap of the silhouettes
+T966c816f13ac6c039c4d53622765f069	data 2659 2705	the distance function between silhouette edges
+Ta0424cb3bf6ae5504b1d021568940181	data 2711 2769	using information from internal edges marked on the fabric
+T09a7bf9a132db431eed86fa64855232c	own_claim 2771 2957	The metric that measures folds and silhouettes, in concert with the projector for the light stripes, proved to be a simple and effective metric that far outperformed our earlier attempts
+Td3834b3177afb2a62139062b861e8cb3	background_claim 2959 2996	The space of possible metrics is vast
+T826ebc5ccf5f24c3843e956850bcda8e	data 3369 3417	we were to optimize on more complicated garments
+Tebca61619dd1c20ed7c036a462b89653	own_claim 3429 3480	tight control of the initial conditions is unlikely
+T0cc59bfe6344c593d0ad9b5055ae4ba2	own_claim 3485 3525	a statistical metric might be preferable
+T40a0cdc8f5449a2b263b53e0ab9ca874	own_claim 3527 3546	Such a metric might
+Tc05b217b740a5265a9c9802acad8f8be	own_claim 3561 3699	compute the average number of folds across a time sequence rather than looking for a fold to appear at a particular location on the swatch
+Ra4e6006f1e7244c7a51d8d0503327224	contradicts Arg1:T1d480caf0b0c109b5a89d4d42e40745e Arg2:Ta3ca2aef48d6af2c244b81c9a6a6e1e7
+R591ded82d0adff8b5628eab1e660520d	contradicts Arg1:T9a3f5d6aa5101565a9542ec8a81bf7ed Arg2:T9986b2115fb76cb12c7f16c60604fd90
+R650c6369163f52a0e98bfa6e2d07c29c	supports Arg1:Tf2a0d2117ef3ce4a228abbab4fa2d73c Arg2:T3c5dd291c3ce7a2495b6035334b10de7
+Rf2180e6e851a252536c4d3b247945fc1	parts_of_same Arg1:T3c5dd291c3ce7a2495b6035334b10de7 Arg2:T698b400243d84fc974af6ad832c09719
+Ra8d8b39637084e970fec5a2fe04a3bbc	parts_of_same Arg1:T9986b2115fb76cb12c7f16c60604fd90 Arg2:T98636bf77783b27e79bf60103be42c52
+R953341389d72af1d8a856e18fe13b802	supports Arg1:Tf9037db49a0e14d9ff89c9bd84c4acb2 Arg2:T32bdaaf6e99aa80323872cf3efe61ec6
+Rd042ed0da0b0d85a7d30ded88569ebb8	supports Arg1:Tdb20a9a56a45d9b8844a3e377e4ffae8 Arg2:T2adedce79c032451405eb74b7728a929
+R9c293c825936ce620673f5445e788894	supports Arg1:Tb39dd27bddefb53c8cd9639d8fcd7534 Arg2:T2adedce79c032451405eb74b7728a929
+R8b6557b05f6aa3b9d58f5b8eb1adbc48	contradicts Arg1:T41015e70fc611af049e4376a78613af7 Arg2:T2adedce79c032451405eb74b7728a929
+R1c58e73b40ba328a6381ac50f8853fe4	supports Arg1:T8375290d22043a3f4eb8f91107290718 Arg2:Ta9499969324f518fd513a90cd03d445a
+Rfc864aed445b083fbd1752e1689d5d2b	supports Arg1:Td617ffd9a2a95c6fd72b1667dd6ddbdc Arg2:Ta9499969324f518fd513a90cd03d445a
+Raad537ef11911774915a9191d5c9c519	supports Arg1:T3830f1034cfbfa3edd01a67b77845d63 Arg2:Tf5b6ef73561eb38ed408b2b3cd7f6a9e
+Raa52a4f4e25b00e4f9b9df753bed9e7d	supports Arg1:T119a311796a2e1b8d3c7152f17b1b357 Arg2:T3830f1034cfbfa3edd01a67b77845d63
+R52b4dd646e5b2d52457b3b9f75c2c5f4	supports Arg1:T27beab909b23c7c76c2f555ae9b73ed6 Arg2:Tf96351f36f01012a15eb9e900f42df2d
+R4313487f1b1f9ad09c875ac28d9d9e97	supports Arg1:T966c816f13ac6c039c4d53622765f069 Arg2:Tf96351f36f01012a15eb9e900f42df2d
+Rc5b6d73d4d336ccfff07e8561a802fc9	supports Arg1:Ta0424cb3bf6ae5504b1d021568940181 Arg2:Tf96351f36f01012a15eb9e900f42df2d
+R039976be7cdddf3ffd28709a43177db0	supports Arg1:T826ebc5ccf5f24c3843e956850bcda8e Arg2:Tebca61619dd1c20ed7c036a462b89653
+Raf543a1c6357175cbb49277b047b7218	supports Arg1:Tebca61619dd1c20ed7c036a462b89653 Arg2:T0cc59bfe6344c593d0ad9b5055ae4ba2
+R9c159e18a6ae3330551522d4d9fc465b	parts_of_same Arg1:T40a0cdc8f5449a2b263b53e0ab9ca874 Arg2:Tc05b217b740a5265a9c9802acad8f8be
+Rd7c7c9ba7ed3635621d0d1cdd08b31c5	supports Arg1:T0cc59bfe6344c593d0ad9b5055ae4ba2 Arg2:T40a0cdc8f5449a2b263b53e0ab9ca874
+Radf68e7e69ed82235069576596842eb7	supports Arg1:Ta19c3a2e8c4848ea6055753f2bd45dc1 Arg2:T3e6264f4683eb955ce0477a97eacc473
+R252d11837b3095775702d1317a772a95	supports Arg1:T3cad918cbb492dd32163c15f30fa2079 Arg2:T3e6264f4683eb955ce0477a97eacc473
+R8e6f74ff492ff01f6db3eae096871810	supports Arg1:T3c5dd291c3ce7a2495b6035334b10de7 Arg2:T98636bf77783b27e79bf60103be42c52
+R1e34fd11f4a4d8c288928197f4e1ba41	supports Arg1:Tf9037db49a0e14d9ff89c9bd84c4acb2 Arg2:Td3a8837ca4f9efa982be1b86c3ef10fd
+Rf0a75d534c734810bc5455013eca43a0	contradicts Arg1:T09a7bf9a132db431eed86fa64855232c Arg2:Td3834b3177afb2a62139062b861e8cb3
+R58196c40aa6f8b06dc64a143d60b1c7a	supports Arg1:T09a7bf9a132db431eed86fa64855232c Arg2:Td3834b3177afb2a62139062b861e8cb3
+R8d6aec609ed183ae607f1d802aab0ea9	supports Arg1:T826ebc5ccf5f24c3843e956850bcda8e Arg2:T0cc59bfe6344c593d0ad9b5055ae4ba2

@@ -1,0 +1,42 @@
+T6883192264fa99f5126f3c31a23e9a07	own_claim-GOLD 256 335	the optimizer could identify appropriate simulation parameters from those tests
+T9aaed2793d12d8cd19d91d53bb3401c7	own_claim-GOLD 337 514	These parameters produced four distinct and recognizable fabrics when applied to a more complex simulation of a skirt as it was driven by motion capture data from a human figure
+T26919f9e43cd36ec0d49bf662434740c	own_claim-GOLD 516 571	The cloth model was not the main focus of this research
+T953913ec764ad1e511fca687f46f9195	own_claim-GOLD 577 667	in early versions of the system it was often the bottleneck in achieving appealing results
+T6316d2890e6c4c479f2c0f4b05ff1e8a	own_claim-GOLD 669 791	To match a video sequence accurately, the cloth physics model as well as the collision algorithms must be chosen carefully
+T172d4e6f41a3b6a8e84cb29ef17ac5fa	own_claim-GOLD 793 888	Instabilities in the collision handling will cause perceptible quivering in the motion of cloth
+T824ca3f0f12903c9e34c7c4c389c30a0	own_claim-GOLD 901 989	extra damping introduced by the integration method makes crisp folds impossible to match
+Te3879065b994f5a4049295cb159c5c96	own_claim-GOLD 991 1160	The parameters must also be independent of the resolution of the mesh so that they can be identified on low resolution swatches and applied to higher resolution garments
+T9f1997cc69c2dcbcc03636cdf78b6bc1	own_claim-GOLD 1353 1448	Our cloth model does not diverge significantly from previous models discussed in the literature
+Tb66ffd1db4b0a7bef1f427ede49c9815	own_claim-GOLD 1450 1533	Our only major addition was a simple nonlinearity we introduced into the drag model
+T4b23a33fd24296272ae6330ec9a762bf	own_claim-GOLD 1542 1674	our approach should generalize to any parametrized cloth model that produces a sufficiently rich set of physically realistic motions
+Tf63977e57883edcc6e761dc2ef0d55d3	own_claim-GOLD 1685 1775	the skirt is far more complex than the swatches that were used to determine the parameters
+T060d145007a9c312747bec8f5f1f9b90	own_claim-GOLD 1777 1814	it is not as complex as many garments
+T780b7b785f647a7df3272074d1fb59fb	own_claim-GOLD 1907 1993	choosing the parameters via optimization on small, flat swatches may not be sufficient
+Te0e6b83e08467365fa275830de99c382	own_claim-GOLD 2146 2287	More complex garments may require the hand design of additional tests that mimic particular behaviors or elements of the garment in isolation
+T5b7a36b3bf0e2b3908a937f720f46f18	own_claim-GOLD 2299 2399	the model might need extra parameters to handle anisotropic effects, hysteresis and coupling effects
+T478c84e5e7371a479bc792d6244684f8	own_claim-GOLD 2475 2516	all of which would need specialized tests
+Tc7f79781db3505e0ed63f66e9ff9ec6b	own_claim-GOLD 2771 2957	The metric that measures folds and silhouettes, in concert with the projector for the light stripes, proved to be a simple and effective metric that far outperformed our earlier attempts
+Te47dc583d88e658dd79636b184f1b35f	own_claim-GOLD 3429 3480	tight control of the initial conditions is unlikely
+Tad98f0b14b8c83f597e7059bccc83fd4	own_claim-GOLD 3485 3525	a statistical metric might be preferable
+Tf79f631f6a491745e0b524d6d08e8798	own_claim-GOLD 3527 3546	Such a metric might
+Tea75e5e6ad49cd62bfcc0d1709fa9d7b	own_claim 256 335	the optimizer could identify appropriate simulation parameters from those tests
+Taa3849baef6f6006090c3d933c94e22f	own_claim 337 514	These parameters produced four distinct and recognizable fabrics when applied to a more complex simulation of a skirt as it was driven by motion capture data from a human figure
+T1d480caf0b0c109b5a89d4d42e40745e	own_claim 516 571	The cloth model was not the main focus of this research
+Ta3ca2aef48d6af2c244b81c9a6a6e1e7	own_claim 577 667	in early versions of the system it was often the bottleneck in achieving appealing results
+T3e6264f4683eb955ce0477a97eacc473	own_claim 669 791	To match a video sequence accurately, the cloth physics model as well as the collision algorithms must be chosen carefully
+Ta19c3a2e8c4848ea6055753f2bd45dc1	own_claim 793 888	Instabilities in the collision handling will cause perceptible quivering in the motion of cloth
+T3cad918cbb492dd32163c15f30fa2079	own_claim 901 989	extra damping introduced by the integration method makes crisp folds impossible to match
+T9a3f5d6aa5101565a9542ec8a81bf7ed	own_claim 991 1160	The parameters must also be independent of the resolution of the mesh so that they can be identified on low resolution swatches and applied to higher resolution garments
+Td3a8837ca4f9efa982be1b86c3ef10fd	own_claim 1353 1448	Our cloth model does not diverge significantly from previous models discussed in the literature
+Tf9037db49a0e14d9ff89c9bd84c4acb2	own_claim 1450 1533	Our only major addition was a simple nonlinearity we introduced into the drag model
+T32bdaaf6e99aa80323872cf3efe61ec6	own_claim 1542 1674	our approach should generalize to any parametrized cloth model that produces a sufficiently rich set of physically realistic motions
+T41015e70fc611af049e4376a78613af7	own_claim 1685 1775	the skirt is far more complex than the swatches that were used to determine the parameters
+T2adedce79c032451405eb74b7728a929	own_claim 1777 1814	it is not as complex as many garments
+Ta9499969324f518fd513a90cd03d445a	own_claim 1907 1993	choosing the parameters via optimization on small, flat swatches may not be sufficient
+Tf243f4e4148cd3c409b5ef9ac969e747	own_claim 2146 2287	More complex garments may require the hand design of additional tests that mimic particular behaviors or elements of the garment in isolation
+T3830f1034cfbfa3edd01a67b77845d63	own_claim 2299 2399	the model might need extra parameters to handle anisotropic effects, hysteresis and coupling effects
+Tf5b6ef73561eb38ed408b2b3cd7f6a9e	own_claim 2475 2516	all of which would need specialized tests
+T09a7bf9a132db431eed86fa64855232c	own_claim 2771 2957	The metric that measures folds and silhouettes, in concert with the projector for the light stripes, proved to be a simple and effective metric that far outperformed our earlier attempts
+Tebca61619dd1c20ed7c036a462b89653	own_claim 3429 3480	tight control of the initial conditions is unlikely
+T0cc59bfe6344c593d0ad9b5055ae4ba2	own_claim 3485 3525	a statistical metric might be preferable
+T40a0cdc8f5449a2b263b53e0ab9ca874	own_claim 3527 3546	Such a metric might

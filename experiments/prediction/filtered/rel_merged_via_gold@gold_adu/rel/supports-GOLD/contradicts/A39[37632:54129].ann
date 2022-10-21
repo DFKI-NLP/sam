@@ -1,0 +1,4 @@
+T1a99b062af4b288e4add6c2b048538a6	own_claim 8846 9009	this involves multiplying the matrix of equation (14) with its transpose which doubles the cost of each iteration while squaring the condition number of the system
+T984b431f1bdf65d93ad12c2db83fa56a	own_claim 8738 8840	We could apply a CG method to the unsymmetric matrix of equation (14) by use of the “normal equations”
+R7742731680a9dc0683b30ad8a29b2393	supports-GOLD Arg1:T984b431f1bdf65d93ad12c2db83fa56a Arg2:T1a99b062af4b288e4add6c2b048538a6
+Re2f91edd086eb9b523016abb005896a6	contradicts Arg1:T984b431f1bdf65d93ad12c2db83fa56a Arg2:T1a99b062af4b288e4add6c2b048538a6

@@ -1,0 +1,4 @@
+Teb301af2580da534de86cdcd88593013	background_claim 126 160	the other is to resolve collisions
+T1e48a36e2b0e90c174a8cb45dc672cf7	background_claim 530 624	Collision resolution is to find the correct next positions and velocities of colliding objects
+T7e2a083bb2a57922452426ab4827c1fd	background_claim 1203 1299	their method resolves collisions where numerous cloth surfaces are colliding together as a group
+T56c195a7d4c7fb9100553f31df54fbd3	background_claim 1307 1360	is a novel way to resolve multiple collisions at once

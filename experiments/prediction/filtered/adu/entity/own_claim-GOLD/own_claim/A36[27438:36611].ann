@@ -1,0 +1,12 @@
+Tb35a62e5c9326c325be26c16f5fda6b8	own_claim-GOLD 28 165	The key question of how well a given model describes a particular piece of cloth is answered by fitting the model to the measurement data
+T8df47e7d44d70c81d9ec3d4d0614f043	own_claim-GOLD 436 542	In principle all parameters of a cloth model can be fit to a sufficiently rich single deformation sequence
+T67e363dedb6ab469f2914832465bd302	own_claim-GOLD 548 602	this can result in a problem fraught with local minima
+T90316cae4e74896dd92e27caf4de1493	own_claim-GOLD 3614 3661	clip-orthogonal forces are dominated by stretch
+Tc44e0c5c23ac8a2c3178c4f436fbc6c5	own_claim-GOLD 6277 6369	during inter∂x n mediate iterations, the stiffness matrix may not always be well conditioned
+T9f14846bc51ad992657ea238e9f34a52	own_claim-GOLD 6885 7179	The nonlinearity of cloth deformation, together with the complex interplay of various deformation components in the resulting forces and positions, make the optimization problem above extremely complex in the general case, prone to falling in local minima and sensitive to initialization values
+T47b9754987032315ff94d8a180f3871c	own_claim 28 165	The key question of how well a given model describes a particular piece of cloth is answered by fitting the model to the measurement data
+Te48d54a2cf37144238756d55e453dfe5	own_claim 436 542	In principle all parameters of a cloth model can be fit to a sufficiently rich single deformation sequence
+Tefa45330d944709102885f3ed9e5a827	own_claim 548 602	this can result in a problem fraught with local minima
+T9959d3a64d10de0432954503a2a1af9b	own_claim 3614 3661	clip-orthogonal forces are dominated by stretch
+T00ef36a096bf6b57af1ea1644eaae2b8	own_claim 6277 6369	during inter∂x n mediate iterations, the stiffness matrix may not always be well conditioned
+T02c5a510c82554cefda1e21bf1381539	own_claim 6885 7179	The nonlinearity of cloth deformation, together with the complex interplay of various deformation components in the resulting forces and positions, make the optimization problem above extremely complex in the general case, prone to falling in local minima and sensitive to initialization values

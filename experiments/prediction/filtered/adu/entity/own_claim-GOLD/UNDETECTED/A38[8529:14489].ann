@@ -1,0 +1,13 @@
+T8797d599df0d522c24a040063eb0baa0	own_claim-GOLD 132 138	we can
+T8f83f5f06b4d273a8a31f39816ff5178	own_claim-GOLD 154 243	select a specific model that meets a set of criteria such as accuracy or simulation speed
+T1e94ce86b48b8fff81f7d25b5d46ded9	own_claim-GOLD 245 327	Our choice of a cloth model was guided by two principles, realism and practicality
+Ta3e8a720563e6a6383a3d5bd8808c7f2	own_claim-GOLD 487 611	Because our intention was to apply the learned cloth model parameters to arbitrary garments with varying triangle resolution
+Te433e5ba50e055906a75bc3e6e8e74ac	own_claim-GOLD 710 795	We used the model described by Baraff and Witkin as the basis for our cloth simulator
+T7643659e5585b3957741e71d9800b7ca	own_claim-GOLD 2716 2857	we need to be careful when substituting C(x) for stretch and shear into eq. 1 that the resulting formula is linear in a rather than quadratic
+T31ba5cbab584117012db644308a2f237	own_claim-GOLD 2920 2980	a linear drag model such as that used in previous cloth work
+T5d4d24b5ca11b116dfe1760d2e703f39	own_claim-GOLD 3039 3161	In order to add additional air-drag degrees of freedom to our cloth model without resorting to fully modeling aerodynamics
+Tac47745d2e3f570a653777ec6746eb4f	own_claim-GOLD 3168 3211	we developed a simple nonlinear alternative
+Td96955e381c4be085d40b2f12b50ea19	own_claim-GOLD 3846 4008	The addition of the |v N | 2 term in the denominator which makes the force asymptotic as v N → ∞ was partially motivated by the observed phenomenon of drag crisis
+T95bd1b67d50f3f7ea6ffce81c09cf72f	own_claim-GOLD 4248 4358	we used a first-order implicit Euler time integration scheme similar to the one described by Baraff and Witkin
+T29f754719af6391631bf4139ad30f3f8	own_claim-GOLD 4591 4705	The results in this paper all use an adaptive 4thorder accurate Runge-Kutta methods with embedded error estimation
+T22bf87be2dc1cc6bc7c1577f90314812	own_claim-GOLD 5289 5416	we apply repulsion forces inside the solver loop, so that the solver’s own internal error estimation can remove these artifacts

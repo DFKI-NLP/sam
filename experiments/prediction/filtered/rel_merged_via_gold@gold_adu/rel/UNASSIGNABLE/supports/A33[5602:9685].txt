@@ -1,0 +1,22 @@
+<H1>2 Previous Work</H1>
+        Previous work in cloth motion capture has focused on placing high density markers in correspondence between multiple views. The primary challenge is to increase marker density while correctly assigning correspondence between markers. We suggest markers per megapixel as an appropriate metric for comparison ( figure 3 ) because it measures the method instead of the equipment. Most high density full frame-rate capture has focused on cloth, however, there has been some recent work enhancing human motion capture 
+[Park and Hodgins 2006]. These methods have far fewer markers per megapixel because they affix individual markers. When working with cloth, markers are typically painted on the surface. 
+
+
+These markers can be broken into three categories: complex surface gradients 
+[Pritchard and Heidrich 2003; Scholz and Magnor 2004; Hasler et al. 2006] (typically detected using SIFT descriptors 
+[Lowe 2004]), intersecting lines 
+[Tanie et al. 2005] and regions of constant color 
+[Guskov and Zhukov 2002; Guskov et al. 2003; Scholz et al. 2005]. Our work falls in the third category: regions of contant color. We evaluate previous work by examining the quality of the reconstructed cloth in still images and video. The most common errors are marker mismatches and are observable in reconstructions by local strain in the reconstructed surface. Overall, we observe that constant color markers perform the best. [Pritchard and Heidrich 2003]
+ used cloth with unique line drawings as markers. Their work identifies parameterization as one of the key aspects of cloth capture. They use a stereo camera to acquire 3D and SIFT descriptors to establish correspondence. These descriptors are often mismatched and require significant pruning. They introduce a rudimentary strain metric, as measured along the surface, to rule out incorrect matches. While successful, their static reconstructions show numerous correspondence errors. The real-time system described in 
+[Guskov et al. 2003]
+ introduces markers of constant color, resulting in significantly fewer correspondence errors than in [Pritchard and Heidrich 2003]. This system uses a Kalman smoothing filter and is heavily damped. Additionally, the complexity of the color pattern limits the method to simple geometry. [Scholz et al. 2005]
+ improve upon [Guskov et al. 2003] by creating a non-repeating grid of color markers. Each marker has five possible colors and all three by three groups are unique. This allows substantially larger sections of cloth and virtually eliminates correspondence errors. Results include a human wearing a shirt and a skirt captured using eight 1K x 1K cameras. However, the range of motion is limited to avoid occlusion (e.g., arms are always held at 90 degrees to the torso). They use thin-plate splines to fill holes. [White et al. 2005]
+ introduce a combined strain reduction/bundle adjustment that improves the quality of the reconstruction by minimizing strain while reconstructing the 3D location of the points on the surface of the cloth. [White et al. 2006]
+ introduce the use of silhoutte cues to improve reconstruction of difficult to observe regions. While silhouette cues improve reconstruction, hole filling is
+        point static cloud Hole Temporally connectivity Mesh fill smooth triangle mesh Section 5.1 Section 5.2 Section 5.3
+        Markers per Work Megapixels Markers† Megapixel Park 2006 48 ≤ 350 ≤ 7.3 Tanie 2005 10 407.9 40 Guskov 2003 0.9 ≤ 136 ≤ 148 Scholz 2005 8 ≤ 3500 ≤ 434 Sleeve 15 7557 504 Pants 2.5 2405.3 979
+        more effective in many circumstances because it enforces an appropriate prior on the shape of the cloth. We make three main contributions: we improve the color pattern and matching procedure to get more information per marker, we introduce strain constraints to simplify correspondence and we create a data driven hole filling technique that splices previously captured cloth into the mesh. As a result, our system is capable of capturing a full range of motion with folding and occlusion.
+      
+      
+        

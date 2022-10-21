@@ -1,0 +1,3 @@
+T5e948584b48be3f60b3dc2b0fa0cffb6	own_claim 5821 5873;5940 6075	these approximations produced more simulation errors than producing a quick and rough linear system solution using a reduced number of Conjugate Gradient iterations with an accurate matrix
+T9a5dd1dde25e5d447edcd0620780c7f1	own_claim 5701 5801	We simulated such algorithm using accurate resolution on an accordingly approximated constant matrix
+R4d6a406eb614dc62736ab2eaa05334b4	supports Arg1:T9a5dd1dde25e5d447edcd0620780c7f1 Arg2:T5e948584b48be3f60b3dc2b0fa0cffb6

@@ -1,0 +1,6 @@
+T22df51db5c45f26003dfa52ee9c8ea20	data-GOLD 1475 1539	The forward method requires only an evaluation of the function f
+Tb842badb8d097d1b039582af2456366a	data-GOLD 1544 1634	the backward method requires that we solve for values of x and v that satisfy equation (4)
+Tdabb4ed23c307475c5520cce1262fe1e	data-GOLD 2364 2424	I − hM −1 ∂v ∂f − h 2 M −1 ∂x ∂f v = hM −1 f 0 + h ∂x ∂f v 0
+Tca6c5746e4dfd067e28754749b9c2234	own_claim 1475 1539	The forward method requires only an evaluation of the function f
+Tcd18b5cf5d34e067f4b05ce21587a190	own_claim 1544 1634	the backward method requires that we solve for values of x and v that satisfy equation (4)
+T2feacd3d40d7e34d602118d7b783b54d	own_claim 2364 2424	I − hM −1 ∂v ∂f − h 2 M −1 ∂x ∂f v = hM −1 f 0 + h ∂x ∂f v 0

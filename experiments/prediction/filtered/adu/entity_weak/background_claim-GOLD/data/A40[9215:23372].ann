@@ -1,0 +1,6 @@
+T3fdb27532a432df36bfa51165ca3b926	background_claim-GOLD 1128 1192	the arising wind velocities are clearly below the speed of sound
+T69a04ef42052fe95f22f6b1e7be55906	background_claim-GOLD 2850 2915	time steps in explicit computations usually need to be very small
+Ta369d63b95f595abf2ac42c511cd7591	background_claim-GOLD 8734 8811	tissues in the lee of other objects will be affected by the wind flow as well
+Td8787e41fecb9a32880b477977fb2321	data 1128 1192	the arising wind velocities are clearly below the speed of sound
+Tde6ff89ba96ae725b4a2f1b798ca1a3c	data 2850 2915	time steps in explicit computations usually need to be very small
+T03bf98f872a95cf47f5187f0b96d0114	data 8734 8811	tissues in the lee of other objects will be affected by the wind flow as well

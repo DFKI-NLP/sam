@@ -1,0 +1,9 @@
+T3e76a81b9f6f556cd96abd9d2a040d83	own_claim 857 939	The importance or sensitivity of a parameter p depends on its local gradient ∂E ∂p
+T10e3ab924fa1ea3f87b83df364740dc3	own_claim 1054 1125	we robustly compute the variability of the param∂p eters, defined as ∂E
+Tddab702d3f6d851faed01ab5c5f7a590	own_claim 549 680	it is evident that the error space is fairly noisy, with many local minima, motivating the need for a global optimization technique
+T4ec1ccf7406f6ec88f49b91ff8004386	data 294 300	Fig. 3
+Ta54a12800ef7de2c570a34749693d3f2	own_claim 1321 1423	the variability is computed as the change in parameter values that results in a 1% change in the error
+Tbaced5b97cd0d186bd9a3f0451b344e2	own_claim 1425 1528	Parameters with low variability have high sensitivity and are estimated reliably for a given experiment
+R4d1e3dcf653e2a95a876341514543b76	supports-GOLD Arg1:T4ec1ccf7406f6ec88f49b91ff8004386 Arg2:Tddab702d3f6d851faed01ab5c5f7a590
+Rfab1d5ca79920fbf5e6be251bf9bf046	supports-GOLD Arg1:T3e76a81b9f6f556cd96abd9d2a040d83 Arg2:T10e3ab924fa1ea3f87b83df364740dc3
+R530332f73c74f740636a5dc7fbf7ca1a	supports-GOLD Arg1:Ta54a12800ef7de2c570a34749693d3f2 Arg2:Tbaced5b97cd0d186bd9a3f0451b344e2

@@ -1,0 +1,45 @@
+<H1>References</H1>
+        
+          [1] D. Baraff. Dynamic Simulation of Non-penetrating Rigid Bodies. PhD thesis, Cornell University, May 1992.
+          [2] D. Baraff. Fast contact force computation for nonpenetrating rigid bodies. Computer Graphics (Proc. SIGGRAPH), 28:23– 34, 1994.
+          [3] D.E. Breen, D.H. House, and M.J. Wozny. Predicting the drape of woven cloth using interacting particles. Computer Graphics (Proc. SIGGRAPH), pages 365–372, 1994.
+          [4] M. Carignan, Y. Yang, N. Magenenat-Thalmann, and D. Thalmann. Dressing animated synthetic actors with complex deformable clothes. Computer Graphics (Proc. SIGGRAPH), pages 99–104, 1992.
+          [5] B. Eberhardt, A. Weber, and W. Strasser. A fast, flexible, particle-system model for cloth draping. IEEE Computer Graphics and Applications, 16:52–59, 1996.
+          [6] G. Golub and C. Van Loan. Matrix Computations. John Hopkins University Press, 1983.
+          [7] M. Kass. An Introduction To Physically Based Modeling, chapter Introduction to Continuum Dynamics for Computer Graphics. SIGGRAPH Course Notes, ACM SIGGRAPH, 1995.
+          [8] M. Kass and G. Miller. Rapid, stable fluid dynamics for computer graphics. Computer Graphics (Proc. SIGGRAPH), pages 49–58, 1990.
+          [9] H.N. Ng and R.L. Grimsdale. Computer graphics techniques for modeling cloth. IEEE Computer Graphics and Applications, 16:28–41, 1996.
+          [10] H. Okabe, H. Imaoka, T. Tomiha, and H. Niwaya. Three dimensional apparel cad system. Computer Graphics (Proc. SIGGRAPH), pages 105–110, 1992.  step size total frames/ task breakdown percentage min/max (ms) total steps EVAL CG C/C C/S 16.5/33 75/80 25.7 50.4 18.3 1.4 16.5/33 75/80 17.9 63.6 15.3 0.2 16.5/33 50/52 18.9 37.9 30.9 2.6 2.5/20 430/748 16.7 29.9 46.1 2.2 0.625/20 430/1214 16.4 35.7 42.5 1.7 5/20 393/715 18.1 30.0 44.5 1.5 5/20 393/701 11.2 26.0 57.7 1.3 10/20 393/670 20.1 36.8 29.7 2.6 1.25/20 393/753 13.2 30.9 50.2 1.4
+          [11] J.C. Platt and A.H. Barr. Constraint methods for flexible models. In Computer Graphics (Proc. SIGGRAPH), volume 22, pages 279–288. ACM, July 1988.
+          [12] W.H. Press, B.P. Flannery, S.A. Teukolsky, and W.T. Vetterling. Numerical Recipes. Cambridge University Press, 1986.
+          [13] X. Provot. Deformation constraints in a mass-spring model to describe rigid cloth behavior. In Graphics Interface, pages 147–155, 1995.
+          [14] J. Shewchuk. An introduction to the conjugate gradient method without the agonizing pain. Technical Report CMUCS-TR-94-125, Carnegie Mellon University, 1994. (See also http://www.cs.cmu.edu/ ~quake-papers/ painless-conjugate-gradient.ps.).
+          [15] D. Terzopoulos and K. Fleischer. Deformable models. Visual Computer, 4:306–331, 1988.
+          [16] D. Terzopoulos and K. Fleischer. Modeling inelastic deformation: Viscoelasticity, plasticity, fracture. In Computer Graphics (Proc. SIGGRAPH), volume 22, pages 269–278. ACM, August 1988.
+          [17] D. Terzopoulos, J.C. Platt, and A.H. Barr. Elastically deformable models. Computer Graphics (Proc. SIGGRAPH), 21:205–214, 1987.
+          [18] D. Terzopoulos and H. Qin. Dynamics nurbs with geometric constraints for interactive sculpting. ACM Transactions on Graphics, 13:103–136, 1994.
+          [19] X. Tu. Artificial Animals for Computer Animation: Biomechanics, Locomotion, Perception and Behavior. PhD thesis, University of Toronto, May 1996.
+          [20] P. Volino, M. Courchesne, and N. Magnenat Thalmann. Versatile and efficient techniques for simulating cloth and other deformable objects. Computer Graphics (Proc. SIGGRAPH), pages 137–144, 1995.
+          [21] P. Volino, N. Magnenat Thalmann, S. Jianhua, and D. Thalmann. An evolving system for simulating clothes on virtual actors. IEEE Computer Graphics and Applications, 16:42–51, 1996.
+        
+        52
+        SIGGRAPH 98, Orlando, July 19–24
+        C OMPUTER G RAPHICS Proceedings, Annual Conference Series, 1998
+        
+          
+        
+         Figure 1 (top row): Cloth draping on cylinder; frames 8, 13 and 35. Figure 2 (second row): Sheet with two fixed particles; frames 10, 29 and 67. Figure 3 (third row): Shirt on twisting figure; frames 1, 24 and 46. Figure 4 (bottom row): Walking man; frames 30, 45 and 58.
+        53
+        SIGGRAPH 98, Orlando, July 19–24
+        C OMPUTER G RAPHICS Proceedings, Annual Conference Series, 1998
+        
+          
+        
+        Figure 5 (top row): Dancer with short skirt; frames 110, 136 and 155. Figure 6 (middle row): frames 185, 215 and 236. Figure 7 (bottom row): Closeups from figures 4 and 6.
+        Dancer with long skirt;
+        54
+      
+    
+  
+
+</Document>

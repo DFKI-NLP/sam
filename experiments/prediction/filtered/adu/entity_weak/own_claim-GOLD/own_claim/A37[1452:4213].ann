@@ -1,0 +1,10 @@
+Tf6d3e3c0dc70c5ccd3e8f537e57fc145	own_claim-GOLD 537 659	Our work alleviates this problem by introducing a numerical solver that excels at timestepping quasi-inextensible surfaces
+T3c882c6f2a06a3160d10974940f8033a	own_claim-GOLD 1010 1105	a constraint-based method is inherently well-suited to operate in the quasi-inextensible regime
+Te52e8a0831e598b5f0640e1fe1e9c09b	own_claim-GOLD 2076 2168	We prove that the implicit method’s nonlinear equations correspond to a minimization problem
+T6e55e10000a89bef57a09960d0cc482b	own_claim-GOLD 2177 2253	this result motivates a fast projection method for enforcing inextensibility
+T9b67191827ab2bd1c86fa7011cb58a4f	own_claim-GOLD 2466 2608	the fast projection method easily incorporates with a code’s existing bending, damping, and collision models, to yield accelerated performance
+T2e4959247502f60be506374dbde1d287	own_claim 537 659	Our work alleviates this problem by introducing a numerical solver that excels at timestepping quasi-inextensible surfaces
+Tdb202b74be579dc95334d87d09f0c710	own_claim 1010 1105	a constraint-based method is inherently well-suited to operate in the quasi-inextensible regime
+Tb1f25dd6b85d334a0ab7736d960d2be7	own_claim 2076 2168	We prove that the implicit method’s nonlinear equations correspond to a minimization problem
+Tc7e2f261e3417449bfe2b80311cc938d	own_claim 2177 2253	this result motivates a fast projection method for enforcing inextensibility
+Td88e0b9504192927a405b8612df5f187	own_claim 2466 2608	the fast projection method easily incorporates with a code’s existing bending, damping, and collision models, to yield accelerated performance

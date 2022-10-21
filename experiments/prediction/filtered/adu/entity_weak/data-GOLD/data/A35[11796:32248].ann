@@ -1,0 +1,30 @@
+Tf5fcaa65db79b29c692583ad92dac060	data-GOLD 2892 2898	VOL 00
+T724be1ad69f40b50034a170a1e852b2f	data-GOLD 5019 5121	a discretization into elements averaging one centimeter and a simulation time step of ten milliseconds
+Tde71d606a941bd0b23198d1bf25bb498	data-GOLD 6254 6276	using implicit methods
+T8939ea487f3649a76f14e0127cee952e	data-GOLD 7542 7547	Fig.1
+T6b52ae31ea8c15ab0c8c33a088910fcc	data-GOLD 8449 8454	Fig.1
+T113510548032637deeed943e2f57a962	data-GOLD 9090 9141	accurate reproduction of dynamic motion is required
+T29ef17c77b37746e543b8692bf9bcc4d	data-GOLD 9465 9519	accurate reproduction of the whole evolution is wanted
+Tcddca95c40e67aacd096790ad102b5fb	data-GOLD 10836 10866	only “visual” accuracy matters
+T5a86e35da29641dae5ad33e4c226cdaa	data-GOLD 13787 13815	the time step becomes larger
+Td7814355505d1a1fef19066928aa472e	data-GOLD 13824 13918	the corresponding K coefficient exceeds the theoretical limit observed in the previous section
+Tfc8bfbc8b3c3bb76442c467aa7229c21	data-GOLD 14137 14212	K exceeds the dynamic accuracy limit of a given implicit integration method
+T9bfc4d371d46ee18dda5effa30977fe5	data-GOLD 17471 17477	DES 99
+T759f7b6309af3c2df19a13faada88ea6	data-GOLD 17610 17639	nonlinear mechanical behavior
+T7a9a65c44b2006036965bc073c4ecb10	data-GOLD 17726 17757	the element orientation problem
+Tba99ea2ececf546ba9b27111db53db2b	data-GOLD 18069 18075	EBE 00
+Td1091e306e099029689a9a3ac4cf9bff	data 2892 2898	VOL 00
+T09d9f6eb69e973157087bbc6046b3fb4	data 5019 5121	a discretization into elements averaging one centimeter and a simulation time step of ten milliseconds
+T62cef59e2f6c45c4f0f573db6ef41c59	data 6254 6276	using implicit methods
+T058646178daa98711d9494013ef3ea86	data 7542 7547	Fig.1
+Tfae9dfd6bc05e22ea47953d17fa99157	data 8449 8454	Fig.1
+T6011919ce5fe38fb5caee64be9aed221	data 9090 9141	accurate reproduction of dynamic motion is required
+T166aa0b2ec641b71454d1095b3d38d1c	data 9465 9519	accurate reproduction of the whole evolution is wanted
+Tf2c94350a864169553505463e5629d00	data 10836 10866	only “visual” accuracy matters
+T3e0dda7eb2b765e18b04dab12857eda0	data 13787 13815	the time step becomes larger
+T967e3e2e3d8a6cc7f230b81b1cc28131	data 13824 13918	the corresponding K coefficient exceeds the theoretical limit observed in the previous section
+T4f7a81b738088eb39ad9e9fcf04a89cb	data 14137 14212	K exceeds the dynamic accuracy limit of a given implicit integration method
+T648928c26dfc956084b22fde17c0fdb0	data 17471 17477	DES 99
+Te141928a8157c9c0bc6776bb2cc46500	data 17610 17639	nonlinear mechanical behavior
+T501eac0317d356c05571c02bbf55296b	data 17726 17757	the element orientation problem
+Tc8cf52320e7ea7ae6bb6a8432fd327d6	data 18069 18075	EBE 00

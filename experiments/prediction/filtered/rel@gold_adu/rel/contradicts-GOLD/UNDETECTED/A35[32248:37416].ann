@@ -1,0 +1,6 @@
+Ta864aac47fc24e07fb893f5ddee8760b	background_claim 577 634	the perception of the implicit model iteration being slow
+Tc75c95f78f3cd14d4bf5391bf26d416a	own_claim 3808 3816;3825 3900	This may require prohibitive computation times for very stiff and discretized models
+Tfe1b868cadc403a506ff509fc8af225e	own_claim 688 794	the inverse Euler iteration often proves to be faster than the explicit Runge-Kutta method of higher order
+T3aa54f9abc7c0ca3c2671846c51267c4	own_claim 3595 3806	Instability concerns will force parameters and time step size to ensure good accuracy for the simulation of all particles of the discrete mechanical representation, and therefore for the entire mechanical object
+R20963d69d45a476b12e2ab86521b6781	contradicts-GOLD Arg1:Ta864aac47fc24e07fb893f5ddee8760b Arg2:Tfe1b868cadc403a506ff509fc8af225e
+Rde869d5a67e74a5c5afe87d52b2f4125	contradicts-GOLD Arg1:T3aa54f9abc7c0ca3c2671846c51267c4 Arg2:Tc75c95f78f3cd14d4bf5391bf26d416a

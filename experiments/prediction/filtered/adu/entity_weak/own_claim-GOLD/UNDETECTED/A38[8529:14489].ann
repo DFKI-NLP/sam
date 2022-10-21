@@ -1,0 +1,6 @@
+T8f83f5f06b4d273a8a31f39816ff5178	own_claim-GOLD 154 243	select a specific model that meets a set of criteria such as accuracy or simulation speed
+Ta3e8a720563e6a6383a3d5bd8808c7f2	own_claim-GOLD 487 611	Because our intention was to apply the learned cloth model parameters to arbitrary garments with varying triangle resolution
+Te433e5ba50e055906a75bc3e6e8e74ac	own_claim-GOLD 710 795	We used the model described by Baraff and Witkin as the basis for our cloth simulator
+T5d4d24b5ca11b116dfe1760d2e703f39	own_claim-GOLD 3039 3161	In order to add additional air-drag degrees of freedom to our cloth model without resorting to fully modeling aerodynamics
+Tac47745d2e3f570a653777ec6746eb4f	own_claim-GOLD 3168 3211	we developed a simple nonlinear alternative
+Td96955e381c4be085d40b2f12b50ea19	own_claim-GOLD 3846 4008	The addition of the |v N | 2 term in the denominator which makes the force asymptotic as v N → ∞ was partially motivated by the observed phenomenon of drag crisis

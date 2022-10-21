@@ -1,0 +1,4 @@
+<H1>Acknowledgements</H1>
+        We thank Jai Vasanth and Anthony Lobay for early support of this project, Scott Kircher and Robert Sumner for providing mesh editing binaries, and Sony Computer Entertainment America for supplying human motion capture data. This work was supported in part by a Department of Homeland Security Fellowship and an ATI Graduate Research Fellowship.
+
+		 

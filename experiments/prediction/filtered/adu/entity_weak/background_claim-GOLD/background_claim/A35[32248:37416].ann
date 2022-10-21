@@ -1,0 +1,8 @@
+T4d6a241c2cf902e077fdb474e99fed62	background_claim-GOLD 31 121	Recent literature has emphasized on the relevance of implicit methods for cloth simulation
+T3dcaef1e05d2a49cc873709e9e127eb5	background_claim-GOLD 315 394	This is particularly true when simulating very heterogeneous mechanical systems
+Tfa2737addf3d68985662f8035e953632	background_claim-GOLD 457 566	where, using explicit models, the most critical elements would rule the time step size for all the simulation
+T9ddd5ccb45078010ceee8eb46e1213d7	background_claim-GOLD 577 634	the perception of the implicit model iteration being slow
+T848f7335d43bcd3146a7c10300bc8a49	background_claim 31 121	Recent literature has emphasized on the relevance of implicit methods for cloth simulation
+T3b3ac927a8c38f3aab762b66407d4fca	background_claim 315 394	This is particularly true when simulating very heterogeneous mechanical systems
+T6b424a0a7dcd7985ee4e3f9627dad795	background_claim 457 566	where, using explicit models, the most critical elements would rule the time step size for all the simulation
+Ta864aac47fc24e07fb893f5ddee8760b	background_claim 577 634	the perception of the implicit model iteration being slow

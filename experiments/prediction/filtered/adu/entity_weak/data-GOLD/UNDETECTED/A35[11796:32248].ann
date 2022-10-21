@@ -1,0 +1,4 @@
+Tfd5e92fccf01780009dc281a1027b750	data-GOLD 2412 2559	Method Accurate Simplified Midpoint 32 μs 8 μs Runge-Kutta 95 μs 25 μs Back. Euler (No CG iter.) 31 μs 5 μs Back. Euler (Per CG iter.) 16 μs 2.5 μs
+T9dda05b77a24d0a86a23845fcf722b25	data-GOLD 6771 6820	Without any additional external forces considered
+T86f680c41df8c6070f49573fa1d60b16	data-GOLD 19552 19561	2 minutes
+T756f7042e417fde8a221791679024458	data-GOLD 19586 19595	8 minutes

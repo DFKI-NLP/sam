@@ -1,0 +1,58 @@
+T8c46171a15d48c65dfa35c60f3abccde	own_claim-GOLD 51 158	we describe two different wind field models and show how they can be used to model wind effects on textiles
+Tf697b416f0b7213c25a138cb24f8654e	own_claim-GOLD 160 204	The first model is based on the work of Stam
+Tc53f97097057a52f6ee7420b5b26a3cc	own_claim-GOLD 214 313	and calculates the numerical solution of the Navier-Stokes equation with a semi-Lagrangian approach
+T23e4b444d722a230e426a857943623ce	own_claim-GOLD 315 383	This model is extended to interaction of the wind flow with textiles
+T9151c4cab459da4c2751c861c7a5600b	own_claim-GOLD 463 590	This approach is much easier to implement and can be added to existing simulation modules without additional computational cost
+T2efc7a5b2255510773e84d7b45a81199	own_claim-GOLD 3714 3864	We present a model to exploit these wind models for calculating the interaction of deformable objects with the air flow by a boundary condition method
+T244dadd4a64647c3cf37e60d9e0128b0	own_claim-GOLD 5191 5240	we propose a method which meets both requirements
+Te33f0ddc91cf814d8c9511037d3f042b	own_claim-GOLD 6055 6126	the boundary conditions are met and yet aerodynamic forces are obtained
+T3d2cb80bda3ae3e3d517c08e423f4597	own_claim-GOLD 6128 6195	A different issue is how to deal with the inside of (rigid) objects
+T9d00a96013778b8780a04876154d387f	own_claim-GOLD 6197 6298	The method to set boundary conditions as described above does not account for the interior of objects
+T6da1867ddabd542d51ca9c17b7b94665	own_claim-GOLD 6306 6385	a nonzero velocity could be mistakenly assigned to cells lying inside an object
+Tfeffb17b3a5143e19b02f83131bee4f2	own_claim-GOLD 6387 6585	To avoid this situation, the path of the wind flow is checked for object intersection, whereby the collision detection of the cloth simulation system provides a simple method to deal with this issue
+T8bf52c44b532759b5c7b31698a16020b	own_claim-GOLD 7009 7099	This method is very easy to implement and yields very plausible and nicely looking results
+T538fad8ba1d036887f61340e0d3ce687	own_claim-GOLD 8822 8929	this method can be combined with the aerodynamic model described in section 3 to give nice and fast results
+T3af7b52ea9ac74760ff5a0233ac3120d	own_claim-GOLD 8961 9096	To solve the described problems we propose a model which combines the simple global wind flow techniques with a particle tracing method
+Tf9747554ccb2224b5b6018177d39af41	own_claim-GOLD 10412 10507	the movement of the particles in a wind gust is only affected by the wind source they belong to
+T28e3ddeeeacf5174ec40fe669c16e6e8	own_claim-GOLD 10509 10586	The global superposition of all wind sources has no effect on these particles
+Td436ff25adc3453a1ee4be6f99528462	own_claim-GOLD 11054 11134	The particle might cross several grid cells on its way during a single time step
+Tb517c477036f27d28545e7844a43a9d5	own_claim-GOLD 11157 11251	the path of the particle has to be subdivided into parts not exceeding the size of a grid cell
+T64107e63d2001eaecce162de4d5f10bc	own_claim-GOLD 11692 11822	This assures that the velocity component of the resulting field u is orthogonal to the collision object’s surface at p col is zero
+T965ad2b86b0a6e045f14d89d591781b1	own_claim-GOLD 11870 11907	no flow propagates through the object
+Tad7c08afdfa6874272d11a83bbe461d7	own_claim-GOLD 12050 12134	every point p that could not be reached by any wind particle will hold zero velocity
+T77dbdf8af8b931beef3a9f1fa559de1d	own_claim-GOLD 12180 12238	this method solves the problems described in section 4.2.1
+Tfdb004f49bb0a6d7322ab3b1e4f4eb70	own_claim-GOLD 12250 12353	the somewhat tempting simplification of tagging each cell to either have wind in it or not is not valid
+T1854510c287de43da5ba6aa1a65fc642	own_claim-GOLD 12595 12658	a rather undesired effect would occur using this simplification
+Tc8ae47c86c9d16f5ca88cad4bbf881b2	own_claim-GOLD 12740 12811	evaluating the wind field at every cell we would obtain a zero velocity
+T93439246ffec49e58c8196cb82bff1ef	own_claim-GOLD 12910 13080	it is crucial for the particles to have the associated velocity of their wind source and not just the velocity resulting from the global superposition of all wind sources
+T599b0f182b756c243a8b382e09ba8e96	own_claim-GOLD 13575 13695	the global wind field model is better suited for an easy to implement tool which is easy to adapt to specific situations
+T4b988499903509c65f60ff3d99f1b126	own_claim-GOLD 13837 13920	with this straightforward approach, nice, realistic looking results can be achieved
+Tbafef27071a49a28081229d89209e751	own_claim 51 158	we describe two different wind field models and show how they can be used to model wind effects on textiles
+T6cd09e5579a9b9ccc7dc70be2b67e1ef	own_claim 160 204	The first model is based on the work of Stam
+T74defcdeb7bf68d200d743ee1b57ccd2	own_claim 214 313	and calculates the numerical solution of the Navier-Stokes equation with a semi-Lagrangian approach
+Te025b32ac69706f1a7e5613ed2a07956	own_claim 315 383	This model is extended to interaction of the wind flow with textiles
+T41cb1dd817e73b793f60a31086612ddf	own_claim 463 590	This approach is much easier to implement and can be added to existing simulation modules without additional computational cost
+Td5a5e2e128bfb6b8e32aacdcfdb04f11	own_claim 3714 3864	We present a model to exploit these wind models for calculating the interaction of deformable objects with the air flow by a boundary condition method
+T76c37b062783d4966da2f33104acf061	own_claim 5191 5240	we propose a method which meets both requirements
+T65fa3d8e3e3b280c15db9507f8aa9857	own_claim 6055 6126	the boundary conditions are met and yet aerodynamic forces are obtained
+T36f594bbe85dba3902e9460eaa573086	own_claim 6128 6195	A different issue is how to deal with the inside of (rigid) objects
+T324e92975fa0897bf99030a782bc6707	own_claim 6197 6298	The method to set boundary conditions as described above does not account for the interior of objects
+T2ed44b76e899511d59cf0008669b1ac1	own_claim 6306 6385	a nonzero velocity could be mistakenly assigned to cells lying inside an object
+T6ab0dcc818567731905e75e79bd7e8f8	own_claim 6387 6585	To avoid this situation, the path of the wind flow is checked for object intersection, whereby the collision detection of the cloth simulation system provides a simple method to deal with this issue
+T709adf78881a1ba38cab0b28bfa1649f	own_claim 7009 7099	This method is very easy to implement and yields very plausible and nicely looking results
+T1212c8084cdaf4c697a921760b3ec2c3	own_claim 8822 8929	this method can be combined with the aerodynamic model described in section 3 to give nice and fast results
+T01b868713efb4d2442a702885a56cd72	own_claim 8961 9096	To solve the described problems we propose a model which combines the simple global wind flow techniques with a particle tracing method
+Tba2f0de9714d85edf18ec0d272eb4fc2	own_claim 10412 10507	the movement of the particles in a wind gust is only affected by the wind source they belong to
+T2305b4b617988f33c9805f5e86137a7b	own_claim 10509 10586	The global superposition of all wind sources has no effect on these particles
+T4bb14d2eed21b157a13c7c21c169e970	own_claim 11054 11134	The particle might cross several grid cells on its way during a single time step
+T341a1c57b45c4750b5a043f6430eb27f	own_claim 11157 11251	the path of the particle has to be subdivided into parts not exceeding the size of a grid cell
+Tb3ceffdfc4dd34dc682eb9b85e6f99c6	own_claim 11692 11822	This assures that the velocity component of the resulting field u is orthogonal to the collision object’s surface at p col is zero
+T894865bd7a756a15d49f7131b57439e2	own_claim 11870 11907	no flow propagates through the object
+T82867423812965a270bf715b2a2660b7	own_claim 12050 12134	every point p that could not be reached by any wind particle will hold zero velocity
+T27f677277306f93e3a26f2b6a10e9c5b	own_claim 12180 12238	this method solves the problems described in section 4.2.1
+Tc2d7b9b87e1eca1a9d37df5286eeffb2	own_claim 12250 12353	the somewhat tempting simplification of tagging each cell to either have wind in it or not is not valid
+Tb1af48abde416217187b8f3bb6aefdde	own_claim 12595 12658	a rather undesired effect would occur using this simplification
+T7d5604d9a5a5d86a3b20623fe6c61b9a	own_claim 12740 12811	evaluating the wind field at every cell we would obtain a zero velocity
+Td06eda3a806fdcac56269688b51448de	own_claim 12910 13080	it is crucial for the particles to have the associated velocity of their wind source and not just the velocity resulting from the global superposition of all wind sources
+Tb19a260d87d372a21037fcdf1f24887b	own_claim 13575 13695	the global wind field model is better suited for an easy to implement tool which is easy to adapt to specific situations
+Tc138bb65141d4b6067c566de9dc359e9	own_claim 13837 13920	with this straightforward approach, nice, realistic looking results can be achieved

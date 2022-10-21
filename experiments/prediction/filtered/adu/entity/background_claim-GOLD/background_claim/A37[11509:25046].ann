@@ -1,0 +1,10 @@
+Tbe17db12fa46b552496b489b669fda13	background_claim-GOLD 96 219	the numerical integration algorithm for constrained dynamics can be developed directly from the augmented Lagrange equation
+T48173f03b5c42d00c052e51adc630ae1	background_claim-GOLD 1780 1878	by considering a constraint force direction, −∇C(x) T , evaluated at the beginning of the timestep
+T183715a30a6350147ae9f014a3d75982	background_claim-GOLD 1895 1992	enforcing length-preserving constraints with SHAKE fails for four common geometric configurations
+T248cd029735bebcee0722e6b4c6a0984	background_claim-GOLD 5335 5396	Methods of this form are known as manifold-projection methods
+Tb3fbb248a90f116aaf8af22d07b04c6f	background_claim-GOLD 11067 11115	halt the Newton process after a single iteration
+T5e71828400c0535d429fdb224ee96fb9	background_claim 96 219	the numerical integration algorithm for constrained dynamics can be developed directly from the augmented Lagrange equation
+Ta2860bc0bab93c2978e14c0150a1fccb	background_claim 1780 1878	by considering a constraint force direction, −∇C(x) T , evaluated at the beginning of the timestep
+Tdc2aa284a560cf22c36b79c6251d5947	background_claim 1895 1992	enforcing length-preserving constraints with SHAKE fails for four common geometric configurations
+Tca8c2eced71edbd6c210bc9d1c85c7a7	background_claim 5335 5396	Methods of this form are known as manifold-projection methods
+T00b90779873f8fce72454f315bc230b1	background_claim 11067 11115	halt the Newton process after a single iteration

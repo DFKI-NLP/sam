@@ -1,0 +1,16 @@
+T98364530bb449ae71c26c2bcf866970a	own_claim-GOLD 158 214	The experiments are easy to perform, capture, and repeat
+T6248fff5b69981b06956691b37379b7a	own_claim-GOLD 220 273	they demonstrate the complex dynamics of cloth motion
+Tc33ce2f9bc0ce90b1418b49d76ff7fde	own_claim-GOLD 1097 1178	The static test give a good estimate for the static stiffness and bend parameters
+T2fbf68eb79208725455aae2fdbfcb11d	own_claim-GOLD 1428 1484	real fabrics exhibit a wide range of interesting motions
+T14222cea7208bfc3ffe1d5b49f357c63	own_claim-GOLD 1486 1572	Different fabrics also exhibit different types of motion for the same input excitation
+Td54e05ad46e8e2667b30d1f179ee0714	own_claim-GOLD 1574 1667	We designed the waving motion to roughly match the types of motion occurring in real garments
+T47e0abd45df7e85e6cd1fef66d8f892b	own_claim-GOLD 1684 1810	This gives reasonable estimates for cloth parameters while avoiding the need to optimize directly on complex fabric geometries
+Ta962e200055e1d35672f346d0ce95d08	own_claim-GOLD 1825 1850	involving many collisions
+T4d982f18adc1fbef1fa1ee5b1daf8e69	own_claim 158 214	The experiments are easy to perform, capture, and repeat
+T7dd839081a1e01becd0d8b0a07651583	own_claim 220 273	they demonstrate the complex dynamics of cloth motion
+T62a7a1f885e02c6a5a1c3e61f1adb691	own_claim 1097 1178	The static test give a good estimate for the static stiffness and bend parameters
+Tbb99a2684ecacba8386868fe879bebff	own_claim 1428 1484	real fabrics exhibit a wide range of interesting motions
+T9e28ab8f73642db7af871a1c2896be44	own_claim 1486 1572	Different fabrics also exhibit different types of motion for the same input excitation
+Tf2e2307cd65fcfecf228b22c41c49a01	own_claim 1574 1667	We designed the waving motion to roughly match the types of motion occurring in real garments
+T85691728e957236c714ecad477743b55	own_claim 1684 1810	This gives reasonable estimates for cloth parameters while avoiding the need to optimize directly on complex fabric geometries
+Tc6857cdc5403a2be2e4dc00be8a209c1	own_claim 1825 1850	involving many collisions

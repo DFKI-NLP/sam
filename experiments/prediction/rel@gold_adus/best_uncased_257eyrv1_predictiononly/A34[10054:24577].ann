@@ -1,0 +1,280 @@
+T45a1134e891f0de6390c2f4ceb5c82f8	background_claim 41 60	Numerous approaches
+Ta0a994b78486e1631ce22160587386ec	data 64 66	14
+T6b423f4f35142c62d58cb2315845066c	data 69 71	12
+Ta2ab36e599708e881671baf2f62aadf6	data 74 75	3
+T4cfdc6ea9c40296843ab25c3f13b8c6f	data 78 80	15
+T6e05656607868e86683c9c4ad27f4b69	background_claim 83 134	have been introduced for cloth collision resolution
+T38dd29754be84acde1708a9e93bf3bb8	background_claim 225 331	no cloth collision resolution method which considers cloth-cloth momentum conservation has been introduced
+Td8e455caae8a414a4c254f4c81a09837	background_claim 339 445	we cannot achieve realistic cloth interactions in cloth animation without conserving cloth-cloth momentums
+Tae44691194197d70517d3a0c69abe55b	background_claim 447 497	Having this characteristic is visually distinctive
+T45fccbd3a885a7bb2eb432d23aac754e	data 503 562	cloth surfaces are moving fast and interact with each other
+T32cf37d7dc1279db2c68d8c103a172a1	background_claim 565 624	For rigid N-body collisions by graphics and robotics groups
+T38f06de1d2456b1291d0776990c55bfc	data 628 630	11
+T08e59209a23efc6abcb4c0492c2dcb5f	data 633 634	1
+Tcca9116016280db32f0f91a29324c76f	data 637 639	10
+Te9ddf83ce8510776c970235c59d9186d	data 642 643	9
+Ted729326a292a0ffcdd051d3ce3b5805	background_claim 646 689	and for flexible-rigid collision resolution
+T1b64cc4cb829f4d40b68d62e77107708	data 693 694	2
+T3fe1da1ac0221d48805e0b0594e96421	background_claim 698 736	several approaches have been suggested
+T31476ace08c8146c2ef87714db962a88	background_claim 742 818	they are not directly applicable for deformable N-body collision resolutions
+Teebd3b8a3454c20357c0ea26240b0126	background_claim 854 961	Cloth resolution methods so far compute non-penetrating positions, velocities or accelerations of particles
+T421410299755bd9ae15e1ec0f75b30d7	data 965 967	14
+T2ca6c79fb7b1d38167b3ab4d7384ddfe	data 970 971	3
+Td607536ef0b4a8c0b5fd35eb699700a7	data 974 976	15
+T496055631dd4ac22afd32029e48dc0bb	background_claim 981 1036	which work fine for the collisions against fixed bodies
+Td7a302e3c8e4c29dfd9fac0ea38cf69b	background_claim 1038 1057	Using these methods
+T0df6694e7b5f5875e4395ef6aabc38fa	background_claim 1068 1140	we cannot achieve visually satisfying dynamics of cloth-cloth collisions
+T2ae4e3ea2ea36917b77b0ae80355d9ed	background_claim 1142 1216	Adjusting particle orientations after collision resolution as suggested by
+T909d959b7618782e88714f7ed64cf1ba	data 1220 1222	14
+T6a269a6f8d1127a92d48e6d8a86fe0c3	background_claim 1226 1360	to sustain the geometrical consistency of colliding faces also does not warrant reasonable dynamic movements of cloth-cloth collisions
+Tcd563324dd4e04dcd2b5a775438e1147	background_claim 1362 1422	Handling collisions in an IZ as a bundle, proposed by Provot
+T82a1f8c19426fa76b4af22bbc89d9134	data 1426 1428	12
+T27d5cc5a38c5be7ddbc304b19dc8c459	background_claim 1433 1474	also does not give a proper visual effect
+T7c86355446a20881213e486cbe801416	background_claim 1482 1552	all particles are given the same velocities after collision resolution
+Tfc78bbb8b8a56658594cfb55aa366d70	background_claim 1554 1624	particles tend to get stuck once they collide into each other in an IZ
+T5e88a3587765b15056c66cbb7786f12c	own_claim 1626 1779	We propose our cloth collision resolution method which resolves simultaneous collisions while ensuring conservation of momentum as accurately as possible
+Tb271c9c5209efa2c95708b6a1a4b0138	own_claim 1787 1903	simultaneous resolution does not blindly resolve a collision without considering neighboring collisions within an IZ
+Tcf2e907c0d08e36a6026fbef18dd394d	own_claim 1905 1971	we do not introduce any new collisions while resolving a collision
+Tb816cf9d4d3a2ceef7a27c6309850411	own_claim 1973 2051	The collision resolution module receives collision information as a set of IZs
+T55abac26bd27a460e9ae1f1d9121884e	data 2068 2076	Sec. 2.2
+T5d7ee844909d982c88384785716b55f8	own_claim 2078 2173	Within an IZ, where possibly multiple collisions reside, collisions are resolved simultaneously
+T0556a73968f26098f78268d7b3010b5b	data 2190 2198	Sec. 3.4
+T584bf4a0265d5f025c0d5626d7265eb3	own_claim 2200 2357	After we handle each IZ separately, we check whether any new collisions between IZs are introduced by collision resolutions, and handle them if there are any
+T1cd376aab81faaf23b5f1f489c741964	data 2430 2470	we do not find any CCs from rigid bodies
+T763f627783d4c530c051fae043b35a04	own_claim 2472 2539	the collisions in that IZ are categorized as cloth-cloth collisions
+Tae8e360fcfdb7a0702d6f215339ad448	data 2544 2582	we find CCs from rigid bodies in an IZ
+T6b0e40ad2c061679f8d60ad4f9de1ae0	own_claim 2584 2623	we extract them temporarily from the IZ
+T78742a4fa88041b594df3db60ba1ab10	own_claim 2632 2676	only cloth-cloth collisions remain in the IZ
+Ta7111bccf8def1d18ff0b42227d0fbe8	own_claim 2678 2777	After resolving these cloth-cloth collisions, we take care of cloth collisions against rigid bodies
+T02214b5428881144abc9580a707d4fab	own_claim 2786 2886	the resolutions against rigid bodies will be done on top of the result of self-collision resolutions
+T4a618a30184d0affccc520e23f003de8	own_claim 2888 3028	This sequence of resolutions is chosen to avoid the case where self-collisions are ignored while collisions against rigid bodies are handled
+Tfcef413d6a73a3059508b87e36a82764	own_claim 3205 3242	For some cases, an IZ has only one CC
+T454a3868e920663880f1a45879faf2f1	data 3295 3316	an IZ has only one CC
+T9995374dcbdf0bf280e0dfed48e32493	own_claim 3318 3380	we cannot handle the particles in that CC as a bundle as usual
+T32c96ef89d98a1d1cb61c9fd7a2e9555	own_claim 3388 3449	the particles in that CC will stick together after resolution
+T0de36704a2b95d84f27add2ea9865b66	own_claim 3451 3511	the movements of cloth would not be natural and satisfactory
+T5877464984d89a6c71fb2f31d5262441	own_claim 3519 3546	we divide one CC into parts
+T155661bfc11aef3d767f0495322b5246	own_claim 3555 3612	we can find proper collision responses within these parts
+Td38ff1a35a5195d194ae59cdede37a91	own_claim 3614 3683	Segmenting one CC into parts is performed by identifying border edges
+Tb1e017ff1b872f467fafc34cdfa9cec2	own_claim 3906 3914	Eliminat
+Tc94f057eb52782054531d3c7f728d2a0	own_claim 3918 3990	ing the particles in the border edges segments a CC into several sub-CCs
+Td697a48b564b9dad14e0ea9e98dd3891	data 4000 4006	Fig. 2
+T3818d0391b1f0d4d55bbe4df42774f21	data 4179 4206	an IZ has three or more CCs
+Tcac5d68a463a86257c9208b2b2b04180	own_claim 4208 4272	we reduce the total number of CCs by merging closely located CCs
+T77f88d96c86954e72ea9302cac4cb4f4	own_claim 4274 4342	This merger is performed to prevent undesirable collision resolution
+Tf10dd8c164fabf4a55570baabd40cf70	data 4347 4370	CCs are closely located
+T8257edc308bf5355a63676a80e64bf98	own_claim 4372 4443	it means the cloth patches represented by these CCs are closely located
+Tddfb5a778a1dca86dfb04870ccba61cd	own_claim 4445 4500	We do not want to handle closely located CCs separately
+T208aa92b89c417571bb8a1166caacd4d	own_claim 4507 4624	it might instantly introduce instabilities to the system by allowing closely located CCs to have different velocities
+T9bac13d0e7b332f274afad87d59e1bea	own_claim 4635 4656	there is an exception
+T0a2dc896acbbe969c63caeebfba2295a	data 4663 4726	we find a significant bending between these closely located CCs
+Tb5ce425ddf968fe36b6c43a62e6497eb	own_claim 4728 4803	we have to resolve collisions between these CCs by handling them separately
+Ta8937750bf6f7245b2fb34037b91b667	own_claim 4805 4906	Bending between CCs is considered significant in the same way as in the case of bending between faces
+T9fd7b2cf780348fad82d452b397e6c0b	own_claim 4908 5016	We do not want to handle closely located CCs separately except for the case where the bending is significant
+T57cc6bfbc0ea4ae917be3e794aece3d6	own_claim 5166 5290	the candidates of the CC merger are the CCs closely located, where we do not witness any significant bending between the CCs
+T97cf02afcffd8cf83b0322a9c20fbfa1	own_claim 5327 5382	After merging, we still possibly have more than two CCs
+Tc3f6b62d0495384798d915d427e0a7aa	own_claim 5878 5920	we pre-processed a single CC IZ previously
+Tc2a02531e78ee78f998d5ac74758763a	own_claim 5922 5964	we assume an IZ always has two or more CCs
+T734c8238829a952b69cac3eafcdf2836	own_claim 5966 6081	The important part of the collision resolution of these multiple CCs is to find the proper directions of collisions
+T1bd22f30b4a0569eeef9ddc91dfc12ed	own_claim 6166 6250	the velocities of CCs after collision are computed based on this collision direction
+T8f573586195d0cff4e51de9511ec52db	own_claim 6252 6350	finding the correct collision direction is important to achieve proper visual effect of collisions
+T6de174aeea9b5d05bb8c1a5d86a04752	data 6367 6398	the two billiard ball collision
+T501a07e6e674d53b75b1e16bfd05f7c8	own_claim 6400 6478	the collision direction is computed by connecting the two ball centers of mass
+T6376cfe5e4e250154613d782d3badfa0	own_claim 6484 6600	in cloth-cloth collisions, connecting two centers of CC masses is not a proper way to decide the collision direction
+T64ff9648eae3bf04105d213cb1c4455d	own_claim 6706 6818	To have the proper average direction, the CC face normals, N 1 and N 2 , have to be properly signed as N 1 N 2 0
+Tf2ba4d12e1b7ecc76d503e7b09d74841	own_claim 7165 7205	This approach serves us well empirically
+T29575d2190df6282a0ff9c955a6384aa	data 7372 7420	we have collisions of three or more CCs in an IZ
+T4b2e0fe4ad01f7168110ed3aca925f40	own_claim 7422 7473	it is not straightforward to resolve the collisions
+T1fde87e09862494b43789e61a80cc2e6	own_claim 7537 7608	we can think of two ways to solve this multiple cloth collision problem
+T09809e6f82c11f318d3797d5f948e042	own_claim 7610 7698	One way of resolving these multiple collisions is to handle them as staggered collisions
+T5879ed2a7cd3d71271f4946f0b36ae68	data 7701 7703	11
+Tf6821f0a904dad3a5fb124aa91bcca42	data 7706 7708	10
+T4058dc4df7933c3a92c3c7598e08af20	own_claim 7712 7770	the other way is to handle them as simultaneous collisions
+T8e3aac8f6ec029069eaf63fbaa99e0e7	data 7774 7775	1
+Tb40144e4d5509886c6dd9f4e7f83321c	background_claim 7781 7874	The staggered collision approach handles multiple collisions as a series of single collisions
+T9208ec9cddd54803e345736d8ac0c246	data 7878 7880	11
+T73fc47d22d9a47c9f413872e3d0296af	background_claim 7883 7921	or desynchronized groups of collisions
+T8c0aec60740e04bf61f0ba49ca520084	data 7925 7927	10
+T1a31297173279bc968c64cc31668d379	background_claim 7931 8039	The simultaneous collision approach treats multiple collisions as simultaneous collisions within a time-step
+T1d3d8115863e45582e99a67b094de1a9	background_claim 8041 8132	The staggered collision approach gives us a more physically correct solution than the other
+T28be9c70ea50ba7f73dccd00665cb165	background_claim 8358 8379	This whole process is
+T43b54b71da92ba17b0a6e0d53a7e77fa	background_claim 8389 8414	computationally expensive
+T8175400555b9bfd0a3b49bd9d0f20334	background_claim 8424 8582	we have to consider the possibility that the resolution of a collision can create new multiple collisions, which we have to employ another strategy to resolve
+Tc8958e3e2199739cd0b9881ed626773c	background_claim 8743 8943	In addition to the substantial computational expense and complexity, the visual advantage of those staggered methods is not considered significant compared to that of the simultaneous collision method
+T3da9453566da39fc7f24f9819e82136a	background_claim 8945 9007	The simultaneous collision handling method, proposed by Baraff
+T898554d73d40e210adde7af5a4b5155b	data 9011 9012	1
+Tdca35e9ba04339a94419bb0702653786	background_claim 9017 9202	resolves multiple rigid body collisions by solving a system of linear inequalities, where the system of linear inequalities is based on the colliding relationships between rigid objects
+T33776e39d728b9b3672d4f815d33ebe5	own_claim 9207 9233	we treat CCs as mass balls
+Tf2077dd28d54610e363a3cca4e7d42f2	own_claim 9235 9271	we adapt this approach for the cloth
+T7f76e1d2139109413883052ec555e260	own_claim 9296 9305	collision
+Tdedf50af52a6ae4593cdfe2a919ef5b2	own_claim 9321 9331	resolution
+T867849d96b2d827ce8b69f984bf229b2	data 9545 9581	CC bodies are considered as vertices
+T113abc84844c9b40fc56400af95131ee	own_claim 9583 9677	an edge exists between two vertices where the bodies represented by those two vertices collide
+T11b61fab06a03359263badea4dc505a4	data 9818 9876	N bodies are colliding without having any cyclic collision
+T0e45eb4b667f01b8106d8e5959cdce18	own_claim 9878 9992	we can build a system of N , 1 linear equations based on the changes of relative velocities of each colliding pair
+T7b75bd376a66f1994cf91ca65fe842df	data 10039 10060	v i;j + = , C e v i;j
+T25ff2f158c97a6b891140ae8a71045a2	background_claim 10298 10342	the law of N-body momentum conservation says
+T7e7d4842081dc7e25d8571bde4353402	background_claim 10381 10452	m 1 v 1 + + m 2 v 2 + + + m N v N + = m 1 v 1 , + m 2 v 2 , + + m N v N
+T403b1b75787b04658d17bca186359a4d	own_claim 10482 10483	v
+T8dff70bf8259257c78fb8495bbae6c1f	own_claim 10484 10489	Using
+Tb48f847f3374edd8d12cc13d56dcb8ca	own_claim 10490 10497	i + for
+T2e391525ff90e40aee4d82d66a84f2e3	own_claim 10498 10503	eq. 1
+Tdca6d88b6d4b4099b0a053049646d0d9	own_claim 10504 10507	1 i
+T046bf6f3fe7f8b63036e596fd7df072c	own_claim 10508 10511	and
+T4f479ede304ece1e27261fdefbd00479	own_claim 10512 10513	N
+Tfa109fe3074fa72478bf253b280257dc	own_claim 10514 10515	2
+T413c9c90442d870a502275a8520a2866	own_claim 10519 10564	we can deterministically find the solution of
+Tae37d19e7953473da03b6544c338e55e	own_claim 10571 10621	we use swept-volumes of faces to detect collisions
+T9f85d61d286b9c9a21fc3f134d69f9c8	own_claim 10623 10673	we handle fast moving cloth and rigid body objects
+T4bc0898bf77c01e97689df94f51b6122	own_claim 10683 10699	a problem arises
+T5f78fce1458978ea8e995d6322709148	data 10705 10787	collision resolutions of an IZ create new collisions against objects around the IZ
+Ta4ceefcb229c09650637e4eb983c2726	own_claim 10789 10996	This happens when objects do not move fast enough to penetrate objects outside an IZ, but just fast enough to make the result of collision resolutions penetrate the proximity region of objects outside the IZ
+T15bf49ff31fcf4d52dee1154b69b1b4d	own_claim 11013 11046	this case appears to be very rare
+T8ade289f526cdcddde45db6974e57ba1	own_claim 11056 11191	we can resolve this case by maintaining the barycentric relationship between cloth surfaces and the newly introduced colliding entities
+T1935b0252a9aabeaba4a55b8c7f0b457	own_claim 11205 11249	in the worst case, this involves repetitious
+Tc14782fbc7b1035f72c3e1bcd86f90b3	own_claim 11263 11339	we may introduce other new collisions when we resolve the current collisions
+T4605bfef606827dfefef2040f9135ead	data 11436 11473	we observe cyclic collisions in an IZ
+T43f490ffc4d76b659bdea0060730da3a	own_claim 11475 11585	we build a system of linear inequalities based on the collision rela- tionships between grouped particle parts
+T602e2590a888eb3fac95757f86cecc07	own_claim 11587 11731	We find the feasible solution of the linear inequality system, while trying to minimize the energy we introduce into the simulation artificially
+T11f7b977271bbd10094caba84b164602	data 11736 11788	an IZ has cyclic colliding relationships between CCs
+T57bbcb1bb5ebc54bd05cd62bc16c0b8b	own_claim 11790 11827	we have N or more linear inequalities
+Tce56db153218e5aa472483e6546d9771	own_claim 11903 12063	This inequality relationship between the relative velocities before and after collision is an artificial relationship set up heuristically, not based on physics
+T50da5f177e81d5e55e80d452af1f6a53	own_claim 12065 12140	This inequality relationship, first used for rigid body multiple collisions
+T4aa9521366d5e9566bf685d63154276c	data 12144 12145	1
+T23d615e1dc6175025d72438ee540c07f	own_claim 12150 12193	appears to serve the graphical purpose well
+T8dbdf51bd2ec1622f0d5e3ad2fae96cc	own_claim 12195 12376	mize When the difference we solve this between system v i;j + of and inequalities, , C e v i;j , , which we want would to minirepresent the extra energy we introduce into the system
+Te7725755bd88a6bd9fb9068c96181d51	own_claim 12385 12419	we define an objective function, X
+T27ce2551944aa5b26f9130faa0bf8a94	own_claim 12448 12488	to be minimized when we solve the system
+Tb10f4846fd92086591bab183661d0c7c	own_claim 12490 12591	The system of inequalities with an objective function can be solved using a Linear Programming Method
+T099acd44c5e28a324db1077a2006bcd7	data 12688 12719	an IZ has CCs from rigid bodies
+T7e2093272bdf0d7241d06c71eeb9e2e7	data 12732 12757	along with CCs from cloth
+T41028b9bc2f42406c59c61a3f2011783	own_claim 12771 12873	the collision resolutions against rigid bodies are performed after cloth-cloth collisions are resolved
+Tf1aef1592f7115028c80f592f6bbeed8	data 12880 12899	an IZ has rigid CCs
+Tc15d25b418401c6ca813042f1dad96cf	own_claim 12901 13002	collision responses are different based on whether rigid CCs are moving or fixed or a mixture of both
+T071ccc46d07e201ba34d820c096ca6e0	data 13007 13043	the rigid CCs in an IZ are all fixed
+T469d87bdee3d1b83f5da3d9a6ead188b	own_claim 13045 13088	we handle particles in that IZ individually
+Tc497c3db64068c91d062577b47585a7f	own_claim 13323 13344	Particles are ignored
+Td561230494cd3b7a36cd70cb196561cf	data 13348 13405	they are not in the vicinity of a face in fixed rigid CCs
+T62132fa4909079343b744c048ac74771	own_claim 13474 13533	particles separating from the rigid bodies are also ignored
+Tbcb968c4fc17ffbbca8931243efa5241	own_claim 13535 13603	The new particle velocity V new is , C e V normal + C f V tangential
+T47692d8ba66fd236128137cdd9a40b2b	data 13682 13719	the rigid CCs in an IZ are all moving
+Tf442468308af04af9cda2f1e09ad1139	own_claim 13721 13752	we handle particles as a bundle
+T39c06be0a03932fd3e08b47c0f50fe0a	data 13764 13813	particles are in the vicinity of moving rigid CCs
+T8cbfe2e8e4b6bab564a8b4b62183bc04	data 14124 14186	an IZ has both moving and fixed rigid CCs along with cloth CCs
+T790cdcf1559a15a3deff1ee23c9e2fb7	own_claim 14188 14294	collision resolutions against rigid bodies are done based on the proximities of particles to the rigid CCs
+T88d34d100d60199a413df7eecbfcc1ce	own_claim 14390 14421	Collisions between rigid bodies
+Te44d4ee021ac008a8444a58f2308858b	own_claim 14436 14490	have to be handled independently from cloth collisions
+Rf7736102c40032bd4db1150b2b3fce2f	parts_of_same Arg1:T45a1134e891f0de6390c2f4ceb5c82f8 Arg2:T6e05656607868e86683c9c4ad27f4b69
+R36d76c9c8c64dbfdf5d1015f5eb5a6ca	supports Arg1:Ta0a994b78486e1631ce22160587386ec Arg2:T45a1134e891f0de6390c2f4ceb5c82f8
+Ra9b6ed79c99c3add95612fdb33b603ca	supports Arg1:T6b423f4f35142c62d58cb2315845066c Arg2:T45a1134e891f0de6390c2f4ceb5c82f8
+Ra6d91910230f3e4b4d525f7e95af8dcf	supports Arg1:Ta2ab36e599708e881671baf2f62aadf6 Arg2:T45a1134e891f0de6390c2f4ceb5c82f8
+R004aa0e2b65c9ce512547525e58badc3	supports Arg1:T4cfdc6ea9c40296843ab25c3f13b8c6f Arg2:T45a1134e891f0de6390c2f4ceb5c82f8
+Ra42aee7d185fe71a3f3b5345202e8511	contradicts Arg1:T38dd29754be84acde1708a9e93bf3bb8 Arg2:Td8e455caae8a414a4c254f4c81a09837
+R62d8dbed4abeb00a0dc326bf6ab1dac9	contradicts Arg1:T6e05656607868e86683c9c4ad27f4b69 Arg2:T38dd29754be84acde1708a9e93bf3bb8
+Rd3d9eb518668890b4d8048cb51709307	supports Arg1:T45fccbd3a885a7bb2eb432d23aac754e Arg2:Tae44691194197d70517d3a0c69abe55b
+R0c2dab1363ada6a91f9bdf5060ae3c3e	supports Arg1:T38f06de1d2456b1291d0776990c55bfc Arg2:T32cf37d7dc1279db2c68d8c103a172a1
+R722c3efc127905119964ed8b86329b34	supports Arg1:T08e59209a23efc6abcb4c0492c2dcb5f Arg2:T32cf37d7dc1279db2c68d8c103a172a1
+Rde695d253f08b69d4f40437946482d38	supports Arg1:Tcca9116016280db32f0f91a29324c76f Arg2:T32cf37d7dc1279db2c68d8c103a172a1
+R23da0b137d9dd95a1cc448f5edd7d199	supports Arg1:Te9ddf83ce8510776c970235c59d9186d Arg2:T32cf37d7dc1279db2c68d8c103a172a1
+R2d8f48b17c4ac312d6dfb6d23043fd86	parts_of_same Arg1:T32cf37d7dc1279db2c68d8c103a172a1 Arg2:Ted729326a292a0ffcdd051d3ce3b5805
+R1073ee969487984e38c6bbee3edb225b	supports Arg1:T1b64cc4cb829f4d40b68d62e77107708 Arg2:Ted729326a292a0ffcdd051d3ce3b5805
+Re9320909842df467b7e2a62aded7668c	supports Arg1:Ted729326a292a0ffcdd051d3ce3b5805 Arg2:T3fe1da1ac0221d48805e0b0594e96421
+Rd2ec1472232a5ff24f634e62ad5b5b5d	contradicts Arg1:T3fe1da1ac0221d48805e0b0594e96421 Arg2:T31476ace08c8146c2ef87714db962a88
+Ra99e983fdf7f99f6606242e2dc3f0a92	supports Arg1:T421410299755bd9ae15e1ec0f75b30d7 Arg2:Teebd3b8a3454c20357c0ea26240b0126
+Raec4d1e70cb69179bca0d5641249476b	supports Arg1:T2ca6c79fb7b1d38167b3ab4d7384ddfe Arg2:Teebd3b8a3454c20357c0ea26240b0126
+R53b324dcda99901763ac2163dda60b95	supports Arg1:Td607536ef0b4a8c0b5fd35eb699700a7 Arg2:Teebd3b8a3454c20357c0ea26240b0126
+Rd865f2f3ae2f630e67921a2cde2204ee	parts_of_same Arg1:Teebd3b8a3454c20357c0ea26240b0126 Arg2:T496055631dd4ac22afd32029e48dc0bb
+R7059507d71b46388894096ba88432aa1	contradicts Arg1:Td7a302e3c8e4c29dfd9fac0ea38cf69b Arg2:T0df6694e7b5f5875e4395ef6aabc38fa
+R442234f7066748e0df92220a7ebb01d7	supports Arg1:T909d959b7618782e88714f7ed64cf1ba Arg2:T2ae4e3ea2ea36917b77b0ae80355d9ed
+Rfddbe07c0b549ae4b2c64f513899e4a1	parts_of_same Arg1:T2ae4e3ea2ea36917b77b0ae80355d9ed Arg2:T6a269a6f8d1127a92d48e6d8a86fe0c3
+R6bbb4d5cd1ea7c90b5a1958738d7cc4d	supports Arg1:T82a1f8c19426fa76b4af22bbc89d9134 Arg2:Tcd563324dd4e04dcd2b5a775438e1147
+R3af7940af172e992e860aa69451e3471	parts_of_same Arg1:Tcd563324dd4e04dcd2b5a775438e1147 Arg2:T27d5cc5a38c5be7ddbc304b19dc8c459
+R81bf7fca56a8131a702c8dba8a1560f1	supports Arg1:T7c86355446a20881213e486cbe801416 Arg2:Tfc78bbb8b8a56658594cfb55aa366d70
+Re2858b0f21c0ad9c23552ef2f2fb8fd4	supports Arg1:Tb271c9c5209efa2c95708b6a1a4b0138 Arg2:Tcf2e907c0d08e36a6026fbef18dd394d
+R87784d6a6838df8aa8f51b72f4d70631	supports Arg1:T55abac26bd27a460e9ae1f1d9121884e Arg2:Tb816cf9d4d3a2ceef7a27c6309850411
+Rfa25b2dc944ad6dc36b23341136a5277	supports Arg1:T0556a73968f26098f78268d7b3010b5b Arg2:T5d7ee844909d982c88384785716b55f8
+R852afa13e2b90f06522e914f21025b5f	supports Arg1:T1cd376aab81faaf23b5f1f489c741964 Arg2:T763f627783d4c530c051fae043b35a04
+R3aa9c6e5e6345d283613563c0217e7d3	supports Arg1:Tae8e360fcfdb7a0702d6f215339ad448 Arg2:T6b0e40ad2c061679f8d60ad4f9de1ae0
+R9c81991f921651d25013ba9baabc4bd2	supports Arg1:T6b0e40ad2c061679f8d60ad4f9de1ae0 Arg2:T78742a4fa88041b594df3db60ba1ab10
+Rf60fa5a0280af1b3db33b2da6e445f25	supports Arg1:Ta7111bccf8def1d18ff0b42227d0fbe8 Arg2:T02214b5428881144abc9580a707d4fab
+Rfab5f7c4f1e4c41effa730a83b93557a	supports Arg1:T454a3868e920663880f1a45879faf2f1 Arg2:T9995374dcbdf0bf280e0dfed48e32493
+R8f35607179f063e17e7f4214e1b48c0b	supports Arg1:T32c96ef89d98a1d1cb61c9fd7a2e9555 Arg2:T0de36704a2b95d84f27add2ea9865b66
+R79ee8eb5e10a24998d16cc187dd89da4	supports Arg1:T0de36704a2b95d84f27add2ea9865b66 Arg2:T5877464984d89a6c71fb2f31d5262441
+Rfb5e4eb46ce04e545e5ca8932751061c	supports Arg1:T5877464984d89a6c71fb2f31d5262441 Arg2:T155661bfc11aef3d767f0495322b5246
+R7d4658e90be55c1418891ce8d58fec99	parts_of_same Arg1:Tb1e017ff1b872f467fafc34cdfa9cec2 Arg2:Tc94f057eb52782054531d3c7f728d2a0
+Rf3f33d42e1bd8ec548651bec713822f2	supports Arg1:Td697a48b564b9dad14e0ea9e98dd3891 Arg2:Tc94f057eb52782054531d3c7f728d2a0
+R80300a3ade151d39f2f8594fd678bfca	supports Arg1:T3818d0391b1f0d4d55bbe4df42774f21 Arg2:Tcac5d68a463a86257c9208b2b2b04180
+R381cc15be0e577ec04bd85d9ee18b743	supports Arg1:Tf10dd8c164fabf4a55570baabd40cf70 Arg2:T8257edc308bf5355a63676a80e64bf98
+R31d0bab6e4bf03ccd1128f70e596616d	supports Arg1:T208aa92b89c417571bb8a1166caacd4d Arg2:Tddfb5a778a1dca86dfb04870ccba61cd
+Rf3dc6ea3c305c15503579aef143db16e	contradicts Arg1:Tddfb5a778a1dca86dfb04870ccba61cd Arg2:T9bac13d0e7b332f274afad87d59e1bea
+R14c5bdb78e007438129b67f8559b6250	supports Arg1:T0a2dc896acbbe969c63caeebfba2295a Arg2:Tb5ce425ddf968fe36b6c43a62e6497eb
+Rdf6229229d4f06c94bdf734c8b3a1620	supports Arg1:T9fd7b2cf780348fad82d452b397e6c0b Arg2:T57cc6bfbc0ea4ae917be3e794aece3d6
+Rb821a428c7312832a25a8b21018b7a5f	supports Arg1:Tc3f6b62d0495384798d915d427e0a7aa Arg2:Tc2a02531e78ee78f998d5ac74758763a
+R41cd5a31456c012b1db9c2119945a83b	supports Arg1:T1bd22f30b4a0569eeef9ddc91dfc12ed Arg2:T8f573586195d0cff4e51de9511ec52db
+R5c772eeea64fb6723703be6d442e8760	supports Arg1:T6de174aeea9b5d05bb8c1a5d86a04752 Arg2:T501a07e6e674d53b75b1e16bfd05f7c8
+Re0ff6efdedadc4bf89887027ebaf0c00	contradicts Arg1:T501a07e6e674d53b75b1e16bfd05f7c8 Arg2:T6376cfe5e4e250154613d782d3badfa0
+R50acfaf6b1d75d946b900b84a0713851	supports Arg1:T29575d2190df6282a0ff9c955a6384aa Arg2:T4b2e0fe4ad01f7168110ed3aca925f40
+R3e2a5bf2e5add6369c0b73e0b81a186f	supports Arg1:T5879ed2a7cd3d71271f4946f0b36ae68 Arg2:T09809e6f82c11f318d3797d5f948e042
+Rb765b96ab84569dd7182f09eb74bd3f1	supports Arg1:Tf6821f0a904dad3a5fb124aa91bcca42 Arg2:T09809e6f82c11f318d3797d5f948e042
+R0dc44f712358f0f7ecc4e64bde011ed5	supports Arg1:T8e3aac8f6ec029069eaf63fbaa99e0e7 Arg2:T4058dc4df7933c3a92c3c7598e08af20
+Rfdae7edfdb5e399d44df13ab9adcf83d	supports Arg1:T9208ec9cddd54803e345736d8ac0c246 Arg2:Tb40144e4d5509886c6dd9f4e7f83321c
+Rd2a26e9d4179658c6d605fbd33b8d5df	parts_of_same Arg1:Tb40144e4d5509886c6dd9f4e7f83321c Arg2:T73fc47d22d9a47c9f413872e3d0296af
+R4c92189701815213fdf8d7293362025f	supports Arg1:T8c0aec60740e04bf61f0ba49ca520084 Arg2:T73fc47d22d9a47c9f413872e3d0296af
+R1d7f474ddce90123ce3186e709836718	supports Arg1:T43b54b71da92ba17b0a6e0d53a7e77fa Arg2:T28be9c70ea50ba7f73dccd00665cb165
+R90fdc4adee5061a1cc075432570ac910	supports Arg1:T898554d73d40e210adde7af5a4b5155b Arg2:T3da9453566da39fc7f24f9819e82136a
+R295e6e49241cec2ec1af45defbd3df4e	parts_of_same Arg1:T3da9453566da39fc7f24f9819e82136a Arg2:Tdca35e9ba04339a94419bb0702653786
+Rd2e314d3d3159f97217a99edc2b35e8a	parts_of_same Arg1:T7f76e1d2139109413883052ec555e260 Arg2:Tdedf50af52a6ae4593cdfe2a919ef5b2
+Rd23c1383fb37e35ac5a95dce642394ff	parts_of_same Arg1:Tf2077dd28d54610e363a3cca4e7d42f2 Arg2:T7f76e1d2139109413883052ec555e260
+R743c163d723c516df6ae04acf0107337	supports Arg1:T33776e39d728b9b3672d4f815d33ebe5 Arg2:Tf2077dd28d54610e363a3cca4e7d42f2
+R03eeac64a4438db9d482aebb2ea2be9f	supports Arg1:T867849d96b2d827ce8b69f984bf229b2 Arg2:T113abc84844c9b40fc56400af95131ee
+Rd0fd7f3b2c2b293ffc174eb7e2d5e9aa	supports Arg1:T11b61fab06a03359263badea4dc505a4 Arg2:T0e45eb4b667f01b8106d8e5959cdce18
+R0563b82ca5ca73bb0119d655607f114a	supports Arg1:T7b75bd376a66f1994cf91ca65fe842df Arg2:T0e45eb4b667f01b8106d8e5959cdce18
+Radeaea9a8abde1c8475c84b473289149	parts_of_same Arg1:T25ff2f158c97a6b891140ae8a71045a2 Arg2:T7e7d4842081dc7e25d8571bde4353402
+R4adada38b9029230d09a799755e482e7	parts_of_same Arg1:T2e391525ff90e40aee4d82d66a84f2e3 Arg2:T046bf6f3fe7f8b63036e596fd7df072c
+R1421c221284932167c23e815ae16a03b	supports Arg1:Tfa109fe3074fa72478bf253b280257dc Arg2:T413c9c90442d870a502275a8520a2866
+Rbe1d73b4bfadfa17cf009879f1e75881	parts_of_same Arg1:T403b1b75787b04658d17bca186359a4d Arg2:Tb48f847f3374edd8d12cc13d56dcb8ca
+R55bdb112e29bf55fc9af3d19895607cc	parts_of_same Arg1:Tb48f847f3374edd8d12cc13d56dcb8ca Arg2:Tdca6d88b6d4b4099b0a053049646d0d9
+Re9887ab1d2c56a09982b76ac0fa97aae	supports Arg1:Tae37d19e7953473da03b6544c338e55e Arg2:T9f85d61d286b9c9a21fc3f134d69f9c8
+Rac70a99b9f56c912b32734a67a2d6fab	supports Arg1:T5f78fce1458978ea8e995d6322709148 Arg2:T4bc0898bf77c01e97689df94f51b6122
+R1527f65675f44b9fc682702f7e131140	supports Arg1:Tc14782fbc7b1035f72c3e1bcd86f90b3 Arg2:T1935b0252a9aabeaba4a55b8c7f0b457
+R65bb3a06632a143dd2728e943c253a05	supports Arg1:T1935b0252a9aabeaba4a55b8c7f0b457 Arg2:Tc14782fbc7b1035f72c3e1bcd86f90b3
+Rac8f8e267814700a584c98bbdbe79516	supports Arg1:T4605bfef606827dfefef2040f9135ead Arg2:T43f490ffc4d76b659bdea0060730da3a
+Rb09cdb482bd7522ac1fa1f0fc0a8cfb8	supports Arg1:T11f7b977271bbd10094caba84b164602 Arg2:T57bbcb1bb5ebc54bd05cd62bc16c0b8b
+R7a9d6277fb286938096c7edddd847c98	supports Arg1:T4aa9521366d5e9566bf685d63154276c Arg2:T50da5f177e81d5e55e80d452af1f6a53
+R228e08a641085e8cc4ab044e4f5545d0	parts_of_same Arg1:T50da5f177e81d5e55e80d452af1f6a53 Arg2:T23d615e1dc6175025d72438ee540c07f
+R7cb1144ac94a65c997b75c80253f82c0	supports Arg1:T8dbdf51bd2ec1622f0d5e3ad2fae96cc Arg2:Te7725755bd88a6bd9fb9068c96181d51
+R0561abad210de0b24d8bb88058199124	parts_of_same Arg1:Te7725755bd88a6bd9fb9068c96181d51 Arg2:T27ce2551944aa5b26f9130faa0bf8a94
+R9fac7ce410b783a36caac1c08a806cbc	parts_of_same Arg1:T099acd44c5e28a324db1077a2006bcd7 Arg2:T7e2093272bdf0d7241d06c71eeb9e2e7
+R08dad380fb2fafcf9ce4d9619d93eb18	supports Arg1:T7e2093272bdf0d7241d06c71eeb9e2e7 Arg2:T41028b9bc2f42406c59c61a3f2011783
+R80a39a2e48f15f5e65a83175c320bedd	supports Arg1:Tf1aef1592f7115028c80f592f6bbeed8 Arg2:Tc15d25b418401c6ca813042f1dad96cf
+R1f0d76c29bec970733c7236809c7cf93	supports Arg1:T071ccc46d07e201ba34d820c096ca6e0 Arg2:T469d87bdee3d1b83f5da3d9a6ead188b
+Rb271f5445c1071c79eb8994ff554caeb	supports Arg1:Td561230494cd3b7a36cd70cb196561cf Arg2:Tc497c3db64068c91d062577b47585a7f
+Rf9e595dd85ea7d8e85a89805ec32b8e9	supports Arg1:T39c06be0a03932fd3e08b47c0f50fe0a Arg2:Tf442468308af04af9cda2f1e09ad1139
+R1d4aee60efe98515e019d63c83381cc7	supports Arg1:T47692d8ba66fd236128137cdd9a40b2b Arg2:Tf442468308af04af9cda2f1e09ad1139
+R6164308a7eb8e07a721269ea0f08cad5	supports Arg1:T8cbfe2e8e4b6bab564a8b4b62183bc04 Arg2:T790cdcf1559a15a3deff1ee23c9e2fb7
+R9fb28a3d5008fdbdecd8073aec44d220	parts_of_same Arg1:T88d34d100d60199a413df7eecbfcc1ce Arg2:Te44d4ee021ac008a8444a58f2308858b
+Rc7c7b51e36c04e1a22e2227fb4b1f3af	supports Arg1:T4cfdc6ea9c40296843ab25c3f13b8c6f Arg2:T6e05656607868e86683c9c4ad27f4b69
+Rebb1498642d601862767a0b823ad13c9	contradicts Arg1:Ted729326a292a0ffcdd051d3ce3b5805 Arg2:T31476ace08c8146c2ef87714db962a88
+R85ac602dafedca8cd98c6c345cc5ac64	supports Arg1:T1b64cc4cb829f4d40b68d62e77107708 Arg2:T3fe1da1ac0221d48805e0b0594e96421
+Rd5ae51a5a6017d4ec5f5a8cd57bb7e4b	supports Arg1:T1b64cc4cb829f4d40b68d62e77107708 Arg2:T31476ace08c8146c2ef87714db962a88
+R0e253c5ac4dc30ff20198389c9d44683	supports Arg1:T909d959b7618782e88714f7ed64cf1ba Arg2:T6a269a6f8d1127a92d48e6d8a86fe0c3
+R57d804b15db38deb62df5507d1036164	supports Arg1:T9995374dcbdf0bf280e0dfed48e32493 Arg2:T32c96ef89d98a1d1cb61c9fd7a2e9555
+Re4ef2888e9cc9cd20e1d3f4f1147ee47	contradicts Arg1:T208aa92b89c417571bb8a1166caacd4d Arg2:T9bac13d0e7b332f274afad87d59e1bea
+Ra5cdea60da6d1c41b45fc45541ff86ae	contradicts Arg1:Ta8937750bf6f7245b2fb34037b91b667 Arg2:T9fd7b2cf780348fad82d452b397e6c0b
+R6a3a1348b68303d2bf1e63a09208c145	supports Arg1:T4058dc4df7933c3a92c3c7598e08af20 Arg2:T1fde87e09862494b43789e61a80cc2e6
+R22638c21255b7c8bb267f5a61c382d66	contradicts Arg1:T28be9c70ea50ba7f73dccd00665cb165 Arg2:T8175400555b9bfd0a3b49bd9d0f20334
+Rfd61bdc649e3d46e30e9d970b71a53b9	supports Arg1:T43b54b71da92ba17b0a6e0d53a7e77fa Arg2:T8175400555b9bfd0a3b49bd9d0f20334
+R5e4082206a8bbb68cf75cec8d645db81	supports Arg1:T898554d73d40e210adde7af5a4b5155b Arg2:Tdca35e9ba04339a94419bb0702653786
+R1034bf53e460cd9d904ffd0853e3a798	parts_of_same Arg1:Tf2077dd28d54610e363a3cca4e7d42f2 Arg2:Tdedf50af52a6ae4593cdfe2a919ef5b2
+R33fa9adfd1555d4b1f05f7aa22a3ed43	parts_of_same Arg1:T7e7d4842081dc7e25d8571bde4353402 Arg2:T8dff70bf8259257c78fb8495bbae6c1f
+R98bccdff789d4753873ca506eda9300a	parts_of_same Arg1:T7e7d4842081dc7e25d8571bde4353402 Arg2:T403b1b75787b04658d17bca186359a4d
+Rb84acceefc1511df4ae6dbf7ce1c4ef3	parts_of_same Arg1:T2e391525ff90e40aee4d82d66a84f2e3 Arg2:Tfa109fe3074fa72478bf253b280257dc
+Re7c143595295c7d717fc7149acae8bab	parts_of_same Arg1:Tb48f847f3374edd8d12cc13d56dcb8ca Arg2:T2e391525ff90e40aee4d82d66a84f2e3
+Rf6f1c7d2b9a39a6062c1f62ae8004aba	supports Arg1:Tdca6d88b6d4b4099b0a053049646d0d9 Arg2:T2e391525ff90e40aee4d82d66a84f2e3
+R81a9780dc3d3c68a6bec21bd71bcfc9e	parts_of_same Arg1:T2e391525ff90e40aee4d82d66a84f2e3 Arg2:T4f479ede304ece1e27261fdefbd00479
+R040ce4c30d3bfbf319d863a813c9d1d1	parts_of_same Arg1:T2e391525ff90e40aee4d82d66a84f2e3 Arg2:Tdca6d88b6d4b4099b0a053049646d0d9
+Rffaa7c1c0aa10a85aa0b3715f224fd1c	supports Arg1:Tae37d19e7953473da03b6544c338e55e Arg2:T413c9c90442d870a502275a8520a2866
+Rc2c2941dafd7697b7bb949cb880ac881	supports Arg1:T5f78fce1458978ea8e995d6322709148 Arg2:Ta4ceefcb229c09650637e4eb983c2726
+R0e8cea95b66edc08c60ae5c209a783ae	contradicts Arg1:T15bf49ff31fcf4d52dee1154b69b1b4d Arg2:T8ade289f526cdcddde45db6974e57ba1
+R3d39ff2f1fc1caaade2a4126b84e6073	parts_of_same Arg1:T23d615e1dc6175025d72438ee540c07f Arg2:T8dbdf51bd2ec1622f0d5e3ad2fae96cc
+Rc2d1e71078acb755abe644e3419df2f4	supports Arg1:T099acd44c5e28a324db1077a2006bcd7 Arg2:T41028b9bc2f42406c59c61a3f2011783

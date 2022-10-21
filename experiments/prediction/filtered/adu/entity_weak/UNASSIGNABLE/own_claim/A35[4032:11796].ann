@@ -1,0 +1,19 @@
+T8e09df081a57c9c8f200c0cf24711109	own_claim 338 505	* The desired accuracy, which reflects the allowable numerical tolerance between the computed solution and the theoretical evolution expected from the mechanical model
+T7281b4a5a862e5de5f740b36b55bb98a	own_claim 507 778	* The simulation context, which can either be an extensive computation of the motion along time requiring accurate evaluation of all the dynamical factors, or a simple relaxation process where the simulation has to converge to the static rest state as quickly as possible
+T7e4d06d556a34969c02474b8c19c93c4	own_claim 2772 2825	The methods that we consider for this application are
+Tbb323283397807e3db666e7ae8b389f6	own_claim 2829 2902	The explicit Midpoint method, which is a simple low-order explicit method
+T1ede0e7bd7e3382c2dd5ac479098e115	own_claim 2904 2956	It requires two mechanical derivations per iteration
+Td01540b8b1a8f32242a7695e29e547bb	own_claim 2961 3027	returns a second-order accurate solution relative to the time step
+T9af711f90ec6289e96e4d16454e6bd5e	own_claim 3163 3206	the obvious gains of accuracy and stability
+T4317be13770d34c3746efe08c7f359d7	own_claim 3222 3258	the additional mechanical evaluation
+Te7a5c1a90ce29327c25b7e8bf962ce96	own_claim 3260 3291	makes it largely more efficient
+T790df4853fd301c6fdc8c0c8c442d8bc	own_claim 3293 3345	We implemented this method for garment simulation in
+T727dcf5c3a1e863a25a57f94f28156af	own_claim 3569 3617	This method is supposed to provide high accuracy
+Tca0483ff66443e33e5f7c7ece184e52c	own_claim 4570 4624	the need of separating linear and nonlinear components
+T2c61b9fd49499f791c50533fa4671758	own_claim 5642 5698	the inverse of a sparse matrix is not necessarily sparse
+T95d3fe9419ec3dc7185d63722785ad67	own_claim 5875 5938	on dynamic behavior of wrinkles and motion damping particularly
+T26b996839641fa245d957892f4a0bf49	own_claim 6230 6389	All these methods were implemented in a single framework, which allows the simulation of cloth objects, using two different discrete mechanical representations
+Tcd395e4e0e442f15992494c847d59a66	own_claim 6393 6482	A complete surface elasticity model which allows the simulation of anisotropic elasticity
+T4ff25044e165b10c79720e7fab749094	own_claim 6570 6597	Bending is also implemented
+T855bc0c6622c3e07cc79ef4b2101a354	own_claim 6921 7119	A simplified spring-mass model which represents an approximated equivalent elasticity model using linear viscoelastic springs connecting the particle couples describing each edge of the surface mesh
+T8d43f7965f02a02469506070b06c58dd	own_claim 7609 7740	Performance timings are done on the mechanical computation only, and do not take into account display and data structure management

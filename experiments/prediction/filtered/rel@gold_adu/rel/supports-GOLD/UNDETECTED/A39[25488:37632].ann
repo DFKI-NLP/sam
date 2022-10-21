@@ -1,0 +1,42 @@
+Tfe68e23950748b970c28484b1daa8250	data 9128 9129	4
+Te8d442f8a5d92ac41d72bd55a44488b7	own_claim 9683 9740	At an equilibrium point of E, the gradient ∂E/∂x vanishes
+Te495dce3c948ab951cd2c9295da0141c	own_claim 3695 3734;3768 3892	near the rest state, the force gradient is quite small, which partially negates the advantage implicit integration has in exploiting knowledge of the force gradient
+Td9a7db70dd8e688972ea7fe859219680	own_claim 9653 9681	it gives nonsensical results
+T2d84bbc0cbe94dc08046f7cf897e59ec	own_claim 244 299;358 400	Expressing the energy E as a single monolithic function and then taking derivatives is impractical
+T3c910148924c0d162897b1e685e20758	own_claim 9781 9861	E  ̇ is zero when E is at its minimum, regardless of the system’s velocity x = v
+T98c5d6dc36d7507bbf534c6821fe0f9b	own_claim 10498 10561;10594 10616	the damping force d associated with a condition C have the form d = −k d ∂C(x) ∂x C(x)
+T51d3151159719b6fa01297de138fb538	own_claim 3894 3955	A quadratic model for energy is, numerically, a better choice
+Te3265c1561517ed468abd91a3997a11f	own_claim 11151 11160;11193 11261	we obtain ∂x ∂d i j = −k d ∂C(x) ∂x i ∂ C(x) ∂x  ̇ j T + ∂ ∂x C(x) i ∂x j C(x)
+T3e2b3909ae66b835061af9e801945fbd	own_claim 11379 11407	we cannot expect ∂d/∂x to be
+T70fdcd947447cf51c96c3545cc6f1eee	own_claim 436 506	A better approach is decompose E into a sum of sparse energy functions
+T0168881fd63c144c4cef666689c0612c	own_claim 2581 2684	We can now easily describe the internal forces acting on the cloth, by just writing condition functions
+T324e84def683f8e96cbb2907a2815db7	own_claim 7790 7868	The stiffness weighting for this edge should simply be k u ( u) 2 + k v ( v) 2
+T18bfe7fca4382f50ac91538fe39afbdf	data 7542 7634	material for which bending in the u and v directions are weighted by stiffnesses k u and k v
+T35aed5daad58d10690f3e0ca8c7e6567	own_claim 10395 10454	the damping strength should depend on (∂C(x)/∂x) T x = C(x)
+Tc246a0489e020e9bd5f3da74b348c31a	own_claim 11540 11618	we find it expedient simply to leave this term out, thereby restoring symmetry
+Tad0306effe92ed32758dafcdfc1c435b	own_claim 9875 9928	E  ̇ is always too small near the system’s rest state
+T0b8830c5c2a2b41b9311c274c82bcab9	background_claim 9225 9247;9278 9352	their damping function does not match the quartic energy functions of their continuum formulation
+Tbf68103be32c045d33f4b680359866fd	own_claim 629 690	even decomposing E into sparse energy functions is not enough
+T279187e5123704cfc15918f2ca90c213	data 7684 7743	the edge between the triangles be between particles i and j
+Tca1d249738d9930a47c7aeba86c85da4	own_claim 7441 7534	The uv coordinates associated with particles make this possible for triangular meshes as well
+T2d6d43f5c5144df77dbb07eb625e69b8	own_claim 2686 2733	Forces and their derivatives are easily derived
+T523d2d0fcffe38d15ef247f0a83188bb	own_claim 828 1009	we define internal behavior by formulating a vector condition C(x) which we want to be zero, and then defining the associated energy as k C(x) T C(x) where k is a stiffness constant
+Ta197c39849db2b688cc71537cd7aec24	own_claim 692 742	Energy functions are an undesirable starting point
+T2892a951c20d7529373cfc5395148bf4	own_claim 11683 11738	we have not observed any ill effects from this omission
+T9597accf6fd2520a896309ce402a2db3	own_claim 10158 10262	The force f arising from the energy acts only in the direction ∂C(x)/∂x, and so should the damping force
+R10d96d4a5db40a31428438fbed68f141	supports-GOLD Arg1:T2d84bbc0cbe94dc08046f7cf897e59ec Arg2:T70fdcd947447cf51c96c3545cc6f1eee
+R809476d7e9e32a1fecdad278905b3ad5	supports-GOLD Arg1:Ta197c39849db2b688cc71537cd7aec24 Arg2:Tbf68103be32c045d33f4b680359866fd
+R9186ddc9d4ecedb884644499ae8fa4d5	supports-GOLD Arg1:Tbf68103be32c045d33f4b680359866fd Arg2:T523d2d0fcffe38d15ef247f0a83188bb
+R24678ee881251eb47ef662e73ee6e3eb	supports-GOLD Arg1:T2d6d43f5c5144df77dbb07eb625e69b8 Arg2:T0168881fd63c144c4cef666689c0612c
+Rf920fb5064e8d4ed83be449cb8a332f8	supports-GOLD Arg1:Te495dce3c948ab951cd2c9295da0141c Arg2:T51d3151159719b6fa01297de138fb538
+Redd017a259ae6ef082c6afe4812a443d	supports-GOLD Arg1:T279187e5123704cfc15918f2ca90c213 Arg2:T324e84def683f8e96cbb2907a2815db7
+R0f270b3c480c3c7629f087ed8478b8d7	supports-GOLD Arg1:T18bfe7fca4382f50ac91538fe39afbdf Arg2:T324e84def683f8e96cbb2907a2815db7
+R0e0c262a8f16dcfcc2ab6c06ddfbe677	supports-GOLD Arg1:T324e84def683f8e96cbb2907a2815db7 Arg2:Tca1d249738d9930a47c7aeba86c85da4
+R01b4c46c2dfd8c6ccf0c162a9d805bb1	supports-GOLD Arg1:Tfe68e23950748b970c28484b1daa8250 Arg2:T0b8830c5c2a2b41b9311c274c82bcab9
+R93506fc89d342b2a461abac387d735bf	supports-GOLD Arg1:T3c910148924c0d162897b1e685e20758 Arg2:Tad0306effe92ed32758dafcdfc1c435b
+R24bc0cb57b9faa811974745b8741cf32	supports-GOLD Arg1:T3c910148924c0d162897b1e685e20758 Arg2:Te8d442f8a5d92ac41d72bd55a44488b7
+R830a4ffe8f50f0aac1686d8301a326e1	supports-GOLD Arg1:Te8d442f8a5d92ac41d72bd55a44488b7 Arg2:Td9a7db70dd8e688972ea7fe859219680
+R4c7d35e43afe861e26eb8153c9555487	supports-GOLD Arg1:T35aed5daad58d10690f3e0ca8c7e6567 Arg2:T98c5d6dc36d7507bbf534c6821fe0f9b
+R40a2b0b92e9514085006d0db071998bf	supports-GOLD Arg1:T9597accf6fd2520a896309ce402a2db3 Arg2:T98c5d6dc36d7507bbf534c6821fe0f9b
+R28b1216a395a6dbf7f464e982726a552	supports-GOLD Arg1:Te3265c1561517ed468abd91a3997a11f Arg2:T3e2b3909ae66b835061af9e801945fbd
+Rfc36d47dc6d9f39e44c9c6d8f6e37b47	supports-GOLD Arg1:T2892a951c20d7529373cfc5395148bf4 Arg2:Tc246a0489e020e9bd5f3da74b348c31a

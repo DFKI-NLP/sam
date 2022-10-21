@@ -1,0 +1,16 @@
+Te65ac86341787320260227f0d527ee9f	own_claim-GOLD 42 171	The methods introduced in all of the previous sections usually allow us to take sizeable steps forward, without loss of stability
+Tcd72317762ee62a8a11d751a75c83544	own_claim-GOLD 182 258	there are still times when the step size must be reduced to avoid divergence
+Tcd13aaf981f0f294c7c23f49cf17400b	own_claim-GOLD 519 636	visually pleasing results, meaning a numerically stable solution, rather than overall accuracy, is the deciding voice
+Ta6d4ecf89b8a4bcba52b0e85ed55abaa	own_claim-GOLD 638 708	The trick is to recognize instability before you see it on your screen
+T272e256634cf2cebfd183a789c726299	own_claim-GOLD 1193 1217	Subtlety is not required
+Tf119f216bed3539f1c5537b0065ab004	own_claim-GOLD 1232 1307	an unstable step invariably results in stretch changes that are quite large
+Te06d723eac6fe7da3d5e71c1f01dc0cc	own_claim-GOLD 2009 2108	the simulator settles down to wasting only one out of every 40 steps in attempting too large a step
+Tef33d4260b95f655e04013e4f1b09fa9	own_claim-GOLD 2110 2156	This method, though simple, has served us well
+T943488baa97b2d9ca664403bcb969e69	own_claim 42 171	The methods introduced in all of the previous sections usually allow us to take sizeable steps forward, without loss of stability
+T0c00807b53e3f532880109c8837a9bca	own_claim 182 258	there are still times when the step size must be reduced to avoid divergence
+T19ada33058d48c18d7cbecb0f4297c28	own_claim 519 636	visually pleasing results, meaning a numerically stable solution, rather than overall accuracy, is the deciding voice
+Tb1b26500fde344a8e0942852b3e0964a	own_claim 638 708	The trick is to recognize instability before you see it on your screen
+Tb5cacf5888a349f75ca5d7c09fd85303	own_claim 1193 1217	Subtlety is not required
+T2745e2b688408d621886ac2d70b7f19d	own_claim 1232 1307	an unstable step invariably results in stretch changes that are quite large
+Te0bde0a11cc5c81831ae35badaf5e1c2	own_claim 2009 2108	the simulator settles down to wasting only one out of every 40 steps in attempting too large a step
+T9714cbe8754aeec6eef992781121501b	own_claim 2110 2156	This method, though simple, has served us well

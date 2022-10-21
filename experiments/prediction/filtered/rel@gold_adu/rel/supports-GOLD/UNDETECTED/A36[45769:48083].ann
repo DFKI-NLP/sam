@@ -1,0 +1,10 @@
+Ta98abcb0e31d964a4deeac84e76c0876	own_claim 1166 1205	The most obvious of these is hysteresis
+Td21c43761ca6372bf177817cda08dd38	own_claim 1287 1356	resulting in quite large errors for any given point in the experiment
+T6431754e25b433fcec6e272d65c102d7	own_claim 1544 1673	new ways of evaluating fitting error are needed that can work when the cloth’s equilibrium state is unstable or non-deterministic
+T57d755b318907733c2272db62aba19d8	own_claim 1358 1409;1522 1536	There are many paths for future work in measurement and in fitting
+T89dbcdb3bced5114c63dc932b278f76f	own_claim 1421 1462	more complete exploration of strain space
+T712a3795664873da3d9da1ea59db1550	own_claim 1491 1520	capture of dynamic properties
+R1d8a9f844855d906bdb7ba484fc91abb	supports-GOLD Arg1:Td21c43761ca6372bf177817cda08dd38 Arg2:Ta98abcb0e31d964a4deeac84e76c0876
+Re94e5fd5e9fc85425dbe2463b94009d6	supports-GOLD Arg1:T6431754e25b433fcec6e272d65c102d7 Arg2:T57d755b318907733c2272db62aba19d8
+R1863d9c5e60773143a36aa4daf9bce7c	supports-GOLD Arg1:T89dbcdb3bced5114c63dc932b278f76f Arg2:T57d755b318907733c2272db62aba19d8
+R27aaec94730f54586dbb9230d308885d	supports-GOLD Arg1:T712a3795664873da3d9da1ea59db1550 Arg2:T57d755b318907733c2272db62aba19d8

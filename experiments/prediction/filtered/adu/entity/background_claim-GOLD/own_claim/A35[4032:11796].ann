@@ -1,0 +1,26 @@
+T6fd890a878a442548dac2e5458965461	background_claim-GOLD 45 188	The choice of the adequate integration method has to be carried out using various considerations related to the kind of problem to be simulated
+Tdedc0cfcfbfbf6384a347d97d2bd88a6	background_claim-GOLD 1688 1757	Among all the available methods, we can identify several main classes
+Td0415467f59eaea83280694560b4fd6c	background_claim-GOLD 1761 1906	Explicit methods, which compute the state of the next time step out of a direct extrapolation of the previous states using derivative evaluations
+Tb42d5ad90e0b3890534551a42f0728d5	background_claim-GOLD 1910 2059	Implicit methods, which deduce the state of the next time step from an equation system expressing some “reversibility” from the extrapolated solution
+T0f23706b0904170ecd8859957bc04336	background_claim-GOLD 2229 2366	High-order methods, which use several evaluations to compute high-order solutions that get much more accurate as the time step is reduced
+Tf6d7f01375d73afaef1448b7591beca5	background_claim-GOLD 3029 3078	It also requires two storages of the state vector
+Te4d50d79ad4713c9c6db4f16a368ffd9	background_claim-GOLD 4047 4177	This method is supposed to provide approximate results that are not subject to numerical instability as the time step is increased
+T784d98b3b130e833149516440c5f097d	background_claim-GOLD 4803 4902	It is supposed to combine the stability of implicit methods with the accuracy of high-order methods
+T876f83b72a18b02acef9fcc92ecbf2a4	background_claim-GOLD 5503 5640	which involves high simplification and linrarization of the Hessian matrix and which also becomes very unpractical for large matrix sizes
+T0e6ed0476336c4320d314b27e0bd224d	background_claim-GOLD 6077 6110	Even more drastic simplifications
+T7d6db35a2e025e7eb9030daf8c9da7c1	background_claim-GOLD 6122 6169	reduce the matrices to their diagonal component
+T1e37ebb166ab080cf61779a0a86a3cfb	background_claim-GOLD 6544 6568	and associated viscosity
+Te48789b19ec49dd84a8bf627dd4c0462	background_claim-GOLD 7121 7200	This model is one of the simplest that a cloth simulation application would use
+T658a9aacf0a4d0798e0c05ab5986b3c4	own_claim 45 188	The choice of the adequate integration method has to be carried out using various considerations related to the kind of problem to be simulated
+T6ad3a90579fec331c507ca200789887f	own_claim 1688 1757	Among all the available methods, we can identify several main classes
+Taeee383c489b6355d94ce84c6ca3f053	own_claim 1761 1906	Explicit methods, which compute the state of the next time step out of a direct extrapolation of the previous states using derivative evaluations
+Tf5ad77ea55c5e2520e9ffb8dc3065e0d	own_claim 1910 2059	Implicit methods, which deduce the state of the next time step from an equation system expressing some “reversibility” from the extrapolated solution
+T4716e056b33aae893ba4b52ec7025837	own_claim 2229 2366	High-order methods, which use several evaluations to compute high-order solutions that get much more accurate as the time step is reduced
+T8c6d4bd07f862e9a2c62e7912f9673b3	own_claim 3029 3078	It also requires two storages of the state vector
+T4e73f5cbde452f5957d8eec4e6ed96ad	own_claim 4047 4177	This method is supposed to provide approximate results that are not subject to numerical instability as the time step is increased
+T32d3b9e7d14546a39a48082fcb77d317	own_claim 4803 4902	It is supposed to combine the stability of implicit methods with the accuracy of high-order methods
+T11d30f592b72432980c93c7b14302ee1	own_claim 5503 5640	which involves high simplification and linrarization of the Hessian matrix and which also becomes very unpractical for large matrix sizes
+T29dfc461994db8f846bd74155535e532	own_claim 6077 6110	Even more drastic simplifications
+T28dd7f93b45547ce73d8a9aa32b06211	own_claim 6122 6169	reduce the matrices to their diagonal component
+T4b2e121256a9b7d0be1e6a65c88d8a49	own_claim 6544 6568	and associated viscosity
+Tea63d8cc98922826a2fc3518f19b8f8e	own_claim 7121 7200	This model is one of the simplest that a cloth simulation application would use

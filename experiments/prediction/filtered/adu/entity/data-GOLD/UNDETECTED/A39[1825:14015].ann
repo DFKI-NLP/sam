@@ -1,0 +1,15 @@
+Tdff12485204035064f11190268311245	data-GOLD 707 749	collision detection and constraint methods
+T15228f841fd5d7d420b356a3349f71cd	data-GOLD 1023 1045	ẍ = M −1 − ∂E + F . ∂x
+T7dcf74387b484ce08165484bc9fff884	data-GOLD 2457 2476	energy minimization
+Te21eb474e1a1ff6b7b09683b06004fc2	data-GOLD 4277 4368	A key step in our simulation process is the solution of an O(n) × O(n) sparse linear system
+Ta10c9bfb889c9207772c656e2fe9c131	data-GOLD 6645 6661	implicit methods
+Tb97c98f2607a1c18169fee1a4df0eb4a	data-GOLD 7833 7973	in simulating a 6, 000 node system, the solver takes only 50–100 iterations to solve the 18, 000 × 18, 000 linear system formed at each step
+T750d87d4c8d5f16ecaafd69bdeb37af9	data-GOLD 8222 8276	we demonstrate results similar to those in Breen et al
+Tacfb11fed7dfded7da2717672d57661e	data-GOLD 8285 8304	and Eberhardt et al
+T4bc0a14ca4c14b7c488ad5316ff81267	data-GOLD 8345 8436	with a running time just over 2 seconds per frame on an SGI Octane R10000 195 Mhz processor
+Tecb5321af6b4c19967725dc62233fccb	data-GOLD 8467 8473	shirts
+T6cb51674beb9252c33e902dad5bb25a3	data-GOLD 8475 8480	pants
+T8a106e2ca45cd21dd6a5e0b495534c3d	data-GOLD 8482 8488	skirts
+T5583bd7b82a2cf7647d425abee04f5da	data-GOLD 8628 8657	a long skirt with 4,530 nodes
+T191f99d61faa9da99af7e13286d5beff	data-GOLD 8676 8732	on a dancing character at a cost of 10 seconds per frame
+T603aad7c2d22351cc35533649482be77	data-GOLD 8782 8835	with a cost varying between 8 to 14 seconds per frame

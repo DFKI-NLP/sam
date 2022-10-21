@@ -1,0 +1,20 @@
+T6c101adff63efd9828ae4b9bb05c277f	own_claim 29 118	We presented two models for including advanced wind effects into cloth simulation systems
+T7eb31a945c21c53ac96dfc61ff44b649	own_claim 120 248	The first concentrates on physically accurate computations using a semi-Lagrangian approach to solve the Navier-Stokes equations
+T09eef226ae3781ff8f1a7fb84fc9a0f0	own_claim 250 328	the second model incorporates a particle tracing method for global wind fields
+T250c0d32e2ef144457cc35eb70942fe1	own_claim 369 481	both methods produce realistic looking results which are capable of enhancing the realism of computer animations
+T8edd69e02d1914c8294e280909c08c1f	own_claim 489 538	the first model has a wider range of applications
+T14d7b716d2ce90e8ece36975d18cd42d	own_claim 540 617	the second one provides an easy method which still delivers realistic effects
+T01a40607b806748b5db4e72fae896610	own_claim 626 648	air resistance and lee
+T918bf53e249f2a1f51efc7d529752426	own_claim 650 749	All methods described in this work should be easy to extend to three-dimensional deformable objects
+T0d012dc85b30890652911cabfe52ee31	own_claim 751 807	All the methods apply the same except for simple changes
+Td8e16e68689dde88a5e9e60c8526713b	data 815 871	three-dimensional objects define an inner and outer part
+T302790bba67ea0ebc0561605003e0cea	own_claim 873 940	the adaption of the face normals in equation (3.1) is not necessary
+Tc5e93cb14bb0ee9b81119efda581aaa5	own_claim 952 1046	in the wind field computation care has to be taken that no wind field is present in the object
+T4c1209b9ad0d3c91d6daee0a4ed02024	own_claim 1054 1100	the same method as described for rigid objects
+T6cacd41d897cacf7e6331296bca0e90a	data 1102 1115	section 4.2.2
+T03de0914a484eecf50e71e4e8e895232	own_claim 1117 1131	can be applied
+R4a2a9ac8114e7c31ab7b88f1c8276268	contradicts Arg1:T8edd69e02d1914c8294e280909c08c1f Arg2:T14d7b716d2ce90e8ece36975d18cd42d
+Re4cbb57f1f165c99d88d08089c353634	supports Arg1:T01a40607b806748b5db4e72fae896610 Arg2:T14d7b716d2ce90e8ece36975d18cd42d
+R05bba7313564fd1f03b1e5b41fcc704f	supports Arg1:Td8e16e68689dde88a5e9e60c8526713b Arg2:T302790bba67ea0ebc0561605003e0cea
+Rd808e21d0913c40811de93ee026a6651	supports Arg1:T6cacd41d897cacf7e6331296bca0e90a Arg2:T4c1209b9ad0d3c91d6daee0a4ed02024
+R7cc6c3ea3baf95a2f232b037b4125cc0	parts_of_same Arg1:T4c1209b9ad0d3c91d6daee0a4ed02024 Arg2:T03de0914a484eecf50e71e4e8e895232

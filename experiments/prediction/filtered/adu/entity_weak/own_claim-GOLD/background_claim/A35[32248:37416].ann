@@ -1,0 +1,12 @@
+T5e056cc1b587a4b4f609bb971cf214c7	own_claim-GOLD 688 794	the inverse Euler iteration often proves to be faster than the explicit Runge-Kutta method of higher order
+T8cbe6df5ce88ab3f37ed455e4c4a27a7	own_claim-GOLD 864 937	A limited number of Conjugate Gradient iterations seems suitable for this
+Tee7277615dd77bf0181c01eab20a6f53	own_claim-GOLD 958 1037	increasing the time step seems not limited by instability with implicit methods
+T23d1380c6b7a45bf523e42ff803a6db0	own_claim-GOLD 3595 3806	Instability concerns will force parameters and time step size to ensure good accuracy for the simulation of all particles of the discrete mechanical representation, and therefore for the entire mechanical object
+T22e3162ebfcff42e775a4d09c76ed4e4	own_claim-GOLD 3902 3967	The 5th-order Runge-Kutta method das proven to be a good solution
+T4e94e10100da7afbbc0895e0d6362a66	own_claim-GOLD 4003 4020	its high accuracy
+T00c28be9f458cdb365cfb3ba7cffdf4a	background_claim 688 794	the inverse Euler iteration often proves to be faster than the explicit Runge-Kutta method of higher order
+T1819579023ef9e6c746a7f38086323eb	background_claim 864 937	A limited number of Conjugate Gradient iterations seems suitable for this
+Ta6492f084f0c20186c4f0b3435c2421d	background_claim 958 1037	increasing the time step seems not limited by instability with implicit methods
+T90145c8ce07039df320ffd6655f2a9a5	background_claim 3595 3806	Instability concerns will force parameters and time step size to ensure good accuracy for the simulation of all particles of the discrete mechanical representation, and therefore for the entire mechanical object
+T47c16e65754ec1bfc380487acab19e49	background_claim 3902 3967	The 5th-order Runge-Kutta method das proven to be a good solution
+Ta8cb6996980583472dadbadab19594f6	background_claim 4003 4020	its high accuracy

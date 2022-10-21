@@ -1,0 +1,5 @@
+T70d37126c66704dff2720bd397e05b36	own_claim 2191 2302	these two modifications eliminate the need for neighborhood information in the final iteration of our algorithm
+T70dde8c2756fbc454bb56ab30e773882	own_claim 2317 2406	we determine correspondence using regions that are 25 times smaller than in previous work
+Tff980085156bf6dbca3799bd1a1769f6	background_claim 2421 2491	Many regions on the surface are impossible to observe due to occlusion
+R3a695733dfb7768f648e99aa4ae9bb4e	supports Arg1:T70d37126c66704dff2720bd397e05b36 Arg2:T70dde8c2756fbc454bb56ab30e773882
+R343066251bb530f3b2a64939cc6128f3	supports Arg1:T70dde8c2756fbc454bb56ab30e773882 Arg2:Tff980085156bf6dbca3799bd1a1769f6

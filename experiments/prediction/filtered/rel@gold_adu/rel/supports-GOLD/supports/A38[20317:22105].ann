@@ -1,0 +1,12 @@
+T4716cc0ffc9354de40669f9d2e8552f5	own_claim 1128 1288	To compute the variability, we perturb each parameter of the simulator individually up to ±0.20% of its value, compute the error and fit a quadratic to the data
+T3e76a81b9f6f556cd96abd9d2a040d83	own_claim 857 939	The importance or sensitivity of a parameter p depends on its local gradient ∂E ∂p
+T5920527aaffde6cb5403822588dbc4bb	own_claim 942 1017	it relates a small change in parameter value to a change in the error value
+Tddab702d3f6d851faed01ab5c5f7a590	own_claim 549 680	it is evident that the error space is fairly noisy, with many local minima, motivating the need for a global optimization technique
+Tf8fabed13be09c8ea9a992221377a63b	data 1291 1297	Fig. 4
+T26e95fa7a4dbc4aa2ffd18557d399052	data 537 547	the figure
+R917962bbe0b13b4f9e2b4826fbe91b36	supports-GOLD Arg1:T26e95fa7a4dbc4aa2ffd18557d399052 Arg2:Tddab702d3f6d851faed01ab5c5f7a590
+R46578f2703a0fd3b494cf7e948d82458	supports-GOLD Arg1:T5920527aaffde6cb5403822588dbc4bb Arg2:T3e76a81b9f6f556cd96abd9d2a040d83
+Rffe18cd290e3b99716d2d8aa5e0be064	supports-GOLD Arg1:Tf8fabed13be09c8ea9a992221377a63b Arg2:T4716cc0ffc9354de40669f9d2e8552f5
+R71532a0960ccb80b5b967138aae23bbd	supports Arg1:T26e95fa7a4dbc4aa2ffd18557d399052 Arg2:Tddab702d3f6d851faed01ab5c5f7a590
+Rb6a02e24f015d21e9ccf01697bb3ce0a	supports Arg1:T5920527aaffde6cb5403822588dbc4bb Arg2:T3e76a81b9f6f556cd96abd9d2a040d83
+R8e31316ce2bbf73b03425fea3566aabf	supports Arg1:Tf8fabed13be09c8ea9a992221377a63b Arg2:T4716cc0ffc9354de40669f9d2e8552f5

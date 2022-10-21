@@ -1,0 +1,6 @@
+T115ef0f60af80dc1a6761a301109fb15	background_claim-GOLD 94 160	One is to detect collisions and the other is to resolve collisions
+T371094f4ec592537dd3bbfaf2b20a658	background_claim-GOLD 162 251	In cloth collision detection, the computation time to detect collisions is not negligible
+T533d8eb66f0bb626216fd2b62b1ccc9c	background_claim-GOLD 770 979	This scheme works fine for cloth-rigid collisions and for the special case of cloth-cloth collisions where the dynamic interactions between cloth surfaces in cloth-cloth collisions do not have to be noticeable
+Tc82ce8267427c90127050da58be041f2	background_claim-GOLD 1140 1360	By preserving barycentric relationships of collision entities, their method resolves collisions where numerous cloth surfaces are colliding together as a group, which is a novel way to resolve multiple collisions at once
+Tab3d1f7a35c53dc4231c00b8b3b78826	background_claim-GOLD 1449 1518	Another method for cloth-cloth collisions has been proposed by Provot
+T810860af3f7b8fca8e47bc3389777b40	background_claim-GOLD 2454 2596	The system of equalities is based on the scheme adapted from the simultaneous resolution method for rigid N-body collisions proposed by Baraff

@@ -1,0 +1,26 @@
+T6117dd735db197554a5110c313658ae2	background_claim-GOLD 151 182	Early work by Terzopoulos et al
+T16edb0578d028a3a3b9e2a284cd3ffd5	background_claim-GOLD 191 220	and Terzopoulos and Fleischer
+T2285940a37b9707972d03ab5e134d8c0	background_claim-GOLD 234 331	on deformable models correctly characterized cloth simulation as a problem in deformable surfaces
+T379eb75dbd38a61ef17a5a486f53cb34	background_claim-GOLD 337 433	applied techniques from the mechanical engineering and finite element communities to the problem
+T097bc9dcaa494a416602534f94b7d5eb	background_claim-GOLD 2161 2195	initial work by Terzopoulos et al.
+T11b5429fc8b21bff0423cc9240e5b038	background_claim-GOLD 2555 2596	Cloth strongly resists stretching motions
+T9a11a84d045bea0cd02a7a1bee804ced	background_claim-GOLD 2603 2673	being comparatively permissive in allowing bending or shearing motions
+T0e2351ac9ac906b33477adf51e3f21ad	background_claim-GOLD 3015 3069	For some applications, the required spatial resolution
+Ta039c1536166e9ad21e4bc12c6ac33b4	background_claim-GOLD 3241 3305	can be sufficient when it comes to modeling flags or tablecloths
+T0c2cb4f73b003f1c659bdcbe7301b831	background_claim-GOLD 4226 4275	a subject which has been largely ignored thus far
+T07178657f178af6127e80f477306e5b6	background_claim-GOLD 5245 5298	used an “alternating-direction” implicit (ADI) method
+T63af8c3e62bc80b8ec30b4927164ce95	background_claim-GOLD 5307 5357	An ADI method generates a series of tightly banded
+T8fcf6320f1d2a30b5499f0878310586a	background_claim-GOLD 5368 5382	quickly solved
+Td78ddb37a365128a6f5ae8d75bef1fb2	background_claim-GOLD 5384 5434	linear systems rather than one large sparse system
+T76aa67de70172945012becd5c328fc77	background_claim-GOLD 5437 5446	The price
+T515ef97395ba8009af79c81bbefff204	background_claim-GOLD 8942 8960	Terzopoulos et al.
+T743194c50398f45743f0b08b509b5777	background_claim-GOLD 9750 9773	work by Carignan et al.
+Tc7ebb6aa0ad699b0ce20465ea4d94e14	background_claim-GOLD 9782 9897	described a cloth simulation system using rectangular discretization and the same formulation as Terzopoulos et al.
+T055a714726d48f255f4f37b8ece617cc	background_claim-GOLD 9929 10039	Carignan et al. recognized the need for damping functions which do not penalize rigidbody motions of the cloth
+T760c7325a31195b8d7a520ad7d462bb5	background_claim-GOLD 10148 10199	Later work by the same group includes Volino et al.
+T292c2ff0d29cfdd65a593730635d99f4	background_claim-GOLD 10838 10906	depart completely from continuum formulations of the energy function
+Tea3b8101b736a00d3f4558c64f237082	background_claim-GOLD 10912 10977	describe what they call a “particlebased” approach to the problem
+T1ee38068848bba21248551de4cf9f918	background_claim-GOLD 11195 11246	The focus of this work is on static poses for cloth
+Tea95984215da6148beb0f8ad893b406b	background_claim-GOLD 11279 11401	their simulation process is best described as energy minimization, although methods analogous to explicit methods are used
+Tfd73f9adb17d20086f85392045281c95	background_claim-GOLD 11448 11479	Refinements by Eberhardt et al.
+Tdd204745dde536db9deaee97559b304d	background_claim-GOLD 12057 12159	A more comprehensive discussion on cloth research can be found in the survey paper by Ng and Grimsdale

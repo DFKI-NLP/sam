@@ -1,0 +1,13 @@
+<H1>7 Discussion</H1>
+        We have brought cloth capture from constrained laboratory examples to real settings by providing robust methods for dealing with occlusion and folding. Like human motion capture, this tool requires significant engineering effort. Camera setup and calibration are time consuming and the equipment is costly. However, once these obstacles have been overcome, capturing large amounts of data is relatively easy. So that other researchers can benefit from our work, we are releasing our capture data at http://www.ryanmwhite.com/data. In our video, we show some of the uses of this data, including editing using [Kircher and Garland 2006] and posing using 
+[Sumner et al. 2005]. Future work in cloth capture should involve more cameras, higher resolution (leading to smaller denser markers), different garments and different materials. We plan to pursue more tools to edit and repurpose captured data. Finally, we would like to conclude with a discussion about cloth capture in the context of other cloth animation techniques. 
+Simulation and image based rendering both provide methods to generate animation of cloth (a limited simulation list includes 
+[House and Breen 2000; Terzopoulos et al. 1987; Choi and Ko 2002; Bridson et al. 2003; Baraff et al. 2003] and a limited image based rendering list includes 
+[Bradley et al. 2005; White and Forsyth 2006; Lin and Liu 2006; Scholz and Magnor 2006]). These methods have several advantages: simulation gives significant user control and produces higher resolution meshes while image based rendering techniques produce more accurate illumination. However, capturing large amounts of data is far easier than simulating large amounts of data and provides more control than image based rendering. Common simulation complaints include long computation times, significant parameter tweaking and tangling. In contrast, capture is relatively quick (our code is 8 minutes per frame in MATLAB); parameters are set by selecting the type of cloth [Bhat et al. 2003] and tangling is relatively uncommon. Cloth capture makes it easy to capture large amounts of cloth, including fast light cloths that create instabilities in simulation. An added attraction of cloth capture is that complex interaction between the cloth and the body is recorded without complicated human models.
+        References
+        
+          
+        
+      
+      
+        

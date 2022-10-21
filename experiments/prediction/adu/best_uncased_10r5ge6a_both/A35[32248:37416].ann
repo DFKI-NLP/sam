@@ -1,0 +1,114 @@
+T1f2bf98e9e0356c47d7f1d141675b826	background_claim-GOLD 31 121	Recent literature has emphasized on the relevance of implicit methods for cloth simulation
+T0dadabb31c348333f83ad2dd7aefdd9b	own_claim-GOLD 123 203	The implicit Euler method seems effectively a good candidate for most situations
+T2a4f5ee1c01e6705ba594e4e12af8cd0	background_claim-GOLD 243 313	the robustness resulting from not being prone to numerical instability
+T53209590276b09188addc5d37a5f50ca	background_claim-GOLD 315 394	This is particularly true when simulating very heterogeneous mechanical systems
+T6db709bcd51ef370d32f88fad1cfd6b6	background_claim-GOLD 457 566	where, using explicit models, the most critical elements would rule the time step size for all the simulation
+T30f51e16ff5b751044785fd0b8c30a3a	background_claim-GOLD 577 634	the perception of the implicit model iteration being slow
+T0ec5d4c6753c337a156173a99e642f35	background_claim-GOLD 646 686	the linear system resolution it involves
+Tbaefc80c9120344030ebdcc51054b406	own_claim-GOLD 688 794	the inverse Euler iteration often proves to be faster than the explicit Runge-Kutta method of higher order
+T4691aaaf541d05b0c9fab65f42812a09	data-GOLD 799 862	an adequate approximate linear system resolution is implemented
+T9f21b117250f94e869261bc42548186c	own_claim-GOLD 864 937	A limited number of Conjugate Gradient iterations seems suitable for this
+Ta05de6f20a148e3519516f783d5ec808	own_claim-GOLD 958 1037	increasing the time step seems not limited by instability with implicit methods
+Tfd5ec16f14c21de85ece110f5487386c	own_claim-GOLD 1070 1139	this is still done at the expense of accuracy of the whole simulation
+T8705fbc76dec7e6e411a9ab36adf5881	own_claim-GOLD 1141 1373	The number of iterations should also be set sensitively to the stiffness of the mechanical problem, for limiting the potential inaccuracies that become particularly visible when an accurate simulation of a dynamical system is wanted
+T7353df47d2405851158f31be45614ce6	own_claim-GOLD 1375 1473	There is an obvious advantage of using implicit methods, and particularly the inverse Euler method
+T77050dcd803b4391ae00aafca917db74	data-GOLD 1479 1558	draping problems where quick convergence to a rest position is required quickly
+T3a929d565af9de5b8d472b8b5877e777	own_claim-GOLD 1560 1700	Our test have shown that the inverse Euler method allow to perform a draping problem almost ten times as fast as with the Runge-Kutta method
+Tdf66935abeeaa5a5be377b47cacaf98b	own_claim-GOLD 1702 1848	While not exactly reproducing real mechanical behavior, the simulation with large time steps provides a quite efficient convergence to equilibrium
+T20086733a0b9f954d87b39df7741860a	own_claim-GOLD 1854 1965	the numerical errors quite often act as extra damping, removing the need of adding them explicitly to the model
+Tcef57736ff051c4aadcdfa9a553dc681	data-GOLD 1971 2058	dynamic problems where accurate evolution of the mechanical system along time is needed
+T01b7ffe24c88d6f1ba88df243d246e16	own_claim-GOLD 2060 2109	the advantage of implicit methods is less obvious
+T8a33f3c99653896495a686d902aeb977	own_claim-GOLD 2111 2233	Their stability gives a false sense of efficiency, allowing obtaining quickly a result by “cheating” on the time step size
+T9296a86df207a5c4587255b814152400	own_claim-GOLD 2244 2307	playing back the generated animation, artifacts quickly show up
+T0e67261f46e984c2eb612aa8325fed2d	own_claim-GOLD 2309 2326	Excessive damping
+T24e6d059b40210819635bb6be601beef	own_claim-GOLD 2328 2369	wrinkles and folds that fail to disappear
+Tcd1c0c5fa8e193a8d4450d41fd4ad2a5	own_claim-GOLD 2380 2433	objects failing to fall correctly by their own weight
+T7809d59c9cc24c0b947a164820b7beb5	own_claim-GOLD 2435 2568	These artifacts are still augmented by the approximations made to the Hessian matrix, possibly in the purpose of reducing instability
+Tec20e2ed737fd38916b4aa7e8bdb8219	own_claim-GOLD 2576 2683	excessive reduction of the Conjugate Gradient iterations produce additional inaccuracy and slow convergence
+T673bbb1be96cb436e2e2825c3915b8d4	own_claim-GOLD 2699 2816	there is still some benefit in using the Backward Euler method than any other explicit method for dynamic simulations
+T3032c58ba47f606b94d20b35907a39d5	own_claim-GOLD 2827 2970	the reduced time it takes to compute one iteration, which also only requires one derivation of the particle forces from the state of the system
+T5db9c8c815202eee4c91016aa15c17a3	own_claim-GOLD 2972 3099	Our tests have shown a roughly doubled speed for the accuracy corresponding to the limit of stability of the Runge-Kutta method
+T659f4320d3e3fa9824cf6ee27db2773c	own_claim-GOLD 3101 3191	We got substantial improvements through the implementation of the implicit Midpoint method
+Ted3f7f736907c5579587d0146619b4e3	data-GOLD 3195 3201	VOL 00
+T00b90b53bb47f7a237241a14bfc1563c	own_claim-GOLD 3220 3365	had the drawback of increasing the numerical instability problem, forcing additional use of isotropic force gradients, at the expense of accuracy
+T3fd4aa74a1b46a1298850b8c7a576141	own_claim-GOLD 3367 3593	The explicit methods have still their interest, and should be reserved for simulations requiring high accuracy and particularly those where involving low mechanical damping and where mechanical energy conservation is important
+T4679e45c42db4af11d660fd4d0ad755c	own_claim-GOLD 3595 3806	Instability concerns will force parameters and time step size to ensure good accuracy for the simulation of all particles of the discrete mechanical representation, and therefore for the entire mechanical object
+T1809f82f9952a42caef98e2681375720	own_claim-GOLD 3808 3816	This may
+Tb9d487330da6d7342a1d83d75e3eafd9	own_claim-GOLD 3825 3900	require prohibitive computation times for very stiff and discretized models
+T8bb6bb4861162aef2c4c0030805c408c	own_claim-GOLD 3902 3967	The 5th-order Runge-Kutta method das proven to be a good solution
+T8c2eec9d019edb383420308f8004d7d8	data-GOLD 3970 3976	EBE 96
+Te9e6bbeb19ab01c98fd16a5d439c64f3	data-GOLD 3981 3987	VOL 97
+Te4d77f5926f4f1daeae5a02e76ab1a58	own_claim-GOLD 4003 4020	its high accuracy
+T47bf5bc32c587fd5bd46be043fe08951	own_claim-GOLD 4034 4036	it
+T0b2729c38b9c445106d02786689b878d	own_claim-GOLD 4049 4183	provides integration error evaluation, which is a very good hint to the very sensitive problem of optimal time step size determination
+Ta6310c08e823cea307f84f81a7087613	own_claim-GOLD 4185 4409	The simpler Midpoint method may have some interest only in very particular cases involving very loose materials with rough discretization, or when numerous fast iterations with small time steps are required for other reasons
+T5cd0a3411e0a7b3691c47cb91c5248e6	own_claim-GOLD 4482 4591	All these considerations should be carefully taken into account when designing a mechanical simulation engine
+T26a1f4f43796c532d669b101ef2fbf6e	own_claim-GOLD 4596 4752	they are the keys to efficient simulation, and therefore complex models that, for garment simulation, express fully visual experience of real fashion models
+Ta5e21c461beee3053b2cdcfca3d3d3e7	own_claim-GOLD 4842 5057	This still remains an important issue to dynamic realism of cloth simulation models, which has to take into account viscosity, the dissipative effect of hysteretic behavior, as well as collision damping and friction
+T8352679d17d1922fd7a1c631123794f8	own_claim-GOLD 5059 5144	The integration methods have to be tuned to take precisely these effects into account
+T848f7335d43bcd3146a7c10300bc8a49	background_claim 31 121	Recent literature has emphasized on the relevance of implicit methods for cloth simulation
+T2a746f82a73c361c7dda20149ba3320a	background_claim 123 230	The implicit Euler method seems effectively a good candidate for most situations involving cloth simulation
+T8c5251c4da4b51194138e122e4f8536b	data 243 313	the robustness resulting from not being prone to numerical instability
+Ta2f4d886993c6f6622222460b1c1ec8e	background_claim 315 340	This is particularly true
+Tc4555aa04581514126c2002ac9b388f5	data 346 394	simulating very heterogeneous mechanical systems
+T59853444610a1e9d5d339b2ac9c0ee44	data 396 421	elements of various sizes
+Ta6b1dfa97ee2975628ff0177cd74dd01	data 426 455	various mechanical properties
+T070bca755ad522ef9a00cc610460cdba	data 464 485	using explicit models
+T4f8388d9c043c8d5a2b6e290757f08a6	background_claim 487 566	the most critical elements would rule the time step size for all the simulation
+Tf4c894464d1b7588969dbdde433afc57	background_claim 568 686	Contrary the perception of the implicit model iteration being slow because of the linear system resolution it involves
+T00c28be9f458cdb365cfb3ba7cffdf4a	background_claim 688 794	the inverse Euler iteration often proves to be faster than the explicit Runge-Kutta method of higher order
+Tb49b8979638e4b7650b189f76b057d74	data 799 862	an adequate approximate linear system resolution is implemented
+T1819579023ef9e6c746a7f38086323eb	background_claim 864 937	A limited number of Conjugate Gradient iterations seems suitable for this
+Ta6492f084f0c20186c4f0b3435c2421d	background_claim 958 1037	increasing the time step seems not limited by instability with implicit methods
+T027b48d90b339ecfa1064ebce9e268a8	background_claim 1039 1139	it should be kept in mind that this is still done at the expense of accuracy of the whole simulation
+T9d6b3be5978a61b5a4415ced6f815b15	own_claim 1141 1239	The number of iterations should also be set sensitively to the stiffness of the mechanical problem
+Ta2ea6783a2a5f21f09017d6dc78fb2e7	data 1245 1313	limiting the potential inaccuracies that become particularly visible
+T47145d337e61443070a64cd0d8086a75	data 1319 1373	an accurate simulation of a dynamical system is wanted
+Tca9b36661ec05d90287dbdb017e1c732	own_claim 1375 1430	There is an obvious advantage of using implicit methods
+T46878f97d28ae4bf107482b879e4f342	data 1449 1473	the inverse Euler method
+Tef2872a134d435f720bcfb6965fc79ba	data 1479 1495	draping problems
+T331afb9172b1434944e71fbed09c4a38	data 1502 1558	quick convergence to a rest position is required quickly
+Tbd1d9a53b8ec878e8362ad85a5066f14	own_claim 1585 1700	the inverse Euler method allow to perform a draping problem almost ten times as fast as with the Runge-Kutta method
+T6b71b5466a4074e963fca22e8590bd9f	own_claim 1708 1848	not exactly reproducing real mechanical behavior, the simulation with large time steps provides a quite efficient convergence to equilibrium
+T162773f8810542965fb7c3fbfb40e798	own_claim 1854 1907	the numerical errors quite often act as extra damping
+T90493182f3698ff252b6ffe4bce2fc0f	own_claim 1909 1965	removing the need of adding them explicitly to the model
+T514c7098ada295c7fa05b7c9912a77e1	data 1971 2058	dynamic problems where accurate evolution of the mechanical system along time is needed
+T553d26ca54692bd772d6e927b16a70a7	own_claim 2060 2109	the advantage of implicit methods is less obvious
+Td6351d0eba178659740cb0fcd34ed1aa	own_claim 2111 2160	Their stability gives a false sense of efficiency
+T900983da924476f82dea2b3d3da8cebb	own_claim 2162 2233	allowing obtaining quickly a result by “cheating” on the time step size
+T3a22a3cf1dcbadbb2438badce76395b0	own_claim 2244 2307	playing back the generated animation, artifacts quickly show up
+Tc04be84eb92afc56ed9d868e85308a5b	data 2309 2326	Excessive damping
+T2b5d5d96785bc06daaaf5212e878f354	data 2328 2336	wrinkles
+T81e06c1618aa1bea56fe98972d06635f	data 2341 2369	folds that fail to disappear
+T9b986717325bdc884ddfdee3972797cc	data 2380 2433	objects failing to fall correctly by their own weight
+T284c171bb1cb0a9c0efbbc3886edf39a	own_claim 2435 2519	These artifacts are still augmented by the approximations made to the Hessian matrix
+Ta2be8d6f3892eacf34b48505f646acc0	own_claim 2576 2683	excessive reduction of the Conjugate Gradient iterations produce additional inaccuracy and slow convergence
+T7b578c7188bc769739390198b31e0d58	own_claim 2685 2816	It seems that there is still some benefit in using the Backward Euler method than any other explicit method for dynamic simulations
+Tba8d939fcbdc323eda5410e0bb9a0629	data 2827 2877	the reduced time it takes to compute one iteration
+T3cd4ca2ba8811e9f1aa0d869ad99fbb1	data 2890 2970	only requires one derivation of the particle forces from the state of the system
+Te461c52b6a7dd848f93c07e20cdbd8a8	own_claim 2972 3099	Our tests have shown a roughly doubled speed for the accuracy corresponding to the limit of stability of the Runge-Kutta method
+Tbe619eab66147c95221dc9c24c012685	own_claim 3101 3191	We got substantial improvements through the implementation of the implicit Midpoint method
+Tbfbcc3e143170edae6b50b4c531bd58d	data 3195 3201	VOL 00
+Tbaa42a36d7f00d7ee2021ae1c314a2ed	own_claim 3220 3365	had the drawback of increasing the numerical instability problem, forcing additional use of isotropic force gradients, at the expense of accuracy
+Tc6d692039a237defa26050d1a4ebf867	own_claim 3367 3539	The explicit methods have still their interest, and should be reserved for simulations requiring high accuracy and particularly those where involving low mechanical damping
+T4daeaba0423e2e66b338574321309df5	data 3550 3593	mechanical energy conservation is important
+T90145c8ce07039df320ffd6655f2a9a5	background_claim 3595 3806	Instability concerns will force parameters and time step size to ensure good accuracy for the simulation of all particles of the discrete mechanical representation, and therefore for the entire mechanical object
+Tc7e775213aa4195b62cb51e78f07bdc9	background_claim 3808 3900	This may however require prohibitive computation times for very stiff and discretized models
+T47c16e65754ec1bfc380487acab19e49	background_claim 3902 3967	The 5th-order Runge-Kutta method das proven to be a good solution
+T0b41c50ad676d9b5dcafbf5d7deb8713	data 3970 3976	EBE 96
+Tebfaeaff7cab3a1a355c0af657053b6b	data 3981 3987	VOL 97
+Ta8cb6996980583472dadbadab19594f6	background_claim 4003 4020	its high accuracy
+T6aaf4727149f6f55f487ab83de79389c	data 4034 4086	it furthermore provides integration error evaluation
+T715ba474c924f0ea2dfa76023f35c5bc	background_claim 4094 4183	is a very good hint to the very sensitive problem of optimal time step size determination
+T89a996587fdb828ee165a4f34564a359	background_claim 4185 4322	The simpler Midpoint method may have some interest only in very particular cases involving very loose materials with rough discretization
+T3a94e4c88c56a9847038783c6a2e6522	data 4332 4409	numerous fast iterations with small time steps are required for other reasons
+T22851eb1e8981ecb5829ce58d4bbfd43	data 4411 4431	high motion sampling
+T47c0992ffd5f15c5f5b3c09b6ba742c0	data 4433 4452	collision detection
+Tb6c333ffe1c4ce9f663802fc0d902e68	data 4454 4479	very discontinuous models
+T4b71d57ee52a6a93d6a2872a8a9b33cf	own_claim 4482 4591	All these considerations should be carefully taken into account when designing a mechanical simulation engine
+T1c830551d01899ce482656dea711f0b2	data 4596 4637	they are the keys to efficient simulation
+Te75401f5d4e68114699ad8c9d0933199	background_claim 4653 4752	complex models that, for garment simulation, express fully visual experience of real fashion models
+T34cbf3e327a1ed8f0a8eb5e2ae766c7a	own_claim 4754 4840	We intend to pursue our investigations for dealing with damping in a more accurate way
+T405c72c7f418773517b27202dfec009e	own_claim 4842 5057	This still remains an important issue to dynamic realism of cloth simulation models, which has to take into account viscosity, the dissipative effect of hysteretic behavior, as well as collision damping and friction
+T8928e629b8dd172327e0d9e9b22cf6d3	own_claim 5059 5144	The integration methods have to be tuned to take precisely these effects into account
+

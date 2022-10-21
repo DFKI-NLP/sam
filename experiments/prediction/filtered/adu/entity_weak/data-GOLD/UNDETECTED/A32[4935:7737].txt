@@ -1,0 +1,17 @@
+<H1>2 ANIMATING CLOTH USING COARSE MESH</H1>
+      
+      We would like to animate the cloth using coarse triangular mesh (typically a few thousand triangles per garment), for the reasons mentioned in the Introduction. However, Figure 2 depicts how the geometry of coarse mesh would be unable to capture fine wrinkles on cloth. Real cloth has very little in-plane deformation as most of the deformations come from buckling. For the coarse mesh, setting high metric (in-plane deformation) stiffnesses will not work properly. For the vivid picture of the situation, refer to the triangles undergoing deformations in Figure 3A . Real cloth would wrinkle to this deformation (see typical wrinkles in Figure 3A ). Consider an edge of a triangle, as shown in Figure 3B . In reality, the compression forces will buckle the edge as shown by dotted line. As the bending stiffness of the cloth is small, the buckled edge exerts small forces on the vertices. However, in the coarse mesh situation, the buckled edge is approximated by a straight line between the vertices. Consequently, the real life buckling is attributed to the compression of the edge. If we assume a high metric stiffness associated to this compression, the corresponding forces on the vertices will be high. This is in contrast with real cloth situation. Thus, to animate the cloth realistically with a coarse mesh, we need to set small metric stiffnesses. This allows otherwise possible wrinkling/buckling which is embedded in the deformation of triangle. Very little in-plane deformations can be looked at as area conservation property of cloth. Note the change in area of the triangles due to the deformations in Figure 3 in case of large triangle deformation. We propose to capture gross cloth movements and deformations using a coarse mesh and the fine deformations (wrinkles) using a bump map (or a displacement map). Let us assume the wrinkle pattern is given by the user. We will try to modulate the amplitude of the wrinkle pattern such that, though there is a change in the area of a triangle (with the displacement map), it is invariant after applying the modulated displacement map. Compare the edge shown in Figure 3 to that in Figure 4 after the application of the proposed algorithm. In the next section, we derive the area conser- vation formulation. The method is inspired by the area conservation property, even though Section 3.3 points out that the empiricism introduced later does not actually conserve the area.
+      
+        
+        Figure 2: Wrinkles and coarse mesh
+      
+      
+        
+        Figure 3: Large triangle deformations due to buckling
+      
+      displacement mapped triangle edge modulation original triangle edge
+      
+        Figure 4: Edge with modulated wrinkle pattern
+      
+      
+        

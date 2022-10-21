@@ -1,0 +1,3 @@
+Tee305d2dda949a9c6e67cf6df4fc1ea0	background_claim 3648 3707	these preventive proximity forces cannot prevent collisions
+Tca770b5873caae8a74e5046939fcf889	background_claim 3336 3487;3503 3607	A widely used method for detecting cloth collisions is to put small repellent proximity forces between the cloth surface and the rigid or cloth surface while the actual collisions are tested with pairs of particle-face or face-face of the current positions
+R9cf7a7dd2bb422964dc0da673c4d320f	contradicts-GOLD Arg1:Tca770b5873caae8a74e5046939fcf889 Arg2:Tee305d2dda949a9c6e67cf6df4fc1ea0

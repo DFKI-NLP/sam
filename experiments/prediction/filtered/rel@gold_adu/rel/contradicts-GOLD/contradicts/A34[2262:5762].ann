@@ -1,0 +1,16 @@
+T7f768d05aea7bc8ced2dd8bc061f165f	background_claim 2866 2914	it appears to give graphically agreeable results
+T860e2d48a9233c9ba920d8e69449ae36	background_claim 1370 1447	it does not conserve the momentum of cloth surfaces in cloth-cloth collisions
+T71c977e59522b043aefc3600991d23c7	background_claim 1662 1711	it cannot give proper visual effect of collisions
+Ta3c0568bf035867e6e2387ebb1faf711	background_claim 2773 2864	this physical inaccuracy has been an inherent problem of simultaneous collision resolutions
+T25c829400174f4fc0a54f451bc3db916	background_claim 1621 1657	Provot’s method is easy to implement
+Te7030ed686576db743c768d9626fc431	background_claim 2454 2596	The system of equalities is based on the scheme adapted from the simultaneous resolution method for rigid N-body collisions proposed by Baraff
+T707d02bc66eb1c245eba273bb1646176	background_claim 1140 1360	By preserving barycentric relationships of collision entities, their method resolves collisions where numerous cloth surfaces are colliding together as a group, which is a novel way to resolve multiple collisions at once
+T9524f3fac89ea2070db7f091576f465a	background_claim 2613 2764	his original inequality relationships between relative velocities before and after collisions are purely heuristic, which may not be physically correct
+R7a27f75951b03ecb16482a84b46f42a5	contradicts-GOLD Arg1:T707d02bc66eb1c245eba273bb1646176 Arg2:T860e2d48a9233c9ba920d8e69449ae36
+Rd10f17cdd809ccd813bd2124019f41aa	contradicts-GOLD Arg1:T25c829400174f4fc0a54f451bc3db916 Arg2:T71c977e59522b043aefc3600991d23c7
+Rd407bec6129270084e62392a7fb23671	contradicts-GOLD Arg1:Te7030ed686576db743c768d9626fc431 Arg2:T9524f3fac89ea2070db7f091576f465a
+Rc7e01f81f039e6b2c57092d314ca08b5	contradicts-GOLD Arg1:Ta3c0568bf035867e6e2387ebb1faf711 Arg2:T7f768d05aea7bc8ced2dd8bc061f165f
+R810eadaff9aadb2bb5e8d66f3dc1ea86	contradicts Arg1:T707d02bc66eb1c245eba273bb1646176 Arg2:T860e2d48a9233c9ba920d8e69449ae36
+Rb7e369fae924e5f93b7e39209c4da9f2	contradicts Arg1:T25c829400174f4fc0a54f451bc3db916 Arg2:T71c977e59522b043aefc3600991d23c7
+Rfa16ae231a89acf9e3b3970e880a6a56	contradicts Arg1:Te7030ed686576db743c768d9626fc431 Arg2:T9524f3fac89ea2070db7f091576f465a
+Ra59702a914cf8c051f6563166b1b391e	contradicts Arg1:Ta3c0568bf035867e6e2387ebb1faf711 Arg2:T7f768d05aea7bc8ced2dd8bc061f165f

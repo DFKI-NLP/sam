@@ -1,0 +1,14 @@
+T7d80834cde1d503f5c9d7fd023166160	data-GOLD 2263 2303	our simulator proceeds in discrete steps
+Tb8049ae32f1898288c7fd80a31c62df7	data-GOLD 2468 2490	cloth/cloth collisions
+Ta5a67bf513f2017fa4a5466a0d790d07	data-GOLD 3056 3058	18
+Tf4b69276bdb7195192ff961ebcbb2914	data-GOLD 3877 3896	a RungeKutta method
+T44cd7f48da914aad378ebacfd4fff9b8	data-GOLD 3954 3979	the backward Euler method
+Tc78c95dc15a646eabf057acdc56a2dad	data-GOLD 4744 4745	7
+Tbea99ff12363b2c518147b2b574169a8	data-GOLD 5676 5749	they are confronted with the alteration at the beginning of the next step
+T280e7846380908555d81a81a28c214b0	data 2263 2303	our simulator proceeds in discrete steps
+T556cb2938e9a489270d87b7f2aee8e9c	data 2468 2490	cloth/cloth collisions
+T1a0acfda629e361e96545d670d7f83dc	data 3056 3058	18
+T431d304a57bac3530c079e895f20ab1d	data 3877 3896	a RungeKutta method
+T6a2ae2ce531b649dedacddadd0a8554a	data 3954 3979	the backward Euler method
+T144d660c5330f8adb5641c75ae39c995	data 4744 4745	7
+T4c6a497d1e63c1828717bcb04dc8c0df	data 5676 5749	they are confronted with the alteration at the beginning of the next step

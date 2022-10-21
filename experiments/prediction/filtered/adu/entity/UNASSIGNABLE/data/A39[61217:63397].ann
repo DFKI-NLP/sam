@@ -1,0 +1,5 @@
+Tead9008bf848531eb308943fa7edc97e	data 554 613	a numerically stable solution, rather than overall accuracy
+Tf643288c04a64c32979f0e04ff4b8c52	data 1037 1091	any triangle undergoes a drastic change in its stretch
+T91c985ef19545f9589edd4f82217de52	data 1600 1635	the simulator reduces the step size
+Tcecd5f56ae2d36323764a4124cf88e96	data 1637 1683	after two successes with the reduced step size
+Tf41f34e863d1868f488f262d59b005a3	data 1734 1777	the simulator fails at the larger step size

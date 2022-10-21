@@ -1,0 +1,9 @@
+Tbc1030c96f99608985cf9dc745f3a090	data 6242 6250	Figure 7
+T843e4c46f69fa757d107a40aa892eae3	own_claim 6121 6189	The user definable power n is representative of the tightness of the
+Tf2f650941a69cde7688d1c91aed9453b	own_claim 2637 2701	the wrinkles are not mere modulations of a fixed wrinkle pattern
+T860055378dcd73c450fca8e66e7e2581	own_claim 5899 5957	M F 2 will be bigger than (1 + variance)(M F 1 + M F 2 )/2
+T5570e163311f236a9747035fd4ffcbb1	own_claim 2542 2596	Animating a single wrinkle pattern is not satisfactory
+T861cfe35ea6ebdda82c2dc4830cb82ff	own_claim 5778 5810	M F 1 is much smaller than M F 2
+Re8818bde95bd269d8bbbac11ce28ae95	supports-GOLD Arg1:T5570e163311f236a9747035fd4ffcbb1 Arg2:Tf2f650941a69cde7688d1c91aed9453b
+R2b67bb8a583da08874789ebbd5ad7268	supports-GOLD Arg1:T861cfe35ea6ebdda82c2dc4830cb82ff Arg2:T860055378dcd73c450fca8e66e7e2581
+R83db8327efb22aabd199afc49b329d41	supports-GOLD Arg1:Tbc1030c96f99608985cf9dc745f3a090 Arg2:T843e4c46f69fa757d107a40aa892eae3

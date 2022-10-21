@@ -1,0 +1,7 @@
+Td8576d593dd5da6a7c8cda65d0b36405	own_claim 30 182	To incorporate wind effects in a physically based animation we have to apply additional external forces in the dynamical model of the deformable objects
+Tb5f7ad87843f8ccfdb9a81d0d183382d	data 617 625	figure 1
+Ta05b38fc59f2a5600e8763deca5291f8	data 1079 1139	two-dimensional objects do not exhibit an inside and outside
+Te06c1dc564f6939eed0a0aba539f5e22	own_claim 1141 1196	the unit normal n i of the i-th face of the object mesh
+T1327de4e738ed82f3113d47416c2f28d	data 1202 1210	figure 1
+Rd284472bf7b0105ba41d4a17fd0f2c9c	supports Arg1:Ta05b38fc59f2a5600e8763deca5291f8 Arg2:Te06c1dc564f6939eed0a0aba539f5e22
+Rdba663f2c953ab9802b569c2b605c488	supports Arg1:T1327de4e738ed82f3113d47416c2f28d Arg2:Te06c1dc564f6939eed0a0aba539f5e22

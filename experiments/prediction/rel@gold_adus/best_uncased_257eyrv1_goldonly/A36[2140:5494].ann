@@ -1,0 +1,25 @@
+T6726f372b0b4ec29c9c5259759b73660	background_claim 38 169	Today’s cloth simulators for animation, visual effects, games, and apparel design can mimic real cloth to a high degree of fidelity
+Te5c3c02d6414aeb976c38dc16805a6b3	background_claim 175 287	to fully exploit their capabilities, the constitutive models for cloth deformation must be tuned with great care
+Tc70916d3b8cf0899751bac515b0049ad	background_claim 289 420	During this tuning process it is difficult to tell which models and which parameters are giving results more like the real material
+T18abb85011b30063c1fe2d467e58e52f	own_claim 422 617	This paper aims to solve this problem by introducing new techniques to measure complete cloth behavior under controlled conditions and to estimate cloth deformation models from these measurements
+T4e5f4cbb3d4d55ed1e171941272a76a8	background_claim 619 761	Most methods for testing cloth move the sample into a state of near-uniform strain, exercising one or at most two components of strain at once
+Tf76a5c316ebc004e4302a6e4d4e7a749	data 763 778	pure stretching
+Ta19b7c1d16a3b0cf221af789f700c72e	data 780 793	pure shearing
+Tc03ab32a805d170a8ef528e060284f8e	data 798 810	pure bending
+T368af24bc982cc8d4b595121bd8dc045	background_claim 898 995	the resulting forcedisplacement curves are valuable in studying the differences between materials
+Tcc35b8420d7222e60e23afe64a21c312	background_claim 1006 1043	this approach has certain limitations
+T2e3592304de9b8404850c1d0de240217	background_claim 1045 1182	The inevitable deviations from uniform strain create modeling error that cannot be quantified without knowing the actual strain variation
+Tb7463df24c99149052e61e00b671f0ea	background_claim 1188 1314	force-displacement curves can be used directly to tune a cloth model, but do not provide any way to validate the resulting fit
+T0c4bc3422195c1f8c875121beaa7f4cb	own_claim 1316 1500	The contributions of this paper are, first, a new, general system for observing cloth properties that measures more complete data than previous work in cloth capture or textile testing
+T93272b7f27cff17bbfeb0912332a73bf	own_claim 1506 1577	second, a new method for fitting parametric models to this type of data
+Tfe2b6c8cd9a7081ac9ec2bcaadacca04	own_claim 1941 2028	Having deformation and force information makes our data well suited to model validation
+Td066b27176e0fd703c4cc074a7997ee1	own_claim 2029 2118	the experiment measures the complete answer that should be predicted by a cloth simulator
+T7fc8ebf239653d51c38411ef75835fbd	own_claim 2126 2155	we do not need uniform strain
+Tbcc5c42af12a20361ddafc893a4a1e2c	own_claim 2282 2441	Our approach to model estimation is to numerically optimize nonlinear stress-strain curves to minimize errors in force and position compared to the measurement
+T75df6d5fc625614c28fa8917566929db	own_claim 2443 2601	We have designed a general fitting method, suited for the vast majority of existing cloth models, that leverages equilibrium conditions to guide the iteration
+T12fd4582606fde35cc61411778b49681	own_claim 2603 2772	By estimating model parameters under a sequence of deformations of increasing complexity, we alleviate problems with convergence in the presence of abundant local minima
+R98fd2152dd8f1636c3a01a84b065ceba	supports Arg1:Tf76a5c316ebc004e4302a6e4d4e7a749 Arg2:T4e5f4cbb3d4d55ed1e171941272a76a8
+R05951409a6c8300732a31e237281307d	supports Arg1:Ta19b7c1d16a3b0cf221af789f700c72e Arg2:T4e5f4cbb3d4d55ed1e171941272a76a8
+Rba0e90a6f256837cf3af72b6616d5565	supports Arg1:Tc03ab32a805d170a8ef528e060284f8e Arg2:T4e5f4cbb3d4d55ed1e171941272a76a8
+R9343618999bea2714aceec58e2a82418	supports Arg1:T2e3592304de9b8404850c1d0de240217 Arg2:Tcc35b8420d7222e60e23afe64a21c312
+Rcae13d0640cb9711989ae45da6dc4e07	supports Arg1:Tb7463df24c99149052e61e00b671f0ea Arg2:Tcc35b8420d7222e60e23afe64a21c312

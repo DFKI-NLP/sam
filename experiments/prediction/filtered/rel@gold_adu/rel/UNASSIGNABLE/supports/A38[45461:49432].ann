@@ -1,0 +1,18 @@
+Ta19c3a2e8c4848ea6055753f2bd45dc1	own_claim 793 888	Instabilities in the collision handling will cause perceptible quivering in the motion of cloth
+T3830f1034cfbfa3edd01a67b77845d63	own_claim 2299 2399	the model might need extra parameters to handle anisotropic effects, hysteresis and coupling effects
+T3e6264f4683eb955ce0477a97eacc473	own_claim 669 791	To match a video sequence accurately, the cloth physics model as well as the collision algorithms must be chosen carefully
+T826ebc5ccf5f24c3843e956850bcda8e	data 3369 3417	we were to optimize on more complicated garments
+Tf5b6ef73561eb38ed408b2b3cd7f6a9e	own_claim 2475 2516	all of which would need specialized tests
+T5d48b7fdd8699ee476232f9f757ee7c1	own_claim 3527 3546;3561 3699	Such a metric might compute the average number of folds across a time sequence rather than looking for a fold to appear at a particular location on the swatch
+T119a311796a2e1b8d3c7152f17b1b357	data 2401 2472	stretching along one direction causing shrinking in the other direction
+T3cad918cbb492dd32163c15f30fa2079	own_claim 901 989	extra damping introduced by the integration method makes crisp folds impossible to match
+Tf9037db49a0e14d9ff89c9bd84c4acb2	own_claim 1450 1533	Our only major addition was a simple nonlinearity we introduced into the drag model
+T0cc59bfe6344c593d0ad9b5055ae4ba2	own_claim 3485 3525	a statistical metric might be preferable
+Td3a8837ca4f9efa982be1b86c3ef10fd	own_claim 1353 1448	Our cloth model does not diverge significantly from previous models discussed in the literature
+Reb6cbce483c7a9310211c4327d01ee58	supports Arg1:T3830f1034cfbfa3edd01a67b77845d63 Arg2:Tf5b6ef73561eb38ed408b2b3cd7f6a9e
+Rf254a409c9284b364567e7fc01cde03e	supports Arg1:T119a311796a2e1b8d3c7152f17b1b357 Arg2:T3830f1034cfbfa3edd01a67b77845d63
+R15c04f097374a973d8a030badc160956	supports Arg1:T0cc59bfe6344c593d0ad9b5055ae4ba2 Arg2:T5d48b7fdd8699ee476232f9f757ee7c1
+R05035876804b862e3b90d9bef5d6efe4	supports Arg1:Ta19c3a2e8c4848ea6055753f2bd45dc1 Arg2:T3e6264f4683eb955ce0477a97eacc473
+R6a039393396f49c396f8bf9d4b564c0a	supports Arg1:T3cad918cbb492dd32163c15f30fa2079 Arg2:T3e6264f4683eb955ce0477a97eacc473
+R6f787a3b94add9790926f41617cda99c	supports Arg1:Tf9037db49a0e14d9ff89c9bd84c4acb2 Arg2:Td3a8837ca4f9efa982be1b86c3ef10fd
+R2a0abe97fb2513e563f7e319987b8aa6	supports Arg1:T826ebc5ccf5f24c3843e956850bcda8e Arg2:T0cc59bfe6344c593d0ad9b5055ae4ba2

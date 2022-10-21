@@ -1,0 +1,7 @@
+T3c7a9b09badbfb47e59c42f9440454f4	background_claim-GOLD 351 480	To reduce visible stretching, elastic models typically adopt large elastic moduli or stiff springs, degrading numerical stability
+Tfb9c9cdd86a502b5759202c713911c15	background_claim-GOLD 1270 1409	the condition number of the implicit system grows with the elastic material stiffness, forcing iterative solvers to perform many iterations
+T8d1d318f4b596fcfbcb0e8d7e1b05912	background_claim-GOLD 1481 1545	introduce undesirable numerical damping when the system is stiff
+T9d5c527ec9af73f17b4e286b6f45c8dc	background_claim-GOLD 3137 3191	used Lagrange multipliers with CLM to treat stretching
+Te60fa0fd1c775306ed0d5f835c8812f0	background_claim-GOLD 3197 3256	presented a hierarchical treatment of the constraint forces
+T189aab8813140831c41f9a1521a7d459	background_claim-GOLD 3400 3491	later encountered difficulties in handling collision response within the proposed framework
+Td69536bb7098af2647e85d0c028f9a4f	background_claim-GOLD 3622 3650	formulated constraints as in

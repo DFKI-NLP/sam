@@ -1,0 +1,31 @@
+T7f3b701d8815384ae90f539c565e1224	own_claim 1142 1213	Applying static friction forces to cloth contacts is far more difficult
+T6dabc4ec6a70b790733f5aa7d32029c4	background_claim 30 87	Much has been written about collision detection for cloth
+T395f52a73ca8a78438177eba79957c7d	own_claim 948 964;985 1003	The force is not a frictional force
+T1d07e082f4e90e10c2e1d78910a6bdc7	own_claim 1056 1090	it is in actuality a damping force
+Tb42f533b271ce379bb8f81e72f162756	own_claim 2673 2706	the situation is more complicated
+T9b382b2f4b256c68b9bd521c8b46025b	own_claim 4772 4893	a mechanism for filtering energy changes caused by displacing particles might make position alteration a viable technique
+T8e9142dc3bdbf20cbc950ee9e66e93cd	data 6177 6200	derivation of section 3
+T9e20a7fd256ab81f7f91cadb1760fa8f	own_claim 1101 1140	it reasonably emulates dynamic friction
+Te40af0456be93a3281e58b3939fba467	own_claim 89 168	we have nothing substantial to add to the subject of collision detection per se
+Ta1d588dc470687d5340be3c5ef6cfa87	background_claim 4060 4121	The stretch energy term in a cloth system is extremely strong
+Tf24ee576c86b1b2d196f263efc313a91	data 6145 6158	equation (17)
+Tda553537609138ee80da7e7f9ae5b645	data 2009 2247	For both types of collisions, our detection algorithm reports an intersection, and then takes action to remedy the situation: either by enforcing a constraint (cloth/solid collisions) or by adding a penalty force (cloth/cloth) collisions.
+T68e7e2c6c2bb911685686eab34c11ef2	data 4127 4254	altering particle positions arbitrarily introduced excessively large deformation energies in an altered particle’s neighborhood
+T7c646c64b0dde99a320da2569f028551	own_claim 1219 1254	is a problem we have not solved yet
+Ta29f4f78a2478fb580e980b67e4a4647	own_claim 2889 2983	the cloth particle will continue to remain embedded somewhere below the solid object’s surface
+T486c4ef437f4cd528a47180007901769	own_claim 6103 6137	we must follow this change through
+T1df5bb9f7469c8725fee2c30b3b64a02	data 6209 6243	symmetric transform from section 5
+T89c5f0a6f6dad437c9feac106b3c7316	own_claim 4654 4740	The entire process of implicit integration can be considered to be a filtering process
+Tddbbf356ccf5b7ea2e6bf9cf8a914077	own_claim 1907 1980	Both cloth/cloth and cloth/solid collisions give rise to the same problem
+R0c358386752af4b200d4b7f74a8dfe2c	supports Arg1:T6dabc4ec6a70b790733f5aa7d32029c4 Arg2:Te40af0456be93a3281e58b3939fba467
+R43330615a558acb9c3b41e0953ae104f	supports Arg1:T9e20a7fd256ab81f7f91cadb1760fa8f Arg2:T395f52a73ca8a78438177eba79957c7d
+R27a7e80c642b28c6523392b950dcb372	supports Arg1:T1d07e082f4e90e10c2e1d78910a6bdc7 Arg2:T395f52a73ca8a78438177eba79957c7d
+Rf570146f2187f3a093851f0181dd5624	supports Arg1:T395f52a73ca8a78438177eba79957c7d Arg2:T1d07e082f4e90e10c2e1d78910a6bdc7
+Rf93b07c6584aed888f474f499174d720	supports Arg1:T7f3b701d8815384ae90f539c565e1224 Arg2:T7c646c64b0dde99a320da2569f028551
+Ra91d6e002cb6a178e38256b3e48bb38a	supports Arg1:Tda553537609138ee80da7e7f9ae5b645 Arg2:Tddbbf356ccf5b7ea2e6bf9cf8a914077
+Rc6bdb705befa0bf7613aa4226831fde0	supports Arg1:Ta29f4f78a2478fb580e980b67e4a4647 Arg2:Tb42f533b271ce379bb8f81e72f162756
+R0d0d0bb54ef65d4975906f27f310f1bf	supports Arg1:T68e7e2c6c2bb911685686eab34c11ef2 Arg2:Ta1d588dc470687d5340be3c5ef6cfa87
+Re49ded42deff826e8d27865c7b919029	supports Arg1:T89c5f0a6f6dad437c9feac106b3c7316 Arg2:T9b382b2f4b256c68b9bd521c8b46025b
+R42c5dea4bfbd1b66abb4f61448f68018	supports Arg1:Tf24ee576c86b1b2d196f263efc313a91 Arg2:T486c4ef437f4cd528a47180007901769
+Rfbddaa99712cf14a574b29629a7ec264	supports Arg1:T8e9142dc3bdbf20cbc950ee9e66e93cd Arg2:T486c4ef437f4cd528a47180007901769
+R68ebfab047b5d4a11f15cb647efe2e7b	supports Arg1:T1df5bb9f7469c8725fee2c30b3b64a02 Arg2:T486c4ef437f4cd528a47180007901769

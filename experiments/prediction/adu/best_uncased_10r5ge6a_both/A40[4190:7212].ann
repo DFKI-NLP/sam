@@ -1,0 +1,136 @@
+T3a95cc0a4ac5fd9c119a7b8d72907900	background_claim-GOLD 31 106	Models for fluid dynamics can be essentially subdivided into two categories
+Tfe230988f2b4bda69ba94b1d84c195f0	background_claim-GOLD 108 236	Simple models which are commonly used in most computer graphics applications describe the wind flow by predefined flow functions
+T8d9d6fcee5562f6ac6ed9311972b8d63	background_claim-GOLD 304 350	Either special flow primitives can be combined
+Tc70c63895db97f429f7b59739ff9604f	data-GOLD 354 358	WH91
+Tb0428bbb2996541ab0704b1d2b7d5989	data-GOLD 361 366	LDG96
+T0bc842bc098aa0158e1d9b589b09aad0	data-GOLD 369 373	Li00
+T913739c310f707d776230b4470ccfa0a	background_claim-GOLD 376 436	or visually pleasing functions introducing random turbulence
+T38e612b15033efc6dd410bece042d399	data-GOLD 439 443	SF92
+Tfd39e0818f3446a6e0dc85cd24e01daf	data-GOLD 446 450	SF93
+T3c4d6b2007b7aa94d0c92d9710684268	data-GOLD 453 458	Sta97
+Tf1a911af80d91c2c791781c3295960a3	background_claim-GOLD 461 517	are taken into account to model even complex wind scenes
+T780b2aa86863e9f3fe1472afb45384a3	background_claim-GOLD 519 598	Many models use this method to move objects in the wind field through the scene
+T4014b3a3f99a44cea134a709facb3714	data-GOLD 601 606	Ree83
+Tcc73a1ef2b38c5ff336a4ddc6d6a82b0	data-GOLD 609 614	Sim90
+Tbcf4cb35d5f8dfb23083c3e52b0c7ad4	data-GOLD 617 621	WH91
+T8832b0b5bb794e9b4de012ebe848ac9a	data-GOLD 623 628	BLM95
+T6b6b709e12537e8fcc35da019fb9e1d0	background_claim-GOLD 645 751	physically based fluid dynamics solving equations of motions with particle methods were presented recently
+T53709fc8f34dbba859013df2eb0a4394	data-GOLD 755 759	IK03
+T2da8851855e4046c8d04d6d984839b9e	background_claim-GOLD 772 847	fixed flow functions lack interaction with the user or objects in the scene
+Td98779023e8355d8b7c26cd0a0cf614a	background_claim-GOLD 856 958	with increasing computer power, computer graphics concentrates on physically more accurate simulations
+Te54a8c4564c564cfd58543a835ccc6df	background_claim-GOLD 960 1068	In many fields the Navier-Stokes equations are the standard mathematical formulation to model fluid dynamics
+Tfab23d570c9fdd6f24dd1067fb274db6	background_claim-GOLD 1070 1138	A vast literature exists on how to solve these equations numerically
+T59491c9a1edc62fe6b2fa6d1d2cbdcb7	background_claim-GOLD 1140 1234	CFD are applied in this field for engineering tasks with a high degree of quality requirements
+T424a56d790db7b3dce999d6bfad8d289	background_claim-GOLD 1251 1319	it is quite difficult to apply these algorithms in computer graphics
+Tff1884ae175b6dea5a169e021ab59c24	background_claim-GOLD 1327 1353	enormous calculation times
+T9d099f0604164e4dfcc60db5f16a0924	background_claim-GOLD 1362 1435	faster fluid solvers were investigated for computer graphics applications
+T3f0f72289c65acfb058249435c48a6a9	background_claim-GOLD 1437 1449	Kajiya et al
+T0494a6cc417bf26e2276f5defc2152ca	data-GOLD 1453 1458	KvH84
+T511d5f5ce96c0e8103d6b615ce069fa8	background_claim-GOLD 1462 1474	Yaeger et al
+Tf0b9fdafdbb686501268adb2a5552205	data-GOLD 1478 1482	YU86
+T52876e08c9e0420afa598084c45baef7	background_claim-GOLD 1486 1502	and Gamito et al
+T14b25331ffc4e019a0a247bf12a6badc	data-GOLD 1506 1511	GLG95
+Tb8e7e786b8f14192efe1aab665b4daff	background_claim-GOLD 1514 1564	worked on fluid dynamics solvers in two dimensions
+T1603e37785caa4c7870e443d9fa1cbb5	background_claim-GOLD 1570 1609	many improvements and variants followed
+T518325bfcc8aa3a083084083f0ca0b7c	data-GOLD 1612 1620	CdVLHM97
+T398d637205d36613deac05a6ad4fb49f	data-GOLD 1623 1627	KM90
+T792aac50e2b14be9d80f656b30b417b8	background_claim-GOLD 1631 1649	Foster and Metaxas
+T9b713089a21f8612e8ed2126f1b755ea	data-GOLD 1652 1656	FM96
+Tadabc6bc9e037e79d656640ebb62e6ac	data-GOLD 1659 1663	FM97
+T0281a819f12e886b7ac94df3a54f1143	background_claim-GOLD 1668 1685	and Griebel et al
+Tafa26e0b4e6005f758721f847c53652f	data-GOLD 1689 1694	GDN98
+T3224e323dbbae1b8c7c7814ab9ae1b0a	background_claim-GOLD 1698 1772	presented a solver for the fully three dimensional Navier-Stokes equations
+Te9a35683a161159ac4275e3394134f70	data-GOLD 1782 1810	explicit integration methods
+Tdc7710bc52cda4d342a93b85dfcea859	background_claim-GOLD 1811 1847	very small step sizes had to be used
+T0ea28d9b6745e728ee374f6f6fdf8530	background_claim-GOLD 1850 1951	To enable faster simulations, a solution with an unconditionally stable solver was introduced by Stam
+T7d6a8c44db11ed5da51080c57be175e3	data-GOLD 1954 1959	Sta99
+Tdf43d2880b49f23ba4312d60895ffb7c	background_claim-GOLD 1962 1982	and further extended
+Tcc4ffbcd5a90a97eab5a1b7a62c228a4	data-GOLD 1989 1994	FSJ01
+T29ccd2cb3bca0326b5200dc2a3ac5322	data-GOLD 1997 2002	Sta01
+T2eae1566e5ac54a84df24ee274ba0a14	data-GOLD 2005 2010	Sta03
+Tf64dd2f1412bd7500bdff2ffd2bae133	background_claim-GOLD 2014 2105	Modelling interaction of fluids with solid objects has been investigated by Takahashi et al
+T8d6981c0597e5e4b66eb2698eabd6786	data-GOLD 2109 2117	TFK + 03
+T1c973c79f8e0eb2416c46f5194f34568	background_claim-GOLD 2120 2138	and Génevaux et al
+T1e684b5ab2b26d3bbe4398b45e6d6fa3	data-GOLD 2143 2148	GHD03
+T1b26334f5b5a4436e25bc807fe008913	background_claim-GOLD 2162 2171	Wei et al
+Td130d34982bc2d9142d4e074dd64bc3c	data-GOLD 2175 2183	WZF + 03
+T31daeea4a130615f4fddb8da62d85d98	background_claim-GOLD 2186 2359	presented an interesting approach to simulate lightweight objects like soap bubbles and feathers in a wind flow using a Lattice Boltzmann Model extended with a subgrid model
+T60e6e9ba31071603963764033e26a884	background_claim-GOLD 2361 2478	For interaction of highly deformable objects and especially cloth-like objects only few models have been investigated
+Td01e79203ca7b94538484f51ec0e3428	background_claim-GOLD 2480 2580	Simple models consist in the calculation of lift and drag forces from the surrounding velocity field
+T52670b84241d594f01efc6824568bcf3	data-GOLD 2582 2586	SF92
+Tb784f1b38c378390770b6737f3090330	data-GOLD 2588 2593	Pro95
+Td44797c98f49179187ea2190b6c597cb	data-GOLD 2595 2603	KCC + 00
+T6ad50be87ce92300970fa2b465f1f92e	data-GOLD 2605 2611	KCCL01
+T55343e1c3dfe7cbfd922a56d5f4bb829	background_claim-GOLD 2614 2688	More complex interaction models calculate the wind force by a panel method
+T58e1460ea0bba9849252f3919cf1de08	data-GOLD 2690 2695	LDG96
+T817f303d104cd1e1cf24abe97296b85a	data-GOLD 2697 2701	Li00
+Tc6f75ab6c76c3fda4e164dff419ad8c4	background_claim-GOLD 2703 2729	introducing local vortices
+T26508f933bcdc0bc11a88bccd4bd1419	own_claim-GOLD 2745 2880	we show how recent results in fluid dynamics for computer graphics can be exploited to simulate interaction of wind flows with textiles
+Tf96821a8b5f5a6dc93b7ff022c5ecc7f	own_claim-GOLD 2892 2987	we extend the more straightforward approach of global wind field functions by the effect of lee
+T16bba3e77413aa0c284b60be355dace2	background_claim 31 106	Models for fluid dynamics can be essentially subdivided into two categories
+T1ea8235aa7569b916b6fb5ce36f09423	background_claim 108 236	Simple models which are commonly used in most computer graphics applications describe the wind flow by predefined flow functions
+T3cafd8ad508d383f1c99c47e26d4bf81	background_claim 304 350	Either special flow primitives can be combined
+Ta40136b859a72d1311f8eb3be790e7f4	data 354 358	WH91
+T90f4ff0885b042803b379bddaca1f8a8	data 361 366	LDG96
+T900748f380154e608b72cb70dd848415	data 369 373	Li00
+T758c662c1e61b2472fbe09ae27757a87	background_claim 379 436	visually pleasing functions introducing random turbulence
+T83a2aa2cd95d10bc1c503e44a32b79fe	data 439 443	SF92
+T6c73f1216dfe8a5469e6274dcfe292be	data 446 450	SF93
+T02546acd26a0ef3944e13f076fabcae0	data 453 458	Sta97
+Td94feece85129a8fa0deb057bfa9b7d3	background_claim 461 517	are taken into account to model even complex wind scenes
+Tbf263dcbe604ee44d6d81ed60ccda35a	background_claim 519 598	Many models use this method to move objects in the wind field through the scene
+T0772cb29fc2ef42139020ff3489c5d61	data 601 606	Ree83
+Tad98d5fbcb07d426e5e61a8f62c06281	data 609 614	Sim90
+T2a7937d3f5f35df866549f8110a8dc81	data 617 621	WH91
+Tae4d9f30d32f5bf130101aa0b3e8b6d7	data 623 628	BLM95
+T0703ea5dda0756f830a6a58bf4334774	background_claim 645 751	physically based fluid dynamics solving equations of motions with particle methods were presented recently
+T5eebbf149093d9be4d966ea6fc871787	data 755 759	IK03
+Tee6c63b649554bd2878307f92ebf9f4f	background_claim 772 847	fixed flow functions lack interaction with the user or objects in the scene
+T144e2df4eca44eeb875f1bb51c6661db	background_claim 856 886	with increasing computer power
+T0a5ab7359b3c762c3bcfa646e982cddc	background_claim 888 958	computer graphics concentrates on physically more accurate simulations
+T83f4a0e442ee51750347dc36481c09dc	background_claim 960 1068	In many fields the Navier-Stokes equations are the standard mathematical formulation to model fluid dynamics
+T4820a3b335908806151a1cfd44b65c92	background_claim 1070 1138	A vast literature exists on how to solve these equations numerically
+Tc639584076c72bdb13b3c038d4a5b27d	background_claim 1140 1234	CFD are applied in this field for engineering tasks with a high degree of quality requirements
+Tcd594313cc23126ba20e5d2ec3b0fb68	background_claim 1251 1319	it is quite difficult to apply these algorithms in computer graphics
+T699785139aca69725f17e902454fc85e	data 1327 1353	enormous calculation times
+Tdb73d38aa5bbae29a183b8be6e667db1	background_claim 1362 1435	faster fluid solvers were investigated for computer graphics applications
+T971d02f7d8d417191e5b213f0adce1db	data 1453 1458	KvH84
+T5ac7b1df26dc1d86c9c26f45a3ef3716	data 1462 1475	Yaeger et al.
+Te64210660d0a38d621b6cdb32cccbb94	data 1478 1482	YU86
+T16a4d9773a2a988dbbecbd620952cacb	data 1490 1503	Gamito et al.
+T35b462fee4d63abc7daab1c4e30dec0c	data 1506 1511	GLG95
+Ta58311f0d16c72b00901e3d13ffb595f	background_claim 1514 1564	worked on fluid dynamics solvers in two dimensions
+Tde42e7b706357c0f1c3bbdbadd3c85e3	background_claim 1570 1609	many improvements and variants followed
+T4636b7559b532c5450b55c81deb25758	data 1612 1620	CdVLHM97
+Tebb10ea1ee8535e1db8c06362b35d34b	data 1623 1627	KM90
+T9687b54b005adc331e1c393b7de65667	data 1631 1649	Foster and Metaxas
+Tf50f75de08ab6ccd0d40ee8ff7d6b15d	data 1652 1656	FM96
+Teb621159c2ed8405624c038877a7bbc5	data 1659 1663	FM97
+Tffd56b82af5127659a65e612ee64f4ab	data 1672 1686	Griebel et al.
+T8434b0271eaf4609c21c323b78841d6b	data 1689 1694	GDN98
+T6df753f8108150f9d83b2d0637873bdb	background_claim 1698 1772	presented a solver for the fully three dimensional Navier-Stokes equations
+Tb98a36f3ae50c1c3a63e379ccfd10465	background_claim 1775 1847	Due to explicit integration methods very small step sizes had to be used
+T8b7b16820638bf773d34deddfc892bd4	background_claim 1850 1878	To enable faster simulations
+T8273838cdb2227eab60f45be70e615e3	background_claim 1880 1943	a solution with an unconditionally stable solver was introduced
+T4db3d027c372de0bf56e101fc86db7e0	data 1947 1951	Stam
+T1a382531317cec31e41701b16337e486	data 1954 1959	Sta99
+T9799cbbf81fc3a3842f91cd24c715cae	data 1989 1994	FSJ01
+T1d0eb22ab10531ab78ebaad3faf74d48	data 1997 2002	Sta01
+T04a0bb91262060b15430b2bf5004e178	data 2005 2010	Sta03
+Tb941f4dbc95b8336c3de9d2448609f8f	background_claim 2014 2086	Modelling interaction of fluids with solid objects has been investigated
+Te2ebd090f02a1424fcc9287f105eb00e	data 2109 2117	TFK + 03
+Tbc8afe79be701f705f4a255ba996c657	data 2143 2148	GHD03
+Tc473a641cdf93ef7313825b915e3e620	data 2175 2183	WZF + 03
+T5fde622117b62bc42e5910f09c061426	background_claim 2186 2359	presented an interesting approach to simulate lightweight objects like soap bubbles and feathers in a wind flow using a Lattice Boltzmann Model extended with a subgrid model
+Tc31c28f71bff492575cda4eb297412b0	background_claim 2361 2478	For interaction of highly deformable objects and especially cloth-like objects only few models have been investigated
+T2d53041ee5f32684776a775ebc9cba51	background_claim 2480 2580	Simple models consist in the calculation of lift and drag forces from the surrounding velocity field
+Tc799d858d29e1fe3ed7f8541a61f3389	data 2582 2586	SF92
+T962e9bb74ec6db954824fa7b70145016	data 2588 2593	Pro95
+T73508a4c0c07f3ca0dcf165a9281f517	data 2595 2603	KCC + 00
+T11b2ad62a8b50be89812e0730ed53a4a	data 2605 2611	KCCL01
+Tbfd47358fbaa70bc3f61cb0e3809acab	background_claim 2614 2688	More complex interaction models calculate the wind force by a panel method
+T997ff632ad985b469d26e9f597ca1ef4	data 2690 2695	LDG96
+Teff17b6dec6100d7eab875e936be5127	data 2697 2701	Li00
+T76610ea0bf0a84e6cb575feb49ddeb48	background_claim 2703 2729	introducing local vortices
+T55871de54a95145fbabad209f838d119	own_claim 2757 2880	recent results in fluid dynamics for computer graphics can be exploited to simulate interaction of wind flows with textiles
+

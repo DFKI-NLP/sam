@@ -1,0 +1,7 @@
+T85100b7b9dead6f2081eb1479cd97456	own_claim 3253 3283	proceeds forward quite blindly
+T17c6a76ec2c1d5e92bc822ba78f34e44	own_claim 3285 3299;3310 3405	Backward Euler forces one to find an output state whose derivative at least points back to where you came from
+Tedb4af75098e459e13d5cd60f78a4372	own_claim 3187 3247	Forward Euler takes no notice of wildly changing derivatives
+Rcfea46d863bdfe08b5777838d73942cd	contradicts-GOLD Arg1:Tedb4af75098e459e13d5cd60f78a4372 Arg2:T17c6a76ec2c1d5e92bc822ba78f34e44
+Rf374aa0edf349d965d5ebaf567ff8015	contradicts-GOLD Arg1:T85100b7b9dead6f2081eb1479cd97456 Arg2:T17c6a76ec2c1d5e92bc822ba78f34e44
+Rb2764bc35adbeeddae50fd468dd043ca	contradicts Arg1:Tedb4af75098e459e13d5cd60f78a4372 Arg2:T17c6a76ec2c1d5e92bc822ba78f34e44
+R12af9c956d383b95de1e6787261e2644	contradicts Arg1:T85100b7b9dead6f2081eb1479cd97456 Arg2:T17c6a76ec2c1d5e92bc822ba78f34e44

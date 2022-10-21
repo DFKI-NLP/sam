@@ -1,0 +1,6 @@
+Ta1eccea0b8fc914fb02acfec55116c0b	own_claim 123 203	The implicit Euler method seems effectively a good candidate for most situations
+T830483bd60a37d07e03715e03d5d3c39	own_claim 4003 4020	its high accuracy
+T564a9314c0620d34cc20d046d9251337	own_claim 3902 3967	The 5th-order Runge-Kutta method das proven to be a good solution
+T0deb5317e25935c878e07e0de9f921ca	background_claim 315 394;457 566	This is particularly true when simulating very heterogeneous mechanical systems where, using explicit models, the most critical elements would rule the time step size for all the simulation
+R09c4611649cb83904e968fd5c3d8672e	supports-GOLD Arg1:T0deb5317e25935c878e07e0de9f921ca Arg2:Ta1eccea0b8fc914fb02acfec55116c0b
+R4d62915e76bafda93aefc5c7ebdbb9cb	supports-GOLD Arg1:T830483bd60a37d07e03715e03d5d3c39 Arg2:T564a9314c0620d34cc20d046d9251337

@@ -1,0 +1,106 @@
+Tda0f19f9311b48fac31485ccff62dc1d	own_claim 622 683	This mesh may represent a garment or another deformable model
+T472806692ffb0e5544dffa5883f7330a	own_claim 685 769	The wrinkle pattern is bump or displacement mapped onto the initial mesh by the user
+T2b306da37771c2af9926a0a5bbe6de80	own_claim 1215 1280	The initial mesh serves as an input to a simulation engine, which
+T7dd0322ce1642583c4ab6e499f020361	data 1281 1315	in the context of cloth simulation
+Te222361b54bf6c16ab3ca2d4f80467df	own_claim 1316 1367	would be the physical model with a numerical solver
+T188d5d08499e98fb16641e8ba5bb6255	own_claim 2199 2274	the wrinkling coefficients need not to be recalculated during the animation
+Tf4613641ab7804fe5d65ae46790d02d9	own_claim 2333 2426	They depend only on the initial wrinkle pattern, the initial mesh and the mapping coordinates
+Tf46534d2b32ea43352008bf06ac03d4e	own_claim 2724 2826	The deformation of the triangle can be described by a general 4D homogeneous coordinate transformation
+Td723e5771fd8cf69dff86d7193402c7f	own_claim 2837 2947	the rotational and translational parts of the transformation are irrelevant to the derivation of the algorithm
+Td969f50c79a1f54387a0bdccd3073a12	own_claim 2949 3028	We introduce a local rectangular right handed two dimensional coordinate system
+T6e0b5de1fb9b4067463d8e60edbd25cc	own_claim 3030 3097	which is defined by choosing any edge of the triangle as the x axis
+T2d69a19a1ea1077fd76cef3df04ba514	data 3109 3117	Figure 5
+Tfced5ea97d84474154d96adb42fa8e59	own_claim 3228 3278	They are related by the deformation transformation
+T7f357d02287c25be7abc1e810b07b1ab	own_claim 3289 3416	y x user defined wrinkle pattern initial mesh 1 wrinkling coefficient for each triangle C 1 , C 2 , C 3 , C 4 deformable models
+Tb1cebe73f34a275427483ad6fe61e35d	data 3425 3462	cloth simulation y' 2 ' x' modulation
+T289b295dcb96d052dd3127dcaafc8143	data 3463 3578	factor for each triangle (h) deformed mesh modulated wrinkle pattern bump mapping final mesh with animated wrinkles
+T640385e878fda3c86e0f99645afe3734	own_claim 4439 4512	The wrinkle function f (x , y ) on the triangle is related to f (x, y) by
+Tec0ba1379412f8c274e9408a663b8368	own_claim 4523 4584	2 f (x , y ) : ∈ R → R = f T 1 −1 (x , y ), T 2 −1 (x , y ) ¡
+T45e83791d33a2e3e2a0136c31210f8b5	own_claim 5097 5135	this is a purely geometric requirement
+Tf833dbcb2607df7092900dcd0fefc937	own_claim 5446 5489	this parameterized surface area is given by
+T153714f77ffcea258da02612ed414b4d	own_claim 5620 5654	A( , f (x, y)) = A ( , f (x , y ))
+T306974905f558a981868a4d25dd701ac	own_claim 6449 6510	The algorithm is computationally inexpensive during animation
+T08d377de031a51f37b64c60de83f6005	data 6515 6703	the only quantities that have to be determined for each triangle are the elements a , b , d of the inverse deformation matrix and the resulting modulation factor by using the formula given
+Td70bf061c170371b592af3094c584186	own_claim 6719 6794	The wrinkling coefficients on the other hand, are computationally expensive
+Tcc0d7a6feed74fd82304f2c04eab9532	own_claim 6852 6934	they depend only on quantities that are known prior to entering the animation loop
+T34a82272c91f7e02a8abaaa00b9730af	own_claim 6939 6988	can therefore be calculated once at the beginning
+Tf19ef28e38804f263a0135afad58f247	data 7198 7231	From a mathematical point of view
+Tdb6fead9078d727c864ec83abaee8df2	own_claim 7233 7325	it is clear that we have presented a solution within the approximation of small deformations
+T796bcb520aa1e067b197609ee999d153	own_claim 7327 7388	There are several possibilities to deal with this restriction
+T8cfbad5f277fa12ada1f5dd2e3e7d3f8	own_claim 7390 7614	One could decide to restrict the simulations to small deformations where the approximation is valid and/or take into account the higher order terms in the series expansion to extend the range of validity of the approximation
+Tdfc35bea89521bd47de21d0234f8bbf5	own_claim 7625 7656	we propose a pragmatic approach
+T1c9f9faf677b8d99c81e49208d01db68	own_claim 7674 7730	equation 5 describes the overall wrinkling behavior only
+T0e16c9d0b3bd005b19541949fce97d48	own_claim 7732 7804	This frees us conceptually from the “burden of mathematical correctness”
+T70f6236179f10f5640f6e355add950e4	own_claim 7936 8000	the deformations during cloth simulation are moderate in general
+T19e9ceaa6bdfa290d65a97e626df6ff9	own_claim 8009 8067	higher order terms in the expansion may become significant
+T510c0bebceac0445dd671b4d631a4724	own_claim 8072 8087	not predominant
+Te1dd47b6475f494107d818e6bb8c7424	own_claim 8089 8157	The modulation factor h is a function of the deformation of triangle
+T07224adffe5fbc633d903160199badf3	own_claim 8162 8182	has value around one
+T3f4604d2980f67d457749aae1d01fa57	data 8187 8217	the triangle is net compressed
+T7ae1d3e179578873e9c710308a2ff886	own_claim 8219 8245	h will be greater than one
+T767171f7cdd890305dc6f93af277a5bb	data 8247 8265	For the elongation
+T655d2a32798c4cda973e75cd458693ea	own_claim 8267 8291	it will be less than one
+Tdca5b6f9d0de938dc65e7e4fe41963c6	own_claim 8293 8385	One can scale, translate and clip it to introduce a finer control required for the animation
+T6a693665d71013788cad9faca1e777a7	own_claim 8397 8492	this transformation of the modulation factor no longer satisfies the area conservation property
+Te282ef532b759ce3d2cf6f363df3b50a	data 8500 8509	Section 4
+T51721e74ddd85b4d8e0c306288229a53	own_claim 8521 8579	a modulation map, which further violates area conservation
+T71bbd1862515a3dc141a7357d2edc5bc	own_claim 8583 8651	Another very important property of our algorithm is that it is local
+T7f959dfc8a45d43524235eb6feb8f596	own_claim 8676 8751	wrinkling effects caused by deformations are confined to the deformed areas
+T599355f4b8462685c9adad0feee5b440	own_claim 8753 8798	This is crucial to obtain realistic wrinkling
+T1541bc6395fb4e7d55fc5dd091030a92	data 8813 8946	a garment wrinkles around the shoulder of an animated character as she lifts her arm, while it is stretched on the corresponding side
+Td381a74345ee4096aae8d2c3444be2dd	own_claim 9116 9214	Wrinkling coefficients are sensitive to the wrinkle function and therefore to the wrinkle patterns
+Te0044efb36176a7dd371d77c6c3dc0d5	own_claim 9216 9308	Wrinkling coefficients for two different patterns on the same triangle will generally differ
+Tc5692dc5d05d1ca35ba19550d33d6844	own_claim 9321 9407	the same deformation applied to a triangle will yield two different modulation factors
+T0f42ba1a667c7f75e04834372de84a42	own_claim 9516 9567	the wrinkling patterns are orthogonal to each other
+T9d8cde8699480b7091cbb0b48d289b00	own_claim 9575 9731	a deformation in the orthogonal direction of one pattern will result in a smaller modulation factor as compared to a modulation factor for the other pattern
+T5fbe87602c73c7f05ca44ffb59971461	own_claim 9749 9817	the direction of the deformation “favors one pattern over the other”
+T11e11b905c25da2e209cb823f18198cd	own_claim 9819 9891	This property can be used for developing multi-fold wrinkling techniques
+R5719e685dbaae162f75c71f855988e71	parts_of_same Arg1:T2b306da37771c2af9926a0a5bbe6de80 Arg2:Te222361b54bf6c16ab3ca2d4f80467df
+Rb84e1c1b0152cfa4cadc3da751082e24	parts_of_same-GOLD Arg1:T2b306da37771c2af9926a0a5bbe6de80 Arg2:Te222361b54bf6c16ab3ca2d4f80467df
+R1577ba92eac398bbea093ad898b5460f	supports Arg1:T7dd0322ce1642583c4ab6e499f020361 Arg2:Te222361b54bf6c16ab3ca2d4f80467df
+R2a7da7ab31014275ad5d0e4a274c2b1c	supports-GOLD Arg1:T7dd0322ce1642583c4ab6e499f020361 Arg2:Te222361b54bf6c16ab3ca2d4f80467df
+R2bc172171dd86d12b2751f34f142da3f	contradicts Arg1:Tf46534d2b32ea43352008bf06ac03d4e Arg2:Td723e5771fd8cf69dff86d7193402c7f
+Rde0556f21ed1e83ffbeaa92d0152f60a	contradicts-GOLD Arg1:Tf46534d2b32ea43352008bf06ac03d4e Arg2:Td723e5771fd8cf69dff86d7193402c7f
+R476327c4f141a32c85ad00a8bfbbe6d0	supports-GOLD Arg1:T2d69a19a1ea1077fd76cef3df04ba514 Arg2:Td969f50c79a1f54387a0bdccd3073a12
+R5fc8420dadda1b3b10a311d6fbc24e32	parts_of_same-GOLD Arg1:Tfced5ea97d84474154d96adb42fa8e59 Arg2:T7f357d02287c25be7abc1e810b07b1ab
+R053b0b51c9489adeb57f6cb62723afac	parts_of_same-GOLD Arg1:Tb1cebe73f34a275427483ad6fe61e35d Arg2:T289b295dcb96d052dd3127dcaafc8143
+R92cef07a47fa76ade3f452e2f340e8ba	supports Arg1:Tb1cebe73f34a275427483ad6fe61e35d Arg2:T7f357d02287c25be7abc1e810b07b1ab
+R7fbb8af4748072617af9c91fa8209cb2	supports-GOLD Arg1:Tb1cebe73f34a275427483ad6fe61e35d Arg2:T7f357d02287c25be7abc1e810b07b1ab
+R5f73f1f76e14effd3a5566fc5ed8f34d	parts_of_same Arg1:T640385e878fda3c86e0f99645afe3734 Arg2:Tec0ba1379412f8c274e9408a663b8368
+Rcdd984810aa10dfed3cf3e6313ab26ec	parts_of_same-GOLD Arg1:T640385e878fda3c86e0f99645afe3734 Arg2:Tec0ba1379412f8c274e9408a663b8368
+R7f19a610489647ea717c34ba79276c63	parts_of_same Arg1:Tf833dbcb2607df7092900dcd0fefc937 Arg2:T153714f77ffcea258da02612ed414b4d
+R8ca4abe67f637e85dfd3f5140a72cf90	parts_of_same-GOLD Arg1:Tf833dbcb2607df7092900dcd0fefc937 Arg2:T153714f77ffcea258da02612ed414b4d
+R5c9cc871705ef3d76d61f45038beb2c8	supports Arg1:T08d377de031a51f37b64c60de83f6005 Arg2:T306974905f558a981868a4d25dd701ac
+Ra65046ce0ab75ea95478dbbe631a8f15	supports-GOLD Arg1:T08d377de031a51f37b64c60de83f6005 Arg2:T306974905f558a981868a4d25dd701ac
+Rdae77b41ed5f0739217854a651050e1e	contradicts-GOLD Arg1:T306974905f558a981868a4d25dd701ac Arg2:Td70bf061c170371b592af3094c584186
+R00875cbca2770b7e323b5c80723c1984	supports Arg1:Tcc0d7a6feed74fd82304f2c04eab9532 Arg2:T34a82272c91f7e02a8abaaa00b9730af
+R8648839355c2511aa1f0c41612b56f4c	supports-GOLD Arg1:Tcc0d7a6feed74fd82304f2c04eab9532 Arg2:T34a82272c91f7e02a8abaaa00b9730af
+R5afd7795cdba1768c9eea4a3c552b170	supports Arg1:Tf19ef28e38804f263a0135afad58f247 Arg2:Tdb6fead9078d727c864ec83abaee8df2
+R7172211f06d93496932ae962906624bd	supports-GOLD Arg1:Tf19ef28e38804f263a0135afad58f247 Arg2:Tdb6fead9078d727c864ec83abaee8df2
+Rca16cb0cc226b525e3761100ab81142c	contradicts Arg1:T19e9ceaa6bdfa290d65a97e626df6ff9 Arg2:T510c0bebceac0445dd671b4d631a4724
+R8e477df35bfa2384498f3f8c8f75bf2d	contradicts-GOLD Arg1:T19e9ceaa6bdfa290d65a97e626df6ff9 Arg2:T510c0bebceac0445dd671b4d631a4724
+R272724bd43b3049cc1b413cf8c4e0ceb	supports Arg1:T3f4604d2980f67d457749aae1d01fa57 Arg2:T7ae1d3e179578873e9c710308a2ff886
+R01f07d7d5860748cc7c707c340aa3bb1	supports-GOLD Arg1:T3f4604d2980f67d457749aae1d01fa57 Arg2:T7ae1d3e179578873e9c710308a2ff886
+R28fa37535da670732bb71a05d1b09b48	supports Arg1:T767171f7cdd890305dc6f93af277a5bb Arg2:T655d2a32798c4cda973e75cd458693ea
+Rfcf80a9a1532ec03a4090ee4b42c883a	supports-GOLD Arg1:T767171f7cdd890305dc6f93af277a5bb Arg2:T655d2a32798c4cda973e75cd458693ea
+R700dc00d78f6d78bc9c94cc25c22f890	supports Arg1:Te282ef532b759ce3d2cf6f363df3b50a Arg2:T51721e74ddd85b4d8e0c306288229a53
+R74da09e55f70a607b2b5474f61b7a667	supports-GOLD Arg1:Te282ef532b759ce3d2cf6f363df3b50a Arg2:T51721e74ddd85b4d8e0c306288229a53
+Rd3b1654aacaee65470b46579a7414250	supports Arg1:T1541bc6395fb4e7d55fc5dd091030a92 Arg2:T599355f4b8462685c9adad0feee5b440
+R7f8893d4e12e3f7493872788a24f096d	supports-GOLD Arg1:T1541bc6395fb4e7d55fc5dd091030a92 Arg2:T599355f4b8462685c9adad0feee5b440
+Rdb246a534567f6b4bae4ac77aaacba58	supports Arg1:Te0044efb36176a7dd371d77c6c3dc0d5 Arg2:Tc5692dc5d05d1ca35ba19550d33d6844
+Rd663b2b9ce707edfdf1bea05a923da4f	supports-GOLD Arg1:Te0044efb36176a7dd371d77c6c3dc0d5 Arg2:Tc5692dc5d05d1ca35ba19550d33d6844
+R8555822ca82a03add8604dd21d9d95b0	supports Arg1:T0f42ba1a667c7f75e04834372de84a42 Arg2:T9d8cde8699480b7091cbb0b48d289b00
+R38871570121adca7f119925cb5fcd3a2	supports-GOLD Arg1:T0f42ba1a667c7f75e04834372de84a42 Arg2:T9d8cde8699480b7091cbb0b48d289b00
+R3c84a3e7df7f4e8a49e19edc33c00d28	supports Arg1:T7dd0322ce1642583c4ab6e499f020361 Arg2:T2b306da37771c2af9926a0a5bbe6de80
+Rc646d72ba00b19cf3be1955a0c89b506	supports Arg1:T2d69a19a1ea1077fd76cef3df04ba514 Arg2:T6e0b5de1fb9b4067463d8e60edbd25cc
+R2440baeea18ebea90ad3a9c62a58ca99	supports Arg1:T289b295dcb96d052dd3127dcaafc8143 Arg2:T7f357d02287c25be7abc1e810b07b1ab
+Rb0c476b1663f927557b4c773df6956a2	contradicts Arg1:Td70bf061c170371b592af3094c584186 Arg2:Tcc0d7a6feed74fd82304f2c04eab9532
+Ra60c741c7cb05a5c3a546f3aba5c7a26	contradicts Arg1:Td70bf061c170371b592af3094c584186 Arg2:T34a82272c91f7e02a8abaaa00b9730af
+R655ccaa70bfa5d9b58be6ff901e65e53	supports Arg1:T8cfbad5f277fa12ada1f5dd2e3e7d3f8 Arg2:T796bcb520aa1e067b197609ee999d153
+R699fe613423a7516c79cf8c57af069be	contradicts Arg1:T8cfbad5f277fa12ada1f5dd2e3e7d3f8 Arg2:Tdfc35bea89521bd47de21d0234f8bbf5
+Rb7c48d8be37b9875be5bfb686b4e1e09	supports Arg1:T1c9f9faf677b8d99c81e49208d01db68 Arg2:T0e16c9d0b3bd005b19541949fce97d48
+R89dd98e9126bd049d963d5dbb702594f	supports Arg1:T70f6236179f10f5640f6e355add950e4 Arg2:T19e9ceaa6bdfa290d65a97e626df6ff9
+Rb36603a956c1b637d539830d687b45d2	supports Arg1:T655d2a32798c4cda973e75cd458693ea Arg2:Tdca5b6f9d0de938dc65e7e4fe41963c6
+R97c9524bc3cbe9c31b85aff1799df699	supports Arg1:T7f959dfc8a45d43524235eb6feb8f596 Arg2:T599355f4b8462685c9adad0feee5b440
+R096f843efedb8dd8a5c040821a8359d4	supports Arg1:T9d8cde8699480b7091cbb0b48d289b00 Arg2:T5fbe87602c73c7f05ca44ffb59971461
+Re0907eea290bfd8559a6854106f8c251	supports Arg1:T0f42ba1a667c7f75e04834372de84a42 Arg2:T5fbe87602c73c7f05ca44ffb59971461

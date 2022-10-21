@@ -1,0 +1,23 @@
+<H1>2. Related Work</H1>
+        Cloth modeling has a long history, dating back to work in the textile community from the mid-1930s by Peirce 
+27 . Work on cloth modeling in computer graphics has focused on developing dynamic simulation techniques that are both realistic and fast. Baraff and Witkin describe a cloth model that uses stiff springs with implicit time integration 
+4 . This model was subsequently adapted to reduce the over-damping due to implicit integration 9 . Explicit time integration approaches 18 use weaker springs for stretching and shearing, often explicitly limiting the amount of stretching 
+29 , 6 . Choi and Ko introduced a bending energy model that more accurately captures the fine creases and bends of cloth 9 . Lahey provides a comprehensive overview of cloth hysteresis models from the perspective of computational fabric mechanics 
+23 . Extensive work has also been done on modeling collisions and friction. 
+Cloth self-collision is handled either by untangling the cloth 
+37 , 39 , 3 or by preemptively avoiding collisions 
+30 , 20 , 6 . Various potential field methods have been used for general collision detection and response 
+33 , 32 . Despite this large body of work on cloth simulation models, little work has appeared in the computer graphics literature on estimating the parameters of these models so that they match the behavior of real fabrics. Cloth parameter estimation has been studied in the textile community (for an overview, see Breen and colleagues 
+17
+ ), but such methods have not yet enjoyed wide-spread use in the computer graphics community. An important exception is the work by Breen 
+5 who used the Kawabata system 22 to measure bending, shearing, and tensile parameters by subjecting a swatch of fabric to a series of mechanical tests and measuring the force needed to deform it into a standard set of shapes. Although the Kawabata system can provide accurate measurements, these measurements are problematic for computer graphics cloth simulation problems for two reasons. First, there might not be a direct and simple mapping between the parameters for a particular cloth model and the Kawabata parameters. Second, the Kawabata system does not measure dynamic cloth parameters, e.g. air drag or damping, which are of key importance for moving cloth. One promising approach for modeling cloth parameters is to automatically search for parameters that match real, observed cloth. Jojic and Huang fit parameters of a particlebased cloth model to fit a range scan of real cloth in a static rest configuration, draped over a sphere 
+21 . More challenging still, they attacked the problem of measuring the 3D geometry of an object from the resting shape of a piece of cloth draped over it, a problem that we do not consider in this paper. However, Jojic and Huang did not treat the problem of measuring dynamic parameters or demonstrate accurate results across a range of fabric types. More distantly related are techniques for computing the geometry of cloth from images. Coarse estimates of the time-varying geometry of cloth can be computed using traditional stereo matching techniques by using two or more cameras and treating each time instant independently (see Scharstein and Szeliski 
+31 for an overview). More accurate results may be obtained by projecting structured light patterns on the cloth (see Zhang et al. 
+40 for an overview). Rather than computing shape at every time instant independent from the next, it can be advantageous to integrate images over time to improve accuracy. 
+Two examples of promising work along these lines are Carceroni and Kutulakos 
+8 and Torresani et al. 
+34
+ ; both studies demonstrated reconstructions of moving cloth.
+      
+      
+        

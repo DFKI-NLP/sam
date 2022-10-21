@@ -1,0 +1,5 @@
+<H1>9 Acknowledgments</H1>
+        This research was supported in part by an ONR Young Investigator award, an NSF CAREER award, and grants from the Intel Corporation. We thank Alias|Wavefront for supplying the models and motion capture data used in figures 5 and 6.
+      
+      
+        

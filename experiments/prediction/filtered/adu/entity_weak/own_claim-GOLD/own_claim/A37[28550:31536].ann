@@ -1,0 +1,34 @@
+Tc19db4fe76333775290e058feb3bf248	own_claim-GOLD 167 307	In addition to the direct benefit of fast projection on computation times, further benefits can be reaped from the resulting inextensibility
+T372a8b9786b619b4e035974865e1f1eb	own_claim-GOLD 424 575	In adopting the velocity-filtering viewpoint, we gain speed, simplicity, and software modularity—all key to a practical and maintainable implementation
+T469747099a40909b75b521b1f2f9721a	own_claim-GOLD 586 618	this comes at a theoretical cost
+Tbc22db318064d86e741f21533a1a5e83	own_claim-GOLD 620 732	there is no longer an efficient way to perfectly enforce both ideal inextensibility and ideal collision handling
+T7052c6a94805c02d76ada3da59ae4b81	own_claim-GOLD 831 902	To enforce both perfectly would require combining them in a single pass
+Tb05f2bd2fbb2ad8b3a3e008581620311	own_claim-GOLD 904 966	an elegant and exciting prospect from the standpoint of theory
+T256be0dba0288c4b39a152a0b436dd24	own_claim-GOLD 972 1055	one which is likely to introduce considerable complexity and convergence challenges
+T2c736b9e01f07158fc067a128785d0f0	own_claim-GOLD 1057 1163	Practically, we observe that this drawback does not cause artifacts in our simulation, for several reasons
+T9025852745f03e14792e33883aa43ddd	own_claim-GOLD 1172 1244	we execute collision-handling last, to avoid glaring collision artifacts
+T37fd9d4bafabd49c61e3dae1a2db52cd	own_claim-GOLD 1250 1306	we assert that empirically our strain remains negligible
+T3d9aaf86be4775bdc211a34fe56ed9c6	own_claim-GOLD 1401 1563	the inextensibility filter does not assume that the constraint is maintained at the beginning of the timestep and errors are not accumulated during the simulation
+T245505ae36c328b4d8fe1f3c66a1dcc5	own_claim-GOLD 1576 1759	Despite the fact that the most common fabrics do not visibly stretch when draped over the body, the trend in our community is to favor stretching formulations based on penalty-springs
+T484f26b3be57e26e3a16d9eef48808d2	own_claim-GOLD 1761 1837	The consequent numerical difficulties are then addressed by a combination of
+T0fe694c48adbec8d8582df582afb980e	own_claim-GOLD 1842 1881	relaxing realism by allowing 10% strain
+Tc142955a6c7a4b300bbc19be0eabbc1e	own_claim-GOLD 1891 1986	adopting simple iterative strain and strain-rate algorithms that have poor convergence behavior
+T1222b24d049bd70811be91c245568e50	own_claim-GOLD 1988 2167	With Constrained Lagrangian Mechanics as our alternative point of departure, we demonstrate a straightforward filter, with good convergence behavior, for enforcing inextensibility
+T55d76eba4db358f4c138ef8c17174070	own_claim-GOLD 2272 2344	we hope that it will spur a renaissance of activity along this direction
+T18d19b53610739ab06127aa0cdc836ba	own_claim 167 307	In addition to the direct benefit of fast projection on computation times, further benefits can be reaped from the resulting inextensibility
+T6b24fd61344b12cb819d8075e9943788	own_claim 424 575	In adopting the velocity-filtering viewpoint, we gain speed, simplicity, and software modularity—all key to a practical and maintainable implementation
+T0759d23dc8ef8e50f20e378c5c5ebd79	own_claim 586 618	this comes at a theoretical cost
+T2dff9a1e09d07dcc89db287f53f8b367	own_claim 620 732	there is no longer an efficient way to perfectly enforce both ideal inextensibility and ideal collision handling
+Tb913fea64046e6d6b102958c59b88bff	own_claim 831 902	To enforce both perfectly would require combining them in a single pass
+Td1e49f26c4beefee24bbdc4ced4501fa	own_claim 904 966	an elegant and exciting prospect from the standpoint of theory
+T84e6bfb99cf240978b91eb806ecab8e7	own_claim 972 1055	one which is likely to introduce considerable complexity and convergence challenges
+T9a20a0ea467686f65df7d93e6da6f13b	own_claim 1057 1163	Practically, we observe that this drawback does not cause artifacts in our simulation, for several reasons
+T0e528deaaa5deb340c64e60d010c3b83	own_claim 1172 1244	we execute collision-handling last, to avoid glaring collision artifacts
+T712f944bb03250175f41f3bed791dbc7	own_claim 1250 1306	we assert that empirically our strain remains negligible
+Te5817baaf21bbd013f9b230310f3b072	own_claim 1401 1563	the inextensibility filter does not assume that the constraint is maintained at the beginning of the timestep and errors are not accumulated during the simulation
+T59e851fa0586c694225a7b2e5cbada5e	own_claim 1576 1759	Despite the fact that the most common fabrics do not visibly stretch when draped over the body, the trend in our community is to favor stretching formulations based on penalty-springs
+T00b22e96ce3cd088d2cd22ac82cafda2	own_claim 1761 1837	The consequent numerical difficulties are then addressed by a combination of
+Tc2702a2b8cb95d2932fe7f6962261d8b	own_claim 1842 1881	relaxing realism by allowing 10% strain
+Teaa18d8c37d7917dbcb1bbf2989e55af	own_claim 1891 1986	adopting simple iterative strain and strain-rate algorithms that have poor convergence behavior
+T12a6f6a7d73b2315afa100f534bb78eb	own_claim 1988 2167	With Constrained Lagrangian Mechanics as our alternative point of departure, we demonstrate a straightforward filter, with good convergence behavior, for enforcing inextensibility
+Tcafeb5218f9fbbaa8d09859b441021be	own_claim 2272 2344	we hope that it will spur a renaissance of activity along this direction

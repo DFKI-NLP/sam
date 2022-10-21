@@ -1,0 +1,6 @@
+Tc8c07f8ca67c6e0ae5bb5313d229a635	own_claim 5165 5216	small temporal errors are often difficult to notice
+T3f6ec17836afc21bc935f30c15d7f3c3	background_claim 5009 5097	fast non-rigid movements can easily become physically implausible when blurred over time
+T33c2fbcbdd817850dceda01e7ea8c2c9	background_claim 3563 3605	we never observe complete ex- ample meshes
+T67da99b98d3d3e9979b235fc114511b2	background_claim 3462 3548	The most restrictive aspect of MeshIK is that it requires example meshes without holes
+R6086cec26e3ca2fc830b6cbf17247dc5	contradicts Arg1:T67da99b98d3d3e9979b235fc114511b2 Arg2:T33c2fbcbdd817850dceda01e7ea8c2c9
+R902c62ad1a6b2a6c5ae94bbe1a279a89	contradicts Arg1:T3f6ec17836afc21bc935f30c15d7f3c3 Arg2:Tc8c07f8ca67c6e0ae5bb5313d229a635

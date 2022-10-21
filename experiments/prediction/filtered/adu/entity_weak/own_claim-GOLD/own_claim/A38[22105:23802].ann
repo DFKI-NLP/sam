@@ -1,0 +1,8 @@
+T2f44fdec00ab176e0f95f791c1c59e18	own_claim-GOLD 43 140	We use simulated annealing to find the parameters that minimize the error function given in eq. 9
+Td32c4acdde8f23b9a782ef1ca0ffc5ce	own_claim-GOLD 253 368	The likelihood that it will take a step in a direction that is not locally optimal is a function of the temperature
+Tf34c2fcec3bbecd198be1e617d92248d	own_claim-GOLD 585 655	We found it useful to reset the simplex with the current best solution
+Tbafd979edc34fafce6bedfc9e2c7a336	own_claim-GOLD 1150 1222	this strategy allows the optimizer to locate a good minimum of the space
+Ta8f5746b7e22507e51073a43a45d999f	own_claim 43 140	We use simulated annealing to find the parameters that minimize the error function given in eq. 9
+T2165f0c9a9994e3d7203b0afdcbdde1f	own_claim 253 368	The likelihood that it will take a step in a direction that is not locally optimal is a function of the temperature
+T168d5896f43fb09b2ebd5c58351d5880	own_claim 585 655	We found it useful to reset the simplex with the current best solution
+Tb614f128bab7a0ec844d4656b2f8358b	own_claim 1150 1222	this strategy allows the optimizer to locate a good minimum of the space

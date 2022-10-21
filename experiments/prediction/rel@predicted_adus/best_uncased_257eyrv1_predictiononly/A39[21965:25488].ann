@@ -1,0 +1,9 @@
+Tca6c5746e4dfd067e28754749b9c2234	own_claim 1475 1539	The forward method requires only an evaluation of the function f
+Tcd18b5cf5d34e067f4b05ce21587a190	own_claim 1544 1634	the backward method requires that we solve for values of x and v that satisfy equation (4)
+T4a74e74efa9ec0e4803acc1a77ab1e77	own_claim 1649 1672	is a nonlinear equation
+Tf91b2bc52983bc3f36f572d309f9ef32	own_claim 3285 3299	Backward Euler
+T0472f247b7efdfc9141b318952f9abf9	own_claim 3310 3405	forces one to find an output state whose derivative at least points back to where you came from
+T5998884e2c7027804d35cd94c99c542c	own_claim 3431 3465	an additional layer of consistency
+Rd6690dc34e2cd317f3b006fe9a913004	contradicts Arg1:Tca6c5746e4dfd067e28754749b9c2234 Arg2:Tcd18b5cf5d34e067f4b05ce21587a190
+R8b98f09dd946c7e4115808bdf8fccb80	parts_of_same Arg1:Tf91b2bc52983bc3f36f572d309f9ef32 Arg2:T0472f247b7efdfc9141b318952f9abf9
+Rc4463c83acc90453a96c83419bd27628	supports Arg1:T0472f247b7efdfc9141b318952f9abf9 Arg2:T5998884e2c7027804d35cd94c99c542c

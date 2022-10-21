@@ -1,0 +1,21 @@
+T5bf9827582b68bb7be07d6eeadbfd176	data 11025 11047	Baraff and Witkin 1998
+T07ffb5e7af7e2588f065b331447a7d53	data 2039 2047	Figure 2
+T1089a119f22c1666fa602b38a20cd715	background_claim 2113 2177	discusses these drawbacks in SHAKE but does not offer a solution
+T74b5e6d6fd692e920884034fc02412ee	data 2086 2103	Barth et al. 1994
+T50b32ec1ed93252d81f05fba5bc2f6a0	data 3143 3153	Appendix A
+T54c369befeabc0e03a11511e6647a2cc	own_claim 3195 3265	(Q3) remains, but is automatically remedied by decreasing the timestep
+Tc67662f933496a6675c0214409e9f127	background_claim 2655 2728	These four cases correspond to rapid change in edge length or orientation
+T4a6b38f328e34e7734b931065d62990b	background_claim 2730 2759	in practice, they occur often
+Tea857e3604340ea65efd88260fb45473	background_claim 10963 11016	F ∈ O(h 2 ) is considered acceptable in many contexts
+T530404322afd109a0f695634b97dd4b6	data 11049 11065	Choi and Ko 2002
+Tbe7ef85d8d4a2b296490ef082442c091	own_claim 11298 11353	The remaining iterations perturb F only to higher-order
+Tdc2aa284a560cf22c36b79c6251d5947	background_claim 1895 1992	enforcing length-preserving constraints with SHAKE fails for four common geometric configurations
+T71777673bbe85b327e8fdba321a4f56b	own_claim 11218 11296	the first iteration of the fast projection method eliminates first-order error
+R7c33b126a10d1a0179604602c8843e24	supports Arg1:T74b5e6d6fd692e920884034fc02412ee Arg2:Tdc2aa284a560cf22c36b79c6251d5947
+R4174f8b17194c5a70da86bdc3a0ee4a4	supports Arg1:T07ffb5e7af7e2588f065b331447a7d53 Arg2:T1089a119f22c1666fa602b38a20cd715
+R017b849bf96bb4c240be9766bd340535	supports Arg1:T4a6b38f328e34e7734b931065d62990b Arg2:Tc67662f933496a6675c0214409e9f127
+R67092d01ea6bd088bc49ef5384697a0b	supports Arg1:Tc67662f933496a6675c0214409e9f127 Arg2:T4a6b38f328e34e7734b931065d62990b
+R58a0869cad3786a8ddcb825433ea0959	supports Arg1:T50b32ec1ed93252d81f05fba5bc2f6a0 Arg2:T54c369befeabc0e03a11511e6647a2cc
+R7ae9f69022641aa5f6c95687ba5d5d8c	supports Arg1:T5bf9827582b68bb7be07d6eeadbfd176 Arg2:Tea857e3604340ea65efd88260fb45473
+R4e41779e0ac8dff5a7d9b92f662148c5	supports Arg1:T530404322afd109a0f695634b97dd4b6 Arg2:Tea857e3604340ea65efd88260fb45473
+R6ee4c7a73d4982a92cf37cd22e4da8e4	supports Arg1:T71777673bbe85b327e8fdba321a4f56b Arg2:Tbe7ef85d8d4a2b296490ef082442c091

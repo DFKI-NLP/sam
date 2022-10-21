@@ -1,0 +1,8 @@
+T3a8fe6f486e31ddba651ff30c6b0a21e	background_claim 8406 8435	this works for simple objects
+T948041f2a4be5b8db6c2cd5a619439cc	background_claim 8436 8510	this approach is not feasible at all with deformable objects like textiles
+T9d37b2d31e64875dc4c2c35307585db2	background_claim 4937 5032	the wind velocity orthogonal to the object’s surface is just what causes the aerodynamic forces
+Tda7cb68d1d5c7f72f164dcfef8ff3f4b	background_claim 4846 4916	we want the Neumann boundary condition u(p b ) · n = 0 to be satisfied
+Rfc2aea737c3723c15744a71258c57055	contradicts-GOLD Arg1:Tda7cb68d1d5c7f72f164dcfef8ff3f4b Arg2:T9d37b2d31e64875dc4c2c35307585db2
+R9839245a728bbe117ce66ca24214b381	contradicts-GOLD Arg1:T3a8fe6f486e31ddba651ff30c6b0a21e Arg2:T948041f2a4be5b8db6c2cd5a619439cc
+R8e5729fc409cb8f08a19833e4c1147f0	contradicts Arg1:Tda7cb68d1d5c7f72f164dcfef8ff3f4b Arg2:T9d37b2d31e64875dc4c2c35307585db2
+R15147ff110ebe133eb9bc4821b6b0c31	contradicts Arg1:T3a8fe6f486e31ddba651ff30c6b0a21e Arg2:T948041f2a4be5b8db6c2cd5a619439cc

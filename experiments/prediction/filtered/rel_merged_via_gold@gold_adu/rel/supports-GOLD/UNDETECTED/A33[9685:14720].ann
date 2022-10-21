@@ -1,0 +1,24 @@
+T29f8c151149ab6a9d85b1f755f5420b5	own_claim 4867 5002	we photograph the surface of the printed cloth with our video cameras to minimize the effect of non-linearities in the printing process
+Tdc9fc711c9d9f90f8e615f1764e17e13	own_claim 2292 2334;2345 2527	we compute our information budget (I ) as: N = number of observed neighbors C = color information per marker A = information lost to structural ambiguities S = information gained from strain constraints I = (N + 1) ∗C + S − A
+Te7e69ed124faed524517ae6db9e2c98d	own_claim 788 826	we make small markers more distinctive
+T0b8705ba922cb0250ceebfb24a787f73	own_claim 1130 1201	neighboring markers are observed only when the cloth is relatively flat
+T1721ec41d1ae7af2bca5825b1da7d72e	own_claim 455 525	we need markers that are both small in scale and highly discriminative
+T83fe9a9669decbfdcfffc08aaf3235be	own_claim 2767 2772	A = 2
+T4f28fe19f4c56418a891b6f063fdd239	own_claim 611 661	we cannot increase camera resolution without bound
+T4781394aa8bf8d7112131c42ab7aa24c	own_claim 2713 2765	it takes two bits to specify which neighbor we found
+T859d9386aa5861493bc4faa98f329297	own_claim 527 557	These two goals are in tension
+T7dbd8994428f7486136938924353f822	own_claim 2789 2829	the equation reduces to I = 2 ∗C − 2 + S
+Ta0f0841ca73a8d66a07e9683038fc4e7	own_claim 2031 2137	we can compute the information needed to meet this threshold by adding information from the different cues
+T741965deeb2f84736dbda278a7cedb48	own_claim 724 783	we opt for the smallest markers that we can reliably detect
+T198e1545ca8aece8bae8e770864d5873	own_claim 336 436	Our goal is high marker density in the 3D reconstruction – especially in regions with high curvature
+T0cae16c698a51f6754b68bd7bdc359c6	own_claim 1061 1114	they place fewer requirements on local cloth geometry
+T9d82188c490d30ff46cfe52f88ff79a6	own_claim 4809 4865	These comparisons must be made in the proper color space
+R24404511e41bd9fd87681a96f3c240c3	supports-GOLD Arg1:T198e1545ca8aece8bae8e770864d5873 Arg2:T1721ec41d1ae7af2bca5825b1da7d72e
+Rd005667d798ebeace57dccc648e1f21a	supports-GOLD Arg1:T4f28fe19f4c56418a891b6f063fdd239 Arg2:T859d9386aa5861493bc4faa98f329297
+Red4d5e8c6be7cc40fd1244d5e33e5301	supports-GOLD Arg1:T859d9386aa5861493bc4faa98f329297 Arg2:T741965deeb2f84736dbda278a7cedb48
+R9d5d8cd14c89c0570f684679187a8019	supports-GOLD Arg1:T859d9386aa5861493bc4faa98f329297 Arg2:Te7e69ed124faed524517ae6db9e2c98d
+Rce623e29fd7efac7d9add53c3ce017d4	supports-GOLD Arg1:T0b8705ba922cb0250ceebfb24a787f73 Arg2:T0cae16c698a51f6754b68bd7bdc359c6
+Ra7b79b1ace340dd4880c3a750d81d5a3	supports-GOLD Arg1:Ta0f0841ca73a8d66a07e9683038fc4e7 Arg2:Tdc9fc711c9d9f90f8e615f1764e17e13
+R456352fdb60bf1bed97ff3e70f62557a	supports-GOLD Arg1:T4781394aa8bf8d7112131c42ab7aa24c Arg2:T83fe9a9669decbfdcfffc08aaf3235be
+R61ed1a9ac56a1a97eabaed903bcd822a	supports-GOLD Arg1:T83fe9a9669decbfdcfffc08aaf3235be Arg2:T7dbd8994428f7486136938924353f822
+Rc3b0700a1fe1ddd4b7a151fca66efcb3	supports-GOLD Arg1:T9d82188c490d30ff46cfe52f88ff79a6 Arg2:T29f8c151149ab6a9d85b1f755f5420b5

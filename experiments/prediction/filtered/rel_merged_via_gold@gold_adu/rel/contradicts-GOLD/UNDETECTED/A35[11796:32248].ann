@@ -1,0 +1,11 @@
+T494b27fcadc4bb636e476770c21edac7	own_claim 8355 8447	similar requirement of accuracy bring the two methods in parity in terms of computation time
+T87a6ea952415f0af62173001191acc7d	own_claim 9338 9417	this is not an issue for draping problems where only the final state is desired
+T15bcd0edf6a3a3921e63c2d0ee753093	own_claim 8592 8915	Real-world simulations do not have this regularity, and numerical instability with explicit methods occur in the stiffest regions of the mesh, which, even if they are marginal in the whole mechanical system, may totally “explode” and destroy the simulation and therefore will rule the size of the largest time step possible
+Tcab10d8add5a2ff54922072cb7a76fbe	own_claim 19985 20010;20019 20111	The backward Euler method allowed the increase of the time step up to 0.1 seconds, where inaccuracies began to show up
+T3a1df79dbf3dc49e3fdb2346d8c3d936	own_claim 9419 9459	this aspect has to be taken into account
+T4b82e59c5ac2f561907ece2f251aaafe	own_claim 8214 8336	the Inverse Euler method needs at least four Conjugate Gradient iterations to reach the accuracy of the Runge-Kutta method
+T54c82afb31ff8c6591eb013af77eaaf7	own_claim 19791 19983	For the dynamical animation, comparable accuracy could be obtained between Runge-Kutta and Backward Euler using eight iterations of the Conjugate Gradient, which gave similar computation times
+Rdc590d907317bd81e62dbf87d1446e90	contradicts-GOLD Arg1:T4b82e59c5ac2f561907ece2f251aaafe Arg2:T15bcd0edf6a3a3921e63c2d0ee753093
+R2f059a01ad9aae99c09c995f2180c433	contradicts-GOLD Arg1:T494b27fcadc4bb636e476770c21edac7 Arg2:T15bcd0edf6a3a3921e63c2d0ee753093
+R1b5183c78e8755558d98edaf367b0da1	contradicts-GOLD Arg1:T87a6ea952415f0af62173001191acc7d Arg2:T3a1df79dbf3dc49e3fdb2346d8c3d936
+Ra41ec7bcb01079821bb779d1676fcdec	contradicts-GOLD Arg1:T54c82afb31ff8c6591eb013af77eaaf7 Arg2:Tcab10d8add5a2ff54922072cb7a76fbe

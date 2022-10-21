@@ -1,0 +1,46 @@
+Te56e8a0a3faf3934e2701e94122391df	own_claim 49 214	To acquire a 3D point cloud of the cloth surface, we print a colored pattern on the cloth, sew it together, and record its motion using multiple synchronized cameras
+T4230bce5b7f6e798617ebb795fcd4b31	own_claim 216 321	We then reconstruct the 3D location of surface points by detecting corresponding points in multiple views
+Te04de0922b1cd8ca509407a13df2a208	data 324 332	figure 4
+Td3a78b23f287af12239c21fcbb959d8a	own_claim 336 392	Our goal is high marker density in the 3D reconstruction
+Tfa1db75a525b3c5dea1d3e26cd5e2fc8	data 406 436	in regions with high curvature
+Tf0bab89f6b4ecda334e8dd99c98d1fd5	own_claim 438 525	To achieve this, we need markers that are both small in scale and highly discriminative
+T859d9386aa5861493bc4faa98f329297	own_claim 527 557	These two goals are in tension
+T0d84712440270e82443e9328ea4d3619	own_claim 559 596	small markers are less discriminative
+T4f28fe19f4c56418a891b6f063fdd239	own_claim 611 661	we cannot increase camera resolution without bound
+T5ace4174bb08449fbf96a8a4c3360e1e	data 670 709	camera bandwidth becomes very expensive
+T741965deeb2f84736dbda278a7cedb48	own_claim 724 783	we opt for the smallest markers that we can reliably detect
+Te7e69ed124faed524517ae6db9e2c98d	own_claim 788 826	we make small markers more distinctive
+Ta37ed7f00e29c3f51868a7882882d92a	own_claim 976 1052	Marker color and strain constraints are more useful than neighboring markers
+T2703b714c0f980c1b8a86634cc5ab2ea	data 1061 1114	they place fewer requirements on local cloth geometry
+T0b8705ba922cb0250ceebfb24a787f73	own_claim 1130 1201	neighboring markers are observed only when the cloth is relatively flat
+Te9a5539892ffd861639a9e24cd34b23d	data 1208 1320	the surface is heavily curved only small portions of the surface are visible before the cloth curves out of view
+T040496cdd665fe06b18871f04d9abb6f	own_claim 1577 1673	We optimize our correspondence technique by analyzing the information provided by different cues
+Td33018d24a832d8fc7d0bdf96b910d60	own_claim 1675 1796	In this framework we can accurately minimize the number of neighbors required for correspondence and observe folds better
+Tfabdc58f0806658024a3fad80e3862da	data 1865 1873	figure 6
+Tcdfd60f41cbf2abadf93a4754655eadf	own_claim 1877 1982	It takes log 2 M bits to determine the identity of each observed marker on a garment with M total markers
+Td7e1d39cb2863996d579dd07da96cbae	data 1992 2029	independent information adds linearly
+Ta0f0841ca73a8d66a07e9683038fc4e7	own_claim 2031 2137	we can compute the information needed to meet this threshold by adding information from the different cues
+Tc19a2d44bcd3dd20eca03741812bda9c	own_claim 2177 2277	structural ambiguities in the pattern subtract information lost to determine which neighbor is which
+T286780ea7ce25e5caab34615a3577ef1	own_claim 2658 2705	This neighbor is one of four possible neighbors
+T4781394aa8bf8d7112131c42ab7aa24c	own_claim 2713 2765	it takes two bits to specify which neighbor we found
+T7dbd8994428f7486136938924353f822	own_claim 2789 2829	the equation reduces to I = 2 ∗C − 2 + S
+T8602b02b83c7770a7ca9fbbee72c34ee	data 2837 2866	almost any structured pattern
+Tae192e1df377e35251d2672b5c88a615	own_claim 2868 2933	we can detect regions by increasing N until I &gt; log 2 (M) bits
+T1ef2fb535f0b1d9e83cfa7489513e85b	own_claim 2944 3074	larger marker regions have the disadvantage that curvature can cause local occlusions and prevent observation of the entire region
+T63a6423cc0404904e78739f4e5c9d016	own_claim 3076 3159	Our best efforts are to improve C – the number of bits from each marker observation
+T3cbb93c50a36b22b1dafa49e14270bb3	own_claim 3399 3518	We print a random colored pattern on the surface of cloth in an attempt to maximize the information available per pixel
+T67c849e1f8cdfcaacfe8ec67b458ea58	own_claim 3526 3573	our pattern is composed of tesselated triangles
+Te1ef4125bab0f1d7aedb391450aaa95c	data 3576 3584	figure 5
+Taa4d80feec1a2811277da733331fdd6f	own_claim 3588 3628	any shape that tiles the plane will work
+T5890fdb9f0a5c528183724a25b2a1c2a	own_claim 3786 3952	To maximize the information contained in the color of each marker, we print colors that span the gamut of the printer-camera response, then use a gaussian color model
+T861e8c491a4b679e07bec2678000e1ff	data 3954 3965	section 4.1
+T9144a712d7e40c873f788fbc9321e669	own_claim 3988 4044	the printer-camera response is a sequence of lossy steps
+T6b3361a9383ac7cac380d384b303bca5	own_claim 4193 4240	loss is largely attributable to camera response
+T424445b7c14bfd01de8ed69a39061c2d	own_claim 4249 4303	larger markers produced substantially more information
+T3d496c228cf7bbbd43d6bff850934b01	own_claim 4305 4357	Illumination is also problematic and takes two forms
+Tb5b7e8b210f60a9bcfddb711b026f2e8	data 4359 4402	direct illumination on a lambertian surface
+Ta17d516d9717868f20d05ff747ec7a7b	data 4407 4428	indirect illumination
+Tc689861330d52bbd8edbe53171ba97a4	own_claim 4430 4539	To correct for variations in direct illumination, we remove the luminosity component from our color modelling
+Tad1fdbef8f64d1de1bc3a51c2f71af47	own_claim 4541 4584	We do not correct for indirect illumination
+T9d82188c490d30ff46cfe52f88ff79a6	own_claim 4809 4865	These comparisons must be made in the proper color space
+

@@ -1,0 +1,8 @@
+T9f2cdbfd850020f4ebf567fa551ea1ef	background_claim 1141 1209	deformation energy density can be described by the product of strain
+T3a5cdea4da088b80adcbe4e3cc88ee69	background_claim 1264 1382	most of these models define separable scalar stress components as linear functions of individual scalar strain metrics
+T9c6c08808aaae3afc0667312f18b3e20	background_claim 1398 1486	the energy density of each deformation component i can be written as W i = 1 2 k i ε 2 i
+T5d2b94d5e64b34fc495f50eaeb5d80a4	background_claim 1595 1677	The force density due to each ε i follows as F i = − W i = −σ i ε i = −k i ε i ε i
+Ta68a0abd9c7328a0db967c2969571328	background_claim 1839 1875	the diagonalized St.Venant-Kirchhoff
+T39daf46487a92bdb712f07d7e024eec6	background_claim 1921 1939	two bending models
+Tbaa61ba2fd5d672ea9d4a3254dec0d9e	background_claim 3986 4105	approximate the standard StVK model zeroing out off-diagonal terms in the matrix that relates strain and stress, σ = Eε
+T45d86d981bb99f4cd2a996f690f66d20	background_claim 5358 5470	This definition implies that bending energy density is integrated over edgecentered rectangles of size l 0 × h 0

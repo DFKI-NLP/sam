@@ -1,0 +1,14 @@
+Tdee5541e76fb453d784a734ca1590066	own_claim 45 125	We use optimization to estimate the parameters of the cloth simulator from video
+T126476c377ec9d73c9120494551f24d9	own_claim 176 292	we look at the error space of the angle map metric, which gives us useful insight about the parameters of the system
+T4ec1ccf7406f6ec88f49b91ff8004386	data 294 300	Fig. 3
+T26e95fa7a4dbc4aa2ffd18557d399052	data 537 547	the figure
+Tddab702d3f6d851faed01ab5c5f7a590	own_claim 549 680	it is evident that the error space is fairly noisy, with many local minima, motivating the need for a global optimization technique
+T6420a3a86b7798d646144b2a1c05864f	own_claim 719 855	we estimate the relative importance of each parameter for a given experiment by performing a perturbation analysis at the solution point
+T3e76a81b9f6f556cd96abd9d2a040d83	own_claim 857 939	The importance or sensitivity of a parameter p depends on its local gradient ∂E ∂p
+T5920527aaffde6cb5403822588dbc4bb	own_claim 942 1017	it relates a small change in parameter value to a change in the error value
+T10e3ab924fa1ea3f87b83df364740dc3	own_claim 1054 1125	we robustly compute the variability of the param∂p eters, defined as ∂E
+T4716cc0ffc9354de40669f9d2e8552f5	own_claim 1128 1288	To compute the variability, we perturb each parameter of the simulator individually up to ±0.20% of its value, compute the error and fit a quadratic to the data
+Tf8fabed13be09c8ea9a992221377a63b	data 1291 1297	Fig. 4
+Ta54a12800ef7de2c570a34749693d3f2	own_claim 1321 1423	the variability is computed as the change in parameter values that results in a 1% change in the error
+Tbaced5b97cd0d186bd9a3f0451b344e2	own_claim 1425 1528	Parameters with low variability have high sensitivity and are estimated reliably for a given experiment
+

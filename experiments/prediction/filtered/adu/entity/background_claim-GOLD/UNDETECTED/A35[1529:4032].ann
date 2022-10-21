@@ -1,0 +1,9 @@
+T5c37a32c50065a316857558479e73fbc	background_claim-GOLD 188 250	Among the available methods, there are finite elements methods
+T546879fdb17e5ac25ad7a59723d6792c	background_claim-GOLD 296 315	or particle systems
+Tc2f3d13b2fea93f6afd11fd9873acc49	background_claim-GOLD 347 474	the latter, which has shown to bring the best compromise between accuracy and speed for highly deformable objects such as cloth
+T71f2f334008c7ea18974501a373331cf	background_claim-GOLD 1284 1478	The evolution of the system is computed numerically from these equations that form a large and sparse ordinary differential equation system, which, through adequate modeling, is also first-order
+T22abf25a8f83a5c0cef72c1497bc082a	background_claim-GOLD 1480 1697	This numerical system has to be integrated numerically, for finally obtaining the evolution of the mechanical system along time, usually as a sequence of successive positions of the object along regular time intervals
+Tdd640eb53af46906b1e6543694e0ac88	background_claim-GOLD 1700 1733	Various numerical methods related
+Tbfb6740b82526799faae6070b51a9f41	background_claim-GOLD 1751 1851	to integration of numerical ordinary first-order differential systems are available for this purpose
+T229a29ce88d3b02011c863f7a3e3032c	background_claim-GOLD 1907 1990	the implementation of these methods, which has already been carried out extensively
+T7b7e0afc7b37fd3f53b572a588a396c7	background_claim-GOLD 2040 2065	and with some adaptations

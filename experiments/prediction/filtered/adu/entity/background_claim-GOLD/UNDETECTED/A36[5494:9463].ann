@@ -1,0 +1,16 @@
+T2932c8fa0376b010959ca792620a9226	background_claim-GOLD 105 146	Since the first physics-based approach by
+T605f580d4fcba833b1f81ff23629c8c2	background_claim-GOLD 292 316	general particle systems
+T723299be385aa09af6c223a76d3fceed	background_claim-GOLD 423 450	the discrete yarn structure
+Te6b627208221e2466de20eb014d4ae55	background_claim-GOLD 463 598	Considering the number of existing models, it is very hard to clearly identify or even quantify the advantages of individual approaches
+Td9af22d44280eaa950ce88451f12f88e	background_claim-GOLD 824 975	In the simplest case, this relationship is linear and thus completely described by a set of material constants, whose number depends on the cloth model
+T1b9ed17a4b8faa63a7ae192076d9e5e2	background_claim-GOLD 1070 1106	continuum-based methods can have two
+T01166090fca3887feb4c7b1580e9cd12	background_claim-GOLD 1119 1125	to six
+T0a3bff4727986ffd3a3ad1d135c7cef6	background_claim-GOLD 1151 1184	parameters for planar deformation
+T325fce852393a5cf996c0f704da6e421	background_claim-GOLD 1194 1231	plus another one to three for bending
+T5a2637d70e1964c90dde373f98e64c2b	background_claim-GOLD 1349 1532	regardless of the cloth model, a single set of material coefficients for the entire deformation range is not sufficient to faithfully capture the nonlinear response of typical fabrics
+T261f18462fee7623f3d6c371c71d526c	background_claim-GOLD 1879 2082	A better approximation to the true material response can be obtained by making the material parameters functions of the deformation, rather than constants, and by fitting these functions to measured data
+T8b5aeedfc37f1f23487d6893712dcb81	background_claim-GOLD 2700 2717	As an alternative
+Tc4f1ef6e743d1c3be30b707c1666ae43	background_claim-GOLD 3062 3074	and external
+Td41ff45ae0dff1abcf25e95fc9246a8d	background_claim-GOLD 3101 3111	parameters
+Tcddcd2be5bc8600c5b5af6e133f25da2	background_claim-GOLD 3134 3225	capture technology can be used to record time-varying geometry of complex cloth mo∗ ∗ tions
+Tb44c84726cb0da0abd0ecf68432bc941	background_claim-GOLD 3309 3429	parameter fitting remains very difficult without explicit control over boundary conditions, in particular loading forces

@@ -1,0 +1,7 @@
+T33743a33dc40be6ab8c4670d649b16a8	background_claim 2806 2842	using an explicit integration scheme
+Ta7bfc5f247a84eb409e1c70233a9f720	background_claim 7542 7588;7597 7598	can be simplified to give the Laplace equation 4
+T65ec5b0b7cfee57f11765872f63fc68d	background_claim 7603 7646;7655 7656	The solution of the Navier-Stokes equations 4
+Td6533d757451f8d05ad1f0cd57178c3c	background_claim 7914 7979	enables an animator to combine basic flows which satisfy equation
+Tdca77f6e4b66175f84b3ee1d9a1e65ec	background_claim 8038 8081	Some primitives common to fluid simulations
+Tdb8377c189cf3cb9b8fb85ca56084131	background_claim 8406 8510	this works for simple objects this approach is not feasible at all with deformable objects like textiles
+Te3acdc389fc386af83e4db46d08417e2	background_claim 9404 9417	its six faces

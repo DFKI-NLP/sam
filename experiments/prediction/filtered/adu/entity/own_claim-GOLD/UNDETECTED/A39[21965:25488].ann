@@ -1,0 +1,9 @@
+T388e389fcd64ba80a8de27f126c3ba25	own_claim-GOLD 122 212	our goal is to determine a new position x(t 0 + h) and velocity x(t 0 + h) at time t 0 + h
+Tc77123c6173973cc4b1711c7c26805d7	own_claim-GOLD 281 358	we must first transform equation (2) into a first-order differential equation
+Taa7ad30df0c2d1bbe5824d86d86239e5	own_claim-GOLD 360 449;469 470;481 517	This is accomplished simply by defining the system’s velocity v as v = x and then writing 3 dt d x x = dt d v x = M −1 f(x, v v)
+Tcd316d0abe15b94ae15e2fe84cead91a	own_claim-GOLD 1260 1471	The difference in the two methods is that the forward method’s step is based solely on conditions at time t 0 while the backward method’s step is written in terms of conditions at the terminus of the step itself
+Ta7b2859cb8124d65b817c86da55b6dac	own_claim-GOLD 1674 1869	rather than solve this equation exactly (which would require iteration) we apply a Taylor series expansion to f and make the firstorder approximation ∂f ∂f f(x 0 + x, v 0 + v) = f 0 + ∂x x + ∂v v
+Te5dcef099df41e5a8fe5bd38db3a7676	own_claim-GOLD 2521 2678	the backward Euler step consists of evaluating f 0 , ∂f/∂x and ∂f/∂v; forming the system in equation (6); solving the system for v; and then updating x and v
+Te79d236ffb72b98ad80878a90e4378b9	own_claim-GOLD 2901 2938	The method is called “backward” Euler
+Tfa874b9d253114dc809fc20078d88af4	own_claim-GOLD 3187 3247	Forward Euler takes no notice of wildly changing derivatives
+Tc95bf7051f3c8ce2e5b500c19ffda433	own_claim-GOLD 3285 3299	Backward Euler

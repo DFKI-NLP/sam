@@ -1,0 +1,6 @@
+T11e7b2880788a3cb407e1e51beaa20d1	background_claim-GOLD 7931 8039	The simultaneous collision approach treats multiple collisions as simultaneous collisions within a time-step
+T136ea254e09db0f0c963edfe78fabdef	background_claim-GOLD 8041 8132	The staggered collision approach gives us a more physically correct solution than the other
+T7c082832af08f533128b80b0b7bbcf70	background_claim-GOLD 10381 10452	m 1 v 1 + + m 2 v 2 + + + m N v N + = m 1 v 1 , + m 2 v 2 , + + m N v N
+T3d239c86e30b7943eb9e68744676b82e	own_claim 7931 8039	The simultaneous collision approach treats multiple collisions as simultaneous collisions within a time-step
+T0865530e20c12b86435a55e6d44d43ab	own_claim 8041 8132	The staggered collision approach gives us a more physically correct solution than the other
+Tfae3643a58b2a8ac245386779a79c085	own_claim 10381 10452	m 1 v 1 + + m 2 v 2 + + + m N v N + = m 1 v 1 , + m 2 v 2 , + + m N v N

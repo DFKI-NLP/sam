@@ -1,0 +1,6 @@
+T364f2a885f71fc5c7b583571534c1e91	own_claim 58 121	We would like to animate the cloth using coarse triangular mesh
+T4e98fcfd71a102316d8d366e869a4d64	own_claim 765 820	In reality, the compression forces will buckle the edge
+Te31473ffbe2f6611213ef3e28bd38817	own_claim 957 1059	in the coarse mesh situation, the buckled edge is approximated by a straight line between the vertices
+T0c283e8a09a93d81d3be8362af705efd	own_claim 1417 1515	This allows otherwise possible wrinkling/buckling which is embedded in the deformation of triangle
+T604f807db8b90ba81d3d6f40f792b6b7	own_claim 1613 1672	the change in area of the triangles due to the deformations
+T016c4e0d804361a03d81bff6cab75baf	own_claim 1724 1830	We propose to capture gross cloth movements and deformations using a coarse mesh and the fine deformations

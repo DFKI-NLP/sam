@@ -1,0 +1,256 @@
+true_label	prediction	id	line	sentence	connector_claims	falsche_annotation	same sentence	comment	arguments
+unassignable	contradicts	A32[17722:25261]	53	for stages 1 [modulation same], however for stages 2 & 4 [modulation differ]	however	undecided	o		own_claim
+unassignable	contradicts	A32[25261:27768]	23		in fact	no	o	semantics not understood ("real time is fast" -> "neglible")	own_claim
+unassignable	contradicts	A32[7737:17722]	81	The wrinkling coefficients on the other hand, are computationally expensive.   However, as one can see from equation 11 in Appendix A, they depend only on quantities that are known prior to entering the animation loop and can therefore be calculated once at the beginning.	however		o		own_claim
+unassignable	contradicts	A32[7737:17722]	87	One could decide to restrict the simulations to small deformations where the approximation is valid and/or take into account the higher order terms in the series expansion to extend the range of validity of the approximation.  Instead, we propose a pragmatic approach	instead		o		own_claim
+unassignable	contradicts	A33[20675:26705]	44		in practice		o		background_claim
+unassignable	contradicts	A33[20675:26705]	58		however		o	wrong arguments	background_claim,own_claim
+unassignable	contradicts	A33[31336:33747]	15		while		x	good example!	background_claim
+unassignable	contradicts	A33[9685:14720]	21		however		o	long dependency "support" not found, but short term ""contradicts" instead	own_claim
+unassignable	contradicts	A34[10054:24577]	59		however		o	wrong attachment	own_claim
+unassignable	contradicts	A34[10054:24577]	62				o	starts with "We do not want to"	own_claim
+unassignable	contradicts	A34[10054:24577]	129		however		o	strange usage of "however"?	own_claim
+unassignable	contradicts	A34[5762:10054]	7		though		o		background_claim
+unassignable	contradicts	A34[5762:10054]	11		but		x	missing annotation?	own_claim
+unassignable	contradicts	A35[11796:32248]	57		whereas		x	high token similarity, but more "contrasts" than "contradicts" (discriptions of two variants of a method). "contrdicts" for implicit claims ("Method A is superior to B")	own_claim
+unassignable	contradicts	A35[11796:32248]	70		while		x	as above (towards "contrasts"; implicit claims contradict)	own_claim
+unassignable	contradicts	A35[11796:32248]	109		however		o	as above (towards "contrasts"; implicit claims contradict)	own_claim
+unassignable	contradicts	A35[11796:32248]	124		particularly		x		background_claim
+unassignable	contradicts	A35[11796:32248]	124		this		x		background_claim
+unassignable	contradicts	A35[11796:32248]	129		while		x		background_claim
+unassignable	contradicts	A35[11796:32248]	132		whereas		x		background_claim
+unassignable	contradicts	A35[11796:32248]	132		however		o		background_claim
+unassignable	contradicts	A35[1529:4032]	23		rather		o	rather im Satz vom ersten claim (Bezug auf den vorherigen Satz)	own_claim
+unassignable	contradicts	A35[32248:37416]	13		however		o	multiple negative marker: "false sense", "cheating". but since the assertion is negated, no real missing annotation	own_claim
+unassignable	contradicts	A35[32248:37416]	15		while		x	"while" is not meant contrastive, but towards "enhancing"	own_claim
+unassignable	contradicts	A35[4032:11796]	40		but		x	contrasting approach vs result, not the statements	own_claim
+unassignable	contradicts	A35[4032:11796]	41		whereas		x	"wheras" as enhancement instead of contradiction	own_claim
+unassignable	contradicts	A36[2140:5494]	2		but		o	missing annotation? "contradicts" as attacking generality	background_claim
+unassignable	contradicts	A36[2140:5494]	7		however		o	missing annotation!	background_claim
+unassignable	contradicts	A36[27438:36611]	29		while		x	contrasting two variants of a method; missed support on one adu	own_claim
+unassignable	contradicts	A36[27438:36611]	69		however		o	missing annotation?	own_claim
+contradicts	undetected	A32[17722:25261]	57		however		o	2 contradicting claims koordiniert mit  "and" (ellipsis). Contradiction für die erste erkannt, für die zweite nicht	own_claim
+contradicts	undetected	A32[1787:4935]	11		even then		o		background_claim
+contradicts	undetected	A32[7737:17722]	80		on the other hand		o	clear miss	own_claim
+contradicts	undetected	A33[20675:26705]	18		however		o	contrasting two methods with negative connotation (one misses a feature of the other)	own_claim,background_claim
+contradicts	undetected	A33[20675:26705]	58		however		o	wrong annotation!	own_claim
+contradicts	undetected	A33[31336:33747]	3		however		o	clear miss	own_claim
+contradicts	undetected	A33[31336:33747]	4		however		o	falsely connected via "supports" to adu that parallely "contradicts". note: also missed long range "support"	own_claim
+contradicts	undetected	A33[31336:33747]	15		however		o	ellipsis with parallel adu that "contradicts"	own_claim
+contradicts	undetected	A33[31336:33747]	17		in contrast		o	long range; target falsely connected via "support" to other "contradict"ing adu	background_claim,own_claim
+contradicts	undetected	A33[31336:33747]	17		in contrast		o	even longer range	background_claim,own_claim
+contradicts	undetected	A34[10054:24577]	10		however		o	clear miss; contrasting two methods with negative connotation (one misses a feature of the other); both non contiguous	background_claim
+contradicts	undetected	A34[5762:10054]	43		however		o	clear miss; "contradicts" as attacking generality	background_claim
+contradicts	undetected	A35[11796:32248]	63		however		o	long range (two sentences in between); connector before other own_claim which is not connected via any relation (missing annotation?)	own_claim
+contradicts	undetected	A35[11796:32248]	64		however		o	long range (one sentences in between); connector before other own_claim which is not connected via any relation (missing annotation?)	own_claim
+contradicts	undetected	A35[11796:32248]	69		while		x	detected as both "contradicts" (wrong) and "supports" (correct) 	own_claim
+contradicts	undetected	A35[11796:32248]	148		however		o	non contiguous (around connector)	own_claim
+contradicts	undetected	A35[32248:37416]	5		contrary		x	connector has scope over full first adu	background_claim,own_claim
+contradicts	undetected	A35[32248:37416]	22		however		o	detected as both "contradicts" (wrong) and "supports" (correct); non contiguous (around connector)	own_claim
+contradicts	undetected	A37[28550:31536]	11		unlike		x	mistaken for "parts_of_same" (first adu is just a noun phrase)	background_claim,own_claim
+contradicts	undetected	A38[4784:8529]	22		exception		o	second adu non contiguous	background_claim
+contradicts	undetected	A38[4784:8529]	31		however		o	ellipsis with parallel adu that "contradicts"	background_claim
+contradicts	undetected	A38[8529:14489]	49		more		o	difficult miss; contrasting two methods with negative connotation (one misses a feature of the other)	own_claim
+contradicts	undetected	A39[1825:14015]	27		while		x	not so easy, contrasting two properties, but both negative	background_claim
+contradicts	undetected	A39[1825:14015]	38		thus far		x	wrong annotation?	own_claim,background_claim
+contradicts	undetected	A39[1825:14015]	53		however		o	probably wrong annotation (should be "supports" (not detected) and connected via "contradicts" to previous adu (detected)) both non contiguous	background_claim,own_claim
+contradicts	undetected	A39[25488:37632]	110		however		o	hard; the connector ("however") does not really belong to the relation, which is kind of implicit; first adu is non contiguous; second adu starts with "In this section ..."	background_claim,own_claim
+contradicts	undetected	A39[37632:54129]	83		note that		o	clear miss; no helpful connector	own_claim
+contradicts	undetected	A39[61217:63397]	2		even so		o	clear miss	own_claim
+contradicts	undetected	A40[9215:23372]	122		however		o	long range (over one adu which is mistakenly targeted instead, but connected with correct via "supports")	background_claim
+contradicts	undetected	A40[9215:23372]	122		however		o	long range (over two other adus)	background_claim
+contradicts	contradicts	A32[17722:25261]	6		though		x		own_claim
+contradicts	contradicts	A32[17722:25261]	57		however		o	first non contiguous; direct neighbours	own_claim
+contradicts	contradicts	A32[1787:4935]	21		however		o	first non contiguous; direct neighbours	background_claim
+contradicts	contradicts	A32[25261:27768]	6		though		x	direct neighbours	own_claim
+contradicts	contradicts	A32[4935:7737]	25		even though		x	close neighbours	background_claim,own_claim
+contradicts	contradicts	A32[7737:17722]	31		however		o	direct neighbours	own_claim
+contradicts	contradicts	A32[7737:17722]	93		but		x	direct neighbours	own_claim
+contradicts	contradicts	A33[14720:20675]	31		in contrast		o	direct neighbours	own_claim
+contradicts	contradicts	A33[14720:20675]	46		in contrast		o	close neighbours	own_claim
+contradicts	contradicts	A33[14720:20675]	74		but		x	close neighbours	own_claim
+contradicts	contradicts	A33[1689:5602]	17		however		o	direct neighbours	background_claim
+contradicts	contradicts	A33[20675:26705]	14		in contrast		o	direct neighbours; second is non contiguous	own_claim,background_claim
+contradicts	contradicts	A33[20675:26705]	47		but		x	direct neighbours	own_claim
+contradicts	contradicts	A33[20675:26705]	59		in contrast		o	direct neighbours	own_claim
+contradicts	contradicts	A33[26705:31336]	4		but		x	close neighbours (data in between)	own_claim
+contradicts	contradicts	A33[26705:31336]	34		but		x	direct neighbours	own_claim
+contradicts	contradicts	A33[26705:31336]	43		however		o	close neighbours (data in between); first is non contiguous	own_claim
+contradicts	contradicts	A33[31336:33747]	4		however		o	close neighbours (data in between)	own_claim
+contradicts	contradicts	A33[31336:33747]	15		however		o	long range (two adus in between)	background_claim,own_claim
+contradicts	contradicts	A33[31336:33747]	17		in contrast		o	direct neighbours	own_claim,background_claim
+contradicts	contradicts	A33[5602:9685]	5		however		x	direct neighbours	background_claim
+contradicts	contradicts	A33[5602:9685]	26		while		x	direct neighbours	background_claim
+contradicts	contradicts	A33[5602:9685]	43		while		x	direct neighbours; second is non contiguous (very long)	background_claim
+contradicts	contradicts	A33[9685:14720]	28		however		o	direct neighbours	own_claim
+contradicts	contradicts	A33[9685:14720]	40		while		x	close neighbours (data in between)	own_claim
+contradicts	contradicts	A34[10054:24577]	2		however		o	neigbours (some text in betweeen, 11 words); first is non coniguous	background_claim
+contradicts	contradicts	A34[10054:24577]	4		while		x	direct neighbours	background_claim
+contradicts	contradicts	A34[10054:24577]	6		but		o	direct neighbours; first is non contiguous	background_claim
+contradicts	contradicts	A34[10054:24577]	59		however		o	long range (there is an adu in between)	own_claim
+contradicts	contradicts	A34[10054:24577]	80		but		o	direct neighbours	own_claim
+contradicts	contradicts	A34[2262:5762]	14		however		o	direct neighbours; long adus	background_claim
+contradicts	contradicts	A34[2262:5762]	19		but		x	direct neighbours	background_claim
+contradicts	contradicts	A34[2262:5762]	25		however		o	close neighbours (data in between); long adus	background_claim
+contradicts	contradicts	A34[2262:5762]	28		though		x	direct neighbours; bit long adu	background_claim
+contradicts	contradicts	A34[5762:10054]	8		though		x	direct neighbours; short adus	background_claim
+contradicts	contradicts	A34[5762:10054]	21		though		x	direct neighbours; short adus	own_claim
+contradicts	contradicts	A35[11796:32248]	61		while+however		x	direct neighbours; bit long adu; second adu is non coniguous	own_claim
+contradicts	contradicts	A35[11796:32248]	127		despite		x	direct neighbours; long adus	background_claim
+contradicts	contradicts	A35[32248:37416]	7		while+it should be kept in mind		x	direct neighbours; bit long adu	own_claim
+contradicts	contradicts	A35[32248:37416]	18		however		x	close neighbours (data in between); long adus	own_claim
+unassignable	supports	A32[17722:25261]	6			x	o	cose neighbours; missing annotation	own_claim
+unassignable	supports	A32[17722:25261]	39		hence	x	o	long range (one adu in between); missing annotation	own_claim
+unassignable	supports	A32[17722:25261]	42		in other words	x	o	direct neighbours; short adus; missign annotation (reformulation)	own_claim
+unassignable	supports	A32[17722:25261]	62			c	o	maybe missing annotation; long range (text in between)	own_claim
+unassignable	supports	A32[17722:25261]	67			x	o	higly probably missing annotation; formula	own_claim
+unassignable	supports	A32[17722:25261]	70				x	clearly wrong; wrong adu annotation	own_claim
+unassignable	supports	A32[1787:4935]	6			x	o	missed annotaion; long adus; direct neighbours	background_claim
+unassignable	supports	A32[1787:4935]	9		in order to		o	wrong	background_claim
+unassignable	supports	A32[1787:4935]	14		this gives rise to	x	o	highly probably missing annotation	background_claim
+unassignable	supports	A32[25261:27768]	6		this is because	x	o	missing annotaiton; short adus; second is non contiguous	own_claim
+unassignable	supports	A32[25261:27768]	21		as	x	x	annotation has wrong direction	data,own_claim
+unassignable	supports	A32[27768:28160]	2		hence	x	o	missing annotation	own_claim
+unassignable	supports	A32[4935:7737]	10		as		o	wrong; but wrong annotations around	own_claim
+unassignable	supports	A32[4935:7737]	14		thus+-this is in contrast		o	wrong; direct neigbours; short adus	own_claim
+unassignable	supports	A32[4935:7737]	16		this allows	x	o	highly probably missing annotation; A contradicts B (annotated, NOT detected), A supports C (NOT annotated, detected), B supports C (annotated, detected)	own_claim
+unassignable	supports	A32[4935:7737]	17		this allows+which		x	wrong direction (but this is also not annotated!)	own_claim
+unassignable	supports	A32[4935:7737]	25		even though		x	wrong (src data adu is connected to contradicting adu); data adu "Section 3.3" before content description	data,background_claim
+unassignable	supports	A32[7737:17722]	33		refer to		x	wrongly connected (main clause should be targeted instead) 	data,own_claim
+unassignable	supports	A32[7737:17722]	86			x	o	missing annotation ("heading" -> "items")	own_claim
+unassignable	supports	A32[7737:17722]	89		-this	x	o	missing annotation (naming implications)	own_claim
+unassignable	supports	A32[7737:17722]	92		hence	x	o	missing annotation (naming implications)	own_claim
+unassignable	supports	A32[7737:17722]	96				o	wrong; high surface sim (token overlap, i.e. "one")	own_claim
+unassignable	supports	A32[7737:17722]	101		this is crucial	c	o	maybe missing annotation (foremost in surrounding)	own_claim
+unassignable	supports	A32[7737:17722]	110		in other words		o	wrong (no reformulation, src is just a premise for other part that should be connected as reformulation, see below)	own_claim
+unassignable	supports	A32[7737:17722]	111		in other words	c	o	probably missing annotation (rephrasing/summarisation/reformulation)	own_claim
+supports	undetected	A32[17722:25261]	35		-in real life		o	wrong; short adus, long range (two data adus in between, but short)	own_claim
+supports	undetected	A32[17722:25261]	67		if then		x	wrong; formula; long range (closer formular was detected corrrectly)	own_claim
+supports	undetected	A32[17722:25261]	69				o	wrong; target was already (falsely) linked to via supports to second target	data,own_claim
+supports	undetected	A32[25261:27768]	21		as	x	x	wrong annotation (direction)	own_claim,data
+supports	undetected	A32[4935:7737]	8			x	o	wrong annotation	data,own_claim
+supports	undetected	A32[7737:17722]	33		refer to		x	wrong (subordinate clause instead of main clause was targeted)	data,own_claim
+supports	undetected	A33[14720:20675]	7		-this is better than		o	wrong; maybe confused with contradicts because of comparison?	own_claim
+supports	undetected	A33[14720:20675]	47		-no longer		o	target is non contiguous	own_claim
+supports	undetected	A33[14720:20675]	56				o	semantic understanding necessary ("does not exceed..." -> "we can ... exclude"); target is non contiguous but was predicted as "supports"	backgroun_claim,own_claim
+supports	undetected	A33[20675:26705]	2				o	attached to closer adu, but this is then: own_claim -> background_claim	own_claim
+supports	undetected	A33[20675:26705]	3				o	wrong	backgroun_claim,own_claim
+supports	undetected	A33[20675:26705]	41		-works by		o	wrong; some content between data and background_claim; data after enttiy in brackets (distractor); predicting all at once would help	data,background_claim
+supports	undetected	A33[20675:26705]	61		to do this		o	long range (two sentences in between)	own_claim
+supports	undetected	A33[20675:26705]	61		to do this		o	long range (two sentences and an adu in between)	own_claim
+supports	undetected	A33[31336:33747]	2		however		o	very long range (4 adus in between); distracting connector	own_claim
+supports	undetected	A33[5602:9685]	5		-these methods	c	o	probably wrong annotation	data,background_claim
+supports	undetected	A33[5602:9685]	20				o	long range; seems to be not common for data -> background (reference, closest was detected)	data,background_claim
+supports	undetected	A33[5602:9685]	20				o	long range; seems to be not common for data -> background (reference, closest was detected)	data,background_claim
+supports	undetected	A33[5602:9685]	20				o	long range; seems to be not common for data -> background (reference, closest was detected)	data,background_claim
+supports	undetected	A33[5602:9685]	20				o	long range; seems to be not common for data -> background (reference, closest was detected)	data,background_claim
+supports	undetected	A33[5602:9685]	20				o	long range; seems to be not common for data -> background (reference, closest was detected)	data,background_claim
+supports	undetected	A33[5602:9685]	28				o	long range; seems to be not common for data -> background (reference, closest was detected)	data,background_claim
+supports	undetected	A33[5602:9685]	32				o	long range; seems to be not common for data -> background (reference, closest was detected)	data,background_claim
+supports	undetected	A33[5602:9685]	32				o	long range; seems to be not common for data -> background (reference, closest was detected)	data,background_claim
+supports	undetected	A33[5602:9685]	32				o	long range; seems to be not common for data -> background (reference, closest was detected)	data,background_claim
+supports	undetected	A33[9685:14720]	4		to achieve this		o	second adu contains "we need", disctractor (contaridicts)? 	own_claim
+supports	undetected	A33[9685:14720]	6		-these two goals:		o	"heading" not recognized	own_claim
+supports	undetected	A33[9685:14720]	6		as a result		o	not attached to "heading", but to one of its premises (also falsely connected with other target)	own_claim
+supports	undetected	A33[9685:14720]	6		as a result		o	not attached to "heading", but to one of its premises (also falsely connected with other target)	own_claim
+supports	undetected	A33[9685:14720]	10		specifically		o	falsely attached to main clause, but it is an specification of the sub clause (which is even closer); hard	own_claim
+supports	undetected	A33[9685:14720]	21				o	long range (one adu in between); long second adu with formula	own_claim
+supports	undetected	A33[9685:14720]	25				x	kind of abbreviation with bracktes, but containg a vers short formula; detecetd as parts_of_same	own_claim
+supports	undetected	A33[9685:14720]	26		in this		o	wrongly attached to other adu connected falsely with parts_of_same	own_claim
+supports	undetected	A33[9685:14720]	49		COLON		x	wrong direction, could be caused by colon that does not introduce a detailed explanation, but a conclusion/implication	own_claim
+supports	supports	A32[17722:25261]	9		as		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	11		as described in 		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	14		for		x	"for the reasonable ..." -> own_claim; same sentence	data,own_claim
+supports	supports	A32[17722:25261]	18		as stated in+BRACKETS		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	18		if		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	19		as		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	19		therefore		x	same sentence	own_claim
+supports	supports	A32[17722:25261]	24		BRACKETS		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	35		particularly+BRACKETS		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	36				x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	39		as stated in		x	"Section"; same sentence	data,own_claim
+supports	supports	A32[17722:25261]	40				x	"hence" is close, but does not belong to it; same sentence	data,own_claim
+supports	supports	A32[17722:25261]	42		if		x	same sentence	own_claim
+supports	supports	A32[17722:25261]	50		as shown in		x	"Figure" -> own_claim; same sentence	data,own_claim
+supports	supports	A32[17722:25261]	51		as		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	51		BRACKETS		x	"Figure" -> own_claim; same sentence	data,own_claim
+supports	supports	A32[17722:25261]	51		BRACKETS		x	"Figure" -> own_claim; same sentence	data,own_claim
+supports	supports	A32[17722:25261]	53		for		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	53		as		x	same sentence	own_claim
+supports	supports	A32[17722:25261]	54		SEMICOLON		x	contains numbers; same sentence	data,own_claim
+supports	supports	A32[17722:25261]	55		indicates that		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	57		as		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	61		as		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	67		BRACKETS		x	"Figure" -> own_claim; same sentence	data,own_claim
+supports	supports	A32[17722:25261]	67		if		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	69				x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	69		when		x	same sentence	data,own_claim
+supports	supports	A32[17722:25261]	70				o	wrong annotation (missing adu annotation for figure description linking data "Figure" with own_claim(s))	data,own_claim
+supports	supports	A32[1787:4935]	6		in order to		x	same sentence	data,background_claim
+supports	supports	A32[1787:4935]	7		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	11		due to		x	same sentence	data,background_claim
+supports	supports	A32[1787:4935]	11		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	11		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	11		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	11		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	16		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	21		SQUAREBRACKETS		x	ref; non contiguous; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	21		SQUAREBRACKETS		x	ref; non contiguous; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	21		SQUAREBRACKETS		x	ref; non contiguous; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	21		SQUAREBRACKETS		x	ref; non contiguous; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	21		SQUAREBRACKETS		x	ref; non contiguous; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	21		SQUAREBRACKETS		x	ref; non contiguous; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	26		especially+BRACKETS		x	same sentence	data,background_claim
+supports	supports	A32[1787:4935]	32		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	34		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	34		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A32[1787:4935]	35		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A32[25261:27768]	7				x	data in between non contiguous; same sentence	data,own_claim
+supports	supports	A32[25261:27768]	8		as explained in		x	"section"; same sentence	data,own_claim
+supports	supports	A32[25261:27768]	9		in		x	"Figure"; same sentence	data,own_claim
+supports	supports	A32[25261:27768]	19		as		x	same sentence	own_claim
+supports	supports	A32[25261:27768]	23		once		x	same sentence	data,own_claim
+supports	supports	A32[27768:28160]	3		such as		x	example; same sentence	data,own_claim
+supports	supports	A32[4935:7737]	4		depicts how		x	"Figure"; same sentence	data,own_claim
+supports	supports	A32[4935:7737]	5		as		x	same sentence	own_claim
+supports	supports	A32[4935:7737]	6		for		x	same sentence	data,own_claim
+supports	supports	A32[4935:7737]	8		see typical+BRACKETS		x	"Figure"; same sentence	data,own_claim
+supports	supports	A32[4935:7737]	11		as		x	same sentence	own_claim
+supports	supports	A32[4935:7737]	12		in		x	"in the xxx situattion," -> own_claim; same sentence	data,own_claim
+supports	supports	A32[4935:7737]	12		consequently		o		own_claim
+supports	supports	A32[4935:7737]	14		if		x	same sentence	data,own_claim
+supports	supports	A32[4935:7737]	15		thus		o		own_claim
+supports	supports	A32[4935:7737]	25		points out		x	"Section"; same sentence	data,own_claim
+supports	supports	A32[7737:17722]	15				x	data in between non contiguous; same sentence	data,own_claim
+supports	supports	A32[7737:17722]	35		such as		x	example; same sentence	data,own_claim
+supports	supports	A32[7737:17722]	79		as		x	same sentence; very long; same sentence	data,own_claim
+supports	supports	A32[7737:17722]	81		therefore		x	same sentence	own_claim
+supports	supports	A32[7737:17722]	84				x	same sentence	data,own_claim
+supports	supports	A32[7737:17722]	94		if		x	same sentence	data,own_claim
+supports	supports	A32[7737:17722]	95		for		x	same sentence	data,own_claim
+supports	supports	A32[7737:17722]	98		introduces		x	"section"; same sentence	data,own_claim
+supports	supports	A32[7737:17722]	101		for example		o	longer	data,own_claim
+supports	supports	A32[7737:17722]	106		therefore		o		data,own_claim
+supports	supports	A32[7737:17722]	109		assume		o	"assume that ... then"	data,own_claim
+supports	supports	A33[14720:20675]	6				o		data,own_claim
+supports	supports	A33[14720:20675]	8		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A33[14720:20675]	8		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A33[14720:20675]	8		SQUAREBRACKETS		x	ref; same sentence	data,background_claim
+supports	supports	A33[14720:20675]	26		see		o	"section"	data,own_claim
+supports	supports	A33[14720:20675]	26				o		data,own_claim
+supports	supports	A33[14720:20675]	29		as shown in		x	"figure"	data,own_claim
+supports	supports	A33[14720:20675]	39		shows that		x	"figure"	data,own_claim
+supports	supports	A33[14720:20675]	40		because		x	"because ..., there ..."	own_claim
+supports	supports	A33[14720:20675]	45		in contrast+in		x		data,own_claim
+supports	supports	A33[14720:20675]	52		SQUAREBRACKETS		x	ref	data,own_claim
+supports	supports	A33[14720:20675]	53		SQUAREBRACKETS		x	ref	data,background_claim
+supports	supports	A33[14720:20675]	56		COLON		x	"...: if ..., then ..." (note that the heading, i.e the part before colon, is targeted)	own_claim
+supports	supports	A33[14720:20675]	56		if then		x		data,own_claim
+supports	supports	A33[14720:20675]	56		because+BRACKETS		x		data,own_claim
+supports	supports	A33[1689:5602]	10		such as+SQUAREBRACKETS		x	data in between non contiguous	data,background_claim
+supports	supports	A33[1689:5602]	16		such as		x	example	data,background_claim
+supports	supports	A33[1689:5602]	19		when		x		data,background_claim
+supports	supports	A33[1689:5602]	23		because		x		data,background_claim
+supports	supports	A33[1689:5602]	25		BRACKETS		x	"figure"	data,own_claim
+supports	supports	A33[1689:5602]	28		BRACKETS+SQUAREBRACKETS		x	data in between non contiguous	data,background_claim
+supports	supports	A33[1689:5602]	32		because		x		data,own_claim

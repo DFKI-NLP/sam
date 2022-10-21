@@ -1,0 +1,10 @@
+T530404322afd109a0f695634b97dd4b6	data 11049 11065	Choi and Ko 2002
+T5bf9827582b68bb7be07d6eeadbfd176	data 11025 11047	Baraff and Witkin 1998
+Taa65047d8caff619ee7671d7cea962f4	own_claim 3042 3116;3165 3193	evaluating the constraint direction, −∇C(x) T , at the end of the timestep resolves (Q1), (Q2) and (Q4)
+T00b90779873f8fce72454f315bc230b1	background_claim 11067 11115	halt the Newton process after a single iteration
+Tea857e3604340ea65efd88260fb45473	background_claim 10963 11016	F ∈ O(h 2 ) is considered acceptable in many contexts
+T50b32ec1ed93252d81f05fba5bc2f6a0	data 3143 3153	Appendix A
+Rbbf69ea42b4a22945d3941b3ada1f25b	supports-GOLD Arg1:T50b32ec1ed93252d81f05fba5bc2f6a0 Arg2:Taa65047d8caff619ee7671d7cea962f4
+R7eeadac825f9d063160084ea1264a776	supports-GOLD Arg1:T00b90779873f8fce72454f315bc230b1 Arg2:Tea857e3604340ea65efd88260fb45473
+R74807e8acd0f6cdcfd34457f976d0d80	supports-GOLD Arg1:T530404322afd109a0f695634b97dd4b6 Arg2:T00b90779873f8fce72454f315bc230b1
+Ra97be0d6dfdc66f8dfe21d58892d4952	supports-GOLD Arg1:T5bf9827582b68bb7be07d6eeadbfd176 Arg2:T00b90779873f8fce72454f315bc230b1

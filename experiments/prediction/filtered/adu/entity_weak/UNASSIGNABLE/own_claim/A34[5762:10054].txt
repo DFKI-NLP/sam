@@ -1,0 +1,21 @@
+<H1>2 Collision Detection</H1>
+        
+          <H2>2.1 Collision detection using swept-volumes</H2>
+          A swept volume is a volume made by two sets of positional entities of a face one at time t and one at time t + t . Connecting these old and new positions of all particles in a face gives us a volume. Any collision happening within an integration time step always can be detected by this swept volume method, unless the motions of faces are highly rotational. An interesting case is where the faces are not actually intersecting but two swept volumes report a intersection anyway. Though this case is not an actual collision, it happens only when two faces are very close. Hence we resort to the collision report of this case, since we consider this case as a violation of the proximity law. We use classical edge-polygon detection algorithms to detect collisions among swept volumes. We use this swept volume approach for cloth and the dynamic rigid body alike, but for the non-moving rigid body only the surface faces are used for collision detection. In addition, we add proximity regions to the normal directions of faces of a swept volume to add proximity violation regions.
+        
+        
+          <H2>2.2 Saving detected collisions</H2>
+          
+            
+            Figure 1. Impact Zones
+          
+          Though detected collisions are reported as pairs of face-face, we cannot respond to each collision individually since these individual responses may introduce another new collision or one face may possibly be related to several other collisions. So we save all detected collisions in a data structure, i.e. a set of zones of impact 
+[ 12 ] during the collision detection phase. All stored detected collisions will be resolved comprehensively by the rule described in the next section. Originally a zone of impact (IZ) is an area where multiple self-collisions occur 
+[ 12 ]. We extend Provot’s definition of an IZ to an area where collisions happen, including collisions against bodies and self-collisions. An object O is a set of particles, faces, and edges, where faces and edges are defined based on the positions of particles by the rule comprising cloth surface. An area A is a subset of O such that all the particles and edges constituting a face in A are members of A . An area A is called separable when, for all faces 2 A , does not collide with any face in A . An area A is called colliding when, for all faces 2 A , collides with at least one face in A . An IZ is a separable colliding area. Fig. 1 shows a cross section view of a collision situation where three cases of IZs are shown by dotted circles. An area A is called visitable when, for all particles P 2 A , P can be encountered by traversing from any other particle in A using edges in A . Otherwise, the area A is non-visitable. We call a visitable subset area of an IZ a collision cluster (CC). When a face-face collision is detected, the entities of each colliding face (the particle and the edges of , and itself) are inserted into a CC, where the CC can be encountered by traversing from the particles in using only edges in . When there is no such CC, becomes a CC. When two or more such CCs are found, these CCs are merged into one CC connected by . In Fig. 1 , a CC is denoted as a shaded area.
+        
+      
+      A widely used method for detecting cloth collisions is to put small repellent proximity forces between the cloth surface and the rigid or cloth surface [ 4 , 14 , 3 ] while the actual collisions are tested with pairs of particle-face or face-face of the current positions. When objects are moving fast, however, these preventive proximity forces cannot prevent collisions since a particle can pass through the proximity violation region during one integration time step. This problem can be negligible when the integration time step is very small, so we rarely have those pass-through cases. However since implicit integration methods [ 3 , 5 , 7 ] have been used times for as cloth large simulations, as to meet the the frame time step rate has of 30 become 1 sec/frame. 
+larger, Consesomequently this penetration problem is no longer negligible, so we use the swept volume approach 
+[ 13 , 8 ] which will be described in the next section.
+      
+        

@@ -1,0 +1,4 @@
+Tcdbb884dd1d5cd374184282101b75b93	own_claim 2749 2796	a problem that we do not consider in this paper
+Td295020f8794c3b79c37629a34ce86bd	background_claim 2622 2747	they attacked the problem of measuring the 3D geometry of an object from the resting shape of a piece of cloth draped over it
+R556584b321e5fd2290b5d0ea3dae4492	contradicts-GOLD Arg1:Td295020f8794c3b79c37629a34ce86bd Arg2:Tcdbb884dd1d5cd374184282101b75b93
+R0b0479e93de3f636ce1ba85db19a0d5d	supports Arg1:Td295020f8794c3b79c37629a34ce86bd Arg2:Tcdbb884dd1d5cd374184282101b75b93

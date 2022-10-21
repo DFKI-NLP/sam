@@ -1,0 +1,36 @@
+T759fb2fcce297b0a0787cce3e14f3391	own_claim 62 189	We use a perceptually motivated metric to compare the motion of cloth in simulation with a video sequence of real fabric motion
+Tc2d5e17eb0b57ec0ecf8eb19f06a302c	background_claim 305 380	Real fabrics exhibit a wide variety of motion ranging from soft and flowing
+Tfe1c020e9ec64d7a2a8b3bac302cd052	data 382 387	satin
+Tf6c93fc6a8f2ba7f70e4a65fa3e61310	background_claim 389 397	to stiff
+T36de7ab60ebda41ab2fd32de75000e15	data 399 404	linen
+Tf2227340eec50ac201d3478e70c31a86	own_claim 407 463	Our metric captures the complex dynamics of cloth motion
+Td66bb8116f589354a191750a4e12b400	own_claim 473 519	helps to distinguish between different fabrics
+Tc325e9028ca51654630aa00388eb99b9	background_claim 521 645	Researchers in computational neurobiology hypothesize that the human perceptual system is sensitive to moving edges in video
+T33a039ce057a080a14f6038ff8d4cf5f	data 647 649	11
+T1ba8b08055e1ddbe6d267dd7772d3db5	data 652 654	12
+Tfd22656c3924f5c2b4b0b3a69147226a	data 657 659	36
+Td5b2627bc06f6a5ac11d62b8600c721e	background_claim 662 831	Studies have shown that the receptive fields of simple cells in the macaque cortex act as edge or line detectors, responding to oriented edges or lines in natural scenes
+T8700eb52b208eaeb2fe8975343ceeec8	data 833 835	19
+T78e090e31cca650d80b9a309cc708abe	data 838 840	35
+Td4407ec86bae1b8be458810f46634cc0	data 843 845	10
+Tbb55773dafa7445229f8e2e990106f8c	own_claim 848 935	In cloth, these edges correspond to folds, which are regions of high variation in shape
+T966622fa3d161c73f21b22f64c1841a1	own_claim 944 1132	our perceptually motivated metric for cloth compares two video sequences, one from simulation and one from the real world, and returns a number that measures the differences in their folds
+Td4f8740ebf55225810d5c73ecf89b3b8	background_claim 1349 1367	Haddon and Forsyth
+Td15e1833fe3c4c268c48c8d95719c854	data 1369 1371	15
+T3b84828f15dfea7d66a42cea002ec5a7	data 1374 1376	16
+T19a4ee744b3d4825c8b16019f45c3c5d	background_claim 1377 1473	describe a learning approach for detecting and grouping folds (and grooves) in images of fabrics
+Tf6e90f302ee46c3956f7a6789b4c8925	background_claim 1475 1563	Their technique can handle lighting effects caused by diffuse inter-reflections in cloth
+T0f8bb72e0563eb628a0a781d0e43bcec	background_claim 1574 1631	most fabrics have very complicated reflectance properties
+T96a57373728b9424046292441bc04b66	own_claim 1653 1793	we normalize the effects of lighting and material reflectance by projecting a structured light pattern of horizontal stripes onto the fabric
+T15d258b424fef8cd91b1539db9180394	own_claim 2380 2437	We define the resulting orientation image as an angle map
+T38096a1825b0803619b99dd7e4d6a609	data 2448 2454	Fig. 1
+T28c9fd8f6ea1b7cb4c94f335b5befadb	own_claim 2604 2697	We threshold the gradient of the angle map to get a gradient mask M k for each frame of video
+T468d1ffc27e9a15cc78b73ed7b446b41	data 2700 2706	Fig. 1
+T2330a369db71f6c6da4d0c0b33f39874	own_claim 2871 2981	The gradient mask is non-zero at regions of high gradients, corresponding to folds, and zero at planar regions
+T649b7ab386d1827b8a87c9650dc79dc1	own_claim 3000 3122	Our metric computes the frame by frame sum of squared differences (SSD) between masked angle maps in simulation with video
+T1082a849826edaf309895b76b0a179fc	own_claim 3534 3666	We pre-multiply this difference with the gradient mask, which helps to emphasize the differences in fold regions over planar regions
+Tc8d0f4c395cdb31c9d22379403c65ea9	data 3669 3675	Fig. 2
+T1b4b0544a3fc4e0b0391602ac9900b68	own_claim 4115 4201	we penalize the silhouette mismatch between the simulation and the video of real cloth
+T95eaa1a66721c843bd1f7d0308c60364	own_claim 4203 4277	This penalty is proportional to the difference between the two silhouettes
+T11535616d12f9525cf74a2d1db230906	own_claim 4655 4744	The error across the entire sequence of length N frames is given by N E = ∑ E k ( 9 ) k=1
+

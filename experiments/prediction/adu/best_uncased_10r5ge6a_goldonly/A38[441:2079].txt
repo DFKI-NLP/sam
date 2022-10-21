@@ -1,0 +1,31 @@
+<Title>Estimating Cloth Simulation Parameters from Video</Title>
+      
+      
+        
+          Kiran S. Bhat
+        
+        
+          Christopher D. Twigg
+        
+        
+          Jessica K. Hodgins
+        
+        
+          Pradeep K. Khosla
+        
+        
+          Zoran Popović
+        
+        
+          Steven M. Seitz
+        
+      
+      1 School of Computer Science, Carnegie Mellon University 2 Department of Computer Science and Engineering, University of Washington
+      
+        
+      
+      <Abstract>Cloth simulations are notoriously difficult to tune due to the many parameters that must be adjusted to achieve the look of a particular fabric. In this paper, we present an algorithm for estimating the parameters of a cloth simulation from video data of real fabric. A perceptually motivated metric based on matching between folds is used to compare video of real cloth with simulation. This metric compares two video sequences of cloth and returns a number that measures the differences in their folds. Simulated annealing is used to minimize the frame by frame error between the metric for a given simulation and the real-world footage. To estimate all the cloth parameters, we identify simple static and dynamic calibration experiments that use small swatches of the fabric. To demonstrate the power of this approach, we use our algorithm to find the parameters for four different fabrics. We show the match between the video footage and simulated motion on the calibration experiments, on new video sequences for the swatches, and on a simulation of a full skirt.</Abstract>
+    
+    
+      
+        

@@ -1,0 +1,8 @@
+Td9201b8c5032e9a379321c829af447c2	own_claim-GOLD 62 189	We use a perceptually motivated metric to compare the motion of cloth in simulation with a video sequence of real fabric motion
+T4735270d3b4b5a247c42c3cd46e798c5	own_claim-GOLD 407 463	Our metric captures the complex dynamics of cloth motion
+T29dd48b9830b3575b116ad0d572dbe19	own_claim-GOLD 473 519	helps to distinguish between different fabrics
+T917cd68a42bc09ebe53fdd3d06564d2c	own_claim-GOLD 944 1132	our perceptually motivated metric for cloth compares two video sequences, one from simulation and one from the real world, and returns a number that measures the differences in their folds
+T759fb2fcce297b0a0787cce3e14f3391	own_claim 62 189	We use a perceptually motivated metric to compare the motion of cloth in simulation with a video sequence of real fabric motion
+Tf2227340eec50ac201d3478e70c31a86	own_claim 407 463	Our metric captures the complex dynamics of cloth motion
+Td66bb8116f589354a191750a4e12b400	own_claim 473 519	helps to distinguish between different fabrics
+T966622fa3d161c73f21b22f64c1841a1	own_claim 944 1132	our perceptually motivated metric for cloth compares two video sequences, one from simulation and one from the real world, and returns a number that measures the differences in their folds

@@ -1,0 +1,129 @@
+Tbc2a607b6dc452ecd249dc2059c964c8	background_claim-GOLD 45 188	The choice of the adequate integration method has to be carried out using various considerations related to the kind of problem to be simulated
+Tff8f08545dfe7cb6a8c59e7a111873d5	background_claim-GOLD 231 336	The size of the problem, mostly related to the number of particles used to describe the mechanical system
+T5be4445cbbe95531ce00425f02edd574	background_claim-GOLD 340 505	The desired accuracy, which reflects the allowable numerical tolerance between the computed solution and the theoretical evolution expected from the mechanical model
+T3be99cf10fea2b3459d4127a086ff54d	background_claim-GOLD 509 778	The simulation context, which can either be an extensive computation of the motion along time requiring accurate evaluation of all the dynamical factors, or a simple relaxation process where the simulation has to converge to the static rest state as quickly as possible
+T40f808abf81488c85a1fe2aac27cf6ec	background_claim-GOLD 782 1076	The stiffness of the problem, mainly related to the rigidity of the particle interactions and the size of the chosen time step, which translated into the “difficulty” the numerical method has to compute the evolution numerically, and which practically causes inaccuracy and instability problems
+T3ccbdc690bfbcad569bb6150925e0a06	background_claim-GOLD 1080 1160	The time an iteration takes to compute, and the number of mechanical derivations
+T021784b1fe9e7087b0923ab73700efd9	background_claim-GOLD 1224 1259	the methods requires to compute one
+T7256b7777f3aaefc400fd330bf23cdc3	background_claim-GOLD 1261 1402	The literature is abundant about various integration methods which aim to solve linear systems of first-order ordinary differential equations
+T11825908c5db76c7800cc4a6db3c94fd	data-GOLD 1406 1412	PRE 92
+T647625720f84ad61622b0c11b25b3b3a	background_claim-GOLD 1416 1686	One can easily turn the second-order systems relating dynamical mechanical systems into first-order systems by constructing a state vector defined by the concatenation of position and speed states of the system, such as to fit the requirements of any of these algorithms
+Tee26c72e446f0c475b3d6093a326a491	background_claim-GOLD 1688 1757	Among all the available methods, we can identify several main classes
+T826ab6af70929c0290b29669e6c0320d	background_claim-GOLD 1761 1906	Explicit methods, which compute the state of the next time step out of a direct extrapolation of the previous states using derivative evaluations
+T9fd5900015abda1e41becb83c7afcd64	background_claim-GOLD 1910 2059	Implicit methods, which deduce the state of the next time step from an equation system expressing some “reversibility” from the extrapolated solution
+Tdd099c9690b701dd7625f0b212b8768f	background_claim-GOLD 2063 2225	Low-order methods, which use a reduced number of evaluations for computing simple low-order extrapolations, leading to quickly computed, but inaccurate iterations
+T87dffc735422b06b1117e855c3df10d0	background_claim-GOLD 2229 2366	High-order methods, which use several evaluations to compute high-order solutions that get much more accurate as the time step is reduced
+Te64d8a396d3722186118175d63f51d16	own_claim-GOLD 2424 2770	We shall restrict our consideration to three different methods which explore the range of these classes, and which seem to fit the best the requirements set for cloth simulation problems, in terms of implementation simplicity and efficiency for particle systems using large numbers of particles that interact sparsely and with a constant topology
+Tb338f81c3b8f3728664c06efdd18c638	background_claim-GOLD 2904 3027	It requires two mechanical derivations per iteration and returns a second-order accurate solution relative to the time step
+T923b0fe18a14e7a538deceae0f325e49	background_claim-GOLD 3029 3078	It also requires two storages of the state vector
+Ta5c272f17fba7dc8dcffc41a99dbe834	own_claim-GOLD 3080 3150	We preferred this method to the still simpler first-order Euler method
+Tfc75bf4a0160eb104c355630a35570f5	background_claim-GOLD 3163 3291	the obvious gains of accuracy and stability which, despite the additional mechanical evaluation, makes it largely more efficient
+Tea284cf8221529f9121629d25ef3160b	background_claim-GOLD 3293 3342	We implemented this method for garment simulation
+T2b66f92fd5f723b5e482c5708306703c	data-GOLD 3349 3355	VOL 95
+T48ed3bc4933689bfbf013c6c580e7a43	background_claim-GOLD 3468 3567	It requires five mechanical derivations per iteration, as well as five storages of the state vector
+T3a7659098970f449d14d10ea51dc7a8b	background_claim-GOLD 3569 3676	This method is supposed to provide high accuracy, which increases significantly as the time step is reduced
+T8f759cca02ed98b904849ea6a09dc4ca	background_claim-GOLD 3678 3709	This method was experimented in
+Td1bf5cb3a5a8b911fba6f604af05cc14	data-GOLD 3712 3718	EBE 96
+T0675d37c2b5d603e8d11f2f17af2d136	data-GOLD 3727 3733	VOL 97
+T407798ec9c4112af80fc802bb9ee1e38	background_claim-GOLD 3739 3836	The Backward Euler method, which is the implicit implementation of its simple forward counterpart
+T2cee819c8bb7229dde14ecffeac7a0a1	background_claim-GOLD 3838 4045	It requires one mechanical evaluation and the resolution of a sparse linear system per iteration, as well as one storage of the system state additionally to those required for the system resolution algorithm
+Te90e14166268ead9b49ca3917ee9594b	background_claim-GOLD 4047 4177	This method is supposed to provide approximate results that are not subject to numerical instability as the time step is increased
+Tf94b24ffded9a52f1c1c1d80f5f9479a	own_claim-GOLD 4179 4306	We implemented this method combined with a Conjugate Gradient algorithm using linear system matrix products computed on the fly
+T632b830e01a219f13ba77521da45aed9	own_claim-GOLD 4337 4514	and thus able to take into account the anisotropy and nonlinearities of the mechanical model as the actual Hessian matric is used for each current state of the mechanical system
+T4a8cbcde263f9102b021be5856197fd4	own_claim-GOLD 4516 4624	No initial matrix setup is required, suppressing also the need of separating linear and nonlinear components
+T8e81770d0995aa848c7750530786dabf	data-GOLD 4643 4649	EBE 00
+Te9a03b74d3006143c5282e4850babc3e	own_claim-GOLD 4653 4801	We have also carried out some preliminary tests with the Rosenbrook method, which is an implicit implementation of a fourth-order Runge-Kutta method
+T1f8fb0f3b9ad9b2ec4b61f7d1f56a978	background_claim-GOLD 4803 4902	It is supposed to combine the stability of implicit methods with the accuracy of high-order methods
+T43a134be9161fa19cbd1b3e5a7b6ca5f	own_claim-GOLD 4904 4963	We implemented this method using the algorithm described in
+T5a41cb6fa21fe18a8941823d837f9fa6	data-GOLD 4967 4973	PRE 92
+T10448ae526dacae5e156509532c9ba63	own_claim-GOLD 4982 5039	preliminary experiments have shown very deceptive results
+T5acb9ed8f730ae5b1e042ebdf44d6c56	own_claim-GOLD 5045 5135	the gain of accuracy did not compensate the large calculations required for each iteration
+T3e9781f39560c7046f744fb6a6738d01	own_claim-GOLD 5145 5266	increased instability problems did not allow time steps much larger than those used for good accuracy with backward Euler
+T2d18b290548bf02040d9cede477f86af	own_claim-GOLD 5268 5426	We did not consider in our tests the methods aimed toward simplifications which might highly approximate and degrade the dynamic behavior of deformable models
+Tba5ce80b78a63e97e5f53d3d6b7740d8	background_claim-GOLD 5436 5490	implicit integration with precomputed inverse matrices
+T2506562444b6b251857dafc626aae8bc	data-GOLD 5493 5499	DES 99
+Tce85aee09c3d53991c7d5bbdd9673188	background_claim-GOLD 5503 5640	which involves high simplification and linrarization of the Hessian matrix and which also becomes very unpractical for large matrix sizes
+T95843b7483a585954f6d9e791e2f00d0	own_claim-GOLD 5701 5801	We simulated such algorithm using accurate resolution on an accordingly approximated constant matrix
+Tb4b43b7ca4c3992df2b2c34761d0f0d2	own_claim-GOLD 5821 5873	these approximations produced more simulation errors
+T90af69658ca7eb68ec95fd26b4837294	own_claim-GOLD 5940 6075	than producing a quick and rough linear system solution using a reduced number of Conjugate Gradient iterations with an accurate matrix
+T39b8c430112b0d7127bcfd349352e1e8	background_claim-GOLD 6077 6110	Even more drastic simplifications
+Tfbef4cfc22d99fb1bb9e84a9bb754111	data-GOLD 6113 6119	KAN 00
+T1b6d7fbf3e0d482cd7409f5df36384d2	background_claim-GOLD 6122 6169	reduce the matrices to their diagonal component
+T2d3586849e7f999378d7a85bd3fd26cf	background_claim-GOLD 6393 6411	A complete surface
+Te96989a29656baa6d138736bf27e17e5	background_claim-GOLD 6412 6482	elasticity model which allows the simulation of anisotropic elasticity
+T83a831ec32030ac133f7e398653e48d6	background_claim-GOLD 6544 6568	and associated viscosity
+T3e17c831bad8af20afcf6d1dd61900a5	background_claim-GOLD 7121 7200	This model is one of the simplest that a cloth simulation application would use
+T22eaf2e76a24f58a1d05e3c7e15de164	own_claim-GOLD 7202 7267	The implementation also supports collision detection and response
+Tc6928b7a7acae88305bde3863036d3c0	own_claim-GOLD 7306 7484	An object-oriented framework written in C++ integrate all these technologies into a single application allowing simulation of cloth objects of any shape with specified parameters
+T658a9aacf0a4d0798e0c05ab5986b3c4	own_claim 45 188	The choice of the adequate integration method has to be carried out using various considerations related to the kind of problem to be simulated
+T8e09df081a57c9c8f200c0cf24711109	own_claim 338 505	* The desired accuracy, which reflects the allowable numerical tolerance between the computed solution and the theoretical evolution expected from the mechanical model
+T7281b4a5a862e5de5f740b36b55bb98a	own_claim 507 778	* The simulation context, which can either be an extensive computation of the motion along time requiring accurate evaluation of all the dynamical factors, or a simple relaxation process where the simulation has to converge to the static rest state as quickly as possible
+T22f674dd8189911e2c1b43d70ef13e24	background_claim 1022 1076	practically causes inaccuracy and instability problems
+T25d20c24872ce72c61c13f9862d69900	background_claim 1224 1259	the methods requires to compute one
+Tb1f3758f89120aea1938d9d028e4e1ea	background_claim 1261 1402	The literature is abundant about various integration methods which aim to solve linear systems of first-order ordinary differential equations
+T3751cc9ca28e38e832c80d1d320b7f8d	data 1406 1412	PRE 92
+T479a90320b909dba1b5842e62f015caf	background_claim 1416 1626	One can easily turn the second-order systems relating dynamical mechanical systems into first-order systems by constructing a state vector defined by the concatenation of position and speed states of the system
+T6ad3a90579fec331c507ca200789887f	own_claim 1688 1757	Among all the available methods, we can identify several main classes
+Taeee383c489b6355d94ce84c6ca3f053	own_claim 1761 1906	Explicit methods, which compute the state of the next time step out of a direct extrapolation of the previous states using derivative evaluations
+Tf5ad77ea55c5e2520e9ffb8dc3065e0d	own_claim 1910 2059	Implicit methods, which deduce the state of the next time step from an equation system expressing some “reversibility” from the extrapolated solution
+T08b8b8107b68b3ed7796d00b4ef8b42d	background_claim 2063 2225	Low-order methods, which use a reduced number of evaluations for computing simple low-order extrapolations, leading to quickly computed, but inaccurate iterations
+T4716e056b33aae893ba4b52ec7025837	own_claim 2229 2366	High-order methods, which use several evaluations to compute high-order solutions that get much more accurate as the time step is reduced
+T4d31bb459d3c9ea80ba9166140a7e7de	own_claim 2424 2770	We shall restrict our consideration to three different methods which explore the range of these classes, and which seem to fit the best the requirements set for cloth simulation problems, in terms of implementation simplicity and efficiency for particle systems using large numbers of particles that interact sparsely and with a constant topology
+T7e4d06d556a34969c02474b8c19c93c4	own_claim 2772 2825	The methods that we consider for this application are
+Tbb323283397807e3db666e7ae8b389f6	own_claim 2829 2902	The explicit Midpoint method, which is a simple low-order explicit method
+T1ede0e7bd7e3382c2dd5ac479098e115	own_claim 2904 2956	It requires two mechanical derivations per iteration
+Td01540b8b1a8f32242a7695e29e547bb	own_claim 2961 3027	returns a second-order accurate solution relative to the time step
+T8c6d4bd07f862e9a2c62e7912f9673b3	own_claim 3029 3078	It also requires two storages of the state vector
+T7632c0d356f637b011d7b3f74a0e78cc	own_claim 3080 3150	We preferred this method to the still simpler first-order Euler method
+T9af711f90ec6289e96e4d16454e6bd5e	own_claim 3163 3206	the obvious gains of accuracy and stability
+T4317be13770d34c3746efe08c7f359d7	own_claim 3222 3258	the additional mechanical evaluation
+Te7a5c1a90ce29327c25b7e8bf962ce96	own_claim 3260 3291	makes it largely more efficient
+T790df4853fd301c6fdc8c0c8c442d8bc	own_claim 3293 3345	We implemented this method for garment simulation in
+T6a3373b527394f4c91963c10aabf15ed	data 3349 3355	VOL 95
+Td20ad3c3bd26383dbd5e59aad7a0f602	background_claim 3361 3454	The explicit Runge-Kutta method, implemented in its fifth-order version with error evaluation
+T86a7e89ae58440f89200dc81ef0997a0	data 3458 3464	PRE 92
+T8d2b35a390e265e13a27717da05bc2c1	background_claim 3468 3567	It requires five mechanical derivations per iteration, as well as five storages of the state vector
+T727dcf5c3a1e863a25a57f94f28156af	own_claim 3569 3617	This method is supposed to provide high accuracy
+Te50fc8ef0c57e841514b6960123aff64	background_claim 3625 3676	increases significantly as the time step is reduced
+Tfe0c5be2f562b358c4af57f5f359f908	background_claim 3678 3709	This method was experimented in
+Tc7d9845ab2cbc7475390c54eabfc84de	data 3712 3718	EBE 96
+T921e50dadc7b1c1012f6da3a8837b1ed	data 3727 3733	VOL 97
+T0f58a927cb624bd9fb40f92cc4fc8869	background_claim 3739 3836	The Backward Euler method, which is the implicit implementation of its simple forward counterpart
+Teb6181e538cdb4b0a6389ab6fc739e9f	background_claim 3838 4045	It requires one mechanical evaluation and the resolution of a sparse linear system per iteration, as well as one storage of the system state additionally to those required for the system resolution algorithm
+T4e73f5cbde452f5957d8eec4e6ed96ad	own_claim 4047 4177	This method is supposed to provide approximate results that are not subject to numerical instability as the time step is increased
+T89ce48d15d04fc7d3023c1dce1b75e34	own_claim 4179 4306	We implemented this method combined with a Conjugate Gradient algorithm using linear system matrix products computed on the fly
+T2db584f1bd900e7d52e96607bd35317f	data 4327 4333	VOL 00
+T97d00b7b369798b08a622139a277d7e6	own_claim 4346 4429	able to take into account the anisotropy and nonlinearities of the mechanical model
+T1aaef5969b4f59e24406b8602acb07b1	data 4433 4514	the actual Hessian matric is used for each current state of the mechanical system
+Tc740419a6bae562ec8fea16dd1bfd1a2	own_claim 4516 4551	No initial matrix setup is required
+Tca0483ff66443e33e5f7c7ece184e52c	own_claim 4570 4624	the need of separating linear and nonlinear components
+T2840605c205a9092d8a35ff551d250fd	data 4643 4649	EBE 00
+T32d3b9e7d14546a39a48082fcb77d317	own_claim 4803 4902	It is supposed to combine the stability of implicit methods with the accuracy of high-order methods
+T1b538a4eede53693939da05e6cb4e24a	data 4967 4973	PRE 92
+Tcc05057857a8213cb47c053db412d620	own_claim 4982 5039	preliminary experiments have shown very deceptive results
+T460d45355d970f8b239302ac7ab76e84	own_claim 5045 5135	the gain of accuracy did not compensate the large calculations required for each iteration
+T713ab89c3ee0e0053fba83b1b86d80d6	own_claim 5145 5266	increased instability problems did not allow time steps much larger than those used for good accuracy with backward Euler
+T98e90e859ac747f04ea501a5403b52bc	own_claim 5268 5426	We did not consider in our tests the methods aimed toward simplifications which might highly approximate and degrade the dynamic behavior of deformable models
+T661ad1b75703b183bacd453aced6cb7d	data 5436 5490	implicit integration with precomputed inverse matrices
+T6594d96348cc774d29809bb9b8e0e6dd	data 5493 5499	DES 99
+T11d30f592b72432980c93c7b14302ee1	own_claim 5503 5640	which involves high simplification and linrarization of the Hessian matrix and which also becomes very unpractical for large matrix sizes
+T2c61b9fd49499f791c50533fa4671758	own_claim 5642 5698	the inverse of a sparse matrix is not necessarily sparse
+T37d985c70b1c086d448c6eb5e8833608	own_claim 5821 5873	these approximations produced more simulation errors
+T95d3fe9419ec3dc7185d63722785ad67	own_claim 5875 5938	on dynamic behavior of wrinkles and motion damping particularly
+T6200b8b7689f896b2757609cc2e10815	own_claim 5940 6075	than producing a quick and rough linear system solution using a reduced number of Conjugate Gradient iterations with an accurate matrix
+T29dfc461994db8f846bd74155535e532	own_claim 6077 6110	Even more drastic simplifications
+T3a6fa6709e91d504e2805f10e93a4ba2	data 6113 6119	KAN 00
+T28dd7f93b45547ce73d8a9aa32b06211	own_claim 6122 6169	reduce the matrices to their diagonal component
+T26b996839641fa245d957892f4a0bf49	own_claim 6230 6389	All these methods were implemented in a single framework, which allows the simulation of cloth objects, using two different discrete mechanical representations
+Tcd395e4e0e442f15992494c847d59a66	own_claim 6393 6482	A complete surface elasticity model which allows the simulation of anisotropic elasticity
+Tb2724beb29f9f5e4a613a62bceac987d	data 6484 6511	weft and warp Young modulus
+Tc63c0b4cd1358fc12656b5a816b5ac0e	data 6513 6521	shearing
+Ta1393df22e408530f79230e64ca52fef	data 6523 6542	Poisson coefficient
+T4b2e121256a9b7d0be1e6a65c88d8a49	own_claim 6544 6568	and associated viscosity
+T4ff25044e165b10c79720e7fab749094	own_claim 6570 6597	Bending is also implemented
+T855bc0c6622c3e07cc79ef4b2101a354	own_claim 6921 7119	A simplified spring-mass model which represents an approximated equivalent elasticity model using linear viscoelastic springs connecting the particle couples describing each edge of the surface mesh
+Tea63d8cc98922826a2fc3518f19b8f8e	own_claim 7121 7200	This model is one of the simplest that a cloth simulation application would use
+T970def8e9d85c9ce8aaa4c6be2ab724c	own_claim 7202 7304	The implementation also supports collision detection and response, which were disabled for these tests
+Tbab6529b009d71e89cb2ecaa4cb0d037	own_claim 7306 7484	An object-oriented framework written in C++ integrate all these technologies into a single application allowing simulation of cloth objects of any shape with specified parameters
+T8d43f7965f02a02469506070b06c58dd	own_claim 7609 7740	Performance timings are done on the mechanical computation only, and do not take into account display and data structure management
+

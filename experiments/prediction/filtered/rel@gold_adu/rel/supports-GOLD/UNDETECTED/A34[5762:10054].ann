@@ -1,0 +1,12 @@
+Td2a4aaed406dbdb0fbac322404d9e265	own_claim 1524 1584	one face may possibly be related to several other collisions
+Tfb169574157c9bc3708e06913d5d59b0	own_claim 1403 1451	we cannot respond to each collision individually
+T69a91772c21175163f77a24a3eb18202	own_claim 4134 4182	this penetration problem is no longer negligible
+T90e533edb4ee5786bf0060c76b87cfac	data 3977 3978	5
+T5d56c81d45004a74ec502c1d0804b80e	background_claim 3942 3970;3985 3999;4006 4009;4013 4018;4025 4036	implicit integration methods have been used for cloth simulations
+T90544b2e9c697917f92c01d815e24d0c	data 3973 3974	3
+T025645ff2fd994ca62c7122f19eb2cbf	background_claim 4053 4056;4063 4072;4078 4081;4088 4094;4109 4115	the time step has become larger
+Rf92d7e0ac07101c4cb21c98fcdcb4f92	supports-GOLD Arg1:Td2a4aaed406dbdb0fbac322404d9e265 Arg2:Tfb169574157c9bc3708e06913d5d59b0
+R20c6d5034d0090c6d004fa30f286b0d3	supports-GOLD Arg1:T90544b2e9c697917f92c01d815e24d0c Arg2:T5d56c81d45004a74ec502c1d0804b80e
+R214c9d6e73747328025e724ba0c8eed3	supports-GOLD Arg1:T90e533edb4ee5786bf0060c76b87cfac Arg2:T5d56c81d45004a74ec502c1d0804b80e
+R37b2c0d59b7b12a0912c9cd3e93f399b	supports-GOLD Arg1:T5d56c81d45004a74ec502c1d0804b80e Arg2:T025645ff2fd994ca62c7122f19eb2cbf
+R05924639cb8a29afbd2b0d0e8054226f	supports-GOLD Arg1:T025645ff2fd994ca62c7122f19eb2cbf Arg2:T69a91772c21175163f77a24a3eb18202

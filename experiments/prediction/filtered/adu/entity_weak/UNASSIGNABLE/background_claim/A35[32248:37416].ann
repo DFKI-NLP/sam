@@ -1,0 +1,6 @@
+T2a746f82a73c361c7dda20149ba3320a	background_claim 123 230	The implicit Euler method seems effectively a good candidate for most situations involving cloth simulation
+T027b48d90b339ecfa1064ebce9e268a8	background_claim 1039 1139	it should be kept in mind that this is still done at the expense of accuracy of the whole simulation
+Tc7e775213aa4195b62cb51e78f07bdc9	background_claim 3808 3900	This may however require prohibitive computation times for very stiff and discretized models
+T715ba474c924f0ea2dfa76023f35c5bc	background_claim 4094 4183	is a very good hint to the very sensitive problem of optimal time step size determination
+T89a996587fdb828ee165a4f34564a359	background_claim 4185 4322	The simpler Midpoint method may have some interest only in very particular cases involving very loose materials with rough discretization
+Te75401f5d4e68114699ad8c9d0933199	background_claim 4653 4752	complex models that, for garment simulation, express fully visual experience of real fashion models

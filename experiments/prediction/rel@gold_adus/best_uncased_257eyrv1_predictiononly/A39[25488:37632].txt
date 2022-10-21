@@ -1,0 +1,66 @@
+<H1>4 Forces</H1>
+        Cloth’s material behavior is customarily described in terms of a scalar potential energy function E(x); the force f arising from this energy is f = −∂E/∂x. Equation (6) requires both the vector f and the matrix ∂f/∂x. Expressing the energy E as a single monolithic function—encompassing all aspects of the cloth’s internal behavior—and then taking derivatives is impractical, from a bookkeeping point of view. A better approach is decompose E into a sum of sparse energy functions; that is, to write E(x) = α E α (x) where each E α depends on as few elements of x—as few particles—as possible. However, even decomposing E into sparse energy functions is not enough. Energy functions are an undesirable starting point because sensible damping functions cannot be derived from energy functions. Instead, we define internal behavior by formulating a vector condition C(x) which we want to be zero, and then defining the associated energy as k C(x) T C(x) where k is a stiffness constant. 2 In section 4.5, we show how sensible damping functions can be constructed based on this formulation. An added bonus is that starting from this vector-based energy description tends to result in a simpler, more compact, and more easily coded formulation for ∂f/∂x than proceeding from an energy function in which the structure of C has been lost.
+      
+      
+        <H2>4.1 Forces and Force Derivatives</H2>
+        Given a condition C(x) which we want to be zero, we associate an energy function E C with C by writing E C (x) = k 2 C(x) T C(x) where k is a stiffness constant of our choice. Assuming that C depends on only a few particle, C gives rise to a sparse force vector f. Recall from section 2.1 that we view the vector f in block form; each element f i is a vector in IR 3 . For each particle i that C depends on,
+        
+          7
+          f i = − ∂E ∂x C i = −k ∂C(x) ∂x i C(x);
+        
+        all the other elements of f are zero. Similarly, the derivative of f is also sparse. Defining the derivative matrix K = ∂f/∂x, the nonzero entries of K are K ij for all pairs of particles i and j that C depends on. Again, we treat K in block fashion: K ∈ IR 3n×3n , so an element K ij is a 3 × 3 matrix. From equation (7), we have
+        
+          8
+          K ij = ∂x ∂f i j = −k ∂C(x) ∂x i ∂C(x) ∂x j T + ∂ ∂x 2 C(x) i ∂x j C(x) .
+        
+        Additionally, since K ij is a second derivative—that is, K ij = ∂f i /∂x j = ∂ 2 E/∂x i ∂x j —we have K ij = K T ji so K is symmetric. Note that since C does not depend on v, the matrix ∂f/∂v is zero. We can now easily describe the internal forces acting on the cloth, by just writing condition functions. Forces and their derivatives are easily derived using equations (7) and (8).
+      
+      
+        <H2>4.2 Stretch Forces</H2>
+        Recall that every cloth particle has a changing position x i in world space, and a fixed plane coordinate (u i , v i ). Even though our cloth is modeled as a discrete set of points, grouped into triangles, it will be convenient to pretend momentarily that we have a single continuous function w(u, v) that maps from plane coordinates to world space. Stretch can be measured at any point in the cloth surface by examining the derivatives w u = ∂w/∂u and w v = ∂w/∂v at that point. The magnitude of w u describes the stretch or compression in the u direction; the material is unstretched wherever w u = 1. Stretch in the v direction is measured by w v . (Some previous continuum formulations have modeled stretch energy along an axis as essentially (w u T w u − 1) 2 , which is a quartic function of position 
+[ 15 , 16 , 17 , 4 ]. We find this to be needlessly stiff; worse, near the rest state, the force gradient—a quadratic function of position—is quite small, which partially negates the advantage implicit integration has in exploiting knowledge of the force gradient. A quadratic model for energy is, numerically, a better choice.) We apply this stretch/compression measure to a triangle as follows. Let us consider a triangle whose vertices are particles i, j and k. Define x 1 = x j − x i and x 2 = x k − x i . Also, let u 1 = u j − u i , while u 2 = u k − u i and similarly for v 1 and v 2 . We approximate w(u, v) as a linear function over each triangle; this is equivalent to saying that w u and w v are constant over each triangle. This lets us write x 1 = w u u 1 + w v v 1 and x 2 = w u u 2 + w v v 2 . Solving for w u and w v yields
+        46
+        SIGGRAPH 98, Orlando, July 19–24
+        C OMPUTER G RAPHICS Proceedings, Annual Conference Series, 1998
+        
+          9
+          −1 (w u w v ) = ( x 1 x 2 ) v u 1 1 v u 2 2 .
+        
+        Note that x 1 and x 2 vary during the simulation but the matrix in the above equation does not. We can treat w u and w v as functions of x, realizing that they depend only on x i , x j and x k and using equation (9) to obtain derivatives. The condition we use for the stretch energy is
+        
+          10
+          C(x) = a w w u v (x) (x) − − b b v u
+        
+        where a is the triangle’s area in uv coordinates. Usually, we set b u = b v = 1, though we need not always do so. In particular, if we want to slightly lengthen a garment (for example, a sleeve) in the u direction, we can increase b u , which causes w u to seek a larger value, and tends to induce wrinkles across the u direction. Likewise, we might decrease b v near the end of a sleeve, inducing a tight cuff, as on a sweatshirt. We have found the ability to control shrink/stretch anisotropically to be an indispensable modeling tool.
+      
+      
+        <H2>4.3 Shear and Bend Forces</H2>
+        Cloth likewise resists shearing in the plane. We can measure the extent to which cloth has sheared in a triangle by considering the inner product w u T w v . In its rest state, this product is zero. Since the stretch term prevents the magnitudes of w u and w v from changing overly much, we need not normalize. By the small angle approximation, the product w u T w v is a reasonable approximation to the shear angle. The condition for shearing is simply C(x) = aw u (x) T w v (x) with a the triangle’s area in the uv plane. We measure bend between pairs of adjacent triangles. The condition we write for the bend energy depends upon the four particles defining the two adjoining triangles. If we let n 1 and n 2 denote the unit normals of the two triangles and let e be a unit vector parallel to the common edge, the angle θ between the two faces is defined by the relations sin θ = (n 1 × n 2 ) · e and cos θ = n 1 · n 2 . We define a condition for bending by writing simply C(x) = θ which results in a force that counters bending. 5 The assumption that the stretch energy will keep the cloth from stretching much allows us to treat n 1 , 5 For reasonably equilateral triangles, as edge lengths decrease, the curvature represented by a particular angle θ between triangles increases. Since the square of the curvature—a a good measure of the bend energy in cloth— increases at the same rate that the triangle’s area decreases, the condition C should not be scaled by the triangles’ areas. See Breen et al. [ 3 ]
+ for a further discussion of relating curvature to bend angle. n 2 and e as having a constant length at each step of the simulation. This makes differentiating θ with respect to x a manageable task. Rectangular meshes make it simple to treat bending anisotropically. The uv coordinates associated with particles make this possible for triangular meshes as well. Given material for which bending in the u and v directions are weighted by stiffnesses k u and k v , we can emulate this anisotropy as follows. Let the edge between the triangles be between particles i and j, and define u = u i − u j and v = v i − v j . The stiffness weighting for this edge should simply be k u ( u) 2 + k v ( v) 2 . ( u) 2 + ( v) 2
+      
+      
+        <H2>4.4 Additional Forces</H2>
+        To the above forces we also add easily implemented forces such as gravity and air-drag (which is formulated on a per-triangle basis, and opposes velocities along the triangle’s normal direction). When the simulation is fast enough to interact with, we add user-controlled “mouse” forces. These forces and their gradients are easily derived.
+      
+      
+        <H2>4.5 Damping</H2>
+        The energies we have just described are functions of position only. Robust dynamic cloth simulation, however, is critically dependent on well-chosen damping forces that are a function of both position and velocity. For example, the strong stretch force must be accompanied by a suitably strong damping force if we are to prevent anomalous in-plane oscillations from arising between connected particles. However, this strong damping force must confine itself solely to damping in-plane stretching/compressing motions: stretch damping should not arise due to motions that are not causing stretch or compression. Terzopoulos et al.’s [ 16 , 17 ]
+ treatment of cloth used a simple viscous damping function which dissipated kinetic energy, independent of the type of motion. Carignan et al. [ 4 ]
+ improved upon this somewhat, borrowing a formulation due to Platt and Barr [ 11 ]; however, their damping function—a linear function of velocity—does not match the quartic energy functions of their continuum formulation. In this section we describe a general treatment for damping that is independent of the specific energy function being damped. It is tempting to formulate a damping function for an energy function E(x) by measuring the velocity of the energy, E  ̇ = d E(x). dt This is an easy trap to fall into, but it gives nonsensical results. At an equilibrium point of E, the gradient ∂E/∂x vanishes. Since E  ̇ = (∂E/∂x) T x, we find that E  ̇ is zero when E is at its minimum, regardless of the system’s velocity x = v. In general, E  ̇ is always too small near the system’s rest state. Clearly, basing the damping force on E  ̇ is not what we want to do. We believe that the damping function should be defined not in terms of the energy E, but in terms of the condition C(x) we have been using to define energies. The force f arising from the energy acts only in the direction ∂C(x)/∂x, and so should the damping force. Additionally, the damping force should depend on the component of the system’s velocity in the ∂C(x)/∂x direction; in other words, the damping strength should depend on (∂C(x)/∂x) T x = C(x).  ̇ Putting this together, we propose that the damping force d associated with a condition C have the form
+        
+          11
+          d = −k d ∂C(x) ∂x C(x).  ̇
+        
+        ∂C(x) This neatly parallels the fact that f = −k s ∂x C(x).
+        47
+        SIGGRAPH 98, Orlando, July 19–24
+        C OMPUTER G RAPHICS Proceedings, Annual Conference Series, 1998
+        Given the condition functions C we have defined in this section for stretch, bend and shear forces, we can now add accompanying damping forces by applying equation (11). As before, d i is nonzero only for those particles that C depends on, and ∂d/∂x has the same sparsity pattern as ∂f/∂x. Differentiating equation (11), we obtain
+        
+          12
+          ∂x ∂d i j = −k d ∂C(x) ∂x i ∂ C(x) ∂x  ̇ j T + ∂ ∂x C(x) i ∂x j C(x)  ̇ .
+        
+        Note that ∂d/∂x is not a second derivative of some function as was the case in equation (8) so we cannot expect ∂d/∂x to be symmetrical. In equation (12), it is the term (∂C(x)/∂x i )(∂ C(x)/∂x  ̇ j ) T which breaks the symmetry. Anticipating section 5.2, we find it expedient simply to leave this term out, thereby restoring symmetry. This simplification is clearly not physically justifiable, but we have not observed any ill effects from this omission. (Omitting all of equation (12), however, causes serious problems.) Finally, equation (6) requires the derivative ∂d/∂v. Since C(x)  ̇ = (∂C(x)/∂x) T v, we have ∂ C(x)  ̇ ∂ ∂C(x) T ∂C(x) = v = . ∂v ∂v ∂x ∂x Using this fact, we can write ∂v ∂d i j = −k d ∂C(x) ∂x i ∂ C(x) ∂v  ̇ j T = −k d ∂C(x) ∂x i ∂C(x) ∂x j T . In this case, the result is symmetrical without dropping any terms.
+      
+      
+        

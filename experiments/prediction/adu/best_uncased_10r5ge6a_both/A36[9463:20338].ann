@@ -1,0 +1,111 @@
+T7e6afac6f28e3615f82367489af6ac93	own_claim-GOLD 39 193	The design goals of our measurement system are to create deformations in a sample of cloth that explore a substantial range of the material’s strain space
+Td5aa5ec257ea19519d9705f9ebfa5fe7	own_claim-GOLD 199 305	to record complete information about the forces applied to the cloth and the deformation that it undergoes
+T1fc912fa6ce0ddd2732d09b1d03dfee6	own_claim-GOLD 341 377	we focus primarily on tensile forces
+T8bcf9d00575e715a8b803a9393ccdac9	data-GOLD 387 488	it is hard to repeatably produce and measure compression forces in a sheet that is inclined to buckle
+T6474deba44ad91cac5bf7733715725cb	own_claim-GOLD 1039 1125	Our actuators and load cells are capable of applying and measuring tensions up to 45 N
+T1d794006c2f99a08f2109f8cde649a47	own_claim-GOLD 1131 1201	in our experiments the maximum force is typically on the order of 10 N
+T6e3d2c0950043a8d94206762b80f15b7	own_claim-GOLD 1918 1978	the actuator positions themselves are not part of the output
+T1e37006c7b9acd209cc857b21a086fda	data-GOLD 1986 2048	they are superseded by the displacements measured at the clips
+Tab194a8899c77a796af32d9a33a39502	own_claim-GOLD 2050 2199	This prevents stretching of the cord, or other factors affecting the distance between the clip and the actuator, from affecting displacement accuracy
+T6f39a1c24a581bae74c9417516745e83	own_claim-GOLD 2633 2793	Our vision system recovers the space-time geometry of the deforming cloth and attached rigid clips, as well as the directions of the forces applied to the clips
+Tfbaa00bb2a0c02153b633e19a5745755	own_claim-GOLD 3299 3471	The raw data for a single deformation consists of 20 to 200 individual measurement frames, with a set of camera images and simultaneous force sensor readings for each frame
+Tfba22dbbeb475e62f95882f38ad95a2d	own_claim-GOLD 3474 3563	We compute the per-frame geometry using a state-ofthe-art stereo reconstruction technique
+Tdc9d0337606ede0242d0eb2e8feb6792	data-GOLD 3567 3572	BBH08
+Tde20859046f7c73785f4bc155a6be57e	background_claim-GOLD 3576 3643	which was specifically tailored for reconstructing cloth geome∗ try
+T48474ea86f90df8022ebabd9fda69c79	data-GOLD 3647 3653	BPS 08
+T98dba190f4514b723db94da7dd6fdb08	data-GOLD 3660 3720	the inherent texture of the cloth is not sufficiently random
+T328714b72a4e1b405f8b9f02f2afa5c5	background_claim-GOLD 3722 3766	it is printed with a wavelet noise pat∗ tern
+T739b1e1575ee93ea2e0ba78bc3fbe712	data-GOLD 3770 3776	AIH 08
+T113bb15be30dc98b62737ecee9bbaaea	background_claim-GOLD 3780 3854	to provide texture that can be used for stereo reconstruction and tracking
+Td3178681e087364e0629bb26a8344159	own_claim-GOLD 3856 3971	The pattern is printed with a flatbed inkjet printer and does not have a noticeable effect on the material behavior
+T95f00f49836bd2dce99b185d65614722	own_claim-GOLD 3973 4132	To represent inter-frame correspondence, we use optical flow to obtain a single triangle mesh that deforms over time, akin to the human face tracking method of
+T483a312e1c95caba717e6e184dc857cd	data-GOLD 4149 4155	BHPS10
+T9f1d00441ce87af1c50366ec32602b75	own_claim-GOLD 4338 4456	Back-projecting onto the reconstructed geometry for the next frame gives new position estimates for the cloth vertices
+T287a29f97fa9a6f7821ecac7b524e503	own_claim-GOLD 4581 4670	very small errors can accumulate over time and cause temporal drift in the reconstruction
+T5e0eed7b69c276a1a14739ce59e61879	own_claim-GOLD 4672 4794	To avoid drift, we subsequently match each frame independently back to the rest pose frame using the approach described in
+Ta1b78934091fe0d33d207db1280cce46	data-GOLD 4811 4817	BHPS10
+T2021d4045775006e47df2424ee127311	data-GOLD 4934 4996	to measure the complete answer that a simulator should predict
+Tf9d365378e39c137a1c76f77cca17788	own_claim-GOLD 4998 5084	we need to determine the interaction between the rigid clips, the cloth, and the cords
+Tc39c0bbbdfbcb80c2d35150f33036ba7	background_claim-GOLD 5086 5154	The clips are produced, using rapid prototyping, with embedded codes
+T612a245d55425b524be55672ef210b85	data-GOLD 5157 5162	Fia05
+Tdb0cd06d3f630d9c181175c54474ce62	background_claim-GOLD 5164 5246	that allow us to determine their identity, position, and orientation automatically
+Tc8f2d75b897d76b7fd319f3bea345b46	own_claim-GOLD 5248 5368	The area of cloth occluded by the clips is used to automatically determine which cloth vertices are clamped by each clip
+T547ddc72b241b7323d8a8eddba857812	own_claim-GOLD 5373 5425	will therefore be constrained to it in the simulator
+Tcfc4caf2036a2231f3eb1a3fc321a7c5	own_claim-GOLD 5427 5520	The vision system also finds the cords in the images and triangulates a 3D line for each cord
+T1decbaf29c9a7bd0682274371af769e3	own_claim-GOLD 5522 5605	A few user scribbles on an input image indicate which cords are affecting each clip
+T35d96bfbd37c2c3b44cfe4039fd693b3	own_claim-GOLD 7299 7390	The set of deformations to measure is motivated by the goals of the parameter fitting stage
+Tc71d5b8e68e1bda327f9b29e23009480	data-GOLD 7392 7401	Section 5
+Tec8f55e27a772437c47ca190fa7ff469	data-GOLD 7404 7487	to fit model parameters for stretch, shear and bending that best describe the cloth
+T0544f0f45e5790a2a773f4e48a7b5168	data-GOLD 7493 7563	to validate the parameter fits by comparing against other measurements
+T22b7db6be55998bbd748861378a36083	own_claim-GOLD 7565 7806	To reduce the risk of falling into local minima during parameter fits, we have designed deformation sequences that produce near-isolated strains, and allow estimating stretch, shear and bending properties in a separate and incremental manner
+T9f437193fa5d0c2a3116ec69253a70f9	data-GOLD 7886 7926	our full 3D deformation capture solution
+Tdf9e72c8c863f474da9d4538db6b5895	own_claim-GOLD 7928 7971	we relax the requirement of uniform strains
+T6743d33ad7d2d88129300a25a6d52018	own_claim-GOLD 7973 8116	To isolate stretching we perform a uni-axial tension experiment, with forces applied to two long bar clips attached to either side of the cloth
+T1dda2443b28c43e5b695849ec484c862	data-GOLD 8122 8143	Figure 4 , 2nd column
+T5773c6ff1c7fd650309b57f107cba552	data-GOLD 9287 9296	Figures 4
+T08e9247950a11e516eb5934d4ef816b0	data-GOLD 9301 9302	5
+Tb52ec91e9ae8e37df8637f9ab5bd48c4	own_claim-GOLD 9313 9404	our acquisition system is able to recover the 3D cloth geometry including temporal tracking
+T3b8f25b1d06d0a3015530ddcb6dc2a26	data-GOLD 9406 9447	illustrated with an overlaid checkerboard
+Ta5f0cf7dbd1c7a54ebcb20da83dffb57	own_claim-GOLD 9450 9511	tracked 3D clip locations, and individual 3D force directions
+T96055f9fb452288a1eb0ff376924d3f6	data-GOLD 9513 9533	shown as green lines
+T67eab8e43732c75767491faef369e73f	own_claim-GOLD 9554 9669	our method presents the first system able to record such extensive information about the behavior of a cloth sample
+Tc6112f9f7f6279dfd11b868d099146a4	background_claim-GOLD 10229 10263	The multi-view stereo algorithm of
+T2c9fe94180eb8262c22a32259cced40b	data-GOLD 10281 10286	BBH08
+T0d2dc9e5b1f64458bf18d14819313006	background_claim-GOLD 10288 10373	is among the most accurate available according to the Middlebury evaluation benchmark
+Tb08f86f06ba5687c447b0e1b7efaa286	own_claim-GOLD 10375 10448	It is difficult to quantify the accuracy of the temporal flow computation
+T9fac4e5c1be90358f66d587b78aa4ab3	own_claim-GOLD 10454 10546	it can be visualized by compositing the reconstructed deformation on top of the input images
+Tc620af8e8a8c8d1540d74d3e3829f3f8	data-GOLD 10552 10570	accompanying video
+Td6c854d5c74d808601ff46ca3185b510	own_claim-GOLD 10573 10639	The raw repeatability of our force sensors is about 3 millinewtons
+Tdfa759d0dcee344770b1f3ae4ea8eab7	own_claim-GOLD 10647 10793	The largest source of error in measuring the force indirectly through the cord is the internal friction in the cord as it bends around the pulleys
+Taae77c18fe05e3b222b4a7b111308446	own_claim-GOLD 10801 10851	introduces an artificial hysteresis of about 0.1 N
+T408dd723606d0fc5ba67858e7b620a25	own_claim 39 305	The design goals of our measurement system are to create deformations in a sample of cloth that explore a substantial range of the material’s strain space, and to record complete information about the forces applied to the cloth and the deformation that it undergoes
+T2e39da922e5446ed5dbca42dfefb4795	own_claim 307 377	Like other cloth testing systems, we focus primarily on tensile forces
+T3a0539f8a0a81ee585b57b402924e024	data 387 488	it is hard to repeatably produce and measure compression forces in a sheet that is inclined to buckle
+T2a8e7d8e19005844901d668ae1dd8eba	data 1028 1036	Figure 2
+T4299790a1fd5da327bd01902911625ce	own_claim 1039 1125	Our actuators and load cells are capable of applying and measuring tensions up to 45 N
+T6b6ea5bd964fc9cf03a86da0827f7a3f	own_claim 1131 1201	in our experiments the maximum force is typically on the order of 10 N
+Te6c4c20614e8a231c43531f581fb48b9	own_claim 1918 1978	the actuator positions themselves are not part of the output
+T63945e7ffff719c4e21d3c302253cbcd	data 1986 2048	they are superseded by the displacements measured at the clips
+Td24adf7122e8006abb85ace5a497bdef	own_claim 2050 2199	This prevents stretching of the cord, or other factors affecting the distance between the clip and the actuator, from affecting displacement accuracy
+Te7c3898b8d937a23ca97fb28530818d1	own_claim 2633 2793	Our vision system recovers the space-time geometry of the deforming cloth and attached rigid clips, as well as the directions of the forces applied to the clips
+Tb1f091890b0495d5047a400b7ecc2cb6	own_claim 3474 3563	We compute the per-frame geometry using a state-ofthe-art stereo reconstruction technique
+T1b4a194bc36255a74260f340e1f1d57d	data 3567 3572	BBH08
+Tc528878ee7738c24908ee75d58962dc5	own_claim 3576 3643	which was specifically tailored for reconstructing cloth geome∗ try
+T65767f1de7e497b7e90372ac7db9a0bf	data 3647 3653	BPS 08
+T8a264ad293441d68e010fec1fbaf5304	data 3660 3720	the inherent texture of the cloth is not sufficiently random
+Tca4d1499fe4e9a3a2c6eab4c431ffee7	background_claim 3722 3766	it is printed with a wavelet noise pat∗ tern
+T5d04161969503dc0940157b3f1ce7138	data 3770 3776	AIH 08
+Ta24d861a95ba7f5ae68d5869f376efdf	background_claim 3780 3854	to provide texture that can be used for stereo reconstruction and tracking
+Tea347c25bd9ca13eab57c9142916a1b5	background_claim 3856 3971	The pattern is printed with a flatbed inkjet printer and does not have a noticeable effect on the material behavior
+Td51046bc55b449ab0a79e45c402ddbd3	own_claim 3973 4089	To represent inter-frame correspondence, we use optical flow to obtain a single triangle mesh that deforms over time
+T18434d6da259edcd187cd5312e4dc72c	data 4149 4155	BHPS10
+T16a91dbf196d5aa6d9469fed33aa2806	own_claim 4540 4579	As with all sequential tracking methods
+T52ab1d403e2f8f36dcf013885b305331	own_claim 4581 4670	very small errors can accumulate over time and cause temporal drift in the reconstruction
+Tf154319494a9d808e156ce2733348e88	data 4811 4817	BHPS10
+Tc07dc6c3c1f89e63a1be054dcea408b8	background_claim 4820 4897	The final solution is smoothed using Laplacian regularization to remove noise
+Tf210a375dd8e033de07e3688128f216e	own_claim 4925 5084	In order to measure the complete answer that a simulator should predict, we need to determine the interaction between the rigid clips, the cloth, and the cords
+T5d2933f75b446a71f87eea29ba51a12e	own_claim 5086 5154	The clips are produced, using rapid prototyping, with embedded codes
+Tc4514b00e376b8410e58d95a989ab63a	data 5157 5162	Fia05
+T3161058812dd3059faace96c9d371344	own_claim 5164 5246	that allow us to determine their identity, position, and orientation automatically
+T0f28c62b42cc3f2d1a6bbcb115ae9c70	own_claim 7299 7390	The set of deformations to measure is motivated by the goals of the parameter fitting stage
+T21a0f0908b97c33dce217d6377cd14ce	own_claim 7404 7563	to fit model parameters for stretch, shear and bending that best describe the cloth, and to validate the parameter fits by comparing against other measurements
+T7ff371cfed010e1193c8931e5f93de64	own_claim 7565 7709	To reduce the risk of falling into local minima during parameter fits, we have designed deformation sequences that produce near-isolated strains
+T70369a5f258cb6321c59bdbf2346523e	own_claim 7715 7806	allow estimating stretch, shear and bending properties in a separate and incremental manner
+T19d1a83795412a12d9130673c92d6246	own_claim 7817 7861	unlike standard textile evaluation practices
+Te642330a487daaada34c1aba15a68a42	data 7863 7868	Kaw80
+Tb8e7e6a1a74d324b268b196f222d340d	own_claim 7876 7971	thanks to our full 3D deformation capture solution, we relax the requirement of uniform strains
+T200cacf609ae26d291165a1bad9afed4	own_claim 8322 8388	Shearing is captured using an approximate picture-frame experiment
+Td4dca6f7cb7bd0e768ee338de0c435c6	data 8391 8396	Cul79
+T43bc720b7596e438bf4b8e581e0aea7c	own_claim 9313 9404	our acquisition system is able to recover the 3D cloth geometry including temporal tracking
+T20fe6eb35d29272f8f1a40c1d1fb75d3	own_claim 9554 9669	our method presents the first system able to record such extensive information about the behavior of a cloth sample
+T20a63e8b2b2b9296ec7c9c3ac2a512d8	own_claim 10096 10227	In the vision system, the camera calibration accuracy is within 0.3 pixels, or about 0.075 millimeters at the distance of the cloth
+T2078fd447ac910df6d6c847e72c336fd	background_claim 10229 10278	The multi-view stereo algorithm of Bradley et al.
+T9874123c0e180b6b4d0bc8422851c81b	data 10281 10286	BBH08
+T7fa6cf9c5d213fb190e4415e959a49b5	background_claim 10288 10373	is among the most accurate available according to the Middlebury evaluation benchmark
+T48214711a858975c898601a8c236ced1	own_claim 10375 10448	It is difficult to quantify the accuracy of the temporal flow computation
+Tfc24479ef47dde44207ad28782905d34	background_claim 10454 10546	it can be visualized by compositing the reconstructed deformation on top of the input images
+Td6352c0f81cf2dcc856e9bd9a4e153fb	data 10552 10570	accompanying video
+T743876051fd40c982c4ba2987340f212	own_claim 10573 10639	The raw repeatability of our force sensors is about 3 millinewtons
+T7abc702928a792e84c41e225274445a0	own_claim 10647 10793	The largest source of error in measuring the force indirectly through the cord is the internal friction in the cord as it bends around the pulleys
+Te8c5c6c62b49407bf3c4704e63aa4019	own_claim 10801 10851	introduces an artificial hysteresis of about 0.1 N
+

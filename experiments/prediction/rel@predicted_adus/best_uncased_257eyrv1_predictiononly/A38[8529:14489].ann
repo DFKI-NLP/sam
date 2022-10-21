@@ -1,0 +1,107 @@
+Tef582f44d29e8162cbed0ae739c44532	own_claim 40 130	our framework for estimating cloth simulation parameters is independent of the cloth model
+T431dedebfb51aa1c7a799f60ac57cc38	own_claim 132 138	we can
+T93512554f6bdb9da73084e08e18643ee	own_claim 154 206	select a specific model that meets a set of criteria
+T1db4a1a16f71721222b595c9720d11e1	own_claim 215 243	accuracy or simulation speed
+Taa161b0163deb90e83dd1a1107407f7c	own_claim 245 301	Our choice of a cloth model was guided by two principles
+T8cd4efd1721f64dcb80ca1044c95331b	own_claim 303 327	realism and practicality
+T42741522a5dd38bcad5d9c1247f324ff	own_claim 329 446	We wanted to use a model that was sophisticated enough to capture the detailed dynamic behavior found in real fabrics
+T2620a0ae06254d557b30ac3e5351c49d	own_claim 451 485	still straightforward to implement
+T6157d2c03ee56be28abed344037b6cf3	data 495 611	our intention was to apply the learned cloth model parameters to arbitrary garments with varying triangle resolution
+Tb964b41d62e7dd5e8845160080efe2a7	own_claim 613 708	it was also important that the cloth parameters correctly scale to varying resolutions of cloth
+T8fa3a444687d7e111400f6cf97e1e6ba	own_claim 801 880	This model has sufficient richness to produce a wide variety of cloth behaviors
+T990afc91f7722f868967744b223d5cbb	own_claim 882 918	The underlying meshing is triangular
+T7f89754350910a8d958335e53aea0a34	own_claim 920 952	making clothing modelling easier
+Td6ad34c673cc64d251ab86138e788ce7	own_claim 972 1019	its input parameters are independent of meshing
+Tfa65b6c30d3834c24ef201495dd591c6	own_claim 1029 1061	parameters recovered on one mesh
+Tabd554e170a311d770516055f5fa2545	own_claim 1080 1116	can safely be transferred to another
+T7ffb5558a591bd8b2341edd28204eef6	own_claim 1136 1152	nonlinear models
+T6a81d2760fa054d408d7f21e7f0250ef	own_claim 1161 1257	the buckling behavior of Choi and Ko 9 could potentially capture more realistic details of cloth
+Tbb6468a6bfde00883a0af7d850124353	own_claim 1259 1363	there is no straightforward way to scale the parameters of these models to meshes of varying resolutions
+T9357aa24602844226f027a1d3f5b6d90	own_claim 1380 1514	future application of our parameterestimation framework to other scale-invariant cloth models will provide even more realistic results
+Tbeda8226d6fbbdeb07cbc332f8a3288d	own_claim 1516 1650	The model developed by Baraff and Witkin formulates the energy of a particular triangle in terms of so-called condition functions C(x)
+T5b5a516e09abf26355b6050aa3d9be42	background_claim 1661 1748	the total potential energy associated with the system is given by E u = k s C(x)C T (x)
+Taff55f36fe885fbf220eea05fe88b7ef	own_claim 2116 2127	d = −k C(x)
+Tb9f717a9607efbb05915d3f1ad393f11	own_claim 2293 2430	Baraff and Witkin describe a set of C(x) consisting of an in-plane stretch term, an in-plane shear term, and an out-of-plane bending term
+T36fdda9c333d55eb2081743b53712340	own_claim 2439 2508	a total of six parameters we can use to tune the internal cloth model
+T6963be09a2938d52af25f19012c069c0	data 2615 2625	footnote 5
+T9ea9830eb59f0877cfc9198167e1426b	own_claim 2627 2703	energy should scale linearly with triangle area to ensure scale independence
+T9c0688ac369b016fd7eebedb66c49475	own_claim 2716 2793	we need to be careful when substituting C(x) for stretch and shear into eq. 1
+T985eb9bc4edab46dbff5be4342fdb96a	own_claim 2799 2857	the resulting formula is linear in a rather than quadratic
+T6cd034b036df2a7e4565bdbafecdda5d	own_claim 2920 2939	a linear drag model
+T5c10bc46b62fde4b0d1dbdb209c375aa	data 2986 2987	9
+T7049110367bde2c540212f69440ecc65	own_claim 2989 3037	was not able to capture dynamic aspects of cloth
+Tf38fc9fabeb69ba907da6611b5c76bb3	own_claim 3678 3693;3702 3726	The linear term is merely Stokes’s law 1
+Td550ae646b9d498be8d0c57c5a602314	own_claim 3846 4011	The addition of the |v N | 2 term in the denominator which makes the force asymptotic as v N → ∞ was partially motivated by the observed phenomenon of drag crisis 14
+T46d0fdd23d520fbe7d54fdddea6e8b9f	own_claim 4021 4104	under certain circumstances the drag can actually drop at the onset of turbulence 1
+T07ec89b5f73e885e79b59c81def4d627	own_claim 4107 4235	The optimizer is free to eliminate this behavior or other terms of this equation by setting the corresponding parameters to zero
+Ta8adf99203de4d692eda4468c6a95842	own_claim 4248 4340	we used a first-order implicit Euler time integration scheme similar to the one described by
+Ta64361086269a0a22bba75acc38e4753	data 4341 4358;4360 4361	Baraff and Witkin 4
+T7b6c246832e775829c1db7a2c9e58d14	own_claim 4393 4493	implicit integration introduced damping which could not be eliminated by optimizing cloth parameters
+T91b4b7c239972e396f1fec39b406f444	own_claim 4495 4589	We had more success in matching realistic cloth motions by using higher-order explicit methods
+T2373e384182fc1a55d8a42c7db043f81	own_claim 4591 4705;4707 4708	The results in this paper all use an adaptive 4thorder accurate Runge-Kutta methods with embedded error estimation 2
+T58ff00af569b945595c104a425e9c253	own_claim 4717 4797	this method offers the advantages of familiarity and automatic bounding of error
+T2a674e85286f167b02d45ceff5429607	own_claim 4799 4816	it is rather slow
+T43aee0fb64cc7ae163b62e2a730c43f2	own_claim 4848 4930	using 2nd-order backward differences 9 or Newmark schemes 7 may be a better choice
+Tf4c6f126b822656ebb0b788793d03ef0	own_claim 4932 4954	For collision handling
+Td917cbdb9e2d7946bc2b98640f08dd34	own_claim 4956 4981	we use a model similar to
+T62a3eb84d5863186640617236509ec69	data 4982 5006	Bridson and colleagues 6
+T77e160a5a6ec5f5344cf61cc0629547b	own_claim 5007 5105	which combines repulsion forces with impulses to robustly prevent all collisions before they occur
+T62233a5e50ecaba404995e65dafa1fbd	own_claim 5116 5278	separating repulsion forces from the cloth internal dynamics and applying them outside the Runge-Kutta solver affected stability and resulted in visible artifacts
+T23eadc0d9f991d1b11b09a7552d05305	own_claim 5289 5337	we apply repulsion forces inside the solver loop
+Tdabde205bde7f8e8288dd73506619da4	own_claim 5347 5416	the solver’s own internal error estimation can remove these artifacts
+T39efbdbf3f57af111f3f37cd4244a20f	own_claim 5418 5457	The drawback of this technique is speed
+T2fe80526bccb7b1acbb6dc4c4cda36e9	own_claim 5467 5549	the system must check for collisions every time it evaluates the state derivatives
+Te96dc80f414f990ac4ccaee8cd1697fe	data 5565 5594	once every collision timestep
+Te37dbf6fa2e53b8d60d12379ef9b9941	data 5601 5617	Bridson et al. 6
+Te27ef86ce0a7a3fe4363d08a732e9485	own_claim 5623 5656	To achieve acceptable performance
+T94c42a2376a2ced2a8574d14b1503049	own_claim 5658 5706	we used a number of collision culling algorithms
+T913043dc9367ceacf5146aeff972ddf2	data 5718 5750;5752 5754	hybrid top-down/bottom-up update 24
+T0f97e8191ac3559e1ef3369bbfeaeba9	data 5757 5783;5785 5787	fast triangle reject tests 26
+T17d7725d8ecf780784d1c4b51acb9980	own_claim 5794 5851	a curvature-based criterion for rejecting self-collisions
+T16806391ab641b91f2ff18df68d555d3	data 5881 5903	Volino and Thalmann 38
+T6f2e01cbfa31e11a5eb314708dd3a4d2	background_claim 5904 5921	and later refined
+T2d09a3dc2efc0884250ac6dbb2c96b30	data 5925 5931;5933 5935	Provot 30
+R1382514a8119ff8f784d62f86fcecabf	supports Arg1:Tef582f44d29e8162cbed0ae739c44532 Arg2:T431dedebfb51aa1c7a799f60ac57cc38
+R1400bbea15bce4c5693c7a4634f1102a	parts_of_same Arg1:T431dedebfb51aa1c7a799f60ac57cc38 Arg2:T93512554f6bdb9da73084e08e18643ee
+Rd29ec5112ee47c472a5e2e6c0357d01e	supports Arg1:T1db4a1a16f71721222b595c9720d11e1 Arg2:T93512554f6bdb9da73084e08e18643ee
+R8608d5dfac3a508183d870bf9aa9f148	supports Arg1:T8cd4efd1721f64dcb80ca1044c95331b Arg2:Taa161b0163deb90e83dd1a1107407f7c
+Rdb2787c6c16ed3c0888182dbc958523a	contradicts Arg1:T42741522a5dd38bcad5d9c1247f324ff Arg2:T2620a0ae06254d557b30ac3e5351c49d
+Re89769921ef571a5a9ff7a2bba979940	supports Arg1:T6157d2c03ee56be28abed344037b6cf3 Arg2:Tb964b41d62e7dd5e8845160080efe2a7
+R488111b175acea404e2567424b386f00	supports Arg1:T990afc91f7722f868967744b223d5cbb Arg2:T7f89754350910a8d958335e53aea0a34
+R85fbe5f66eb8b42f28bae3faf521070d	supports Arg1:Td6ad34c673cc64d251ab86138e788ce7 Arg2:Tfa65b6c30d3834c24ef201495dd591c6
+R552d313b075f2fdca7d8d94a310b480a	parts_of_same Arg1:Tfa65b6c30d3834c24ef201495dd591c6 Arg2:Tabd554e170a311d770516055f5fa2545
+R801697c5546f2be9bc12f4fd19811040	supports Arg1:T6a81d2760fa054d408d7f21e7f0250ef Arg2:T7ffb5558a591bd8b2341edd28204eef6
+R9af022d03a3a7544d97b13e36b750044	parts_of_same Arg1:T7ffb5558a591bd8b2341edd28204eef6 Arg2:T6a81d2760fa054d408d7f21e7f0250ef
+Rfbe044d5680da00e4aea3ea9f6adf162	contradicts Arg1:T6a81d2760fa054d408d7f21e7f0250ef Arg2:Tbb6468a6bfde00883a0af7d850124353
+R630d1e49df26511280df9b09d8546ee8	supports Arg1:Tbeda8226d6fbbdeb07cbc332f8a3288d Arg2:T5b5a516e09abf26355b6050aa3d9be42
+Rfa8ed72ebcf4dc1a452c7875919d9724	supports Arg1:Tb9f717a9607efbb05915d3f1ad393f11 Arg2:T36fdda9c333d55eb2081743b53712340
+Recfb26fe79197bebaad684a38657b3f1	supports Arg1:T6963be09a2938d52af25f19012c069c0 Arg2:T9ea9830eb59f0877cfc9198167e1426b
+Ra378a3d38e097460ddd70e7d5efaa895	supports Arg1:T9ea9830eb59f0877cfc9198167e1426b Arg2:T9c0688ac369b016fd7eebedb66c49475
+R4b0477bf124dedaf079633db09b11ab7	supports Arg1:T9c0688ac369b016fd7eebedb66c49475 Arg2:T985eb9bc4edab46dbff5be4342fdb96a
+R1a13c46aa02b231064dfaf0bc7fc69c8	supports Arg1:T5c10bc46b62fde4b0d1dbdb209c375aa Arg2:T6cd034b036df2a7e4565bdbafecdda5d
+R06ec936756bf43fe239a9c1795b154cc	parts_of_same Arg1:T6cd034b036df2a7e4565bdbafecdda5d Arg2:T7049110367bde2c540212f69440ecc65
+R6e013fe2478e77236af356616d4c1391	supports Arg1:T46d0fdd23d520fbe7d54fdddea6e8b9f Arg2:Td550ae646b9d498be8d0c57c5a602314
+Rd33a98c0650b7306c92a94831d5aca65	supports Arg1:Td550ae646b9d498be8d0c57c5a602314 Arg2:T46d0fdd23d520fbe7d54fdddea6e8b9f
+R9e058a0b2bebd50f7e43b541419cfc9c	supports Arg1:T46d0fdd23d520fbe7d54fdddea6e8b9f Arg2:T07ec89b5f73e885e79b59c81def4d627
+R34bf60dc25ad1ca13a8d3ee9b0e1de42	supports Arg1:Ta64361086269a0a22bba75acc38e4753 Arg2:Ta8adf99203de4d692eda4468c6a95842
+R23327f9cb5325f57aaecb6c6cb211624	contradicts Arg1:T58ff00af569b945595c104a425e9c253 Arg2:T2a674e85286f167b02d45ceff5429607
+R33e0ed96dda2d7f131aa6bbd9f871b30	contradicts Arg1:T58ff00af569b945595c104a425e9c253 Arg2:T43aee0fb64cc7ae163b62e2a730c43f2
+Ra1202e814b12bb0f398d1132f7a1de69	supports Arg1:T2a674e85286f167b02d45ceff5429607 Arg2:T43aee0fb64cc7ae163b62e2a730c43f2
+R11ceb47157684aa6ec95eaa8db4a2cec	contradicts Arg1:Tf4c6f126b822656ebb0b788793d03ef0 Arg2:Td917cbdb9e2d7946bc2b98640f08dd34
+R09761f3fb39d33e224896263e24d1375	supports Arg1:T62a3eb84d5863186640617236509ec69 Arg2:Td917cbdb9e2d7946bc2b98640f08dd34
+Red16161c89445b5238fa8b0edfb0142a	parts_of_same Arg1:Td917cbdb9e2d7946bc2b98640f08dd34 Arg2:T77e160a5a6ec5f5344cf61cc0629547b
+R19b5f156e3ec175b13835dc91e676917	supports Arg1:T62a3eb84d5863186640617236509ec69 Arg2:T77e160a5a6ec5f5344cf61cc0629547b
+Rcc154e3cbb56e05185104bb4472b1a96	contradicts Arg1:T77e160a5a6ec5f5344cf61cc0629547b Arg2:T62233a5e50ecaba404995e65dafa1fbd
+R91df7dfd644400de8d361a7c3bcf523c	contradicts Arg1:T62233a5e50ecaba404995e65dafa1fbd Arg2:T23eadc0d9f991d1b11b09a7552d05305
+Rbd58de4ee390bcf07f646da3d9976b13	supports Arg1:T23eadc0d9f991d1b11b09a7552d05305 Arg2:Tdabde205bde7f8e8288dd73506619da4
+R33f6ac0a9eb599c9c9da9744212f603a	supports Arg1:T2fe80526bccb7b1acbb6dc4c4cda36e9 Arg2:T39efbdbf3f57af111f3f37cd4244a20f
+R9d86bbe99885149a5f11df3294ca002d	supports Arg1:Te96dc80f414f990ac4ccaee8cd1697fe Arg2:T2fe80526bccb7b1acbb6dc4c4cda36e9
+R353e49554e492711b185749f90cdc96a	supports Arg1:Te37dbf6fa2e53b8d60d12379ef9b9941 Arg2:T2fe80526bccb7b1acbb6dc4c4cda36e9
+R7f73160b9abf0bff7fb8a4b72eb35d27	supports Arg1:Te27ef86ce0a7a3fe4363d08a732e9485 Arg2:T94c42a2376a2ced2a8574d14b1503049
+Rda6ab1dd29fe822f0dd93619c46258eb	supports Arg1:T913043dc9367ceacf5146aeff972ddf2 Arg2:T94c42a2376a2ced2a8574d14b1503049
+Raafe024c3a0e589dabfdc2e65df3db45	supports Arg1:T0f97e8191ac3559e1ef3369bbfeaeba9 Arg2:T94c42a2376a2ced2a8574d14b1503049
+Rfaf5728b601b93ce1c541edf0d8e441d	parts_of_same Arg1:T94c42a2376a2ced2a8574d14b1503049 Arg2:T17d7725d8ecf780784d1c4b51acb9980
+R2ec221bb45616a6b6e7ecb531cccdf02	supports Arg1:T16806391ab641b91f2ff18df68d555d3 Arg2:T17d7725d8ecf780784d1c4b51acb9980
+Rd9ccc14bf589d181de865be891dfc2cb	parts_of_same Arg1:T17d7725d8ecf780784d1c4b51acb9980 Arg2:T6f2e01cbfa31e11a5eb314708dd3a4d2
+R86a69d74ca7cecf659fa7d6b1846df61	supports Arg1:T2d09a3dc2efc0884250ac6dbb2c96b30 Arg2:T17d7725d8ecf780784d1c4b51acb9980
+R62d6e81a0a460408e691aba063bde17f	supports Arg1:T2d09a3dc2efc0884250ac6dbb2c96b30 Arg2:T6f2e01cbfa31e11a5eb314708dd3a4d2

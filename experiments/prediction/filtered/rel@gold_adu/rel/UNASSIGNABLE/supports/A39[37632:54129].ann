@@ -1,0 +1,46 @@
+T231ee6f7807646fbced02bba7f6ccd3c	own_claim 7300 7382	we control exactly what the change in velocity is along the constrained directions
+T34f0643abdf2d0e8be027af9a14085dc	own_claim 7628 7668	unconstrained particle must have z i = 0
+T9aedf5d0f0d7cc42b315722b98c2fdad	background_claim 13974 14022	Proofs about CG methods are difficult in general
+T3ebe27f520ff265d32b517d04caa0396	data 15050 15191	When modified-pcg terminates, the residual error e = A v − b has the property that e i need not be close to zero if particle i is constrained
+T973bd1aa3ff127fbf096d4d532fc8000	data 14024 14035	in practice
+T4df98fa08b9af24c03384c7a1a6e2fff	own_claim 7197 7290	We are not limited to constraining particles to have zero accelerations in certain directions
+Ta5e8aa7cc2537138b40f98cba2f11f0d	own_claim 14037 14098	our method always converges, which answers the first question
+T17d91962c45afd1e1638f980ae04461e	own_claim 15847 15985	we allow contacts to release when the constraint force between a particle and a solid switches from a repulsive force to an attractive one
+T4b52f6466fd1e649f9de382a10bb6a4b	data 8200 8256	We initially implemented constraints using equation (14)
+T55eb98d139d9fda6edc425b229d56238	own_claim 8445 8553	we planned to use the iterative, sparsity-exploiting CG method, which immediately presents us with a problem
+T2dbde81a9178f3dfcc644ad9ab6c0260	own_claim 14967 15048	it is easy to add one more step to modified-pcg to determine the constraint force
+T0a7a83a4f70ea04fb3371d0b4e4c8053	own_claim 15306 15428	we can compute constraint forces at the end of modified-pcg by performing one last matrixvector product to compute A v − b
+T89c485f6f93c3ff463b4251a07c1fad7	own_claim 7517 7585	we can choose any value of z i for a completely constrained particle
+Tdf6f72f595ece53dc0dd4e9fc7d75abb	data 7785 7793;7826 7881	we solve I − hW ∂v ∂f − h 2 W ∂x ∂f v = hW f 0 + h ∂x ∂f v 0 + z
+T9b6bc9c9c2561991f25e6cc25020db77	data 8621 8684	neither is equation (6) unless all particles have the same mass
+Te429c2536f7d41dc9f14ac0c72b35ec8	own_claim 9272 9326	they work best on positive definite symmetric matrices
+T8ea6973777d851e113ecf61803b82b4a	data 15431 15487	The vector r in modified-pcg is equal to filter(A v − b)
+T108f1f302b1c0ce24a1513372d467ce9	own_claim 4155 4214	degrading the numerical conditionining of the linear system
+T8a709438d1a882a0b28200589bca1bc1	own_claim 9670 9726	we cannot apply the same transformation to equation (14)
+T47381b26a7e3a58868dffad82a1f2b46	own_claim 9164 9217	applying a CG method to equation (6) is not difficult
+Tfe5382863d6fa5032b1bd5775e07d656	background_claim 8687 8697;8708 8734	CG methods require symmetric matrices
+Teb3bd6c0afe3021c36774f369ddb193e	own_claim 8334 8423	we solved equation (14) using a direct method (Gaussian elimination) without any problems
+Tab478cd98424885f0a5347a2112f1c75	own_claim 7906 7965	we will obtain a v which is consistent with our constraints
+T8b6c4967ef563b5ad5055547fd0eca49	data 7899 7904	for v
+Taaefd75571bd213b0b651577ed65c763	own_claim 15773 15811	We reject this approach as impractical
+T9e19b60b8ac67738e4b8fadd5a347f6f	own_claim 3684 3731;3762 3804	We could introduce additional constraint forces into our system to satisfy the constraints
+Tb2008209e7a21229e4aa12dd08bc6062	own_claim 3133 3191;3213 3240	the usual objections to enforcing constraints with springs do not carry as much weight
+T02afd7ad70a22c238ebcefeb46c9167b	own_claim 9810 9844	we cannot multiply through by W −1
+T307a614702b402e858932e0bded72de4	own_claim 3968 4031	this turns a positive definite system into an indefinite system
+Ra468d5115c12c42c0506e314c6365d02	supports Arg1:Tb2008209e7a21229e4aa12dd08bc6062 Arg2:Tb2008209e7a21229e4aa12dd08bc6062
+R8385f34bdbe56445caf303be950f83bb	supports Arg1:T9e19b60b8ac67738e4b8fadd5a347f6f Arg2:T9e19b60b8ac67738e4b8fadd5a347f6f
+R229f65ad7604d30d06b87f4eb7fa9346	supports Arg1:T8b6c4967ef563b5ad5055547fd0eca49 Arg2:Tab478cd98424885f0a5347a2112f1c75
+R90c7a6f56a465604e3b6ebd26f226d81	supports Arg1:T8a709438d1a882a0b28200589bca1bc1 Arg2:T02afd7ad70a22c238ebcefeb46c9167b
+R8d1b0bf9295ef5bc2342f774433d8f2d	supports Arg1:T307a614702b402e858932e0bded72de4 Arg2:T108f1f302b1c0ce24a1513372d467ce9
+Ra77b9f6cfd2ff6876d5bbcfb0f353be4	supports Arg1:T4df98fa08b9af24c03384c7a1a6e2fff Arg2:T231ee6f7807646fbced02bba7f6ccd3c
+R6fb76abb7ec605cb8d7ae676dcc09aed	supports Arg1:T89c485f6f93c3ff463b4251a07c1fad7 Arg2:T34f0643abdf2d0e8be027af9a14085dc
+R75a1077bb3dade02d24e6020b4501dd6	supports Arg1:Tdf6f72f595ece53dc0dd4e9fc7d75abb Arg2:Tab478cd98424885f0a5347a2112f1c75
+R6f92e490424cbd49a701a53d46646b53	supports Arg1:T4b52f6466fd1e649f9de382a10bb6a4b Arg2:Teb3bd6c0afe3021c36774f369ddb193e
+R535d8a71ecf7e0e69a4b314c38261a5e	supports Arg1:T9b6bc9c9c2561991f25e6cc25020db77 Arg2:T55eb98d139d9fda6edc425b229d56238
+R6daa8e7d9baa9ccbe7ae725084fe9de6	supports Arg1:T9b6bc9c9c2561991f25e6cc25020db77 Arg2:Tfe5382863d6fa5032b1bd5775e07d656
+R6e73b39d4b5bf363094b471d1295941b	supports Arg1:Te429c2536f7d41dc9f14ac0c72b35ec8 Arg2:T47381b26a7e3a58868dffad82a1f2b46
+Re21102297bc0cd6532a08415cc4d47c5	supports Arg1:T9aedf5d0f0d7cc42b315722b98c2fdad Arg2:Ta5e8aa7cc2537138b40f98cba2f11f0d
+R7885eac9c353d0347c20ef62b1ee8510	supports Arg1:T973bd1aa3ff127fbf096d4d532fc8000 Arg2:T9aedf5d0f0d7cc42b315722b98c2fdad
+Rd111fa27d93ed3801bf18fcb615d5e94	supports Arg1:T3ebe27f520ff265d32b517d04caa0396 Arg2:T2dbde81a9178f3dfcc644ad9ab6c0260
+R382fc50607a4cf1c33592933f1287cde	supports Arg1:T8ea6973777d851e113ecf61803b82b4a Arg2:T0a7a83a4f70ea04fb3371d0b4e4c8053
+Rfe1633eac94250cd745e2df49ec096ae	supports Arg1:Taaefd75571bd213b0b651577ed65c763 Arg2:T17d91962c45afd1e1638f980ae04461e

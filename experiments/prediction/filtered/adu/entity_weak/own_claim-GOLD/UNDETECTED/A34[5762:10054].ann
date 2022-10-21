@@ -1,0 +1,6 @@
+T52709b473924d07dea15c0b347402383	own_claim-GOLD 691 737	we resort to the collision report of this case
+Tc2c34cfe14f82ee398a8821a6b150d55	own_claim-GOLD 745 802	we consider this case as a violation of the proximity law
+T15a30310b26e6e0f6963d2c8fa9c7c90	own_claim-GOLD 804 895	We use classical edge-polygon detection algorithms to detect collisions among swept volumes
+Tf244f3b958746b90707a4e80df10dc5d	own_claim-GOLD 897 973	We use this swept volume approach for cloth and the dynamic rigid body alike
+Taa8372c7c70e2122c0a7762b457e8ed9	own_claim-GOLD 979 1064	for the non-moving rigid body only the surface faces are used for collision detection
+Tac99484ea3608fa918012d5bd02f68ba	own_claim-GOLD 1915 1988	We extend Provot’s definition of an IZ to an area where collisions happen

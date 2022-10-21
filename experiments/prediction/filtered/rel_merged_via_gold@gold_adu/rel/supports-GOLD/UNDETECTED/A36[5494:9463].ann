@@ -1,0 +1,9 @@
+Tce32ca3a02fb726db83919c21b96820d	own_claim 3431 3475	Closer to our work is the recent approach of
+T64f0f8fe44daddafcc2240dd9c7891ad	data 2352 2374;2386 2416	the Picture Frame test for measuring shear properties
+Te028ef769ce4636cd7ef8b78c4bbe4b0	data 2378 2383	Cul79
+Tcbb4974c0ff776435cc58098109b7d1e	data 2421 2440;2452 2484	the Cantilever test for measuring bending properties
+T5b7bf96b935671aa8cae63e2a5f1d3af	background_claim 3499 3595	who propose a data-driven piecewise linear elastic cloth model comprising 39 material parameters
+T815451638841ffdcc79206b65a026659	data 2510 2516	PKST08
+R7657398e1e4d2003218d9d7696958a7e	supports-GOLD Arg1:Te028ef769ce4636cd7ef8b78c4bbe4b0 Arg2:T64f0f8fe44daddafcc2240dd9c7891ad
+Ra7a2f5c871da1dcf3e58fe3f80088ca6	supports-GOLD Arg1:T815451638841ffdcc79206b65a026659 Arg2:Tcbb4974c0ff776435cc58098109b7d1e
+R467b05056641a48cc1e4f81d6c144f0c	supports-GOLD Arg1:T5b7bf96b935671aa8cae63e2a5f1d3af Arg2:Tce32ca3a02fb726db83919c21b96820d

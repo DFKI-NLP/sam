@@ -1,0 +1,20 @@
+T28be9c70ea50ba7f73dccd00665cb165	background_claim 8358 8379	This whole process is
+T513ddbe9d6a76d5c9f9e9513a9737d18	background_claim 565 624;646 689	For rigid N-body collisions by graphics and robotics groups and for flexible-rigid collision resolution
+Ta8937750bf6f7245b2fb34037b91b667	own_claim 4805 4906	Bending between CCs is considered significant in the same way as in the case of bending between faces
+T8175400555b9bfd0a3b49bd9d0f20334	background_claim 8424 8582	we have to consider the possibility that the resolution of a collision can create new multiple collisions, which we have to employ another strategy to resolve
+Td7a302e3c8e4c29dfd9fac0ea38cf69b	background_claim 1038 1057	Using these methods
+T208aa92b89c417571bb8a1166caacd4d	own_claim 4507 4624	it might instantly introduce instabilities to the system by allowing closely located CCs to have different velocities
+T9fd7b2cf780348fad82d452b397e6c0b	own_claim 4908 5016	We do not want to handle closely located CCs separately except for the case where the bending is significant
+T15bf49ff31fcf4d52dee1154b69b1b4d	own_claim 11013 11046	this case appears to be very rare
+T8ade289f526cdcddde45db6974e57ba1	own_claim 11056 11191	we can resolve this case by maintaining the barycentric relationship between cloth surfaces and the newly introduced colliding entities
+T9bac13d0e7b332f274afad87d59e1bea	own_claim 4635 4656	there is an exception
+T31476ace08c8146c2ef87714db962a88	background_claim 742 818	they are not directly applicable for deformable N-body collision resolutions
+T3fe1da1ac0221d48805e0b0594e96421	background_claim 698 736	several approaches have been suggested
+T0df6694e7b5f5875e4395ef6aabc38fa	background_claim 1068 1140	we cannot achieve visually satisfying dynamics of cloth-cloth collisions
+R7386ff76b408f3868ac687ba066c404a	contradicts Arg1:T3fe1da1ac0221d48805e0b0594e96421 Arg2:T31476ace08c8146c2ef87714db962a88
+Rce9fcb0efe0c33744e2ec80d34b11dbb	contradicts Arg1:Td7a302e3c8e4c29dfd9fac0ea38cf69b Arg2:T0df6694e7b5f5875e4395ef6aabc38fa
+Reff43431a76619aba5f096982dfd3f93	contradicts Arg1:T513ddbe9d6a76d5c9f9e9513a9737d18 Arg2:T31476ace08c8146c2ef87714db962a88
+R362e7d263884a7473231d407bdeb5612	contradicts Arg1:T208aa92b89c417571bb8a1166caacd4d Arg2:T9bac13d0e7b332f274afad87d59e1bea
+R2ee46a9da95d68f204ce2a30055ea4dd	contradicts Arg1:Ta8937750bf6f7245b2fb34037b91b667 Arg2:T9fd7b2cf780348fad82d452b397e6c0b
+R7ecd79da08a90163412230f87b2f06b3	contradicts Arg1:T28be9c70ea50ba7f73dccd00665cb165 Arg2:T8175400555b9bfd0a3b49bd9d0f20334
+Re0ed2f4124936764d8c2819fd39fa2ea	contradicts Arg1:T15bf49ff31fcf4d52dee1154b69b1b4d Arg2:T8ade289f526cdcddde45db6974e57ba1

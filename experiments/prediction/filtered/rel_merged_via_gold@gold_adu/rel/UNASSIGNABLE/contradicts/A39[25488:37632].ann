@@ -1,0 +1,12 @@
+Td9a7db70dd8e688972ea7fe859219680	own_claim 9653 9681	it gives nonsensical results
+T0b8830c5c2a2b41b9311c274c82bcab9	background_claim 9225 9247;9278 9352	their damping function does not match the quartic energy functions of their continuum formulation
+Tb27e1d43ad754852ead4a030860da9ec	own_claim 9614 9647	This is an easy trap to fall into
+T2dead5d08824393880bb149b14c68132	background_claim 9110 9125;9133 9207	Carignan et al. improved upon this somewhat, borrowing a formulation due to Platt and Barr
+Tb17fc61b19c90ed97d872073405e9caf	own_claim 8340 8406	The energies we have just described are functions of position only
+Tb819d7f010ab5b7e81958080d5b8392e	background_claim 8408 8439;8450 8553	Robust dynamic cloth simulation is critically dependent on well-chosen damping forces that are a function of both position and velocity
+Td6d20ae53e3d56dd044ff0a33a7f1886	own_claim 8568 8647	the strong stretch force must be accompanied by a suitably strong damping force
+T4afc721af6cfac8cc15a158648b30b1b	own_claim 8752 8855	this strong damping force must confine itself solely to damping in-plane stretching/compressing motions
+Rc3f4ac021825c8afc63b09509586ae04	contradicts Arg1:Tb17fc61b19c90ed97d872073405e9caf Arg2:Tb819d7f010ab5b7e81958080d5b8392e
+R41edb86163ac684b6c62e05bfc5873d3	contradicts Arg1:Td6d20ae53e3d56dd044ff0a33a7f1886 Arg2:T4afc721af6cfac8cc15a158648b30b1b
+R7aea9e91e22d434336db3e3362d35764	contradicts Arg1:T2dead5d08824393880bb149b14c68132 Arg2:T0b8830c5c2a2b41b9311c274c82bcab9
+R0c5b3705a56ccd10b06d9051eb677bbb	contradicts Arg1:Tb27e1d43ad754852ead4a030860da9ec Arg2:Td9a7db70dd8e688972ea7fe859219680

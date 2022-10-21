@@ -1,0 +1,14 @@
+T42642cd2842181258aec71aebc20fce5	background_claim 33 141;143 145	Cloth modeling has a long history, dating back to work in the textile community from the mid-1930s by Peirce 27
+T8cffd93b4fb0819e299df05d832a31c5	background_claim 148 280	Work on cloth modeling in computer graphics has focused on developing dynamic simulation techniques that are both realistic and fast
+T62d48f05d0a29f1913c71f7779072135	background_claim 282 377;379 380	Baraff and Witkin describe a cloth model that uses stiff springs with implicit time integration 4
+T2358662a55b1aeb58ae2fefdd1314ea4	background_claim 383 475	This model was subsequently adapted to reduce the over-damping due to implicit integration 9
+T6fb756b1314623308368346fce1d3509	background_claim 627 740	Choi and Ko introduced a bending energy model that more accurately captures the fine creases and bends of cloth 9
+T94c496e8e9057e999455f0c97c4933ce	background_claim 743 864;866 868	Lahey provides a comprehensive overview of cloth hysteresis models from the perspective of computational fabric mechanics 23
+T683995d31e351f6991f20adc214d6550	background_claim 1022 1057	by preemptively avoiding collisions
+T071d37e0c0c53e3e657ba7b956bb8f68	background_claim 1184 1234	this large body of work on cloth simulation models
+Te1fe4b030939182eeecd12bd49f71d44	background_claim 1601 1635	An important exception is the work
+T7cecfaf751e2cd941aa482880378e51b	background_claim 2443 2591;2593 2595	Jojic and Huang fit parameters of a particlebased cloth model to fit a range scan of real cloth in a static rest configuration, draped over a sphere 21
+T255d654fd7cc826990959e262dca187d	background_claim 2807 2943	Jojic and Huang did not treat the problem of measuring dynamic parameters or demonstrate accurate results across a range of fabric types
+T6b6f7a39f2387333403e35285a6645e4	background_claim 3404 3479	Rather than computing shape at every time instant independent from the next
+T7a76b7130af165d5fce0e8b9e9a531eb	background_claim 3481 3553	it can be advantageous to integrate images over time to improve accuracy
+T5ec768eef0debfee814bcb9c2e829216	background_claim 3556 3608	Two examples of promising work along these lines are

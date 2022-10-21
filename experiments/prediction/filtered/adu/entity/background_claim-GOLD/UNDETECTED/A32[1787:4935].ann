@@ -1,0 +1,8 @@
+T96274f1b7e075ea842a3005ecf20c3db	background_claim-GOLD 394 527	Such a large number of triangles put cloth simulation off from interactive speeds, even with adaptive time steps, introduced recently
+T1ff429c55d3f37ca32348cd37c8d936b	background_claim-GOLD 671 767	one can increase fineness of triangles only in the potential regions where wrinkling might occur
+Tda66be5fd187932f7b3f6ca5834535e6	background_claim-GOLD 769 795	This is very well possible
+T8819227c89c13510a19bae59742a27b3	background_claim-GOLD 899 928	a significant problem remains
+T6bed4c40ff40c1fb292395a24fb2368d	background_claim-GOLD 1989 2035	Collision response methods and friction models
+T0a48156ef92bf75699f8ae2920de5d64	background_claim-GOLD 2053 2127	have been rather simple for such a complex problem and robust numerics too
+T07bdb45ed49feb0b87aa2950739d737a	background_claim-GOLD 2493 2555	Other attempts to model wrinkles include those by Gotoda et al
+T84aa61cbf33e956a1c6b9b37b75b1ec5	background_claim-GOLD 2567 2579	and Wu et al

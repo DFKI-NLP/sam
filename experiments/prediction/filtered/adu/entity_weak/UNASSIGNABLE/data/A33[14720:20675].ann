@@ -1,0 +1,4 @@
+Tc104a5396ad6f67eec4c75b8e8f14c66	data 3404 3447	Markers that are observed in multiple views
+T7f5f481f1167e57e1cfbac132a9325cf	data 3510 3536	Hartley and Zisserman 2000
+T04e244d26fc5a98ee1e39e3deb8292a4	data 5537 5579	a strain constraint is violated s i, j = 1
+T2dd9a064e4623eab474f36c40724cbe3	data 5602 5658	only one affinity for image marker i is above a theshold

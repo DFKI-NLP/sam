@@ -1,0 +1,13 @@
+T98a29b4fcbfd5acc7eb6bb511896a3ff	data-GOLD 46 119	the known position x(t 0 ) and velocity x(t 0 ) of the system at time t 0
+T4a18614223aef19491edc7b020867d3d	data-GOLD 809 911;920 973	The explicit forward Euler method applied to equation (3) approximates x and v as x v = h M v −1 0 f 0 where the force f 0 is defined by f 0 = f(x 0 , v 0 )
+T01be96162fddb7e84b9b890cdf450db2	data-GOLD 978 998	previously discussed
+T75d5120501730f869ef2112afe047b72	data-GOLD 1141 1168;1188 1189;1200 1240	x and v are approximated by 4 v x = h M −1 f(x 0 v + 0 + x, v v 0 + v)
+T23e9f90e0348b58ee1e7ad6a3166265a	data-GOLD 1636 1672	Equation (4) is a nonlinear equation
+Tced21a84ddd2946bfdf7ac3c02f511f8	data-GOLD 1889 1973	the derivative ∂f/∂x is evaluated for the state (x 0 , v 0 ) and similarly for ∂f/∂v
+T9d6dca0a477597679280e6a0c9bbf195	data-GOLD 1975 2049	Substituting this approximation into equation (4) yields the linear system
+T047ca1a1220f8b1c3f48b19e8459a60c	data-GOLD 2081 2127	v x = h M −1 (f 0 + v 0 ∂x ∂f + x v + ∂v ∂f v)
+Tb4d92431c0b3f392a2fcc03b7f172241	data-GOLD 2147 2266	Taking the bottom row of equation (5) and substituting x = h(v 0 + v) yields v = hM −1 f 0 + ∂x ∂f h(v 0 + v) + ∂v ∂f v
+T432aad129175a74c4d37c0691b9288c3	data-GOLD 2269 2332	Letting I denote the identity matrix, and regrouping, we obtain
+Tf994c5bcc9118e0a4cf3d05fed2dbf84	data-GOLD 2442 2467	which we then solve for v
+T5a4699598bc960cda605ff2758f90e83	data-GOLD 2469 2513	Given v, we trivially compute x = h(v 0 + v)
+T22f82db180484f01c22ba4a7b5f8e460	data-GOLD 2947 3062	starting from the output state (x 0 + x, v 0 + v) and using a forward Euler step to run the system backward in time

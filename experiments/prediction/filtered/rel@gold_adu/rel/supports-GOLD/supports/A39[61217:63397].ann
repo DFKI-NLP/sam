@@ -1,0 +1,15 @@
+T19ada33058d48c18d7cbecb0f4297c28	own_claim 519 636	visually pleasing results, meaning a numerically stable solution, rather than overall accuracy, is the deciding voice
+Te0bde0a11cc5c81831ae35badaf5e1c2	own_claim 2009 2108	the simulator settles down to wasting only one out of every 40 steps in attempting too large a step
+T90ffd579531db5ad6d1ccc996a5c2e23	data 474 512	Our goal is animation, not engineering
+Tb20aa6a08ad63e40f514bc5cf385b109	data 1974 2007	the user chooses too large a step
+T1c7d34898447578c62465b2da3c03c98	data 1901 1963	the simulator will try increasing the step size every 40 steps
+T2745e2b688408d621886ac2d70b7f19d	own_claim 1232 1307	an unstable step invariably results in stretch changes that are quite large
+T1ad469b85bf44eb29a672ff47c8e010c	own_claim 1313 1316;1322 1337	are easily detected
+R54b010cabc9c386f0b38c6c129a932f7	supports-GOLD Arg1:T90ffd579531db5ad6d1ccc996a5c2e23 Arg2:T19ada33058d48c18d7cbecb0f4297c28
+R23964bab2e379e1ad2bb3a5babd3ef01	supports-GOLD Arg1:T2745e2b688408d621886ac2d70b7f19d Arg2:T1ad469b85bf44eb29a672ff47c8e010c
+Rcdbe7b8094cc16461aed0af3f1ee177b	supports-GOLD Arg1:Tb20aa6a08ad63e40f514bc5cf385b109 Arg2:Te0bde0a11cc5c81831ae35badaf5e1c2
+R7b15b1ea45f654ef84ecfd93d896bc3f	supports-GOLD Arg1:T1c7d34898447578c62465b2da3c03c98 Arg2:Te0bde0a11cc5c81831ae35badaf5e1c2
+R35ad30e35639b4978ae13bd51b64ea61	supports Arg1:T90ffd579531db5ad6d1ccc996a5c2e23 Arg2:T19ada33058d48c18d7cbecb0f4297c28
+Rfea94f586a6307c334041ff1ad8ff64d	supports Arg1:T2745e2b688408d621886ac2d70b7f19d Arg2:T1ad469b85bf44eb29a672ff47c8e010c
+R0aaba3f32fe27eb1255524c032cd5a09	supports Arg1:Tb20aa6a08ad63e40f514bc5cf385b109 Arg2:Te0bde0a11cc5c81831ae35badaf5e1c2
+Rce0d7d372da98990c12209de8cdd53cf	supports Arg1:T1c7d34898447578c62465b2da3c03c98 Arg2:Te0bde0a11cc5c81831ae35badaf5e1c2

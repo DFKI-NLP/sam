@@ -1,0 +1,6 @@
+T16a91dbf196d5aa6d9469fed33aa2806	own_claim 4540 4579	As with all sequential tracking methods
+T21a0f0908b97c33dce217d6377cd14ce	own_claim 7404 7563	to fit model parameters for stretch, shear and bending that best describe the cloth, and to validate the parameter fits by comparing against other measurements
+T70369a5f258cb6321c59bdbf2346523e	own_claim 7715 7806	allow estimating stretch, shear and bending properties in a separate and incremental manner
+T19d1a83795412a12d9130673c92d6246	own_claim 7817 7861	unlike standard textile evaluation practices
+T200cacf609ae26d291165a1bad9afed4	own_claim 8322 8388	Shearing is captured using an approximate picture-frame experiment
+T20a63e8b2b2b9296ec7c9c3ac2a512d8	own_claim 10096 10227	In the vision system, the camera calibration accuracy is within 0.3 pixels, or about 0.075 millimeters at the distance of the cloth

@@ -1,0 +1,29 @@
+T5d192dc4648cce66078b31340e256c9a	data-GOLD 352 368	previous section
+T82c29b4218e55bd6755826a3ebb8cd7d	own_claim-GOLD 369 481	both methods produce realistic looking results which are capable of enhancing the realism of computer animations
+Tc9fcee451731e1f71dc6e46aef1da012	own_claim-GOLD 489 538	the first model has a wider range of applications
+Tfa47770ef9e8b7cb33afca2642ffc474	own_claim-GOLD 540 648	the second one provides an easy method which still delivers realistic effects such as air resistance and lee
+Taa142cfc8f2e1c399dee15036ba3e16f	own_claim-GOLD 650 749	All methods described in this work should be easy to extend to three-dimensional deformable objects
+T915038c21ab56735a22b11974aed0a80	own_claim-GOLD 751 807	All the methods apply the same except for simple changes
+T64721051c30acde3c1a2888b17778b5e	data-GOLD 815 871	three-dimensional objects define an inner and outer part
+T75cd4aba622ddfce71eeb37e51b81c5c	own_claim-GOLD 873 940	the adaption of the face normals in equation (3.1) is not necessary
+T704e250cc1d4a0901f1adc0c1448a727	own_claim-GOLD 952 1046	in the wind field computation care has to be taken that no wind field is present in the object
+T419c0c47e6a3df7bfcf57aed6be799c5	own_claim-GOLD 1054 1100	the same method as described for rigid objects
+T7124aa56a3778da1a736a8a073a08981	data-GOLD 1102 1115	section 4.2.2
+T0998c3892bc75d916c7702aca9861652	own_claim-GOLD 1117 1131	can be applied
+T6c101adff63efd9828ae4b9bb05c277f	own_claim 29 118	We presented two models for including advanced wind effects into cloth simulation systems
+T7eb31a945c21c53ac96dfc61ff44b649	own_claim 120 248	The first concentrates on physically accurate computations using a semi-Lagrangian approach to solve the Navier-Stokes equations
+T09eef226ae3781ff8f1a7fb84fc9a0f0	own_claim 250 328	the second model incorporates a particle tracing method for global wind fields
+T250c0d32e2ef144457cc35eb70942fe1	own_claim 369 481	both methods produce realistic looking results which are capable of enhancing the realism of computer animations
+T8edd69e02d1914c8294e280909c08c1f	own_claim 489 538	the first model has a wider range of applications
+T14d7b716d2ce90e8ece36975d18cd42d	own_claim 540 617	the second one provides an easy method which still delivers realistic effects
+T138c4c76f423b6685cdf333f96fc4645	data 626 640	air resistance
+T06610f5772f0a47d73da56801c6ba018	data 645 648	lee
+T918bf53e249f2a1f51efc7d529752426	own_claim 650 749	All methods described in this work should be easy to extend to three-dimensional deformable objects
+T0d012dc85b30890652911cabfe52ee31	own_claim 751 807	All the methods apply the same except for simple changes
+Td8e16e68689dde88a5e9e60c8526713b	data 815 871	three-dimensional objects define an inner and outer part
+T302790bba67ea0ebc0561605003e0cea	own_claim 873 940	the adaption of the face normals in equation (3.1) is not necessary
+Tc5e93cb14bb0ee9b81119efda581aaa5	own_claim 952 1046	in the wind field computation care has to be taken that no wind field is present in the object
+T4c1209b9ad0d3c91d6daee0a4ed02024	own_claim 1054 1100	the same method as described for rigid objects
+T6cacd41d897cacf7e6331296bca0e90a	data 1102 1115	section 4.2.2
+T03de0914a484eecf50e71e4e8e895232	own_claim 1117 1131	can be applied
+

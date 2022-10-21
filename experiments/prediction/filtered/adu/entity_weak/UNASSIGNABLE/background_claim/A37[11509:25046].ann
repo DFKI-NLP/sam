@@ -1,0 +1,4 @@
+T063af191229d1f695aa78b38d987d56d	background_claim 237 273	L(x, v) = 1 v T Mv −V (x) − C(x) T λ
+Tc5522a52b386052ade0ba4a1bdbdfccf	background_claim 2152 2177	does not offer a solution
+T26618bc22295d6a38a99367eb9f27248	background_claim 2452 2556	no scaling, λ , of the constraint direction yields a satisfied end-of-timestep constraint, C(x n+1 ) = 0
+T12a4c151e36dbec1b9ba4a33fa0daaab	background_claim 2585 2653	this observation manifests as a singular Jacobian in Newton’s method

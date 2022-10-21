@@ -1,0 +1,46 @@
+program: training_scripts/cross_validation/train-cross-validation.py
+method: random
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - "train"
+  - "-f"
+  - "allennlp_configs/adu_sciarg_scibert_split_hpt.jsonnet"
+  - "--include-package"
+  - "sam"
+  - "-s"
+  - "experiments/adu/hpt_trials/hpt_multiple_parameters"
+  - "--num_folds"
+  - "2"
+  - ${args}
+
+metric:
+  name: best_validation_span/overall/f1_mean
+  goal: maximize
+parameters:
+  trainer.optimizer.lr:
+    distribution: uniform
+    min: 0.0005
+    max: 0.01
+  model.dropout:
+    distribution: uniform
+    min: 0.2
+    max: 0.8
+  model.encoder.dropout:
+    distribution: uniform
+    min: 0.2
+    max: 0.8
+  trainer.grad_norm:
+    distribution: uniform
+    min: 1
+    max: 10
+  trainer.patience:
+    min: 5
+    max: 25
+  model.encoder.num_layers:
+    min: 2
+    max: 6
+  model.encoder.hidden_size:
+    min: 128
+    max: 512

@@ -1,0 +1,18 @@
+T4cb577a2d79531b117c8130e67064dc2	data-GOLD 710 793	a nonlinear curve with increasing stiffness for higher strain, and large hysteresis
+T480d5008d33535b27549593c4f5c8cb1	data-GOLD 3856 3864	shearing
+Tc2fa1dff835b1e064230ea9d7d16b517	data-GOLD 4637 4673	seen in the force-displacement plots
+Te1d154a00407bc6469e36ef646a1e181	data-GOLD 4675 4714	the buckling behavior in corner pulling
+T2851d07fce5444c4f92d429ebec29346	data-GOLD 6460 6561	even a small change in material properties may lead to distant stable configurations in the L 2 sense
+Ta02e149e6707a3f7024032529e2bb3db	data-GOLD 7515 7526	Section 4.1
+T3d46f2ed860f9b371a0c256c4360a148	data-GOLD 7619 7665	the diagonalization of the standard StVK model
+Tda3b687bf04db2d305774543b110dc61	data-GOLD 7702 7736	shear stiffening due to stretching
+T9a8547f8c5c8e7fce32e5e48a76010d6	data-GOLD 8181 8186	WRO11
+T804dfb26f90e5e5aedda3f151c238ee3	data 710 793	a nonlinear curve with increasing stiffness for higher strain, and large hysteresis
+Taad055ab197462229417e31e4ecbfb00	data 3856 3864	shearing
+T5a72a50144b733925ea8112c8f4929c9	data 4637 4673	seen in the force-displacement plots
+T51ea98fad2396fa531b3183284c790e2	data 4675 4714	the buckling behavior in corner pulling
+T3f4dbf2f56d0a2d5749c3865785f5061	data 6460 6561	even a small change in material properties may lead to distant stable configurations in the L 2 sense
+T2c6748e7c5719aabdb589ced1b4b5768	data 7515 7526	Section 4.1
+T38cc8af95778c5981e789346c8eca459	data 7619 7665	the diagonalization of the standard StVK model
+Tc0733b4bdb6e610170f83059698842fa	data 7702 7736	shear stiffening due to stretching
+T22ec4d0d5a2c7e618720790e018abd86	data 8181 8186	WRO11

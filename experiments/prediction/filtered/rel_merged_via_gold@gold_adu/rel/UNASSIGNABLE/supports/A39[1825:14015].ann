@@ -1,0 +1,22 @@
+Tdb0d885336afa3ebf7960a3030b33c71	background_claim 447 468;581 617	other research groups have taken up the challenge of cloth
+Tbfbbb360089804ba374bdc0ae774a8fb	own_claim 8449 8465;8490 8589	we show garments exhibiting complex wrinkling and folding behavior on both key-framed and motion-captured characters
+T3294a5f18acda13290a69f4de25d3afa	background_claim 4226 4275	a subject which has been largely ignored thus far
+T0d058487afe02bdf42fbbe52641e4972	data 8222 8276;8285 8304;8345 8436	we demonstrate results similar to those in Breen et al and Eberhardt et al with a running time just over 2 seconds per frame on an SGI Octane R10000 195 Mhz processor
+T33287d0956efa4089606b7ab94e6efa7	background_claim 12002 12055	the convergence properties of this method are unclear
+T7c08eb0023f9aea4f0ffcba79b3241cf	background_claim 11932 12000	He iteratively adjusts nodal positions to eliminate unwanted stretch
+T78f8eba61540a8f4f97e49e61bc4fbaf	background_claim 5307 5357;5384 5434	An ADI method generates a series of tightly banded linear systems rather than one large sparse system
+T4a735a5787937599a419c4adf5bf559b	background_claim 2603 2673	being comparatively permissive in allowing bending or shearing motions
+Tf6a8b1c9f1228873fa94d1b318d9c2ed	background_claim 2555 2596	Cloth strongly resists stretching motions
+T3088875c4f108a09677c5f25a3a9d578	own_claim 2534 2553	This is unfortunate
+T818430017cf4d59ff276abc7be876617	background_claim 337 433	applied techniques from the mechanical engineering and finite element communities to the problem
+Tc06e9f7c9e71e7c2c9f7c83072d5f441	data 4277 4368	A key step in our simulation process is the solution of an O(n) × O(n) sparse linear system
+Tebb3b27e909f241d9ba54284bb14f4a5	background_claim 5368 5382	quickly solved
+T07c946ad69f9d6e6b2c20bdfc37f0275	own_claim 5626 5635;5647 5706;5759 5846	The speed with which our sparse linear systems can be robustly solved has convinced us that there is no benefit to be gained from using an ADI method instead
+R1bc372a43642737fd3ac772867948b35	supports Arg1:T07c946ad69f9d6e6b2c20bdfc37f0275 Arg2:T07c946ad69f9d6e6b2c20bdfc37f0275
+Rad41f90d22ba3b62dc77813eda09397f	supports Arg1:Tebb3b27e909f241d9ba54284bb14f4a5 Arg2:T78f8eba61540a8f4f97e49e61bc4fbaf
+Ra4d37f9a189c7fe8241ac952922bb4e1	supports Arg1:T818430017cf4d59ff276abc7be876617 Arg2:Tdb0d885336afa3ebf7960a3030b33c71
+R612c8da012fd77137e34cef3a8c6b134	supports Arg1:Tf6a8b1c9f1228873fa94d1b318d9c2ed Arg2:T3088875c4f108a09677c5f25a3a9d578
+Rb861c3b908ffcd5a3db585b3946a3b27	supports Arg1:T4a735a5787937599a419c4adf5bf559b Arg2:T3088875c4f108a09677c5f25a3a9d578
+R6fcc28dca039b0e6b3581725f2edf483	supports Arg1:Tc06e9f7c9e71e7c2c9f7c83072d5f441 Arg2:T3294a5f18acda13290a69f4de25d3afa
+R00bfbf9def5365c6f8d5d9daafff8361	supports Arg1:T0d058487afe02bdf42fbbe52641e4972 Arg2:Tbfbbb360089804ba374bdc0ae774a8fb
+R28188d9c4590063280ba015b2e9041e6	supports Arg1:T7c08eb0023f9aea4f0ffcba79b3241cf Arg2:T33287d0956efa4089606b7ab94e6efa7

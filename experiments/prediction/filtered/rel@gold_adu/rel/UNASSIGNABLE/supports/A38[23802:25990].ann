@@ -1,0 +1,6 @@
+T62a7a1f885e02c6a5a1c3e61f1adb691	own_claim 1097 1178	The static test give a good estimate for the static stiffness and bend parameters
+Tf2e2307cd65fcfecf228b22c41c49a01	own_claim 1574 1667	We designed the waving motion to roughly match the types of motion occurring in real garments
+T16b4f5574545a966360d305cc76d1758	own_claim 1027 1075	different fabrics attain different static shapes
+T0953bb13030d1377109ae7ca8e7e9e53	own_claim 1684 1810;1825 1850	This gives reasonable estimates for cloth parameters while avoiding the need to optimize directly on complex fabric geometries involving many collisions
+R60eae6dd05c3be7619c90fa808564af7	supports Arg1:Tf2e2307cd65fcfecf228b22c41c49a01 Arg2:T0953bb13030d1377109ae7ca8e7e9e53
+Rd6c0ac8de1f903692ec5ffa7102e780b	supports Arg1:T16b4f5574545a966360d305cc76d1758 Arg2:T62a7a1f885e02c6a5a1c3e61f1adb691

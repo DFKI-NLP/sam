@@ -1,0 +1,3 @@
+T6b24fd61344b12cb819d8075e9943788	own_claim 424 575	In adopting the velocity-filtering viewpoint, we gain speed, simplicity, and software modularity—all key to a practical and maintainable implementation
+T0759d23dc8ef8e50f20e378c5c5ebd79	own_claim 586 618	this comes at a theoretical cost
+R272076265370dd333aba11d279e7212b	contradicts Arg1:T6b24fd61344b12cb819d8075e9943788 Arg2:T0759d23dc8ef8e50f20e378c5c5ebd79

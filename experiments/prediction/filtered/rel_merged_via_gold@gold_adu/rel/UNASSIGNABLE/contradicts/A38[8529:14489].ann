@@ -1,0 +1,5 @@
+Tf3c3a0f997039e8343bc8072f369349b	background_claim 4717 4797	this method offers the advantages of familiarity and automatic bounding of error
+T0b8191ef757227fd516519d578c71c40	background_claim 4799 4816	it is rather slow
+T73ed87db5307c1f96dd9fb5831f7ead1	background_claim 4822 4884;4890 4905;4908 4930	recent work suggests that using 2nd-order backward differences Newmark schemes may be a better choice
+R0f1cf93b48e1ca00370074588dbb7291	contradicts Arg1:Tf3c3a0f997039e8343bc8072f369349b Arg2:T0b8191ef757227fd516519d578c71c40
+R3de09c4d79e0ef1a1175f75195c34bef	contradicts Arg1:Tf3c3a0f997039e8343bc8072f369349b Arg2:T73ed87db5307c1f96dd9fb5831f7ead1

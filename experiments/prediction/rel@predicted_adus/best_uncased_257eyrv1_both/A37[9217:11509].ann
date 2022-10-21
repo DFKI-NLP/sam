@@ -1,0 +1,47 @@
+T49b72d773be11207a1b74ab7c8503379	background_claim 31 74	Woven fabrics are not a continuous material
+T4a66c4bd60e5025333f27dd55dc3ba7c	background_claim 83 141	they are a complex mechanical network of interleaving yarn
+T263ed319d78f93ed0ff2d69527151706	data 143 160	Breen et al. 1994
+T5b76712f5de19fcc2ca4815dcb1ea254	data 169 217	the constituent yarn is often quasi-inextensible
+Tedacd6f684954d922dd90330b59c4dd6	background_claim 219 285	the material’s warp and weft directions do not stretch perceptibly
+T860db231ee1edf251fa89ae2cd7c260f	background_claim 287 346	In imposing inextensibility on all edges of a triangle mesh
+Tf69c37510bcf4eab2d7f0da6633a3d80	background_claim 348 422	one quickly runs into parasitic stiffness in the bending modes, or locking
+T8da0c6eac86f5f0399cfe6fd0c873026	data 425 452	Zienkiewicz and Taylor 1989
+Tbf116e578c5d7fe1b95caabf1ec5fc6d	background_claim 461 527	locally-convex regions of a triangle mesh are rigid under isometry
+Tbff1037ed0851ab4ae597b436259d594	own_claim 538 621	we consider warpweft aligned quadrilateral meshes with a sparse number of triangles
+T8f528c4e10c3c53bcb40e83d7fe48e01	own_claim 646 665	A degree of freedom
+T6fc132b69034f4bcf21575ed3765fe96	own_claim 704 808	constraining all edges of a quad mesh may circumvent the rigidification that occurs with triangle meshes
+Tccc06866ac3d82d4aed7f69610f4f495	own_claim 828 854	we have 3n positional DOFs
+T088f9fdb5dd2efe9470e12d150614c0d	own_claim 856 875	their triangulation
+Tc53def5e7fa9663ed26a149f642a8b1d	own_claim 900 992	introduces approximately 3n (resp. 2n) edges, with corresponding inextensibility constraints
+Td8549f6c969ba6543765bfd9c6d8d528	own_claim 994 1082	Subtracting constraints from positional DOFs leaves nearly zero DOFs for a triangulation
+Tc264af04129a03e6f5c758653d7ee4be	own_claim 1118 1134	O(n) DOFs remain
+T5c28c2f19c94391fb8c5bbc99003ae6f	own_claim 1152 1230	in a flat configuration they correspond to the normal direction at each vertex
+Tdedf12e4d57137a2b9e22dad72eb0ec0	own_claim 1245 1273	under general mesh positions
+T1b3bb59a7aa82d96f30525ae2404ed37	own_claim 1275 1315	the constraints are linearly independent
+T3aa58d5e3f062e419afdb625a4bdcca1	own_claim 1322 1371	a full-rank Jacobian treatable by a direct solver
+T48b6da9ff91f67e26b2600d4914339da	data 1373 1375	§4
+Tc963200653e2b810ddfebf64b1581182	own_claim 1516 1554	C(p a , p b ) = p b − p a 2 /l − l = 0
+Tdc8d36fb92c4b5c5a02d6d0590ad045a	own_claim 1574 1620;1640 1641;1652 1689	The solve will require the constraint gradient 2 ∇ p b C(p a , p b ) = 2(p b − p a )/l
+T7df4662d1bad45b5deedded77f033700	data 1715 1813	shearing modes excite only a mechanical interaction of warp and weft, and not a stretching of yarn
+Tda9bf88e7868e2ef78026879a88fa04d	own_claim 1815 1851	fabric does indeed shear perceptibly
+T94c5749d13fbd655b03ddb95950125b2	own_claim 1864 1949	we model shear using non-stiff stretch springs applied on both diagonals of each quad
+T5a25a0255042063797898314a7136e33	own_claim 1951 2089	The complete model of in-plane deformation is compatible with an existing code’s quador triangle-based treatment of bending and collisions
+T49c4916efbe0ace2270f130f151b57f2	own_claim 2091 2159	With this simple formulation of inextensibility constraints in place
+Tda58a19f47905dabc39c5dc9eca36471	own_claim 2161 2224	what is needed is an efficient method for enforcing constraints
+R50cfdb199ec220f20481f7e56073b3bf	supports Arg1:T263ed319d78f93ed0ff2d69527151706 Arg2:T4a66c4bd60e5025333f27dd55dc3ba7c
+R7b32f6169ec4330e74742c378c2815cc	supports Arg1:T5b76712f5de19fcc2ca4815dcb1ea254 Arg2:Tedacd6f684954d922dd90330b59c4dd6
+Rb97060b216bd9cd44ec553dd8034ba21	supports Arg1:T860db231ee1edf251fa89ae2cd7c260f Arg2:Tf69c37510bcf4eab2d7f0da6633a3d80
+Ra97724f39b3639b2efbe6b1c958c4171	supports Arg1:T8da0c6eac86f5f0399cfe6fd0c873026 Arg2:Tf69c37510bcf4eab2d7f0da6633a3d80
+R23f6b5b39b4fd1dc4eadd8573cd9e03e	supports Arg1:Tbf116e578c5d7fe1b95caabf1ec5fc6d Arg2:Tf69c37510bcf4eab2d7f0da6633a3d80
+R53569607ab16013b4a38b660b0375bea	parts_of_same Arg1:T8f528c4e10c3c53bcb40e83d7fe48e01 Arg2:T6fc132b69034f4bcf21575ed3765fe96
+Rc7c461aa6075aa9c00fe9a27e8428a6e	supports Arg1:Tccc06866ac3d82d4aed7f69610f4f495 Arg2:T6fc132b69034f4bcf21575ed3765fe96
+R04a76f56d8b3ba6096bdf5b5ac1dccaf	supports Arg1:T088f9fdb5dd2efe9470e12d150614c0d Arg2:Tccc06866ac3d82d4aed7f69610f4f495
+Rf144b96dac3b4131fd5dcd531569aa08	parts_of_same Arg1:T088f9fdb5dd2efe9470e12d150614c0d Arg2:Tc53def5e7fa9663ed26a149f642a8b1d
+R779d224904005ed79f59009284373019	supports Arg1:Tc53def5e7fa9663ed26a149f642a8b1d Arg2:T6fc132b69034f4bcf21575ed3765fe96
+Re745abe8c5d31debd680a5a9b349774c	supports Arg1:Tc264af04129a03e6f5c758653d7ee4be Arg2:T5c28c2f19c94391fb8c5bbc99003ae6f
+Rbb9ab867fd3ab2e992edba9cb322d7ab	supports Arg1:Tdedf12e4d57137a2b9e22dad72eb0ec0 Arg2:T1b3bb59a7aa82d96f30525ae2404ed37
+Re33d382f4cccf61423515626d5e2b4f0	supports Arg1:T1b3bb59a7aa82d96f30525ae2404ed37 Arg2:T3aa58d5e3f062e419afdb625a4bdcca1
+Rcc6e353b3df9529b2ccbfe9373b0d323	supports Arg1:T48b6da9ff91f67e26b2600d4914339da Arg2:T3aa58d5e3f062e419afdb625a4bdcca1
+R860ee6318b26296c690b3333f568e377	supports Arg1:T7df4662d1bad45b5deedded77f033700 Arg2:Tda9bf88e7868e2ef78026879a88fa04d
+R8e2f78707f159594fa8592312bf03212	supports Arg1:Tda9bf88e7868e2ef78026879a88fa04d Arg2:T94c5749d13fbd655b03ddb95950125b2
+R4b996019ec403fb2a290de004206b71d	supports Arg1:T49c4916efbe0ace2270f130f151b57f2 Arg2:Tda58a19f47905dabc39c5dc9eca36471

@@ -1,0 +1,26 @@
+T9f79903405a36b522b7dc669255a9897	own_claim-GOLD 2424 2770	We shall restrict our consideration to three different methods which explore the range of these classes, and which seem to fit the best the requirements set for cloth simulation problems, in terms of implementation simplicity and efficiency for particle systems using large numbers of particles that interact sparsely and with a constant topology
+Tdef923ac6bc48d019f22e476c9909f09	own_claim-GOLD 3080 3150	We preferred this method to the still simpler first-order Euler method
+Tbc69d916cbaa17600f0dba33529acfdb	own_claim-GOLD 4179 4306	We implemented this method combined with a Conjugate Gradient algorithm using linear system matrix products computed on the fly
+T3de5efee12d6ff3178ed5cc64a87aa0e	own_claim-GOLD 4337 4514	and thus able to take into account the anisotropy and nonlinearities of the mechanical model as the actual Hessian matric is used for each current state of the mechanical system
+Td213612d9cc4e07bd426114da4401ae4	own_claim-GOLD 4516 4624	No initial matrix setup is required, suppressing also the need of separating linear and nonlinear components
+Tde2aef5cc6c270e58dd553be2af89d53	own_claim-GOLD 4982 5039	preliminary experiments have shown very deceptive results
+Taea7b07d2aa675f43b7e23bd86af98aa	own_claim-GOLD 5045 5135	the gain of accuracy did not compensate the large calculations required for each iteration
+T59863394ec65821ba0e69ee15c9c8a1c	own_claim-GOLD 5145 5266	increased instability problems did not allow time steps much larger than those used for good accuracy with backward Euler
+T52f58ac45ab6fa320dd32a263958ea2a	own_claim-GOLD 5268 5426	We did not consider in our tests the methods aimed toward simplifications which might highly approximate and degrade the dynamic behavior of deformable models
+T1bfdd1cf3fc2076ebe06611869279f32	own_claim-GOLD 5821 5873	these approximations produced more simulation errors
+T4187cea28518c2e460e6368026842e7c	own_claim-GOLD 5940 6075	than producing a quick and rough linear system solution using a reduced number of Conjugate Gradient iterations with an accurate matrix
+T78799546272cbd0a37a11408482babcc	own_claim-GOLD 7202 7267	The implementation also supports collision detection and response
+T811576d82e6b3c0d2d1b9a87b3a9e3d2	own_claim-GOLD 7306 7484	An object-oriented framework written in C++ integrate all these technologies into a single application allowing simulation of cloth objects of any shape with specified parameters
+T4d31bb459d3c9ea80ba9166140a7e7de	own_claim 2424 2770	We shall restrict our consideration to three different methods which explore the range of these classes, and which seem to fit the best the requirements set for cloth simulation problems, in terms of implementation simplicity and efficiency for particle systems using large numbers of particles that interact sparsely and with a constant topology
+T7632c0d356f637b011d7b3f74a0e78cc	own_claim 3080 3150	We preferred this method to the still simpler first-order Euler method
+T89ce48d15d04fc7d3023c1dce1b75e34	own_claim 4179 4306	We implemented this method combined with a Conjugate Gradient algorithm using linear system matrix products computed on the fly
+Td8641a397491d4fbc1e12dfc07d3cfc3	own_claim 4337 4514	and thus able to take into account the anisotropy and nonlinearities of the mechanical model as the actual Hessian matric is used for each current state of the mechanical system
+T740d93efd271bc703f6a3aefdcf0e8db	own_claim 4516 4624	No initial matrix setup is required, suppressing also the need of separating linear and nonlinear components
+Tcc05057857a8213cb47c053db412d620	own_claim 4982 5039	preliminary experiments have shown very deceptive results
+T460d45355d970f8b239302ac7ab76e84	own_claim 5045 5135	the gain of accuracy did not compensate the large calculations required for each iteration
+T713ab89c3ee0e0053fba83b1b86d80d6	own_claim 5145 5266	increased instability problems did not allow time steps much larger than those used for good accuracy with backward Euler
+T98e90e859ac747f04ea501a5403b52bc	own_claim 5268 5426	We did not consider in our tests the methods aimed toward simplifications which might highly approximate and degrade the dynamic behavior of deformable models
+T37d985c70b1c086d448c6eb5e8833608	own_claim 5821 5873	these approximations produced more simulation errors
+T6200b8b7689f896b2757609cc2e10815	own_claim 5940 6075	than producing a quick and rough linear system solution using a reduced number of Conjugate Gradient iterations with an accurate matrix
+T399fcc65bbade623cd396034549e29bc	own_claim 7202 7267	The implementation also supports collision detection and response
+Tbab6529b009d71e89cb2ecaa4cb0d037	own_claim 7306 7484	An object-oriented framework written in C++ integrate all these technologies into a single application allowing simulation of cloth objects of any shape with specified parameters

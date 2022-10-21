@@ -1,0 +1,20 @@
+T276fdfdd4ccdc04daa9dc7728e668aca	own_claim-GOLD 57 146	the Geometric Wrinkle formulation is developed keeping in mind a general deformable model
+Tc765453972b99772b4e88b962dc89d57	own_claim-GOLD 433 487	the user can design the wrinkles according to her wish
+Tf449fa9d8b11edfc6b9418342627dfe8	own_claim-GOLD 489 549	it is worthwhile to study the strain patterns in the garment
+T47ea7ec957ed737005fde85ecefbae36	own_claim-GOLD 690 753	the pattern should be orthogonal to the deformations in general
+T85ef7d5ef8239f4a3e07aaf083843978	own_claim-GOLD 1239 1298	Each pattern represents a distinct direction of deformation
+Te4cd07d38dc4b6b4fc3f53f64075042d	own_claim-GOLD 1310 1342	they are considerably orthogonal
+Tdbb1ac67ad3e07dae5706f54e6d13010	own_claim-GOLD 1995 2063	the computational time is linear with respect to number of triangles
+Tdb0cf0c1692863792482612f9745bed9	own_claim-GOLD 2200 2285	the time spent on modulating wrinkle pattern is negligible compared to rendering time
+T03cf05232ddf496ecb94a40a990cf715	own_claim-GOLD 2296 2312	for small meshes
+Tfb7d08675d2e8c9a71e1eb70c17715d4	own_claim-GOLD 2339 2389	the modulation of wrinkle pattern can be real time
+T0798395d83dc25b4d7277e411cd37db3	own_claim 57 146	the Geometric Wrinkle formulation is developed keeping in mind a general deformable model
+Tce3da3fb1cc1d7eadb694895eb6d11d8	own_claim 433 487	the user can design the wrinkles according to her wish
+T408e62086c83ade06eed13d266e467d6	own_claim 489 549	it is worthwhile to study the strain patterns in the garment
+Tc6cfbc829e1d4e9a30965b61b429bc4c	own_claim 690 753	the pattern should be orthogonal to the deformations in general
+Td90b73211205eaf959f02294b685b36e	own_claim 1239 1298	Each pattern represents a distinct direction of deformation
+T8b1bd890fbcd2246527e5290a6044bbe	own_claim 1310 1342	they are considerably orthogonal
+T1c1db2603d14c75d77ff0d9532856bec	own_claim 1995 2063	the computational time is linear with respect to number of triangles
+Tbc1a6dc9e3fe206e9b773125308c3381	own_claim 2200 2285	the time spent on modulating wrinkle pattern is negligible compared to rendering time
+T62747455d0c14fb8ab2eb2788fc97c68	own_claim 2296 2312	for small meshes
+T2b98e76b6d41772d333a2030a060ec46	own_claim 2339 2389	the modulation of wrinkle pattern can be real time

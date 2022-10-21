@@ -1,0 +1,8 @@
+Tce3a256191de5ca25f591f64371dc68e	own_claim 513 620	This mainly comes from the fact that the fabric in Fig. 6 (below) is stiffer than the one in Fig. 6 (above)
+T103393135a6a43729833760e6612985d	own_claim 318 385	For numerical integration, we used the CG method proposed by Baraff
+T8473c02d046a546a6c60550d0a348c31	data 389 390	3
+T17bef6422b28128fb4af39b3f80a4873	data 497 511	Fig. 6 (below)
+R15f7a4c56af37d7a35fdb8aefa73ac54	supports-GOLD Arg1:T8473c02d046a546a6c60550d0a348c31 Arg2:T103393135a6a43729833760e6612985d
+R46ceee997d76966dbba87325ef8e69a0	supports-GOLD Arg1:T17bef6422b28128fb4af39b3f80a4873 Arg2:Tce3a256191de5ca25f591f64371dc68e
+R013025d48b345d025c68f45f7cb820b3	supports Arg1:T8473c02d046a546a6c60550d0a348c31 Arg2:T103393135a6a43729833760e6612985d
+Rcf01b2bb67afac75125c33fc43f9386e	supports Arg1:T17bef6422b28128fb4af39b3f80a4873 Arg2:Tce3a256191de5ca25f591f64371dc68e

@@ -1,0 +1,26 @@
+T651df913cb9fe44d9616abd12279ab78	own_claim 119 209	The constraints we discuss in this section are either automatically determined by the user
+Tdc1602e4a6571b12845628e7797a0b16	own_claim 267 293	or are contact constraints
+Tf5014510673cd95dd1569081992b8bce	own_claim 320 357	between a solid object and a particle
+T3a007e3b153874e1bdf9f9267f9cfaf7	own_claim 693 723	would be expensive to maintain
+T6bf97968d093fd92faf726057e3df04f	own_claim 936 1024	At any given step of the simulation, a cloth particle is either completely unconstrained
+T140fe317351a700907364593332fd38d	own_claim 3009 3071	stiff springs that attempt to prevent illegal particle motions
+T05a1501c9109aea4803f8b5b982a9e31	own_claim 5665 5703	Now ẍ i 0 0 0 must lie in the xy plane
+T0d5fa754a85a43a02acb294291e442ea	own_claim 5705 5751	no acceleration in the z direction is possible
+T2a68a4a0953b3a91e384a9bc4bb7ec1f	own_claim 5763 5876	an unconstrained particle can be considered to have the 3 × 3 inverse mass matrix 1 I, with I the identity matrix
+T8733c7b428d5e8fbc5e69ba90baf5a53	own_claim 5893 5948	we are not restricted to coordinate-aligned constraints
+Tc4bd165d600c9def90789e284ce9d5d0	own_claim 6098 6146	this follows from the fact that (I − pp T )p = 0
+T8bfcb1ae583e450a9a339de0ddead438	own_claim 8403 8423	without any problems
+Tabb41ba5904e0ec4bbee572289a5d91f	own_claim 9018 9044	a less than desirable plan
+T693c8a51d47d5451178e3923990b5878	own_claim 9532 9579;9597 9653	M − h ∂v ∂f − h 2 ∂x ∂f v = h f 0 + h ∂x ∂f v 0 is symmetric and has the same solution v as equation (6)
+T989dcb3a1964fb7c881a65eb6c9d98cb	own_claim 9962 10042	procedurally applying the constraints inherent in the matrix W at each iteration
+T9ef33b87600953e2c723dd6f6ede972b	own_claim 10044 10131	The modified method will need to know about the particles’ constraints and the vector z
+T9ca1aeacf5201492b032c08c91cfcc64	own_claim 11162 11175	The CG method
+Td81d5b3685a67ad63061aebc607b286d	own_claim 11220 11395	takes a symmetric positive semi-definite matrix A, a symmetric positive definite preconditioning matrix P of the same dimension as A, a vector b and iteratively solves A v = b
+Ta1d9aa13f915491ba11e5cb4dbe25969	own_claim 11397 11444	The iteration stops when b − A v is less than b
+T31b11ec464258e8747a6e8677d8e3fa7	own_claim 11486 11606	The preconditioning matrix P, which must be easily invertible, speeds convergence to the extent that P −1 approximates A
+Ta5979ea29a72c3752ca4f85c959fdd45	own_claim 12971 13060	The unmodified conjugate gradient method establishes a stopping criterion based on b T Pb
+T70040b53e9214560bc470821b78fbd73	own_claim 13354 13472	removing the calls to filter and changing line 2 to v = 0 yields the standard preconditioned conjugate gradient method
+Tece5545f20244d61dd6182beb07d5c44	own_claim 15080 15162	the residual error e = A v − b has the property that e i need not be close to zero
+Tdb5ebc7690ecc1599447e2942e87eccc	own_claim 16179 16210	We monitor the constraint force
+T09ecf62a4b7aaf2406442e4e023b3ff9	own_claim 16283 16328	we allow the particle to slide on the surface
+Tabcd2076dca049240e9ef5314b98137a	own_claim 16359 16473	we apply a dissipative tangential force, opposite the relative sliding direction, proportional to the normal force

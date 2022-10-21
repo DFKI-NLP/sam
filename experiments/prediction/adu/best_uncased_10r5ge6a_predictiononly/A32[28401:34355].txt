@@ -1,0 +1,69 @@
+<H1>References</H1>
+        
+          [1] David Baraff and Andrew Witkin. Large Steps in Cloth Simulation. In Michael Cohen, editor, SIGGRAPH 98 Conference Proceedings, Annual Conference Series, pages 43–54. ACM SIGGRAPH, Addison Wesley, July 1998. ISBN 0-89791999-8.
+          [2] Martin Courshesnes, Pascal Volino, and Nadia Magnenat Thalmann. Versatile and Efficient Techniques for Simulating Cloth and other Deformable Objects. In Robert Cook, editor, SIGGRAPH 95 Conference Proceedings, Annual Conference Series, pages 137–144. ACM SIGGRAPH, Addison Wesley, August 1995. held in Los Angeles, California, 06-11 August 1995.
+          [3] Tosiyasu L. Kunii and Hironobu Gotoda. Modeling and Animation of Garment Wrinkle Formation Processes. In N. Magnenat-Thalmann and D. Thalmann, editors, Computer Animation ’90 (Second workshop on Computer Animation), pages 131–147. Springer-Verlag, April 1990.
+          [4] Tosiyasu L. Kunii and Hironobu Gotoda. Singularity Theoretical Modeling and Animation of Garment Wrinkle Formation Processes. The Visual Computer, 6(6):326–336, December 1990.
+          [5] Jen-Duo Liu, Ming-Tat Ko, and Ruei-Chuan Chang. Collision Avoidance in Cloth Animation. The Visual Computer, 12(5):234–243, 1996. ISSN 0178-2789.
+          [6] John C. Platt and Alan H. Barr. Constraint Methods for Flexible Models. In John Dill, editor, Computer Graphics (SIGGRAPH ’88 Proceedings), volume 22, pages 279–288, August 1988.
+          [7] Jim Ruppert. A Delaunay Refinement Algorithm for Quality 2-Dimensional Mesh Generation. Journal of Algorithms, 1995.
+          [8] Jonathan Richard Shewchuk. Triangle: Engineering a 2D Quality Mesh Generator and Delaunay Triangulator. In Dinesh Manocha Ming C. Lin, editor, Applied Computational Geometry: Towards Geometric Engineering, volume 1148, pages 203–222. The First ACM Workshop on Applied Computational Geometry, Springer-Verlag, May 1996.
+          [9] Demetri Terzopoulos and Kurt Fleischer. Modeling Inelastic Deformation: Viscoelasticity, Plasticity, Fracture. Computer Graphics (SIGGRAPH ’88 Proceedings), 22(4):269–278, August 1988. Held in Atlanta, Georgia.
+          [10] Demetri Terzopoulos and Kurt Fleischer. Deformable Models. The Visual Computer, 4(6):306–331, December 1988.
+          [11] Pascal Volino and Nadia Magnenat-Thalmann. Fast Geometric Wrinkles on Animated Surfaces. In WSCG’99, Plzen, Feb 1999.
+          [12] Pascal Volino and Nadia Magnenat Thalmann. Efficient SelfCollision Detection on Smoothly Discretized Surface Animations using Geometrical Shape Regularity. Computer Graphics Forum, 13(3):155–166, 1994. Eurographics ’94 Conference issue.
+          [13] Pascal Volino, Nadia Magnenat Thalmann, Shen Jianhua, and Daniel Thalmann. An Evolving System for Simulating Clothes on Virtual Actors. IEEE Computer Graphics and Applications, 16(5):42–51, September 1996 1996. ISSN 02721716.
+          [14] Yin Wu, Prem Kalra, Laurent Moccozet, and Nadia Magnenat-Thalmann. Simulating Wrinkles and Skin Aging. The Visual Computer, 15(4):183–198, 1999. ISSN 01782789.
+        
+      
+      
+        A FORMULATION DETAILS
+        In order to present a solution to equation 4 we first give the explicit expressions for A( , f (x, y)) and A (h, , f (x , y )) respectively
+        
+          6
+          2 2 ∂f ∂f A( , f (x, y)) = 1+ + dx dy ∂x ∂y
+        
+        and 2 2 ∂f ∂f A (h, , f (x , y )) = 1+h 2 +h 2 dx dy ∂x ∂y (7)
+        To evaluate the integral in equation 7, we perform a change of integration variables as follows
+        
+          8
+          x = T −1 x y y
+        
+        By applying this change of variables to equation 7 (refer to equation 2 for a , b , d ), we obtain
+        A (h, , f (x , y )) 2 2 2 ∂ = 1+ h a f ∂x
+        
+          9
+          1/2 2 2 ∂ ∂ 1 +h b +d f dx dy ∂x ∂y a d
+        
+        ≡ I(h, a , b , d ) dx dy
+        Now let us perform a series expansion of equation 9 in the transformation parameters and the modulation factor. As far as the transformation parameters are concerned, we choose as expansion point the identity transformation and for the modulation factor we expand around h = 1
+        A (h, , f (x , y )) = (I(h = 1, a = 1, b = 0, d = 1) ∂I ∂I + (a −1) + b ∂a ∂b ∂I ∂I + (d −1) + (h − 1) ∂d ∂h + . . . ) dx dy (10)
+        In the following, we discard higher order terms in the expansion above. For small deformations around the identity transformation and h = 1, a first order expansion represents a good approximation for the value of the surface area over a deformed triangle. Retaining terms up to first order in the series expansion and by plugging expression equation 10 into equation 4 we obtain
+        A( , f (x, y)) = C 0 + C 1 (a −1) + C 2 b + C 3 (d −1) + C 4 (h−1) where C 0 = I(1, 1, 0, 1) dx dy ∂I C 1 = dx dy ∂a ∂I C 2 = dx dy ∂b ∂I C 3 = dx dy ∂d
+        
+          11
+          ∂I C 4 = dx dy ∂h
+        
+        We call these expansion coefficients wrinkling coefficients. C 1 , C 2 , C 3 , C 4 relate changes in the parameters a , b , d , h to changes of the area of the wrinkle function on the triangle. By observing that C 0 = A( , f (x, y)) and solving equation 11 for the modulation factor we obtain
+        
+          12
+          1 h = 1− (C 1 (a −1) + C 2 b + C 3 (d −1)) C 4
+        
+        Equation 12 represents the solution to equation 4 in the first order approximation to A (h, , f (x , y )), if f (x , y ) is not constant.
+        
+          
+          Figure 15: Garment animation without (left) and with (right) Geometric Wrinkles, frame 1, blouse 686 triangles, skirt 1274 triangles
+        
+        
+          
+          Figure 16: Garment animation without (left) and with (right) Geometric Wrinkles, frame 128. Observe very few Geometric Wrinkles because of low mesh deformations.
+        
+        
+          
+          Figure 17: Multi-fold Wrinkling, frames [53, 67, 81], 25fps. Observe the pattern switch with blending.
+        
+      
+    
+  
+
+</Document>

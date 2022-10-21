@@ -1,0 +1,6 @@
+T9959d3a64d10de0432954503a2a1af9b	own_claim 3614 3661	clip-orthogonal forces are dominated by stretch
+T02c5a510c82554cefda1e21bf1381539	own_claim 6885 7179	The nonlinearity of cloth deformation, together with the complex interplay of various deformation components in the resulting forces and positions, make the optimization problem above extremely complex in the general case, prone to falling in local minima and sensitive to initialization values
+T493448164e4fccf5ecd9de24d130e5d6	own_claim 3559 3606	the clip-parallel forces are dominated by shear
+Ta5d54930a12391774154028f7fd67a2a	own_claim 7190 7285;7312 7406;7423 7475	we largely alleviate these issues with the design of the five isolated deformation measurements which allow us to separately fit stiffness curves for the six deformation components described following an incremental parameter fitting procedure
+Rd2749dab7b86feb49a85ec277dcceffc	contradicts Arg1:T493448164e4fccf5ecd9de24d130e5d6 Arg2:T9959d3a64d10de0432954503a2a1af9b
+R61088cce92e7d7c9b11bfa668a830bba	contradicts Arg1:T02c5a510c82554cefda1e21bf1381539 Arg2:Ta5d54930a12391774154028f7fd67a2a

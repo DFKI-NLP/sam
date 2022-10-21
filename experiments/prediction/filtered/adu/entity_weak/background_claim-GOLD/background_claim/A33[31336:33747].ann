@@ -1,0 +1,8 @@
+T29bcbba00f4fdfa437c76b8d93e17a77	background_claim-GOLD 1054 1142	Simulation and image based rendering both provide methods to generate animation of cloth
+T07e180aed7d7f255ca1fcd9fde363b94	background_claim-GOLD 1428 1465	These methods have several advantages
+T966f71849a23548fd6dc8f3afa69849a	background_claim-GOLD 1467 1546	simulation gives significant user control and produces higher resolution meshes
+Tac0d5b24d618364861d5528ed7f1be8f	background_claim-GOLD 1769 1873	Common simulation complaints include long computation times, significant parameter tweaking and tangling
+Tcd353057a94423c34ecea386612877a7	background_claim 1054 1142	Simulation and image based rendering both provide methods to generate animation of cloth
+T5a3d4bbfbe4ba8c0ec912e41be3e4ecf	background_claim 1428 1465	These methods have several advantages
+Tac9d58be9f2283feb50cdb04a01e10c6	background_claim 1467 1546	simulation gives significant user control and produces higher resolution meshes
+Tea4edb28dd40b461885ab4c44cca3207	background_claim 1769 1873	Common simulation complaints include long computation times, significant parameter tweaking and tangling

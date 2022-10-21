@@ -1,0 +1,23 @@
+Tc7eee112757f5f8b040fcc597cba9735	background_claim 1023 1040	ẍ = M −1 − ∂E + F
+Tc07027ee3558ba6c13fbd1b71e685c82	background_claim 3916 3987	which model some deformation energies as quartic functions of positions
+T40f70bbfde7309dae90de00c80187a30	background_claim 4571 4636	Additional use of implicit methods in animation and dynamics work
+T6df68b9a1383d159227a7f68ded747ae	background_claim 4834 4861	Cloth simulations of size n
+T06dd153f5a4bbf3acd388f12de38b8b2	background_claim 4884 4945	generally require O(n) explicit steps per unit simulated time
+T98c9f81a8cb827e294f2d13aafb15145	background_claim 5063 5110	explicit methods for cloth require time O(n 2 )
+Td046c0937406feb9a695e879ac60e521	background_claim 9015 9074	Energy functions were derived using a continuum formulation
+T8a2788e40bb1bd33e7aebf0dfcdf9fef	background_claim 9183 9311	The linear systems result- ing from the use of implicit integration techniques were solved, for small systems, by direct methods
+T66a562a6100b19ede3a65bcd5ad15bd5	background_claim 9347 9373	using iterative techniques
+Taceea4b834439cf35fba5e68bc0d2427	background_claim 9465 9508	the resulting linear system has bandwidth n
+T7296c6e8908f4cceaee083e920d0b75b	background_claim 9524 9553	banded Choleski factorization
+T4ddd1656cf213e228dd85ee4ae1060c9	background_claim 9561 9582	requires time O(n 2 )
+Tbb58265da85b0c65ad64e592d644d508	background_claim 9610 9683	Terzopoulos et al. made use of an ADI method for larger cloth simulations
+Tc5dcd310a0fbf638cc8aa1f88ece46d8	background_claim 9685 9748	Following Terzopoulos et al.’s treatment of deformable surfaces
+Td07fd53d6504b4301d5e0c13abcdfb77	background_claim 9898 9927	Explicit integration was used
+Tb0e2bd72aebed0fb1c57a66770803996	background_claim 10328 10363	The system uses the midpoint method
+T6f1e74a9eb34a3e62811832b727f136c	background_claim 10385 10410	to advance the simulation
+T4d7e4d30c81bc9f97edb24bdeb4fa702	background_claim 10590 10679	Reported resolutions of the garments are approximately two thousand triangles per garment
+Ta2877ba0e3b01302b520817840839a07	background_claim 10718 10816	with running times of several minutes per frame for each garment on an SGI R4400 150 Mhz processor
+Tf073f28572187e7fd8ef827899848272	background_claim 11355 11401	methods analogous to explicit methods are used
+T6b8aa56315000ac747c89bc53384f9c3	background_claim 11496 11573	the use of higher-order explicit integration methods and Maple-optimized code
+Tcc1ae4d634032d8eacd5aeacc999864d	background_claim 11586 11632	a dynamic, not static treatment of the problem
+T0c582a17f820e5e2075b649ded7dfe32	background_claim 11775 11810	No mention is made of damping terms

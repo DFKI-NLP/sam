@@ -1,0 +1,15 @@
+{
+  "UNASSIGNABLE": {
+    "contradicts": 16,
+    "supports": 66
+  },
+  "contradicts": {
+    "UNDETECTED": 6,
+    "contradicts": 19
+  },
+  "supports": {
+    "UNDETECTED": 97,
+    "contradicts": 2,
+    "supports": 221
+  }
+}

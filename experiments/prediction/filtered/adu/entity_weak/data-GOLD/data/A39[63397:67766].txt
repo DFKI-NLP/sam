@@ -1,0 +1,86 @@
+<H1>8 Results</H1>
+         Table 1 gives a performance summary of assorted animations, shown in figures 1–6. Unaccounted overhead of the simulation (typically about 5%) includes tasks such as geometry transformations, memory allocation, etc. The clothes in figures 3–6 were modeled as discrete planar panels, and then topologically seamed. The simulator was used to relax the clothing from an initial deformed state, that got the clothes around the characters, to a well-fitting state on the characters. The b u and b v parameters (see equation (10)) were then made smaller in certain regions to produce cuffs and waistbands, or strategically increased to induce wrinkling behavior in other regions. We also ran the simulation in figure 1 with a range of stiffnesses for the bend term. Using the stiffness parameters in figure 1 as a reference, we ran the simulation with those bend stiffnesses multiplied by 0.1, 1.0, 10, 100 and 1,000 (for a total range of 10,000 in the stiffness). The variance in the running times was under 5%. We doubt that simulators based on explicit integration methods could make a similar claim. Finally, we tried to estimate our simulator’s performance as a function of n, the number of cloth particles. We ran the simulation in figure 1 with cloth resolutions of 500, 899, 2,602 (shown in figure 1 ) and 7,359 particles. The running times were, respectively, 0.23 seconds/frame, 0.46 seconds/frame, 2.23 seconds/frame, and 10.3 seconds/frame. This is slightly better than O(n 1.5 ) performance, which is in line with the convergence rates of the conjugate gradient method [ 14 ] for systems such as equation (18).
+        51
+        SIGGRAPH 98, Orlando, July 19–24
+        C OMPUTER G RAPHICS Proceedings, Annual Conference Series, 1998
+        
+          
+            
+              
+                
+                  
+                   figure
+                   no. vertices/no. triangles
+                   time/frame
+                
+              
+              
+                
+                  
+                  
+                   cloth solid
+                   (CPU sec.)
+                
+                
+                   1
+                  
+                   2,602/4,9442 322/640
+                   2.23
+                
+                
+                   2
+                  
+                   2,602/4,9442 322/640
+                   3.06
+                
+                
+                   3
+                  
+                   6,450/12,654 9,941/18,110
+                   7.32
+                
+                
+                   4
+                   (shirt)
+                   6,450/12,654 9,941/18,110
+                   14.5
+                
+                
+                  
+                   (pants)
+                   8,757/17,352 9,941/18,110
+                   38.5
+                
+                
+                   5
+                   (skirt)
+                   2,153/4,020 7,630/14,008
+                   3.68
+                
+                
+                  
+                   (blouse)
+                   5,108/10,016 7,630/14,008
+                   16.7
+                
+                
+                   6
+                   (skirt)
+                   4,530/8,844 7,630/14,008
+                   10.2
+                
+                
+                  
+                   (blouse)
+                   5,188/10,194 7,630/14,008
+                   16.6
+                
+              
+            
+          
+          figure no. vertices/no. triangles time/frame cloth solid (CPU sec.) 1 2,602/4,9442 322/640 2.23 2 2,602/4,9442 322/640 3.06 3 6,450/12,654 9,941/18,110 7.32 4 (shirt) 6,450/12,654 9,941/18,110 14.5 (pants) 8,757/17,352 9,941/18,110 38.5 5 (skirt) 2,153/4,020 7,630/14,008 3.68 (blouse) 5,108/10,016 7,630/14,008 16.7 6 (skirt) 4,530/8,844 7,630/14,008 10.2 (blouse) 5,188/10,194 7,630/14,008 16.6
+          Table 1: System performance for simulations in figures 1–6. Minimum and maximum time steps are in milliseconds of simulation time. Time/frame indicates actual CPU time for each frame, averaged over the simulation. Percentages of total running time are given for four tasks: EVAL— forming the linear system of equation (18); CG—solving equation (18); C/C—cloth/cloth collision detection; and C/S—cloth/solid collision detection.
+        
+      
+      
+        

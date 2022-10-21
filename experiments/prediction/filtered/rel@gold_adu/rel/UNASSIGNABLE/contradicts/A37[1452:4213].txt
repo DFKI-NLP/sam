@@ -1,0 +1,15 @@
+<H1>1 Introduction</H1>
+      
+      Our eyes are very sensitive to the behavior of fabrics, to the extent that we can identify the kind of fabric simply from its shape and motion 
+[Griffiths and Kulke 2002]. One important fact is that most fabrics do not stretch under their own weight. Unfortunately, for many popular cloth solvers, a reduction of permissible stretching is synonymous with degradation in performance: for tractable simulation times one may settle for an unrealistic 10% or more strain (compare 1% and 10%, Figure 1 ). Our work alleviates this problem by introducing a numerical solver that excels at timestepping quasi-inextensible surfaces (stretching below 1%). The solver builds on a framework of Constrained Lagrangian Mechanics (CLM) 
+[Marsden 1999]. Warp and weft, the perpendicular sets of strands that make up a textile, are prohibited from stretching by enforcing constraint equations, not by integrating spring forces. We present numerical evidence supporting the observation that a constraint-based method is inherently well-suited to operate in the quasi-inextensible regime. In contrast, for this regime spring-based methods are known to experience a range of difficulties, leading to the adoption of various strain limiting 
+[Provot 1995] and strain rate limiting algorithms. We are motivated by the work of Bridson et al. [2002]
+, who viewed strain limiting as one of multiple velocity filtering passes (another being collision handling). The velocity filter paradigm enables the design of modular systems with mix-and-match flexibility.
+      
+        
+        Figure 1: Importance of capturing inextensibility. For efficiency, many simulation methods allow 10% or more strain, whereas many fabrics do not visibly stretch. A 1m 2 patch, pinned at two corners
+      
+      1m apart, is allowed to relax under gravity. We compare (left to right) three simulations of progressively smaller permissible strain with an actual denim patch.
+      Contributions We propose a novel CLM formulation that is implicit on the constraint gradient (§4.1). We prove that the implicit method’s nonlinear equations correspond to a minimization problem (§4.2): this result motivates a fast projection method for enforcing inextensibility (§4.3). We describe an implementation of fast projection as a simple and efficient velocity filter, as part of a framework that decouples timestepping, inextensibility, and collision passes (§4.4). Consequently, the fast projection method easily incorporates with a code’s existing bending, damping, and collision models, to yield accelerated performance (§5). Before discussing these contributions, we summarize the relevant literature (§2) and describe the basic discrete cloth model (§3).
+      
+        

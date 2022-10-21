@@ -1,0 +1,6 @@
+Tc7a9ae1c265d662b567626d7ed3a6332	own_claim 31 139	This paper describes an optimization framework for identifying the simulation parameters of cloth from video
+Teae951bcaa89b250becfea798af96e9b	own_claim 1069 1160	they can be identified on low resolution swatches and applied to higher resolution garments
+T26ab1a5504c59d1c5f6c3300b79f6734	own_claim 1214 1252	cloth models are continually improving
+T50212e12af2a99336bcbb4ef5c9650e7	own_claim 3013 3211	one class of metrics that we did not experiment with are statistical metrics that compute a function of the shape of the fabric across time rather than evaluating the match on a frame-by-frame basis
+T3eb22e2f6d87ddb08a035d87ff8c757b	own_claim 3718 3791	this work will promote a more rigorous evaluation of various cloth models
+T8fbd3fcfe89e21041ef8fcf86d379ae9	own_claim 3859 3947	perhaps lead to creation of a standardized set of benchmarks for cloth simulation models

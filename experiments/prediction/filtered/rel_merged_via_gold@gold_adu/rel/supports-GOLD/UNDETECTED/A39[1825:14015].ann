@@ -1,0 +1,37 @@
+T889e20cde4151ab702df73078a9a3e57	background_claim 9135 9181	only a simple viscous drag force −k x was used
+T38f62c208711f527066e93aed93f07f8	background_claim 10148 10199;10209 10288	Later work by the same group includes Volino et al. which focuses mainly on collision detection/response and uses a triangular mesh
+T1c8389abb8e66fda48e1380c6f36e10b	background_claim 11403 11446	Speed was of secondary concern in this work
+T27e42bc6dc94922659891326c1372e84	own_claim 7389 7480	The combination of implicit integration and direct constraint satisfaction is very powerful
+T68d9a081ddfbcf8137634a313996bb9e	own_claim 7989 8083	the running time of our simulator is remarkably insensitive to the cloth’s material properties
+T14cda858d3bdad7ab50f2480ca862ff8	background_claim 9076 9124	This work recognized the need for damping forces
+Tcefbaec39ae5e59bc5ea51200fdcefa1	data 10833 10834	3
+Taf2c3ea13822957bada9477d522a3a6b	data 9777 9778	4
+Tfa6474e9b12293c70e5f0ca4b0c2f91c	own_claim 8135 8206	All of the above advantages translate directly into a fast running time
+T55f556229c0eb5a8f35efd5a34db1d18	own_claim 7569 7669	most of our simulations require on average from two to three time steps per frame of 30 Hz animation
+T3e4f516b1b56e0a25a97ed7231ed7fef	background_claim 11675 11773	dropping the computational cost to approximately 20–30 minutes per frame on an SGI R8000 processor
+T878b77443d69965c20c27de37bc9d2d7	data 8738 8762;8782 8835	a shirt with 6,450 nodes with a cost varying between 8 to 14 seconds per frame
+T86f9bd6b94a67be8326b8f94d313a578	background_claim 10422 10456;10501 10588	the accumulated work by this group gives the only published results we know of for simulated garments on moving characters
+T09111dc58a6751f4c4d8045bbb88df89	background_claim 2915 3013	the computational cost of an explicit method greatly limits the realizable resolution of the cloth
+Tbfbbb360089804ba374bdc0ae774a8fb	own_claim 8449 8465;8490 8589	we show garments exhibiting complex wrinkling and folding behavior on both key-framed and motion-captured characters
+Tffe66215b7ff4777137ecc82d904d811	data 11482 11483	5
+T29deb68da8ed04d2baacddf984c1deef	background_claim 10077 10131	they added a force which damps cloth stretch and shear
+T108041e10df61d01513f73d7d8197cf5	background_claim 2753 2811	Explicit methods are ill-suited to solving stiff equations
+T257be55f14cba9800cd9af98afc3295d	data 8963 8965	15
+T3dc87f582bf1446094d979401f03b8ff	data 8968 8970	17
+Te1b564452953c85bc60d740f45ca5e48	background_claim 9929 10039	Carignan et al. recognized the need for damping functions which do not penalize rigidbody motions of the cloth
+T7d26235b0f38bf049e6157a04c2fc386	background_claim 11195 11246	The focus of this work is on static poses for cloth
+R283fd8744ad3c66d1082c96ffcd124b1	supports-GOLD Arg1:T108041e10df61d01513f73d7d8197cf5 Arg2:T09111dc58a6751f4c4d8045bbb88df89
+R75603866f4f30f4ee780dddd4c5fe805	supports-GOLD Arg1:T68d9a081ddfbcf8137634a313996bb9e Arg2:Tfa6474e9b12293c70e5f0ca4b0c2f91c
+Rfe459821926c2053cfc29b2e94f24f86	supports-GOLD Arg1:T27e42bc6dc94922659891326c1372e84 Arg2:Tfa6474e9b12293c70e5f0ca4b0c2f91c
+R7538f7a310aa2dae97ea890e70b3dea9	supports-GOLD Arg1:T55f556229c0eb5a8f35efd5a34db1d18 Arg2:Tfa6474e9b12293c70e5f0ca4b0c2f91c
+R663399ab9e6d972efb75182dde937f9f	supports-GOLD Arg1:T878b77443d69965c20c27de37bc9d2d7 Arg2:Tbfbbb360089804ba374bdc0ae774a8fb
+R116d4a02ca338d7c461fe94f8abbe33c	supports-GOLD Arg1:T257be55f14cba9800cd9af98afc3295d Arg2:T14cda858d3bdad7ab50f2480ca862ff8
+R247404c9e0757ebbf522a9d2858f02e9	supports-GOLD Arg1:T3dc87f582bf1446094d979401f03b8ff Arg2:T14cda858d3bdad7ab50f2480ca862ff8
+R97dfb8270a9cb2d4801ae92c11e2e9ed	supports-GOLD Arg1:T257be55f14cba9800cd9af98afc3295d Arg2:T889e20cde4151ab702df73078a9a3e57
+R08748c22d39c31c755f1a8b3de41498a	supports-GOLD Arg1:T3dc87f582bf1446094d979401f03b8ff Arg2:T889e20cde4151ab702df73078a9a3e57
+Rd423672b4f398ea9c8f23f745f441bf0	supports-GOLD Arg1:Taf2c3ea13822957bada9477d522a3a6b Arg2:Te1b564452953c85bc60d740f45ca5e48
+Rb3bacfd198864c9f9471a1d02489c7d3	supports-GOLD Arg1:Taf2c3ea13822957bada9477d522a3a6b Arg2:T29deb68da8ed04d2baacddf984c1deef
+R9ed39e462d204cad20c1aab40d44383b	supports-GOLD Arg1:T38f62c208711f527066e93aed93f07f8 Arg2:T86f9bd6b94a67be8326b8f94d313a578
+R48aad958f7b07611e71917f100d9c3ce	supports-GOLD Arg1:Tcefbaec39ae5e59bc5ea51200fdcefa1 Arg2:T7d26235b0f38bf049e6157a04c2fc386
+Raec17459c06a2f43d4213212031fe257	supports-GOLD Arg1:Tcefbaec39ae5e59bc5ea51200fdcefa1 Arg2:T1c8389abb8e66fda48e1380c6f36e10b
+Rb74609a623673922557d9e687af6a13d	supports-GOLD Arg1:Tffe66215b7ff4777137ecc82d904d811 Arg2:T3e4f516b1b56e0a25a97ed7231ed7fef

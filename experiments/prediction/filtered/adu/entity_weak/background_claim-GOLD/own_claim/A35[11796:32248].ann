@@ -1,0 +1,16 @@
+T96ad1627a31357ad4231b4bf224e27a2	background_claim-GOLD 422 601	This depends on the complexity of the method, and also related to the number of times the forces of the system have to de derived from the system state using the laws of mechanics
+Tb0b263a93d5d3eb62414bd16e77849f4	background_claim-GOLD 930 1017	Accuracy increases along with time step reduction as better as the method is high-order
+Tb9712074bee14b3ca6ef71d6a2bd1122	background_claim-GOLD 5380 5539	In simulations that consider simultaneously all these forms of mechanical behaviors, the dominant K coefficient rules the “numerical difficulty” of the problem
+T919ec901500e16df711d76a0a9e57be5	background_claim-GOLD 5677 5883	In such kind of simulation, the interest is to reproduce exactly the motion of a cloth object along time, the accuracy of its evolution being the key of the realism of an animation involving simulated cloth
+T9dfd36a9a04ebb8bc25c26d379abee05	background_claim-GOLD 11296 11426	Draping is another context of simulation, where only the final static equilibrium state of the mechanical system is to be computed
+T0bd01b8ccf1d2d1b723deee87bb159e4	background_claim-GOLD 11610 11659	accuracy can be traded away for computation speed
+T1f2f47b05681f38a6494fc2351463f17	background_claim-GOLD 16866 17047	The solution for this is to approximate the Hessian matrix for taking into account the changes that may be observed from the change of the system state between successive iterations
+Te0f394246d52e8ac6fa82107f7e478df	background_claim-GOLD 17198 17289	an overestimation of the derivatives will place this evaluation nearer to the current state
+T2a4a47d0184faa999074d72b0e585756	own_claim 422 601	This depends on the complexity of the method, and also related to the number of times the forces of the system have to de derived from the system state using the laws of mechanics
+T7a2e3c912ff5297a46df635adef6f8f5	own_claim 930 1017	Accuracy increases along with time step reduction as better as the method is high-order
+T7a69f0809bcc80df1e5d7437744f6722	own_claim 5380 5539	In simulations that consider simultaneously all these forms of mechanical behaviors, the dominant K coefficient rules the “numerical difficulty” of the problem
+T68d18bd8f08f950e2274ce9aad8ba9cf	own_claim 5677 5883	In such kind of simulation, the interest is to reproduce exactly the motion of a cloth object along time, the accuracy of its evolution being the key of the realism of an animation involving simulated cloth
+T713222a8c0fc2255a6aea038aa99601c	own_claim 11296 11426	Draping is another context of simulation, where only the final static equilibrium state of the mechanical system is to be computed
+Ta624faf7de1df6a5759399066948a6d4	own_claim 11610 11659	accuracy can be traded away for computation speed
+T9886604a1a395ba1b4266e1f7fbac193	own_claim 16866 17047	The solution for this is to approximate the Hessian matrix for taking into account the changes that may be observed from the change of the system state between successive iterations
+T036fd6e79985b2bc0ac501fe09fbdb62	own_claim 17198 17289	an overestimation of the derivatives will place this evaluation nearer to the current state

@@ -1,0 +1,3 @@
+Tbcc2e78a83e1834d0d506cbafd24388b	own_claim-GOLD 4653 4801	We have also carried out some preliminary tests with the Rosenbrook method, which is an implicit implementation of a fourth-order Runge-Kutta method
+T95845bde1965679caff3a2e229d8c4df	own_claim-GOLD 4904 4963	We implemented this method using the algorithm described in
+Tfec54d8303289b475322acf9af06275a	own_claim-GOLD 5701 5801	We simulated such algorithm using accurate resolution on an accordingly approximated constant matrix

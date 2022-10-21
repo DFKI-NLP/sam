@@ -1,0 +1,6 @@
+T6726f372b0b4ec29c9c5259759b73660	background_claim 38 169	Today’s cloth simulators for animation, visual effects, games, and apparel design can mimic real cloth to a high degree of fidelity
+Te5c3c02d6414aeb976c38dc16805a6b3	background_claim 175 287	to fully exploit their capabilities, the constitutive models for cloth deformation must be tuned with great care
+T368af24bc982cc8d4b595121bd8dc045	background_claim 898 995	the resulting forcedisplacement curves are valuable in studying the differences between materials
+Tcc35b8420d7222e60e23afe64a21c312	background_claim 1006 1043	this approach has certain limitations
+Rd5264c7efa283b8255a5f606b9434978	contradicts Arg1:T6726f372b0b4ec29c9c5259759b73660 Arg2:Te5c3c02d6414aeb976c38dc16805a6b3
+Rfc83e7a8052db7cfa32398d463813aa4	contradicts Arg1:T368af24bc982cc8d4b595121bd8dc045 Arg2:Tcc35b8420d7222e60e23afe64a21c312

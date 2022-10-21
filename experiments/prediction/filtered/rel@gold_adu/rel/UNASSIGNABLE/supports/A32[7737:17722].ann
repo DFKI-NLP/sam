@@ -1,0 +1,28 @@
+T1c9f9faf677b8d99c81e49208d01db68	own_claim 7674 7730	equation 5 describes the overall wrinkling behavior only
+T0e16c9d0b3bd005b19541949fce97d48	own_claim 7732 7804	This frees us conceptually from the “burden of mathematical correctness”
+T70f6236179f10f5640f6e355add950e4	own_claim 7936 8000	the deformations during cloth simulation are moderate in general
+T7f357d02287c25be7abc1e810b07b1ab	own_claim 3289 3416	y x user defined wrinkle pattern initial mesh 1 wrinkling coefficient for each triangle C 1 , C 2 , C 3 , C 4 deformable models
+T289b295dcb96d052dd3127dcaafc8143	data 3463 3578	factor for each triangle (h) deformed mesh modulated wrinkle pattern bump mapping final mesh with animated wrinkles
+Tdca5b6f9d0de938dc65e7e4fe41963c6	own_claim 8293 8385	One can scale, translate and clip it to introduce a finer control required for the animation
+T7f959dfc8a45d43524235eb6feb8f596	own_claim 8676 8751	wrinkling effects caused by deformations are confined to the deformed areas
+T796bcb520aa1e067b197609ee999d153	own_claim 7327 7388	There are several possibilities to deal with this restriction
+T8cfbad5f277fa12ada1f5dd2e3e7d3f8	own_claim 7390 7614	One could decide to restrict the simulations to small deformations where the approximation is valid and/or take into account the higher order terms in the series expansion to extend the range of validity of the approximation
+Tb1cebe73f34a275427483ad6fe61e35d	data 3425 3462	cloth simulation y' 2 ' x' modulation
+T655d2a32798c4cda973e75cd458693ea	own_claim 8267 8291	it will be less than one
+T2d69a19a1ea1077fd76cef3df04ba514	data 3109 3117	Figure 5
+T5fbe87602c73c7f05ca44ffb59971461	own_claim 9749 9817	the direction of the deformation “favors one pattern over the other”
+T19e9ceaa6bdfa290d65a97e626df6ff9	own_claim 8009 8067	higher order terms in the expansion may become significant
+T0f42ba1a667c7f75e04834372de84a42	own_claim 9516 9567	the wrinkling patterns are orthogonal to each other
+T9d8cde8699480b7091cbb0b48d289b00	own_claim 9575 9731	a deformation in the orthogonal direction of one pattern will result in a smaller modulation factor as compared to a modulation factor for the other pattern
+T6e0b5de1fb9b4067463d8e60edbd25cc	own_claim 3030 3097	which is defined by choosing any edge of the triangle as the x axis
+T599355f4b8462685c9adad0feee5b440	own_claim 8753 8798	This is crucial to obtain realistic wrinkling
+Rb5bd0720132b750bd50c3576b8a3d048	supports Arg1:Tb1cebe73f34a275427483ad6fe61e35d Arg2:T7f357d02287c25be7abc1e810b07b1ab
+R10093e9188a12064c5bf98a63bad03b1	supports Arg1:T2d69a19a1ea1077fd76cef3df04ba514 Arg2:T6e0b5de1fb9b4067463d8e60edbd25cc
+R4b869339c9e49ff38b490619918a8e7a	supports Arg1:T289b295dcb96d052dd3127dcaafc8143 Arg2:T7f357d02287c25be7abc1e810b07b1ab
+Rc2a6478e9cee874813fb31860f6bf9a3	supports Arg1:T8cfbad5f277fa12ada1f5dd2e3e7d3f8 Arg2:T796bcb520aa1e067b197609ee999d153
+R389b2fa813190a11ad3af81626f64fe9	supports Arg1:T1c9f9faf677b8d99c81e49208d01db68 Arg2:T0e16c9d0b3bd005b19541949fce97d48
+Rda1a42b0a4ea74614b26fac5cd91ae3a	supports Arg1:T70f6236179f10f5640f6e355add950e4 Arg2:T19e9ceaa6bdfa290d65a97e626df6ff9
+R04ab947647aa40c7a0caadfeb49e2778	supports Arg1:T655d2a32798c4cda973e75cd458693ea Arg2:Tdca5b6f9d0de938dc65e7e4fe41963c6
+R06bacfeffce5708d0bf28450639fade0	supports Arg1:T7f959dfc8a45d43524235eb6feb8f596 Arg2:T599355f4b8462685c9adad0feee5b440
+Re7579eef243062665dfd10a61c3af00a	supports Arg1:T9d8cde8699480b7091cbb0b48d289b00 Arg2:T5fbe87602c73c7f05ca44ffb59971461
+Rd6a1ba9155541e7255031fc035eade4a	supports Arg1:T0f42ba1a667c7f75e04834372de84a42 Arg2:T5fbe87602c73c7f05ca44ffb59971461

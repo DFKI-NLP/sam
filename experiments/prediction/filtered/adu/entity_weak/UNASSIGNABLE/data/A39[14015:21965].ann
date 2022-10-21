@@ -1,0 +1,5 @@
+T9d6166598b533a4c3948f0a43b89663f	data 745 766	a mesh of n particles
+Tf06538df1677939de0b785ea7b939a99	data 1993 2015	cloth/cloth collisions
+T40bdad6113320ed55c9dbdc82f5a7809	data 3852 3893	stretchy cloth is specifically called for
+T9da7bb76c4e662e85b112ccb5efd9681	data 6960 7004	contact constraints between cloth and solids
+T6071939c649a7a7f7e089a89c5d4041a	data 7681 7771	a particle is near a cloth triangle or is detected to have passed through a cloth triangle

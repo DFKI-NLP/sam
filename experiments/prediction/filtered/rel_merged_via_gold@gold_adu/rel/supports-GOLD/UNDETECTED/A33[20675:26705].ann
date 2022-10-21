@@ -1,0 +1,13 @@
+Tc686d0882ff6c145988deb63c93c7aad	data 3188 3206	Sumner et al. 2005
+T403d7638a47828f4e428084c037c65a8	own_claim 63 123	occlusion inevitably creates holes in the reconstructed mesh
+Tb952b6dcd482ad4bb51ac41cfab49b09	own_claim 5843 5930	Smaller variations indicates rigid movement and benefit from more substantial smoothing
+T87604802fc4a5c6603b6c2fb9e795999	own_claim 5370 5447	a procedure that smoothes rigid movement more heavily than non-rigid movement
+T8cc2b9af373355a1e686ea4aed11b52d	own_claim 190 262	One of our major contributions is a data driven approach to hole filling
+Teccc29d0669efe581ccb222ee303c667	own_claim 5743 5841	Large variations in location indicate non-rigid movement and consequently receive little smoothing
+Ta7dd3fac49fa1c7166a4780dc4a9781e	background_claim 138 188	One would like to fill these holes with real cloth
+T31873d5cc9882d8dede7045d26ff6ff6	background_claim 3237 3357	MeshIK works by choosing a combination of deformation gradients from the examples and then solving for the missing point
+R0535035435855765711c57784e98e155	supports-GOLD Arg1:Ta7dd3fac49fa1c7166a4780dc4a9781e Arg2:T8cc2b9af373355a1e686ea4aed11b52d
+R44dc6d367272b32e662605c9a873e7e3	supports-GOLD Arg1:T403d7638a47828f4e428084c037c65a8 Arg2:T8cc2b9af373355a1e686ea4aed11b52d
+R0b99e5f905602de0f9ca054fe2d943a0	supports-GOLD Arg1:Tc686d0882ff6c145988deb63c93c7aad Arg2:T31873d5cc9882d8dede7045d26ff6ff6
+Rd76708771e5f1ac7bb0ccb7838325daa	supports-GOLD Arg1:Teccc29d0669efe581ccb222ee303c667 Arg2:T87604802fc4a5c6603b6c2fb9e795999
+R84f58ca7d6a7e523409cc0e31405a0f6	supports-GOLD Arg1:Tb952b6dcd482ad4bb51ac41cfab49b09 Arg2:T87604802fc4a5c6603b6c2fb9e795999

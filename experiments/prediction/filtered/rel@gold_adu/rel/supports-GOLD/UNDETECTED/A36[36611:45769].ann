@@ -1,0 +1,21 @@
+Tf0194a4fdb1931539191b9cada006121	own_claim 7672 7694	cross-modal stiffening
+T5da566486701e007c4116159b8522a15	own_claim 2871 2905;2934 2948	#18 is anisotropic both in stretch and in bending
+Tf1e8ac7c5aa034a49f0c5c7545fef31b	data 4858 4912	the force-displacement plot of the corner pulling test
+T5f114d3c6db72ee776790824f2719808	own_claim 2669 2737	#4 is also isotropic, very stiff in stretch but compliant in bending
+Tce067a94096ef7ebbc99c915abb85a10	own_claim 4821 4847;4926 4986;5394 5397;5398 5448	In the three other samples the stiffness is underestimated for the Soft Constraints and St. VK models, and overestimated for the Springs model
+Te1bb100e42b242bcb298262ee6aaed69	own_claim 7596 7610	Poisson effect
+Tc0733b4bdb6e610170f83059698842fa	data 7702 7736	shear stiffening due to stretching
+T45078206d98edfaacb5d732bfe066648	own_claim 2739 2820	#14 is stiff and quite isotropic in stretch, but extremely anisotropic in bending
+T2bffb6eaaaa70944f6b566b6d84a6458	own_claim 7528 7582	At least three effects are missed by the tested models
+T1e99687cb3eaa663551e439ebb45b407	own_claim 2520 2592	The four selected fabrics span a large range of possible cloth behaviors
+Te5d8a502eed5a35d29d88b4c97381a65	own_claim 2609 2667	#12 is isotropic and very compliant in stretch and bending
+T38cc8af95778c5981e789346c8eca459	data 7619 7665	the diagonalization of the standard StVK model
+R347a608fe3874469031d307bcb58e920	supports-GOLD Arg1:Te5d8a502eed5a35d29d88b4c97381a65 Arg2:T1e99687cb3eaa663551e439ebb45b407
+R40ab5f09785815c44efb15906c18f2df	supports-GOLD Arg1:T5f114d3c6db72ee776790824f2719808 Arg2:T1e99687cb3eaa663551e439ebb45b407
+Ra9f9d18e59e89fd2af97c4555c026547	supports-GOLD Arg1:T45078206d98edfaacb5d732bfe066648 Arg2:T1e99687cb3eaa663551e439ebb45b407
+Rfa8ad8dfd0e2846756e3ac8d7614900e	supports-GOLD Arg1:T5da566486701e007c4116159b8522a15 Arg2:T1e99687cb3eaa663551e439ebb45b407
+Ree236615127b0d1ab973537b17f4fc11	supports-GOLD Arg1:Tf1e8ac7c5aa034a49f0c5c7545fef31b Arg2:Tce067a94096ef7ebbc99c915abb85a10
+R9b2c9099acf12398545b8cc65d6c61f5	supports-GOLD Arg1:Te1bb100e42b242bcb298262ee6aaed69 Arg2:T2bffb6eaaaa70944f6b566b6d84a6458
+R39f85b2f833e4428452df7d76b392e49	supports-GOLD Arg1:Tf0194a4fdb1931539191b9cada006121 Arg2:T2bffb6eaaaa70944f6b566b6d84a6458
+R2a2a4883e4444534a6bf6506c9dc5110	supports-GOLD Arg1:T38cc8af95778c5981e789346c8eca459 Arg2:Te1bb100e42b242bcb298262ee6aaed69
+R9aa6a5bd0380fc13ac9b3d4fef2deb82	supports-GOLD Arg1:Tc0733b4bdb6e610170f83059698842fa Arg2:Tf0194a4fdb1931539191b9cada006121

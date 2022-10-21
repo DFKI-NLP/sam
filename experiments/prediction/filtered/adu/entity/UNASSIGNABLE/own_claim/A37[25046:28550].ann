@@ -1,0 +1,10 @@
+Tfc6677477534c214b9717c6ede50ad9b	own_claim 903 952	the fast projection method achieves a 25× speedup
+Ta1ae88e94e5adf82fda7e252865f1776	own_claim 1294 1358	spring methods are often treated with strain-limiting procedures
+Te3ae30b216680dd743069e9d6b80b4d0	own_claim 1705 1739	For the strain limiting algorithms
+T9cd8b117785d0147a7e6cba524407952	own_claim 1933 1980	For SHAKE, we use the acceleration suggested in
+T0bb160b99e73ce43a72677e7e6c88701	own_claim 2002 2066	to rebuild the matrix once per step or when it fails to converge
+Td9b74a48d12dbf67ef2bc985ec730f87	own_claim 2490 2590	compares performance as the stiffness is increased for a cloth mesh with approximately 5000 vertices
+T260d6fe9715cb365c983cc082e324384	own_claim 2592 2683	All CLM methods scale equally well, asymptotically better than the strain limiting approach
+T39f793ccdca7340b010cb8d4eb8485c3	own_claim 2690 2727	the fast projection being the fastest
+T8993d2d5cc51388380d4f52d5420e8c9	own_claim 3217 3312	Inextensibility ensures that the tight-fitting pants do not drop past the dancer’s narrow waist
+T0ba3eacb61b2c6f29333387a041f429b	own_claim 3314 3471	Using fast projection, an implicit treatment of shear and bending, and a mesh with 10600 vertices, the average simulation time per (30Hz) frame was 9 seconds

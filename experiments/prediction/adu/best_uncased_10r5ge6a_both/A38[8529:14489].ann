@@ -1,0 +1,107 @@
+Tca9982840d65de42517a5d0b1351cb70	own_claim-GOLD 40 130	our framework for estimating cloth simulation parameters is independent of the cloth model
+T41fb94e6312176c82e52f02c78dce7ab	own_claim-GOLD 132 138	we can
+Ta3b68822e5d43e931733738a8b4bdf16	own_claim-GOLD 154 243	select a specific model that meets a set of criteria such as accuracy or simulation speed
+T4f234484a4d197923702e9e43c40ff82	own_claim-GOLD 245 327	Our choice of a cloth model was guided by two principles, realism and practicality
+Ta848eda54cd843d74a2d5e0856b32ab2	own_claim-GOLD 329 485	We wanted to use a model that was sophisticated enough to capture the detailed dynamic behavior found in real fabrics but still straightforward to implement
+T94fbde6ad8baa1405777da1ee97e8aba	own_claim-GOLD 487 611	Because our intention was to apply the learned cloth model parameters to arbitrary garments with varying triangle resolution
+T81713544c801055c25cbfc4b3bea28e9	own_claim-GOLD 613 708	it was also important that the cloth parameters correctly scale to varying resolutions of cloth
+T45046f70a7694c3944d94552a2280760	own_claim-GOLD 710 795	We used the model described by Baraff and Witkin as the basis for our cloth simulator
+T951a8e4558304007198d82f954600fdd	data-GOLD 797 798	4
+T519bc584cd99c69c44efd6a076e63d33	background_claim-GOLD 801 880	This model has sufficient richness to produce a wide variety of cloth behaviors
+T4c22b95412b78816f53883bfdeed4e8b	data-GOLD 882 918	The underlying meshing is triangular
+T8ed16781872c4ada447379eb39740bef	background_claim-GOLD 920 952	making clothing modelling easier
+T4ae061822895c7a8726e745dc2d25c65	data-GOLD 972 1019	its input parameters are independent of meshing
+Tb7466b5eabab252af6498caeb3b0b46b	background_claim-GOLD 1029 1061	parameters recovered on one mesh
+T32248c8ee246b549bd899683c7573c45	background_claim-GOLD 1080 1116	can safely be transferred to another
+T4be9ceda1ed0305389751eaaae3301ad	background_claim-GOLD 1136 1152	nonlinear models
+Tf3acfa4aebf409de98d1d79a25a74659	data-GOLD 1198 1199	9
+T1ba84901be48ae62689ae243938a0899	background_claim-GOLD 1206 1257	potentially capture more realistic details of cloth
+T9c3c6576bd4fb421e16e332254320256	background_claim-GOLD 1259 1363	there is no straightforward way to scale the parameters of these models to meshes of varying resolutions
+T2800b07ae600550c9901142fb85101b0	background_claim-GOLD 1380 1514	future application of our parameterestimation framework to other scale-invariant cloth models will provide even more realistic results
+Tca3b500461027629d2f87f2b69935572	data-GOLD 2545 2546	4
+T3433e5694b0fa591aaf5b684935428c0	data-GOLD 2615 2625	footnote 5
+T96327e665a8e6e8e4fbb92c77fba5359	own_claim-GOLD 2627 2703	energy should scale linearly with triangle area to ensure scale independence
+T6831ad910c3edba9f9769f1cde01748d	own_claim-GOLD 2716 2857	we need to be careful when substituting C(x) for stretch and shear into eq. 1 that the resulting formula is linear in a rather than quadratic
+T669e8bc9f16ac60d50d9db9a61d112eb	data-GOLD 2884 2899	our experiments
+Tfcde09cb5a191cdb5c7fd09d56b4fc9f	own_claim-GOLD 2920 2980	a linear drag model such as that used in previous cloth work
+T7e09e8962768a5d8fbca6fad6949ec22	data-GOLD 2982 2983	4
+T317f77d88b5e4e8d6beba04ff2e22ce8	data-GOLD 2986 2987	9
+T73464211ad3283a9991201a827b8e387	own_claim-GOLD 2989 3037	was not able to capture dynamic aspects of cloth
+Td15c075978674f3f43eaae40b7566969	own_claim-GOLD 3039 3161	In order to add additional air-drag degrees of freedom to our cloth model without resorting to fully modeling aerodynamics
+T888a3eb101cc9d765b18dfb20ad923ff	data-GOLD 3163 3165	25
+T1282b05dc9ad9919100b4c93f1e5999c	own_claim-GOLD 3168 3211	we developed a simple nonlinear alternative
+Tb252b5e80d3e3f06c3156a992847d17e	own_claim-GOLD 3678 3693;3702 3726	The linear term is merely Stokes’s law 1
+Ta79c19b58ea9cb752b228f3422746922	own_claim-GOLD 3729 3839	the quadratic term matches better the experimental behavior of macroscopic bodies in low Reynold’s number flow
+Tfe293dbe541d1982ea84ceccd66ffb7f	data-GOLD 3841 3843	14
+T80a6d943f2c9d07d3b212767a1aed747	own_claim-GOLD 3846 4008	The addition of the |v N | 2 term in the denominator which makes the force asymptotic as v N → ∞ was partially motivated by the observed phenomenon of drag crisis
+Tec8dcba60770c162bc011fa8f86c2a7c	data-GOLD 4009 4011	14
+T5c47a4001a4a205ebd787de72cfdeb3f	own_claim-GOLD 4248 4358	we used a first-order implicit Euler time integration scheme similar to the one described by Baraff and Witkin
+T0fd3a4947b00d6cd9613601d950a8fc3	data-GOLD 4360 4361	4
+Te082e8ec787ecdaa70325375692b8cc1	own_claim-GOLD 4393 4493	implicit integration introduced damping which could not be eliminated by optimizing cloth parameters
+T783a31b0851b6462cfbc7604ba1122ab	own_claim-GOLD 4495 4589	We had more success in matching realistic cloth motions by using higher-order explicit methods
+T35204c461b6282de75edac5164605bce	own_claim-GOLD 4591 4705	The results in this paper all use an adaptive 4thorder accurate Runge-Kutta methods with embedded error estimation
+T0af835fad410db6decdaa9b3f48e7cce	data-GOLD 4707 4708	2
+T972a71a8a86259d21cd3c73f1ce343f6	background_claim-GOLD 4717 4797	this method offers the advantages of familiarity and automatic bounding of error
+T64670f001b3c1faccb402802f4229bd4	background_claim-GOLD 4799 4816	it is rather slow
+T1bbe5a4bad96a0b1475854a8af64598d	background_claim-GOLD 4822 4884	recent work suggests that using 2nd-order backward differences
+T8ffc8b5d926c12afcf383c33ce586bd0	data-GOLD 4885 4886	9
+T481fcf4af1cf31dba7efe098ab63fb66	background_claim-GOLD 4890 4905	Newmark schemes
+T8ce134a2f8a192ca9f435eb82866ba20	data-GOLD 4906 4907	7
+T4a143ab8586eac682dec5d2476a86c6e	background_claim-GOLD 4908 4930	may be a better choice
+T6db6fe5fbde2829fcbfaad3b54184535	own_claim-GOLD 5116 5278	separating repulsion forces from the cloth internal dynamics and applying them outside the Runge-Kutta solver affected stability and resulted in visible artifacts
+T91c0bac9baa4ee1e8992f2366260c31c	own_claim-GOLD 5289 5416	we apply repulsion forces inside the solver loop, so that the solver’s own internal error estimation can remove these artifacts
+Td1fc885e919a3d5fa33001ac675f17ac	own_claim-GOLD 5418 5457	The drawback of this technique is speed
+Ted09663b996a0848d4ee13d71b75bb8b	data-GOLD 5467 5549	the system must check for collisions every time it evaluates the state derivatives
+Tef582f44d29e8162cbed0ae739c44532	own_claim 40 130	our framework for estimating cloth simulation parameters is independent of the cloth model
+Te0500490460f29cac60cf36a68d255e4	own_claim 132 243	we can, in principle, select a specific model that meets a set of criteria such as accuracy or simulation speed
+Taa161b0163deb90e83dd1a1107407f7c	own_claim 245 301	Our choice of a cloth model was guided by two principles
+T8cd4efd1721f64dcb80ca1044c95331b	own_claim 303 327	realism and practicality
+T0f4a9068fcba1d6dddedd5d3677f6114	own_claim 329 485	We wanted to use a model that was sophisticated enough to capture the detailed dynamic behavior found in real fabrics but still straightforward to implement
+T6157d2c03ee56be28abed344037b6cf3	data 495 611	our intention was to apply the learned cloth model parameters to arbitrary garments with varying triangle resolution
+Tb964b41d62e7dd5e8845160080efe2a7	own_claim 613 708	it was also important that the cloth parameters correctly scale to varying resolutions of cloth
+T8fa3a444687d7e111400f6cf97e1e6ba	own_claim 801 880	This model has sufficient richness to produce a wide variety of cloth behaviors
+T990afc91f7722f868967744b223d5cbb	own_claim 882 918	The underlying meshing is triangular
+T7f89754350910a8d958335e53aea0a34	own_claim 920 952	making clothing modelling easier
+Td6ad34c673cc64d251ab86138e788ce7	own_claim 972 1019	its input parameters are independent of meshing
+Tfa65b6c30d3834c24ef201495dd591c6	own_claim 1029 1061	parameters recovered on one mesh
+Tfcd9e11fd4c961960a08c0884a2525fc	data 1063 1078	the test swatch
+Tabd554e170a311d770516055f5fa2545	own_claim 1080 1116	can safely be transferred to another
+T7ffb5558a591bd8b2341edd28204eef6	own_claim 1136 1152	nonlinear models
+T65ac278c736a5fa0977aa1c2a9f91c8a	data 1161 1199	the buckling behavior of Choi and Ko 9
+Tb8739c8a97ea9dd2636ef252b39c4c40	own_claim 1200 1257	could potentially capture more realistic details of cloth
+Tbb6468a6bfde00883a0af7d850124353	own_claim 1259 1363	there is no straightforward way to scale the parameters of these models to meshes of varying resolutions
+T9357aa24602844226f027a1d3f5b6d90	own_claim 1380 1514	future application of our parameterestimation framework to other scale-invariant cloth models will provide even more realistic results
+T4e7c1fead7d3cbe26add550f856da9db	own_claim 1516 1748	The model developed by Baraff and Witkin formulates the energy of a particular triangle in terms of so-called condition functions C(x) such that the total potential energy associated with the system is given by E u = k s C(x)C T (x)
+T6963be09a2938d52af25f19012c069c0	data 2615 2625	footnote 5
+T9ea9830eb59f0877cfc9198167e1426b	own_claim 2627 2703	energy should scale linearly with triangle area to ensure scale independence
+T9c0688ac369b016fd7eebedb66c49475	own_claim 2716 2793	we need to be careful when substituting C(x) for stretch and shear into eq. 1
+T985eb9bc4edab46dbff5be4342fdb96a	own_claim 2799 2857	the resulting formula is linear in a rather than quadratic
+T6cd034b036df2a7e4565bdbafecdda5d	own_claim 2920 2939	a linear drag model
+T9862229d4345fc51a0e4308e8453d83b	own_claim 2948 2980	that used in previous cloth work
+T322ace9a3b1169cc7c57e36715f3ac93	data 2982 2983	4
+T5c10bc46b62fde4b0d1dbdb209c375aa	data 2986 2987	9
+T7049110367bde2c540212f69440ecc65	own_claim 2989 3037	was not able to capture dynamic aspects of cloth
+Tf38fc9fabeb69ba907da6611b5c76bb3	own_claim 3678 3693;3702 3726	The linear term is merely Stokes’s law 1
+T931a86e980a7bbd9cc08839bd752eea3	own_claim 3729 3839	the quadratic term matches better the experimental behavior of macroscopic bodies in low Reynold’s number flow
+T07ec89b5f73e885e79b59c81def4d627	own_claim 4107 4235	The optimizer is free to eliminate this behavior or other terms of this equation by setting the corresponding parameters to zero
+T586e9ddce34b89336098316f74c687ed	own_claim 4248 4337	we used a first-order implicit Euler time integration scheme similar to the one described
+T7b6c246832e775829c1db7a2c9e58d14	own_claim 4393 4493	implicit integration introduced damping which could not be eliminated by optimizing cloth parameters
+T91b4b7c239972e396f1fec39b406f444	own_claim 4495 4589	We had more success in matching realistic cloth motions by using higher-order explicit methods
+T2373e384182fc1a55d8a42c7db043f81	own_claim 4591 4705;4707 4708	The results in this paper all use an adaptive 4thorder accurate Runge-Kutta methods with embedded error estimation 2
+T58ff00af569b945595c104a425e9c253	own_claim 4717 4797	this method offers the advantages of familiarity and automatic bounding of error
+T2a674e85286f167b02d45ceff5429607	own_claim 4799 4816	it is rather slow
+Tb8f79fb7c613498452ccfde5f86565b1	own_claim 4822 4905	recent work suggests that using 2nd-order backward differences 9 or Newmark schemes
+T8c7a1cd9fa4c2296a06603e24dd06d85	data 4906 4907	7
+Td8378314e3f5b52c4f9a57a628576052	own_claim 4908 4930	may be a better choice
+Tbaf32fcd57b8c89f530c7ab286a86da9	data 4936 4954	collision handling
+T77e160a5a6ec5f5344cf61cc0629547b	own_claim 5007 5105	which combines repulsion forces with impulses to robustly prevent all collisions before they occur
+T62233a5e50ecaba404995e65dafa1fbd	own_claim 5116 5278	separating repulsion forces from the cloth internal dynamics and applying them outside the Runge-Kutta solver affected stability and resulted in visible artifacts
+T23eadc0d9f991d1b11b09a7552d05305	own_claim 5289 5337	we apply repulsion forces inside the solver loop
+Tdabde205bde7f8e8288dd73506619da4	own_claim 5347 5416	the solver’s own internal error estimation can remove these artifacts
+T39efbdbf3f57af111f3f37cd4244a20f	own_claim 5418 5457	The drawback of this technique is speed
+Ta0b4715844c7d0c62c6b06c2636984e0	data 5467 5549	the system must check for collisions every time it evaluates the state derivatives
+Tb11d2f9430ba277d6da18a19609b107b	own_claim 5623 5706	To achieve acceptable performance, we used a number of collision culling algorithms
+T913043dc9367ceacf5146aeff972ddf2	data 5718 5750;5752 5754	hybrid top-down/bottom-up update 24
+T0f97e8191ac3559e1ef3369bbfeaeba9	data 5757 5783;5785 5787	fast triangle reject tests 26
+T0e952675c9c34697a95d2912ecd1be75	own_claim 5794 5880	a curvature-based criterion for rejecting self-collisions that was first introduced by
+

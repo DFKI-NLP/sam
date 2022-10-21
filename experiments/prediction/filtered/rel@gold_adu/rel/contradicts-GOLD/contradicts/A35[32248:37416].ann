@@ -1,0 +1,8 @@
+T396451e529d5fed2b5b026ed1e6d0f6f	own_claim 958 1037	increasing the time step seems not limited by instability with implicit methods
+T9dc79825ebc8eb7ef1bdd0f0353cc796	own_claim 1070 1139	this is still done at the expense of accuracy of the whole simulation
+Tbaa42a36d7f00d7ee2021ae1c314a2ed	own_claim 3220 3365	had the drawback of increasing the numerical instability problem, forcing additional use of isotropic force gradients, at the expense of accuracy
+Tbe619eab66147c95221dc9c24c012685	own_claim 3101 3191	We got substantial improvements through the implementation of the implicit Midpoint method
+R081cd167fb8696e3c5fd1225477626a6	contradicts-GOLD Arg1:T396451e529d5fed2b5b026ed1e6d0f6f Arg2:T9dc79825ebc8eb7ef1bdd0f0353cc796
+R07f6a6f89ad81be4b796245f8d937ea3	contradicts-GOLD Arg1:Tbe619eab66147c95221dc9c24c012685 Arg2:Tbaa42a36d7f00d7ee2021ae1c314a2ed
+R3853a58d08eb7ad840064dcd142eea20	contradicts Arg1:T396451e529d5fed2b5b026ed1e6d0f6f Arg2:T9dc79825ebc8eb7ef1bdd0f0353cc796
+R01ea8b3678ecaaa2fea974ef5e56cd04	contradicts Arg1:Tbe619eab66147c95221dc9c24c012685 Arg2:Tbaa42a36d7f00d7ee2021ae1c314a2ed

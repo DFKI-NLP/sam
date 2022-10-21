@@ -1,0 +1,3 @@
+Ta704f9789d74120addcea76c535b1d3e	data 1914 1993	the calculations of the wrinkling coefficients are done on a per triangle basis
+T1c1db2603d14c75d77ff0d9532856bec	own_claim 1995 2063	the computational time is linear with respect to number of triangles
+R29b0397d2d5ed31bb8f9b1350c265867	supports-GOLD Arg1:T1c1db2603d14c75d77ff0d9532856bec Arg2:Ta704f9789d74120addcea76c535b1d3e

@@ -1,0 +1,6 @@
+T90da03935e509cb9ee77b19eb30acc26	background_claim 565 624;646 689;698 736	For rigid N-body collisions by graphics and robotics groups and for flexible-rigid collision resolution several approaches have been suggested
+T192a9358f9e7ea511c5e58ce55f1bdc9	background_claim 854 961;981 1036	Cloth resolution methods so far compute non-penetrating positions, velocities or accelerations of particles which work fine for the collisions against fixed bodies
+T31476ace08c8146c2ef87714db962a88	background_claim 742 818	they are not directly applicable for deformable N-body collision resolutions
+T034da55d0cd7d624f285eebb287b0d0b	background_claim 1038 1057;1068 1140	Using these methods we cannot achieve visually satisfying dynamics of cloth-cloth collisions
+R1c7f2fb80221672b9cd2ec20c50c80aa	contradicts-GOLD Arg1:T90da03935e509cb9ee77b19eb30acc26 Arg2:T31476ace08c8146c2ef87714db962a88
+Rbcc3e957dba10b8bdb2b07c7677e9e9b	contradicts-GOLD Arg1:T192a9358f9e7ea511c5e58ce55f1bdc9 Arg2:T034da55d0cd7d624f285eebb287b0d0b

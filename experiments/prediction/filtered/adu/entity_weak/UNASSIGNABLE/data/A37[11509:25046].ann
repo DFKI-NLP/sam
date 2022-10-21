@@ -1,0 +1,8 @@
+T86b005553dde2049f6a3421f7c9c54b7	data 444 451	bending
+T50aa82f8c31905a3b8b77eceb7b72915	data 453 458	shear
+T357b194d31d11faca16486e3e4a2c8da	data 2312 2339	no constraints were applied
+T58efa53399979a66b5f302fcfa9a6527	data 2344 2378	the constraint direction, −∇C(x) T
+Td32586fc37586849fb4f3ff05abdf1a8	data 2381 2431	is evaluated at the beginning of the timestep, x n
+T304ff59cc5acc7843531d921df410bd7	data 2437 2445	in SHAKE
+T02fd884a58e5d1fda905c5d536936b61	data 2925 2942	Barth et al. 1994
+T713ff531a1e226013be7a0af25ebe556	data 10876 10887	C ∈ O(h 2 )

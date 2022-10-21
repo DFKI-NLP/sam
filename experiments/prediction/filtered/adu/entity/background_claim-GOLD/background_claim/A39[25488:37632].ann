@@ -1,0 +1,6 @@
+T366e7229c5209920b160081f12392022	background_claim-GOLD 8984 9108	treatment of cloth used a simple viscous damping function which dissipated kinetic energy, independent of the type of motion
+Tbccd5314f90e7cb4e61202083e1f4b80	background_claim-GOLD 9225 9247	their damping function
+T88254eb5d7dd2d8ca2beb4f678343d0e	background_claim-GOLD 9278 9352	does not match the quartic energy functions of their continuum formulation
+T4cb39985af65bb9944bf5f67b3d5732b	background_claim 8984 9108	treatment of cloth used a simple viscous damping function which dissipated kinetic energy, independent of the type of motion
+T53c6ba6622bedde2b7f050f432d277c4	background_claim 9225 9247	their damping function
+T14c6491982353f852fa054faff291b2e	background_claim 9278 9352	does not match the quartic energy functions of their continuum formulation

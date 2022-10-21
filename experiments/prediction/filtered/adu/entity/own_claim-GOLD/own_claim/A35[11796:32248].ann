@@ -1,0 +1,80 @@
+Ta8e3dfa7be553d44aa42f03a308a6609	own_claim-GOLD 32 102	Performance is a key issue in choosing the adequate integration method
+T72d4c40a97846b1df7e66a0a3924bb39	own_claim-GOLD 2766 2855	With one iteration only, it is barely worse than the very simple explicit Midpoint method
+Tf22b626a72a81bb4fecaeb922bea4340	own_claim-GOLD 3263 3310	which is often sufficient for most applications
+T2a98acb0d14d9be06160528700328d26	own_claim-GOLD 3312 3427	These tests will help us to choose the method that gives the best compromise between accuracy and computation speed
+T497c84aaed53f8d24e423f2fb510955f	own_claim-GOLD 4516 4657	This non-dimensional coefficient actually measures the “numerical difficulty” of computing an iteration of time step t with the given problem
+Tbdc523acaa222dc62fdb24d6a6bb485b	own_claim-GOLD 5123 5194	the condition coefficient of the problem computed with (1) is K = 2 0 0
+T16f2dbabc5ab2ff4d8a510a8c12312e5	own_claim-GOLD 5197 5283	It is possible to define similar coefficients related to bending and viscosity modulus
+Tfbb1e0da31add882a3eedfcca6551329	own_claim-GOLD 7086 7138	Several interesting facts arise from this experiment
+T2b67eb68de75b1e0f0505d316346c16a	own_claim-GOLD 7237 7293	the RungeKutta method supports K values up to almost 100
+Td8f7bc1883e8995349bb42052e6762fb	own_claim-GOLD 7315 7429	with Runge-Kutta, it is possible to use simulation time steps which are almost six times larger than with Midpoint
+Ta1fcc95e84c91ada276729900bf5fe9c	own_claim-GOLD 7550 7650	the Runge-Kutta method seems to be computationally two times more efficient than the Midpoint method
+T3731dc0941ec384d38c859c1cd237a8a	own_claim-GOLD 7996 8081	accuracy is well preserved with one Conjugate Gradient iteration up to a K value of 4
+Tf2c5e4f6225c7f77e9af28da1c8329e7	own_claim-GOLD 8087 8185	increasing the iteration number n times also increases the K value n 2 times for the same accuracy
+Ta4ebdb51dfb81963357a44a5537988de	own_claim-GOLD 8214 8336	the Inverse Euler method needs at least four Conjugate Gradient iterations to reach the accuracy of the Runge-Kutta method
+T918f20bac69873975ba0675a5a79365a	own_claim-GOLD 8355 8447	similar requirement of accuracy bring the two methods in parity in terms of computation time
+Tc0f129808d1a4016cb88c93e7a5bef50	own_claim-GOLD 8490 8590	the experiment was carried out using a uniformly discretized mesh, and uniform mechanical parameters
+T710a2a631854aefd627dd40ca4865385	own_claim-GOLD 9143 9226	it is not possible to increase the time step of implicit methods as much as desired
+Te74d5da57f9446ed8639a923beef8ee8	own_claim-GOLD 9231 9268	this cause very noticeable inaccuracy
+T6acca5a3d44b930cc93d79dd1846f121	own_claim-GOLD 9419 9459	this aspect has to be taken into account
+T59a25cb048e4695db4b99a71b0270a44	own_claim-GOLD 9527 9618	implicit Euler is a good choice for robust simulation where accuracy is not really an issue
+T6811b9775663538fd337a1b74a5c99c0	own_claim-GOLD 9620 9696	the explicit Runge-Kutta offers good possibilities of ensuring high accuracy
+Tc683e0c406061f625017e24d133a62b0	own_claim-GOLD 9708 9731	its high-order solution
+T63cfb1390bf00284de893709cbbda0fd	own_claim-GOLD 10487 10552	the total computation time is finally multiplied by a drastic n 3
+T887a1c6ba6bdbb7740ed71ee94b4d8cd	own_claim-GOLD 10623 10719	this factor is what cause explicit methods to become so inefficient with refined discretizations
+Te7c639fbe9522c0ea0b4cca481e1f0bf	own_claim-GOLD 10792 10832	implicit methods are a bit more tolerant
+T233e93b101c1561f414cf5f750321ee7	own_claim-GOLD 11701 11754	implicit methods should be quite strong on this point
+Tc15825810d3c6948cf7ec1d6cb8699a4	own_claim-GOLD 13255 13310	the explicit methods seem quite not adapted for draping
+T18358abfa203051e00b4f0febd79d61e	own_claim-GOLD 13564 13666	The backward Euler method is robust enough to handle the problem without instability for any time step
+Td728849f75576f0b91f7748e09880b8c	own_claim-GOLD 13689 13782	larger time steps do not proportionally translate into fewer steps for performing the draping
+T34ce7b36feaf9ad4356192d7878913e2	own_claim-GOLD 13920 14103	we quickly observe a “saturation” of the number of iterations to a constant which seems to be inversely proportional to the number of Conjugate Gradient iterations that were performed
+Te51e6d2367214562a249b2c3b8369f8a	own_claim-GOLD 14214 14275	the time step does not really reflect a time interval anymore
+Td3c71a599b7e2013197a33e124df0263	own_claim-GOLD 14291 14566	the implicit method will only evaluate an approximation of the rest state of the mechanical system by linear extrapolation from the Hessian matrix, whose accuracy depends on the number of Conjugate Gradient iterations that were used to resolve the corresponding linear system
+Tcf84a253645a8d16802ca2d43268b7f1	own_claim-GOLD 14575 14647	there is no real way to “cheat” on the time step for speeding up draping
+Tb77729e0a77413b563e2cf6a71a3f61b	own_claim-GOLD 14996 15086	this experiment shows the drastic advantage of using implicit methods for draping problems
+T8cc6b8487e4e9b8c9585a5237cea0b39	own_claim-GOLD 18944 19041	the resulting condition coefficient K is roughly 8 with a simulation time step of 10 milliseconds
+Tbb6a326abc7b826fe4fb150a3b36dee8	own_claim-GOLD 19185 19284	This is a draping problem involving to obtain a rest position of the garment as quickly as possible
+T50757d1e55a1d8dd0d5a24067d75f215	own_claim-GOLD 19386 19437	The dynamical motion of the cloth is important here
+T3ffda489c2982dbb025a69d7b12cd804	own_claim-GOLD 19439 19550	The garment assembly and seaming operations could be performed almost four times faster with the Backward Euler
+T3b1bf50e14c64e9b76c3985fa517b088	own_claim-GOLD 19563 19584	than with Runge-Kutta
+T3c912fbb64d5e18555eef9865403512b	own_claim-GOLD 19985 20010	The backward Euler method
+T420792cf3147a01bff11380ace6b60bd	own_claim 32 102	Performance is a key issue in choosing the adequate integration method
+T4ca1bfaacaf0817d4240312ea196a3b6	own_claim 2766 2855	With one iteration only, it is barely worse than the very simple explicit Midpoint method
+T7c185fb72bc572d63a19cd17a87f3f58	own_claim 3263 3310	which is often sufficient for most applications
+T5dba26d15a23a7290f2255e16f0ffbfd	own_claim 3312 3427	These tests will help us to choose the method that gives the best compromise between accuracy and computation speed
+T0ad89c3b4b53a3790dc9524f97569c2e	own_claim 4516 4657	This non-dimensional coefficient actually measures the “numerical difficulty” of computing an iteration of time step t with the given problem
+T8fe801565bbb88bba8e9782926b26ce6	own_claim 5123 5194	the condition coefficient of the problem computed with (1) is K = 2 0 0
+T2cf40fd1762c251248976eaa54d4d8a4	own_claim 5197 5283	It is possible to define similar coefficients related to bending and viscosity modulus
+Tfcfdac21198efa824b97d727eb791bca	own_claim 7086 7138	Several interesting facts arise from this experiment
+Ta6394fc299c94805a5c6397ee1267938	own_claim 7237 7293	the RungeKutta method supports K values up to almost 100
+Te389a07bdbce57b85610da65fbdec086	own_claim 7315 7429	with Runge-Kutta, it is possible to use simulation time steps which are almost six times larger than with Midpoint
+Td40a70e058d186cd20d11e1d68627b2c	own_claim 7550 7650	the Runge-Kutta method seems to be computationally two times more efficient than the Midpoint method
+T513caccc53c6a376acee74bbb4546d5f	own_claim 7996 8081	accuracy is well preserved with one Conjugate Gradient iteration up to a K value of 4
+Ta3b5c1f875fa8b8f24a99b7fdafd7ff5	own_claim 8087 8185	increasing the iteration number n times also increases the K value n 2 times for the same accuracy
+T4b82e59c5ac2f561907ece2f251aaafe	own_claim 8214 8336	the Inverse Euler method needs at least four Conjugate Gradient iterations to reach the accuracy of the Runge-Kutta method
+T494b27fcadc4bb636e476770c21edac7	own_claim 8355 8447	similar requirement of accuracy bring the two methods in parity in terms of computation time
+T668837850024199a2fc9e3c7dc0885df	own_claim 8490 8590	the experiment was carried out using a uniformly discretized mesh, and uniform mechanical parameters
+Tf6813d2496efd1dce5a6a29b8187640f	own_claim 9143 9226	it is not possible to increase the time step of implicit methods as much as desired
+Tc916baa57feedf2cd1812814dd01c522	own_claim 9231 9268	this cause very noticeable inaccuracy
+T3a1df79dbf3dc49e3fdb2346d8c3d936	own_claim 9419 9459	this aspect has to be taken into account
+T7ee285cca797105042a6e13b2704780d	own_claim 9527 9618	implicit Euler is a good choice for robust simulation where accuracy is not really an issue
+T91edcf0c2543ebd4857aad02261963fa	own_claim 9620 9696	the explicit Runge-Kutta offers good possibilities of ensuring high accuracy
+T83d2484fa732336565c3d2c990aefb45	own_claim 9708 9731	its high-order solution
+T496c138d6c1cca31f4f532ed7bdc28b6	own_claim 10487 10552	the total computation time is finally multiplied by a drastic n 3
+T55dd97a3093107c4b50e1e1d4de156b3	own_claim 10623 10719	this factor is what cause explicit methods to become so inefficient with refined discretizations
+T8f4be173a9f01ec6c624acff62b30c54	own_claim 10792 10832	implicit methods are a bit more tolerant
+T71563724fe0f42613e793be959e8c676	own_claim 11701 11754	implicit methods should be quite strong on this point
+T5f4158f3b3f426d9d16b140c879aae13	own_claim 13255 13310	the explicit methods seem quite not adapted for draping
+Tc2d8a3f6ad17996ca19f766353c09bd7	own_claim 13564 13666	The backward Euler method is robust enough to handle the problem without instability for any time step
+Taaf10a4a6c50a13c2625494537a68e86	own_claim 13689 13782	larger time steps do not proportionally translate into fewer steps for performing the draping
+T5246e63d650931a39260cc02a62eb956	own_claim 13920 14103	we quickly observe a “saturation” of the number of iterations to a constant which seems to be inversely proportional to the number of Conjugate Gradient iterations that were performed
+Tbb13f66f2e01ac8d3d69e9f26c98bba0	own_claim 14214 14275	the time step does not really reflect a time interval anymore
+T313dedaa8eda9f5a87d37cf1db2cd954	own_claim 14291 14566	the implicit method will only evaluate an approximation of the rest state of the mechanical system by linear extrapolation from the Hessian matrix, whose accuracy depends on the number of Conjugate Gradient iterations that were used to resolve the corresponding linear system
+T88c834b620cdced79c3ec037e58e6e89	own_claim 14575 14647	there is no real way to “cheat” on the time step for speeding up draping
+T7eead364f63deeae703afbc8bc379216	own_claim 14996 15086	this experiment shows the drastic advantage of using implicit methods for draping problems
+T6ff707c0f7928cbe7b46559855f59459	own_claim 18944 19041	the resulting condition coefficient K is roughly 8 with a simulation time step of 10 milliseconds
+T0b8f0c220da11bbf4a80019ece434648	own_claim 19185 19284	This is a draping problem involving to obtain a rest position of the garment as quickly as possible
+T791867af0f18df7ac7b6b74af760581f	own_claim 19386 19437	The dynamical motion of the cloth is important here
+Tc0b79581b12ffda172814410a394f269	own_claim 19439 19550	The garment assembly and seaming operations could be performed almost four times faster with the Backward Euler
+T12f436a1e7442201e15ceb5973992905	own_claim 19563 19584	than with Runge-Kutta
+T95d8b1c855449f5d5075e75eff03b87a	own_claim 19985 20010	The backward Euler method

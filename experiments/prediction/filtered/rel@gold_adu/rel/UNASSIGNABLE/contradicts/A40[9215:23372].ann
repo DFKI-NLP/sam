@@ -1,0 +1,14 @@
+T27bd34b5fdc631e556c10a4705fd49b9	background_claim 3124 3186	the term −(u · ∇)u is nonlinear and deserves special attention
+T52978ddda7c9403da4893a03dabbd7b8	own_claim 12660 12734	on both sides of the solid object all cells would be tagged as having wind
+Tc9f703e542778c1b55b84492512a73cf	background_claim 13458 13504	implementing the fluid solver is quite complex
+Te60b8e952f7ae5c3fdca049aa8ebbe85	background_claim 13360 13448	It produces nice swirls and vortices derived from dynamical characteristics of the fluid
+T1212c8084cdaf4c697a921760b3ec2c3	own_claim 8822 8929	this method can be combined with the aerodynamic model described in section 3 to give nice and fast results
+T937957bc69a5850ae51d5197c3016d0d	background_claim 3048 3122	the linear terms in equation (4.2) are straightforward to solve implicitly
+T7c61ed7601f1bf7ef6c33132b9aa41ef	background_claim 8626 8704	The wind flow defined by the primitives will not react on objects in the scene
+T0c3597eec1748a5675435bf0f160310f	background_claim 8734 8811	tissues in the lee of other objects will be affected by the wind flow as well
+T7d5604d9a5a5d86a3b20623fe6c61b9a	own_claim 12740 12811	evaluating the wind field at every cell we would obtain a zero velocity
+Rf676aef31f7765c2cfdbda9c1497e56f	contradicts Arg1:T937957bc69a5850ae51d5197c3016d0d Arg2:T27bd34b5fdc631e556c10a4705fd49b9
+Reb622ec8de8dac648ecf79facc88b2cb	contradicts Arg1:T7c61ed7601f1bf7ef6c33132b9aa41ef Arg2:T1212c8084cdaf4c697a921760b3ec2c3
+R4b27debf7452a622a1de80e0a0500d34	contradicts Arg1:T0c3597eec1748a5675435bf0f160310f Arg2:T1212c8084cdaf4c697a921760b3ec2c3
+Redb6a2fc2df83cbf5c470f10949de9a9	contradicts Arg1:T52978ddda7c9403da4893a03dabbd7b8 Arg2:T7d5604d9a5a5d86a3b20623fe6c61b9a
+Re7903e92e94e4b05f38180363e4d10d7	contradicts Arg1:Te60b8e952f7ae5c3fdca049aa8ebbe85 Arg2:Tc9f703e542778c1b55b84492512a73cf

@@ -1,0 +1,9 @@
+# conda create -n sam python=3.9
+## python v3.9 is specific for now because if we use python=3 then it downloads the latest version i.e 3.10 which creates
+## installation issues with pyarrow.
+torch==1.10
+# CUDA VERSION = 10.2
+datasets==1.16
+allennlp==2.8
+allennlp-models==2.8
+wandb==0.12

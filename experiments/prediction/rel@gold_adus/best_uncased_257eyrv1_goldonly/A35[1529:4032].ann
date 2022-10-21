@@ -1,0 +1,50 @@
+T27944a705fd1c188c5148e552c7564de	background_claim 38 184	The correct choice of the simulation method and its implementation is a very important issue in the design of an efficient cloth simulation system
+Tffff12208291d57895b9904574c455ce	background_claim 188 250	Among the available methods, there are finite elements methods
+Tcf52e73ba116c7f4eee49c876baa2ece	data 254 260	EIS 96
+T6b119f0854f26a93a66789577bfaae71	background_claim 264 283	continuum mechanics
+T3228e217f4885b189bce7ae26ecab03f	data 287 293	TER 87
+T772a0b7ed46c8d51eab652e72c88f841	background_claim 296 315	or particle systems
+T558c485e8a615be9b36eff5950ed168a	data 319 325	BRE 94
+Td6926c3230d457cbf954f0c922614000	background_claim 347 474	the latter, which has shown to bring the best compromise between accuracy and speed for highly deformable objects such as cloth
+T1b2f291be397456f8ef137bb48bb06b4	data 478 484	VOL 95
+T7081bb8f427c584dd2842cbac329059d	data 489 495	VOL 97
+T5d74464e52ea5e35f17df5267ac4135d	background_claim 499 577	A particle system represents the mechanical system as a set of punctual masses
+T88bf297714debf336ecd8d23ce82a39a	background_claim 579 663	The cloth surface shape is represented by the geometry between neighboring particles
+T28ffcc85398d1a0118b5737bc2ae6e56	background_claim 665 858	The mechanical behavior is represented as interaction forces between the particles, which depend on the relative position and speed of the particles, measuring deformation and deformation speed
+Te73b6c5200459f9857ab347a7f9d418a	background_claim 860 959	Various models exist for this representation, which rank from the simple spring-mass representation
+T43896ad087d4c5cdaaa7cb7b7720ac00	background_claim 1049 1085	to accurate surface or volume models
+Tb01dd2c5d4739b3e64492c8297307d36	background_claim 1158 1282	The laws ruling these interactions also rank from linear to highly nonlinear involving discontinuities and hysteretic curves
+Tee9d4725555b8193c4d325942b24d386	background_claim 1284 1478	The evolution of the system is computed numerically from these equations that form a large and sparse ordinary differential equation system, which, through adequate modeling, is also first-order
+Tccd239c5e6b3a1c2143247753d3f1f0a	background_claim 1480 1697	This numerical system has to be integrated numerically, for finally obtaining the evolution of the mechanical system along time, usually as a sequence of successive positions of the object along regular time intervals
+T71f9f32dd50898f0e76a94d0860660b5	background_claim 1700 1733	Various numerical methods related
+T267be108dbf5b487924300ed4588bd04	background_claim 1751 1851	to integration of numerical ordinary first-order differential systems are available for this purpose
+Tce79854bb101a9670819e4dbd9975bee	data 1855 1861	PRE 92
+Tb191e970469020eb71ca5bb41aba2cdd	background_claim 1907 1990	the implementation of these methods, which has already been carried out extensively
+Tcc632ebfc2afea5a782f5c722bee444e	data 1997 2003	EBE 96
+T29247093d127ff5a363f81677a76a0ed	data 2008 2014	VOL 97
+T97d087a464708ce3c9959814654c107c	data 2019 2025	BAR 98
+Tdca0be544e91364387c061d40850aadf	data 2030 2036	VOL 00
+Tb2dd86ab85203e33f31f7f6e4e2447ce	background_claim 2040 2065	and with some adaptations
+Tacca8be35cba875c07b4f923327895f1	data 2072 2078	DES 99
+T2020d67cab9319b9bf9f18b55c17b614	data 2083 2089	EBE 00
+T836a7cadbbe869d691848f79e2ae8355	data 2094 2100	KAN 00
+Taf2afd6557cd74c8fb7868b5566b0cff	own_claim 2104 2227	It rather intends to evaluate quantitatively the performance of the main integration methods in terms of speed and accuracy
+T3644d6b43588a7f62cd61c58a33aaa2e	own_claim 2229 2486	Using a “typical” cloth object made of a common fabric material, we compare the computation speed and accuracy of each integration methods depending several simulation contexts, giving the reader an overview of the performance he can expect from each method
+R4b0fbaecdce86284d19e20de28aaeac2	supports Arg1:Tcf52e73ba116c7f4eee49c876baa2ece Arg2:Tffff12208291d57895b9904574c455ce
+R599a1f7d627660b13f0c1ee1ebe137e8	parts_of_same Arg1:Tffff12208291d57895b9904574c455ce Arg2:T6b119f0854f26a93a66789577bfaae71
+R05a7da506958472291fc4a72332ac222	supports Arg1:T3228e217f4885b189bce7ae26ecab03f Arg2:T6b119f0854f26a93a66789577bfaae71
+R75f2c804bd691f52d4ab1c3cc7f4eb77	parts_of_same Arg1:T6b119f0854f26a93a66789577bfaae71 Arg2:T772a0b7ed46c8d51eab652e72c88f841
+Rddcb78c0771def3006bd35e122b62df2	supports Arg1:T558c485e8a615be9b36eff5950ed168a Arg2:T772a0b7ed46c8d51eab652e72c88f841
+R09af22ed01acf8a2a70ecbb8a8918123	supports Arg1:T1b2f291be397456f8ef137bb48bb06b4 Arg2:Td6926c3230d457cbf954f0c922614000
+R3df8e51f2515a227a3ce745ac7574a62	supports Arg1:T7081bb8f427c584dd2842cbac329059d Arg2:Td6926c3230d457cbf954f0c922614000
+Rf44d731aa79f08c42dfbc81465530df8	parts_of_same Arg1:Te73b6c5200459f9857ab347a7f9d418a Arg2:T43896ad087d4c5cdaaa7cb7b7720ac00
+Rc9c0542bd4b6686feffa42f39f4bcc7a	parts_of_same Arg1:T71f9f32dd50898f0e76a94d0860660b5 Arg2:T267be108dbf5b487924300ed4588bd04
+R27dd07703a2ccd7adddd72aa96c7f9a2	supports Arg1:Tce79854bb101a9670819e4dbd9975bee Arg2:T267be108dbf5b487924300ed4588bd04
+R3a149d79d39a2cc79a1d44f082fd441e	supports Arg1:Tcc632ebfc2afea5a782f5c722bee444e Arg2:Tb191e970469020eb71ca5bb41aba2cdd
+Rdf973e5c90e9e02004127adcb56b53b9	supports Arg1:T29247093d127ff5a363f81677a76a0ed Arg2:Tb191e970469020eb71ca5bb41aba2cdd
+Rd29e49f25160830b9911f2fc9c9d2cd1	supports Arg1:T97d087a464708ce3c9959814654c107c Arg2:Tb191e970469020eb71ca5bb41aba2cdd
+R54fb10abeefc5f8f3950e77feeee914c	supports Arg1:Tdca0be544e91364387c061d40850aadf Arg2:Tb191e970469020eb71ca5bb41aba2cdd
+R9e1220d97086e4da272c109720b5cba6	parts_of_same Arg1:Tb191e970469020eb71ca5bb41aba2cdd Arg2:Tb2dd86ab85203e33f31f7f6e4e2447ce
+R40ac6cb78797b06b47799ec23cbe9547	supports Arg1:Tacca8be35cba875c07b4f923327895f1 Arg2:Tb2dd86ab85203e33f31f7f6e4e2447ce
+R9d213ae39a342ef545dbabf1d9d89891	supports Arg1:T2020d67cab9319b9bf9f18b55c17b614 Arg2:Tb2dd86ab85203e33f31f7f6e4e2447ce
+Rdafcf9bcffce5dfb7e673ed191fbd45e	supports Arg1:T836a7cadbbe869d691848f79e2ae8355 Arg2:Tb2dd86ab85203e33f31f7f6e4e2447ce

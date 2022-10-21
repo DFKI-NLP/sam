@@ -1,0 +1,12 @@
+T0c6a382e1042f0a28d16bfd3f2bddb1c	own_claim 2276 2331	They are constant with respect to the animation process
+Tf9ce38e1eee7e26ad464586bcabc4d7c	own_claim 4829 4860	these two areas will be unequal
+Te3396899ebacec88f22868b636331b63	own_claim 4875 4971	the overall wrinkled surface area over the whole mesh will not be conserved during the animation
+T5e8172fc050f5a5eb9b2477992ddab05	own_claim 5009 5027	real life examples
+T93187b2e14539d70a573b616ebe59957	own_claim 5056 5085	the surface area is conserved
+Tc8425a9e3a85466c73d4ed35dd584f5e	own_claim 5137 5209	One might think of several different approaches to meet this requirement
+T5abf3b389a9a27c28dfd7854da3114e7	own_claim 5211 5325	Our approach realizes overall area conservation by achieving area conservation on a per triangle basis of the mesh
+T2abadffab29a89b870dc5d9b70a8bdda	own_claim 5876 5939	we present an approximate solution to this equation that yields
+T827dfb60e2b49989d72346ae21d00142	own_claim 7041 7117	we have derived an algorithm that is based on the area conservation property
+T3de4b1ccb7ee96e930bbb2158b7e9841	own_claim 7823 7924	we are more concerned with the visual results of the animation, rather than precise area conservation
+T8c0d90e0df61361d50c0d61938164813	own_claim 9024 9112	The size of the mesh triangles actually governs the extension of local wrinkling effects
+T1777d4d42d0f8e20e3c2c6e16c12d512	own_claim 9191 9214	to the wrinkle patterns

@@ -1,0 +1,11 @@
+T0f7827415442772fc158949bf7b95e6a	own_claim-GOLD 3524 3777	For measuring accuracy and numerical stability of the algorithms, we need to set up a “standard” material on which the experiments are carried out, as well as the rules allowing to extrapolate the results to any material of different size and parameters
+Tcb4c7c3b9b9ca66ae91eda53948eb10b	own_claim-GOLD 4152 4511	Thanks to the linearity of the equations describing linear elasticity, we reduce the number of parameters describing a problem using proportionality laws, and we compute a “condition coefficient” K which illustrates the acceleration of a mesh element with normalization to the problem mass, simulation time step and element size, as follows: K = E d 1 l 2 t 2
+T1fda920fdee4d676f663016552aea0b8	own_claim-GOLD 6278 6444	we perform a preconditioning of the system state variables of the linear system to be resolved using the inverse square root of the mass of the corresponding particle
+Tf973334c221f8c9808ff48a69fe45397	own_claim-GOLD 6852 6905	we expect this to happen in a constant time of 0.45 s
+Tcf34ffd91e8e0a4b5515d0b339cabc71	own_claim-GOLD 7859 7874	its accuracy is
+T8a31f97f39e7e7d651efe3e4f4095906	own_claim-GOLD 7883 7966	very degraded by high K values and reduced numbers of Conjugate Gradient iterations
+T09b4b0991a2b2de87b6f8dabeb9dc861	own_claim-GOLD 9861 9939	is too context-sensitive for being pre-evaluated using only the knowledge of K
+T3a700a0f065c0a31a3809a577f8bb2f3	own_claim-GOLD 18874 18928	The mesh elements are roughly five centimeters in size
+T05be84154e3715ddf5b13e6e2457f4d6	own_claim-GOLD 20121 20210	excessive “heaviness” of the fabric that failed to follow the motion of the body properly
+Td1109625945a31b97b697eae3f3d4ef7	own_claim-GOLD 20212 20259	garments folds that would not disappear quickly
+T500432b71eb9d6b2058a0fa10982924f	own_claim-GOLD 20272 20332	additional artifacts caused by inaccurate collision response

@@ -1,0 +1,20 @@
+T18bfe7fca4382f50ac91538fe39afbdf	data 7542 7634	material for which bending in the u and v directions are weighted by stiffnesses k u and k v
+T5c6f146c97ce4d8373a5524e3d804316	data 2758 2761	(8)
+T279187e5123704cfc15918f2ca90c213	data 7684 7743	the edge between the triangles be between particles i and j
+T72c6377d70276d72b6e3f56547b59611	data 10836 10928	the condition functions C we have defined in this section for stretch, bend and shear forces
+Tf29c99b33581bdf7286c3be8f91686aa	data 2740 2753	equations (7)
+T2d6d43f5c5144df77dbb07eb625e69b8	own_claim 2686 2733	Forces and their derivatives are easily derived
+T0b8830c5c2a2b41b9311c274c82bcab9	background_claim 9225 9247;9278 9352	their damping function does not match the quartic energy functions of their continuum formulation
+T523d2d0fcffe38d15ef247f0a83188bb	own_claim 828 1009	we define internal behavior by formulating a vector condition C(x) which we want to be zero, and then defining the associated energy as k C(x) T C(x) where k is a stiffness constant
+T68089a5e3c2a0112459a4d6e14f55e71	data 9210 9212	11
+Ta197c39849db2b688cc71537cd7aec24	own_claim 692 742	Energy functions are an undesirable starting point
+T249e93125c7bda68aa184eddbf017999	data 7756 7787	u = u i − u j and v = v i − v j
+T061d2138d097cd21c4b214bb0e5edd31	own_claim 10644 10696	This neatly parallels the fact that f = −k s ∂x C(x)
+R83e370b5c47b3875c4273b6bcc8ef757	supports Arg1:Ta197c39849db2b688cc71537cd7aec24 Arg2:T523d2d0fcffe38d15ef247f0a83188bb
+Re8c27d5dd4dd188b1922f17eeaf5d67d	supports Arg1:Tf29c99b33581bdf7286c3be8f91686aa Arg2:T2d6d43f5c5144df77dbb07eb625e69b8
+R28f45d815e4a939afa13b1cece3ffa93	supports Arg1:T5c6f146c97ce4d8373a5524e3d804316 Arg2:T2d6d43f5c5144df77dbb07eb625e69b8
+Ra048ddf36446329be939cbc86cec8453	supports Arg1:T249e93125c7bda68aa184eddbf017999 Arg2:T18bfe7fca4382f50ac91538fe39afbdf
+R4443a9c5fab9bc1e02d8d301070274dc	supports Arg1:T279187e5123704cfc15918f2ca90c213 Arg2:T18bfe7fca4382f50ac91538fe39afbdf
+Rb6687b4cf2e6b293a5f0908bc4a21acb	supports Arg1:T18bfe7fca4382f50ac91538fe39afbdf Arg2:T249e93125c7bda68aa184eddbf017999
+Rd7788fd0718db960d14b28b70e22681f	supports Arg1:T68089a5e3c2a0112459a4d6e14f55e71 Arg2:T0b8830c5c2a2b41b9311c274c82bcab9
+R10af5a4adc4af375ee7989bc88494773	supports Arg1:T72c6377d70276d72b6e3f56547b59611 Arg2:T061d2138d097cd21c4b214bb0e5edd31

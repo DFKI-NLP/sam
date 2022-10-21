@@ -1,0 +1,9 @@
+Te710e43be639fb4d12659b7ff6926413	background_claim-GOLD 231 336	The size of the problem, mostly related to the number of particles used to describe the mechanical system
+T4438b58f559d2a210e7ba2a0f3f31ec8	background_claim-GOLD 340 505	The desired accuracy, which reflects the allowable numerical tolerance between the computed solution and the theoretical evolution expected from the mechanical model
+T5d6870d042849304cf9fa71fe9fffe11	background_claim-GOLD 509 778	The simulation context, which can either be an extensive computation of the motion along time requiring accurate evaluation of all the dynamical factors, or a simple relaxation process where the simulation has to converge to the static rest state as quickly as possible
+T72479f246ffe63aec47cd4edee8f5a9e	background_claim-GOLD 1080 1160	The time an iteration takes to compute, and the number of mechanical derivations
+Tbcaa9ebd97e543042dc2b7096f47d64f	background_claim-GOLD 2904 3027	It requires two mechanical derivations per iteration and returns a second-order accurate solution relative to the time step
+T67bcb78f881db6b10dc190b2b4bb0de6	background_claim-GOLD 3163 3291	the obvious gains of accuracy and stability which, despite the additional mechanical evaluation, makes it largely more efficient
+Tdd083a86f56c87385cbae185cf34e3ca	background_claim-GOLD 3293 3342	We implemented this method for garment simulation
+Ta7c35a48ef23d117b1c8128bccd29098	background_claim-GOLD 6393 6411	A complete surface
+T0ac73c37700eaeb9df89e3f718d2de48	background_claim-GOLD 6412 6482	elasticity model which allows the simulation of anisotropic elasticity

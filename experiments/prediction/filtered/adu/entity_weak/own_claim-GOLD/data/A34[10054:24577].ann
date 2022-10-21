@@ -1,0 +1,12 @@
+Tded472c003b70619a81103cbf68f97a5	own_claim-GOLD 1787 1903	simultaneous resolution does not blindly resolve a collision without considering neighboring collisions within an IZ
+T512d4ba988dee84b2f52f10b67ff55c2	own_claim-GOLD 3388 3449	the particles in that CC will stick together after resolution
+T6c7d5d6b635333d48cd291f45b94eb90	own_claim-GOLD 5878 5920	we pre-processed a single CC IZ previously
+Ta5bb243810180a57f20f658daf3f30e0	own_claim-GOLD 6166 6250	the velocities of CCs after collision are computed based on this collision direction
+T7c64d83d65d56feceb85b24bd2f0d59b	own_claim-GOLD 9207 9233	we treat CCs as mass balls
+T74a2b0df1c61daecdf2b342d6195ea09	own_claim-GOLD 10571 10621	we use swept-volumes of faces to detect collisions
+T78fb2a216e955d340a9cc06f4e382345	data 1787 1903	simultaneous resolution does not blindly resolve a collision without considering neighboring collisions within an IZ
+Tb0cb282e79f667d91102d12b1850f5ab	data 3388 3449	the particles in that CC will stick together after resolution
+T79d6016fc4d4393bb4d0709e5be1b26c	data 5878 5920	we pre-processed a single CC IZ previously
+T1e1b0aba50484a7744e765c85716012e	data 6166 6250	the velocities of CCs after collision are computed based on this collision direction
+Tf7470b0e9a5e86f7479e64097d11590a	data 9207 9233	we treat CCs as mass balls
+Tbe9c753157876e0dcd898a397f92ac1d	data 10571 10621	we use swept-volumes of faces to detect collisions

@@ -1,0 +1,10 @@
+T99948320b58841204f8bead1fb5bdbe4	data-GOLD 1355 1368	equation (15)
+Tecba0bcc89c5b72c336741d8a74fe46c	data-GOLD 1990 2007	two contacts form
+T9d7a36fee92b77487e0025d890d2f5c1	data-GOLD 2009 2247	For both types of collisions, our detection algorithm reports an intersection, and then takes action to remedy the situation: either by enforcing a constraint (cloth/solid collisions) or by adding a penalty force (cloth/cloth) collisions.
+Tb2b59dfe895d28b8cef557f2e041ae41	data-GOLD 2640 2662	cloth/solid collisions
+T7f9f3b703f9c312349264a415cfac25f	data-GOLD 2711 2887	we simply enforce a constraint which causes the colliding cloth particle to have a velocity consistent with the solid object’s velocity, and continue to enforce that constraint
+Tdde71ccc420dcf049973e1d6f9fe3917	data-GOLD 3512 3756	when intersections occurred, rather than wait for a scheduled constraint or a penalty force to eliminate the intersection, we simply altered the positions of the cloth particles, effecting an instantaneous (and discontinuous) change in position
+T4dad356c94ce3406b51da22164753307	data-GOLD 6065 6101	modified the top row of equation (4)
+T211be094fe8fa70d067c6c3b486d4bbe	data-GOLD 6145 6158	equation (17)
+T6a5df1821614c62535dc1eec19905e6b	data-GOLD 6177 6200	derivation of section 3
+Te6fb8409fa7b883254195de7d5c80526	data-GOLD 6209 6243	symmetric transform from section 5

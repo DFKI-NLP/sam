@@ -1,0 +1,9 @@
+<H1>5. Parameter Identification</H1>
+        We use optimization to estimate the parameters of the cloth simulator from video. Before we describe the details of the optimizer, we look at the error space of the angle map metric, which gives us useful insight about the parameters of the system. Fig. 3 shows the variation of error for different values of bend stiffness and stretch stiffness coefficients for satin. To generate this error map, we compared the angle map from one frame in video with several angle maps in simulation. From the figure, it is evident that the error space is fairly noisy, with many local minima, motivating the need for a global optimization technique. In addition to the parameter values, we estimate the relative importance of each parameter for a given experiment by performing a perturbation analysis at the solution point. The importance or sensitivity of a parameter p depends on its local gradient ∂E ∂p ; it relates a small change in parameter value to a change in the error value. Instead of computing the gradient, we robustly compute the variability of the param∂p eters, defined as ∂E . To compute the variability, we perturb each parameter of the simulator individually up to ±0.20% of its value, compute the error and fit a quadratic to the data ( Fig. 4 ). From the quadratic, the variability is computed as the change in parameter values that results in a 1% change in the error. Parameters with low variability have high sensitivity and are estimated reliably for a given experiment.
+        109 108.5 108 107.5 error 107 106.5 106 105.5 105 104.5 0.2 0.15 0.1 0.05 0 0.05 0.1 0.15 0.2 % change in parameter value
+        
+          Figure 4: Perturbation analysis at the solution for bend stiffness parameter.
+        
+      
+      
+        

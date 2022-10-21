@@ -1,0 +1,21 @@
+T08f222ad26bc351ab7d7ff3d5ddc6f61	data 1392 1402	appendix B
+T1f12589c4dbdea15e1862e571f5cef02	data 625 643	Guskov et al. 2003
+Tc2a1106e856dd45915dd02e85029e008	own_claim 3279 3297;3343 3383	Occluding contours no longer disrupt the matching procedure
+T3c6b889025354da69fe50db8b3535a53	data 645 663	Scholz et al. 2005
+Tcc6f6e3e2f2512208a3e3d3efbc59594	own_claim 473 537	This iterative approach allows us to match without neighborhoods
+Te3c1cfeb02af83242251ffea100ecbe4	background_claim 4064 4111	strain in cloth does not exceed 20% in practice
+Tbe7943c3ff17ac82345384daaccd1f59	data 665 668;1434 1446	Lin and Liu 2006
+T7e4a886ffe976ca1f604e2066ca4fe6a	own_claim 1246 1345	We are able to obtain significantly more information per unit cloth surface area than previous work
+Td722714e54ed97a5fe721ed17577971b	own_claim 539 584	This is better than label propagation methods
+T7bc991124630905ba78ae8c7e9ecb673	background_claim 604 623;1448 1526	propagation methods require large sections of unoccluded cloth and must stop at occluding contours
+T651ccd93fa523ebfc031296562575b81	data 1351 1362	section 3.1
+T420d32b75e2b4458c9c4ef51d56020db	own_claim 3251 3277	no neighbors are necessary
+T85f1aa53dc0d3964d95ae4d24a15c94a	own_claim 4113 4155;4215 4268	Relaxing the constraint to distances in 3D we can use strain to exclude possible correspondences
+R02b8196986808904b8dc5d0fcbeea0ed	supports-GOLD Arg1:Tcc6f6e3e2f2512208a3e3d3efbc59594 Arg2:Td722714e54ed97a5fe721ed17577971b
+Rbbbef2254256ffead1b2c9f0094999b4	supports-GOLD Arg1:T651ccd93fa523ebfc031296562575b81 Arg2:T7e4a886ffe976ca1f604e2066ca4fe6a
+R7c34fd4314e9dc6e018f28fdda615b16	supports-GOLD Arg1:T08f222ad26bc351ab7d7ff3d5ddc6f61 Arg2:T7e4a886ffe976ca1f604e2066ca4fe6a
+R8a3f9a02450d44e7cff555542e10839e	supports-GOLD Arg1:T1f12589c4dbdea15e1862e571f5cef02 Arg2:T7bc991124630905ba78ae8c7e9ecb673
+Rf47c2df316eb468e6cae6b4300a57f1f	supports-GOLD Arg1:T3c6b889025354da69fe50db8b3535a53 Arg2:T7bc991124630905ba78ae8c7e9ecb673
+Re2eaee36e8ed9dfc8e7c151aef006c1a	supports-GOLD Arg1:Tbe7943c3ff17ac82345384daaccd1f59 Arg2:T7bc991124630905ba78ae8c7e9ecb673
+R6f5c2dfbc0b216024d8cee8237a44219	supports-GOLD Arg1:T420d32b75e2b4458c9c4ef51d56020db Arg2:Tc2a1106e856dd45915dd02e85029e008
+R609fa946f4a6064931b9819b689205dd	supports-GOLD Arg1:Te3c1cfeb02af83242251ffea100ecbe4 Arg2:T85f1aa53dc0d3964d95ae4d24a15c94a

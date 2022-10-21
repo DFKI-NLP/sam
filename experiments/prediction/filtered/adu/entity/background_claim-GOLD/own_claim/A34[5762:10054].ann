@@ -1,0 +1,10 @@
+T9794f9b8c42a16f04ea038b4ee589715	background_claim-GOLD 600 636	this case is not an actual collision
+T6108e282771e28a86e8f44bf7c221ea9	background_claim-GOLD 638 683	it happens only when two faces are very close
+Tbf9d947882e352c719ca003eda4cdcce	background_claim-GOLD 3648 3707	these preventive proximity forces cannot prevent collisions
+Tbee19b41f86ce73ac8df05ff311ac9a1	background_claim-GOLD 3807 3837	This problem can be negligible
+Tc3382314f218de5fad57bae4ae35d70e	background_claim-GOLD 3942 3970	implicit integration methods
+T76f364f258b1404342914f075924c9bd	own_claim 600 636	this case is not an actual collision
+T9ecb19fe2ceb087ffccaf6a5267c9bd8	own_claim 638 683	it happens only when two faces are very close
+Td8af313a4ddc4998d5b6aa84e1a250cc	own_claim 3648 3707	these preventive proximity forces cannot prevent collisions
+Tc98abda372b00ceafccdd3044c664234	own_claim 3807 3837	This problem can be negligible
+Tcb3c18ca127b8dafba17e3af36295967	own_claim 3942 3970	implicit integration methods

@@ -1,0 +1,3 @@
+T0c00807b53e3f532880109c8837a9bca	own_claim 182 258	there are still times when the step size must be reduced to avoid divergence
+T943488baa97b2d9ca664403bcb969e69	own_claim 42 171	The methods introduced in all of the previous sections usually allow us to take sizeable steps forward, without loss of stability
+Ra1912dc34d5794c944fa84f9109eefe3	contradicts-GOLD Arg1:T943488baa97b2d9ca664403bcb969e69 Arg2:T0c00807b53e3f532880109c8837a9bca

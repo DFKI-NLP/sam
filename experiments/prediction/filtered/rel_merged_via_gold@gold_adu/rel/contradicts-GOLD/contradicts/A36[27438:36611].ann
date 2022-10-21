@@ -1,0 +1,4 @@
+Tefa45330d944709102885f3ed9e5a827	own_claim 548 602	this can result in a problem fraught with local minima
+Te48d54a2cf37144238756d55e453dfe5	own_claim 436 542	In principle all parameters of a cloth model can be fit to a sufficiently rich single deformation sequence
+R4890734126c13ebf092d2009c06adf41	contradicts-GOLD Arg1:Te48d54a2cf37144238756d55e453dfe5 Arg2:Tefa45330d944709102885f3ed9e5a827
+R21a6694f18fd1dbb85cc5cf6ad924d0f	contradicts Arg1:Te48d54a2cf37144238756d55e453dfe5 Arg2:Tefa45330d944709102885f3ed9e5a827

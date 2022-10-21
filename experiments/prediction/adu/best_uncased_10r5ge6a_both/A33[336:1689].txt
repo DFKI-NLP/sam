@@ -1,0 +1,21 @@
+<Title>Capturing and Animating Occluded Cloth</Title>
+      
+      Keenan Crane Ryan White† of California Berkeley
+      †University
+      
+        
+        Figure 1: We reconstruct a stationary sleeve using thousands of markers to estimate the geometry (texture added with bump mapping).
+      
+      <Abstract>We capture the shape of moving cloth using a custom set of color markers printed on the surface of the cloth. The output is a sequence of triangle meshes with static connectivity and with detail at the scale of individual markers in both smooth and folded regions. We compute markers’ coordinates in space using correspondence across multiple synchronized video cameras. Correspondence is determined from color information in small neighborhoods and refined using a novel strain pruning process. Final correspondence does not require neighborhood information. We use a novel data driven hole-filling technique to fill occluded regions. Our results include several challenging examples: a wrinkled shirt sleeve, a dancing pair of pants, and a rag tossed onto a cup. Finally, we demonstrate that cloth capture is reusable by animating a pair of pants using human motion capture data.</Abstract>
+      
+        
+          D.A. Forsyth University of Illinois
+        
+        
+          Urbana Champaign
+        
+      
+    
+    
+      
+        

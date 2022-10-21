@@ -1,0 +1,10 @@
+T8e246c5bcde93dfdc18a37d671469985	background_claim-GOLD 646 689	and for flexible-rigid collision resolution
+T8cc94cbae7e49a32d9b6899282975b9e	background_claim-GOLD 1142 1216	Adjusting particle orientations after collision resolution as suggested by
+T102647d675f36e58c9878f01295e908c	background_claim-GOLD 1362 1422	Handling collisions in an IZ as a bundle, proposed by Provot
+T3224b28ec977981521e19d3e65893489	background_claim-GOLD 8358 8379	This whole process is
+T47c05df189ee5b1701d4cbd1d8c75491	background_claim-GOLD 8389 8414	computationally expensive
+T2486c8450bed401d7ffae5959e52a2be	background_claim-GOLD 8424 8582	we have to consider the possibility that the resolution of a collision can create new multiple collisions, which we have to employ another strategy to resolve
+Ta410c44392a4d8c19ef724842300802e	background_claim-GOLD 8743 8943	In addition to the substantial computational expense and complexity, the visual advantage of those staggered methods is not considered significant compared to that of the simultaneous collision method
+T2698eca67e8d16da549d11a011c4934f	background_claim-GOLD 8945 9007	The simultaneous collision handling method, proposed by Baraff
+T9bde12b4135b151f9b4ebfc569d1c6c8	background_claim-GOLD 9017 9202	resolves multiple rigid body collisions by solving a system of linear inequalities, where the system of linear inequalities is based on the colliding relationships between rigid objects
+Tf1269b64244459d1ad77d8a4524eed18	background_claim-GOLD 10298 10342	the law of N-body momentum conservation says

@@ -1,0 +1,152 @@
+Td03e6ef48c135dabd0b39807d64e79ab	own_claim 244 299	Expressing the energy E as a single monolithic function
+T7dd8ef513003ef4a1b9f02606fe8ddcf	own_claim 358 400	and then taking derivatives is impractical
+T70fdcd947447cf51c96c3545cc6f1eee	own_claim 436 506	A better approach is decompose E into a sum of sparse energy functions
+Tbf68103be32c045d33f4b680359866fd	own_claim 629 690	even decomposing E into sparse energy functions is not enough
+Ta197c39849db2b688cc71537cd7aec24	own_claim 692 742	Energy functions are an undesirable starting point
+T7e95d30a49955b9c473b2b1b4f48909d	data 751 817	sensible damping functions cannot be derived from energy functions
+T523d2d0fcffe38d15ef247f0a83188bb	own_claim 828 1009	we define internal behavior by formulating a vector condition C(x) which we want to be zero, and then defining the associated energy as k C(x) T C(x) where k is a stiffness constant
+Ta9899781e044a8e80ce92f42fb365682	own_claim 1114 1357	An added bonus is that starting from this vector-based energy description tends to result in a simpler, more compact, and more easily coded formulation for ∂f/∂x than proceeding from an energy function in which the structure of C has been lost
+T0168881fd63c144c4cef666689c0612c	own_claim 2581 2684	We can now easily describe the internal forces acting on the cloth, by just writing condition functions
+T2d6d43f5c5144df77dbb07eb625e69b8	own_claim 2686 2733	Forces and their derivatives are easily derived
+Tf29c99b33581bdf7286c3be8f91686aa	data 2740 2753	equations (7)
+T5c6f146c97ce4d8373a5524e3d804316	data 2758 2761	(8)
+Tacbe9b617b5e1e466046c941c75cc7e3	own_claim 3027 3169	it will be convenient to pretend momentarily that we have a single continuous function w(u, v) that maps from plane coordinates to world space
+T3f4b778f7954bd5a23ddb6d26244b3f5	background_claim 3474 3585	Some previous continuum formulations have modeled stretch energy along an axis as essentially (w u T w u − 1) 2
+T0e59981a83b171a05a0068dae0783148	data 3631 3633	15
+Tb4c495ce53d91257405d5c6a07747abe	data 3636 3638	16
+Taf4dc60d136d968505247a35eeda3726	data 3641 3643	17
+T680ebfdb6a37000aaeb106f544afb094	data 3646 3647	4
+Tad01daf9ca20e78121386c28ae6d0d1a	own_claim 3651 3686	We find this to be needlessly stiff
+Tde9c95df9ed5889cae3dfce10d1cd805	own_claim 3695 3734	near the rest state, the force gradient
+T50e078f2d92425869c491408370772e1	own_claim 3768 3892	is quite small, which partially negates the advantage implicit integration has in exploiting knowledge of the force gradient
+T51d3151159719b6fa01297de138fb538	own_claim 3894 3955	A quadratic model for energy is, numerically, a better choice
+Tcdbadfe58475ff8a5e35c4d535760107	own_claim 5399 5468	we might decrease b v near the end of a sleeve, inducing a tight cuff
+T90de38a8920b4c42946f365ca6bfc684	data 5473 5488	on a sweatshirt
+T5067e1722dc600eca42e4f7fd9e223de	own_claim 5490 5594	We have found the ability to control shrink/stretch anisotropically to be an indispensable modeling tool
+Tdc617cd50e92a1434deeb31e62859314	own_claim 5707 5816	We can measure the extent to which cloth has sheared in a triangle by considering the inner product w u T w v
+Tef1d39cfda896b721ce6c976c8904a2f	data 5826 5836	rest state
+T94fe0521fd5a4b93f9334a3db41047c6	own_claim 5838 5858	this product is zero
+Te323a4630a9518136514e5cb8d86cdff	data 5866 5947	the stretch term prevents the magnitudes of w u and w v from changing overly much
+Tbbca59b1cb89ca316764464105657d7a	own_claim 5949 5970	we need not normalize
+Tfe13c6dd2786846a00362ccf5e3901ea	data 5975 6004	the small angle approximation
+T5eeca9a349f0799363e71853de510405	own_claim 6006 6076	the product w u T w v is a reasonable approximation to the shear angle
+T61b4fad6690f5bdbe7bb1907eb248d9b	own_claim 6952 6979	the square of the curvature
+T7da3dbd97294a851f6f4582bb88364b6	own_claim 7026 7087	increases at the same rate that the triangle’s area decreases
+T78c580d94a5991edb4fd50a0210eb345	own_claim 7089 7149	the condition C should not be scaled by the triangles’ areas
+Tcb4568097b7b166217851175b6dc8c6c	own_claim 7373 7439	Rectangular meshes make it simple to treat bending anisotropically
+Tca1d249738d9930a47c7aeba86c85da4	own_claim 7441 7534	The uv coordinates associated with particles make this possible for triangular meshes as well
+T18bfe7fca4382f50ac91538fe39afbdf	data 7542 7634	material for which bending in the u and v directions are weighted by stiffnesses k u and k v
+T279187e5123704cfc15918f2ca90c213	data 7684 7743	the edge between the triangles be between particles i and j
+T249e93125c7bda68aa184eddbf017999	data 7756 7787	u = u i − u j and v = v i − v j
+T324e84def683f8e96cbb2907a2815db7	own_claim 7790 7868	The stiffness weighting for this edge should simply be k u ( u) 2 + k v ( v) 2
+Td1be0dafb16fcb7e383cad8774773614	own_claim 8236 8287	These forces and their gradients are easily derived
+Tb17fc61b19c90ed97d872073405e9caf	own_claim 8340 8406	The energies we have just described are functions of position only
+T78cba55ca30c41eca40b60bb03744538	background_claim 8408 8439	Robust dynamic cloth simulation
+T736c40f7b2f5f73f94e41ce0277cdc3e	background_claim 8450 8553	is critically dependent on well-chosen damping forces that are a function of both position and velocity
+Td6d20ae53e3d56dd044ff0a33a7f1886	own_claim 8568 8647	the strong stretch force must be accompanied by a suitably strong damping force
+T8fb814e33d37ebfee36e8e938dcce492	data 8651 8741	we are to prevent anomalous in-plane oscillations from arising between connected particles
+T4afc721af6cfac8cc15a158648b30b1b	own_claim 8752 8855	this strong damping force must confine itself solely to damping in-plane stretching/compressing motions
+T18ecd309b1922d2e34e643c47f197e3c	own_claim 8857 8948	stretch damping should not arise due to motions that are not causing stretch or compression
+T70370bf3a95fbf386de9c598f57b1a18	background_claim 8950 8970	Terzopoulos et al.’s
+T349f05e9a08939becb2da57e304c9ca0	data 8973 8975	16
+T3c0a5f77f3b6e3dd8e92a689d1a961f6	data 8978 8980	17
+T4cb39985af65bb9944bf5f67b3d5732b	background_claim 8984 9108	treatment of cloth used a simple viscous damping function which dissipated kinetic energy, independent of the type of motion
+Tdafd955b1567d4b82e6064b0c6353f17	background_claim 9110 9125	Carignan et al.
+Tfe68e23950748b970c28484b1daa8250	data 9128 9129	4
+Tc240da258146194517669464aec34963	background_claim 9133 9207	improved upon this somewhat, borrowing a formulation due to Platt and Barr
+T68089a5e3c2a0112459a4d6e14f55e71	data 9210 9212	11
+T53c6ba6622bedde2b7f050f432d277c4	background_claim 9225 9247	their damping function
+T14c6491982353f852fa054faff291b2e	background_claim 9278 9352	does not match the quartic energy functions of their continuum formulation
+Te1f1ddf2369b1628dbb8ebfc68e0e5ea	data 9357 9369	this section
+T1f03401c00bd612ad67516565e31fdd9	own_claim 9370 9478	we describe a general treatment for damping that is independent of the specific energy function being damped
+T9c9d04d16a3f8d7b34803bc808bc8379	own_claim 9480 9594	It is tempting to formulate a damping function for an energy function E(x) by measuring the velocity of the energy
+Tb27e1d43ad754852ead4a030860da9ec	own_claim 9614 9647	This is an easy trap to fall into
+Td9a7db70dd8e688972ea7fe859219680	own_claim 9653 9681	it gives nonsensical results
+Te8d442f8a5d92ac41d72bd55a44488b7	own_claim 9683 9740	At an equilibrium point of E, the gradient ∂E/∂x vanishes
+Tbac2117cf99afac7b5f6375d8a8e8760	data 9748 9766	E  ̇ = (∂E/∂x) T x
+T3c910148924c0d162897b1e685e20758	own_claim 9781 9861	E  ̇ is zero when E is at its minimum, regardless of the system’s velocity x = v
+Tad0306effe92ed32758dafcdfc1c435b	own_claim 9875 9928	E  ̇ is always too small near the system’s rest state
+T01614cde884cf09d2448d5215063132b	own_claim 9939 9997	basing the damping force on E  ̇ is not what we want to do
+T8f38086f3941024bf530c3759ba78070	own_claim 10015 10156	the damping function should be defined not in terms of the energy E, but in terms of the condition C(x) we have been using to define energies
+T9597accf6fd2520a896309ce402a2db3	own_claim 10158 10262	The force f arising from the energy acts only in the direction ∂C(x)/∂x, and so should the damping force
+Tb1623e21ba3376dd9006cad525a5e49f	own_claim 10278 10377	the damping force should depend on the component of the system’s velocity in the ∂C(x)/∂x direction
+T35aed5daad58d10690f3e0ca8c7e6567	own_claim 10395 10454	the damping strength should depend on (∂C(x)/∂x) T x = C(x)
+T895547b28f657002628bd2ae5deb9a30	own_claim 10498 10561	the damping force d associated with a condition C have the form
+T5da082b0bff17ee85af4364a588d2ed0	own_claim 10594 10616	d = −k d ∂C(x) ∂x C(x)
+T061d2138d097cd21c4b214bb0e5edd31	own_claim 10644 10696	This neatly parallels the fact that f = −k s ∂x C(x)
+T72c6377d70276d72b6e3f56547b59611	data 10836 10928	the condition functions C we have defined in this section for stretch, bend and shear forces
+Td7181a3032a221751cccdb55673c5119	own_claim 10930 10998	we can now add accompanying damping forces by applying equation (11)
+Ta0d99a4cea8f1b19591eb0e35c12302d	data 11120 11149	Differentiating equation (11)
+T2203c479a59e0e89488cf3210e3741c0	own_claim 11151 11160	we obtain
+T4a4bf6ff633a4741f964861e715557e2	own_claim 11193 11261	∂x ∂d i j = −k d ∂C(x) ∂x i ∂ C(x) ∂x  ̇ j T + ∂ ∂x C(x) i ∂x j C(x)
+T22a4f6ec3215d19dafff3dccaed8bd21	data 11294 11343	∂d/∂x is not a second derivative of some function
+T3e2b3909ae66b835061af9e801945fbd	own_claim 11379 11407	we cannot expect ∂d/∂x to be
+T1e213788c9b3206af3f308b1490f1e77	data 11527 11538	section 5.2
+Tc246a0489e020e9bd5f3da74b348c31a	own_claim 11540 11618	we find it expedient simply to leave this term out, thereby restoring symmetry
+T472e3314ccf1cb70a56d0ccf3f726d82	own_claim 11620 11677	This simplification is clearly not physically justifiable
+T2892a951c20d7529373cfc5395148bf4	own_claim 11683 11738	we have not observed any ill effects from this omission
+Tb35bd39d5e9a24f85585cee5b534e1f7	data 11866 11890	C(x)  ̇ = (∂C(x)/∂x) T v
+T76eb1b1707d95da5c37c7c11ad753390	own_claim 11900 11931	∂ C(x)  ̇ ∂ ∂C(x) T ∂C(x) = v =
+Tcde35ec4ec3ff88bd5731552f70eb160	own_claim 11934 11945	∂v ∂v ∂x ∂x
+Ta9c5a947b1760d7a11aa60a19874779a	own_claim 11976 12051	∂v ∂d i j = −k d ∂C(x) ∂x i ∂ C(x) ∂v  ̇ j T = −k d ∂C(x) ∂x i ∂C(x) ∂x j T
+T9f674e4d6b77c3d523b9b53249fee3e7	own_claim 12068 12120	the result is symmetrical without dropping any terms
+R1189cf6f20ccfe29da2fa20abd126975	parts_of_same Arg1:Td03e6ef48c135dabd0b39807d64e79ab Arg2:T7dd8ef513003ef4a1b9f02606fe8ddcf
+R0b78d5e1ff16cbb017c2872bb7765338	contradicts Arg1:T70fdcd947447cf51c96c3545cc6f1eee Arg2:Tbf68103be32c045d33f4b680359866fd
+Rbdc3d1bd7be0f6b9da50fe46f81231cb	supports Arg1:T7e95d30a49955b9c473b2b1b4f48909d Arg2:Ta197c39849db2b688cc71537cd7aec24
+Ra68e5ee8a40e05fdcdc73f7624d81820	supports Arg1:T0e59981a83b171a05a0068dae0783148 Arg2:T3f4b778f7954bd5a23ddb6d26244b3f5
+R1a073b16c85c305692fd44d6fc3427c9	supports Arg1:Tb4c495ce53d91257405d5c6a07747abe Arg2:T3f4b778f7954bd5a23ddb6d26244b3f5
+R6844ff999306669b4e027039303069c2	supports Arg1:Taf4dc60d136d968505247a35eeda3726 Arg2:T3f4b778f7954bd5a23ddb6d26244b3f5
+R460e7407f330cb197d702ecea0768801	supports Arg1:T680ebfdb6a37000aaeb106f544afb094 Arg2:T3f4b778f7954bd5a23ddb6d26244b3f5
+Rbdc090130cbc9091bfb6a4da008f935f	parts_of_same Arg1:Tde9c95df9ed5889cae3dfce10d1cd805 Arg2:T50e078f2d92425869c491408370772e1
+R66f052b92ef98d33b1d2e118932b2467	supports Arg1:Tde9c95df9ed5889cae3dfce10d1cd805 Arg2:Tad01daf9ca20e78121386c28ae6d0d1a
+R37bee9c8395e3a0e15ffc0650f2122db	supports Arg1:T90de38a8920b4c42946f365ca6bfc684 Arg2:Tcdbadfe58475ff8a5e35c4d535760107
+Rd28aeb72850384399fc1478dd3a597bb	supports Arg1:Tef1d39cfda896b721ce6c976c8904a2f Arg2:T94fe0521fd5a4b93f9334a3db41047c6
+R7fa9d7050c55d881696fec2440127bad	supports Arg1:Te323a4630a9518136514e5cb8d86cdff Arg2:Tbbca59b1cb89ca316764464105657d7a
+Rc3d188d059d9a43c48811dd7a369b211	supports Arg1:Tfe13c6dd2786846a00362ccf5e3901ea Arg2:T5eeca9a349f0799363e71853de510405
+R3a06b15b6912a4d38b39aa0bfc71073a	parts_of_same Arg1:T61b4fad6690f5bdbe7bb1907eb248d9b Arg2:T7da3dbd97294a851f6f4582bb88364b6
+Rb0a6c785c2c2c1149604f1df021f7376	supports Arg1:T7da3dbd97294a851f6f4582bb88364b6 Arg2:T78c580d94a5991edb4fd50a0210eb345
+R06b0787f01416193a0e5baae7db4282a	supports Arg1:T249e93125c7bda68aa184eddbf017999 Arg2:T324e84def683f8e96cbb2907a2815db7
+R5ee2149c5c537b0c97a2d3ae7dbf2ec4	parts_of_same Arg1:T78cba55ca30c41eca40b60bb03744538 Arg2:T736c40f7b2f5f73f94e41ce0277cdc3e
+R486213e5781576b76e15789ff841c78d	supports Arg1:T8fb814e33d37ebfee36e8e938dcce492 Arg2:Td6d20ae53e3d56dd044ff0a33a7f1886
+R59b69cea9870003c1baa68beab981a29	supports Arg1:Td6d20ae53e3d56dd044ff0a33a7f1886 Arg2:T736c40f7b2f5f73f94e41ce0277cdc3e
+R5c94664fc71442ddd741b3ed007e2ac4	supports Arg1:T18ecd309b1922d2e34e643c47f197e3c Arg2:T4afc721af6cfac8cc15a158648b30b1b
+Rd7a3b9b3a9381165bbb7c4363e925732	parts_of_same Arg1:T70370bf3a95fbf386de9c598f57b1a18 Arg2:T4cb39985af65bb9944bf5f67b3d5732b
+R7098175a00295d48b5f3779a0d482b4b	supports Arg1:T349f05e9a08939becb2da57e304c9ca0 Arg2:T70370bf3a95fbf386de9c598f57b1a18
+Rf0d03a5a6adf4064f87692558aa926d0	supports Arg1:T3c0a5f77f3b6e3dd8e92a689d1a961f6 Arg2:T70370bf3a95fbf386de9c598f57b1a18
+R442ef60c64a6b4c0599c0be9d818f4d7	parts_of_same Arg1:Tdafd955b1567d4b82e6064b0c6353f17 Arg2:Tc240da258146194517669464aec34963
+R7f4c48f52d7214188037ed76b5e09afd	supports Arg1:Tfe68e23950748b970c28484b1daa8250 Arg2:Tdafd955b1567d4b82e6064b0c6353f17
+R561cd8c53f0246bf320fae70dc238603	supports Arg1:T68089a5e3c2a0112459a4d6e14f55e71 Arg2:Tc240da258146194517669464aec34963
+R52c4017633a213859392ef358799c28e	parts_of_same Arg1:T53c6ba6622bedde2b7f050f432d277c4 Arg2:T14c6491982353f852fa054faff291b2e
+Rd42ab317c693cd9bfcb3b7a17a6c6296	supports Arg1:Te1f1ddf2369b1628dbb8ebfc68e0e5ea Arg2:T1f03401c00bd612ad67516565e31fdd9
+R0c9650a8535d552d71fa13dae436c082	supports Arg1:Tbac2117cf99afac7b5f6375d8a8e8760 Arg2:T3c910148924c0d162897b1e685e20758
+R37f8715dc10d711c3f8b1fdc8fb32cc9	supports Arg1:Tad0306effe92ed32758dafcdfc1c435b Arg2:T01614cde884cf09d2448d5215063132b
+R65403244175c758e2560dc6b37159afa	supports Arg1:T01614cde884cf09d2448d5215063132b Arg2:T8f38086f3941024bf530c3759ba78070
+R744a60d87c8b7fc0f42074c58f8765fb	parts_of_same Arg1:T895547b28f657002628bd2ae5deb9a30 Arg2:T5da082b0bff17ee85af4364a588d2ed0
+R2de6f93693815746f59e141b55bc9f63	supports Arg1:Tb1623e21ba3376dd9006cad525a5e49f Arg2:T35aed5daad58d10690f3e0ca8c7e6567
+R912dc7175d8c16f5cf4a726792070cdb	supports Arg1:T72c6377d70276d72b6e3f56547b59611 Arg2:Td7181a3032a221751cccdb55673c5119
+Rf9a0670b6fcaaeb5fa7bbdb9825c427c	supports Arg1:T1e213788c9b3206af3f308b1490f1e77 Arg2:Tc246a0489e020e9bd5f3da74b348c31a
+R7aad335edcfd60060be6d5a38ad86aac	supports Arg1:Ta0d99a4cea8f1b19591eb0e35c12302d Arg2:T2203c479a59e0e89488cf3210e3741c0
+R4ed2f7389bfa0938ecafb7bd2952be08	parts_of_same Arg1:T2203c479a59e0e89488cf3210e3741c0 Arg2:T4a4bf6ff633a4741f964861e715557e2
+R59103b6c9f4ab3743350d8f9c0e13de5	supports Arg1:T22a4f6ec3215d19dafff3dccaed8bd21 Arg2:T3e2b3909ae66b835061af9e801945fbd
+R3f2f95585335e7dbbe68b9a70bb1c39b	contradicts Arg1:T472e3314ccf1cb70a56d0ccf3f726d82 Arg2:T2892a951c20d7529373cfc5395148bf4
+Rcffe827e877780911948dfb7ec938add	parts_of_same Arg1:T76eb1b1707d95da5c37c7c11ad753390 Arg2:Tcde35ec4ec3ff88bd5731552f70eb160
+R6255484da6e1ea36d1c3a00a9cda6032	supports Arg1:Tb35bd39d5e9a24f85585cee5b534e1f7 Arg2:T76eb1b1707d95da5c37c7c11ad753390
+R3a81778c4dee98f6b22124cb87a29a8e	supports Arg1:Tcde35ec4ec3ff88bd5731552f70eb160 Arg2:Ta9c5a947b1760d7a11aa60a19874779a
+Rb656caa5b18db484df9d656db98211e0	supports Arg1:Ta9c5a947b1760d7a11aa60a19874779a Arg2:T9f674e4d6b77c3d523b9b53249fee3e7
+R7d9635d763785c14dd4b7123d51efed9	supports Arg1:Ta197c39849db2b688cc71537cd7aec24 Arg2:T523d2d0fcffe38d15ef247f0a83188bb
+Rba995c2860c859fc631aa792fb53e8d2	supports Arg1:Tf29c99b33581bdf7286c3be8f91686aa Arg2:T2d6d43f5c5144df77dbb07eb625e69b8
+R5a8fe276d0335f98002d02899f18a119	supports Arg1:T5c6f146c97ce4d8373a5524e3d804316 Arg2:T2d6d43f5c5144df77dbb07eb625e69b8
+R9c2b0daa2c8492ddb6a012e31235a8eb	supports Arg1:T61b4fad6690f5bdbe7bb1907eb248d9b Arg2:T78c580d94a5991edb4fd50a0210eb345
+R1ac32b9f9fbc9b67c848a44f2f2c7f42	supports Arg1:T249e93125c7bda68aa184eddbf017999 Arg2:T18bfe7fca4382f50ac91538fe39afbdf
+R044dc16ba2a1529770a26387f9d4c635	supports Arg1:T279187e5123704cfc15918f2ca90c213 Arg2:T18bfe7fca4382f50ac91538fe39afbdf
+Rff3ed79eaf9b47f6f04caa856c22e5ca	supports Arg1:T18bfe7fca4382f50ac91538fe39afbdf Arg2:T249e93125c7bda68aa184eddbf017999
+Ra348f065dd63dac3690ddf7dce87f58b	contradicts Arg1:Tb17fc61b19c90ed97d872073405e9caf Arg2:T78cba55ca30c41eca40b60bb03744538
+R1981d44d8f6c3ee386b1f199258c9e64	contradicts Arg1:Td6d20ae53e3d56dd044ff0a33a7f1886 Arg2:T4afc721af6cfac8cc15a158648b30b1b
+Recc384427f63f4a00584c69b30c2e9ef	supports Arg1:T349f05e9a08939becb2da57e304c9ca0 Arg2:T4cb39985af65bb9944bf5f67b3d5732b
+R3f88fd0c7b42d3e6861310d303eba5c5	supports Arg1:T3c0a5f77f3b6e3dd8e92a689d1a961f6 Arg2:T4cb39985af65bb9944bf5f67b3d5732b
+R6467d8a689e2227e953921d09bea9945	supports Arg1:Tfe68e23950748b970c28484b1daa8250 Arg2:Tc240da258146194517669464aec34963
+R616522cd59dac3196768b9c1d6e7ceab	contradicts Arg1:Tc240da258146194517669464aec34963 Arg2:T53c6ba6622bedde2b7f050f432d277c4
+R652c28aa974082d563c88a2eb1cd9186	supports Arg1:T68089a5e3c2a0112459a4d6e14f55e71 Arg2:T53c6ba6622bedde2b7f050f432d277c4
+R8903b4adab894a9b4b8045104a19c83e	contradicts Arg1:Tb27e1d43ad754852ead4a030860da9ec Arg2:Td9a7db70dd8e688972ea7fe859219680
+R10a747f9e8eab35113413a3c5060e9fc	supports Arg1:T72c6377d70276d72b6e3f56547b59611 Arg2:T061d2138d097cd21c4b214bb0e5edd31
+R0abd1f4d686e2bcd8c902a70f74043ce	supports Arg1:Ta0d99a4cea8f1b19591eb0e35c12302d Arg2:T4a4bf6ff633a4741f964861e715557e2

@@ -1,0 +1,25 @@
+T0163c413af3025349872bab48b40073f	data 219 265	geometric attachment constraints on a particle
+T439cdeb781e90f83c62f4880eb8375d4	data 819 871	the simulator’s underlying implicit integration base
+Tb2ae97c186db69d2b8bde5ac920fcc94	data 1056 1126	the particle may be constrained in either one, two or three dimensions
+Tb69af748d36412044e54da32b105e6c8	data 2152 2212	we alter the size of the derivative matrices in equation (6)
+T37fe395e46c5d83ab030ed771cec6aaf	data 2265 2330	a particle changes from having no coordinates to some coordinates
+T7d5f372ede8b04c50e07a78c9536a5f6	data 3192 3212	very stiff equations
+T78df377166b4c578f523ea9c6b9b6326	data 3741 3761	Lagrange multipliers
+T88d7b873a6bf4ef98dbd1eb04c10006e	data 4945 4962	a single particle
+T62d4d877487da0a58d5bec4968cebf53	data 5147 5198	we want to keep particle i’s velocity from changing
+T667902d57e2f3ae6e33082f93502641f	data 5449 5527	we wish to constrain the particle’s acceleration in only one or two dimensions
+T181f605fbb4fd30261e445ca2fc3477a	data 7826 7881;7899 7904	I − hW ∂v ∂f − h 2 W ∂x ∂f v = hW f 0 + h ∂x ∂f v 0 + z for v
+T940276487edfb46bc297af314095c152	data 8652 8684	all particles have the same mass
+Tbc7d71ace766a64c92b3155cf273334c	data 9227 9260	we can transform this equation to
+Te50c87444f1b017b286c42ce773cfca2	data 9750 9806	the filtering blocks in equation (13) are rank deficient
+Td4cd3d5773ee49d2c50852461eabffca	data 10599 10649	the method is run for sufficiently many iterations
+T5f1234a9e26c89ed989bb5d45e105e40	data 14697 14728	between cloth and solid objects
+T95876aece5c240b17251d61c3f75603f	data 15055 15078	modified-pcg terminates
+Td620c47cf2783f4d5ec2436d47d9579a	data 15166 15191	particle i is constrained
+Tc77da6a1db8d725a085754604bf75499	data 15759 15765	Baraff
+T0e36834afde4c6a721f771a626c4a0f8	data 15881 15985	the constraint force between a particle and a solid switches from a repulsive force to an attractive one
+Ta9cb640a6bdbf69b1822397ffc9d50de	data 16072 16094	cloth contacts a solid
+T5e952dd29c15c6b66ba51fb31b7ac023	data 16096 16133	we lock the particle onto the surface
+T40618f17dbf35a677ee9e17302aad9e3	data 16138 16177	the relative tangential velocity is low
+T30958c37475f4762c2a3530f48ef965a	data 16219 16281	the tangential force exceeds some fraction of the normal force
+T17ec1caba9ff12aaa1537f5525adc5ad	data 16334 16357	high sliding velocities

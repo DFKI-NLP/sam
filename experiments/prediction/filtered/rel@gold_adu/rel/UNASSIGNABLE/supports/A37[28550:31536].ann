@@ -1,0 +1,18 @@
+T200071e3b2f1800309ab2c44c3504162	own_claim 1883 1886;1891 1986	and adopting simple iterative strain and strain-rate algorithms that have poor convergence behavior
+Td1e49f26c4beefee24bbdc4ced4501fa	own_claim 904 966	an elegant and exciting prospect from the standpoint of theory
+Tb913fea64046e6d6b102958c59b88bff	own_claim 831 902	To enforce both perfectly would require combining them in a single pass
+T18d19b53610739ab06127aa0cdc836ba	own_claim 167 307	In addition to the direct benefit of fast projection on computation times, further benefits can be reaped from the resulting inextensibility
+T9a20a0ea467686f65df7d93e6da6f13b	own_claim 1057 1163	Practically, we observe that this drawback does not cause artifacts in our simulation, for several reasons
+Tdc24bf6eb7f309498e54cb66217935d8	own_claim 2169 2266	We provide one immediate and pragmatic approach to fast and realistic fabric simulation using CLM
+Tcafeb5218f9fbbaa8d09859b441021be	own_claim 2272 2344	we hope that it will spur a renaissance of activity along this direction
+T630757b96250485c2406a7d4ea6e62f6	background_claim 322 333;356 422	the work of assumes inextensibility in order to accelerate bending computation
+T36472ab463001799f003f25cac4771fc	own_claim 1761 1837;1842 1881	The consequent numerical difficulties are then addressed by a combination of relaxing realism by allowing 10% strain
+T2d96af05b7176f269092b276d9b4aec5	background_claim 1329 1369	unlike constraint-enforcement approaches
+T0e528deaaa5deb340c64e60d010c3b83	own_claim 1172 1244	we execute collision-handling last, to avoid glaring collision artifacts
+R1570c1e98b5097e5b276eab7e3e7a622	supports Arg1:T36472ab463001799f003f25cac4771fc Arg2:T36472ab463001799f003f25cac4771fc
+R4523762055d6cae1a95c52a8d100c581	supports Arg1:T630757b96250485c2406a7d4ea6e62f6 Arg2:T18d19b53610739ab06127aa0cdc836ba
+Ra27df9c7bc9c179805621ad5724dc0a5	supports Arg1:Tb913fea64046e6d6b102958c59b88bff Arg2:Td1e49f26c4beefee24bbdc4ced4501fa
+Re4e36e0dbd352ac5eb354b60a3858dd6	supports Arg1:T0e528deaaa5deb340c64e60d010c3b83 Arg2:T9a20a0ea467686f65df7d93e6da6f13b
+Rae7de5726abe1448539533cd1f899e7f	supports Arg1:T2d96af05b7176f269092b276d9b4aec5 Arg2:T9a20a0ea467686f65df7d93e6da6f13b
+R5c419ad5e6419f17fde21b4b36cda0d2	supports Arg1:T200071e3b2f1800309ab2c44c3504162 Arg2:T36472ab463001799f003f25cac4771fc
+Rffc13ad13f3b354eff247635e05afa02	supports Arg1:Tdc24bf6eb7f309498e54cb66217935d8 Arg2:Tcafeb5218f9fbbaa8d09859b441021be

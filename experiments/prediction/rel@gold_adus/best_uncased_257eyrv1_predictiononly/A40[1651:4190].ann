@@ -1,0 +1,35 @@
+T872c9bcdc89a9774735adc4af983778c	background_claim 41 148	the simulation of wind is an area of vast interest in aerodynamic engineering, computational fluid dynamics
+T331086ed5d81119e094af9af5bfa88ed	background_claim 156 214	and animation/visualisation of fluids in computer graphics
+T1a090ba5132f920370fc4a7048f5ee9c	background_claim 216 315	it has been a rather abandoned subject in simulation of deformable objects such as cloth simulation
+Ta9748bfa32bd710013cd5efdcda16bfc	background_claim 353 419	conventional CFD applications require enormous computational power
+Tb65f27f6e21a03380e48fd370430dd30	background_claim 430 453	aerodynamic effects are
+Tb0d8a0356af835e4706e6faec18c4617	background_claim 464 517	capable of enhancing the realism of an animated scene
+T6e9aabc112c4b79199201f236cab73e1	background_claim 527 577	are an important part of a cloth simulation system
+Te2ac3db9ea44e712dcc87ef8c5bc2973	background_claim 592 653	air resistance is a vital component which cannot be neglected
+T1a7d624065785d369fd3d5ebbbebb952	data 657 687	realistic animation is desired
+T330ca58801c8a8db194442fd272cbc35	data 690 698	BTH + 03
+T924588cd84348333091c5a436143bc3c	own_claim 715 753;760 800	we discuss two different approaches to model force fields describing air motion
+T70623abdcfc83d09adec8cda85d74664	own_claim 814 885	these forces can be applied to generate aerodynamic effects on textiles
+T3e2b7844a8f4ea78ae7bbe025cbc263c	own_claim 887 968	The first method is based on modelling air flows with the Navier-Stokes equations
+T0894e8575e3e144ecf99e30ef7d8bce6	background_claim 970 1051	With this model, the effect of wind fields on smoke has already been investigated
+T2e78f418ca42529db7ae9f7e48f64e85	data 1054 1059	FSJ01
+T6e212744a6691ce29477c68cdac05eec	own_claim 1080 1131	we extend this approach to wind effects on textiles
+Tcd8cbe0c81e5d3c8064110fcba7ab28f	own_claim 1142 1311	the solution of the sophisticated NavierStokes equations is not desired and not necessary in all situations where wind effects shall be integrated into cloth simulations
+T1f3c4c8e490d2fb1a0906ee973cb0bf1	own_claim 1328 1428	we present a much simpler model based on tracing wind particles that move along a global force field
+Tf2de11ad1b41dc5700bba503a0e9cdf4	own_claim 1647 1813	By detecting collisions between the wind particles and objects in the scene, we are able to simulate the important effect of lee even with this straightforward method
+Tbd5a87badcc0406eaaf2cd55d9633898	own_claim 1826 1926	both approaches have different characteristics and aim at different applications for wind simulation
+R3304895428b316b55eb6bf16e36dd581	parts_of_same Arg1:T872c9bcdc89a9774735adc4af983778c Arg2:T331086ed5d81119e094af9af5bfa88ed
+R970fda7d58d1a28ceb87741922901f06	contradicts Arg1:T331086ed5d81119e094af9af5bfa88ed Arg2:T1a090ba5132f920370fc4a7048f5ee9c
+R8085b1d4e7b9f23fc0c463c8c357f445	supports Arg1:Ta9748bfa32bd710013cd5efdcda16bfc Arg2:T1a090ba5132f920370fc4a7048f5ee9c
+R08e594d06e2558d0ea43399b81549d59	parts_of_same Arg1:Tb65f27f6e21a03380e48fd370430dd30 Arg2:Tb0d8a0356af835e4706e6faec18c4617
+R13b5d0da93971af8d5c25a04f5a25b98	supports Arg1:Tb0d8a0356af835e4706e6faec18c4617 Arg2:T6e9aabc112c4b79199201f236cab73e1
+R6da1be02d075dfe90328c78f5a02fb00	supports Arg1:T1a7d624065785d369fd3d5ebbbebb952 Arg2:Te2ac3db9ea44e712dcc87ef8c5bc2973
+R11a3103767ba578266717619db3dbe14	supports Arg1:T330ca58801c8a8db194442fd272cbc35 Arg2:Te2ac3db9ea44e712dcc87ef8c5bc2973
+R22c20ea339dfb0c2b148a89110e00e08	supports Arg1:Te2ac3db9ea44e712dcc87ef8c5bc2973 Arg2:T6e9aabc112c4b79199201f236cab73e1
+R1378def2aa04566fdf86c2e6d8c9d9d5	supports Arg1:T2e78f418ca42529db7ae9f7e48f64e85 Arg2:T0894e8575e3e144ecf99e30ef7d8bce6
+Re2e6242dba723aaec3f482c34925fd33	contradicts Arg1:T6e212744a6691ce29477c68cdac05eec Arg2:Tcd8cbe0c81e5d3c8064110fcba7ab28f
+R5482c1e0dc9c3898c268e9f6e56f1576	contradicts Arg1:T872c9bcdc89a9774735adc4af983778c Arg2:T1a090ba5132f920370fc4a7048f5ee9c
+R9d4e7939140788fe08691dbfa63f8fc3	contradicts Arg1:Ta9748bfa32bd710013cd5efdcda16bfc Arg2:Tb65f27f6e21a03380e48fd370430dd30
+R2a47882dd8b02eba1a3492030a9bb096	supports Arg1:T924588cd84348333091c5a436143bc3c Arg2:T70623abdcfc83d09adec8cda85d74664
+R06b795f6fae56bd460897d1d0d2ffe7d	supports Arg1:T3e2b7844a8f4ea78ae7bbe025cbc263c Arg2:T70623abdcfc83d09adec8cda85d74664
+Rdffe41d5fb414e2b8ddb364374dcb433	supports Arg1:T0894e8575e3e144ecf99e30ef7d8bce6 Arg2:T6e212744a6691ce29477c68cdac05eec

@@ -1,0 +1,12 @@
+T60f3eaab7b6a663ab1bad452363f3d39	own_claim 7220 7351	our results indicate that satisfactory parameter estimation is possible by incorporating anisotropy and nonlinearity into the model
+Tc82e974d6c11f6fa7f5c0853fda9976a	own_claim 3933 3975;3977 4037	Across models, the Soft Constraints and St VK models fit to the average of the shearing hysteresis band
+T1add7c1b30ad433ee9d1c5774fe68121	own_claim 4045 4080	the Springs model deviates at times
+T20f655f739cf5f235929b68e6e8b63d8	own_claim 6214 6287	the matching quality depends on the actual disparity across cloth samples
+T7803e03e0c3fd6575d704068016339d6	own_claim 6116 6208	The evaluation plots for the simulation models behave similar for the test and fitting cases
+T9c4db9d37bdd6b94dcfe45c10707bfe6	background_claim 7099 7214	In contrast to continuum models, complex parameter tuning has often been regarded as a caveat of mass-spring models
+Re033d7c1f1ba72eeca13cc2c1409a786	contradicts-GOLD Arg1:Tc82e974d6c11f6fa7f5c0853fda9976a Arg2:T1add7c1b30ad433ee9d1c5774fe68121
+R264d2b797f216ad7cf124cdbc9906ec5	contradicts-GOLD Arg1:T7803e03e0c3fd6575d704068016339d6 Arg2:T20f655f739cf5f235929b68e6e8b63d8
+Rc2f13255f5ee70fbfecd067abf2284c0	contradicts-GOLD Arg1:T9c4db9d37bdd6b94dcfe45c10707bfe6 Arg2:T60f3eaab7b6a663ab1bad452363f3d39
+Rb96464c85e030aa1d9356b1b98ebae1f	contradicts Arg1:Tc82e974d6c11f6fa7f5c0853fda9976a Arg2:T1add7c1b30ad433ee9d1c5774fe68121
+Rf3b510086598ea9a673e7544e5dfdc73	contradicts Arg1:T7803e03e0c3fd6575d704068016339d6 Arg2:T20f655f739cf5f235929b68e6e8b63d8
+R97b39785e76159df10f3abbf2562bd57	contradicts Arg1:T9c4db9d37bdd6b94dcfe45c10707bfe6 Arg2:T60f3eaab7b6a663ab1bad452363f3d39

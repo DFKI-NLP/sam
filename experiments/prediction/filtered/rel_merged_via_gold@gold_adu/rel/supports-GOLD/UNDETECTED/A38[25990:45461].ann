@@ -1,0 +1,8 @@
+T6efa5d1fe4277fc9a2ec5e0275b3170a	own_claim 2330 2514	static tests cannot be used to estimate dynamic parameters like stretch and shear damping or air drag and motivates the waving test, which excites both the static and waving parameters
+Tcc5392ad3b3751fd4e73a019db23730e	own_claim 5678 5827	the parameters obtained from our optimization approach approximately capture the static shape and dynamic properties of skirts of different materials
+Td6140e1d0800f8ec83b115b0a6068b78	data 5379 5386	Fig. 16
+Tb3dc88f171dd95786239973d94b65de3	data 5082 5089	Fig. 15
+T70cdf7b53e7bb6645ea6910e010864f1	own_claim 2159 2212	Parameters with high variability are estimated poorly
+R8e42a2d6aad07350973f2b3d448e1859	supports-GOLD Arg1:T70cdf7b53e7bb6645ea6910e010864f1 Arg2:T6efa5d1fe4277fc9a2ec5e0275b3170a
+Rf6dfc30b5394751df91c1823391eb5f3	supports-GOLD Arg1:Tb3dc88f171dd95786239973d94b65de3 Arg2:Tcc5392ad3b3751fd4e73a019db23730e
+R2cfbc63dac398ebc3903ccc8b45629f8	supports-GOLD Arg1:Td6140e1d0800f8ec83b115b0a6068b78 Arg2:Tcc5392ad3b3751fd4e73a019db23730e

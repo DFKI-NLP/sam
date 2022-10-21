@@ -1,0 +1,27 @@
+<H1>10. Acknowledgements</H1>
+        We like to thank Jia-Chi Wu for his help in implementing the cloth simulator and the simplified air drag model. We also thank Roshni Sivasankaran, Bonnie Jang and Priyanka Vaddi for their help with the skirt motion capture experiments, and Mike Stevens for cleaning up the motion capture data. The support of NSF under ITR grant IIS-0113007 and EIA-0196217 is gratefully acknowledged. Finally, we would like to thank the anonymous reviewers for their valuable comments and feedback.
+        c The Eurographics Association 2003.
+        Bhat et al. / Estimating Cloth Simulation Parameters from Video
+        
+          
+          
+          Figure 15: Validating the estimated parameters using the same input excitation. The top right corner of the fabric is actuated using a Mitsubishi PA-10 robot. Each row shows the match between video (top) and simulation (bottom) at four frames chosen from a 100 frame sequence. The fabrics, from top to bottom, are linen, fleece, satin and knit respectively.
+        
+        
+          
+          
+        
+        c The Eurographics Association 2003.
+        Bhat et al. / Estimating Cloth Simulation Parameters from Video
+        
+          
+          Figure 16: Validating the estimated parameters on a more complicated motion and garment. We show (from left to right, top to bottom) several frames of an actor skipping while wearing a fleece skirt. The corresponding frames of the skirt in simulation shows that our technique captures the approximate shape and dynamics of the real skirt. These frames were equally spaced across the entire sequence (0.5 seconds apart). The videos in the webpage show the validation results on all four skirts.
+        
+        
+          
+        
+        c The Eurographics Association 2003.
+        Bhat et al. / Estimating Cloth Simulation Parameters from Video
+      
+      
+        

@@ -1,0 +1,41 @@
+<H1>References</H1>
+        
+          [AIH ∗ 08] A TCHESON B., I HRKE I., H EIDRICH W., T EVS A., B RADLEY D., M AGNOR M., S EIDEL H.-P.: Time-resolved 3d capture of non-stationary gas flows. ACM Trans. Graph. (Proc. SIGGRAPH Asia) 27, 5 (2008), 132. 3
+          [BBH08] B RADLEY D., B OUBEKEUR T., H EIDRICH W.: Accurate multi-view reconstruction using robust binocular stereo and surface meshing. In Proc. CVPR (2008). 3, 4
+          [BFA02] B RIDSON R., F EDKIW R., A NDERSON J.: Robust treatment of collisions, contact and friction for cloth animation. In Proc. of ACM SIGGRAPH (2002), pp. 594–603. 2
+          [BHPS10] B RADLEY D., H EIDRICH W., P OPA T., S HEFFER A.: High resolution passive facial performance capture. ACM Trans. Graph. (Proc. SIGGRAPH) 29, 4 (2010), 41:1–41:10. 3
+          [BHW94] B REEN D., H OUSE D., W OZNY M.: Predicting the drape of woven cloth using interacting particles. In Proc. of ACM SIGGRAPH (1994), pp. 365–372. 2
+          [BMF03] B RIDSON R., M ARINO S., F EDKIW R.: Simulation of clothing with folds and wrinkles. In Proc. ACM SIGGRAPH/Eurographics SCA (2003), pp. 28–36. 5
+          [BPS ∗ 08] B RADLEY D., P OPA T., S HEFFER A., H EIDRICH W., B OUBEKEUR T.: Markerless garment capture. ACM Trans. Graph. (Proc. of SIGGRAPH) 27, 3 (2008), 99:1–99:9. 2, 3
+          [BTH ∗ 03] B HAT K. S., T WIGG C. D., H ODGINS J. K., K HOSLA P. K., P OPOVI C  ́ Z., S EITZ S. M.: Estimating cloth simulation parameters from video. In Proc. ACM SIGGRAPH/Eurographics SCA (2003), pp. 37–51. 2
+          [BW98] B ARAFF D., W ITKIN A.: Large steps in cloth simulation. In Proc. of ACM SIGGRAPH (1998), pp. 43–54. 2, 5
+          [CK02] C HOI K.-J., K O H.-S.: Stable but responsive cloth. In Proc. of ACM SIGGRAPH (2002), pp. 604–611. 2
+          [CPGE90] C LAPP T. G., P ENG H., G HOSH T. K., E ISCHEN J. W.: Indirect measurement of the moment-curvature relationship for fabrics. Textile Research J. 60, 9 (1990). 2
+          [Cul79] C ULPIN M. F.: The shearing of fabrics: A novel approach. J. Textile Institute 70, 3 (1979), 81–88. 2, 4
+          [EB08] E NGLISH E., B RIDSON R.: Animating developable surfaces using nonconforming elements. ACM Trans. Graph. (Proc. SIGGRAPH) 27, 3 (2008), 66:1–66:5. 2
+          [EKS03] E TZMUSS O., K ECKEISEN M., S TRASSER W.: A Fast Finite Element Solution for Cloth Modelling. In Proc. Pacific Graphics (2003), pp. 244–251. 2
+          [EWS96] E BERHARDT B., W EBER A., S TRASSER W.: A fast, flexible, particle-system model for cloth draping. IEEE Computer Graphics and Applications 16, 5 (1996), 52–59. 2
+          [Fia05] F IALA M.: Artag, a fiducial marker system using digital techniques. In IEEE CVPR (2005), pp. 590–596. 3
+          [GGWZ07] G ARG A., G RINSPUN E., W ARDETZKY M., Z ORIN D.: Cubic shells. In Proc. ACM SIGGRAPH/Eurographics SCA (2007), pp. 91–98. 2
+          [GHDS03] G RINSPUN E., H IRANI A., D ESBRUN M., S CHRÖDER P.: Discrete shells. In Proc. ACM SIGGRAPH/Eurographics SCA (2003), pp. 62–67. 5
+          [GHF ∗ 07] G OLDENTHAL R., H ARMON D., F ATTAL R., B ERCOVIER M., G RINSPUN E.: Efficient simulation of inextensible cloth. ACM Trans. Graph. (Proc. of SIGGRAPH) 26, 3 (2007), 49:1–49:7. 2
+          [Kaw80] K AWABATA S.: The standardization and analysis of hand evaluation. Textile Machinery Soc. Japan (1980). 2, 4
+          [KJM08] K ALDOR J. M., J AMES D. L., M ARSCHNER S.: Simulating knitted cloth at the yarn level. ACM Trans. Graph. (Proc. SIGGRAPH) 27, 3 (2008), 65:1–65:9. 2
+          [KNM10] K UNITOMO S., N AKAMURA S., M ORISHIMA S.: Optimization of cloth simulation parameters by considering static and dynamic features. In ACM SIGGRAPH Posters (2010), p. 15:1. 2
+          [Mül08] M ÜLLER M.: Hierarchical position based dynamics. In Proc. of VRIPHYS (2008), pp. 1–10. 2
+          [PKST08] P ABST S., K RZYWINSKI S., S CHENK A., T HOMASZEWSKI B.: Seams and bending in cloth simulation. In Proc. of VRIPHYS (2008). 2
+          [Pro95] P ROVOT X.: Deformation constraints in a mass-spring model to describe rigid cloth behavior. In Graphics Interface ’95 (1995), pp. 147–154. 2
+          [SGdA ∗ 10] S TOLL C., G ALL J., DE A GUIAR E., T HRUN S., T HEOBALT C.: Video-based reconstruction of animatable human characters. ACM Trans. Graph. (Proc. SIGGRAPH Asia) 29, 5 (2010). 2
+          [TPBF87] T ERZOPOULOS D., P LATT J., B ARR A., F LEISCHER K.: Elastically deformable models. In Proc. of ACM SIGGRAPH (1987), pp. 205–214. 2, 5
+          [TPS09] T HOMASZEWSKI B., P ABST S., S TRASSER W.: Continuum-based strain limiting. Computer Graphics Forum (Proc. of Eurographics) 28 (2009), 569–576. 2
+          [VMTF09] V OLINO P., M AGNENAT -T HALMANN N., F AURE F.: A simple approach to nonlinear tensile stiffness for accurate cloth simulation. ACM Trans. Graph. 28, 4 (2009). 2, 5, 6
+          [WCF07] W HITE R., C RANE K., F ORSYTH D. A.: Capturing and animating occluded cloth. ACM Trans. Graph. (Proc. SIGGRAPH) 26, 3 (2007). 2
+          [WOR10] W ANG H., O’B RIEN J., R AMAMOORTHI R.: Multiresolution isotropic strain limiting. ACM Trans. Graph. (Proc. SIGGRAPH Asia) 29 (2010), 156:1–156:10. 2
+          [WRO11] W ANG H., R AMAMOORTHI R., O’B RIEN J.: Datadriven elastic models for cloth: Modeling and measurement. ACM Trans. Graph. (Proc. SIGGRAPH) 30, 4 (2011), 71. 2, 9
+        
+        c 2012 The Author(s) c 2012 The Eurographics Association and Blackwell Publishing Ltd.
+      
+    
+  
+
+</Document>

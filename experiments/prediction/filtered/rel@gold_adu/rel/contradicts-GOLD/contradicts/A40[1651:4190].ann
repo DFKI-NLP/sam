@@ -1,0 +1,10 @@
+T6e212744a6691ce29477c68cdac05eec	own_claim 1080 1131	we extend this approach to wind effects on textiles
+T6e95e0013bf0bad565c5a52ea7b6e976	background_claim 41 148;156 214	the simulation of wind is an area of vast interest in aerodynamic engineering, computational fluid dynamics and animation/visualisation of fluids in computer graphics
+Tcd8cbe0c81e5d3c8064110fcba7ab28f	own_claim 1142 1311	the solution of the sophisticated NavierStokes equations is not desired and not necessary in all situations where wind effects shall be integrated into cloth simulations
+T1a090ba5132f920370fc4a7048f5ee9c	background_claim 216 315	it has been a rather abandoned subject in simulation of deformable objects such as cloth simulation
+R0a4392f58733c311ba5f80fdff3f7149	contradicts-GOLD Arg1:T6e95e0013bf0bad565c5a52ea7b6e976 Arg2:T1a090ba5132f920370fc4a7048f5ee9c
+R3b9483d985b9f882c9675ced4c7240f2	contradicts-GOLD Arg1:T6e212744a6691ce29477c68cdac05eec Arg2:Tcd8cbe0c81e5d3c8064110fcba7ab28f
+R0a4392f58733c311ba5f80fdff3f7149	contradicts-GOLD Arg1:T6e95e0013bf0bad565c5a52ea7b6e976 Arg2:T1a090ba5132f920370fc4a7048f5ee9c
+Rdd8bc8ea3046e10d6dc50cc5b10aa9c5	contradicts Arg1:T6e95e0013bf0bad565c5a52ea7b6e976 Arg2:T1a090ba5132f920370fc4a7048f5ee9c
+R925164be03545f605d21c2442223acfe	contradicts Arg1:T6e212744a6691ce29477c68cdac05eec Arg2:Tcd8cbe0c81e5d3c8064110fcba7ab28f
+Rdd8bc8ea3046e10d6dc50cc5b10aa9c5	contradicts Arg1:T6e95e0013bf0bad565c5a52ea7b6e976 Arg2:T1a090ba5132f920370fc4a7048f5ee9c

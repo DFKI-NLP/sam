@@ -1,0 +1,3 @@
+T441c72088cfb43498d60fcce9133a889	own_claim 9046 9131	We decided that using a CG method to solve the unsymmetric problem was not acceptable
+T47381b26a7e3a58868dffad82a1f2b46	own_claim 9164 9217	applying a CG method to equation (6) is not difficult
+R6c9568f513ffa0c4700105ac3dc40d0c	contradicts-GOLD Arg1:T441c72088cfb43498d60fcce9133a889 Arg2:T47381b26a7e3a58868dffad82a1f2b46

@@ -1,0 +1,15 @@
+T30cadcd31b94139dfce53dabdf6187d8	own_claim 2190 2286	we get 3500 3D markers per foreground megapixel or 282 foreground pixels per recovered 3D marker
+Tf02e880e332571c2be09af2eaa4eda8e	own_claim 4314 4403	MeshIK is most useful when a basis is carefully chosen to prevent extrapolation artifacts
+T17a83b57642e68d6e67a8a6cc3a08f2a	own_claim 1789 1846	the camera images were not output in a linear color space
+T1eec272bce501e6561250bba37dcd61a	own_claim 2288 2350	Our marker observations average 56 pixels per marker per image
+T8eb94a075c99b030827b743fc6cd1d4f	data 624 638	our experience
+T8f752d09bf7ed813441c2ae8cbe91d1d	own_claim 1896 1947	we terminated the correspondence algorithm at N = 2
+T49f33cc4eaf496a1cff521d5681637ed	own_claim 1599 1627	The sleeve example is unique
+T0e49f8bf468a1b8d1011628ddd746bd4	own_claim 588 617	Adequate lighting is critical
+T3d657f6bda24eda30b93e8cd9307097e	own_claim 4019 4061	for pants the relationship is more complex
+T3f925310f407f390a69cd9f89e42055d	own_claim 1679 1742	Much of the cloth is in contact with the floor and unobservable
+R6b43b926da161601f4223b12d4f0cd01	supports Arg1:T8eb94a075c99b030827b743fc6cd1d4f Arg2:T0e49f8bf468a1b8d1011628ddd746bd4
+R12d4f1fbde4de5d842002d58d8324aec	supports Arg1:T3f925310f407f390a69cd9f89e42055d Arg2:T49f33cc4eaf496a1cff521d5681637ed
+R83165714a80f7613841e4bb28a02c124	supports Arg1:T17a83b57642e68d6e67a8a6cc3a08f2a Arg2:T8f752d09bf7ed813441c2ae8cbe91d1d
+R7137a344a98e096a981f39c862f3a5e6	supports Arg1:T30cadcd31b94139dfce53dabdf6187d8 Arg2:T1eec272bce501e6561250bba37dcd61a
+R432dbbd5a1da8510bab899e259d587f0	supports Arg1:T3d657f6bda24eda30b93e8cd9307097e Arg2:Tf02e880e332571c2be09af2eaa4eda8e

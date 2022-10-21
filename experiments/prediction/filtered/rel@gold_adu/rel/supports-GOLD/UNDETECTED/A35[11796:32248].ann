@@ -1,0 +1,37 @@
+T4ca1bfaacaf0817d4240312ea196a3b6	own_claim 2766 2855	With one iteration only, it is barely worse than the very simple explicit Midpoint method
+T0313ecfd2aa51de6458f23eb431c6b67	own_claim 759 928	The desired accuracy of the resolution, which may be coarse if only static equilibrium is to be computed, or high if the whole dynamic evolution of the system is desired
+Tf6813d2496efd1dce5a6a29b8187640f	own_claim 9143 9226	it is not possible to increase the time step of implicit methods as much as desired
+Tf5d70a96f89da557ae29c69f438f49dd	background_claim 11296 11426	Draping is another context of simulation, where only the final static equilibrium state of the mechanical system is to be computed
+T5383d80c33f2f59e0f864f7e6eae5a63	background_claim 16349 16357;16371 16447	This can be observed when simulating stretched flat surfaces without curvature forces
+Tb1202e5569ddedccc47fb49ae1c3905d	own_claim 2568 2764	The most important fact to note is that the application of the Backward Euler method with a reduced number of Conjugate Gradient iterations compares very well with the traditional explicit methods
+T45f7d692d779be95fdd4ba93a5816517	own_claim 1021 1140	The numerical stability of the method, which also limits the time step for a given method and a given mechanical system
+T2e6b4e03e626016cdddf398f747afe87	background_claim 11547 11608	the full evolution of the cloth along time is not an interest
+Tc51c94a9d260f3ea4ce093078d307aad	background_claim 15974 16160	While rarely causing numeric “explosions” as with explicit methods, nonlinearity may disrupt the stability of simulations integrated with implicit models with large disturbing vibrations
+T53705a3bc85182691a6cebf66190aeb0	own_claim 308 355	Performance actually depends on several factors
+Tc75dbdd3f9e7d51fc693f209d21eef57	background_claim 16477 16644	the hypothetical equilibrium state is derived from the knowledge of the Hessian matrix, which relates the firstorder evolution of the forces as the deformations change
+T513caccc53c6a376acee74bbb4546d5f	own_claim 7996 8081	accuracy is well preserved with one Conjugate Gradient iteration up to a K value of 4
+Ta3b5c1f875fa8b8f24a99b7fdafd7ff5	own_claim 8087 8185	increasing the iteration number n times also increases the K value n 2 times for the same accuracy
+T9fab2e277c92b5a3a389cd45d977f52a	own_claim 20212 20259	garments folds that would not disappear quickly
+Tc916baa57feedf2cd1812814dd01c522	own_claim 9231 9268	this cause very noticeable inaccuracy
+Te0099407dd0d0478d96676aaa0e00008	own_claim 20272 20332	additional artifacts caused by inaccurate collision response
+Tbc6f5ec5566417b5771b1ce07f967826	background_claim 16646 16759	Nonlinearity causes this matrix to change between the successive iterations, and this evaluation to be inaccurate
+Tde01669bad5601511eb318b419fc2503	data 2412 2559	Method Accurate Simplified Midpoint 32 μs 8 μs Runge-Kutta 95 μs 25 μs Back. Euler (No CG iter.) 31 μs 5 μs Back. Euler (Per CG iter.) 16 μs 2.5 μs
+T0d465cb78c0827a02682da6a60b28676	own_claim 7859 7874;7883 7966	its accuracy is very degraded by high K values and reduced numbers of Conjugate Gradient iterations
+T26af24ed1d5ecdf0fff9d9fb1a1229ec	background_claim 16162 16347	particularly when using large time steps that cause iterations to converge to the equilibrium state of the mechanical objects rather than simulating accurately their mechanical behavior
+Tcab10d8add5a2ff54922072cb7a76fbe	own_claim 19985 20010;20019 20111	The backward Euler method allowed the increase of the time step up to 0.1 seconds, where inaccuracies began to show up
+T42cf380142233df098b23154b16d4e02	own_claim 20121 20210	excessive “heaviness” of the fabric that failed to follow the motion of the body properly
+R0498f42ab9a56cdc2c02865aa6301335	supports-GOLD Arg1:T0313ecfd2aa51de6458f23eb431c6b67 Arg2:T53705a3bc85182691a6cebf66190aeb0
+R0c84591b2b8f386f376d44db641a3488	supports-GOLD Arg1:T45f7d692d779be95fdd4ba93a5816517 Arg2:T53705a3bc85182691a6cebf66190aeb0
+R6cb82d413ce1ca74490b042d3c342881	supports-GOLD Arg1:Tde01669bad5601511eb318b419fc2503 Arg2:Tb1202e5569ddedccc47fb49ae1c3905d
+Rc0fe32e69f9ad68b278703be9a5a3b09	supports-GOLD Arg1:Tde01669bad5601511eb318b419fc2503 Arg2:T4ca1bfaacaf0817d4240312ea196a3b6
+R56686adb885e800983a1c240cc3062a9	supports-GOLD Arg1:T513caccc53c6a376acee74bbb4546d5f Arg2:T0d465cb78c0827a02682da6a60b28676
+R48f6d8cae00e01a199b385d6df3b6b20	supports-GOLD Arg1:Ta3b5c1f875fa8b8f24a99b7fdafd7ff5 Arg2:T0d465cb78c0827a02682da6a60b28676
+Rb3c4a388ece496143702cbc899a7b7a2	supports-GOLD Arg1:Tc916baa57feedf2cd1812814dd01c522 Arg2:Tf6813d2496efd1dce5a6a29b8187640f
+Redf01ac66adaa280eeb834b89e487235	supports-GOLD Arg1:Tf5d70a96f89da557ae29c69f438f49dd Arg2:T2e6b4e03e626016cdddf398f747afe87
+R3c5339ec9be7f936ddbec3fe28876af9	supports-GOLD Arg1:T26af24ed1d5ecdf0fff9d9fb1a1229ec Arg2:Tc51c94a9d260f3ea4ce093078d307aad
+R7f2eb19be2572c35642c2a21e645ca8d	supports-GOLD Arg1:T5383d80c33f2f59e0f864f7e6eae5a63 Arg2:T26af24ed1d5ecdf0fff9d9fb1a1229ec
+Rc12098f9bac2b9baca40592107928fa3	supports-GOLD Arg1:Tc75dbdd3f9e7d51fc693f209d21eef57 Arg2:Tc51c94a9d260f3ea4ce093078d307aad
+R93df692c12ff2b101dedfbac4118228d	supports-GOLD Arg1:Tbc6f5ec5566417b5771b1ce07f967826 Arg2:Tc51c94a9d260f3ea4ce093078d307aad
+R95b25493a129076e5c4f7694ebbd6c9c	supports-GOLD Arg1:T42cf380142233df098b23154b16d4e02 Arg2:Tcab10d8add5a2ff54922072cb7a76fbe
+R955b923cfdead929b35e652c6b10bbd6	supports-GOLD Arg1:T9fab2e277c92b5a3a389cd45d977f52a Arg2:Tcab10d8add5a2ff54922072cb7a76fbe
+R22e70d38acfc37f430fb98ac83b44daa	supports-GOLD Arg1:Te0099407dd0d0478d96676aaa0e00008 Arg2:Tcab10d8add5a2ff54922072cb7a76fbe

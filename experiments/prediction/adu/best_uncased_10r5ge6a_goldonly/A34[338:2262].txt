@@ -1,0 +1,40 @@
+<Title>Collision Resolutions in Cloth Simulation</Title>
+      
+      
+        
+          Suejung Huh
+        
+        
+          Dimitris N. Metaxas
+        
+        
+          Norman I. Badler Center of Human Modeling
+        
+        
+          Simulation Lab
+        
+        
+          Moore Bldg. University of Pennsylvania Philadelphia
+        
+        
+          PA
+        
+        
+          USA (215)
+        
+        
+          fax (215) 573-7453 f suejung
+        
+        
+          dnm
+        
+        
+          badler g
+        
+      
+      @graphics.cis.upenn.edu
+      <Abstract>We present a new collision resolution scheme for cloth collisions. Our main concern is to find dynamically convincing resolutions, i.e. positions and velocities of cloth elements, for any kinds of collisions occuring in cloth simulation (cloth-cloth, cloth-rigid, and cloth-cloth-rigid). We define our cloth surface as connected faces of mass particles where each particle is controlled by its internal energy functions. Our collision resolution method finds appropriate next positions and velocities of particles by conserving the particles’ momentums as accurately as possible. Cloth-cloth collision resolution is a special case of deformable N-body collision resolution. So to solve deformable N-body collision resolutions, we propose a new collision resolution method, which groups cloth particles into parts and resolves collisions between parts using the law of momentum conservation. To resolve collisions, we solve a system of linear equations derived from the collision relationships. A system of linear equations is built using a scheme adapted from the simultaneous resolution method for rigid N-body collisions [ 1 ]. For the special case where we can find cyclic relationships in collisions, we solve a system of linear inequalities derived from the collision relationships.</Abstract>
+    
+    
+      
+        

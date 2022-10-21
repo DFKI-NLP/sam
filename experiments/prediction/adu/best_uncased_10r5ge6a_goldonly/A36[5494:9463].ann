@@ -1,0 +1,88 @@
+T9b8644a38255eb93ebfd8caafeb449b3	background_claim 31 101	Cloth simulation has a comparatively long history in computer graphics
+Tcb2b4e168fef62b5872fa1c314dfc9b0	background_claim 105 146	Since the first physics-based approach by
+Te68dbd0668b524c34d5f7c6fca193b62	data 168 174	TPBF87
+T93ea2c5b6fbb2c67d9c2108eefb3b3ff	background_claim 177 227	a multitude of different cloth models have emerged
+T7c8888bdd548e043be08c0d3aa075e0a	background_claim 242 268	simple mass-spring systems
+T3e8e4455d1ceb9cd126b034ac3bb2319	data 272 277	Pro95
+T16db56f2ca043f9761da74e354235c68	data 280 284	CK02
+T6d20c8028572850c3107ef328608c43a	background_claim 292 316	general particle systems
+T28957f39b2b52ba5fbbbcd9b1959d281	data 320 325	BHW94
+T52fd04991cb08ce052fafd48c5b355cc	data 328 332	BW98
+Tfa5501607d7fc2499af9c7b4449bab7b	data 335 340	EWS96
+Tf7c7614a50de827896d1cc98e02e7e04	background_claim 346 395	elaborate models derived from continuum mechanics
+T27a9e680740b6158d0c67328da9700f3	data 398 403	EKS03
+T7cc3e93a927a7895f2d7ab743f3ccfe5	data 406 412	VMTF09
+Teb91bb906363bc64637aba86217654ed	background_claim 423 450	the discrete yarn structure
+T63bf56b75a527cf45f2bb19da509abf4	data 454 459	KJM08
+T621c7c3c88f76b08b1536e4abefb1c62	background_claim 463 598	Considering the number of existing models, it is very hard to clearly identify or even quantify the advantages of individual approaches
+T1061a98aef41938ba7ae8fc90975b69d	own_claim 600 698	Our goal is to define a platform for comparing cloth models to the observed behavior of real cloth
+T8fc4bbfbad35c93ec3359505586d9118	background_claim 700 821	As a central component of any cloth model, material models describe the relation between deformation and resulting forces
+T7b94c8dc132ced3eeb754533455d7a0d	background_claim 824 975	In the simplest case, this relationship is linear and thus completely described by a set of material constants, whose number depends on the cloth model
+Td8e5f7da187dfdd0fc3fcc489c2fd903	background_claim 977 1026	Massspring systems typically have four parameters
+T97e4f9e1b40823f844da528d5c3ec2f8	data 1028 1050	one per type of spring
+Td483e4915636ca3ecadb507381b3cac6	data 1053 1058	Pro95
+Tcb8a6e3dd35ae676b4b113afba3f1e2a	background_claim 1070 1106	continuum-based methods can have two
+T08d21eaaa38c12ec01e3ac0c507fe19d	data 1108 1117	isotropic
+T984858bf93b82eef603484f8c50f086e	background_claim 1119 1125	to six
+Tb2b653a734a809a86d181eff3e8f33b8	data 1127 1149	completely anisotropic
+Tedd5e33f3f68372d6848bc17d3e4e5cc	background_claim 1151 1184	parameters for planar deformation
+T5a6c43818e1d5edc17a60a2823c38923	data 1187 1192	EKS03
+Ta56739607b798548519acf5198cb477b	background_claim 1194 1231	plus another one to three for bending
+Tb7a9b4a77ba4281a775625fc48a073c6	data 1234 1240	GGWZ07
+T5cca651fdbed4bca842c56d93c3d0e8b	background_claim 1244 1343	Continuum-based approaches can accurately describe the directional variation of material properties
+Tb00f99ffe75acd8fa8fc8c7ae018b0cd	background_claim 1349 1532	regardless of the cloth model, a single set of material coefficients for the entire deformation range is not sufficient to faithfully capture the nonlinear response of typical fabrics
+Tf46d393eb8a6023183f5dd28ceb6f4e4	background_claim 1534 1600	Bi-phasic models, typically implemented as strain limiting methods
+Ta1643edc8e55d5c8fb368e49b9c93bac	data 1603 1608	Pro95
+Tce2d0cee60bf000988e534ac838504ce	data 1610 1615	BFA02
+T8eae9f91d9a08174a5af6b96950da251	data 1617 1622	Mül08
+Ta582d5c19b550fe2f8420243f2e39c65	data 1624 1629	TPS09
+T5ae970f76ebacad9b70c399781f4cdf7	data 1631 1636	WOR10
+Tbf212f445a94d5786c8678c153ff67ed	background_claim 1640 1766	improve on this by splitting the material behavior into an initial, weakly elastic range and a stiff, quasi-inextensible limit
+T80b6c2cf010fab05ee1afa98b71b5bbd	background_claim 1768 1861	At the extreme, the elastic range can be replaced altogether by inextensibil∗ ity constraints
+Tc8f1e284775210e3555996ea72f9a89d	data 1864 1870	GHF 07
+T2e55d289383a71bff0d5e931b0c829d0	data 1872 1876	EB08
+T4bca5877b840b54ed271d98ed3802fbf	background_claim 1879 2082	A better approximation to the true material response can be obtained by making the material parameters functions of the deformation, rather than constants, and by fitting these functions to measured data
+Tec4971bebae708bb9ae31574057fe597	background_claim 2097 2110	previous work
+T841a8880bb6873f13385229568dca477	data 2112 2117	BHW94
+T6f11284ba11da3d926ed291b40a24d0f	data 2118 2123	EWS96
+Tdcca228a8972b2140c1ff4963491bd3d	data 2125 2131	VMTF09
+Ta5db12e326be243c8b5be2abe7b92167	background_claim 2134 2185	has mainly relied on the Kawabata Evaluation System
+Tb6d1b7d03d35b56fdbcd8286f3513130	data 2194 2199	Kaw80
+T47926bc4a86e2b7f2559e175d2bdf526	background_claim 2203 2230	and corresponding machinery
+T01330ee0faf2cbddff0e9050475489be	background_claim 2239 2288	the KES covers a comprehensive set of experiments
+Tca1878fcfde5e1c44c56a0ea2eb58c60	background_claim 2290 2343	other devices have been used in more specific context
+T49c4bc4ddd9083ca9ccbf9d312a0d20c	data 2352 2374	the Picture Frame test
+Te028ef769ce4636cd7ef8b78c4bbe4b0	data 2378 2383	Cul79
+T1bdd3671676f2ade3b5e25a4ba633975	data 2386 2416	for measuring shear properties
+Te912d3afc0eb8c62576430a9c7c69822	data 2421 2440	the Cantilever test
+T78156119ecc9ea017e6536e1a71fc54a	data 2443 2449	CPGE90
+T1395d7956931514b4509a3f85f5bee72	data 2452 2484	for measuring bending properties
+T815451638841ffdcc79206b65a026659	data 2510 2516	PKST08
+T598dbd927a6e991d92af08b71a6d6086	background_claim 2521 2624	These measurement-based approaches establish a valuable link between simulation and real-world behavior
+T5d7cfdb44f8dfa249724ffb7a7906eb1	background_claim 2630 2698	they rely on experiments that isolate individual deforma∗ tion modes
+T3495590f004c506c1ab7985c1e706952	background_claim 2700 2717	As an alternative
+Tce090c218641ce5337bbf28fa70e5ec1	data 2733 2739	BTH 03
+Tb5d8b635d9c8829cd92ae1af280670b1	data 2775 2780	KNM10
+Tacab3e823f8514d6df22b8ad8ce46d9b	background_claim 2785 2904	aim at avoiding the need for controlled conditions and try to extract parameters from casually captured videos of cloth
+T31d7f63e4ac91698d2e660536a60f443	background_claim 2906 2980	This approach appeals through a simple and inexpensive acquisition process
+T0a04dd8efba9be98d0a3eaed7c1661ea	background_claim 2986 3036	it is not possible to accurately separate internal
+Tafb05e9016aca74755f6b0a2dff5c856	data 3043 3060	material-specific
+Tf091bf14ef0ea13fa01bfcd952874bac	background_claim 3062 3074	and external
+T1979e146bd081ce7ebde45f393060212	data 3081 3089	friction
+Td989a3305c53d621093a16241659bc89	data 3091 3099	air drag
+Tc08e99c2e9f2207159f6ed2345256612	background_claim 3101 3111	parameters
+Td93b16f714d4f706360ff0c741770838	background_claim 3134 3225	capture technology can be used to record time-varying geometry of complex cloth mo∗ ∗ tions
+T7b0e81d8af2e320ce20aadcefa1105a2	data 3227 3232	WCF07
+Tb32a4a119acd066d4220b3544f0c520d	data 3233 3239	BPS 08
+T14da10c49af24880afbac10ccf7adc7d	data 3240 3247	SGdA 10
+T6c48dce823544ff3980f8621cd8450c6	background_claim 3260 3307	capturing can provide accurate deformation data
+Te28061cdde3a48af8d9a5916091827c5	background_claim 3309 3429	parameter fitting remains very difficult without explicit control over boundary conditions, in particular loading forces
+Tce32ca3a02fb726db83919c21b96820d	own_claim 3431 3475	Closer to our work is the recent approach of
+T0a7cec1a6fdf055da018446c1449f35d	data 3490 3495	WRO11
+T5b7bf96b935671aa8cae63e2a5f1d3af	background_claim 3499 3595	who propose a data-driven piecewise linear elastic cloth model comprising 39 material parameters
+Ta7d42c8efe09358219dc23438348c24c	background_claim 3597 3702	These parameters are fitted to experimentally acquired data obtained from planar and bending deformations
+T8d885ec7b4b1002497682e1dd0eee2bb	background_claim 3704 3745	Their capture setup is appealingly simple
+T8db281c5346a757d64cc8e8cbbf719ce	own_claim 3751 3784	ours is more general and powerful
+T3d146140e19798b30ba2596766b168d5	own_claim 3786 3840	it produces a 3D surface, rather than a 2D deformation
+Tf79c90072191a11aaa11d8f9637982b0	own_claim 3846 3945	it measures all forces applied to the cloth as they change during a range of different deformations
+

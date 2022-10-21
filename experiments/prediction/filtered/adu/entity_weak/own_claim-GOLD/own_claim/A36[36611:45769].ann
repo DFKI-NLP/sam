@@ -1,0 +1,84 @@
+Tb8bdd2b1fabea23f6fc24fb9ca869924	own_claim-GOLD 648 708	The measurement shows the typical behavior of a woven fabric
+T61a634428bf1671f612882093a4aaa23	own_claim-GOLD 2520 2592	The four selected fabrics span a large range of possible cloth behaviors
+T46dd578b246f033ac721d93189a81b47	own_claim-GOLD 2609 2667	#12 is isotropic and very compliant in stretch and bending
+T39970b90aba1a82fd32624072ae810e5	own_claim-GOLD 2669 2737	#4 is also isotropic, very stiff in stretch but compliant in bending
+Te66fa7c642ac32cb3f4c6ff1dc8974df	own_claim-GOLD 2739 2820	#14 is stiff and quite isotropic in stretch, but extremely anisotropic in bending
+T4778a67ff21d2515f89813f647fd2ce0	own_claim-GOLD 2871 2905	#18 is anisotropic both in stretch
+Tf5d252b089fe194f64142176885e70ab	own_claim-GOLD 2978 3047	The maximum stretch stiffness for #4 is 250 times higher than for #12
+Tc06ffff10abc89ca91e0c817261c4b57	own_claim-GOLD 3055 3109	#14 is 10 times stiffer in shear than any other fabric
+Tf2e4529f3af259292a9f94c1de49c22a	own_claim-GOLD 3111 3240	All four fabrics show similar hysteresis behavior, with loading-to-unloading stretch stiffness ratios ranging from 1.4/1 to 1.8/1
+T4751c16c56ccb5495d2bf1946f420690	own_claim-GOLD 3242 3299	Sample #12 is nearly linear in the test deformation range
+Td600ce85d4454e1ad8ef8a96223efcc4	own_claim-GOLD 3307 3351	all other three fabrics exhibit nonlinearity
+T1d6589e5cb31336ff248f16b93ad801e	own_claim-GOLD 3368 3457	nonlinearity may arise in some deformation modes but not in others, with no clear pattern
+Tee2c3889310099ee5e1f0fbb554ef61c	own_claim-GOLD 3475 3579	all three cloth models fit nicely to the average of the hysteresis bands, even in highly nonlinear cases
+T6885e7ec81e40bcfea4913bed6df57ab	own_claim-GOLD 3581 3631	The fitting residual is larger for stiffer fabrics
+Tea09a8456f91e1b301da77846fc23be3	own_claim-GOLD 3637 3706	the nonlinear orthotropic model variants fit anisotropic fabrics best
+T7aa6239be0402aa8c7c8fae60fc403b0	own_claim-GOLD 3727 3850	linear and/or isotropic variants reach a reasonable compromise but are not always able to remain inside the hysteresis band
+Tc9905422efa6c54ba2818e68aa097337	own_claim-GOLD 3866 3931	the fitting force residual is larger for #14, the stiffest fabric
+T5159e2e57ffe7b20f0d6289c8c748330	own_claim-GOLD 3933 3975	Across models, the Soft Constraints and St
+T2336a8d4349c3f07461281a4042a600e	own_claim-GOLD 3977 4037	VK models fit to the average of the shearing hysteresis band
+T6902d511fee122f26e5d1f1862d0fcb4	own_claim-GOLD 4045 4080	the Springs model deviates at times
+Tfcef2eeb1f3eb55a2f669af8d0dd0724	own_claim-GOLD 4228 4320	The fitting residual is similar for all fabrics, but distinctly higher for the Springs model
+T97656cd3c390ce83b7568d800479bf32	own_claim-GOLD 4322 4443	Often, the residual is dominated by a difference in curl near the edge of the sample, while the overall shape is well fit
+T3d0719d9bb9f889f7fd15568f86be950	own_claim-GOLD 4550 4632	The behavior of sample #12, the most linear fabric, is predicted well in all cases
+Tc37c46800515584e22f519a59cdef1bb	own_claim-GOLD 5450 5601	Visually, the mismatch is more apparent in the complex shear test, where models with underestimated stiffness exhibit wider folds than the real fabrics
+Ta117ba529dcd661d0bcfe75e8d0a37cf	own_claim-GOLD 5996 6114	indicate very similar behavior between fitting and test samples for #12 and #14, and a larger disparity for #4 and #18
+T5060df026f74ade0d22c6062d8c5375e	own_claim-GOLD 6116 6208	The evaluation plots for the simulation models behave similar for the test and fitting cases
+Td3e9daba32838d4e42438d32f3e82c8c	own_claim-GOLD 6214 6287	the matching quality depends on the actual disparity across cloth samples
+Tcaf8d982d39fd45419f6708c7fd29948	own_claim-GOLD 6307 6360	overall force-displacement behavior is nicely matched
+T7f868cb5efd7c4e5b37c403375edb68f	own_claim-GOLD 6362 6450	the actual folding shapes of simulated cloth may deviate largely from the captured cloth
+T0774211d9ae54b7b323cbf6eb0ab5df9	own_claim-GOLD 6580 6659	the traditional L 2 metric is not appropriate for evaluating error in this case
+Tef4105600e1bd3fcdc9b5d2d8e30f0d0	own_claim-GOLD 6661 6772	The discontinuity of stable configurations is also the cause of flickering and twitches in some of our examples
+T44d816287ae57c7ec5ed373066a1853a	own_claim-GOLD 6774 6910	The Springs model exhibits the worst fitting quality in shearing force-displacement curves, and the highest fitting residual for bending
+T8fff3abaa10ba3e736020657b4120abc	own_claim-GOLD 7033 7097	the overall deformations in complex shearing fit reasonably well
+Tc4091d535b674de6a9be1cf4bc6d1eea	own_claim-GOLD 7220 7351	our results indicate that satisfactory parameter estimation is possible by incorporating anisotropy and nonlinearity into the model
+T5f9a9c655571de0023c0ff5a02efd5fa	own_claim-GOLD 7382 7498	VK models produce results with very similar quality, which is expected as the models present only subtle differences
+T4d5a919ed160e9a56e499b11fd53c3bd	own_claim-GOLD 7528 7582	At least three effects are missed by the tested models
+Te99b16a4cb055af96eb4dd1c96f0ee2e	own_claim-GOLD 7672 7694	cross-modal stiffening
+Tf0030cf559200092eb92d242470b74de	own_claim-GOLD 7739 7807	We indeed identified stretch stiffening in the shearing deformations
+T3e8c4c5b03b051ab46c31e690c1093bf	own_claim-GOLD 7819 7933	we chose clip-parallel forces as objective function to minimize the effect of stretch errors on shear optimization
+T0afedf0573b879eb762946ac5f7dbd29	own_claim-GOLD 7954 8116	missing cross-modal stiffening may also be, to a large extent, the reason for stiffness underestimation in the corner pulling test for the Soft Constraints and St
+Te14f70dcebb9f2cbafcbec66b1b3b753	own_claim-GOLD 8129 8167	An extension to the nonlinear model of
+T7ade41f538a3fec88ed3c790526e3b51	own_claim-GOLD 8189 8224	could help alleviate these problems
+T46e007c599ce8318d257aed03781f424	own_claim 648 708	The measurement shows the typical behavior of a woven fabric
+T1e99687cb3eaa663551e439ebb45b407	own_claim 2520 2592	The four selected fabrics span a large range of possible cloth behaviors
+Te5d8a502eed5a35d29d88b4c97381a65	own_claim 2609 2667	#12 is isotropic and very compliant in stretch and bending
+T5f114d3c6db72ee776790824f2719808	own_claim 2669 2737	#4 is also isotropic, very stiff in stretch but compliant in bending
+T45078206d98edfaacb5d732bfe066648	own_claim 2739 2820	#14 is stiff and quite isotropic in stretch, but extremely anisotropic in bending
+Taf320da56e09a28b9ea7949d1771b600	own_claim 2871 2905	#18 is anisotropic both in stretch
+T04166e67e1ae1a84fd7b0ea6c9dff92f	own_claim 2978 3047	The maximum stretch stiffness for #4 is 250 times higher than for #12
+Tc69ea9291ca30a4b0b76cc5dee0501ce	own_claim 3055 3109	#14 is 10 times stiffer in shear than any other fabric
+T32c9cdbbf7dcca8fd129e8497b0e648f	own_claim 3111 3240	All four fabrics show similar hysteresis behavior, with loading-to-unloading stretch stiffness ratios ranging from 1.4/1 to 1.8/1
+T6c612b55fb880dbc2e577050709c9e7c	own_claim 3242 3299	Sample #12 is nearly linear in the test deformation range
+T84998cb97540a529e445f126c6287b40	own_claim 3307 3351	all other three fabrics exhibit nonlinearity
+T4ccd4d1634cbddd00bdef16c352c9634	own_claim 3368 3457	nonlinearity may arise in some deformation modes but not in others, with no clear pattern
+Tca080bd1921c7ebcc6a97274d731a70c	own_claim 3475 3579	all three cloth models fit nicely to the average of the hysteresis bands, even in highly nonlinear cases
+T10e39fe5930031dec72f67ed3eb17073	own_claim 3581 3631	The fitting residual is larger for stiffer fabrics
+T7d3eef2183a6405add4a0037a02cb41b	own_claim 3637 3706	the nonlinear orthotropic model variants fit anisotropic fabrics best
+T211fa3b3abb70f08d3d9ec09dbbbdbac	own_claim 3727 3850	linear and/or isotropic variants reach a reasonable compromise but are not always able to remain inside the hysteresis band
+T1ca0fb8b1980002c18986c620dca7f7f	own_claim 3866 3931	the fitting force residual is larger for #14, the stiffest fabric
+T06f3ec68acbaaaf31d3d2400777053b7	own_claim 3933 3975	Across models, the Soft Constraints and St
+Tfe760a07379f6fb84bfa72bbb0588bd7	own_claim 3977 4037	VK models fit to the average of the shearing hysteresis band
+T1add7c1b30ad433ee9d1c5774fe68121	own_claim 4045 4080	the Springs model deviates at times
+T096b58a67bae6ee32c85e7f638946cbb	own_claim 4228 4320	The fitting residual is similar for all fabrics, but distinctly higher for the Springs model
+Ta2133e63b00b5407bc2e3af7fc670c60	own_claim 4322 4443	Often, the residual is dominated by a difference in curl near the edge of the sample, while the overall shape is well fit
+Tc43298c5ac04f8d5dee3d68a6f2e439b	own_claim 4550 4632	The behavior of sample #12, the most linear fabric, is predicted well in all cases
+Teb05a9bfd43aca05ec2b1c0a6f94c1f3	own_claim 5450 5601	Visually, the mismatch is more apparent in the complex shear test, where models with underestimated stiffness exhibit wider folds than the real fabrics
+T715f85a46ec9dddf0a948585c90a3067	own_claim 5996 6114	indicate very similar behavior between fitting and test samples for #12 and #14, and a larger disparity for #4 and #18
+T7803e03e0c3fd6575d704068016339d6	own_claim 6116 6208	The evaluation plots for the simulation models behave similar for the test and fitting cases
+T20f655f739cf5f235929b68e6e8b63d8	own_claim 6214 6287	the matching quality depends on the actual disparity across cloth samples
+T6c22a53a74decac1720bb30a8c12709f	own_claim 6307 6360	overall force-displacement behavior is nicely matched
+T9ba9767e1c72ad0ecc674fb4a8f56000	own_claim 6362 6450	the actual folding shapes of simulated cloth may deviate largely from the captured cloth
+T88ae744687dac58213766414791a2e23	own_claim 6580 6659	the traditional L 2 metric is not appropriate for evaluating error in this case
+Tdf66c9ca3490b2bab83e0179c1361fb1	own_claim 6661 6772	The discontinuity of stable configurations is also the cause of flickering and twitches in some of our examples
+T2e6be9caf23cf167ce16ff1c45e02ecd	own_claim 6774 6910	The Springs model exhibits the worst fitting quality in shearing force-displacement curves, and the highest fitting residual for bending
+T308224ce4a7c39b4feb120fce37389b3	own_claim 7033 7097	the overall deformations in complex shearing fit reasonably well
+T60f3eaab7b6a663ab1bad452363f3d39	own_claim 7220 7351	our results indicate that satisfactory parameter estimation is possible by incorporating anisotropy and nonlinearity into the model
+Ta02df9187e784620ca7bcacc5dcf30bd	own_claim 7382 7498	VK models produce results with very similar quality, which is expected as the models present only subtle differences
+T2bffb6eaaaa70944f6b566b6d84a6458	own_claim 7528 7582	At least three effects are missed by the tested models
+Tf0194a4fdb1931539191b9cada006121	own_claim 7672 7694	cross-modal stiffening
+Ta9e3eb4aea94627783fddf4102ca40ce	own_claim 7739 7807	We indeed identified stretch stiffening in the shearing deformations
+T60c2d29b136feb43c203f6a539249ddc	own_claim 7819 7933	we chose clip-parallel forces as objective function to minimize the effect of stretch errors on shear optimization
+Te0f2d4fa9f35028e97715b3823ec88e7	own_claim 7954 8116	missing cross-modal stiffening may also be, to a large extent, the reason for stiffness underestimation in the corner pulling test for the Soft Constraints and St
+Tfca30d6f283423a0461714f707efa47f	own_claim 8129 8167	An extension to the nonlinear model of
+T7a1ad1d3e890dce3e80a91435ad5a1da	own_claim 8189 8224	could help alleviate these problems

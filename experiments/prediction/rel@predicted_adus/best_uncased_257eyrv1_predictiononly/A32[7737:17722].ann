@@ -1,0 +1,78 @@
+T188d5d08499e98fb16641e8ba5bb6255	own_claim 2199 2274	the wrinkling coefficients need not to be recalculated during the animation
+Td723e5771fd8cf69dff86d7193402c7f	own_claim 2837 2947	the rotational and translational parts of the transformation are irrelevant to the derivation of the algorithm
+Tf9ce38e1eee7e26ad464586bcabc4d7c	own_claim 4829 4860	these two areas will be unequal
+Te3396899ebacec88f22868b636331b63	own_claim 4875 4971	the overall wrinkled surface area over the whole mesh will not be conserved during the animation
+Te6aa9d50917c39bae05f0fd4a96682f7	data 4998 5007	Section 2
+T5e8172fc050f5a5eb9b2477992ddab05	own_claim 5009 5027	real life examples
+Tf19cd45aa39df72d95b16d9c8727b20e	data 5036 5054	in cloth wrinkling
+T93187b2e14539d70a573b616ebe59957	own_claim 5056 5085	the surface area is conserved
+T45e83791d33a2e3e2a0136c31210f8b5	own_claim 5097 5135	this is a purely geometric requirement
+Tc8425a9e3a85466c73d4ed35dd584f5e	own_claim 5137 5209	One might think of several different approaches to meet this requirement
+T5abf3b389a9a27c28dfd7854da3114e7	own_claim 5211 5325	Our approach realizes overall area conservation by achieving area conservation on a per triangle basis of the mesh
+T306974905f558a981868a4d25dd701ac	own_claim 6449 6510	The algorithm is computationally inexpensive during animation
+T467789e0b8259eb1ad29e785de2eee5f	own_claim 6515 6717	the only quantities that have to be determined for each triangle are the elements a , b , d of the inverse deformation matrix and the resulting modulation factor by using the formula given by equation 5
+T88cd459ec87c335b6e5d937154ac839d	own_claim 6765 6794	are computationally expensive
+T851316c7b291a3e02ff3c19e17d43c50	data 6825 6836	equation 11
+T09e73a0b05709e106af14c25b220f2ae	data 6840 6850	Appendix A
+Tcc0d7a6feed74fd82304f2c04eab9532	own_claim 6852 6934	they depend only on quantities that are known prior to entering the animation loop
+T55f70ed6ad6e8bad24a849788a34a353	own_claim 6953 6988	be calculated once at the beginning
+T827dfb60e2b49989d72346ae21d00142	own_claim 7041 7117	we have derived an algorithm that is based on the area conservation property
+T86d12f489e7f066f2b0e7ea6ee7a3b93	own_claim 7250 7325	we have presented a solution within the approximation of small deformations
+T796bcb520aa1e067b197609ee999d153	own_claim 7327 7388	There are several possibilities to deal with this restriction
+T8cfbad5f277fa12ada1f5dd2e3e7d3f8	own_claim 7390 7614	One could decide to restrict the simulations to small deformations where the approximation is valid and/or take into account the higher order terms in the series expansion to extend the range of validity of the approximation
+Tdfc35bea89521bd47de21d0234f8bbf5	own_claim 7625 7656	we propose a pragmatic approach
+T0e16c9d0b3bd005b19541949fce97d48	own_claim 7732 7804	This frees us conceptually from the “burden of mathematical correctness”
+T3de4b1ccb7ee96e930bbb2158b7e9841	own_claim 7823 7924	we are more concerned with the visual results of the animation, rather than precise area conservation
+T70f6236179f10f5640f6e355add950e4	own_claim 7936 8000	the deformations during cloth simulation are moderate in general
+T369df88159115dee94d2b774e36d2d63	own_claim 8009 8087	higher order terms in the expansion may become significant but not predominant
+Te1dd47b6475f494107d818e6bb8c7424	own_claim 8089 8157	The modulation factor h is a function of the deformation of triangle
+T07224adffe5fbc633d903160199badf3	own_claim 8162 8182	has value around one
+T3f4604d2980f67d457749aae1d01fa57	data 8187 8217	the triangle is net compressed
+T7ae1d3e179578873e9c710308a2ff886	own_claim 8219 8245	h will be greater than one
+Tfd89f18978a02d9c19a71edcbd7daf49	data 8251 8265	the elongation
+T655d2a32798c4cda973e75cd458693ea	own_claim 8267 8291	it will be less than one
+Tdca5b6f9d0de938dc65e7e4fe41963c6	own_claim 8293 8385	One can scale, translate and clip it to introduce a finer control required for the animation
+T6a693665d71013788cad9faca1e777a7	own_claim 8397 8492	this transformation of the modulation factor no longer satisfies the area conservation property
+T71bbd1862515a3dc141a7357d2edc5bc	own_claim 8583 8651	Another very important property of our algorithm is that it is local
+T599355f4b8462685c9adad0feee5b440	own_claim 8753 8798	This is crucial to obtain realistic wrinkling
+T381a9d66ebf939220126a327e60fd70f	own_claim 8813 8897	a garment wrinkles around the shoulder of an animated character as she lifts her arm
+T2a14f335f35f9f79ba7468705195f0c6	data 8905 8946	it is stretched on the corresponding side
+T8c0d90e0df61361d50c0d61938164813	own_claim 9024 9112	The size of the mesh triangles actually governs the extension of local wrinkling effects
+Tf7fe919ce7d460551e5a6ae303a0e70f	own_claim 9116 9176	Wrinkling coefficients are sensitive to the wrinkle function
+T1777d4d42d0f8e20e3c2c6e16c12d512	own_claim 9191 9214	to the wrinkle patterns
+Te0044efb36176a7dd371d77c6c3dc0d5	own_claim 9216 9308	Wrinkling coefficients for two different patterns on the same triangle will generally differ
+Tc5692dc5d05d1ca35ba19550d33d6844	own_claim 9321 9407	the same deformation applied to a triangle will yield two different modulation factors
+T38200b1ce8efbf6e334ceef8c03adbc6	own_claim 9432 9444	Each pattern
+Td45147e1152bfb1d7cbb516690ccc282	own_claim 9460 9502	features a “principal wrinkling direction”
+T9d8cde8699480b7091cbb0b48d289b00	own_claim 9575 9731	a deformation in the orthogonal direction of one pattern will result in a smaller modulation factor as compared to a modulation factor for the other pattern
+T5fbe87602c73c7f05ca44ffb59971461	own_claim 9749 9817	the direction of the deformation “favors one pattern over the other”
+T11e11b905c25da2e209cb823f18198cd	own_claim 9819 9891	This property can be used for developing multi-fold wrinkling techniques
+R5b3d69f39748d0b0b22d86eedd10ee8c	supports Arg1:Tf9ce38e1eee7e26ad464586bcabc4d7c Arg2:Te3396899ebacec88f22868b636331b63
+Rdce6ae08aeec3e33a95bb883d7a563bd	supports Arg1:Te6aa9d50917c39bae05f0fd4a96682f7 Arg2:Te3396899ebacec88f22868b636331b63
+R59295a6ee3ce5b453df43cccb025ab19	supports Arg1:Tf19cd45aa39df72d95b16d9c8727b20e Arg2:T5e8172fc050f5a5eb9b2477992ddab05
+R1538589a015ec98b7ee886a43cefea65	supports Arg1:T5e8172fc050f5a5eb9b2477992ddab05 Arg2:T93187b2e14539d70a573b616ebe59957
+R049a16f7b2212dced6c66bb135fc76c3	supports Arg1:Tf19cd45aa39df72d95b16d9c8727b20e Arg2:T93187b2e14539d70a573b616ebe59957
+Rdd4e55bab00ae668d589dae8a4064887	supports Arg1:Te3396899ebacec88f22868b636331b63 Arg2:T93187b2e14539d70a573b616ebe59957
+R05653bd6a2a921d4a2006c1609ca9e7f	supports Arg1:Te6aa9d50917c39bae05f0fd4a96682f7 Arg2:T93187b2e14539d70a573b616ebe59957
+R485f21c95b5006bad900cedf78ca249e	supports Arg1:T93187b2e14539d70a573b616ebe59957 Arg2:T45e83791d33a2e3e2a0136c31210f8b5
+R3c96a29bd245725a04e99e0ea320881c	supports Arg1:T467789e0b8259eb1ad29e785de2eee5f Arg2:T306974905f558a981868a4d25dd701ac
+Rcac492dbd1dfd4b399b721c1dfbbeb7c	supports Arg1:T851316c7b291a3e02ff3c19e17d43c50 Arg2:Tcc0d7a6feed74fd82304f2c04eab9532
+Rfec167927f53da2083c3e4f724355f2d	parts_of_same Arg1:T851316c7b291a3e02ff3c19e17d43c50 Arg2:T09e73a0b05709e106af14c25b220f2ae
+R209af083eef2b013287e1e6aeeef3861	supports Arg1:T09e73a0b05709e106af14c25b220f2ae Arg2:Tcc0d7a6feed74fd82304f2c04eab9532
+R4e3e15f05448fc9dfeae16e4572c0703	contradicts Arg1:T88cd459ec87c335b6e5d937154ac839d Arg2:Tcc0d7a6feed74fd82304f2c04eab9532
+Rf1eae1e8cffc625a8b1543ae36bc8f29	supports Arg1:Tcc0d7a6feed74fd82304f2c04eab9532 Arg2:T55f70ed6ad6e8bad24a849788a34a353
+R655ccaa70bfa5d9b58be6ff901e65e53	supports Arg1:T8cfbad5f277fa12ada1f5dd2e3e7d3f8 Arg2:T796bcb520aa1e067b197609ee999d153
+R699fe613423a7516c79cf8c57af069be	contradicts Arg1:T8cfbad5f277fa12ada1f5dd2e3e7d3f8 Arg2:Tdfc35bea89521bd47de21d0234f8bbf5
+R29883690f39a6653d9d70920710ad861	supports Arg1:T3de4b1ccb7ee96e930bbb2158b7e9841 Arg2:T0e16c9d0b3bd005b19541949fce97d48
+R98372115b0852b2e3ad33c36de5cc77d	supports Arg1:T70f6236179f10f5640f6e355add950e4 Arg2:T369df88159115dee94d2b774e36d2d63
+R272724bd43b3049cc1b413cf8c4e0ceb	supports Arg1:T3f4604d2980f67d457749aae1d01fa57 Arg2:T7ae1d3e179578873e9c710308a2ff886
+R09cbb629f2914d37b5155f30adaf39e2	supports Arg1:Tfd89f18978a02d9c19a71edcbd7daf49 Arg2:T655d2a32798c4cda973e75cd458693ea
+Rb36603a956c1b637d539830d687b45d2	supports Arg1:T655d2a32798c4cda973e75cd458693ea Arg2:Tdca5b6f9d0de938dc65e7e4fe41963c6
+R02e5d02ea06ab0d9456e3ed995283eb1	supports Arg1:T381a9d66ebf939220126a327e60fd70f Arg2:T599355f4b8462685c9adad0feee5b440
+Rb2b31110143ecc2ab3793b6c71105fb1	supports Arg1:T2a14f335f35f9f79ba7468705195f0c6 Arg2:T381a9d66ebf939220126a327e60fd70f
+R2ff2729c7eaf23f1864677bb1d9975ce	supports Arg1:Tf7fe919ce7d460551e5a6ae303a0e70f Arg2:T8c0d90e0df61361d50c0d61938164813
+R8d0a64a41037c48a041a1759a2c6fb97	supports Arg1:Tf7fe919ce7d460551e5a6ae303a0e70f Arg2:T1777d4d42d0f8e20e3c2c6e16c12d512
+Rdb246a534567f6b4bae4ac77aaacba58	supports Arg1:Te0044efb36176a7dd371d77c6c3dc0d5 Arg2:Tc5692dc5d05d1ca35ba19550d33d6844
+R58721dacf5e0cc3a948b877155c7e2b0	supports Arg1:Tc5692dc5d05d1ca35ba19550d33d6844 Arg2:T38200b1ce8efbf6e334ceef8c03adbc6
+R5747e20e810b8cccaf542ecf4848e0ac	parts_of_same Arg1:T38200b1ce8efbf6e334ceef8c03adbc6 Arg2:Td45147e1152bfb1d7cbb516690ccc282
+R096f843efedb8dd8a5c040821a8359d4	supports Arg1:T9d8cde8699480b7091cbb0b48d289b00 Arg2:T5fbe87602c73c7f05ca44ffb59971461

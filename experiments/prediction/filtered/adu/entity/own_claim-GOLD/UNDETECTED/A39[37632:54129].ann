@@ -1,0 +1,34 @@
+T887f8e1e8014005f76b01cc79fc0435c	own_claim-GOLD 616 723	might merge to form a single constraint on arbitrarily many particles, which would be expensive to maintain
+Te855fd51dcb763bc0bdc83a7e43a6fdc	own_claim-GOLD 873 899	and “position alteration,”
+T49ba0fbd6ab92a745a94d51ad1eb8363	own_claim-GOLD 1752 1900	An obvious and quite exact method for constraining a particle is to reduce the number of coordinates describing the particle’s position and velocity
+T0db961149ddc3a5b7ef6f111c5767028	own_claim-GOLD 2152 2245	we alter the size of the derivative matrices in equation (6), as well as the sparsity pattern
+T07d63eb989e8ae818540d955392ce5e0	own_claim-GOLD 2924 2995	We could constrain particles through the use of strong energy functions
+T95c1e6eabb0a23cdc2ebd69e71ccd932	own_claim-GOLD 3272 3338	found it to be a not unreasonable constraint enforcement mechanism
+T490e37e73bf054020dbb81979a918849	own_claim-GOLD 3684 3731	We could introduce additional constraint forces
+Td77642fe2cc2c3cb6cd4cb597c68da3c	own_claim-GOLD 3904 3923	and extra equations
+Td5572204120ca58e49f9bd0bc619a8b5	own_claim-GOLD 4125 4150	doubling the running time
+Td17738cd161c15bbc6e0bd889d7987a6	own_claim-GOLD 4155 4214	degrading the numerical conditionining of the linear system
+T6e7da2825075345e499eec0e09683c57	own_claim-GOLD 5268 5309	making it ignore all forces exerted on it
+Te92678cbee6f94d951f2070d7efc14f8	own_claim-GOLD 5311 5439	Complete control over a particle’s acceleration is thus taken care of by storing a value of zero for the particle’s inverse mass
+Tfa67c825efb872c3f5a7f16876bf1187	own_claim-GOLD 6341 6465	By allowing constrained particles to have these sorts of inverse masses, we can build constraints directly into equation (6)
+T451abc0b39bc31dc730a2fb9e697e0b6	own_claim-GOLD 7628 7668	unconstrained particle must have z i = 0
+Tb78369c75acfac44538b5481dc4febde	own_claim-GOLD 7725 7780	we rewrite equation (6) to directly enforce constraints
+T91b318152c15e70a549f10eebf0fcafb	own_claim-GOLD 8334 8423	we solved equation (14) using a direct method (Gaussian elimination) without any problems
+T3040a80b694f07b702410be8281cbb7d	own_claim-GOLD 8445 8553	we planned to use the iterative, sparsity-exploiting CG method, which immediately presents us with a problem
+Ted08ca79cee77ad4aa29dc4ea51461f2	own_claim-GOLD 9046 9131	We decided that using a CG method to solve the unsymmetric problem was not acceptable
+T8e33315b4ecf5484e3cd48941c7f6860	own_claim-GOLD 9164 9217	applying a CG method to equation (6) is not difficult
+Te138e8fe607cab75b35b6f664e99d22f	own_claim-GOLD 9847 10042	The solution to the problem of asymmetry is to modify the CG method so that it can operate on equation (15), while procedurally applying the constraints inherent in the matrix W at each iteration
+Tab7a46b2d4fa4dd18afd68635c7e1fb5	own_claim-GOLD 10496 10588	the component of r i in the particle’s unconstrained direction(s) will be made equal to zero
+T3fca83bb5acfd2722c7e99293048c9aa	own_claim-GOLD 10675 10758	the component of v i in the particle’s constrained direction(s) will be exactly z i
+Tbd982a4c6b7d04843703e71110bec051	own_claim-GOLD 11764 11871	the effect of the matrix W in equation (14) is to filter out velocity changes in the constrained directions
+T632f1de38a8ada9d76d6b4f62d9d733a	own_claim-GOLD 13253 13300	should not include error due to the constraints
+T4e0b304d9ca5adfb3f05926ce643fe4f	own_claim-GOLD 13563 13609	products involving P −1 are trivially computed
+Ta95518b49f42a59dc76c82a6769c9081	own_claim-GOLD 13664 13710	we doubt there is a large speedup to be gained
+Td85d4e965e8593fbd87fb992450b49ba	own_claim-GOLD 13871 13973	obvious questions are “does it work?” followed by “how does it compare with the unmodified CG method?”
+T86b46177d542d2e131d136afab957c23	own_claim-GOLD 14037 14098	our method always converges, which answers the first question
+Te25259f8a2d89fbaf992cd6c868d5268	own_claim-GOLD 14676 14695	contact constraints
+T38e9c88ccdcadaa63f453ce9cfd8e8e3	own_claim-GOLD 15559 15648	The particles’ accelerations are inherently dependent on one another through the matrix A
+T94c4e9e431c36d21d0916ea6432f8bf9	own_claim-GOLD 15683 15765	the correct approach to determing constraint release is combinatoric, as in Baraff
+T79bcc60288eec99a7cfa06f826736810	own_claim-GOLD 15773 15811	We reject this approach as impractical
+T4c52f3a96d41740b0990a9a3e9d10261	own_claim-GOLD 15847 15985	we allow contacts to release when the constraint force between a particle and a solid switches from a repulsive force to an attractive one
+T28d2a84f4d2d20d7cea5f6c4be70ce05	own_claim-GOLD 16000 16028	this has proven to work well

@@ -1,0 +1,43 @@
+T9ae3c2380a137c990612ee5e15394679	own_claim 362 400	then taking derivatives is impractical
+T80a429dcb06cc69a0d5231b316cab972	own_claim 517 542	to write E(x) = α E α (x)
+T22edb7e5f2e4b988a40806965ccc1a5e	own_claim 1655 1694	C gives rise to a sparse force vector f
+T344c4a5d81a63a19d778c2ce76ce2026	own_claim 1976 2010	the derivative of f is also sparse
+T367efca862efaf3ff651b5b016757f41	own_claim 2196 2229	an element K ij is a 3 × 3 matrix
+T80cbb3f199951cae69fc05e8312b6915	own_claim 2289 2360	K ij = ∂x ∂f i j = −k ∂C(x) ∂x i ∂C(x) ∂x j T + ∂ ∂x 2 C(x) i ∂x j C(x)
+T6048e2f729e996340d09e5d3be7f5369	own_claim 2437 2472	K ij = ∂f i /∂x j = ∂ 2 E/∂x i ∂x j
+Te156d1dca91995339958fbabf479481c	own_claim 2474 2495	we have K ij = K T ji
+Tdbb092ea0d6b91862a3bf20e3948be5a	own_claim 2499 2513	K is symmetric
+Tc07299e82df4e5a7b345307950bad4eb	own_claim 2555 2579	the matrix ∂f/∂v is zero
+T06b357208c834eec15dafbff070e9620	own_claim 2833 2926	every cloth particle has a changing position x i in world space, and a fixed plane coordinate
+T7e54969fedd57fe0e1f7aac5e0c496a6	own_claim 2953 3025	our cloth is modeled as a discrete set of points, grouped into triangles
+Tbc914df55e98be18cd687d6aedf25a94	own_claim 3171 3299	Stretch can be measured at any point in the cloth surface by examining the derivatives w u = ∂w/∂u and w v = ∂w/∂v at that point
+T7d38f4c43ec15943dfa8261e4ff1440a	own_claim 3301 3377	The magnitude of w u describes the stretch or compression in the u direction
+T5e604a80d2d9f9ddbf72809d2af4d9f9	own_claim 3379 3423	the material is unstretched wherever w u = 1
+Ta4d3f786d1054e40e9f9c78f4a15055a	own_claim 3768 3782	is quite small
+Ta95c6df74e3bd91249a5da7de70b2602	own_claim 3790 3892	partially negates the advantage implicit integration has in exploiting knowledge of the force gradient
+T50c5de10db553a4a1ded59d400da16f8	own_claim 3894 3925	A quadratic model for energy is
+T3b9657c1f1d631e34684e9a916da39bf	own_claim 3940 3955	a better choice
+Tefa9a25aca6cb912f626e789be7182aa	own_claim 4696 4734	x 1 and x 2 vary during the simulation
+Ta7aaaa4d297241ddf80a6fb08f9aedf3	own_claim 4739 4780	the matrix in the above equation does not
+T0703dde603857dd3f98575cb6a2881e4	own_claim 5108 5137	Usually, we set b u = b v = 1
+Teff4cc498f2d24105cc14b9caee43670	own_claim 5146 5170	we need not always do so
+T0d214b4bcb3ab9cb4cc8f1e7dfc1de0d	own_claim 5273 5387	we can increase b u , which causes w u to seek a larger value, and tends to induce wrinkles across the u direction
+Tf857d2f4c7b4016a75455161978f8e21	own_claim 5399 5488	we might decrease b v near the end of a sleeve, inducing a tight cuff, as on a sweatshirt
+Tf41f18e0aee7b2e0b716f54f2c00163f	own_claim 5661 5705	Cloth likewise resists shearing in the plane
+Tbf1cbe510fdd74b6a42baab6c3462974	own_claim 5819 5858	In its rest state, this product is zero
+Tdb26cdcbf5458d7b357fa73f2e77f440	own_claim 5972 6076	By the small angle approximation, the product w u T w v is a reasonable approximation to the shear angle
+T1ecec3e9825292a5623ab83214b0ed6a	own_claim 6696 6798	The assumption that the stretch energy will keep the cloth from stretching much allows us to treat n 1
+T1f402aa339e70df820ee00383a90f715	own_claim 6867 6944	the curvature represented by a particular angle θ between triangles increases
+T14d6e470b6d4ab795fb090beb6a64ec0	own_claim 7307 7371	This makes differentiating θ with respect to x a manageable task
+T14ba79c2428f62c2f5c1fb32bc53186f	own_claim 7948 8005	To the above forces we also add easily implemented forces
+T6c0bc28c67c8ff590d6f85f85062c931	own_claim 8197 8234	we add user-controlled “mouse” forces
+Ta7bc300c0db60add3a344f8256c746ae	own_claim 9480 9609	It is tempting to formulate a damping function for an energy function E(x) by measuring the velocity of the energy, E  ̇ = d E(x)
+Tfc418b6a1a1ee9d2360d5cc120fa9220	own_claim 10015 10082	the damping function should be defined not in terms of the energy E
+T99bd0dfaec00fae95b233df874d0941a	own_claim 11074 11118	∂d/∂x has the same sparsity pattern as ∂f/∂x
+T577ca1a5ecf621cf0c15de309f3fb1b9	own_claim 11379 11419	we cannot expect ∂d/∂x to be symmetrical
+Te2a93e5c0eb3bb08e24f77672f511dbb	own_claim 11439 11512	it is the term (∂C(x)/∂x i )(∂ C(x)/∂x  ̇ j ) T which breaks the symmetry
+T49d7a97e5c1444bec67352f8560b52d9	own_claim 11741 11770	Omitting all of equation (12)
+T065e89383c7b39afacc4e4faf5e66d65	own_claim 11781 11804	causes serious problems
+Td05f3134319e91ed97eb753ef85041c7	own_claim 11816 11858	equation (6) requires the derivative ∂d/∂v
+Tfbc46494c01ae97b7d40d885665a962b	own_claim 11892 11931	we have ∂ C(x)  ̇ ∂ ∂C(x) T ∂C(x) = v =
+Ta247a5a7efe9515e3b152e4e7e8ff18e	own_claim 11963 12051	we can write ∂v ∂d i j = −k d ∂C(x) ∂x i ∂ C(x) ∂v  ̇ j T = −k d ∂C(x) ∂x i ∂C(x) ∂x j T

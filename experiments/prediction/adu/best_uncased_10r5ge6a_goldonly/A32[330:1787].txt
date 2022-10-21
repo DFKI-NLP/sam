@@ -1,0 +1,31 @@
+<Title>Animating Wrinkles on Clothes</Title>
+      
+      
+        
+          Sunil Hadap Endre Bangerter Pascal Volino Nadia Magnenat-Thalmann MIRALab
+        
+        
+          CUI University of Geneva
+        
+        
+          Switzerland email: {sunil
+        
+        
+          endre
+        
+        
+          pascal
+        
+        
+          thalmann}@cui.unige.ch
+        
+      
+      <Abstract>This paper describes a method to simulate realistic wrinkles on clothes without fine mesh and large computational overheads. Cloth has very little in-plane deformations, as most of the deformations come from buckling. This can be looked at as area conservation property of cloth. The area conservation formulation of the method modulates the user defined wrinkle pattern, based on deformation of individual triangle. The methodology facilitates use of small in-plane deformation stiffnesses and a coarse mesh for the numerical simulation, this makes cloth simulation fast and robust. Moreover, the ability to design wrinkles (even on generalized deformable models) makes this method versatile for synthetic image generation. The method inspired from cloth wrinkling problem, being geometric in nature, can be extended to other wrinkling phenomena.
+	  </Abstract>
+  
+	CR Categories: I.3.7 [Computer Graphics]: Three-Dimensional Graphics and Realism—Animation; Keywords: cloth modeling, wrinkle modeling, deformable models.
+	
+	
+    
+      
+        

@@ -1,0 +1,4 @@
+Tc35389a41c731eabb2a4cc65d1e27f18	own_claim 7803 7857	the implicit Euler method seems stable for any K value
+T0d465cb78c0827a02682da6a60b28676	own_claim 7859 7874;7883 7966	its accuracy is very degraded by high K values and reduced numbers of Conjugate Gradient iterations
+Rb2b51fa2b29deb493dc96f04c2eb7435	contradicts-GOLD Arg1:Tc35389a41c731eabb2a4cc65d1e27f18 Arg2:T0d465cb78c0827a02682da6a60b28676
+Re6ba5acc00b1e1e50fec4be539a8f020	contradicts Arg1:Tc35389a41c731eabb2a4cc65d1e27f18 Arg2:T0d465cb78c0827a02682da6a60b28676

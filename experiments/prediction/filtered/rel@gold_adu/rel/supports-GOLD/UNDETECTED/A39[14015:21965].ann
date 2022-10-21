@@ -1,0 +1,15 @@
+Td79641e9fa8d9e935e333efe3157b0ec	own_claim 6765 6814	constrained to a fixed or moving surface or curve
+Tbfcee6845844015fc391ab1475ffa5d1	own_claim 6694 6760	Particles can thus be attached to a fixed or moving point in space
+T0457b9182f39c01fb90e8f591e5db9d6	own_claim 7871 7926	The implicit solver easily tolerates these stiff forces
+Ta9d2aeba7ac03afcef6e6b15fa651403	own_claim 4364 4455	Cloth/cloth contacts generate strong repulsive linear-spring forces between cloth particles
+T1135cc0f734206229c6cd85136000345	own_claim 4173 4244	The damping forces do not dissipate energy due to other modes of motion
+T22c2c8b0e366f3c2cdfbc1bd0db263ea	own_claim 7601 7670	we have chosen to deal with cloth/cloth contacts using penalty forces
+T21bc6aaf279fe406954b70101c0e70f6	own_claim 4246 4332	Additional forces include air-drag, gravity, and user-generated generated mouse-forces
+T277c9ad5228eb9c2b8f5a931df5981e3	own_claim 6577 6692	An individual particle’s position and velocity can be completely controlled in either one, two, or three dimensions
+T1b2471d91222996c688378b51aff129d	own_claim 4505 4609	the acceleration ẍ i of the ith particle is simply ẍ i = f i /m i , where m i is the ith particle’s mass
+Rbfb3d1ba77bac9cd9237461462bf56a9	supports-GOLD Arg1:T21bc6aaf279fe406954b70101c0e70f6 Arg2:T1b2471d91222996c688378b51aff129d
+R600f6ebc3dccbe3c49cd4df6cb5541d6	supports-GOLD Arg1:Ta9d2aeba7ac03afcef6e6b15fa651403 Arg2:T1b2471d91222996c688378b51aff129d
+R1c197dba1a274917c75187e0298ee939	supports-GOLD Arg1:T1135cc0f734206229c6cd85136000345 Arg2:T1b2471d91222996c688378b51aff129d
+R6422122286c48354507e6208d25b699c	supports-GOLD Arg1:T277c9ad5228eb9c2b8f5a931df5981e3 Arg2:Tbfcee6845844015fc391ab1475ffa5d1
+R75a15a7296b97bf800ea5e2667736416	supports-GOLD Arg1:T277c9ad5228eb9c2b8f5a931df5981e3 Arg2:Td79641e9fa8d9e935e333efe3157b0ec
+R0923c645089a14331977ea2e9e5df0ac	supports-GOLD Arg1:T22c2c8b0e366f3c2cdfbc1bd0db263ea Arg2:T0457b9182f39c01fb90e8f591e5db9d6

@@ -1,0 +1,30 @@
+Tdc997554a88ab20ee320f11fa2c3452a	own_claim 30 165	Our experiments focus on measuring the performance of enforcing inextensibility using CLM compared to strain limiting and stiff springs
+T97216f1f20c9faf6a94725957a0a1fad	own_claim 167 240	In addition to the direct benefit of fast projection on computation times
+Tf242f22faae6477e79149bade4e2c0a0	own_claim 242 307	further benefits can be reaped from the resulting inextensibility
+T96bcf0da19d6d54a617b1af290ccecc6	own_claim 322 333	the work of
+Tf2f7b6e30c123ac225a4a7c6c5f31c5b	data 335 348	Bergou et al.
+Tbb09ce8adfec77d9af69d55f0063fb44	data 350 354	2006
+Te1f10163fef24bdc8807e06db6163bcd	background_claim 356 422	assumes inextensibility in order to accelerate bending computation
+T2c7815312e2950c2139f490f828951e5	own_claim 424 520	In adopting the velocity-filtering viewpoint, we gain speed, simplicity, and software modularity
+Tcc2165edd05731e1ac53ac3b486a7104	own_claim 521 575	all key to a practical and maintainable implementation
+T0759d23dc8ef8e50f20e378c5c5ebd79	own_claim 586 618	this comes at a theoretical cost
+T2dff9a1e09d07dcc89db287f53f8b367	own_claim 620 732	there is no longer an efficient way to perfectly enforce both ideal inextensibility and ideal collision handling
+T2532b47c1b5e266495244dde234fa299	data 740 780	one filter must execute before the other
+Te3cbf43aa9bb69a15100526f58cb6143	own_claim 786 829	both ideals correspond to sharp constraints
+Tb913fea64046e6d6b102958c59b88bff	own_claim 831 902	To enforce both perfectly would require combining them in a single pass
+Td1e49f26c4beefee24bbdc4ced4501fa	own_claim 904 966	an elegant and exciting prospect from the standpoint of theory
+T84e6bfb99cf240978b91eb806ecab8e7	own_claim 972 1055	one which is likely to introduce considerable complexity and convergence challenges
+T92e77c8a6be98c589fceb7b5b68233b1	own_claim 1086 1142	this drawback does not cause artifacts in our simulation
+T0e528deaaa5deb340c64e60d010c3b83	own_claim 1172 1244	we execute collision-handling last, to avoid glaring collision artifacts
+Tb35e0c8722a7881f2f1e643abf947592	own_claim 1265 1306	empirically our strain remains negligible
+T4bcec84a87b4693e5a17e127b356d0d3	own_claim 1329 1369	unlike constraint-enforcement approaches
+T9ba1001e77a25ee7967c334a92b863ad	data 1380 1398	Witkin et al. 1990
+Te5817baaf21bbd013f9b230310f3b072	own_claim 1401 1563	the inextensibility filter does not assume that the constraint is maintained at the beginning of the timestep and errors are not accumulated during the simulation
+Tefefc8c14cc4315204ebbb65da80a790	background_claim 1598 1670	the most common fabrics do not visibly stretch when draped over the body
+T6976f60ada588b52ba2c6b7debdd613b	own_claim 1672 1759	the trend in our community is to favor stretching formulations based on penalty-springs
+T00b22e96ce3cd088d2cd22ac82cafda2	own_claim 1761 1837	The consequent numerical difficulties are then addressed by a combination of
+Tc2702a2b8cb95d2932fe7f6962261d8b	own_claim 1842 1881	relaxing realism by allowing 10% strain
+Teaa18d8c37d7917dbcb1bbf2989e55af	own_claim 1891 1986	adopting simple iterative strain and strain-rate algorithms that have poor convergence behavior
+Tbc223c6cd0667465cfc69798d06e36fb	own_claim 2065 2167	we demonstrate a straightforward filter, with good convergence behavior, for enforcing inextensibility
+Tcffdb938ff7c1f37877b5127f941df27	own_claim 2285 2344	it will spur a renaissance of activity along this direction
+

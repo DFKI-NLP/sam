@@ -1,0 +1,13 @@
+T63919b647660bbc6c154c19ca61e705e	data 1200 1233	Volino and Magnenat-Thalmann 2001
+T63f5987cf6bd6f4056aaf8bbb6132850	background_claim 771 796;804 864	adopted implicit-explicit formulations, which treat only a subset of forces implicitly
+T021c2925017d4da2607894b9261024bb	background_claim 1107 1138;1149 1197	In the quasiinextensible regime implicit methods encounter numerical limitations
+T05a83e46cfb2cbe0b7ace833e3dd61f3	background_claim 1270 1409	the condition number of the implicit system grows with the elastic material stiffness, forcing iterative solvers to perform many iterations
+Tcf47821a5b61a0f5c78fe236c30af870	data 1235 1248	Boxerman 2003
+T882f66d23edc88f3b0061b3f66e69e39	data 727 736;738 742	Eberhardt 2000
+T9ea49c3345ebe56515467fd44777eeb7	data 1250 1267	Hauth et al. 2003
+T7386bb66e9a6292a32a2d99e34fa1348	background_claim 1425 1448;1481 1545	timestepping algorithms introduce undesirable numerical damping when the system is stiff
+R46972631d05ea318569628304170550b	supports-GOLD Arg1:T882f66d23edc88f3b0061b3f66e69e39 Arg2:T63f5987cf6bd6f4056aaf8bbb6132850
+R00d79213a1f025b43a19b6d28daa8fc2	supports-GOLD Arg1:T7386bb66e9a6292a32a2d99e34fa1348 Arg2:T021c2925017d4da2607894b9261024bb
+R02bf34f2166b84b7c682448d88b12652	supports-GOLD Arg1:T9ea49c3345ebe56515467fd44777eeb7 Arg2:T05a83e46cfb2cbe0b7ace833e3dd61f3
+R46b183156b87d0282f7fac3bac747ee7	supports-GOLD Arg1:Tcf47821a5b61a0f5c78fe236c30af870 Arg2:T05a83e46cfb2cbe0b7ace833e3dd61f3
+R42e94d263817a90229f1df8d5ec887b1	supports-GOLD Arg1:T63919b647660bbc6c154c19ca61e705e Arg2:T05a83e46cfb2cbe0b7ace833e3dd61f3

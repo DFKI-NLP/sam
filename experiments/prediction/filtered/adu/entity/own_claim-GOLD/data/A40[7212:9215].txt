@@ -1,0 +1,21 @@
+<H1>AERODYNAMICS</H1>
+        To incorporate wind effects in a physically based animation we have to apply additional external forces in the dynamical model of the deformable objects. Hence, given a wind flow represented by a velocity field in the scene we calculate the forces which are exerted on the simulated objects. In this section, we briefly describe the model we use to compute the effective aerodynamic forces such as wind force and air resistance, mainly following 
+[SF92]. The wind force acting on objects in an air stream is decomposed into two components: the lift force F L and the drag force F D (see figure 1 ).
+        cloth wind direction u F L V rel q F D ^ n
+        
+          Figure 1:
+        
+        The decomposition of wind forces (side
+        view).
+        The direction of the drag force F D is diametral to the relative velocity v rel = v object − u, where v object is the object’s velocity and u is the velocity field of the wind. Note that in the case of a windless situation, i.e. u = 0, we still have air resistance for moving objects. Since two-dimensional objects do not exhibit an inside and outside, the unit normal n i of the i-th face of the object mesh (cf. figure 1 ) is replaced by
+        
+          3.1
+          n i = n − i n i if n i . · v i,rel &gt; 0 ,
+        
+        The drag force per face is then given by F i,D = 2 1 C D ρ|v i,rel | 2 A · ( n i · v i,rel ) · (− v i,rel ) ,
+        where C D is the specific air resistance coefficient, ρ the density of air, A is the area of the corresponding face, and v i,rel the unit relative velocity vector of the face. The direction of the lift force, which is perpendicular to v i,rel and lies in the plane spanned by v i,rel and n i , is given by u i = ( n i × v i,rel ) × v i,rel .
+        Then the lift force is calculated as F i,L = 1 2 C L ρ|v i,rel | 2 A cos θ · u i , where C L is the lift force coefficient, and θ is the angle between v i,rel and the actual face.
+        4.
+      
+      
+        

@@ -1,0 +1,6 @@
+T3de5efee12d6ff3178ed5cc64a87aa0e	own_claim-GOLD 4337 4514	and thus able to take into account the anisotropy and nonlinearities of the mechanical model as the actual Hessian matric is used for each current state of the mechanical system
+Td213612d9cc4e07bd426114da4401ae4	own_claim-GOLD 4516 4624	No initial matrix setup is required, suppressing also the need of separating linear and nonlinear components
+Tbcc2e78a83e1834d0d506cbafd24388b	own_claim-GOLD 4653 4801	We have also carried out some preliminary tests with the Rosenbrook method, which is an implicit implementation of a fourth-order Runge-Kutta method
+T95845bde1965679caff3a2e229d8c4df	own_claim-GOLD 4904 4963	We implemented this method using the algorithm described in
+Tfec54d8303289b475322acf9af06275a	own_claim-GOLD 5701 5801	We simulated such algorithm using accurate resolution on an accordingly approximated constant matrix
+T78799546272cbd0a37a11408482babcc	own_claim-GOLD 7202 7267	The implementation also supports collision detection and response

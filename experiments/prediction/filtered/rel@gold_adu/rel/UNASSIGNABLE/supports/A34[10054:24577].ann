@@ -1,0 +1,44 @@
+T4058dc4df7933c3a92c3c7598e08af20	own_claim 7712 7770	the other way is to handle them as simultaneous collisions
+T10f41448621339cd0c65df65664a484e	own_claim 10482 10483;10490 10497;10498 10503;10504 10507;10508 10511;10512 10513;10514 10515	v i + for eq. 1 1 i and N 2
+T1fde87e09862494b43789e61a80cc2e6	own_claim 7537 7608	we can think of two ways to solve this multiple cloth collision problem
+Ta4ceefcb229c09650637e4eb983c2726	own_claim 10789 10996	This happens when objects do not move fast enough to penetrate objects outside an IZ, but just fast enough to make the result of collision resolutions penetrate the proximity region of objects outside the IZ
+Tcca9116016280db32f0f91a29324c76f	data 637 639	10
+Te9ddf83ce8510776c970235c59d9186d	data 642 643	9
+T1935b0252a9aabeaba4a55b8c7f0b457	own_claim 11205 11249	in the worst case, this involves repetitious
+T31476ace08c8146c2ef87714db962a88	background_claim 742 818	they are not directly applicable for deformable N-body collision resolutions
+T9995374dcbdf0bf280e0dfed48e32493	own_claim 3318 3380	we cannot handle the particles in that CC as a bundle as usual
+T3fe1da1ac0221d48805e0b0594e96421	background_claim 698 736	several approaches have been suggested
+T5f78fce1458978ea8e995d6322709148	data 10705 10787	collision resolutions of an IZ create new collisions against objects around the IZ
+T28be9c70ea50ba7f73dccd00665cb165	background_claim 8358 8379	This whole process is
+T32c96ef89d98a1d1cb61c9fd7a2e9555	own_claim 3388 3449	the particles in that CC will stick together after resolution
+T8175400555b9bfd0a3b49bd9d0f20334	background_claim 8424 8582	we have to consider the possibility that the resolution of a collision can create new multiple collisions, which we have to employ another strategy to resolve
+Tae37d19e7953473da03b6544c338e55e	own_claim 10571 10621	we use swept-volumes of faces to detect collisions
+T72bdc5a44e75d4734e18a09899ea1dd1	own_claim 12065 12140;12150 12193;12195 12376	This inequality relationship, first used for rigid body multiple collisions appears to serve the graphical purpose well mize When the difference we solve this between system v i;j + of and inequalities, , C e v i;j , , which we want would to minirepresent the extra energy we introduce into the system
+T1b64cc4cb829f4d40b68d62e77107708	data 693 694	2
+T513ddbe9d6a76d5c9f9e9513a9737d18	background_claim 565 624;646 689	For rigid N-body collisions by graphics and robotics groups and for flexible-rigid collision resolution
+T08e59209a23efc6abcb4c0492c2dcb5f	data 633 634	1
+T37d1141d5e009bb60097f27a8d315960	own_claim 12385 12419;12448 12488	we define an objective function, X to be minimized when we solve the system
+T4aa9521366d5e9566bf685d63154276c	data 12144 12145	1
+Tc14782fbc7b1035f72c3e1bcd86f90b3	own_claim 11263 11339	we may introduce other new collisions when we resolve the current collisions
+T38f06de1d2456b1291d0776990c55bfc	data 628 630	11
+T43b54b71da92ba17b0a6e0d53a7e77fa	background_claim 8389 8414	computationally expensive
+T413c9c90442d870a502275a8520a2866	own_claim 10519 10564	we can deterministically find the solution of
+R6e1e9ae61d1b6f4752c201754a531ad5	supports Arg1:T38f06de1d2456b1291d0776990c55bfc Arg2:T513ddbe9d6a76d5c9f9e9513a9737d18
+Ra9687c9da50ef055b8bf9ccbac5c5fd0	supports Arg1:T08e59209a23efc6abcb4c0492c2dcb5f Arg2:T513ddbe9d6a76d5c9f9e9513a9737d18
+R9a7207ce42e1e754350902aeb164798a	supports Arg1:Tcca9116016280db32f0f91a29324c76f Arg2:T513ddbe9d6a76d5c9f9e9513a9737d18
+Rde2f7c41eb68186044e96798aec6f69c	supports Arg1:Te9ddf83ce8510776c970235c59d9186d Arg2:T513ddbe9d6a76d5c9f9e9513a9737d18
+R4e6ec5f7fb5a2660d752ac2b76645ab9	supports Arg1:T1b64cc4cb829f4d40b68d62e77107708 Arg2:T513ddbe9d6a76d5c9f9e9513a9737d18
+Rab5a84b408f97a6f70c5ea1b72210eaa	supports Arg1:T513ddbe9d6a76d5c9f9e9513a9737d18 Arg2:T3fe1da1ac0221d48805e0b0594e96421
+Re2847603b934855f1361b88c56399146	supports Arg1:T43b54b71da92ba17b0a6e0d53a7e77fa Arg2:T28be9c70ea50ba7f73dccd00665cb165
+R07160c6adf6aec60e434ccf10ad4bb3a	supports Arg1:T10f41448621339cd0c65df65664a484e Arg2:T413c9c90442d870a502275a8520a2866
+R03d70f04442d3768ca369c57810d6b15	supports Arg1:T1935b0252a9aabeaba4a55b8c7f0b457 Arg2:Tc14782fbc7b1035f72c3e1bcd86f90b3
+Rc91073b40523dbef2bf459ce77151641	supports Arg1:T4aa9521366d5e9566bf685d63154276c Arg2:T72bdc5a44e75d4734e18a09899ea1dd1
+R4b77dcd2fad3f3f39ad3059676bb829b	supports Arg1:T72bdc5a44e75d4734e18a09899ea1dd1 Arg2:T37d1141d5e009bb60097f27a8d315960
+R78240eea5797ee5b2338160f21786f2d	supports Arg1:T1b64cc4cb829f4d40b68d62e77107708 Arg2:T3fe1da1ac0221d48805e0b0594e96421
+R3f16bf52b7e6be62c115c2eafb71e35c	supports Arg1:T1b64cc4cb829f4d40b68d62e77107708 Arg2:T31476ace08c8146c2ef87714db962a88
+R3bb88909d3460c893f520805be56ca01	supports Arg1:T9995374dcbdf0bf280e0dfed48e32493 Arg2:T32c96ef89d98a1d1cb61c9fd7a2e9555
+Re91b5d3d39f7f5410c4f60e4d4376a3f	supports Arg1:T4058dc4df7933c3a92c3c7598e08af20 Arg2:T1fde87e09862494b43789e61a80cc2e6
+Rea7b01a7874365998a763f09752af97e	supports Arg1:T43b54b71da92ba17b0a6e0d53a7e77fa Arg2:T8175400555b9bfd0a3b49bd9d0f20334
+Rc531120f333344ea569fabab47083b8b	supports Arg1:T10f41448621339cd0c65df65664a484e Arg2:T10f41448621339cd0c65df65664a484e
+Rb2a82fe83b7536896f32e95d764d7e9c	supports Arg1:Tae37d19e7953473da03b6544c338e55e Arg2:T413c9c90442d870a502275a8520a2866
+Rbf40305e51661ea70c2e027cba2329d0	supports Arg1:T5f78fce1458978ea8e995d6322709148 Arg2:Ta4ceefcb229c09650637e4eb983c2726

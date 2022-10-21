@@ -1,0 +1,49 @@
+T403d7638a47828f4e428084c037c65a8	own_claim 63 123	occlusion inevitably creates holes in the reconstructed mesh
+Tffc7417efc000a0b24ca999d4f09a3cf	data 126 134	figure 8
+Ta7dd3fac49fa1c7166a4780dc4a9781e	background_claim 138 188	One would like to fill these holes with real cloth
+T8cc2b9af373355a1e686ea4aed11b52d	own_claim 190 262	One of our major contributions is a data driven approach to hole filling
+T2e7486ce48a0acba0cec2ea6aa3681c2	own_claim 264 320	we fill holes with previously observed sections of cloth
+Tbf501ba5f63c3b1795e9e02fe869a169	own_claim 322 343	Our work differs from
+Te85884c61488fe7c2c8364df543d6ea7	data 346 366	Anguelov et al. 2005
+T782150a9c1d7fe04f87a1907c406971c	own_claim 376 453	our hole filling procedure does not assume a skeleton that drives the surface
+T8a6d2b9de238545497aa81b9748670d5	own_claim 458 514	our procedure estimates a single coefficient per example
+T81a39a20aec8554c34e391d9a4dfabff	own_claim 516 572	This hole filling procedure has a number of requirements
+Teca7968a2a646cc04332454b08415e59	own_claim 574 650	the missing section needs to be replaced by a section with the same topology
+T8453a8b5554910ecfbab99f247ae3086	own_claim 652 739	the new section needs to obey a number of point constraints around the edge of the hole
+Te7a5ebd573611f7495fb873d36cc43d5	own_claim 745 799	the splicing method should respect properties of cloth
+T5bf2ddb3d015b63d90bd844fe5ca862b	own_claim 1132 1173	This procedure has a number of advantages
+Tf36bb43fc86b8759389b638d4c163112	background_claim 1182 1241	deformation gradients naturally yield cloth like properties
+T1a34b9f53a14779ebf8bf5dc1895f5ff	own_claim 1339 1458	By penalizing elements that deviate in this matrix, we have a fairly direct penalty on large changes in scale or strain
+Tf42ec43056954a9e1af5cd7b1093fcbb	background_claim 1473 1515	methods based on the Laplacian of the mesh
+T7755c7766b1a6d3ac389a0a1b8c6bbdb	data 1519 1538	Sorkine et al. 2004
+Tc303d34e7a21566ba866254bea611f5c	background_claim 1542 1633	do little to penalize these strains and can show many artifacts around the edge of the mesh
+T9b95ae4c6006d1d54385129efaa67e41	own_claim 1643 1788	deformation gradients can be converted into vertex locations by inverting a linear system, allowing us to specify vertex locations as constraints
+T68cbdd4ffb869d9e6e4e5576662fc845	background_claim 1790 1797	Methods
+T9c63aff8cf31bf8110e2f809b46336d9	data 1807 1825	Lipman et al. 2005
+Tffa1c774f732af9e17c2d1146c607bc2	background_claim 1828 1858	don’t allow vertex constraints
+Tc686d0882ff6c145988deb63c93c7aad	data 3188 3206	Sumner et al. 2005
+T31873d5cc9882d8dede7045d26ff6ff6	background_claim 3237 3357	MeshIK works by choosing a combination of deformation gradients from the examples and then solving for the missing point
+T67da99b98d3d3e9979b235fc114511b2	background_claim 3462 3548	The most restrictive aspect of MeshIK is that it requires example meshes without holes
+T33c2fbcbdd817850dceda01e7ea8c2c9	background_claim 3563 3605	we never observe complete ex- ample meshes
+Tea76bb9087a68a51145d10423cff9ef9	data 3608 3643	each mesh is missing some triangles
+T2d62a1c5e4b4d0abd093d2a1df280b14	own_claim 3708 3756	we create complete meshes in an iterative method
+Ta0cfb680440aab67d26f97dbe8dfbc47	own_claim 3917 3939	this gets the job done
+Tc076ddb407dd569712bb102f677379ee	own_claim 3945 3957	works poorly
+T294d30f3362fc1b88521addaa6333377	own_claim 4445 4555	The advantage of this apporach is that the example poses are chosen to capture the relevant degrees of freedom
+Te9de879f2c57b7f9ab8cfcd39562ee08	own_claim 4558 4581	yielding better results
+T5f8f671a961695f2e767fde57a002dd9	data 4587 4610	the cloth toss sequence
+Teeb48a193db7585bc2b4dfe0112a859b	own_claim 4612 4641	we chose the simpler approach
+T20ad424b8719912644e58218fbdf4ae5	data 4643 4681	iteratively refine the entire sequence
+Tb6b99c4b3b374cd0e6e7da7e7b57f2bd	own_claim 4772 4817	We introduce flexibility preserving smoothing
+Td9ced4cc78c189b4a7977c682c9e97a5	own_claim 4820 4861	a method similar to anisotropic diffusion
+T522d9b976c646f8d0c155eb70b87e24c	data 4864 4885	Perona and Malik 1990
+T548401d80bbbe1de86ae88e3f8f23b1a	own_claim 4961 5000	Typical temporal smoothing is dangerous
+T3f6ec17836afc21bc935f30c15d7f3c3	background_claim 5009 5097	fast non-rigid movements can easily become physically implausible when blurred over time
+T448839da919dded6806c161e6da6d7f5	data 5116 5163	fast non-rigid regions of the cloth are complex
+Tc8c07f8ca67c6e0ae5bb5313d229a635	own_claim 5165 5216	small temporal errors are often difficult to notice
+T6bfe185f8b035f237d6f0d05d7d1fc11	own_claim 5231 5315	small errors in regions of the cloth that move rigidly are typically easy to observe
+Ta193e31af320b914860aa3a105577624	own_claim 5329 5368	we use flexibility preserving smoothing
+T87604802fc4a5c6603b6c2fb9e795999	own_claim 5370 5447	a procedure that smoothes rigid movement more heavily than non-rigid movement
+Teccc29d0669efe581ccb222ee303c667	own_claim 5743 5841	Large variations in location indicate non-rigid movement and consequently receive little smoothing
+Tb952b6dcd482ad4bb51ac41cfab49b09	own_claim 5843 5930	Smaller variations indicates rigid movement and benefit from more substantial smoothing
+

@@ -1,0 +1,3 @@
+T034da55d0cd7d624f285eebb287b0d0b	background_claim 1038 1057;1068 1140	Using these methods we cannot achieve visually satisfying dynamics of cloth-cloth collisions
+T192a9358f9e7ea511c5e58ce55f1bdc9	background_claim 854 961;981 1036	Cloth resolution methods so far compute non-penetrating positions, velocities or accelerations of particles which work fine for the collisions against fixed bodies
+Rbcc3e957dba10b8bdb2b07c7677e9e9b	contradicts-GOLD Arg1:T192a9358f9e7ea511c5e58ce55f1bdc9 Arg2:T034da55d0cd7d624f285eebb287b0d0b

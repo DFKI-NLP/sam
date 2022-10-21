@@ -1,0 +1,11 @@
+T70bb854307b2cdfd499e4ef370b7e58f	own_claim-GOLD 828 1009	we define internal behavior by formulating a vector condition C(x) which we want to be zero, and then defining the associated energy as k C(x) T C(x) where k is a stiffness constant
+T312af3f96fcd403f7c1d2c2e27e2ebac	own_claim-GOLD 2581 2684	We can now easily describe the internal forces acting on the cloth, by just writing condition functions
+Td90f4f1d3fb8ca473e2c32fcfc2983c2	own_claim-GOLD 2686 2733	Forces and their derivatives are easily derived
+T0d7b02aad261f8e1e72ed5ee10961dd8	own_claim-GOLD 7790 7868	The stiffness weighting for this edge should simply be k u ( u) 2 + k v ( v) 2
+T83f72703590e46222ec8f13585089882	own_claim-GOLD 9370 9478	we describe a general treatment for damping that is independent of the specific energy function being damped
+T2b70d475addc5528d5fabbd832287fe4	own_claim-GOLD 10158 10262	The force f arising from the energy acts only in the direction ∂C(x)/∂x, and so should the damping force
+T18410b24015f8abc013fbc116a14f870	own_claim-GOLD 10498 10561	the damping force d associated with a condition C have the form
+T92e390512610b6c8dd950d7c7a7c8982	own_claim-GOLD 10644 10696	This neatly parallels the fact that f = −k s ∂x C(x)
+T47f4b08f2bdf58b662933dd0cb9ec8c5	own_claim-GOLD 10930 10998	we can now add accompanying damping forces by applying equation (11)
+T08b459f9e7dc70329702f97672b636e9	own_claim-GOLD 11151 11160	we obtain
+T29cf34510aedd64e9c1f0e02725afdaf	own_claim-GOLD 11934 11945	∂v ∂v ∂x ∂x

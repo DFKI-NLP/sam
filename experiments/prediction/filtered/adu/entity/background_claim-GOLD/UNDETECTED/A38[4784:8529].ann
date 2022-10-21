@@ -1,0 +1,14 @@
+Tce973e5fb86259fe049a2be0205fca8c	background_claim-GOLD 33 141	Cloth modeling has a long history, dating back to work in the textile community from the mid-1930s by Peirce
+Tc608df9e0f9a24d92cd7b41dfcac03c8	background_claim-GOLD 148 275	Work on cloth modeling in computer graphics has focused on developing dynamic simulation techniques that are both realistic and
+Tc0303b2fa08052bb1d2d4b0d2e28f847	background_claim-GOLD 282 377	Baraff and Witkin describe a cloth model that uses stiff springs with implicit time integration
+Te368df2ca976eae8a4e86ea835f5ad69	background_claim-GOLD 383 473	This model was subsequently adapted to reduce the over-damping due to implicit integration
+Tc226278540dd638413d227517db641eb	background_claim-GOLD 627 738	Choi and Ko introduced a bending energy model that more accurately captures the fine creases and bends of cloth
+T735c4708d812c21cfd75f7606ca1df96	background_claim-GOLD 743 864	Lahey provides a comprehensive overview of cloth hysteresis models from the perspective of computational fabric mechanics
+T2455ac682fd7bc644c3cec31abc8dee3	background_claim-GOLD 1019 1057	or by preemptively avoiding collisions
+Tc429b0a9690ad249244861d7871a61e7	background_claim-GOLD 1601 1644	An important exception is the work by Breen
+Tcf8d3df1a655a809e9a52134e57b0ce4	background_claim-GOLD 2443 2591	Jojic and Huang fit parameters of a particlebased cloth model to fit a range scan of real cloth in a static rest configuration, draped over a sphere
+T98a1d61628bae1035cd89e504df98209	background_claim-GOLD 2807 2880	Jojic and Huang did not treat the problem of measuring dynamic parameters
+T0550113c2bdc895bda0b1063e406b8cd	background_claim-GOLD 2884 2943	demonstrate accurate results across a range of fabric types
+Teca7107946df3d32e730743f155feb99	background_claim-GOLD 3404 3553	Rather than computing shape at every time instant independent from the next, it can be advantageous to integrate images over time to improve accuracy
+Td589e5f9e3ecf3a8508768cf35f96bf1	background_claim-GOLD 3556 3632	Two examples of promising work along these lines are Carceroni and Kutulakos
+T8ff76d712a08b2e5834b340599661e06	background_claim-GOLD 3636 3656	and Torresani et al.

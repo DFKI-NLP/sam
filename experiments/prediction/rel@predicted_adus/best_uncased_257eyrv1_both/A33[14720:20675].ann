@@ -1,0 +1,62 @@
+Ta6df77a2ab220674f04affb0ddabc4ab	own_claim 31 124	The goal of our acquisition pipeline is to compute correspondence using minimal neighborhoods
+Tcc6f6e3e2f2512208a3e3d3efbc59594	own_claim 473 537	This iterative approach allows us to match without neighborhoods
+Td722714e54ed97a5fe721ed17577971b	own_claim 539 584	This is better than label propagation methods
+T5d932925446733d6a714bf34d2bccddb	background_claim 604 623	propagation methods
+T1f12589c4dbdea15e1862e571f5cef02	data 625 643	Guskov et al. 2003
+T3c6b889025354da69fe50db8b3535a53	data 645 663	Scholz et al. 2005
+T307171ee193886dc0c4928c462918bd0	own_claim 1152 1218	the number of recovered bits must stay above the marker complexity
+T7e4a886ffe976ca1f604e2066ca4fe6a	own_claim 1246 1345	We are able to obtain significantly more information per unit cloth surface area than previous work
+Tf644add0e03c348c3b21fe3f128e7f2f	data 1438 1446	Liu 2006
+Tbc079ce14a6193054e81d38537acf112	own_claim 1448 1526	require large sections of unoccluded cloth and must stop at occluding contours
+T9cbc21c5d5d530a0ab84f1c7e0fdb42e	data 1540 1548	figure 5
+T9fbd50438fd0bc3ade9da717f4579495	own_claim 1551 1609	occluding contours are both common and difficult to detect
+Tde0b49db007a6141a509916fea87367f	own_claim 1624 1675	our iterative approach relies on strain constraints
+Tf8277b7cccc588320d34adc6a481cc89	own_claim 1813 1884	Both of these computations are easier than detecting occluding contours
+T8ff75a6f29e19b374a4b53543a33df56	data 2733 2741	figure 6
+Tbccc3d19dac0121c0fe73128d183b0c0	own_claim 2753 2807	we can set N = 3 at the start and continue until N = 0
+T23659b0f04fe82870124be248e0b81f0	data 2817 2860	the identity of the marker is overspecified
+Tb27058bbc96fa59f2d4f8a68a43c4e14	own_claim 2862 2884	there are few mistakes
+Tb1f09f9cc377c80a5cdd9e0347b8bf87	own_claim 2886 2987	This approach works from flat regions in the first iteration to foldy regions in the later iterations
+Taacb154dbb01c92618b3bc3cd5a61b4d	own_claim 3013 3055	we require three neighbors to make a match
+T5a06c83c5e27a3c317863f5e063c691c	own_claim 3057 3166	In heavily folded regions, often neighboring markers on the image do not neighbor on the surface of the cloth
+T7566fda7cb6a74579a06cfb783f82135	own_claim 3177 3213	these regions are not going to match
+T6e1a6c78118482d73babe537cfeb69e6	own_claim 3279 3297	Occluding contours
+Tc4d32452769807ee54bbc91c78aaf760	own_claim 3343 3383	no longer disrupt the matching procedure
+T992e02745103b03130567c29363571d8	own_claim 3404 3447	Markers that are observed in multiple views
+T63815c19ce857a4805a3c461f2244087	own_claim 3461 3507	are reconstructed in 3D using textbook methods
+T7f5f481f1167e57e1cfbac132a9325cf	data 3510 3536	Hartley and Zisserman 2000
+T8bd780457fb267c0b8ad4008eba79430	own_claim 3822 3929	The first discards reconstructed points that cause physically unrealistic strain on the surface of the mesh
+Td21703e3422576c59c1f15dcb4068c3a	own_claim 3934 3985	the second constrains our search for correspondence
+T74574caefc6c4b1d1dc7a364c904e922	own_claim 3987 4029	Our strain constraint is based on the work
+T51cd25d40d986dc20645594671e11693	data 4035 4046	Provot 1995
+T6609461d41f61b5b6568b4a432b18fb3	own_claim 4064 4111	strain in cloth does not exceed 20% in practice
+T2f2a3c7b790e90c2ed466517b65527a1	own_claim 4113 4155	Relaxing the constraint to distances in 3D
+T7ebea4ef029a215530b06b81ef54fb29	own_claim 4215 4268	we can use strain to exclude possible correspondences
+T99a2702eea576d60aea7dfe4d6f2018c	own_claim 4270 4330	Strain naturally fits in to our information theory framework
+Tf148384045d25a34fb3e23afbc6823b8	data 4335 4388	strain excludes 87.5% of the possible correspondences
+T1b4b7dc889286404f18535c4efde43d8	own_claim 4395 4418	strain has added 3 bits
+T92f20860e1bc3917edfb4d390214a430	data 4428 4450	log 2 (1 − 0.875) = −3
+T4dce4853c0017f1e42363416379bd71a	data 4484 4492	figure 7
+R1a7d3e4f5a24f3952f9dc508759c39e8	supports Arg1:T1f12589c4dbdea15e1862e571f5cef02 Arg2:T5d932925446733d6a714bf34d2bccddb
+R59859f89c778425f2e13668cd24c0ec3	supports Arg1:T3c6b889025354da69fe50db8b3535a53 Arg2:T5d932925446733d6a714bf34d2bccddb
+Rbb7e1ad34eb607a26412d143c133ed85	supports Arg1:Tf644add0e03c348c3b21fe3f128e7f2f Arg2:T7e4a886ffe976ca1f604e2066ca4fe6a
+R37af35af8c19f13b5fb7329f823c9c9f	parts_of_same Arg1:T7e4a886ffe976ca1f604e2066ca4fe6a Arg2:Tbc079ce14a6193054e81d38537acf112
+R5404cd3eff3bef7ee6fbd700aabb36a4	supports Arg1:Tf644add0e03c348c3b21fe3f128e7f2f Arg2:Tbc079ce14a6193054e81d38537acf112
+Rf484e4e975d64f0c4f8914e2e8c75c89	supports Arg1:T9cbc21c5d5d530a0ab84f1c7e0fdb42e Arg2:T9fbd50438fd0bc3ade9da717f4579495
+Re603ff635eb45d4878fdee2ffa4dabdf	contradicts Arg1:T9fbd50438fd0bc3ade9da717f4579495 Arg2:Tde0b49db007a6141a509916fea87367f
+Rcc780a41d48031ff13ce65805a5042e8	supports Arg1:T8ff75a6f29e19b374a4b53543a33df56 Arg2:Tbccc3d19dac0121c0fe73128d183b0c0
+R95cc3fd40b3c9528e66e2349d5fb9044	supports Arg1:T23659b0f04fe82870124be248e0b81f0 Arg2:Tb27058bbc96fa59f2d4f8a68a43c4e14
+R2ddc62a0a7a61bc3233829d1acb3bea5	supports Arg1:T5a06c83c5e27a3c317863f5e063c691c Arg2:T7566fda7cb6a74579a06cfb783f82135
+Rc6f5600526c3cc4542f0e3e3d18a9d66	parts_of_same Arg1:T6e1a6c78118482d73babe537cfeb69e6 Arg2:Tc4d32452769807ee54bbc91c78aaf760
+R6e6b1c23ea0ed8ae532ec0888eb8c95f	parts_of_same Arg1:T992e02745103b03130567c29363571d8 Arg2:T63815c19ce857a4805a3c461f2244087
+R9ad16cb3acfdb315ed91890e93bd1e83	supports Arg1:T7f5f481f1167e57e1cfbac132a9325cf Arg2:T63815c19ce857a4805a3c461f2244087
+R39d5b79ca91e9c2234b44da6ba4207b6	supports Arg1:T51cd25d40d986dc20645594671e11693 Arg2:T74574caefc6c4b1d1dc7a364c904e922
+Rb96b1d461fab58c56db1483e1ba98742	supports Arg1:T74574caefc6c4b1d1dc7a364c904e922 Arg2:T6609461d41f61b5b6568b4a432b18fb3
+R977d6828791ac5b3c194e5cc52e1476c	supports Arg1:T51cd25d40d986dc20645594671e11693 Arg2:T6609461d41f61b5b6568b4a432b18fb3
+Rd9d1961394ded40b903bdc390534e9e7	supports Arg1:T2f2a3c7b790e90c2ed466517b65527a1 Arg2:T7ebea4ef029a215530b06b81ef54fb29
+Ref147e3234add0abc6faa0639945c8ed	supports Arg1:T1b4b7dc889286404f18535c4efde43d8 Arg2:T99a2702eea576d60aea7dfe4d6f2018c
+R427f54ec44dd6b03fa60495ef2258c0a	supports Arg1:T4dce4853c0017f1e42363416379bd71a Arg2:T99a2702eea576d60aea7dfe4d6f2018c
+Rc35807edf6396af423b5df9e1620eb49	supports Arg1:Tf148384045d25a34fb3e23afbc6823b8 Arg2:T99a2702eea576d60aea7dfe4d6f2018c
+Rcb1f666c8d95d2d3dc659014f0fb152f	supports Arg1:Tf148384045d25a34fb3e23afbc6823b8 Arg2:T1b4b7dc889286404f18535c4efde43d8
+Re45a889162cd43edb8a209650168d634	supports Arg1:T92f20860e1bc3917edfb4d390214a430 Arg2:T1b4b7dc889286404f18535c4efde43d8
+Reefe8959842be6c8385927eb409db63c	supports Arg1:T4dce4853c0017f1e42363416379bd71a Arg2:T1b4b7dc889286404f18535c4efde43d8

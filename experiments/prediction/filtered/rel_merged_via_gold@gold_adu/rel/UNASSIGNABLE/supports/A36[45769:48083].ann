@@ -1,0 +1,12 @@
+T57d755b318907733c2272db62aba19d8	own_claim 1358 1409;1522 1536	There are many paths for future work in measurement and in fitting
+T40bf1907d86868ecc6f0f8e848af1044	own_claim 246 307	Our system is different from standard textile testing systems
+T712a3795664873da3d9da1ea59db1550	own_claim 1491 1520	capture of dynamic properties
+T89dbcdb3bced5114c63dc932b278f76f	own_claim 1421 1462	more complete exploration of strain space
+Td1ae087ac62279f899f8b0405c7b5a16	background_claim 1206 1246	all widely used cloth models are elastic
+Ta98abcb0e31d964a4deeac84e76c0876	own_claim 1166 1205	The most obvious of these is hysteresis
+T6431754e25b433fcec6e272d65c102d7	own_claim 1544 1673	new ways of evaluating fitting error are needed that can work when the cloth’s equilibrium state is unstable or non-deterministic
+T3df40a488b29400b731a06218727023b	own_claim 359 410	it is different from previous cloth capture systems
+R5ad8d23ed4a567c74ee69e25d90aac50	supports Arg1:T57d755b318907733c2272db62aba19d8 Arg2:T6431754e25b433fcec6e272d65c102d7
+R6c67fa9677a9fa4ec1a6a53e6914376c	supports Arg1:T3df40a488b29400b731a06218727023b Arg2:T40bf1907d86868ecc6f0f8e848af1044
+R639e85b99df20a22fd4a842cac6846ee	supports Arg1:Td1ae087ac62279f899f8b0405c7b5a16 Arg2:Ta98abcb0e31d964a4deeac84e76c0876
+R339fdd746a3f1da3b5575c4a80417148	supports Arg1:T712a3795664873da3d9da1ea59db1550 Arg2:T89dbcdb3bced5114c63dc932b278f76f

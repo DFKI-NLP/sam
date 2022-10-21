@@ -1,0 +1,6 @@
+<H1>4 Results</H1>
+         Fig. 5 shows cloth-rigid and cloth-cloth collisions, where no friction was assumed between the rod and the cloth. Fig. 6 shows various kinds of collisions; cloth-rigid(fixed), cloth-rigid(moving), and cloth-cloth. All our simulations were done on SGI Octane with R10000 CPU and R10010 FPU. For numerical integration, we used the CG method proposed by Baraff 
+[ 3 ]. Details of simulations are noted in Tab. 1. Notably t in Fig. 6 (above) is 5 times bigger than that of Fig. 6 (below). This mainly comes from the fact that the fabric in Fig. 6 (below) is stiffer than the one in Fig. 6 (above).
+      
+      
+        

@@ -1,0 +1,5 @@
+<H1>CONCLUSIONS</H1>
+        We presented two models for including advanced wind effects into cloth simulation systems. The first concentrates on physically accurate computations using a semi-Lagrangian approach to solve the Navier-Stokes equations, the second model incorporates a particle tracing method for global wind fields. As illustrated in the previous section both methods produce realistic looking results which are capable of enhancing the realism of computer animations. While the first model has a wider range of applications, the second one provides an easy method which still delivers realistic effects such as air resistance and lee. All methods described in this work should be easy to extend to three-dimensional deformable objects. All the methods apply the same except for simple changes. Since three-dimensional objects define an inner and outer part, the adaption of the face normals in equation (3.1) is not necessary. Moreover, in the wind field computation care has to be taken that no wind field is present in the object. Here, the same method as described for rigid objects (section 4.2.2) can be applied.
+        7.
+        
+          

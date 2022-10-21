@@ -1,0 +1,14 @@
+T6a4d98da8b4d768f1e6a8428a2f75e4b	own_claim-GOLD 332 374	We use the automated calibration technique
+T84c92ec56d680fd4f96d96aa7bb533ed	own_claim-GOLD 639 671	fewer lights degrade performance
+T6421d8c8e4b78e880983ebc39e047d1f	own_claim-GOLD 697 728	dim lighting causes motion blur
+T6668f856eecc23f3063eb8775d4e79e4	own_claim-GOLD 856 931	acquisition takes roughly 6 minutes and mesh processing 2 minutes per frame
+T39851426b362be36231415d8e85da493	own_claim-GOLD 1084 1166	Our capture results are best evaluated by looking at our video and figures 1,12,13
+Te3953ad633741e15d7b4db3a13d874ca	own_claim-GOLD 1222 1309	it is also necessary to evaluate on several numerical criteria for each capture session
+T38ede82e9405b1278696dbd4858b13fb	own_claim-GOLD 1789 1846	the camera images were not output in a linear color space
+Ta9ee2c879db7cec9fee6ffc9e040ca52	own_claim-GOLD 1848 1881	reducing the number of color bits
+T3aaf60ff4739668e71c727477110e317	own_claim-GOLD 1896 1947	we terminated the correspondence algorithm at N = 2
+T632afc9d2b2c4ba88a28980b6d8c9147	own_claim-GOLD 2101 2140	there were 979 3D markers per megapixel
+T32d50f5d8e4ed1087668f27259f618b8	own_claim-GOLD 2813 2850	We use a small set of captured frames
+T9b56ec1ee8d6c42652d93ad1b426da24	own_claim-GOLD 2891 2960	in combination with MeshIK to skin skeletal human motion capture data
+T8b15909044b67b6581fc677806413f40	own_claim-GOLD 3825 3859	each basis pose must be an extreme
+T1110bd49f9ad9f9f5b5affc27d9689ce	own_claim-GOLD 4314 4403	MeshIK is most useful when a basis is carefully chosen to prevent extrapolation artifacts

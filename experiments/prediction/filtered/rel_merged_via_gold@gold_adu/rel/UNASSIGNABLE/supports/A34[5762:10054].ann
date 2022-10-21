@@ -1,0 +1,16 @@
+T276e2142af45668ed2cf019e02f82d93	own_claim 1458 1520	these individual responses may introduce another new collision
+Ta5607784d03d6fb11a41e6bb1b54949b	background_claim 600 636	this case is not an actual collision
+Td2a4aaed406dbdb0fbac322404d9e265	own_claim 1524 1584	one face may possibly be related to several other collisions
+Te28d24264ba398c89f97502dde773ecf	data 3843 3882	the integration time step is very small
+T91e8822cdb96632ef47399555d731eec	data 3981 3982	7
+Tfd781420ebed9692de416f5149848a16	own_claim 691 737	we resort to the collision report of this case
+T636b4a34dada9f80c0d5a787a3a41a91	own_claim 1589 1640;1680 1716	we save all detected collisions in a data structure during the collision detection phase
+Ta67636bf041dfd2d7c5c344f16d2f253	background_claim 638 683	it happens only when two faces are very close
+T5d56c81d45004a74ec502c1d0804b80e	background_claim 3942 3970;3985 3999;4006 4009;4013 4018;4025 4036	implicit integration methods have been used for cloth simulations
+Tabaf392eb194b88492e7cf6b98f87193	own_claim 3887 3926	we rarely have those pass-through cases
+R50a99dc543a33440c122f6bbe29cbad6	supports Arg1:Ta5607784d03d6fb11a41e6bb1b54949b Arg2:Tfd781420ebed9692de416f5149848a16
+Ra0f455423256742689c79c0170195129	supports Arg1:Ta67636bf041dfd2d7c5c344f16d2f253 Arg2:Tfd781420ebed9692de416f5149848a16
+Rf97a64d3b9cd38b3566886053456eeb4	supports Arg1:T276e2142af45668ed2cf019e02f82d93 Arg2:Td2a4aaed406dbdb0fbac322404d9e265
+R4fb7125c6360c14b3e1cc755ef3b40cb	supports Arg1:Td2a4aaed406dbdb0fbac322404d9e265 Arg2:T636b4a34dada9f80c0d5a787a3a41a91
+R34010d845d3a6241e463457f8c85653a	supports Arg1:Te28d24264ba398c89f97502dde773ecf Arg2:Tabaf392eb194b88492e7cf6b98f87193
+R61b7c08369f7483822415675ed6cf42a	supports Arg1:T91e8822cdb96632ef47399555d731eec Arg2:T5d56c81d45004a74ec502c1d0804b80e

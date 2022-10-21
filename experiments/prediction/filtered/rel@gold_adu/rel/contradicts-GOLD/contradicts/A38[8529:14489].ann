@@ -1,0 +1,4 @@
+Td1cd874a125352dbf70c21e264f82566	background_claim 1259 1363	there is no straightforward way to scale the parameters of these models to meshes of varying resolutions
+T5cec0c163edf3a7837c0c3a2d5bb04bf	background_claim 1136 1152;1206 1257	nonlinear models potentially capture more realistic details of cloth
+R4161c9248d4cfb0ba5588e8c76f55c29	contradicts-GOLD Arg1:T5cec0c163edf3a7837c0c3a2d5bb04bf Arg2:Td1cd874a125352dbf70c21e264f82566
+R44086b96e71e59ec0b242b154160abd4	contradicts Arg1:T5cec0c163edf3a7837c0c3a2d5bb04bf Arg2:Td1cd874a125352dbf70c21e264f82566

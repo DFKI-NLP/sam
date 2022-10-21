@@ -1,0 +1,3 @@
+T5e8b5a6744fe10089cf3cec0f539fa36	own_claim 2296 2312;2339 2389	for small meshes the modulation of wrinkle pattern can be real time
+Tbc1a6dc9e3fe206e9b773125308c3381	own_claim 2200 2285	the time spent on modulating wrinkle pattern is negligible compared to rendering time
+R4360a542d18423bcd4c2b39f76a7f58a	contradicts Arg1:Tbc1a6dc9e3fe206e9b773125308c3381 Arg2:T5e8b5a6744fe10089cf3cec0f539fa36

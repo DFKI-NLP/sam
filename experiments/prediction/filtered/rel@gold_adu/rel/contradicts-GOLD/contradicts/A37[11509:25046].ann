@@ -1,0 +1,4 @@
+Tb0126163a09b46faf4d1331d2ca0c8a8	own_claim 9854 9878;9885 9895;9931 9948;9974 9985	fast projection’s system is smaller positive definite and sparser
+Tedba7a8894d73912f0a169534d8e5087	own_claim 9780 9843	As with ICD/SAP, a fast projection step requires a linear solve
+R317da414cef3de570977cb4dba3a8a2e	contradicts-GOLD Arg1:Tedba7a8894d73912f0a169534d8e5087 Arg2:Tb0126163a09b46faf4d1331d2ca0c8a8
+R27a84f2caed0818eeb8ea45ac9af0602	contradicts Arg1:Tedba7a8894d73912f0a169534d8e5087 Arg2:Tb0126163a09b46faf4d1331d2ca0c8a8

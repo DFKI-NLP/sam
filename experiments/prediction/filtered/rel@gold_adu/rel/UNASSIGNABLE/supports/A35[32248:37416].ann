@@ -1,0 +1,3 @@
+T2db97d398725c3c473ab27915e895493	own_claim 1702 1848	While not exactly reproducing real mechanical behavior, the simulation with large time steps provides a quite efficient convergence to equilibrium
+T41225022bc7cb882e7b1490992a7c3ce	own_claim 1854 1965	the numerical errors quite often act as extra damping, removing the need of adding them explicitly to the model
+R12fb9e55e8b2b94fbf91f5a13e69282c	supports Arg1:T2db97d398725c3c473ab27915e895493 Arg2:T41225022bc7cb882e7b1490992a7c3ce

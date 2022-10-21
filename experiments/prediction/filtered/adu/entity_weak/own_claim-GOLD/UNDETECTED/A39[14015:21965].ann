@@ -1,0 +1,6 @@
+Tb7c13d71b1e4dc17af3b32f4fdfa89b6	own_claim-GOLD 4027 4101	we formulate damping forces that subdue any oscillations having to do with
+T486c3473623b4bfe679c7a4434ef699d	own_claim-GOLD 4505 4609	the acceleration ẍ i of the ith particle is simply ẍ i = f i /m i , where m i is the ith particle’s mass
+T2db534a37de1678f3254f6be76445c9f	own_claim-GOLD 4690 4734	each particle has a unique (u, v) coordinate
+T471ed3ed9ad7e3d2cad2089743f88e75	own_claim-GOLD 5011 5058	The (u, v) coordinates are useful for texturing
+Tb7699d8bd162cc7f3068328417cf4e5c	own_claim-GOLD 5619 5701	We solve these systems through a modified conjugate gradient (CG) iterative method
+Td74cd18895f1be93b97c3c21c061afd7	own_claim-GOLD 6765 6814	constrained to a fixed or moving surface or curve

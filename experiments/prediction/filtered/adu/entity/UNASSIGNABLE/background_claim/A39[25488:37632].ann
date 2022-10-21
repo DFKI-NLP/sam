@@ -1,0 +1,7 @@
+Tacca46b5e3c091e7d9d81dc0d3d4fe7a	background_claim 26 128	Cloth’s material behavior is customarily described in terms of a scalar potential energy function E(x)
+T567096e785eeb3ae1fb9de8bab881a51	background_claim 130 180	the force f arising from this energy is f = −∂E/∂x
+Tf8365d03322012e6c66feb9938c6fed6	background_claim 195 242	requires both the vector f and the matrix ∂f/∂x
+Tc60261a4fa567af472c58a3c10475ef5	background_claim 3474 3627	Some previous continuum formulations have modeled stretch energy along an axis as essentially (w u T w u − 1) 2 , which is a quartic function of position
+Te8eaf4d83918175ef9abf885b211f7a7	background_claim 7175 7235	for a further discussion of relating curvature to bend angle
+T06bbbf4b9d5385c6b2fdec6841d11938	background_claim 9133 9160	improved upon this somewhat
+T432b3c7e98b556d97ff4700e4253ed9a	background_claim 9162 9207	borrowing a formulation due to Platt and Barr

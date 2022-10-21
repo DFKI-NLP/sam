@@ -1,0 +1,20 @@
+Tdc8b10efac734f0529fd6c13093262ac	background_claim-GOLD 801 880	This model has sufficient richness to produce a wide variety of cloth behaviors
+T7f69c9fcb992c49816aed75f6984b088	background_claim-GOLD 920 952	making clothing modelling easier
+T5b428860009c788d3b55ce345cc859a6	background_claim-GOLD 1029 1061	parameters recovered on one mesh
+T66e2eb880649e43d372dd449195d2d4a	background_claim-GOLD 1080 1116	can safely be transferred to another
+Tdbbb58c083430313137386aece3afbd7	background_claim-GOLD 1136 1152	nonlinear models
+T78f953968cba22a7e185d472658e5739	background_claim-GOLD 1259 1363	there is no straightforward way to scale the parameters of these models to meshes of varying resolutions
+T5247bc290f372ee8fe6dcdba57a4ecf6	background_claim-GOLD 1380 1514	future application of our parameterestimation framework to other scale-invariant cloth models will provide even more realistic results
+T8df808af49c80f4fc9b49e61e025edf2	background_claim-GOLD 4717 4797	this method offers the advantages of familiarity and automatic bounding of error
+T96ebb2791ee1ce1e6e809a99f12cfeaf	background_claim-GOLD 4799 4816	it is rather slow
+Tc3678b94c3cebaad07d6d26ce05e023e	background_claim-GOLD 4908 4930	may be a better choice
+T8fa3a444687d7e111400f6cf97e1e6ba	own_claim 801 880	This model has sufficient richness to produce a wide variety of cloth behaviors
+T7f89754350910a8d958335e53aea0a34	own_claim 920 952	making clothing modelling easier
+Tfa65b6c30d3834c24ef201495dd591c6	own_claim 1029 1061	parameters recovered on one mesh
+Tabd554e170a311d770516055f5fa2545	own_claim 1080 1116	can safely be transferred to another
+T7ffb5558a591bd8b2341edd28204eef6	own_claim 1136 1152	nonlinear models
+Tbb6468a6bfde00883a0af7d850124353	own_claim 1259 1363	there is no straightforward way to scale the parameters of these models to meshes of varying resolutions
+T9357aa24602844226f027a1d3f5b6d90	own_claim 1380 1514	future application of our parameterestimation framework to other scale-invariant cloth models will provide even more realistic results
+T58ff00af569b945595c104a425e9c253	own_claim 4717 4797	this method offers the advantages of familiarity and automatic bounding of error
+T2a674e85286f167b02d45ceff5429607	own_claim 4799 4816	it is rather slow
+Td8378314e3f5b52c4f9a57a628576052	own_claim 4908 4930	may be a better choice

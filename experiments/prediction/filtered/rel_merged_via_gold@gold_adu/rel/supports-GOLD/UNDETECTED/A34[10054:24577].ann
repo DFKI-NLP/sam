@@ -1,0 +1,9 @@
+T77f88d96c86954e72ea9302cac4cb4f4	own_claim 4274 4342	This merger is performed to prevent undesirable collision resolution
+T8e3aac8f6ec029069eaf63fbaa99e0e7	data 7774 7775	1
+Tcac5d68a463a86257c9208b2b2b04180	own_claim 4208 4272	we reduce the total number of CCs by merging closely located CCs
+T9bac13d0e7b332f274afad87d59e1bea	own_claim 4635 4656	there is an exception
+T1a31297173279bc968c64cc31668d379	background_claim 7931 8039	The simultaneous collision approach treats multiple collisions as simultaneous collisions within a time-step
+Tb5ce425ddf968fe36b6c43a62e6497eb	own_claim 4728 4803	we have to resolve collisions between these CCs by handling them separately
+R23e0259fdd0990166adb24ccdb2701ae	supports-GOLD Arg1:T77f88d96c86954e72ea9302cac4cb4f4 Arg2:Tcac5d68a463a86257c9208b2b2b04180
+Rb83e06f77cdd4d67ce4c265bf53a1745	supports-GOLD Arg1:Tb5ce425ddf968fe36b6c43a62e6497eb Arg2:T9bac13d0e7b332f274afad87d59e1bea
+R5ca8f3402f1d59490d33878b79d31fe2	supports-GOLD Arg1:T8e3aac8f6ec029069eaf63fbaa99e0e7 Arg2:T1a31297173279bc968c64cc31668d379

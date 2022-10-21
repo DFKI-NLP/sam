@@ -1,0 +1,19 @@
+T2693cbdd7a739ee517f522e68b6eef24	own_claim-GOLD 45 125	We use optimization to estimate the parameters of the cloth simulator from video
+Te5eb66b12d2ad68e83eee4d6f9d619c9	own_claim-GOLD 176 292	we look at the error space of the angle map metric, which gives us useful insight about the parameters of the system
+T5d351fc43bcf37ae86a9977b93ca9c2a	data-GOLD 294 300	Fig. 3
+T8cf36b85e8729d6c457d272c27514edc	data-GOLD 537 547	the figure
+T2038f6d4e7e9658281c3e59da120c6c2	own_claim-GOLD 549 680	it is evident that the error space is fairly noisy, with many local minima, motivating the need for a global optimization technique
+Tfc4782ecf00285f6aed0ce45124fb171	own_claim-GOLD 719 855	we estimate the relative importance of each parameter for a given experiment by performing a perturbation analysis at the solution point
+Te293e4281bd09e2f54d688f1c832b2ca	own_claim-GOLD 857 939	The importance or sensitivity of a parameter p depends on its local gradient ∂E ∂p
+T30416a74d29f3d08c355d084b07cabe1	own_claim-GOLD 942 1017	it relates a small change in parameter value to a change in the error value
+T36f035f0fdbeb3a937f6b0d5abf50005	own_claim-GOLD 1054 1125	we robustly compute the variability of the param∂p eters, defined as ∂E
+T915501468611dc9f2443e155fc0787e7	own_claim-GOLD 1128 1288	To compute the variability, we perturb each parameter of the simulator individually up to ±0.20% of its value, compute the error and fit a quadratic to the data
+T8656991a7a6d42055b3af25bedd7fa4a	data-GOLD 1291 1297	Fig. 4
+Tac6264c8f629356b677a597058201d9a	own_claim-GOLD 1321 1423	the variability is computed as the change in parameter values that results in a 1% change in the error
+T64a89c5db5102e06730f9ef3f7e571d5	own_claim-GOLD 1425 1528	Parameters with low variability have high sensitivity and are estimated reliably for a given experiment
+Tee22750d63bb09c4ffa4cc30f43234f8	own_claim 568 623	the error space is fairly noisy, with many local minima
+Ta4566766c578dd806143ec1ef94294c3	own_claim 625 680	motivating the need for a global optimization technique
+T3e76a81b9f6f556cd96abd9d2a040d83	own_claim 857 939	The importance or sensitivity of a parameter p depends on its local gradient ∂E ∂p
+T5920527aaffde6cb5403822588dbc4bb	own_claim 942 1017	it relates a small change in parameter value to a change in the error value
+Tbaced5b97cd0d186bd9a3f0451b344e2	own_claim 1425 1528	Parameters with low variability have high sensitivity and are estimated reliably for a given experiment
+

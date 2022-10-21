@@ -1,0 +1,10 @@
+Td75cac3a6cc8199067cb5e3dce45a9de	own_claim-GOLD 359 420	The computation time taken for one iteration of the algorithm
+T44e70b05b6367fa395a0ce92e2db3800	own_claim-GOLD 7451 7540	a Runge-Kutta iteration takes only three times more computation than a Midpoint iteration
+T82131e86eb4023e088e0e595d9a2ec31	own_claim-GOLD 9272 9330	weak forces will be “neglected” relatively to stiff forces
+Td17b523e7aa3403d58d481e9cccdbb9f	own_claim-GOLD 10437 10485	there are also n 2 times more elements to handle
+Ta205cfbfb83a049e90ddca9b1e63039c	own_claim-GOLD 10723 10790	this scaling has to be strictly observed for preventing instability
+T817d32f04d44cfcde437062f1a95ede3	data 359 420	The computation time taken for one iteration of the algorithm
+Tad292b1eacd09a79c25baf85506bd1c8	data 7451 7540	a Runge-Kutta iteration takes only three times more computation than a Midpoint iteration
+Tc70f19eb460bdf5f977dfbf40a76b7d6	data 9272 9330	weak forces will be “neglected” relatively to stiff forces
+T7ca03e65fc00cb3709f6265f7c06c8a2	data 10437 10485	there are also n 2 times more elements to handle
+T9fee8104f6a00808885a70c781f9db78	data 10723 10790	this scaling has to be strictly observed for preventing instability

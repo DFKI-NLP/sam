@@ -1,0 +1,10 @@
+T15228f841fd5d7d420b356a3349f71cd	data-GOLD 1023 1045	ẍ = M −1 − ∂E + F . ∂x
+Te21eb474e1a1ff6b7b09683b06004fc2	data-GOLD 4277 4368	A key step in our simulation process is the solution of an O(n) × O(n) sparse linear system
+Ta10c9bfb889c9207772c656e2fe9c131	data-GOLD 6645 6661	implicit methods
+T4bc0a14ca4c14b7c488ad5316ff81267	data-GOLD 8345 8436	with a running time just over 2 seconds per frame on an SGI Octane R10000 195 Mhz processor
+Tecb5321af6b4c19967725dc62233fccb	data-GOLD 8467 8473	shirts
+T6cb51674beb9252c33e902dad5bb25a3	data-GOLD 8475 8480	pants
+T8a106e2ca45cd21dd6a5e0b495534c3d	data-GOLD 8482 8488	skirts
+T5583bd7b82a2cf7647d425abee04f5da	data-GOLD 8628 8657	a long skirt with 4,530 nodes
+T191f99d61faa9da99af7e13286d5beff	data-GOLD 8676 8732	on a dancing character at a cost of 10 seconds per frame
+T603aad7c2d22351cc35533649482be77	data-GOLD 8782 8835	with a cost varying between 8 to 14 seconds per frame

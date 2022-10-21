@@ -1,0 +1,8 @@
+T4299790a1fd5da327bd01902911625ce	own_claim 1039 1125	Our actuators and load cells are capable of applying and measuring tensions up to 45 N
+Tea92dd4c9267a7584827f5b7bac6498d	own_claim 10454 10546	it can be visualized by compositing the reconstructed deformation on top of the input images
+T6b6ea5bd964fc9cf03a86da0827f7a3f	own_claim 1131 1201	in our experiments the maximum force is typically on the order of 10 N
+T48214711a858975c898601a8c236ced1	own_claim 10375 10448	It is difficult to quantify the accuracy of the temporal flow computation
+R6fa5b534616248280795ad8ef284f688	contradicts-GOLD Arg1:T4299790a1fd5da327bd01902911625ce Arg2:T6b6ea5bd964fc9cf03a86da0827f7a3f
+Ra6f677f442df5d0a54ba7d1855fea050	contradicts-GOLD Arg1:T48214711a858975c898601a8c236ced1 Arg2:Tea92dd4c9267a7584827f5b7bac6498d
+Rc8b07974c0039752417afb2d92a00077	contradicts Arg1:T4299790a1fd5da327bd01902911625ce Arg2:T6b6ea5bd964fc9cf03a86da0827f7a3f
+R505378c6bf94a49733bb48e43c2269bf	contradicts Arg1:T48214711a858975c898601a8c236ced1 Arg2:Tea92dd4c9267a7584827f5b7bac6498d

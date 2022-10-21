@@ -1,0 +1,88 @@
+T236d94d5048704aeddba547e0c823851	data-GOLD 64 66	14
+T84e595da8928bc464a032958face7d37	data-GOLD 69 71	12
+Tdfcb03517a14fa65806093fea433d30c	data-GOLD 74 75	3
+Tf7888920b663ad79ef4e35bba1bf93ce	data-GOLD 78 80	15
+Tfdcbd67b146b1cdfef346bbad25c8554	data-GOLD 503 562	cloth surfaces are moving fast and interact with each other
+Tf0e4ea850fb6e0ed32b93e426450fdb9	data-GOLD 628 630	11
+T06c2a50122ae588abeb6784d4ca23a30	data-GOLD 633 634	1
+T666e3bddd922db9d9fc0bbd6571a6091	data-GOLD 637 639	10
+T9b384c2fc6e6d9e963ff254077beac4d	data-GOLD 642 643	9
+Tcf3a3ef880888c2864179860b154bec2	data-GOLD 693 694	2
+Tb863385f93ee98dabab826f8152c9458	data-GOLD 965 967	14
+Tf3780ba498b81baa16ed2e48d5d09566	data-GOLD 970 971	3
+Tae1c7c01d0720fb624fa19aac50cc515	data-GOLD 974 976	15
+Tfd6d4c3132c5b289bed51eb372d9ad71	data-GOLD 1220 1222	14
+T91d8716ea702d6bcb4c5e4c1cf31976e	data-GOLD 1426 1428	12
+T01b5aa4a4a7b107082292d8ccd71547f	data-GOLD 2190 2198	Sec. 3.4
+T5d518a49d532a82ef800645034d82b34	data-GOLD 2430 2470	we do not find any CCs from rigid bodies
+T88e11cb6676d32cad59b542cef87cfd4	data-GOLD 2544 2582	we find CCs from rigid bodies in an IZ
+Tcc7176d5d7cb73be091e190055f12d11	data-GOLD 3295 3316	an IZ has only one CC
+T5b056d41130a85985631961d2964c594	data-GOLD 4179 4206	an IZ has three or more CCs
+T96a13efae529a625d4a6b4537cfaaa5d	data-GOLD 4347 4370	CCs are closely located
+Tdfe200d3a61a6d7e7e6931cdf6e1d750	data-GOLD 4663 4726	we find a significant bending between these closely located CCs
+T48c4fa1d9bf07a53c88fe68cf3d12884	data-GOLD 6367 6398	the two billiard ball collision
+Tfea63a3d7bdc226768cfd4c681a3a149	data-GOLD 7372 7420	we have collisions of three or more CCs in an IZ
+T5650c4f55c9a3ace7b22fed66df5a8bd	data-GOLD 7701 7703	11
+Td33b4872f9ff1b17fcbc10254d38529a	data-GOLD 7706 7708	10
+T82102aff3223983f44a9f598f3908f71	data-GOLD 7774 7775	1
+Te21c63a7523dbad55a80662349c03736	data-GOLD 7878 7880	11
+T2cf234f32e2454c30947192c40a5aaa6	data-GOLD 7925 7927	10
+T6e1bba08217392713786fa44cce690d5	data-GOLD 9011 9012	1
+T53fc1db7f0c2c02cc79544a235530694	data-GOLD 9545 9581	CC bodies are considered as vertices
+Ta6b3a874e23256cf31733ce6eee41c0c	data-GOLD 9818 9876	N bodies are colliding without having any cyclic collision
+Te3d3cda94beea5cca8e3586d6ac75589	data-GOLD 10039 10060	v i;j + = , C e v i;j
+T71760fe57fd2916e042e9d7abb900205	data-GOLD 10705 10787	collision resolutions of an IZ create new collisions against objects around the IZ
+Tb56aaaff390076380ae6da83b1a3b0c3	data-GOLD 11436 11473	we observe cyclic collisions in an IZ
+T75cddd12706c9c30495d50b80b6d4a0c	data-GOLD 11736 11788	an IZ has cyclic colliding relationships between CCs
+Te42adaaa663b5c9486166b94a6cc9605	data-GOLD 12144 12145	1
+T43bd0d87fda6a71964fd7345472262f0	data-GOLD 12688 12719	an IZ has CCs from rigid bodies
+T40abd7bd175c8b74ec3cc7268eead01d	data-GOLD 12880 12899	an IZ has rigid CCs
+T717b669f740a2e85bc96eaec877e3bb7	data-GOLD 13007 13043	the rigid CCs in an IZ are all fixed
+T2b9f395d2059a1dfc679735f8508f040	data-GOLD 13348 13405	they are not in the vicinity of a face in fixed rigid CCs
+T374b9b622d9fb4b97f619e94c22dda2e	data-GOLD 13682 13719	the rigid CCs in an IZ are all moving
+T875de39c25be78b3efb0056f5bc07c28	data-GOLD 13764 13813	particles are in the vicinity of moving rigid CCs
+T020890dad44da104dcac65cca40ebb0c	data-GOLD 14124 14186	an IZ has both moving and fixed rigid CCs along with cloth CCs
+Ta0a994b78486e1631ce22160587386ec	data 64 66	14
+T6b423f4f35142c62d58cb2315845066c	data 69 71	12
+Ta2ab36e599708e881671baf2f62aadf6	data 74 75	3
+T4cfdc6ea9c40296843ab25c3f13b8c6f	data 78 80	15
+T45fccbd3a885a7bb2eb432d23aac754e	data 503 562	cloth surfaces are moving fast and interact with each other
+T38f06de1d2456b1291d0776990c55bfc	data 628 630	11
+T08e59209a23efc6abcb4c0492c2dcb5f	data 633 634	1
+Tcca9116016280db32f0f91a29324c76f	data 637 639	10
+Te9ddf83ce8510776c970235c59d9186d	data 642 643	9
+T1b64cc4cb829f4d40b68d62e77107708	data 693 694	2
+T421410299755bd9ae15e1ec0f75b30d7	data 965 967	14
+T2ca6c79fb7b1d38167b3ab4d7384ddfe	data 970 971	3
+Td607536ef0b4a8c0b5fd35eb699700a7	data 974 976	15
+T909d959b7618782e88714f7ed64cf1ba	data 1220 1222	14
+T82a1f8c19426fa76b4af22bbc89d9134	data 1426 1428	12
+T0556a73968f26098f78268d7b3010b5b	data 2190 2198	Sec. 3.4
+T1cd376aab81faaf23b5f1f489c741964	data 2430 2470	we do not find any CCs from rigid bodies
+Tae8e360fcfdb7a0702d6f215339ad448	data 2544 2582	we find CCs from rigid bodies in an IZ
+T454a3868e920663880f1a45879faf2f1	data 3295 3316	an IZ has only one CC
+T3818d0391b1f0d4d55bbe4df42774f21	data 4179 4206	an IZ has three or more CCs
+Tf10dd8c164fabf4a55570baabd40cf70	data 4347 4370	CCs are closely located
+T0a2dc896acbbe969c63caeebfba2295a	data 4663 4726	we find a significant bending between these closely located CCs
+T6de174aeea9b5d05bb8c1a5d86a04752	data 6367 6398	the two billiard ball collision
+T29575d2190df6282a0ff9c955a6384aa	data 7372 7420	we have collisions of three or more CCs in an IZ
+T5879ed2a7cd3d71271f4946f0b36ae68	data 7701 7703	11
+Tf6821f0a904dad3a5fb124aa91bcca42	data 7706 7708	10
+T8e3aac8f6ec029069eaf63fbaa99e0e7	data 7774 7775	1
+T9208ec9cddd54803e345736d8ac0c246	data 7878 7880	11
+T8c0aec60740e04bf61f0ba49ca520084	data 7925 7927	10
+T898554d73d40e210adde7af5a4b5155b	data 9011 9012	1
+T867849d96b2d827ce8b69f984bf229b2	data 9545 9581	CC bodies are considered as vertices
+T11b61fab06a03359263badea4dc505a4	data 9818 9876	N bodies are colliding without having any cyclic collision
+T7b75bd376a66f1994cf91ca65fe842df	data 10039 10060	v i;j + = , C e v i;j
+T5f78fce1458978ea8e995d6322709148	data 10705 10787	collision resolutions of an IZ create new collisions against objects around the IZ
+T4605bfef606827dfefef2040f9135ead	data 11436 11473	we observe cyclic collisions in an IZ
+T11f7b977271bbd10094caba84b164602	data 11736 11788	an IZ has cyclic colliding relationships between CCs
+T4aa9521366d5e9566bf685d63154276c	data 12144 12145	1
+T099acd44c5e28a324db1077a2006bcd7	data 12688 12719	an IZ has CCs from rigid bodies
+Tf1aef1592f7115028c80f592f6bbeed8	data 12880 12899	an IZ has rigid CCs
+T071ccc46d07e201ba34d820c096ca6e0	data 13007 13043	the rigid CCs in an IZ are all fixed
+Td561230494cd3b7a36cd70cb196561cf	data 13348 13405	they are not in the vicinity of a face in fixed rigid CCs
+T47692d8ba66fd236128137cdd9a40b2b	data 13682 13719	the rigid CCs in an IZ are all moving
+T39c06be0a03932fd3e08b47c0f50fe0a	data 13764 13813	particles are in the vicinity of moving rigid CCs
+T8cbfe2e8e4b6bab564a8b4b62183bc04	data 14124 14186	an IZ has both moving and fixed rigid CCs along with cloth CCs

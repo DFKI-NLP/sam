@@ -1,0 +1,4 @@
+T9e7eca04d2199b5dffcea2b31eb4dd05	own_claim 6564 6635	the same construction can easily be built on any of our selected models
+Tf4c6dc534d065d6ee7950ab1e55e184f	background_claim 6445 6499	propose a general nonlinear stress-strain relationship
+Rdd1e1a747cf2b2aa9fe1900e0c5106f0	contradicts-GOLD Arg1:Tf4c6dc534d065d6ee7950ab1e55e184f Arg2:T9e7eca04d2199b5dffcea2b31eb4dd05
+Rf008e9523313eabf8bf2d6a43cc73bcf	contradicts Arg1:Tf4c6dc534d065d6ee7950ab1e55e184f Arg2:T9e7eca04d2199b5dffcea2b31eb4dd05

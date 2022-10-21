@@ -1,0 +1,19 @@
+T0aaf38f3ef920d50e5599706e5523b6b	own_claim-GOLD 43 140	We use simulated annealing to find the parameters that minimize the error function given in eq. 9
+Tbb8560074c2bf236fdeb6da74c920b18	own_claim-GOLD 253 368	The likelihood that it will take a step in a direction that is not locally optimal is a function of the temperature
+Tb430dc173c6f126f4639a4fb38ef9829	data-GOLD 371 377	Fig. 5
+T178ddbc0da487fc5206511c80d9c9bbc	own_claim-GOLD 381 460	We chose to use the continuous simulated annealing method presented in Press et
+T8d261cd0eae033e146fd1e66e0e5f3bb	data-GOLD 466 468	28
+T35cd3056fbce20d3e5908cd6d667b703	background_claim-GOLD 478 583	combines the Metropolis algorithm with the downhill simplex method for continuous n-variable optimization
+T86e3d29b426fdde9b386e36b4d0af86a	own_claim-GOLD 585 655	We found it useful to reset the simplex with the current best solution
+T78a4117fe2e161e0feb5a9e5f9bc5bda	data-GOLD 661 701	the temperature reduces by a factor of 3
+Tf6b7d520a7a91c6f5ab42edc48bdd2b5	own_claim-GOLD 853 918	This corresponds to a very coarse sampling of the parameter space
+T0e12767e2adfc4b6d2b2e07b54ebeb0e	own_claim-GOLD 1150 1222	this strategy allows the optimizer to locate a good minimum of the space
+Ta8f5746b7e22507e51073a43a45d999f	own_claim 43 140	We use simulated annealing to find the parameters that minimize the error function given in eq. 9
+Tec7de1c2c69e6464cbb2b8ca2faee44b	own_claim 142 215	Simulated annealing initially explores the space in a semi-random fashion
+T2165f0c9a9994e3d7203b0afdcbdde1f	own_claim 253 368	The likelihood that it will take a step in a direction that is not locally optimal is a function of the temperature
+Tafd9d282353ddbdeccf71c6cf8a14caf	data 371 377	Fig. 5
+Td270f80493e9f2e6b211be71cd557016	own_claim 472 583	which combines the Metropolis algorithm with the downhill simplex method for continuous n-variable optimization
+T168d5896f43fb09b2ebd5c58351d5880	own_claim 585 655	We found it useful to reset the simplex with the current best solution
+T8bdaec317d0936acae47b84c001d2011	data 661 701	the temperature reduces by a factor of 3
+Tb614f128bab7a0ec844d4656b2f8358b	own_claim 1150 1222	this strategy allows the optimizer to locate a good minimum of the space
+

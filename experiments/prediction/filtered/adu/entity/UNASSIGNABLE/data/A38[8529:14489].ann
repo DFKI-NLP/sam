@@ -1,0 +1,6 @@
+T6157d2c03ee56be28abed344037b6cf3	data 495 611	our intention was to apply the learned cloth model parameters to arbitrary garments with varying triangle resolution
+Tfcd9e11fd4c961960a08c0884a2525fc	data 1063 1078	the test swatch
+T65ac278c736a5fa0977aa1c2a9f91c8a	data 1161 1199	the buckling behavior of Choi and Ko 9
+Tbaf32fcd57b8c89f530c7ab286a86da9	data 4936 4954	collision handling
+T913043dc9367ceacf5146aeff972ddf2	data 5718 5750;5752 5754	hybrid top-down/bottom-up update 24
+T0f97e8191ac3559e1ef3369bbfeaeba9	data 5757 5783;5785 5787	fast triangle reject tests 26

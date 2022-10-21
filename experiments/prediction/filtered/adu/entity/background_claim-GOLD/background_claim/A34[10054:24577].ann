@@ -1,0 +1,32 @@
+T5b64f005e2234751b6f15acb5ee96ecc	background_claim-GOLD 41 60	Numerous approaches
+T4a7a89a47538cfd649a553af7076a364	background_claim-GOLD 83 134	have been introduced for cloth collision resolution
+T6c0770385028261e87aafb0c56e65c32	background_claim-GOLD 225 331	no cloth collision resolution method which considers cloth-cloth momentum conservation has been introduced
+T4eb6f9cba86fd8ac929fd4945c076f96	background_claim-GOLD 339 445	we cannot achieve realistic cloth interactions in cloth animation without conserving cloth-cloth momentums
+Tf33599972385fb2ff0b2247e9d9dc635	background_claim-GOLD 447 497	Having this characteristic is visually distinctive
+T872740d9574572b5aa28837746e80095	background_claim-GOLD 565 624	For rigid N-body collisions by graphics and robotics groups
+T5684a0479615140f2574634157346f6c	background_claim-GOLD 698 736	several approaches have been suggested
+T2456d213b11a84d1ce8ae1dd5e61c8f8	background_claim-GOLD 742 818	they are not directly applicable for deformable N-body collision resolutions
+Tec57b9aa79531ac277f10b6f562f4167	background_claim-GOLD 854 961	Cloth resolution methods so far compute non-penetrating positions, velocities or accelerations of particles
+T917b6d39b0500cb8dabe24938bc9aa6d	background_claim-GOLD 981 1036	which work fine for the collisions against fixed bodies
+T53a2d6bdf821d9d59f0ab68acd15d3bd	background_claim-GOLD 1038 1057	Using these methods
+T291c542a17e5df44ce67134400c7e672	background_claim-GOLD 1068 1140	we cannot achieve visually satisfying dynamics of cloth-cloth collisions
+T8b2523689f484493cdf3631fd3cc7edb	background_claim-GOLD 1226 1360	to sustain the geometrical consistency of colliding faces also does not warrant reasonable dynamic movements of cloth-cloth collisions
+Tf4b2f30560880a3b78d45b01173bfe9a	background_claim-GOLD 1433 1474	also does not give a proper visual effect
+Td49afc38a1906ca447908718517b0414	background_claim-GOLD 7781 7874	The staggered collision approach handles multiple collisions as a series of single collisions
+T04476e0695b41cafeb39d23d6afa1e7e	background_claim-GOLD 7883 7921	or desynchronized groups of collisions
+T45a1134e891f0de6390c2f4ceb5c82f8	background_claim 41 60	Numerous approaches
+T6e05656607868e86683c9c4ad27f4b69	background_claim 83 134	have been introduced for cloth collision resolution
+T38dd29754be84acde1708a9e93bf3bb8	background_claim 225 331	no cloth collision resolution method which considers cloth-cloth momentum conservation has been introduced
+Td8e455caae8a414a4c254f4c81a09837	background_claim 339 445	we cannot achieve realistic cloth interactions in cloth animation without conserving cloth-cloth momentums
+Tae44691194197d70517d3a0c69abe55b	background_claim 447 497	Having this characteristic is visually distinctive
+T32cf37d7dc1279db2c68d8c103a172a1	background_claim 565 624	For rigid N-body collisions by graphics and robotics groups
+T3fe1da1ac0221d48805e0b0594e96421	background_claim 698 736	several approaches have been suggested
+T31476ace08c8146c2ef87714db962a88	background_claim 742 818	they are not directly applicable for deformable N-body collision resolutions
+Teebd3b8a3454c20357c0ea26240b0126	background_claim 854 961	Cloth resolution methods so far compute non-penetrating positions, velocities or accelerations of particles
+T496055631dd4ac22afd32029e48dc0bb	background_claim 981 1036	which work fine for the collisions against fixed bodies
+Td7a302e3c8e4c29dfd9fac0ea38cf69b	background_claim 1038 1057	Using these methods
+T0df6694e7b5f5875e4395ef6aabc38fa	background_claim 1068 1140	we cannot achieve visually satisfying dynamics of cloth-cloth collisions
+T6a269a6f8d1127a92d48e6d8a86fe0c3	background_claim 1226 1360	to sustain the geometrical consistency of colliding faces also does not warrant reasonable dynamic movements of cloth-cloth collisions
+T27d5cc5a38c5be7ddbc304b19dc8c459	background_claim 1433 1474	also does not give a proper visual effect
+Tb40144e4d5509886c6dd9f4e7f83321c	background_claim 7781 7874	The staggered collision approach handles multiple collisions as a series of single collisions
+T73fc47d22d9a47c9f413872e3d0296af	background_claim 7883 7921	or desynchronized groups of collisions

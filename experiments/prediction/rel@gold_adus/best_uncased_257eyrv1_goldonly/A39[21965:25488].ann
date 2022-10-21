@@ -1,0 +1,48 @@
+Ta20164a66477dc3d726abbeb1cfe61a7	data 46 119	the known position x(t 0 ) and velocity x(t 0 ) of the system at time t 0
+T1ec3ecd1fcc08a6fbd4aeb6296e64bad	own_claim 122 212	our goal is to determine a new position x(t 0 + h) and velocity x(t 0 + h) at time t 0 + h
+T8e3112b7c3ddfa38d0aee67ba7e7e210	own_claim 281 358	we must first transform equation (2) into a first-order differential equation
+Tfd82398056a96d00a08ca858931ffaba	own_claim 360 449;469 470;481 517	This is accomplished simply by defining the system’s velocity v as v = x and then writing 3 dt d x x = dt d v x = M −1 f(x, v v)
+T5a9b08afef9bb37a78b3bf4429d00465	data 809 911;920 973	The explicit forward Euler method applied to equation (3) approximates x and v as x v = h M v −1 0 f 0 where the force f 0 is defined by f 0 = f(x 0 , v 0 )
+T3eddd6936ef5cbcafd4ba07ac7e83c62	data 978 998	previously discussed
+T5a2ff2376752e4a2c7a760067d9bc905	own_claim 1000 1078	the step size h must be quite small to ensure stability when using this method
+T9d7cba03358f4a9b958832b34af90724	own_claim 1080 1139	The implicit backward Euler method appears similar at first
+Ta9c8323f0367ae8ffc0a4d8334ffbee9	data 1141 1168;1188 1189;1200 1240	x and v are approximated by 4 v x = h M −1 f(x 0 v + 0 + x, v v 0 + v)
+T858a74736f1e0bfc52c029f9c88e6b74	own_claim 1260 1471	The difference in the two methods is that the forward method’s step is based solely on conditions at time t 0 while the backward method’s step is written in terms of conditions at the terminus of the step itself
+Tc912264a93c60f2685304463c24b71a2	data 1475 1539	The forward method requires only an evaluation of the function f
+Tb75d52317c0208dc8adc9ff4f02dc2a5	data 1544 1634	the backward method requires that we solve for values of x and v that satisfy equation (4)
+Ta54510e8099cbcbebb65d2d3f8ba2007	data 1636 1672	Equation (4) is a nonlinear equation
+T6f976d251e082be42ae649e72c9a8a57	own_claim 1674 1869	rather than solve this equation exactly (which would require iteration) we apply a Taylor series expansion to f and make the firstorder approximation ∂f ∂f f(x 0 + x, v 0 + v) = f 0 + ∂x x + ∂v v
+T7e2abb0bb5bc6b2359373d4533e9d5a9	data 1889 1973	the derivative ∂f/∂x is evaluated for the state (x 0 , v 0 ) and similarly for ∂f/∂v
+T6845767dec87b7e81830f6f9c0da4334	data 1975 2049	Substituting this approximation into equation (4) yields the linear system
+T9f22b650ce97a2b7e85a7af7853b8ee2	data 2081 2127	v x = h M −1 (f 0 + v 0 ∂x ∂f + x v + ∂v ∂f v)
+T17f78d0aec4f98e8eca5366c0d44609c	data 2147 2266	Taking the bottom row of equation (5) and substituting x = h(v 0 + v) yields v = hM −1 f 0 + ∂x ∂f h(v 0 + v) + ∂v ∂f v
+T4c6f59c0c52665a03adb23d2a79bc8fb	data 2269 2332	Letting I denote the identity matrix, and regrouping, we obtain
+T3f61c2c0f20077e9428887c655bc9166	data 2364 2424	I − hM −1 ∂v ∂f − h 2 M −1 ∂x ∂f v = hM −1 f 0 + h ∂x ∂f v 0
+T9c42104a00249fea81493bc1348e6db7	data 2442 2467	which we then solve for v
+T401c4693c508886afd386de79dc71333	data 2469 2513	Given v, we trivially compute x = h(v 0 + v)
+T84262ce10d05d397bf3e8fd5ec0dfd6c	own_claim 2521 2678	the backward Euler step consists of evaluating f 0 , ∂f/∂x and ∂f/∂v; forming the system in equation (6); solving the system for v; and then updating x and v
+T216f1dc8cb33ddc9b055eeb1760c2615	own_claim 2901 2938	The method is called “backward” Euler
+Ta6c65121bd33befbf7a0a20b7f1cc2a9	data 2947 3062	starting from the output state (x 0 + x, v 0 + v) and using a forward Euler step to run the system backward in time
+Tedb4af75098e459e13d5cd60f78a4372	own_claim 3187 3247	Forward Euler takes no notice of wildly changing derivatives
+T85100b7b9dead6f2081eb1479cd97456	own_claim 3253 3283	proceeds forward quite blindly
+Tf91b2bc52983bc3f36f572d309f9ef32	own_claim 3285 3299	Backward Euler
+T0472f247b7efdfc9141b318952f9abf9	own_claim 3310 3405	forces one to find an output state whose derivative at least points back to where you came from
+Ra9f49d67ff36ef46125b1b4e29db6639	supports Arg1:Ta20164a66477dc3d726abbeb1cfe61a7 Arg2:T1ec3ecd1fcc08a6fbd4aeb6296e64bad
+Rf063268ed86ed02ebac64e82e2432ea7	supports Arg1:T3eddd6936ef5cbcafd4ba07ac7e83c62 Arg2:T5a2ff2376752e4a2c7a760067d9bc905
+R9df9f13956b27aa7000f5aa72edb404d	supports Arg1:T5a9b08afef9bb37a78b3bf4429d00465 Arg2:T9d7cba03358f4a9b958832b34af90724
+R2e0095e8da6aaeb9c26e54ea5ad041c2	supports Arg1:Ta9c8323f0367ae8ffc0a4d8334ffbee9 Arg2:T9d7cba03358f4a9b958832b34af90724
+Rd92c3736594f2398e8b4e71f1509cf93	supports Arg1:Tb75d52317c0208dc8adc9ff4f02dc2a5 Arg2:T858a74736f1e0bfc52c029f9c88e6b74
+Ra2d577b9f4bd65fc76fa4e1e04134fec	supports Arg1:Tc912264a93c60f2685304463c24b71a2 Arg2:T858a74736f1e0bfc52c029f9c88e6b74
+Rae0a7a47091e274afa6c5272431303ad	supports Arg1:Ta54510e8099cbcbebb65d2d3f8ba2007 Arg2:T6f976d251e082be42ae649e72c9a8a57
+Rd81ce9245015f77f793a4b164f506b6b	parts_of_same Arg1:T4c6f59c0c52665a03adb23d2a79bc8fb Arg2:T3f61c2c0f20077e9428887c655bc9166
+Re6bc484197a6e7e19aa91a648536f7c7	parts_of_same Arg1:T3f61c2c0f20077e9428887c655bc9166 Arg2:T9c42104a00249fea81493bc1348e6db7
+R039cb31a66f9301dc9c98e2269d98ef2	supports Arg1:T401c4693c508886afd386de79dc71333 Arg2:T84262ce10d05d397bf3e8fd5ec0dfd6c
+R9f219ce90505711bc4866ad55a1900a0	supports Arg1:T3f61c2c0f20077e9428887c655bc9166 Arg2:T84262ce10d05d397bf3e8fd5ec0dfd6c
+R40c68079738d837f807341fe990035a3	supports Arg1:T17f78d0aec4f98e8eca5366c0d44609c Arg2:T84262ce10d05d397bf3e8fd5ec0dfd6c
+R811b9e87f6e4374a13bc1bcb84a6ad19	parts_of_same Arg1:T6845767dec87b7e81830f6f9c0da4334 Arg2:T9f22b650ce97a2b7e85a7af7853b8ee2
+Rad650be479a8ff67cecb7efa3ceb5339	supports Arg1:T7e2abb0bb5bc6b2359373d4533e9d5a9 Arg2:T84262ce10d05d397bf3e8fd5ec0dfd6c
+R9df8bd782849d8b7ec2ab55af9b384d1	supports Arg1:T9f22b650ce97a2b7e85a7af7853b8ee2 Arg2:T84262ce10d05d397bf3e8fd5ec0dfd6c
+Ra3f5770bb01f10e11f7ddce63dccb32c	supports Arg1:Ta6c65121bd33befbf7a0a20b7f1cc2a9 Arg2:T216f1dc8cb33ddc9b055eeb1760c2615
+R8b98f09dd946c7e4115808bdf8fccb80	parts_of_same Arg1:Tf91b2bc52983bc3f36f572d309f9ef32 Arg2:T0472f247b7efdfc9141b318952f9abf9
+Rfeec5bcd8b6460266e5cf0470f33cc8d	contradicts Arg1:Tedb4af75098e459e13d5cd60f78a4372 Arg2:Tf91b2bc52983bc3f36f572d309f9ef32
+Ra4a23652de0b2805f90c923218c0cf0a	contradicts Arg1:T85100b7b9dead6f2081eb1479cd97456 Arg2:Tf91b2bc52983bc3f36f572d309f9ef32

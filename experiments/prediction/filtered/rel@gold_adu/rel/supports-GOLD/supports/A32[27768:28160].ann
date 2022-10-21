@@ -1,0 +1,4 @@
+T47fa2c9cff381a3a8d0aeeaac890375b	own_claim 163 209	it can be applied to general deformable models
+Td6a45b94888e4ecef379221a26543305	data 218 223	cloth
+R5fbcd646f21b79ad5b72e1319af6369f	supports-GOLD Arg1:Td6a45b94888e4ecef379221a26543305 Arg2:T47fa2c9cff381a3a8d0aeeaac890375b
+Rd55b111402e73863f2836ec1d7b1582f	supports Arg1:Td6a45b94888e4ecef379221a26543305 Arg2:T47fa2c9cff381a3a8d0aeeaac890375b

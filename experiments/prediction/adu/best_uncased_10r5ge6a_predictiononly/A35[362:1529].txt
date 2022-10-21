@@ -1,0 +1,28 @@
+<Title>Comparing Efficiency of Integration Methods for Cloth Simulation</Title>
+      
+      
+        
+          Pascal VOLINO
+        
+        
+          Nadia MAGNENAT-THALMANN MIRALab
+        
+        
+          C.U.I.
+        
+        
+          University of Geneva CH
+        
+        
+          Switzerland
+        
+      
+      Web: http://miralabwww.unige.ch Email: [pascal|thalmann]@cui.unige.ch Phone: -41 (22) 705 77 63 -41 (22) 705 77 80
+      <Abstract>Any cloth simulation system needs efficient numerical methods for integrating the equations that describe the mechanical behavior of the discrete representation of the cloth. Choosing the adequate method should be done with full knowledge of the advantages and weaknesses of the main techniques. This paper presents a quantitative comparison of the efficiency of the most common integration techniques used for cloth simulation, and raises the key considerations for optimal implementations depending on the practical kind of simulation problematic.</Abstract>
+	  Keywords: Cloth simulation, numerical integration, implicit integration, Euler, Midpoint, Runge-Kutta.
+	  
+	  
+    
+    
+      
+        

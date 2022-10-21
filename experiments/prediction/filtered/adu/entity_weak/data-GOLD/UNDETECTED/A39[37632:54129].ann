@@ -1,0 +1,19 @@
+Teaadeed0a1fb3ac4d57ac0e97e6fd0b9	data-GOLD 3242 3266	We tried this for a time
+Tdb3e813039e6fa730a7c88e2d34d8cc1	data-GOLD 4878 4928	the appearance of M −1 , and not M in equation (6)
+T7f15e90f6b19528629d33490307e3310	data-GOLD 6130 6146	(I − pp T )p = 0
+T6134159fae47b7368730ac108eeab252	data-GOLD 7388 7501	every particle i, let z i be the change in velocity we wish to enforce in the particle’s constrained direction(s)
+T04112158bfeeed730f5d42e6cacf2ca8	data-GOLD 7899 7904	for v
+T0164ae6be051f712c50c0f5c95ad04ef	data-GOLD 8200 8256	We initially implemented constraints using equation (14)
+T0973dbf030cd9f685c7fa004216e5542	data-GOLD 8309 8332	very small test systems
+T4febe91f6597a2e1f30b97434237ca2f	data-GOLD 8429 8443	larger systems
+Tf2c967a2262a3e8167cefc9afee6a40d	data-GOLD 9143 9162	without constraints
+T0edaa7ada14cd499d5fd2ca9f1150c07	data-GOLD 10479 10494	each particle i
+Td42bf1cad04cd608672c5b0ffacf824f	data-GOLD 10658 10673	each particle i
+T2b8c12dd0e0b9840ab389fdfe50bbad5	data-GOLD 13475 13559	We use a simple preconditioner P by making P be a diagonal matrix with P ii = 1/A ii
+T298576ed855ada4d9c32e2d0e1237bf4	data-GOLD 14024 14035	in practice
+T03b612f0291270ece4f070174f071d7c	data-GOLD 14136 14212	we used a penalty method and applied the standard CG method to equation (15)
+T3dbb0dc3d81815005880e0c2f680c2b3	data-GOLD 14351 14362	Empirically
+T016b0d96b4ecbb44d894eac14027ecf5	data-GOLD 14432 14451	Result in section 8
+T8444b721c0a61daf96350cc4a6993dde	data-GOLD 15652 15665	equation (16)
+T0fa52f39626392588029bdc8a5039865	data-GOLD 15818 15836	the dimension of A
+Tbcf8c7f2309190a207db3d33ffcb7c6f	data-GOLD 15987 15998	In practice

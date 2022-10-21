@@ -1,0 +1,3 @@
+T856e1a619837f0ce3553030b4e1150a4	data 466 468	28
+T59567e875dc8f5ae4d626bdf9ed4507f	background_claim 478 583	combines the Metropolis algorithm with the downhill simplex method for continuous n-variable optimization
+Rccf79462e8f5dcf8cb6b9f44f38e6f4b	supports-GOLD Arg1:T856e1a619837f0ce3553030b4e1150a4 Arg2:T59567e875dc8f5ae4d626bdf9ed4507f

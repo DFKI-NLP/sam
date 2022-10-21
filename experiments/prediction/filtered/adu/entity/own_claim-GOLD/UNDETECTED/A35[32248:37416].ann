@@ -1,0 +1,19 @@
+Ta1dc298358d85b3adab67bdc70201be6	own_claim-GOLD 123 203	The implicit Euler method seems effectively a good candidate for most situations
+Tf853f0cbd216e45536b4d0c854aea792	own_claim-GOLD 1070 1139	this is still done at the expense of accuracy of the whole simulation
+T988860463491223b57472213c60a7904	own_claim-GOLD 1141 1373	The number of iterations should also be set sensitively to the stiffness of the mechanical problem, for limiting the potential inaccuracies that become particularly visible when an accurate simulation of a dynamical system is wanted
+T17b14996012313c58cf5936ea7b73b56	own_claim-GOLD 1375 1473	There is an obvious advantage of using implicit methods, and particularly the inverse Euler method
+T624d6cd513b8039564594c26b1fb2b04	own_claim-GOLD 1560 1700	Our test have shown that the inverse Euler method allow to perform a draping problem almost ten times as fast as with the Runge-Kutta method
+Te95cab8e52c3205ff0cd99369714593a	own_claim-GOLD 1702 1848	While not exactly reproducing real mechanical behavior, the simulation with large time steps provides a quite efficient convergence to equilibrium
+T53c35678caee3fa7874256a04bae437e	own_claim-GOLD 1854 1965	the numerical errors quite often act as extra damping, removing the need of adding them explicitly to the model
+T920956cafb86ff153e1c54b1d0d2c850	own_claim-GOLD 2111 2233	Their stability gives a false sense of efficiency, allowing obtaining quickly a result by “cheating” on the time step size
+Tf753e85ab976167fed22e73b8c1f2ae3	own_claim-GOLD 2328 2369	wrinkles and folds that fail to disappear
+T3e25e7e664996d5de72943b8ceb0117d	own_claim-GOLD 2435 2568	These artifacts are still augmented by the approximations made to the Hessian matrix, possibly in the purpose of reducing instability
+T4d8a9d557fe8d5a901cfacce67063b38	own_claim-GOLD 2699 2816	there is still some benefit in using the Backward Euler method than any other explicit method for dynamic simulations
+Td4bb6a59ed794b8bac6695314018cd99	own_claim-GOLD 2827 2970	the reduced time it takes to compute one iteration, which also only requires one derivation of the particle forces from the state of the system
+Tee99fc38847e2d1121202c14097a1bb5	own_claim-GOLD 3367 3593	The explicit methods have still their interest, and should be reserved for simulations requiring high accuracy and particularly those where involving low mechanical damping and where mechanical energy conservation is important
+T58577c7c906491b81804bfbbfe0d0366	own_claim-GOLD 3808 3816	This may
+T04fa4bb2e2a1bd073ac6d6d8a504620b	own_claim-GOLD 3825 3900	require prohibitive computation times for very stiff and discretized models
+Tb47c830c89b705f844102e494363fcbe	own_claim-GOLD 4034 4036	it
+Ta9d86812325e0049f3290d3c9944a4ac	own_claim-GOLD 4049 4183	provides integration error evaluation, which is a very good hint to the very sensitive problem of optimal time step size determination
+T71b4aaa8f1d9a3739c04435b7195fcc8	own_claim-GOLD 4185 4409	The simpler Midpoint method may have some interest only in very particular cases involving very loose materials with rough discretization, or when numerous fast iterations with small time steps are required for other reasons
+T6dac6cde0f5a01389af5043167215e8e	own_claim-GOLD 4596 4752	they are the keys to efficient simulation, and therefore complex models that, for garment simulation, express fully visual experience of real fashion models

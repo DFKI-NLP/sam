@@ -1,0 +1,21 @@
+T8c46171a15d48c65dfa35c60f3abccde	own_claim-GOLD 51 158	we describe two different wind field models and show how they can be used to model wind effects on textiles
+Tc53f97097057a52f6ee7420b5b26a3cc	own_claim-GOLD 214 313	and calculates the numerical solution of the Navier-Stokes equation with a semi-Lagrangian approach
+T6b52688cc3f0d214aa677acb2066c0e5	own_claim-GOLD 4227 4414	To describe the above situation by a physical model we require the Neumann boundary condition ∂u =0 ∂n to be satisfied for the wind flow u at any boundary point of an object with normal n
+T244dadd4a64647c3cf37e60d9e0128b0	own_claim-GOLD 5191 5240	we propose a method which meets both requirements
+Tb952ca167ec3c24d4e3edc7b21906462	own_claim-GOLD 5860 6047	for every marked cell in the scene the previously stored normals are averaged in one space cell which are used to update the velocity at the cell to satisfy the Neumann boundary condition
+Tfeffb17b3a5143e19b02f83131bee4f2	own_claim-GOLD 6387 6585	To avoid this situation, the path of the wind flow is checked for object intersection, whereby the collision detection of the cloth simulation system provides a simple method to deal with this issue
+T4e9c0b4065b2ffa9d0dd560150113c13	own_claim-GOLD 6636 6752	we combine the idea of creating wind fields by predefined flow primitives with particle tracing in given flow fields
+T538fad8ba1d036887f61340e0d3ce687	own_claim-GOLD 8822 8929	this method can be combined with the aerodynamic model described in section 3 to give nice and fast results
+Tfc2e36766d8eb255f9ae184537985093	own_claim-GOLD 9852 9915	we compute the wind field u containing these effects as follows
+T458a2501e21be9d4c478e1ecfcdd7e55	own_claim-GOLD 9917 9973	In our model every wind source is also a particle source
+T6aaa5fbf7d09d7c23aab18fd82cae254	own_claim-GOLD 10185 10273	The specific emission intervals and amounts depend on the properties of the flow sources
+T9ea84329056b3f6937b6dbf985eb6eb6	own_claim-GOLD 10275 10398	In every time step each particle in a wind gust moves along its velocity field w i defined by the corresponding wind source
+Td7f1e6ef3f9b815084e027f7abfc38ce	own_claim-GOLD 10588 10676	To calculate the wind particles’ positions we used the explicit Euler integration scheme
+T304d05f3b8e868bc3e04d3f91bf73b6a	own_claim-GOLD 10725 10764	this results in a path s(p t , p t+∆t )
+T47a20bfc30692f275f749a4177fcf98e	own_claim-GOLD 10909 11052	all grid cells colliding with the path are updated with the velocity of the associated wind source with respect to the position of the particle
+Ta27bbaeaa7d7f460a160c326094725f8	own_claim-GOLD 11517 11580	the normal of the colliding object n obj (p col ) is determined
+T01afbc7b8eb3272cb67a03aae4939914	own_claim-GOLD 11585 11691	the velocity of the particle is set to w i (p col , t+∆t) = w i (p col , t)−(n obj ·w i (p col , t))·n obj
+T64107e63d2001eaecce162de4d5f10bc	own_claim-GOLD 11692 11822	This assures that the velocity component of the resulting field u is orthogonal to the collision object’s surface at p col is zero
+T77dbdf8af8b931beef3a9f1fa559de1d	own_claim-GOLD 12180 12238	this method solves the problems described in section 4.2.1
+T2da7205b4cfd9a154e00155f3bac0923	own_claim-GOLD 12828 12897	the extinguishing effect of the superposition of the two wind sources
+T4b988499903509c65f60ff3d99f1b126	own_claim-GOLD 13837 13920	with this straightforward approach, nice, realistic looking results can be achieved

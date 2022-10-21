@@ -1,0 +1,5 @@
+Tc9acb97a1e4a194abf77dce1615d89a4	own_claim 10666 10698	Parameters with high variability
+Tb70b078d1c8e829e28535b75b2ca6e7f	own_claim 10723 10801	are estimated poorly and vary significantly across the different optimizations
+T3a3b421892b9ca82f2b694fd26e8eb3d	own_claim 10812 10843	parameters with low variability
+Td3bbd645d8f6862d2aab700519fc5465	own_claim 10857 10901	are consistent across multiple optimizations
+Taf39dc7877bdaf0ec46e1f6862053aae	own_claim 19355 19438	The four curves have a minimum when they are compared to their correct counterparts

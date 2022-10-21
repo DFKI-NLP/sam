@@ -1,0 +1,45 @@
+T48120053b611ef3e70ca81ef33ca2820	data-GOLD 46 119	the known position x(t 0 ) and velocity x(t 0 ) of the system at time t 0
+Tf634860d465f61a7b7a03af2dc0185e6	own_claim-GOLD 122 212	our goal is to determine a new position x(t 0 + h) and velocity x(t 0 + h) at time t 0 + h
+T216033308ff1f63e9096cb31092a2aa6	own_claim-GOLD 281 358	we must first transform equation (2) into a first-order differential equation
+Td15d55d077b3e71b4d31ed926d787078	own_claim-GOLD 360 449;469 470;481 517	This is accomplished simply by defining the system’s velocity v as v = x and then writing 3 dt d x x = dt d v x = M −1 f(x, v v)
+T75f8151d95b7e9b6c56c48bd070c62e7	data-GOLD 809 911;920 973	The explicit forward Euler method applied to equation (3) approximates x and v as x v = h M v −1 0 f 0 where the force f 0 is defined by f 0 = f(x 0 , v 0 )
+T18e04f0b8a1c4a465eaaff308cd1779e	data-GOLD 978 998	previously discussed
+T40d3b91ef73b6cbb930fe62988bb5e11	own_claim-GOLD 1000 1078	the step size h must be quite small to ensure stability when using this method
+Tdaddc9cb4a34de79880830d3750953f1	own_claim-GOLD 1080 1139	The implicit backward Euler method appears similar at first
+Td18259dbef38c864b0938092eb455183	data-GOLD 1141 1168;1188 1189;1200 1240	x and v are approximated by 4 v x = h M −1 f(x 0 v + 0 + x, v v 0 + v)
+Tc9410e25d0db2f13fd0c41612cfb12c8	own_claim-GOLD 1260 1471	The difference in the two methods is that the forward method’s step is based solely on conditions at time t 0 while the backward method’s step is written in terms of conditions at the terminus of the step itself
+T5b63779badb21dd7180fe1a06614e9c0	data-GOLD 1475 1539	The forward method requires only an evaluation of the function f
+Tbfd9311a5b08227b5f3320696d5d865f	data-GOLD 1544 1634	the backward method requires that we solve for values of x and v that satisfy equation (4)
+Te45b53a67a4d421e8d0da81e4fd1f718	data-GOLD 1636 1672	Equation (4) is a nonlinear equation
+T86211b27e9b6fce657159525d661c38b	own_claim-GOLD 1674 1869	rather than solve this equation exactly (which would require iteration) we apply a Taylor series expansion to f and make the firstorder approximation ∂f ∂f f(x 0 + x, v 0 + v) = f 0 + ∂x x + ∂v v
+T2e3d7313fadce8e73dc9f47531909ee5	data-GOLD 1889 1973	the derivative ∂f/∂x is evaluated for the state (x 0 , v 0 ) and similarly for ∂f/∂v
+T4d2c63f45d5f9a6f9e74080a03347314	data-GOLD 1975 2049	Substituting this approximation into equation (4) yields the linear system
+T058539c8a25c2ab40c78946f5f0b7707	data-GOLD 2081 2127	v x = h M −1 (f 0 + v 0 ∂x ∂f + x v + ∂v ∂f v)
+Tada8d80c2fd305ccc043b3f421ede020	data-GOLD 2147 2266	Taking the bottom row of equation (5) and substituting x = h(v 0 + v) yields v = hM −1 f 0 + ∂x ∂f h(v 0 + v) + ∂v ∂f v
+T46b1bc45d252d441f23f5705181325a2	data-GOLD 2269 2332	Letting I denote the identity matrix, and regrouping, we obtain
+T849d0ad6e6772b80ae8c8e5c58610b6f	data-GOLD 2364 2424	I − hM −1 ∂v ∂f − h 2 M −1 ∂x ∂f v = hM −1 f 0 + h ∂x ∂f v 0
+T14275e06ca1c5deb3549b676c60e47ea	data-GOLD 2442 2467	which we then solve for v
+Te4ed94d6578f963465bb8402ad59e87a	data-GOLD 2469 2513	Given v, we trivially compute x = h(v 0 + v)
+Te2f007cd57468465ad9e218aa41072b7	own_claim-GOLD 2521 2678	the backward Euler step consists of evaluating f 0 , ∂f/∂x and ∂f/∂v; forming the system in equation (6); solving the system for v; and then updating x and v
+Tf0c9a74e35638a553299ba5eda793e7d	own_claim-GOLD 2901 2938	The method is called “backward” Euler
+Tf676fd74593c47478b51cb68bb09b7e6	data-GOLD 2947 3062	starting from the output state (x 0 + x, v 0 + v) and using a forward Euler step to run the system backward in time
+T4463fd80d6de601bea58928130263f1e	own_claim-GOLD 3187 3247	Forward Euler takes no notice of wildly changing derivatives
+Ta8188bcc3d5d2f260222dfef3fc24b7e	own_claim-GOLD 3253 3283	proceeds forward quite blindly
+Tfaf247002dc5b05366757a647c4e217f	own_claim-GOLD 3285 3299	Backward Euler
+T7b07d53034e974d9906d10295138edaf	own_claim-GOLD 3310 3405	forces one to find an output state whose derivative at least points back to where you came from
+T7191314672509789c842b1fa9dda1d48	own_claim 481 517	dt d x x = dt d v x = M −1 f(x, v v)
+T5a2ff2376752e4a2c7a760067d9bc905	own_claim 1000 1078	the step size h must be quite small to ensure stability when using this method
+T9d7cba03358f4a9b958832b34af90724	own_claim 1080 1139	The implicit backward Euler method appears similar at first
+Td8779326a825ccf0c89f9e0b57e62f3c	own_claim 1141 1168	x and v are approximated by
+T0430178a64936470dd34289a9ede9ba3	own_claim 1200 1240	v x = h M −1 f(x 0 v + 0 + x, v v 0 + v)
+T9d17dea7e0fd5f13e310a2f563885698	own_claim 1260 1369	The difference in the two methods is that the forward method’s step is based solely on conditions at time t 0
+T56a26fbee812c8c0bdbb0cf4100a7481	own_claim 1376 1471	the backward method’s step is written in terms of conditions at the terminus of the step itself
+Tca6c5746e4dfd067e28754749b9c2234	own_claim 1475 1539	The forward method requires only an evaluation of the function f
+Tcd18b5cf5d34e067f4b05ce21587a190	own_claim 1544 1634	the backward method requires that we solve for values of x and v that satisfy equation (4)
+T4a74e74efa9ec0e4803acc1a77ab1e77	own_claim 1649 1672	is a nonlinear equation
+Tcdff4e6774f479be94f5b1007513da47	own_claim 1674 1713	rather than solve this equation exactly
+T2feacd3d40d7e34d602118d7b783b54d	own_claim 2364 2424	I − hM −1 ∂v ∂f − h 2 M −1 ∂x ∂f v = hM −1 f 0 + h ∂x ∂f v 0
+T85100b7b9dead6f2081eb1479cd97456	own_claim 3253 3283	proceeds forward quite blindly
+T0472f247b7efdfc9141b318952f9abf9	own_claim 3310 3405	forces one to find an output state whose derivative at least points back to where you came from
+T5d03b399a9e398f909e038d387466695	own_claim 3407 3465	imparting, essentially, an additional layer of consistency
+

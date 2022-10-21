@@ -1,0 +1,60 @@
+T6f55f56948237fd5c9d01b3d2ef18d5f	own_claim 677 737	Our simulator models cloth as a triangular mesh of particles
+T9d6166598b533a4c3948f0a43b89663f	data 745 766	a mesh of n particles
+T7451e4e03c29a5c1faa36431c6fda256	own_claim 768 829	the position in world-space of the ith particle is x i ∈ IR 3
+T55a7090ac7139cfe56dcf7566e9ca2e5	own_claim 895 940	The same component notation applies to forces
+Ta68be483c438c583827ade1bbee3c515	own_claim 942 1018	a force f ∈ IR 3n acting on the cloth exerts a force f i on the ith particle
+T05fe9eba5a8e40ecfd5c5122e7c0b995	own_claim 1344 1464	Collisions between cloth and solid objects are handled by preventing cloth particles from interpenetrating solid objects
+Tb531c03551cff4cf894113cdbd83b388	own_claim 1466 1545	Our current implementation models solid objects as triangularly faced polyhedra
+Tf4a290b2db57bb3f247cb1f83ba12957	own_claim 1605 1762	particles found to be sufficiently near a face, and on the wrong side, are deemed to have collided with that face, and become subject to a contact constraint
+T1fa8cb1d08b6022e47d4ea3b1a7b1c8c	data 1768 1806	relative velocities are extremely high
+Tce318d77209fadf284673d2c0343e0b6	own_claim 1808 1849	this simple test may miss some collisions
+T28253bf460f1afb6555dd3b05f5a6037	own_claim 1865 1986	analytically checking for intersection between previous and current positions can guarantee that no collisions are missed
+Tf06538df1677939de0b785ea7b939a99	data 1993 2015	cloth/cloth collisions
+Tbe9a734e33a15d8ea4900034af8b7e06	own_claim 2017 2155	we detect both face-vertex collisions between cloth particles and triangles, as well as edge/edge collisions between portions of the cloth
+T1b85b5add34eaba1c28d86cbd9f21d2b	own_claim 2183 2269	close proximity or actual intersection of cloth with itself initiates contact handling
+T1a791798a71dc1b29f283fd23aca7e2e	own_claim 2456 2581	The most critical forces in the system are the internal cloth forces which impart much of the cloth’s characteristic behavior
+T23a53ce7f2ed332f8a93e832a939c20a	data 2598 2599	3
+T9d5b12f90918f347a11f237ed8139c60	background_claim 2603 2752	describes the use of the Kawabata system of measurement for realistic determination of the in-plane shearing and out-of-plane bending forces in cloth
+Tb19ff2ac6cccea2b6e897da4da5f34f9	own_claim 2952 2980	The strongest internal force
+T929f2946881e81ccef026889d09a85c9	own_claim 3095 3175	Under normal conditions, cloth does not stretch appreciably under its own weight
+Ta00e46b7f43c51b7f70267955f6e9557	own_claim 3177 3248	This requires the stretch force to have a high coefficient of stiffness
+Tb89e9db29ee148c46e0e4878eb947e36	own_claim 3263 3345	it is the stretch force that is most responsible for the stiffness of equation (1)
+Tf4f25895aedcfcf0ea9aaf722d1c58e4	own_claim 3347 3478	A common practice in explicitly integrated cloth systems is to improve running time by decreasing the strength of the stretch force
+T6f4e05291212eeb526e75420cb6413b8	own_claim 3489 3530	this leads to “rubbery” or “bouncy” cloth
+Tae63d3506e400e24c48550452e9a33c9	own_claim 3532 3658	Our system uses a very stiff stretch force to combat this problem, without any detrimental effects on the run-time performance
+Tff0511149430bd24f3ad687b18e29a64	own_claim 3666 3752	the shear and bend force stiffness coefficients depend on the material being simulated
+T288705ab3dfd396547c8d1d6ef3bac08	own_claim 3754 3801	the stretch coefficient is essentially the same
+Tc40624e11ff22d507fcd4a9a5ac0cac5	own_claim 3810 3835	value for all simulations
+T40bdad6113320ed55c9dbdc82f5a7809	data 3852 3893	stretchy cloth is specifically called for
+T3c460463f9618b6a471404df4ad1e757	own_claim 3895 3938	the stretch coefficient can be made smaller
+T4632455f5da4e46eaf9ce970642a2917	own_claim 3941 4011	Complementing the above three internal forces are three damping forces
+T1135cc0f734206229c6cd85136000345	own_claim 4173 4244	The damping forces do not dissipate energy due to other modes of motion
+T21bc6aaf279fe406954b70101c0e70f6	own_claim 4246 4332	Additional forces include air-drag, gravity, and user-generated generated mouse-forces
+Ta9d2aeba7ac03afcef6e6b15fa651403	own_claim 4364 4455	Cloth/cloth contacts generate strong repulsive linear-spring forces between cloth particles
+T7a48d76ede959a5b5dc4ea7358bd3ce7	own_claim 4841 4906	particles lying on the seam must have multiple (u, v) coordinates
+T4f563eff935dc3a588525335f312342f	own_claim 5411 5427	ẍ = M −1 f(x, x)
+T8ca181d68f3cd10044068e2a6cd1b7a7	own_claim 5497 5538	The use of an implicit integration method
+T2a58b78680f150dc380134213b642699	own_claim 5571 5617	generates large unbanded sparse linear systems
+Ta5d77e58213496f243bc3d5be72ad983	own_claim 5727 5767	CG methods exploit sparsity quite easily
+Tc6371428f316548ae48fd1aeb801fbe8	data 5775 5824	they are based solely on matrix-vector multiplies
+T880988c2ca529559c16eaee7daa25369	own_claim 5830 5880	require only rudimentary sparse storage techniques
+Tddde6e23f468d2e5dc65d525c056f83d	own_claim 5882 5982	The sparsity of the matrix generated by the implicit integrator is best represented in block-fashion
+T9dd076166748e1b09eefd8fb69509e93	data 5988 6013	a system with n particles
+Td0e0312703ac8b174f316f9810b66d97	own_claim 6015 6118	we deal with an n × n matrix, whose non-zero entries are represented as dense 3 × 3 matrices of scalars
+T64e7911e7f1fdcef64d56d0f9d91ba87	own_claim 6120 6167	The matrix is represented as an array of n rows
+Tb6257c94f9ec761b7b5318582c549061	own_claim 6452 6520	The overall implementation of sparsity is completely straightforward
+T277c9ad5228eb9c2b8f5a931df5981e3	own_claim 6577 6692	An individual particle’s position and velocity can be completely controlled in either one, two, or three dimensions
+T572051fab315803fa545fe10ce07d20d	own_claim 6694 6814	Particles can thus be attached to a fixed or moving point in space, or constrained to a fixed or moving surface or curve
+Tf357d2dbe7654f3c013c345298da606c	own_claim 6816 6851	Constraints are either user-defined
+T6c709ff447817a1b16274122784ee687	own_claim 6917 6943	or automatically generated
+T9da7bb76c4e662e85b112ccb5efd9681	data 6960 7004	contact constraints between cloth and solids
+Tce89a35c2220f2652f6a584346a8d8ed	own_claim 7006 7141	During cloth/solid contacts, the particle may be attached to the surface, depending on the magnitudes of the frictional forces required
+T7915bb26e473091af435e35b5e57c476	own_claim 7154 7228	the particle is constrained to remain on the surface, with sliding allowed
+T54256210c76129d70c124f3bc9324ebb	own_claim 7352 7455	The constraint techniques we use on individual particles work just as well for collections of particles
+T6ed819699f6908e6379c1aaa568171c8	own_claim 7463 7547	we could handle cloth/cloth intersections using the technique described in section 5
+Td0cc44b3b64c784bae7619bb23580cb3	own_claim 7553 7582	the cost is potentially large
+T22c2c8b0e366f3c2cdfbc1bd0db263ea	own_claim 7601 7670	we have chosen to deal with cloth/cloth contacts using penalty forces
+T6071939c649a7a7f7e089a89c5d4041a	data 7681 7771	a particle is near a cloth triangle or is detected to have passed through a cloth triangle
+T1bad5543085db031ffb69029c35ec7cf	own_claim 7773 7869	we add a stiff spring with damping to pull the particle back to the correct side of the triangle
+T0457b9182f39c01fb90e8f591e5db9d6	own_claim 7871 7926	The implicit solver easily tolerates these stiff forces
+

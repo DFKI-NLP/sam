@@ -1,0 +1,7 @@
+Tbcc7c76c805b132f3c07d61456884e8f	background_claim 188 215	Among the available methods
+Td9b8ee97414f0b39540db0c0795fd240	background_claim 217 250	there are finite elements methods
+Tfab1945123f5a9c4e4b660f4f749dea9	background_claim 299 315	particle systems
+T7bcdaf0e0041d0b33ae449e2d623730f	background_claim 1284 1423	The evolution of the system is computed numerically from these equations that form a large and sparse ordinary differential equation system
+T2f6ce2e640f060a87ce63d99d82703ce	background_claim 1459 1478	is also first-order
+T01dd386811904c5a0417138490d96d5b	background_claim 1480 1534	This numerical system has to be integrated numerically
+T98b2df69512ff7147f2e5c0e4766a8aa	background_claim 1700 1733;1740 1744;1751 1851	Various numerical methods related Fax: to integration of numerical ordinary first-order differential systems are available for this purpose

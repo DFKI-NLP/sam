@@ -1,0 +1,6 @@
+Td969f50c79a1f54387a0bdccd3073a12	own_claim 2949 3028	We introduce a local rectangular right handed two dimensional coordinate system
+T2d69a19a1ea1077fd76cef3df04ba514	data 3109 3117	Figure 5
+Ta151083849455974361c8149a9ee6815	data 3425 3462;3463 3578	cloth simulation y' 2 ' x' modulation factor for each triangle (h) deformed mesh modulated wrinkle pattern bump mapping final mesh with animated wrinkles
+Tddb8caaa4bbd33cbcc0bb512b592864d	own_claim 3228 3278;3289 3416	They are related by the deformation transformation y x user defined wrinkle pattern initial mesh 1 wrinkling coefficient for each triangle C 1 , C 2 , C 3 , C 4 deformable models
+Radbcfc576f56397c64d48ed54f6cf528	supports-GOLD Arg1:T2d69a19a1ea1077fd76cef3df04ba514 Arg2:Td969f50c79a1f54387a0bdccd3073a12
+R28fb55ea4206c3a7c7260ccc3e73fbdd	supports-GOLD Arg1:Ta151083849455974361c8149a9ee6815 Arg2:Tddb8caaa4bbd33cbcc0bb512b592864d

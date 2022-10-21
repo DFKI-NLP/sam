@@ -1,0 +1,45 @@
+T9d2cbe30ecc9a29b19cd2201c9aada2d	own_claim-GOLD 31 244	This paper has demonstrated a novel system for observing cloth behavior, including complete information about deformation and forces, and a new method for fitting and evaluating cloth models using the measurements
+Tc62b02e05d7b426d0a6eaf3a72a8e22d	own_claim-GOLD 246 307	Our system is different from standard textile testing systems
+Tb4095c4af569702a14e6b54d4fc92923	data-GOLD 316 357	it captures detailed geometry information
+Tcaa1bb049fbd0aa6075752464a8d3255	own_claim-GOLD 359 410	it is different from previous cloth capture systems
+T66002de58a8a14ea5f8b771035d8b154	data-GOLD 419 457	it captures complete force information
+Tadd26f7e9ec844f3231a98ee7a3592bf	data-GOLD 462 499	measures deformations of a 3D surface
+Ta1c08c562e89e6c5c9b1e13c4f3f8d5f	own_claim-GOLD 501 630	The combination of very complete position and force information provides an unprecedented view into the complex behavior of cloth
+T6951a02007a50e5c944abf347f38c307	own_claim-GOLD 632 709	Our measurement setup offers very accurate control over membrane deformations
+T61cf078377a1ed5870b71acda5b736b4	own_claim-GOLD 715 786	the bending tests require manual intervention and are thus less precise
+T4f28e646d67bd1a8383afea1224e4702	own_claim-GOLD 801 868	the bending tests are most accurate for samples with straight edges
+Tfb98d6fe6bf0ee45dd3cdfb5f41a8b80	own_claim-GOLD 874 894	some cloth materials
+T039511ca27c544c8706edcc22a6ac69b	own_claim-GOLD 916 950	tend to curl up at free boundaries
+Tf04499f2ce7c3bca07be631c8558188f	own_claim-GOLD 952 1085	In order to eliminate these problems, we would like to investigate alternative ways of controlling bending deformations in the future
+Tca6f19704723e87d42ff35aeaf77721a	own_claim-GOLD 1087 1164	The data from our experiments shows some of the limitations of current models
+T43c2c100e9440819c00d4eee8c178c2d	own_claim-GOLD 1166 1205	The most obvious of these is hysteresis
+T33f5680f325c43a68a9e0a3213f7cd84	background_claim-GOLD 1206 1246	all widely used cloth models are elastic
+T6c79ac1c77581befa2d0c13af676745c	own_claim-GOLD 1252 1285	cloth is clearly far from elastic
+T4858073bb9a4cbb4c3f2c0a22e84fcde	own_claim-GOLD 1287 1356	resulting in quite large errors for any given point in the experiment
+T5e465ff1c7658db5936c9cde401f8d77	own_claim-GOLD 1358 1409	There are many paths for future work in measurement
+Td2b5e318a68e93eb4bdabc8e6a81999e	own_claim-GOLD 1421 1462	more complete exploration of strain space
+T798eacf2ddff03ec1fd58caf00d0a153	own_claim-GOLD 1491 1520	capture of dynamic properties
+T41556f1a847d5bbce1b158217f72d795	own_claim-GOLD 1522 1536	and in fitting
+Td100e6a782bd0511961d03ef38f7b910	own_claim-GOLD 1544 1673	new ways of evaluating fitting error are needed that can work when the cloth’s equilibrium state is unstable or non-deterministic
+T838fb029a4db644e0bc04b610710a795	own_claim 31 244	This paper has demonstrated a novel system for observing cloth behavior, including complete information about deformation and forces, and a new method for fitting and evaluating cloth models using the measurements
+T40bf1907d86868ecc6f0f8e848af1044	own_claim 246 307	Our system is different from standard textile testing systems
+T431e4ff8a6e6a0072b608ca84f5d783d	own_claim 316 357	it captures detailed geometry information
+T4e42969557bb71f7bcd8a93655757c81	own_claim 359 499	it is different from previous cloth capture systems in that it captures complete force information and measures deformations of a 3D surface
+T44d7e763f61cd9830c11414dbf953bcd	own_claim 501 630	The combination of very complete position and force information provides an unprecedented view into the complex behavior of cloth
+Tc9567d55b2005fce2804f6be218e81f8	own_claim 632 709	Our measurement setup offers very accurate control over membrane deformations
+Tcec4d5f6ee3d12d1d3e4b4671b237cf9	own_claim 715 760	the bending tests require manual intervention
+T8cb069372a2c53e8161ad26fd680af35	own_claim 765 786	are thus less precise
+Tb70b3717d3029ba60e62a4666e6f1ab1	own_claim 801 868	the bending tests are most accurate for samples with straight edges
+T6069f360a068dba9235c24d050a85aab	own_claim 874 894	some cloth materials
+Tf91735aafc729f0589ab8a46f0b78b40	data 910 914	knit
+T6b3ec6ec263415e6624b60e616f78f90	own_claim 916 950	tend to curl up at free boundaries
+T7a51429f03e3a42728b87cf58f4a3199	own_claim 990 1085	we would like to investigate alternative ways of controlling bending deformations in the future
+Tef416f3a11b32a56024a67b02329c357	own_claim 1087 1164	The data from our experiments shows some of the limitations of current models
+Ta98abcb0e31d964a4deeac84e76c0876	own_claim 1166 1205	The most obvious of these is hysteresis
+T36a8ee4606c186cb9c4e5377ee7c2118	own_claim 1206 1246	all widely used cloth models are elastic
+T875c2ebb3ec23293bd7a0d86f798ee7b	own_claim 1252 1356	cloth is clearly far from elastic, resulting in quite large errors for any given point in the experiment
+T0d391cad4b37e0b9b8470d193e8f6964	own_claim 1358 1409	There are many paths for future work in measurement
+Ta3d708a6e58cded28aed5667b19a0e4e	data 1421 1462	more complete exploration of strain space
+Tf9fe2e46b70d1367cdd92d6a93b845f4	data 1491 1520	capture of dynamic properties
+T0a0fab69751f13b2c2768aa3a7366652	data 1544 1673	new ways of evaluating fitting error are needed that can work when the cloth’s equilibrium state is unstable or non-deterministic
+

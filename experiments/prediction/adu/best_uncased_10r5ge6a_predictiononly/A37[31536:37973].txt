@@ -1,0 +1,47 @@
+<H1>References</H1>
+        
+          A SCHER , U. M., R UUTH , S. J., AND S PITERI , R. J. 1997. Implicit–explicit Runge–Kutta methods for time-dependent partial differential equations. Applied Numerical Mathematics: Transactions of IMACS 25, 2–3, 151–167.
+          B ARAFF , D., AND W ITKIN , A. 1998. Large steps in cloth simulation. In Proceedings of SIGGRAPH 98, ACM Press / ACM SIGGRAPH, New York, NY, USA, 43–54.
+          B ARTH , E., K UCZERA , K., L EIMKUHLER , B., AND S KEEL , R. 1994. Algorithms for Constrained Molecular Dynamics. March.
+          B ERCOVIER , M., AND P AT , T. 1984. A C 0 finite element method for the analysis of inextensibile pipe lines. Computers and Structures 18, 6, 1019–1023.
+          B ERGOU , M., W ARDETZKY , M., H ARMON , D., Z ORIN , D., AND G RINSPUN , E. 2006. A quadratic bending model for inextensible surfaces. In Fourth Eurographics Symposium on Geometry Processing, 227–230.
+          B OXERMAN , E. 2003. Speeding up cloth simulation. Master’s thesis, University of British Columbia.
+          B REEN , D. E., H OUSE , D. H., AND W OZNY , M. J. 1994. Predicting the drape of woven cloth using interacting particles. In Proceedings of ACM SIGGRAPH 1994, ACM Press/ACM SIGGRAPH, New York, NY, USA, 365–372.
+          B RIDSON , R., F EDKIW , R. P., AND A NDERSON , J. 2002. Robust treatment of collisions, contact, and friction for cloth animation. ACM Transactions on Graphics 21, 3 (July), 594–603.
+          B RIDSON , R., M ARINO , S., AND F EDKIW , R. 2003. Simulation of clothing with folds and wrinkles. In Symposium on Computer animation, 28–36.
+          C HOI , K.-J., AND K O , H.-S. 2002. Stable but responsive cloth. ACM Transactions on Graphics” 21, 3, 604–611.
+          C HOI , K.-J., AND K O , H.-S. 2005. Research problems in clothing simulation. Computer-Aided Design 37, 6, 585–592.
+          D ESBRUN , M., S CHR ODER  ̈ , P., AND B ARR , A. 1999. Interactive animation of structured deformable objects. In Graphics Interface ’99, 1–8.
+          E BERHARDT , B., W EBER , A., AND S TRASSER , W. 1996. A fast, flexible, particle-system model for cloth draping. IEEE Comput. Graph. Appl. 16, 5, 52–59.
+          E BERHARDT , B., E TZMUSS , O., AND H AUTH , M. 2000. Implicitexplicit schemes for fast animation with particle systems 137– 154.
+          F UHRMANN , A., G ROSS , C., AND L UCKAS , V. 2003. Interactive animation of cloth including self collision detection. In WSCG ’03, 141–148.
+          G RIFFITHS , P., AND K ULKE , T. 2002. Clothing movement— visual sensory evaluation and its correlation to fabric properties. Journal of sensory studies 17, 3, 229–255.
+          H AIRER , E., L UBICH , C., AND W ANNER , G. 2002. Geometric Numerical Integration. No. 31 in Springer Series in Computational Mathematics. Springer-Verlag.
+          H AUTH , M., E TZMUSS , O., AND S TRASSER , W. 2003. Analysis of numerical methods for the simulation of deformable models. The Visual Computer 19, 7-8, 581–600.
+          H ONG , M., C HOI , M.-H., J UNG , S., W ELCH , S., AND T RAPP , J. 2005. Effective constrained dynamic simulation using implicit constraint enforcement. In International Conference on Robotics and Automation, 4520–4525.
+          H OUSE , D. H., AND B REEN , D. E., Eds. 2000. Cloth modeling and animation. A. K. Peters, Ltd., Natick, MA, USA.
+          H OUSE , D. H., D E V AUL , R. W., AND B REEN , D. E. 1996. Towards simulating cloth dynamics using interacting particles. International Journal of Clothing Science and Technology 8, 3, 75–94.
+          M ARSDEN , J. 1999. Introduction to Mechanics and Symmetry. Springer.
+          M EYER , M., D EBUNNE , G., D ESBRUN , M., AND B ARR , A. H. 2001. Interactive animation of cloth-like objects in virtual reality. The Journal of Visualization and Computer Animation 12, 1 (Feb.), 1–12.
+          M ULLER  ̈ , M., H EIDELBERGER , B., H ENNIX , M., AND R AT CLIFF , J. 2006. Position based dynamics. In Proceedings of Virtual Reality Interactions and Physical Simulation (VRIPHYS), C. Mendoza and I. Navazo, Eds., 71–80.
+          P ROVOT , X. 1995. Deformation constraints in a mass-spring model to describe rigid cloth behavior. In Graphics Interface, 147–154.
+          S CHENK , O., AND G ARTNER  ̈ , K. 2006. On fast factorization pivoting methods for sparse symmetric indefinite systems. Elec. Trans. Numer. Anal 23, 158–179.
+		  T ERZOPOULOS , D., P LATT , J., B ARR , A., AND F LEISCHER , K. 1987. Elastically deformable models. In Computer Graphics (Proceedings of ACM SIGGRAPH 87), ACM Press, New York, NY, USA, 205–214. 
+		  T SIKNIS , K. D. 2006. Better cloth through unbiased strain limiting and physics-aware subdivision. Master’s thesis, The University of British Columbia.
+V OLINO , P., AND M AGNENAT -T HALMANN , N. 2001. Comparing efficiency of integration methods for cloth simulation. Computer Graphics International, 265–274. W ITKIN , A., G LEICHER , M., AND W ELCH , W. 1990. Interactive dynamics. Computer Graphics (Proceedings of ACM SIGGRAPH 90) 24, 2, 11–21. 
+        
+        
+          
+          
+          Figure 8: Enforcing inextensibility using fast projection yields lively motion with detailed wrinkles and folds. Frames from ballet and runway sequences simulated using fast projection. The elastic term was integrated implicitly (top) and explicitly (bottom), respectively. The cloth contains 8325 (top) and 10688 (bottom) vertices, with average simulation time per (30Hz) frame of 5.2 and 7.8 seconds, respectively.
+        
+       
+      
+      
+        Appendix A
+        We briefly explain why ICD and fast projection (FP) are not troubled by configurations (Q1), (Q2), and (Q4), and are resilient to (Q3). Facts about the behavior of SHAKE are taken from [Barth et al. 1994]. Q1 SHAKE’s force ∇C(x n ) T λ n+1 cannot reduce the single edge’s length back to l; our force ∇C(x n+1 j ) T λ n+1 can reduce that edge’s length back to l. Q2 ∇C(x n+1 j ) and ∇C(x n ) T are both full-rank, yet SHAKE fails since ∇C(x n+1 j )M −1 ∇C(x n ) T is singular; FP uses ∇C(x n+1 j )M −1 ∇C(x n+1 j ) T , and ICD uses ∇C(x n+1 j )D∇C(x n+1 j ) T , where D is a symmetric full-rank matrix; in both cases this product is not singular. Q3 ICD and FP may fail if ∇C(x n+1 j ) is rank-deficient; for sufficiently small timestep, h, this case is always avoidable. Q4 ∇C(x n ) is rank-deficient, so SHAKE fails; ICD and FP do not use ∇C(x n ).
+      
+    
+  
+
+</Document>

@@ -1,0 +1,9 @@
+T7aba61151aa9b44829aca4e856c91e50	own_claim 33 98	Our goal is to study the fidelity of constitutive models of cloth
+T5707a5e25c5d724d7560695bf8d1fc26	own_claim 462 514	some of the models we look at are discrete in nature
+T69a8f463df8a0118f1117dccc24e24cd	own_claim 2611 2739	We use continuum strain definitions in all cases to fit them in a common formulation that allows us to easily compare the models
+Tcb8d3878ab4816120785bed43388de58	own_claim 5744 5842	The generic force density model F = −σ ε defined above assumes a linear stress-strain curve σ = kε
+Tcbea080676eb3cb0e247ec9682091f97	own_claim 5853 5908	stressstrain curves are potentially nonlinear functions
+T2c3b821edaf20ee474dfc502a6a0b585	own_claim 6148 6254	The resulting nonlinear force density function, F i = −k i (ε i )ε i ε i yields a conservative force field
+Tdc592ec3b6c3c6e164ed8f60942b2a0e	own_claim 6270 6340	the elastic energy density can no longer be defined simply as 1 2 kε 2
+T60aa9e25e8bbd8cc881252a130f4a32e	own_claim 6347 6406	would now require the integration of the stiffness function
+Tc652a18725506dcc39bbec97e9e0bc61	own_claim 6680 6863	we used the nonlinear model in all cases, resulting in a consistent set of models, parameterized by the number of spline control points, which reduces to the widely used linear models

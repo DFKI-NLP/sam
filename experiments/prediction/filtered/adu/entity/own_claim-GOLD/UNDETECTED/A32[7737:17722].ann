@@ -1,0 +1,24 @@
+T715ac9a4cdbd7d64a1676e272af743b3	own_claim-GOLD 622 683	This mesh may represent a garment or another deformable model
+T00ad4c48aca83ab9e89dd1c70762139f	own_claim-GOLD 685 769	The wrinkle pattern is bump or displacement mapped onto the initial mesh by the user
+Ta64c6dc14c35b100c5f857019976b8e6	own_claim-GOLD 1215 1280	The initial mesh serves as an input to a simulation engine, which
+T9096130b6e56b241c934d69747360a6c	own_claim-GOLD 1316 1367	would be the physical model with a numerical solver
+T68557e951e7d9058cb05fb904acc3e01	own_claim-GOLD 2333 2426	They depend only on the initial wrinkle pattern, the initial mesh and the mapping coordinates
+Tab4cf036e42fcbd300245ac9c824d402	own_claim-GOLD 2724 2826	The deformation of the triangle can be described by a general 4D homogeneous coordinate transformation
+T23054651fd3779bd96815005662c5614	own_claim-GOLD 2837 2947	the rotational and translational parts of the transformation are irrelevant to the derivation of the algorithm
+T663971d6fd740a979a91051a3208d57f	own_claim-GOLD 2949 3028	We introduce a local rectangular right handed two dimensional coordinate system
+Tc3deaf726a7c971a99ece1fe623a83b0	own_claim-GOLD 3030 3097	which is defined by choosing any edge of the triangle as the x axis
+T48a3354a8e96e13dcc13106dde837450	own_claim-GOLD 3228 3278	They are related by the deformation transformation
+T2efcdd3546119b1865b68fb151762444	own_claim-GOLD 3289 3416	y x user defined wrinkle pattern initial mesh 1 wrinkling coefficient for each triangle C 1 , C 2 , C 3 , C 4 deformable models
+T64bda4e79fdd9eef12704d9a06989bda	own_claim-GOLD 4439 4512	The wrinkle function f (x , y ) on the triangle is related to f (x, y) by
+T43b4ab7297a7fc36e0012def1c1a123c	own_claim-GOLD 4523 4584	2 f (x , y ) : ∈ R → R = f T 1 −1 (x , y ), T 2 −1 (x , y ) ¡
+T45281ee02a9aa15d13dcb14bd8d04527	own_claim-GOLD 5446 5489	this parameterized surface area is given by
+T135fbccba880b69f5d440772a2408472	own_claim-GOLD 5620 5654	A( , f (x, y)) = A ( , f (x , y ))
+Tf6e7e97534cfb370936c5e4286c2a56a	own_claim-GOLD 6719 6794	The wrinkling coefficients on the other hand, are computationally expensive
+T5100f0ba25ebbc13aea24d57ab9329d7	own_claim-GOLD 6939 6988	can therefore be calculated once at the beginning
+T15a1923522104fab1b76a27de2a91b39	own_claim-GOLD 7233 7325	it is clear that we have presented a solution within the approximation of small deformations
+Ted719be7cf042421f29690a81a39ea58	own_claim-GOLD 8009 8067	higher order terms in the expansion may become significant
+T48011dae7df3b40280406545502ce562	own_claim-GOLD 8072 8087	not predominant
+Tbfea04578afa25a445bb5d48d1679ed1	own_claim-GOLD 8089 8157	The modulation factor h is a function of the deformation of triangle
+Tf06d4d7b838aff3e7b8c8c58c2caa35f	own_claim-GOLD 8162 8182	has value around one
+Tbcbbad8efaaf570415a180a0d82df921	own_claim-GOLD 8521 8579	a modulation map, which further violates area conservation
+Tabd770009ca70f6a2135ed47bdacb4b9	own_claim-GOLD 9116 9214	Wrinkling coefficients are sensitive to the wrinkle function and therefore to the wrinkle patterns

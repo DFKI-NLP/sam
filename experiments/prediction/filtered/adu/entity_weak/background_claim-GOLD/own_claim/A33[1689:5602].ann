@@ -1,0 +1,14 @@
+Ta90dd6ff41fcc9541750ca24473a3f23	background_claim-GOLD 37 128	We capture the motion of cloth using multiple video cameras and specially tailored garments
+T0b9b7a20cd590e2ddea581c64f1fd126	background_claim-GOLD 238 335	Over the course of roughly half a dozen papers on cloth capture a prevailing strategy has emerged
+Tbafbd84e4fd6da72330390dd56a640f0	background_claim-GOLD 1530 1589	contiguous visible regions are often small and oddly shaped
+T3b2c8172c96c962f3660cf934a203c84	background_claim-GOLD 1591 1663	In these regions correspondence is essential for detailed reconstruction
+T968f884d8caa04e7eb87e54c74d336a3	background_claim-GOLD 1668 1698	can be challenging to identify
+T535aad4219c0da49942fd9fc6f1ef027	background_claim-GOLD 2609 2615	MeshIK
+Tab89e1d2b22fc9e8f0ef747d689c46c1	background_claim-GOLD 2751 2786	MeshIK is well-suited to cloth data
+T3c9d08f97d509ceb62b5e65f9836099d	own_claim 37 128	We capture the motion of cloth using multiple video cameras and specially tailored garments
+T9154332b07fca893720167dc2f56b41f	own_claim 238 335	Over the course of roughly half a dozen papers on cloth capture a prevailing strategy has emerged
+Te4da069480a6443cdab4015045bfaeb9	own_claim 1530 1589	contiguous visible regions are often small and oddly shaped
+Te06a9619e83e0eec0fd7d5fd58955218	own_claim 1591 1663	In these regions correspondence is essential for detailed reconstruction
+Tdd8f77e8c0fca6a91797777ab6e5e461	own_claim 1668 1698	can be challenging to identify
+T94f449b8ab4689792916b00b051c5f99	own_claim 2609 2615	MeshIK
+Teb27732105fe487b874a6748fdc31231	own_claim 2751 2786	MeshIK is well-suited to cloth data

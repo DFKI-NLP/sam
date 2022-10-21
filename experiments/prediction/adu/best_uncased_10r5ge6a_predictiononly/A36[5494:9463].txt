@@ -1,0 +1,24 @@
+<H1>2. Prior Work</H1>
+        Cloth simulation has a comparatively long history in computer graphics. 
+
+Since the first physics-based approach by Terzopoulos et al. [ TPBF87 ] a multitude of different cloth models have emerged, ranging from simple mass-spring systems 
+[ Pro95 , CK02 ] over general particle systems 
+[ BHW94 , BW98 , EWS96 ] to elaborate models derived from continuum mechanics [ EKS03 , VMTF09 ] or even the discrete yarn structure 
+[ KJM08 ]. Considering the number of existing models, it is very hard to clearly identify or even quantify the advantages of individual approaches. Our goal is to define a platform for comparing cloth models to the observed behavior of real cloth. As a central component of any cloth model, material models describe the relation between deformation and resulting forces. 
+In the simplest case, this relationship is linear and thus completely described by a set of material constants, whose number depends on the cloth model: Massspring systems typically have four parameters (one per type of spring 
+[Pro95]), whereas continuum-based methods can have two (isotropic) to six (completely anisotropic) parameters for planar deformation 
+[EKS03] plus another one to three for bending [ GGWZ07 ]. Continuum-based approaches can accurately describe the directional variation of material properties, but regardless of the cloth model, a single set of material coefficients for the entire deformation range is not sufficient to faithfully capture the nonlinear response of typical fabrics. Bi-phasic models, typically implemented as strain limiting methods 
+[Pro95, BFA02, Mül08, TPS09, WOR10]
+, improve on this by splitting the material behavior into an initial, weakly elastic range and a stiff, quasi-inextensible limit. At the extreme, the elastic range can be replaced altogether by inextensibil∗ ity constraints 
+[GHF 07, EB08]. A better approximation to the true material response can be obtained by making the material parameters functions of the deformation, rather than constants, and by fitting these functions to measured data. To this end, previous work [BHW94,EWS96, VMTF09 ] has mainly relied on the Kawabata Evaluation System (KES) 
+[Kaw80 ]
+ and corresponding machinery. 
+While the KES covers a comprehensive set of experiments, other devices have been used in more specific context such as the Picture Frame test 
+[ Cul79 ] for measuring shear properties and the Cantilever test [ CPGE90 ] for measuring bending properties (see also Pabst et al. [ PKST08 ]). These measurement-based approaches establish a valuable link between simulation and real-world behavior, but they rely on experiments that isolate individual deforma∗ tion modes. As an alternative, Bhat et al. [ BTH 03 ] (and recently Kunitomo et al. 
+[ KNM10 ]
+) aim at avoiding the need for controlled conditions and try to extract parameters from casually captured videos of cloth. This approach appeals through a simple and inexpensive acquisition process, but it is not possible to accurately separate internal (i.e. material-specific) and external (e.g. friction, air drag) parameters. In a similar spirit, capture technology can be used to record time-varying geometry of complex cloth mo∗ ∗ tions [WCF07,BPS 08,SGdA 10]. But while capturing can provide accurate deformation data, parameter fitting remains very difficult without explicit control over boundary conditions, in particular loading forces. Closer to our work is the recent approach of Wang et al. 
+[WRO11]
+, who propose a data-driven piecewise linear elastic cloth model comprising 39 material parameters. These parameters are fitted to experimentally acquired data obtained from planar and bending deformations. Their capture setup is appealingly simple, but ours is more general and powerful: it produces a 3D surface, rather than a 2D deformation, and it measures all forces applied to the cloth as they change during a range of different deformations.
+      
+      
+        

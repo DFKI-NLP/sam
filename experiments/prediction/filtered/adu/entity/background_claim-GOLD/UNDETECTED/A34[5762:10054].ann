@@ -1,0 +1,14 @@
+Tcf6f662a7da23a758b31c8315fcc8871	background_claim-GOLD 313 470	Any collision happening within an integration time step always can be detected by this swept volume method, unless the motions of faces are highly rotational
+T1f8a034e9e96f838ee4096e5a3cc28a8	background_claim-GOLD 472 591	An interesting case is where the faces are not actually intersecting but two swept volumes report a intersection anyway
+T227dad88572064f8e3ca919003dafbac	background_claim-GOLD 1825 1852	Originally a zone of impact
+T15a79818f67555a4dac09a333d3270c7	background_claim-GOLD 1858 1899	is an area where multiple self-collisions
+T8d05a78aac872ca00499d9dba018e3c2	background_claim-GOLD 3503 3607	while the actual collisions are tested with pairs of particle-face or face-face of the current positions
+Tff006fef2db6a340878009ddfecd491d	background_claim-GOLD 3985 3999	have been used
+T8938b105c877e5767eb6ead91de1b6df	background_claim-GOLD 4006 4009	for
+T635f8cfe581e7bd8239e0bca0c161bc1	background_claim-GOLD 4013 4018	cloth
+T40ae0f39c9c1bd102b1870585b1e571c	background_claim-GOLD 4025 4036	simulations
+T2900ff5c3baf28c0611a2bdee41d46b3	background_claim-GOLD 4053 4056	the
+Te6cba021dcaac1eb2b17679c721a9e86	background_claim-GOLD 4063 4072	time step
+T1c3ce598463175d29c82bd64d28d3633	background_claim-GOLD 4078 4081	has
+Teb997c1bfb8e3727760e6931bc70a228	background_claim-GOLD 4088 4094	become
+T4cb1881d6c651edc21b9afa10b94d317	background_claim-GOLD 4109 4115	larger

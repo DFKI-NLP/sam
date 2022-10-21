@@ -1,0 +1,13 @@
+T65b8d89ad83fc12076a7f5875e0fef61	own_claim 849 892	the bending stiffness of the cloth is small
+T215934b3f102d96d636590e13eb0b845	own_claim 1321 1415	to animate the cloth realistically with a coarse mesh, we need to set small metric stiffnesses
+Ta1dedf67e9a97ec33eb37aa4414ed084	own_claim 1417 1466	This allows otherwise possible wrinkling/buckling
+Tbdd7afc757ccb3c13792d5040de2e61a	own_claim 1467 1515	which is embedded in the deformation of triangle
+Tab76f9a04b062820ec2fa38c619fb0a2	own_claim 1213 1266	the corresponding forces on the vertices will be high
+Ta977fee2250218721140ac3b36fa8828	own_claim 777 820	the compression forces will buckle the edge
+T5afd2845492d1fa26d8d3e1f60b775a5	background_claim 2327 2383	The method is inspired by the area conservation property
+T8b7c607de46b67605d304d881ca8ea88	data 2397 2408	Section 3.3
+R33da46e192f26cbfbd11760ffe5bec52	supports Arg1:Ta977fee2250218721140ac3b36fa8828 Arg2:T65b8d89ad83fc12076a7f5875e0fef61
+R3703b57c0736dae0bfe14aade98b40ec	supports Arg1:Tab76f9a04b062820ec2fa38c619fb0a2 Arg2:T215934b3f102d96d636590e13eb0b845
+Rb367bca26cb8ccd20dc6582bd4328d3b	supports Arg1:T215934b3f102d96d636590e13eb0b845 Arg2:Ta1dedf67e9a97ec33eb37aa4414ed084
+Ra4a6f20c05ab6624e53da1294e49b54e	supports Arg1:Ta1dedf67e9a97ec33eb37aa4414ed084 Arg2:Tbdd7afc757ccb3c13792d5040de2e61a
+R3caf25eceda8aa6a1d3a5c6606057204	supports Arg1:T8b7c607de46b67605d304d881ca8ea88 Arg2:T5afd2845492d1fa26d8d3e1f60b775a5

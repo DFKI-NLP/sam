@@ -1,0 +1,12 @@
+Te56e8a0a3faf3934e2701e94122391df	own_claim 49 214	To acquire a 3D point cloud of the cloth surface, we print a colored pattern on the cloth, sew it together, and record its motion using multiple synchronized cameras
+T4230bce5b7f6e798617ebb795fcd4b31	own_claim 216 321	We then reconstruct the 3D location of surface points by detecting corresponding points in multiple views
+Td3a78b23f287af12239c21fcbb959d8a	own_claim 336 392	Our goal is high marker density in the 3D reconstruction
+Tf0bab89f6b4ecda334e8dd99c98d1fd5	own_claim 438 525	To achieve this, we need markers that are both small in scale and highly discriminative
+T040496cdd665fe06b18871f04d9abb6f	own_claim 1577 1673	We optimize our correspondence technique by analyzing the information provided by different cues
+Td33018d24a832d8fc7d0bdf96b910d60	own_claim 1675 1796	In this framework we can accurately minimize the number of neighbors required for correspondence and observe folds better
+Tcdfd60f41cbf2abadf93a4754655eadf	own_claim 1877 1982	It takes log 2 M bits to determine the identity of each observed marker on a garment with M total markers
+T63a6423cc0404904e78739f4e5c9d016	own_claim 3076 3159	Our best efforts are to improve C – the number of bits from each marker observation
+T3cbb93c50a36b22b1dafa49e14270bb3	own_claim 3399 3518	We print a random colored pattern on the surface of cloth in an attempt to maximize the information available per pixel
+T3d496c228cf7bbbd43d6bff850934b01	own_claim 4305 4357	Illumination is also problematic and takes two forms
+Tc689861330d52bbd8edbe53171ba97a4	own_claim 4430 4539	To correct for variations in direct illumination, we remove the luminosity component from our color modelling
+Tad1fdbef8f64d1de1bc3a51c2f71af47	own_claim 4541 4584	We do not correct for indirect illumination

@@ -1,0 +1,8 @@
+Ta1a590d8e460ca711bd1879b9f2110de	background_claim-GOLD 4848 5008	A typical cloth simulation problem could involve a cotton fabric cloth surface, which typically have a density d = 0.1 kg.m -2 and a Young modulus E = 2 0 N . m
+Tc7bc8b83e0059636c4ef006f3eae2ce5	background_claim-GOLD 11428 11542	Here, the interest is to converge to the equilibrium state as quickly as possible, with minimum computation charge
+Tf343c7fd94632023c18eabd6b64fdd6e	background_claim-GOLD 11759 11878	they do not suffer from numerical instability, and allow large time steps to be used at the expense of dynamic accuracy
+T0983d63b76e0eaa72682740c207e4d85	background_claim-GOLD 16162 16347	particularly when using large time steps that cause iterations to converge to the equilibrium state of the mechanical objects rather than simulating accurately their mechanical behavior
+T9783c882abe04cfa4d2fc5a9bd2064ff	background_claim-GOLD 16349 16357	This can
+Tcc4527aaee8c37a9420441e1a90c94d0	background_claim-GOLD 16371 16447	be observed when simulating stretched flat surfaces without curvature forces
+T90aa4f8572800ccddb30323d41e685c4	background_claim-GOLD 17055 17196	an underestimation of de derivatives may lead to an equilibrium state valuation too far from the current state, and by this cause instability
+T934869aee5ad82b12e8d91a9d380e897	background_claim-GOLD 18079 18351	which makes sense when efficiency relies on the use of a constant Hessian matrix, is to perform the implicit resolution on a linear constant approximation, and to simulate the nonlinear and variable component, unlikely to cause stiffness problems, using an explicit method

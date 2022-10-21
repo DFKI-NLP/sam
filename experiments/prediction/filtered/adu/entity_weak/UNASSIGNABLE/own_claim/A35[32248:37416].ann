@@ -1,0 +1,3 @@
+T90493182f3698ff252b6ffe4bce2fc0f	own_claim 1909 1965	removing the need of adding them explicitly to the model
+T900983da924476f82dea2b3d3da8cebb	own_claim 2162 2233	allowing obtaining quickly a result by “cheating” on the time step size
+T34cbf3e327a1ed8f0a8eb5e2ae766c7a	own_claim 4754 4840	We intend to pursue our investigations for dealing with damping in a more accurate way

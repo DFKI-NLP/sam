@@ -1,0 +1,10 @@
+T9fa46d75d509c013648e693ba77f5b1a	own_claim-GOLD 866 916	Our method is closely related to the IMEX approach
+T3249cd70356ad7eba5b3d758c0318d97	own_claim-GOLD 3500 3607	By building on the velocity-filter paradigm, our method handles both inextensibility and complex collisions
+T1d1663eb64774010c1db4205f0ef20d0	own_claim-GOLD 3946 4114	one reason for their difficulties with drift was consequent to the linearization of the constraint equation, which permitted higher order errors to accumulate over time
+T2f859ad7a605cc8d8fe8123562efdf97	own_claim-GOLD 4116 4170	Our method does not linearize the constraint equations
+T42c1f0aa3c472dc8d8cf86f70fc509e1	own_claim-GOLD 4186 4212	it is not subject to drift
+Tad20f48425fc1dcf2d9fd06dabbf802d	own_claim 866 916	Our method is closely related to the IMEX approach
+Tf2ba543d40af001fbc1a19d11aa951a7	own_claim 3500 3607	By building on the velocity-filter paradigm, our method handles both inextensibility and complex collisions
+Te0a53f78244644151533ab38882b67e2	own_claim 3946 4114	one reason for their difficulties with drift was consequent to the linearization of the constraint equation, which permitted higher order errors to accumulate over time
+T960d11c9c85a73e6a1918bf48cd8b759	own_claim 4116 4170	Our method does not linearize the constraint equations
+Tb80fb8d37bb9dc5aa414fa110a3d6657	own_claim 4186 4212	it is not subject to drift

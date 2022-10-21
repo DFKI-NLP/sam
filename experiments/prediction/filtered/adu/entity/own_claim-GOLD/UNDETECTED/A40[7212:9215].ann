@@ -1,0 +1,9 @@
+T09b131fa6a20455b51758b5533aecea8	own_claim-GOLD 339 475	we briefly describe the model we use to compute the effective aerodynamic forces such as wind force and air resistance, mainly following
+T05616bd2b114a1eccd6ea35ef0585423	own_claim-GOLD 788 882	The direction of the drag force F D is diametral to the relative velocity v rel = v object − u
+Tb861bc508b6d084df1c6317bcbd6bd3c	own_claim-GOLD 1213 1227	is replaced by
+Tc3dbfdfa6163eda6d0cbd355e02cbf9a	own_claim-GOLD 1261 1283	n i = n − i n i if n i
+Tf7c0213c522fefc241102ba7e0e0c707	own_claim-GOLD 1286 1302	· v i,rel &gt; 0
+T9112aa6b566ec52d2954fc0bdbd9ae7e	own_claim-GOLD 1322 1348	The drag force per face is
+T638efa3d0bf34a1dc8a0777758305829	own_claim-GOLD 1354 1429	given by F i,D = 2 1 C D ρ|v i,rel | 2 A · ( n i · v i,rel ) · (− v i,rel )
+Tb82b05d4d6222faaf6789a03a5738cc6	own_claim-GOLD 1616 1779	The direction of the lift force, which is perpendicular to v i,rel and lies in the plane spanned by v i,rel and n i , is given by u i = ( n i × v i,rel ) × v i,rel
+T964a35ba9ea4c3b78bc6f3885fe19fca	own_claim-GOLD 1795 1870	the lift force is calculated as F i,L = 1 2 C L ρ|v i,rel | 2 A cos θ · u i

@@ -1,0 +1,8 @@
+T1f47434f54d180d80f70885fc4950b13	own_claim 390 420	referred to as the same entity
+T73c92899be3753fc7f86125eec963e92	own_claim 4672 4721;4750 4796	This selective application of the wrinkle pattern will give a change of one pattern to the other
+T82d0bb75314d0c6c0016b551ceee191d	own_claim 422 451	they differ in implementation
+T9d49d6def403655bb2f3dd0f7c00979e	own_claim 4844 4918	in the animation a sudden switch of the pattern is not temporally coherent
+R5e776091a17de45d9f026cfc4f9dfb5c	contradicts-GOLD Arg1:T1f47434f54d180d80f70885fc4950b13 Arg2:T82d0bb75314d0c6c0016b551ceee191d
+R627950e4b1047c255f84b05b188f87fd	contradicts-GOLD Arg1:T73c92899be3753fc7f86125eec963e92 Arg2:T9d49d6def403655bb2f3dd0f7c00979e
+R08834bdba80feb9b4e83d4ad1f7ce456	contradicts Arg1:T1f47434f54d180d80f70885fc4950b13 Arg2:T82d0bb75314d0c6c0016b551ceee191d
+R715fe9be8318838544af3418ae9356c1	contradicts Arg1:T73c92899be3753fc7f86125eec963e92 Arg2:T9d49d6def403655bb2f3dd0f7c00979e

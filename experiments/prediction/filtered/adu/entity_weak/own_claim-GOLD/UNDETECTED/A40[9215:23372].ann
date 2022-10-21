@@ -1,0 +1,13 @@
+T6b52688cc3f0d214aa677acb2066c0e5	own_claim-GOLD 4227 4414	To describe the above situation by a physical model we require the Neumann boundary condition ∂u =0 ∂n to be satisfied for the wind flow u at any boundary point of an object with normal n
+Tb952ca167ec3c24d4e3edc7b21906462	own_claim-GOLD 5860 6047	for every marked cell in the scene the previously stored normals are averaged in one space cell which are used to update the velocity at the cell to satisfy the Neumann boundary condition
+T4e9c0b4065b2ffa9d0dd560150113c13	own_claim-GOLD 6636 6752	we combine the idea of creating wind fields by predefined flow primitives with particle tracing in given flow fields
+Tfc2e36766d8eb255f9ae184537985093	own_claim-GOLD 9852 9915	we compute the wind field u containing these effects as follows
+T458a2501e21be9d4c478e1ecfcdd7e55	own_claim-GOLD 9917 9973	In our model every wind source is also a particle source
+T6aaa5fbf7d09d7c23aab18fd82cae254	own_claim-GOLD 10185 10273	The specific emission intervals and amounts depend on the properties of the flow sources
+T9ea84329056b3f6937b6dbf985eb6eb6	own_claim-GOLD 10275 10398	In every time step each particle in a wind gust moves along its velocity field w i defined by the corresponding wind source
+Td7f1e6ef3f9b815084e027f7abfc38ce	own_claim-GOLD 10588 10676	To calculate the wind particles’ positions we used the explicit Euler integration scheme
+T304d05f3b8e868bc3e04d3f91bf73b6a	own_claim-GOLD 10725 10764	this results in a path s(p t , p t+∆t )
+T47a20bfc30692f275f749a4177fcf98e	own_claim-GOLD 10909 11052	all grid cells colliding with the path are updated with the velocity of the associated wind source with respect to the position of the particle
+Ta27bbaeaa7d7f460a160c326094725f8	own_claim-GOLD 11517 11580	the normal of the colliding object n obj (p col ) is determined
+T01afbc7b8eb3272cb67a03aae4939914	own_claim-GOLD 11585 11691	the velocity of the particle is set to w i (p col , t+∆t) = w i (p col , t)−(n obj ·w i (p col , t))·n obj
+T2da7205b4cfd9a154e00155f3bac0923	own_claim-GOLD 12828 12897	the extinguishing effect of the superposition of the two wind sources

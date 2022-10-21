@@ -1,0 +1,14 @@
+Tb3e7fa3fc9fe842b49fe464c68315177	background_claim-GOLD 1021 1112	simplifications can be made which greatly reduce the computation costs as described by Stam
+Tb857c9afa485a9a39a62e405f0c426af	background_claim-GOLD 1361 1450	the incompressible Navier-Stokes equations can be written in a compact vector notation as
+T2fddb7fcfee330eeffc9b0f5070eb5ad	background_claim-GOLD 1484 1493	∇ · u = 0
+T96a573ba1b6c0f39849e344cc414eaac	background_claim-GOLD 1537 1571	∂u = −(u · ∇)u − 1 ∇p + ν∇ 2 u + f
+T1fc94ec78d38394f9b73d9c7ee58526b	background_claim-GOLD 1574 1578	∂t ρ
+Te9bd526dd4215cc455c92c4f6b54704e	background_claim-GOLD 1782 1856	The first equation states that the velocity field should be incompressible
+T51975d9374620cd283933a5c82312284	background_claim-GOLD 1863 1931	the second one describes the evolution of a velocity field over time
+Td79664527981cd6d0116026d144edde9	background_claim-GOLD 2568 2586	Foster and Metaxas
+T948c96d8e73816c770135acc5742b958	background_claim-GOLD 2917 2931	we follow Stam
+T27947051c7d54e624fa5423a6aed9304	background_claim-GOLD 3901 3993	a velocity field of its own isn’t really visually interesting until it starts moving objects
+Td1e535efbf3dd5a089d8d22250a22f8c	background_claim-GOLD 4032 4094	all objects in the scene interact with the fluid present in it
+T335acaf3082f5549438d13ac127b9125	background_claim-GOLD 4637 4641	This
+T7e7032430fea01bf422f6fa84470fa38	background_claim-GOLD 4846 4916	we want the Neumann boundary condition u(p b ) · n = 0 to be satisfied
+T6f03671cd83142989c5400d3bbb87475	background_claim-GOLD 8436 8510	this approach is not feasible at all with deformable objects like textiles

@@ -1,0 +1,38 @@
+Ta12fa40090f18b9164346952223d8c3a	background_claim-GOLD 38 92	Collision handling in Computer Graphics has two phases
+T115ef0f60af80dc1a6761a301109fb15	background_claim-GOLD 94 160	One is to detect collisions and the other is to resolve collisions
+T371094f4ec592537dd3bbfaf2b20a658	background_claim-GOLD 162 251	In cloth collision detection, the computation time to detect collisions is not negligible
+T6f41d2d88feff22505110f80e8da5835	background_claim-GOLD 442 517	several approaches have tried to expedite the collision detection processes
+T76433a7c6b766702a5412d48e9fac61a	background_claim-GOLD 626 751	Cloth resolution methods so far have found non-penetrating positions, velocities and accelerations of cloth surface particles
+T533d8eb66f0bb626216fd2b62b1ccc9c	background_claim-GOLD 770 979	This scheme works fine for cloth-rigid collisions and for the special case of cloth-cloth collisions where the dynamic interactions between cloth surfaces in cloth-cloth collisions do not have to be noticeable
+Tb9892c0326a2dad281f6ff38c9840108	background_claim-GOLD 981 995	Volino et. al.
+T0a0aedaedd126ddc9db71b64dcadd2b5	background_claim-GOLD 1004 1138	applied the conjugate gradient method to find the actual particles’ positions where a group of particles are colliding into each other
+Tc82ce8267427c90127050da58be041f2	background_claim-GOLD 1140 1360	By preserving barycentric relationships of collision entities, their method resolves collisions where numerous cloth surfaces are colliding together as a group, which is a novel way to resolve multiple collisions at once
+T4fb4af9b8f5d1d75288e42d5154c13bb	background_claim-GOLD 1370 1447	it does not conserve the momentum of cloth surfaces in cloth-cloth collisions
+Tab3d1f7a35c53dc4231c00b8b3b78826	background_claim-GOLD 1449 1518	Another method for cloth-cloth collisions has been proposed by Provot
+Tc2ba976dca0aecafc49b5d734c31ea11	background_claim-GOLD 1529 1619	which resolves collisions by giving an average velocity to all the particles of collisions
+T6003f879baffe2e319e56c306343bd9a	background_claim-GOLD 1621 1657	Provot’s method is easy to implement
+Tcd2b688cdce6af4e2b3105ad097c3003	background_claim-GOLD 1662 1711	it cannot give proper visual effect of collisions
+Tf9542027f494084b6243cd3ef7bff0ec	background_claim-GOLD 1815 1907	Cloth-cloth collision resolution is a special case of deformable N-body collision resolution
+Tf90c5a10d4fb47869583e563252ef443	background_claim-GOLD 2136 2183	many systems are in other cloth research groups
+T471eff91adf3b02375b4721ffe6d97a3	background_claim-GOLD 2613 2764	his original inequality relationships between relative velocities before and after collisions are purely heuristic, which may not be physically correct
+Tec90527c31914b494e6f84882804f59f	background_claim-GOLD 2773 2864	this physical inaccuracy has been an inherent problem of simultaneous collision resolutions
+T05c00c9b72237421c298832b20eb7dff	background_claim-GOLD 2866 2914	it appears to give graphically agreeable results
+T93032babe558cb533dea9cd6e078d3b4	background_claim 38 92	Collision handling in Computer Graphics has two phases
+Ta69e8ac51f3e33147f2356f3f97f1349	background_claim 94 160	One is to detect collisions and the other is to resolve collisions
+T994e3c353e1dc64fad2dabccf1f97c23	background_claim 162 251	In cloth collision detection, the computation time to detect collisions is not negligible
+T87a7e194f75774f1e4548a287418f372	background_claim 442 517	several approaches have tried to expedite the collision detection processes
+T3d7852b39cd3570f2b600c9095a063ab	background_claim 626 751	Cloth resolution methods so far have found non-penetrating positions, velocities and accelerations of cloth surface particles
+T20e2d03e183122d53fecbbf939286f1a	background_claim 770 979	This scheme works fine for cloth-rigid collisions and for the special case of cloth-cloth collisions where the dynamic interactions between cloth surfaces in cloth-cloth collisions do not have to be noticeable
+T19681a6517633b06ee016a5fd7bf5151	background_claim 981 995	Volino et. al.
+T12176f1aff01e6d2563fa88d36a12a9f	background_claim 1004 1138	applied the conjugate gradient method to find the actual particles’ positions where a group of particles are colliding into each other
+T707d02bc66eb1c245eba273bb1646176	background_claim 1140 1360	By preserving barycentric relationships of collision entities, their method resolves collisions where numerous cloth surfaces are colliding together as a group, which is a novel way to resolve multiple collisions at once
+T860e2d48a9233c9ba920d8e69449ae36	background_claim 1370 1447	it does not conserve the momentum of cloth surfaces in cloth-cloth collisions
+Td943dc591302b3802536f0f01f589722	background_claim 1449 1518	Another method for cloth-cloth collisions has been proposed by Provot
+T78f2890aae4c3be5f8dd0686675b904e	background_claim 1529 1619	which resolves collisions by giving an average velocity to all the particles of collisions
+T25c829400174f4fc0a54f451bc3db916	background_claim 1621 1657	Provot’s method is easy to implement
+T71c977e59522b043aefc3600991d23c7	background_claim 1662 1711	it cannot give proper visual effect of collisions
+Tbd03518e766968eac556075a76c5e7cc	background_claim 1815 1907	Cloth-cloth collision resolution is a special case of deformable N-body collision resolution
+T872641c04536676bbd1e6ae3170a6d82	background_claim 2136 2183	many systems are in other cloth research groups
+T9524f3fac89ea2070db7f091576f465a	background_claim 2613 2764	his original inequality relationships between relative velocities before and after collisions are purely heuristic, which may not be physically correct
+Ta3c0568bf035867e6e2387ebb1faf711	background_claim 2773 2864	this physical inaccuracy has been an inherent problem of simultaneous collision resolutions
+T7f768d05aea7bc8ced2dd8bc061f165f	background_claim 2866 2914	it appears to give graphically agreeable results

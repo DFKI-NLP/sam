@@ -1,0 +1,71 @@
+<H1>References</H1>
+        
+          [BLM95] B. Becker, D.A. Lane, and N. Max. Unsteady Flow Volumes. In Proc. of Visualization, 1995.
+          [BTH + 03] K. S. Bath, C. D. Twigg, J. K. Hodgins, P. K. Khosla, Z. Popovic, and S. M. Seitz. Estimating Cloth Simulation Paramters from Video. In Proc. SIGGRAPH Symposium on Computer Animation, 2003.
+          [CdVLHM97] J.X. Chen, N. da Vittorio Lobo, C.E. Hugues, and J.M. Moshell. Real-Time Fluid Simulation in a dynamic Virtual Environment. IEEE Computer Graphics and Applications, pages 52– 61, 1997.
+          [EKS03] Olaf Etzmuß, Michael Keckeisen, and Wolfgang Straßer. A Fast Finite Element Solution for Cloth Modelling. Proc. Pacific Graphics, 2003.
+          [FM96] Nick Foster and Dimitri Metaxas. Realistic animation of liquids. Graphical models and image processing: GMIP, 58(5):471–483, 1996.
+          [FM97] Nick Foster and Dimitri Metaxas. Modeling the Motion of a Hot, Turbulent Gas. In Proc. SIGGRAPH Symposium on Computer Animation, pages 181–188, 1997.
+          [FSJ01] Ronald Fedkiw, Jos Stam, and Henrik Wann Jensen. Visual simulation of smoke. In Computer Graphics (Proc. SIGGRAPH), pages 15–22, 2001.
+          [GDN98] M. Griebel, T. Dornseifer, and T. Neunhoeffer. Numerical Simulation in Fluid Dynamics: A Practical Introduction. SIAM, Philadelphia, 1998.
+          [GHD03] O. Génevaux, A. Habibi, and J.-M. Dischler. Simulating Fluid-Solid Interaction. In Graphics Interface, pages 31–38, 2003.
+          [GLG95] M.N. Gamito, P.F. Lopez, and M.R. Gomes. Two-dimensional Simulaton of Gaseous Phaenonemna Using Vortex Particles. In Proc. of the 6th Eurographics Workshop on Computer Animation and Simulation, pages 3–15, 1995.
+          [IK03] T. Ilmonen and J. Kontkanen. The Second Order Particle System. Journal of WSCG, 11(1), 2003.
+          [KCC + 00] Young-Min Kang, Jeong-Hyeon Choi, Hwan-Gue Cho, Do-Hoon Lee, and Chan-Jong Park. Real-time Animation Technique for Flexible and Thin Objects. In Journal of WSCG, pages 322–329, 2000.
+          [KCCL01] Y.-M. Kang, J.-H. Choi, H.-G. Cho, and D.-H. Lee. An efficient animation of wrinkled cloth with approximate implicit integration. The Visual Computer, 17(3), 2001.
+          [KM90] M. Kass and G. Miller. Rapid, Stable Fluid dynamics for Computer Graphics. In Proc. SIGGRAPH Symposium on Computer Animation, pages 49–57, 1990.
+          [KvH84] J.T. Kajiya and B.P. von Herzen. Ray Tracing Volume Densities. In Proc. SIGGRAPH Symposium on Computer Animation, pages 165–174, 1984.
+          [LDG96] L. Li, M. Damoran, and R. K. Gay. Aerodynamic force models for animating cloth motion in air flow. The Visual Computer, 12, 1996.
+          [Li00] L. Li. Cloth Modeling and Animation, chapter Aerodynamic Effects, pages 175–195. A.K. Peters, 2000.
+          [MKE03] Johannes Mezger, Stefan Kimmerle, and Olaf Etzmuß. Hierarchical Techniques in Collision Detection for Cloth Animation. Journal of WSCG, 11(2):322–329, 2003.
+          [Pro95] Xavier Provot. Deformation Constraints in a Mass-Spring Model to Describe Rigid Cloth Behavior. In Graphics Interface ’95, pages 147–154, 1995.
+          [Ree83] W. T. Reeves. Particle Systems — A Technique for Modeling a Class of Fuzzy Objects. In Computer Graphics (Proc. SIGGRAPH), pages 359–376, 1983.
+          [SF92] M. Shinya and A. Fournier. Stochastic Motion: Motion under the Influence of Wind. Computer Graphics Forum, 58(5):119–128, 1992.
+          [SF93] Jos Stam and Eugene Fiume. Turbulent Wind Fields for Gaseous Phenomena. Computer Graphics (Proc. SIGGRAPH), pages 369–376, 1993.
+          [Sim90] Karl Sims. Particle animation and rendering using data parallel computation. In Computer Graphics (Proc. SIGGRAPH), pages 405– 413, 1990.
+          [Sta97] Jos Stam. A General Animation Framework for Gaseous Phenomena. ERCIM Research Report R047, 1997.
+          [Sta99] J. Stam. Stable fluids. Computer Graphics (Proc. SIGGRAPH), pages 121–128, 1999.
+          [Sta01] Jos Stam. A simple fluid solver based on the FFT. Journal of Graphics Tools: JGT, 6(2):43–52, 2001.
+          [Sta03] J. Stam. Real-time fluid dynamics for games. Proceedings of the Game Developer Conference, March 2003.
+          [TFK + 03] T. Takahashi, H. Fuijii, A. Kunimatsu, K. Hiwada, T. Saito, K. Tanaka, and H. Ueki. Realistic Animation of Fluid with Splash and Foam. Computer Graphics Forum, 22(3):391–400, 2003.
+          [WH91] J. Wejchert and D. Haumann. Animation aerodynamics. Computer Graphics (Proc. SIGGRAPH), 25(2):19–22, July 1991.
+          [WZF + 03] Xiaoming Wei, Ye Zhao, Zhe Fan, Wei Li, Suzanne Yoakum-Stover, and Arie Kaufman. Blowing in the wind. In Proc. of SIGGRAPH Symposium on Computer Animation 2003, pages 75– 85. Eurographics Association, 2003.
+          [YU86] L. Yaeger and C. Upson. Combining Physical and Visual Simulation. Creation of the Planet Jupiter for the Film 2010. In Proc. SIGGRAPH Symposium on Computer Animation, pages 85–93, 1986.
+        
+        
+          
+          
+          Figure 3: Flag blowing in the wind (particle tracing method).
+        
+        
+          
+          
+          Figure 4: Two flags blowing in the wind (Navier-Stokes equations). The wind is blocked by the wall, so the right flag is in the lee. Note that the simulation starts with both flags in an unfolded state.
+        
+        
+          
+          
+          Figure 5: Two flags blowing in the wind (particle tracing method). The wind is blocked by the wall, so the right flag is in the lee (compare figure 4 ).
+        
+        
+          
+          
+        
+        (a) (b)
+        
+          Figure 6: A character wearing a shirt and standing in a wind stream coming from the front. Images (a) and (b) are snapshots from the beginning of the animation, images (c) and (d) show the result after the wind field has affected the clothes. To show the improved realism when simulating lee effects, we let the the wind act on all polygons of the shirt on the right (no lee effect). For the shirt on the left we used the particle tracing method to simulate lee effects which gives more realistic results.
+          
+          
+          
+          
+          
+          
+          
+          
+        
+        (c) (d)
+      
+    
+  
+
+</Document>

@@ -1,0 +1,25 @@
+T47b9754987032315ff94d8a180f3871c	own_claim 28 165	The key question of how well a given model describes a particular piece of cloth is answered by fitting the model to the measurement data
+T94934a8905a41019a070c939d76a1fb8	data 167 304	adjusting its parameters to minimize the difference between the model’s predictions and the measured behavior, both in position and force
+Te48d54a2cf37144238756d55e453dfe5	own_claim 436 542	In principle all parameters of a cloth model can be fit to a sufficiently rich single deformation sequence
+Tefa45330d944709102885f3ed9e5a827	own_claim 548 602	this can result in a problem fraught with local minima
+T5647b1e185f47a1b2d56b5c166788010	data 616 635	achieve stable fits
+Tc0d413fe6917f5ff80a4ea3ef29f4523	own_claim 637 776	we have designed an incremental optimization procedure that fits model parameters a few at a time using the isolated deformations described
+Tc10bd7f2e69ac0b170278720e1bdd085	data 780 791	Section 3.2
+T9f5aac6539771338b4b11747c4e70a6c	data 1511 1560	Given a set of captured static deformation frames
+T40172b8c82d1d55297f7035d1ed346bd	own_claim 1562 1581	we wish to know the
+T79fe58dda67610d5c9b12011dca3c1d5	own_claim 1594 1746	stress-strain curves for the deformation components of a cloth model, such that a simulated cloth matches known positions and forces as well as possible
+T002f683cf7aee330c0dd6fb1b7555d4c	data 2156 2167	equilibrium
+T784d85659dee1dfa3cce4917b583dda4	own_claim 2169 2278	the net force on the clips, produced by cord forces, gravity, and forces from fixed cloth nodes, must be zero
+T9645f2039866cde9cf8dfd4e39ee4f5d	data 3521 3557	situations of near-homogeneous shear
+T493448164e4fccf5ecd9de24d130e5d6	own_claim 3559 3606	the clip-parallel forces are dominated by shear
+T9959d3a64d10de0432954503a2a1af9b	own_claim 3614 3661	clip-orthogonal forces are dominated by stretch
+T00ef36a096bf6b57af1ea1644eaae2b8	own_claim 6277 6369	during inter∂x n mediate iterations, the stiffness matrix may not always be well conditioned
+T2192dc606160244f062113bb9e73d1fb	data 6552 6573	improved conditioning
+Tdb2351ef00b7145fc2e8cf5a2d056492	own_claim 6575 6640	we also use this ∂x n modified stiffness matrix in the outer loop
+T02c5a510c82554cefda1e21bf1381539	own_claim 6885 7179	The nonlinearity of cloth deformation, together with the complex interplay of various deformation components in the resulting forces and positions, make the optimization problem above extremely complex in the general case, prone to falling in local minima and sensitive to initialization values
+T4df38cd96521803e254b3f12e7ce8931	own_claim 7190 7285	we largely alleviate these issues with the design of the five isolated deformation measurements
+Tc7a8d15f3d04308d80d9e4f4921dbcab	data 7299 7310	Section 3.2
+Teb93b17def74e5fa66c4b9d99e25cdab	own_claim 7312 7406	which allow us to separately fit stiffness curves for the six deformation components described
+Td3b6aa1a73e09b91ee9e841522246f82	data 7410 7421	Section 4.1
+Td8d99937a53a0b0035c07011b9677b0b	own_claim 7423 7475	following an incremental parameter fitting procedure
+

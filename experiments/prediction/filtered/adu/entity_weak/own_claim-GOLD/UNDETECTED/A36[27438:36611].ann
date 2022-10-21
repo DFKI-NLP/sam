@@ -1,0 +1,8 @@
+T750e710098221ea76dbec43344f1c503	own_claim-GOLD 637 776	we have designed an incremental optimization procedure that fits model parameters a few at a time using the isolated deformations described
+T4402931dd51537011edd5122faf565ab	own_claim-GOLD 1562 1581	we wish to know the
+T9262e516ce25856cc704511bb9f308f7	own_claim-GOLD 1594 1746	stress-strain curves for the deformation components of a cloth model, such that a simulated cloth matches known positions and forces as well as possible
+T9d014896630f06132ab0703e2f166e6d	own_claim-GOLD 2169 2278	the net force on the clips, produced by cord forces, gravity, and forces from fixed cloth nodes, must be zero
+T1b7f6a4271be1949a8e352aae7d56c3f	own_claim-GOLD 6575 6640	we also use this ∂x n modified stiffness matrix in the outer loop
+Tc52160db9105a41fdf0c7514f72c47a6	own_claim-GOLD 7190 7285	we largely alleviate these issues with the design of the five isolated deformation measurements
+T5f51e9c608616d5ba36d82cff46a1b4f	own_claim-GOLD 7312 7406	which allow us to separately fit stiffness curves for the six deformation components described
+T2e8e7959116093122be64752a86568fc	own_claim-GOLD 7423 7475	following an incremental parameter fitting procedure

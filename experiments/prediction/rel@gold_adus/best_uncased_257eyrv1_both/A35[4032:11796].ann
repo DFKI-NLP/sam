@@ -1,0 +1,104 @@
+Teb45c20805e3f53bf4db60cc2bbf051f	background_claim 45 188	The choice of the adequate integration method has to be carried out using various considerations related to the kind of problem to be simulated
+T4868befdfff64e3220d0039be0075280	background_claim 231 336	The size of the problem, mostly related to the number of particles used to describe the mechanical system
+Ta9ad237beb2eb239b977da698ecae011	background_claim 340 505	The desired accuracy, which reflects the allowable numerical tolerance between the computed solution and the theoretical evolution expected from the mechanical model
+T9b28e71e117dc13e96c8ca6b4cd234ea	background_claim 509 778	The simulation context, which can either be an extensive computation of the motion along time requiring accurate evaluation of all the dynamical factors, or a simple relaxation process where the simulation has to converge to the static rest state as quickly as possible
+Tf63c39af140876ec16b8c7aca7ab76bf	background_claim 782 1076	The stiffness of the problem, mainly related to the rigidity of the particle interactions and the size of the chosen time step, which translated into the “difficulty” the numerical method has to compute the evolution numerically, and which practically causes inaccuracy and instability problems
+T6ec5b8802b419773765f22897fe1bcd4	background_claim 1080 1160	The time an iteration takes to compute, and the number of mechanical derivations
+T25d20c24872ce72c61c13f9862d69900	background_claim 1224 1259	the methods requires to compute one
+Tb1f3758f89120aea1938d9d028e4e1ea	background_claim 1261 1402	The literature is abundant about various integration methods which aim to solve linear systems of first-order ordinary differential equations
+T3751cc9ca28e38e832c80d1d320b7f8d	data 1406 1412	PRE 92
+Td8e5c42c8cc60aa49e4bf3b67f13c3a2	background_claim 1416 1686	One can easily turn the second-order systems relating dynamical mechanical systems into first-order systems by constructing a state vector defined by the concatenation of position and speed states of the system, such as to fit the requirements of any of these algorithms
+T6bdd4a0bd16c2afd5eee49b2149e7107	background_claim 1688 1757	Among all the available methods, we can identify several main classes
+Tdab18a74137840910a5cc31a1dc788f3	background_claim 1761 1906	Explicit methods, which compute the state of the next time step out of a direct extrapolation of the previous states using derivative evaluations
+T8c5f91e63bc23995b08d574b171813cb	background_claim 1910 2059	Implicit methods, which deduce the state of the next time step from an equation system expressing some “reversibility” from the extrapolated solution
+T08b8b8107b68b3ed7796d00b4ef8b42d	background_claim 2063 2225	Low-order methods, which use a reduced number of evaluations for computing simple low-order extrapolations, leading to quickly computed, but inaccurate iterations
+T4c40b1a6ee08f61ba374ca589d28c194	background_claim 2229 2366	High-order methods, which use several evaluations to compute high-order solutions that get much more accurate as the time step is reduced
+T4d31bb459d3c9ea80ba9166140a7e7de	own_claim 2424 2770	We shall restrict our consideration to three different methods which explore the range of these classes, and which seem to fit the best the requirements set for cloth simulation problems, in terms of implementation simplicity and efficiency for particle systems using large numbers of particles that interact sparsely and with a constant topology
+Tfa4b39919babb06f05cf74e5ea34b941	background_claim 2904 3027	It requires two mechanical derivations per iteration and returns a second-order accurate solution relative to the time step
+T39803767e460db30aa90ddc59fa75bd2	background_claim 3029 3078	It also requires two storages of the state vector
+T7632c0d356f637b011d7b3f74a0e78cc	own_claim 3080 3150	We preferred this method to the still simpler first-order Euler method
+T9531cd87bb048a400e5b4b97de28f392	background_claim 3163 3291	the obvious gains of accuracy and stability which, despite the additional mechanical evaluation, makes it largely more efficient
+Tc297db840703f4bbd65b1353085c4d28	background_claim 3293 3342	We implemented this method for garment simulation
+T6a3373b527394f4c91963c10aabf15ed	data 3349 3355	VOL 95
+T8d2b35a390e265e13a27717da05bc2c1	background_claim 3468 3567	It requires five mechanical derivations per iteration, as well as five storages of the state vector
+Tad862ecb42289b7a552f8072b6e22f60	background_claim 3569 3676	This method is supposed to provide high accuracy, which increases significantly as the time step is reduced
+Tfe0c5be2f562b358c4af57f5f359f908	background_claim 3678 3709	This method was experimented in
+Tc7d9845ab2cbc7475390c54eabfc84de	data 3712 3718	EBE 96
+T921e50dadc7b1c1012f6da3a8837b1ed	data 3727 3733	VOL 97
+T0f58a927cb624bd9fb40f92cc4fc8869	background_claim 3739 3836	The Backward Euler method, which is the implicit implementation of its simple forward counterpart
+Teb6181e538cdb4b0a6389ab6fc739e9f	background_claim 3838 4045	It requires one mechanical evaluation and the resolution of a sparse linear system per iteration, as well as one storage of the system state additionally to those required for the system resolution algorithm
+T503075b0e9d789bf04ba6c5fe3772ded	background_claim 4047 4177	This method is supposed to provide approximate results that are not subject to numerical instability as the time step is increased
+T89ce48d15d04fc7d3023c1dce1b75e34	own_claim 4179 4306	We implemented this method combined with a Conjugate Gradient algorithm using linear system matrix products computed on the fly
+Td8641a397491d4fbc1e12dfc07d3cfc3	own_claim 4337 4514	and thus able to take into account the anisotropy and nonlinearities of the mechanical model as the actual Hessian matric is used for each current state of the mechanical system
+T740d93efd271bc703f6a3aefdcf0e8db	own_claim 4516 4624	No initial matrix setup is required, suppressing also the need of separating linear and nonlinear components
+T2840605c205a9092d8a35ff551d250fd	data 4643 4649	EBE 00
+T759a8611d56e5de61ead1a227dfc6651	own_claim 4653 4801	We have also carried out some preliminary tests with the Rosenbrook method, which is an implicit implementation of a fourth-order Runge-Kutta method
+T7b41c4ea28e1ec696a414934aaed28da	background_claim 4803 4902	It is supposed to combine the stability of implicit methods with the accuracy of high-order methods
+Te5eb15ee23d05a23d13915909b8e107d	own_claim 4904 4963	We implemented this method using the algorithm described in
+T1b538a4eede53693939da05e6cb4e24a	data 4967 4973	PRE 92
+Tcc05057857a8213cb47c053db412d620	own_claim 4982 5039	preliminary experiments have shown very deceptive results
+T460d45355d970f8b239302ac7ab76e84	own_claim 5045 5135	the gain of accuracy did not compensate the large calculations required for each iteration
+T713ab89c3ee0e0053fba83b1b86d80d6	own_claim 5145 5266	increased instability problems did not allow time steps much larger than those used for good accuracy with backward Euler
+T98e90e859ac747f04ea501a5403b52bc	own_claim 5268 5426	We did not consider in our tests the methods aimed toward simplifications which might highly approximate and degrade the dynamic behavior of deformable models
+Tb0d23f98126efef15af652f5618bae8f	background_claim 5436 5490	implicit integration with precomputed inverse matrices
+T6594d96348cc774d29809bb9b8e0e6dd	data 5493 5499	DES 99
+Tded0b235fd9928499466af70b37eda72	background_claim 5503 5640	which involves high simplification and linrarization of the Hessian matrix and which also becomes very unpractical for large matrix sizes
+T9a5dd1dde25e5d447edcd0620780c7f1	own_claim 5701 5801	We simulated such algorithm using accurate resolution on an accordingly approximated constant matrix
+T37d985c70b1c086d448c6eb5e8833608	own_claim 5821 5873	these approximations produced more simulation errors
+T6200b8b7689f896b2757609cc2e10815	own_claim 5940 6075	than producing a quick and rough linear system solution using a reduced number of Conjugate Gradient iterations with an accurate matrix
+T4b3fead47abce62fde8f50c9bddb7876	background_claim 6077 6110	Even more drastic simplifications
+T3a6fa6709e91d504e2805f10e93a4ba2	data 6113 6119	KAN 00
+Tbf0b036d735ad56b66d43b339ee7bb3f	background_claim 6122 6169	reduce the matrices to their diagonal component
+Tee2e331294d39623adb08200faa592e6	background_claim 6393 6411	A complete surface
+T4097c2fc81224655adf5852ccd69bf7d	background_claim 6412 6482	elasticity model which allows the simulation of anisotropic elasticity
+T1a95cc4dac7cf45c3a2ef11a79ad1bae	background_claim 6544 6568	and associated viscosity
+Ta296beb4c00c3053ac92e47f9b8c55b9	background_claim 7121 7200	This model is one of the simplest that a cloth simulation application would use
+T399fcc65bbade623cd396034549e29bc	own_claim 7202 7267	The implementation also supports collision detection and response
+Tbab6529b009d71e89cb2ecaa4cb0d037	own_claim 7306 7484	An object-oriented framework written in C++ integrate all these technologies into a single application allowing simulation of cloth objects of any shape with specified parameters
+R3da3b6a20db484a22b9159f4462125f3	supports-GOLD Arg1:T4868befdfff64e3220d0039be0075280 Arg2:Teb45c20805e3f53bf4db60cc2bbf051f
+Rb2476175902a388e0648e8c981fb7a03	supports-GOLD Arg1:Ta9ad237beb2eb239b977da698ecae011 Arg2:Teb45c20805e3f53bf4db60cc2bbf051f
+R3a1e752be223368add9c6fe209be30b2	supports-GOLD Arg1:T9b28e71e117dc13e96c8ca6b4cd234ea Arg2:Teb45c20805e3f53bf4db60cc2bbf051f
+R845c541decc88f63f6613932a1e51f66	supports-GOLD Arg1:Tf63c39af140876ec16b8c7aca7ab76bf Arg2:Teb45c20805e3f53bf4db60cc2bbf051f
+R61370aabcdeb1e5279fc93a3f3d01d7e	parts_of_same Arg1:T6ec5b8802b419773765f22897fe1bcd4 Arg2:T25d20c24872ce72c61c13f9862d69900
+Rf5b80fd221f627aaaf7ffe1c514c7c40	parts_of_same-GOLD Arg1:T6ec5b8802b419773765f22897fe1bcd4 Arg2:T25d20c24872ce72c61c13f9862d69900
+R34a122a5cc77d701789aa96e96f64725	supports-GOLD Arg1:T6ec5b8802b419773765f22897fe1bcd4 Arg2:Teb45c20805e3f53bf4db60cc2bbf051f
+R16ce3de13faa58033b24b3905b1f57e7	supports Arg1:T3751cc9ca28e38e832c80d1d320b7f8d Arg2:Tb1f3758f89120aea1938d9d028e4e1ea
+R0cc03be59345170a63b27b94d5e6ead0	supports-GOLD Arg1:T3751cc9ca28e38e832c80d1d320b7f8d Arg2:Tb1f3758f89120aea1938d9d028e4e1ea
+R4f0c1abc25b7f5b49366a2fa832ecff4	supports Arg1:Tdab18a74137840910a5cc31a1dc788f3 Arg2:T6bdd4a0bd16c2afd5eee49b2149e7107
+R4ef99162b0e0611e0a6939f2c4bc8025	supports-GOLD Arg1:Tdab18a74137840910a5cc31a1dc788f3 Arg2:T6bdd4a0bd16c2afd5eee49b2149e7107
+R3b180a756286bbf829308fb0b9eea710	supports Arg1:T8c5f91e63bc23995b08d574b171813cb Arg2:T6bdd4a0bd16c2afd5eee49b2149e7107
+Rfc044e2ed4a07dc6e115c14efa7064dc	supports-GOLD Arg1:T8c5f91e63bc23995b08d574b171813cb Arg2:T6bdd4a0bd16c2afd5eee49b2149e7107
+R36f0019a623c55fecbf328f38bd3c960	supports Arg1:T08b8b8107b68b3ed7796d00b4ef8b42d Arg2:T6bdd4a0bd16c2afd5eee49b2149e7107
+R821041455ea39ead0bc5f1e06e4e4534	supports-GOLD Arg1:T08b8b8107b68b3ed7796d00b4ef8b42d Arg2:T6bdd4a0bd16c2afd5eee49b2149e7107
+R4b8cdcf7d86fab4493a4ebaffd3cd717	supports-GOLD Arg1:T4c40b1a6ee08f61ba374ca589d28c194 Arg2:T6bdd4a0bd16c2afd5eee49b2149e7107
+Re99b5c515f6eb54303514a04abf1ce77	supports Arg1:T9531cd87bb048a400e5b4b97de28f392 Arg2:T7632c0d356f637b011d7b3f74a0e78cc
+Re96ad34801ada9984cbb45004b32d084	supports-GOLD Arg1:T9531cd87bb048a400e5b4b97de28f392 Arg2:T7632c0d356f637b011d7b3f74a0e78cc
+R045ac49c2f34df375efd8b117c2d2386	supports Arg1:T6a3373b527394f4c91963c10aabf15ed Arg2:Tc297db840703f4bbd65b1353085c4d28
+R93563e23a61a70c4acc585759f063ccb	supports-GOLD Arg1:T6a3373b527394f4c91963c10aabf15ed Arg2:Tc297db840703f4bbd65b1353085c4d28
+R217efd9f3f4f2bbad4596c5af1618c95	supports Arg1:Tc7d9845ab2cbc7475390c54eabfc84de Arg2:Tfe0c5be2f562b358c4af57f5f359f908
+Rb64793f95678c74fb53c94101267b5e0	supports-GOLD Arg1:Tc7d9845ab2cbc7475390c54eabfc84de Arg2:Tfe0c5be2f562b358c4af57f5f359f908
+Reb9ac100581c3595dad11dc747dc5b01	supports Arg1:T921e50dadc7b1c1012f6da3a8837b1ed Arg2:Tfe0c5be2f562b358c4af57f5f359f908
+R7c0743367ec30a0996472572241130e8	supports-GOLD Arg1:T921e50dadc7b1c1012f6da3a8837b1ed Arg2:Tfe0c5be2f562b358c4af57f5f359f908
+Rc7e36b519be8d38c4bc104b120d2e448	parts_of_same Arg1:T89ce48d15d04fc7d3023c1dce1b75e34 Arg2:Td8641a397491d4fbc1e12dfc07d3cfc3
+Rbf1bb3b8fab27342d21e97a43c0f389a	parts_of_same-GOLD Arg1:T89ce48d15d04fc7d3023c1dce1b75e34 Arg2:Td8641a397491d4fbc1e12dfc07d3cfc3
+R972530d4398118f33b731bac0a44e36c	supports Arg1:T2840605c205a9092d8a35ff551d250fd Arg2:T740d93efd271bc703f6a3aefdcf0e8db
+R4b2f9051bc791dbe47b2426028746c75	supports-GOLD Arg1:T2840605c205a9092d8a35ff551d250fd Arg2:T740d93efd271bc703f6a3aefdcf0e8db
+Rf423cb4c93d19c4a98d5a90a1e7703b5	supports Arg1:T1b538a4eede53693939da05e6cb4e24a Arg2:Te5eb15ee23d05a23d13915909b8e107d
+R436a5cd4b42922389a96d03b76437d84	supports-GOLD Arg1:T1b538a4eede53693939da05e6cb4e24a Arg2:Te5eb15ee23d05a23d13915909b8e107d
+R76e3a9b59c167b7c90f9af38e042b8e2	supports Arg1:T6594d96348cc774d29809bb9b8e0e6dd Arg2:Tb0d23f98126efef15af652f5618bae8f
+R5b4845edbdf8cff9471e3d17b7e48134	supports-GOLD Arg1:T6594d96348cc774d29809bb9b8e0e6dd Arg2:Tb0d23f98126efef15af652f5618bae8f
+R1f2df69670ff6e0be8bb87ea91062ed6	parts_of_same Arg1:Tb0d23f98126efef15af652f5618bae8f Arg2:Tded0b235fd9928499466af70b37eda72
+R7a398ff13606786a719b4c997b7c823e	parts_of_same-GOLD Arg1:Tb0d23f98126efef15af652f5618bae8f Arg2:Tded0b235fd9928499466af70b37eda72
+R5e1c1b15b00d7e64f5dc957e339055e1	supports Arg1:Tb0d23f98126efef15af652f5618bae8f Arg2:T98e90e859ac747f04ea501a5403b52bc
+Rc15f948f0a64587330efbd33e161cc03	supports-GOLD Arg1:Tb0d23f98126efef15af652f5618bae8f Arg2:T98e90e859ac747f04ea501a5403b52bc
+R94bfb0cc81168e150d5a57bb9bdb0003	parts_of_same Arg1:T37d985c70b1c086d448c6eb5e8833608 Arg2:T6200b8b7689f896b2757609cc2e10815
+R9e60c4a11d30106285efdab4680dae28	parts_of_same-GOLD Arg1:T37d985c70b1c086d448c6eb5e8833608 Arg2:T6200b8b7689f896b2757609cc2e10815
+R5dca9a2fb3add023c1b1f112dc1ea5cc	parts_of_same Arg1:T4b3fead47abce62fde8f50c9bddb7876 Arg2:Tbf0b036d735ad56b66d43b339ee7bb3f
+Rbfdc0dc84990e76f3ef75086691dc8f9	parts_of_same-GOLD Arg1:T4b3fead47abce62fde8f50c9bddb7876 Arg2:Tbf0b036d735ad56b66d43b339ee7bb3f
+R4cd69306dfa71fed91cb8e4b2d28b116	supports Arg1:T3a6fa6709e91d504e2805f10e93a4ba2 Arg2:T4b3fead47abce62fde8f50c9bddb7876
+R0b5495f72dbfce9083aafd4b2c83f93e	supports-GOLD Arg1:T3a6fa6709e91d504e2805f10e93a4ba2 Arg2:T4b3fead47abce62fde8f50c9bddb7876
+R8c4beb41c2ce516fee73b1f7ff3a8d67	parts_of_same Arg1:T4097c2fc81224655adf5852ccd69bf7d Arg2:T1a95cc4dac7cf45c3a2ef11a79ad1bae
+R7c1d07abd773e2d2a0be6f0671e4ca5c	parts_of_same-GOLD Arg1:T4097c2fc81224655adf5852ccd69bf7d Arg2:T1a95cc4dac7cf45c3a2ef11a79ad1bae
+R74c71565848173fe785e52de50d321e1	contradicts Arg1:Te5eb15ee23d05a23d13915909b8e107d Arg2:Tcc05057857a8213cb47c053db412d620
+R53be7e3ba1fd81e97538b8e98e12e510	contradicts Arg1:T460d45355d970f8b239302ac7ab76e84 Arg2:T713ab89c3ee0e0053fba83b1b86d80d6
+R1114f89d2c7891d0da9c1216808e3181	supports Arg1:T9a5dd1dde25e5d447edcd0620780c7f1 Arg2:T37d985c70b1c086d448c6eb5e8833608

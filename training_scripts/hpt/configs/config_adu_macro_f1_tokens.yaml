@@ -1,0 +1,45 @@
+program: training_scripts/cross_validation/train-cross-validation.py
+method: random
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - "train"
+  - "-f"
+  - "allennlp_configs/adu_sciarg_scibert_split_hpt.jsonnet"
+  - "--include-package"
+  - "sam"
+  - "-s"
+  - "experiments/adu/hpt_trials/hpt_macro_f1_tokens"
+  - "--num_folds"
+  - "5"
+  - "-o"
+  - "{model:{calculate_span_f1:false}}"
+  - ${args}
+
+metric:
+  name: best_validation_token/overall-macro/f1_mean
+  goal: maximize
+parameters:
+  ENV_TRANSFORMER_MODEL:
+    distribution: categorical
+    values:
+      - "allenai/scibert_scivocab_uncased"
+      - "allenai/scibert_scivocab_cased"
+  trainer.optimizer.lr:
+    values: [0.1, 0.05,0.03,0.01,0.005,0.003,0.001,0.0005,0.0003,0.0001,0.00003,0.00001,0.000003,0.000001]
+  model.dropout:
+    value: 0.5
+  model.encoder.dropout:
+    distribution: normal
+    mu: 0.4
+    sigma: 0.0946
+  trainer.grad_norm:
+    value: 7.0
+  trainer.patience:
+    value: 20
+  model.encoder.num_layers:
+    min: 2
+    max: 4
+  model.encoder.hidden_size:
+    value: 300

@@ -1,0 +1,21 @@
+Taa023931cb486968bb7858f5ae28dd76	own_claim 108 158	they can be used to model wind effects on textiles
+Td7f39636f5e7751222084b27da28c9b2	own_claim 218 313	calculates the numerical solution of the Navier-Stokes equation with a semi-Lagrangian approach
+Tec5ae3a0d7fcd71282a239db817aaa1f	own_claim 608 690	we show how to produce realistic effects of wind on textiles including lee effects
+Te603f981805f3d93c75c9f4e55e3b76a	own_claim 696 805	The Navier-Stokes equations The Navier-Stokes equations describe a precise mathematical model for fluid flows
+T2314139c2f9d393b01aeef425da2562e	own_claim 971 1091	in our case where this precision is not necessary simplifications can be made which greatly reduce the computation costs
+T87f0cd82097ff39aeb82870bcb517db7	own_claim 1361 1447	the incompressible Navier-Stokes equations can be written in a compact vector notation
+Tbd851aa075935216eafe695922601ed9	own_claim 3194 3293	a different approach based on the method of characteristics is used to solve the advection equation
+T8402f3196fbe55502b8e2d5bdb130843	own_claim 3901 3962	a velocity field of its own isn’t really visually interesting
+Tb965e3538c4ce7b5ea055b84a9ec4e15	own_claim 5186 5240	Here we propose a method which meets both requirements
+T0180c6d3a81e0ff577114c705f439395	own_claim 5242 5371	For every deformable object the velocity value of the surrounding wind field for every vertex of the representing mesh is tracked
+Ta2986bac3da772b31b0b0650159264ac	own_claim 6387 6472	To avoid this situation, the path of the wind flow is checked for object intersection
+T06e3d87edfef0a22304b465319f73a26	own_claim 6482 6585	the collision detection of the cloth simulation system provides a simple method to deal with this issue
+Tc0f7e25cd541149cc26ea7cd5b30e586	own_claim 7849 7907	the velocity field u is given by The linearity of equation
+T4e94fad2b4eedd3118608c0538dc5c66	own_claim 8822 8876	this method can be combined with the aerodynamic model
+Tefceed69fb7084cd95d94bb9c3f12e49	own_claim 8900 8929	to give nice and fast results
+T6a9b213e7909b611a4e9158ff46a87ed	own_claim 9194 9248	This model divides the scene into parallelepiped cells
+T7a8580036cff40f6b6c124f71a3ab628	own_claim 11710 11822	the velocity component of the resulting field u is orthogonal to the collision object’s surface at p col is zero
+Tfb1cd582cb5d4db15973a9c7880261d2	own_claim 11829 11858	u(p col , t + ∆t) · n obj = 0
+T48d8bcf2a0bfe3dc033341edbe9f47bf	own_claim 11909 12000	The wind force effective on objects in the scene is then computed from the velocity field u
+Ta00212ada30e0422de8a6cb1ebd877d3	own_claim 12180 12211	this method solves the problems
+T51cf4536eb92d70efead6b33acc81efa	own_claim 13832 13920	Even with this straightforward approach, nice, realistic looking results can be achieved

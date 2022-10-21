@@ -1,0 +1,23 @@
+<H1>Bibliography</H1>
+        
+          [BAR 98] : D. Baraff, A. W i t k i n , "Large Steps i n Cloth Simulation", Computer Graphics (SIGGRAPH’98 proceedings), Addison-Wesley, 32, pp 106-117, 1998.
+          [BRE 94] : D.E. Breen, D.H. House, M.J. W o z n y , "Predicting the Drape of Woven Cloth Using Interacting Particles", Computer Graphics (SIGGRAPH’94 proceedings), Addison-Wesley, pp 365-372, July 1994.
+          [DES 99] : M. Desbrun, P.Schröder, A. Barr, "Interactive Animation of Structured Deformable Objects", Proceedings of Graphics Interface, 1999.
+          [EBE 96] : B. Eberhardt, A. Weber, W. Strasser, "A Fast, Flexible, Particle-System Model for Cloth Draping", Computer Graphics in Textiles and Apparel (IEEE Computer Graphics and Applications), pp 52-59, Sept. 1996.
+          [EBE 00] : B. Eberhardt, O. Etzmuss, M. Hauth, "Implicit-Explicit Schemes for Fast Animation with Particles Systems", Proceedings of the Eurographics workshop on Computer Animation and Simulation, pp 137-151, 2000.
+          [EIS 96] : J.W. Eischen, S. Deng, T.G. C l a p p , "Finite-Element Modeling and Control o f Flexible Fabric Parts", Computer Graphics i n Textiles and Apparel (IEEE Computer Graphics and Applications), pp 71-80, Sept. 1996.
+          [KAN 00] : Y.M. Kang, J.H. Choi, H.G. C h o , D.H. Lee, C.J. Park, "Real-Time Animation Technique for Flexible and Thin Objects", WSCG proceedings, pp 322-329, 2000.
+          [PRE 92] : W.H. Press, W.T. Vetterling, S . A . Teukolsky, B.P. Flannery, "Numerical Recipes in C", Second edition, Cambridge University Press, 1992.
+          [TER 87] : D. Terzopoulos, J.C. Platt, H. Barr, "Elastically Deformable Models", Computer Graphics (SIGGRAPH’97 proceedings), Addison-Wesley, 21, pp 205-214, 1987.
+          [VOL 95] : P. Volino, M. Courchesne, N . Magnenat-Thalmann, "Versatile and Efficient Techniques for Simulating Cloth and Other Deformable Objects", Computer Graphics (SIGGRAPH’95 proceedings), Addison-Wesley, pp 137-144, 1995.
+          [VOL 97] : P. Volino, N. Magnenat-Thalmann, "Developing Simulation Techniques for a n Interactive Clothing System", Virtual Systems and Multimedia (VSMM’97 proceedings), Geneva, Switzerland, pp 109-118, 1997.
+          [VOL 00] : P. Volino, N. Magnenat-Thalmann, "Implementing fast Cloth Simulation with Collision Response", Computer Graphics International 2000, pp 257-266, 2000.
+        
+        
+          
+        
+      
+    
+  
+
+</Document>

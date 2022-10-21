@@ -1,0 +1,18 @@
+T401c4693c508886afd386de79dc71333	data 2469 2513	Given v, we trivially compute x = h(v 0 + v)
+T5a2ff2376752e4a2c7a760067d9bc905	own_claim 1000 1078	the step size h must be quite small to ensure stability when using this method
+T17f78d0aec4f98e8eca5366c0d44609c	data 2147 2266	Taking the bottom row of equation (5) and substituting x = h(v 0 + v) yields v = hM −1 f 0 + ∂x ∂f h(v 0 + v) + ∂v ∂f v
+T5a9b08afef9bb37a78b3bf4429d00465	data 809 911;920 973	The explicit forward Euler method applied to equation (3) approximates x and v as x v = h M v −1 0 f 0 where the force f 0 is defined by f 0 = f(x 0 , v 0 )
+Tc57398abea4a54849160036dfef6b662	data 1975 2049;2081 2127	Substituting this approximation into equation (4) yields the linear system v x = h M −1 (f 0 + v 0 ∂x ∂f + x v + ∂v ∂f v)
+T7e2abb0bb5bc6b2359373d4533e9d5a9	data 1889 1973	the derivative ∂f/∂x is evaluated for the state (x 0 , v 0 ) and similarly for ∂f/∂v
+Ta8ea87da8cf2bc13700caac1bbfdb4c0	data 2269 2332;2364 2424;2442 2467	Letting I denote the identity matrix, and regrouping, we obtain I − hM −1 ∂v ∂f − h 2 M −1 ∂x ∂f v = hM −1 f 0 + h ∂x ∂f v 0 which we then solve for v
+Tc912264a93c60f2685304463c24b71a2	data 1475 1539	The forward method requires only an evaluation of the function f
+Tb75d52317c0208dc8adc9ff4f02dc2a5	data 1544 1634	the backward method requires that we solve for values of x and v that satisfy equation (4)
+Rcc50cc1356ed7c0802844a51c8aa083d	supports Arg1:Ta8ea87da8cf2bc13700caac1bbfdb4c0 Arg2:Ta8ea87da8cf2bc13700caac1bbfdb4c0
+R79edd1eb486c99b548ed56ab36c3bf50	supports Arg1:T5a9b08afef9bb37a78b3bf4429d00465 Arg2:T5a2ff2376752e4a2c7a760067d9bc905
+R5f25037c23864a67f8ad4842b3ea3e68	supports Arg1:Tc912264a93c60f2685304463c24b71a2 Arg2:Tb75d52317c0208dc8adc9ff4f02dc2a5
+Rf5d18ad60bc0fb0496415554e548ada9	supports Arg1:T7e2abb0bb5bc6b2359373d4533e9d5a9 Arg2:Tc57398abea4a54849160036dfef6b662
+R3cc655e024c933bbbe19d30627840f51	supports Arg1:Tc57398abea4a54849160036dfef6b662 Arg2:T17f78d0aec4f98e8eca5366c0d44609c
+Rc8b10ed22d0443c2f20620debca6395d	supports Arg1:Ta8ea87da8cf2bc13700caac1bbfdb4c0 Arg2:Tc57398abea4a54849160036dfef6b662
+R82db8c47625ac09965f31f1bcaf92dd5	supports Arg1:T17f78d0aec4f98e8eca5366c0d44609c Arg2:Ta8ea87da8cf2bc13700caac1bbfdb4c0
+Rc1b2056ec0be07e0f305e7c8de2b528b	supports Arg1:Ta8ea87da8cf2bc13700caac1bbfdb4c0 Arg2:T17f78d0aec4f98e8eca5366c0d44609c
+R2fbd9cb7106800782d69d9fce2856ed4	supports Arg1:Ta8ea87da8cf2bc13700caac1bbfdb4c0 Arg2:T401c4693c508886afd386de79dc71333

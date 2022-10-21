@@ -1,0 +1,6 @@
+T6421d8c8e4b78e880983ebc39e047d1f	own_claim-GOLD 697 728	dim lighting causes motion blur
+T6668f856eecc23f3063eb8775d4e79e4	own_claim-GOLD 856 931	acquisition takes roughly 6 minutes and mesh processing 2 minutes per frame
+Ta9ee2c879db7cec9fee6ffc9e040ca52	own_claim-GOLD 1848 1881	reducing the number of color bits
+T3aaf60ff4739668e71c727477110e317	own_claim-GOLD 1896 1947	we terminated the correspondence algorithm at N = 2
+T32d50f5d8e4ed1087668f27259f618b8	own_claim-GOLD 2813 2850	We use a small set of captured frames
+T9b56ec1ee8d6c42652d93ad1b426da24	own_claim-GOLD 2891 2960	in combination with MeshIK to skin skeletal human motion capture data

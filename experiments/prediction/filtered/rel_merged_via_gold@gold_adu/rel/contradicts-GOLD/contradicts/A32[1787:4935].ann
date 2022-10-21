@@ -1,0 +1,4 @@
+T5f375b67f185caad98f2a1ceffde22a7	background_claim 1837 1880	real-life wrinkling is a complex phenomenon
+T7a7b2df58f18107c440aacd20876621a	background_claim 1658 1703;1712 1730;1745 1767;1783 1826	Accurate and fast collision detection methods constraint methods good deformable models have proved to give quality cloth animation
+R9a4d102c0de08d702f0fdc2f831cd936	contradicts-GOLD Arg1:T7a7b2df58f18107c440aacd20876621a Arg2:T5f375b67f185caad98f2a1ceffde22a7
+R49dacf0e6629371ea9c0a891381f6f45	contradicts Arg1:T7a7b2df58f18107c440aacd20876621a Arg2:T5f375b67f185caad98f2a1ceffde22a7

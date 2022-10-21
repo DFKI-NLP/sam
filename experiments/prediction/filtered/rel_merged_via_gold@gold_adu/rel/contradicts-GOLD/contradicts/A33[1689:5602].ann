@@ -1,0 +1,4 @@
+Tfa130e1f45e9dddb6a95c605a1b23b5c	background_claim 1406 1494	there is a distinction in scale and different methods are required to solve each problem
+T4425371ca97fec0a543d6b32c664c613	background_claim 1284 1395	Both phenomena are symptoms of the same problem: views of the surface are blocked by other parts of the surface
+R3638dadd846ade2018a49862f0cc30fa	contradicts-GOLD Arg1:T4425371ca97fec0a543d6b32c664c613 Arg2:Tfa130e1f45e9dddb6a95c605a1b23b5c
+R0f0818fb7f603cea0901bd32734f20e2	contradicts Arg1:T4425371ca97fec0a543d6b32c664c613 Arg2:Tfa130e1f45e9dddb6a95c605a1b23b5c

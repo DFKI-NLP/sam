@@ -1,0 +1,20 @@
+T3043dcf17db0a1e31953ac0f4a0c618c	own_claim 589 664	To avoid O(n 2 ) comparisons, we use a coherency-based boundingbox approach
+Ta46f41458eae5505c6a6bc061be55cc1	own_claim 672 705	to cull out the majority of pairs
+T1f7b455954f139264b5611d42b9ffa7a	own_claim 793 855	we insert a strong damped spring force to push the cloth apart
+T1bb3fd62bd0467119caf2192e86c015f	own_claim 857 946	A dissipative force tangent to the contact is also applied, countering any sliding motion
+T76557287108ccc407b6bc598be47d647	own_claim 1907 2007	Both cloth/cloth and cloth/solid collisions give rise to the same problem whenever two contacts form
+T3a05c2f563aa26a47228bf48c94dac89	own_claim 2039 2086	our detection algorithm reports an intersection
+T7cc80d8810da0c3f14a6b6818dce7d80	own_claim 2092 2133	then takes action to remedy the situation
+T39001910e510f05699ece689a8f95597	own_claim 2142 2167	by enforcing a constraint
+T5590b0282a103bf5465d7c1f787b73d8	own_claim 2193 2221	or by adding a penalty force
+T55178c9588353382aee0653c86056ca8	own_claim 2636 2662	For cloth/solid collisions
+Tc044a1135540a4759b2bcf1dfe9e5347	own_claim 3358 3382	this could be eliminated
+T03f028ab015f9a4463daec1360fc2655	own_claim 3388 3427	at the cost of decreasing the step size
+T9816446c69d20a7791689034f3e1f9fd	own_claim 3635 3756	we simply altered the positions of the cloth particles, effecting an instantaneous (and discontinuous) change in position
+T640142c37f6049d8bf23af813e02d1ba	own_claim 3764 3789	this would be problematic
+Tffdef97b1543a36b4e16ba6acec4d821	own_claim 4914 4980	perhaps some sort of extra implicit step could be used as a filter
+T659b8ae86ee98b548208dde1a9f3c2ae	own_claim 5429 5449	x i = h(v 0i + v i )
+T80e15e31fdc571c389c6501816a88404	own_claim 5521 5583	changing positions after a step has been taken doesn’t work is
+T93951a24bff9471c231c9c1c1945493f	own_claim 5786 5833;5853 5855;5866 5892	we simply modify the top row of equation (4) to 17 x i = h(v 0i + v i ) + y i
+T9965f19ddf224b635430eb1a970e58cc	own_claim 6244 6280	yields the modified symmetric system
+Td197ca6c258e2f5ab5f42d9024400b30	own_claim 6552 6713	We use this technique to bring particles quickly and stably to the surface of solid objects without creating visual artifacts or limiting the allowable step size

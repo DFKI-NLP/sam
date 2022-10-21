@@ -1,0 +1,18 @@
+T677c9c5628f5ebf817d632f432bf2f10	own_claim 453 522	The wrinkle pattern is gray scale texture image defining the bump map
+T0f4287eaa0f6d5ebe8444e5712e10c79	own_claim 3331 3397	the direction of the deformation favors one pattern over the other
+T82d0bb75314d0c6c0016b551ceee191d	own_claim 422 451	they differ in implementation
+T59cf4a8e0cde0af2a56a4bde16c4d4de	own_claim 5516 5589	There will be a smooth transition between wrinkling patterns in this zone
+T860055378dcd73c450fca8e66e7e2581	own_claim 5899 5957	M F 2 will be bigger than (1 + variance)(M F 1 + M F 2 )/2
+T1df90703cad5ea5748644971b2edfd8a	own_claim 6205 6240	n = ∞ is a sudden switch of pattern
+Tf116c6ea2fbc69e35ac13753430d32c9	own_claim 2864 2963	two different wrinkle patterns give different wrinkling coefficients for the same triangle geometry
+Tb365953cb367ceeb17958ecd0b1b48ad	own_claim 3268 3313	corresponding modulation factor will be small
+T56b556bb1c0a27d53c349af94b75ef8b	own_claim 3045 3085	the modulation factors will be different
+T1537510211b3af63d7e2244b4c2a5b77	own_claim 5959 6015	This gives maximum weight (W 1 = 1,W 2 = 0) to pattern 1
+Tb71e7ebcf264a8630f81802da56769fb	own_claim 5337 5447	a user definable variance around the mean value of the wrinkling coefficients, which defines a transition zone
+T843e4c46f69fa757d107a40aa892eae3	own_claim 6121 6189	The user definable power n is representative of the tightness of the
+R0662713ea40998e30374f4d05337f4a5	supports Arg1:T677c9c5628f5ebf817d632f432bf2f10 Arg2:T82d0bb75314d0c6c0016b551ceee191d
+Rc51ef07979253bf162f6998528a9f03a	supports Arg1:Tf116c6ea2fbc69e35ac13753430d32c9 Arg2:T56b556bb1c0a27d53c349af94b75ef8b
+R815e8d839377cc1e88c0278a3e172e87	supports Arg1:Tb365953cb367ceeb17958ecd0b1b48ad Arg2:T0f4287eaa0f6d5ebe8444e5712e10c79
+R1829c332ba9606be2c6908d67c115fc2	supports Arg1:Tb71e7ebcf264a8630f81802da56769fb Arg2:T59cf4a8e0cde0af2a56a4bde16c4d4de
+Rb6e6e5ddfb061a040f5810ce7f3ae3f5	supports Arg1:T860055378dcd73c450fca8e66e7e2581 Arg2:T1537510211b3af63d7e2244b4c2a5b77
+Re83f4bfbde2d5c97f3d1117fb81a144c	supports Arg1:T843e4c46f69fa757d107a40aa892eae3 Arg2:T1df90703cad5ea5748644971b2edfd8a

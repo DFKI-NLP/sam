@@ -1,0 +1,9 @@
+T314318ad4cad33c5ab38d7361f1d054e	data 1078 1121	settings more pragmatic than a simple chain
+Tae84c36ad5bc5665cf6788914797bb01	own_claim 2247 2312	ICD is able to use larger timesteps than SHAKE and still converge
+T9d9af9a5355d90fbaaa13dd0bd62f813	data 1131 1163	the following draping experiment
+Tfdce8195786b5e6337726f3c5e77ba75	own_claim 2394 2420	the overall time is higher
+Tff6538c3fad94179da98ca075f0fadd6	data 2762 2780	allow strain of 1%
+Tf0510cf23d2cee6912a7a02666593055	data 2783 2792	Figure 5b
+R90595e653d239461dde1fa09944b7de6	supports-GOLD Arg1:T9d9af9a5355d90fbaaa13dd0bd62f813 Arg2:T314318ad4cad33c5ab38d7361f1d054e
+R7e051405a4ff6763bdcbee2be1df4974	supports-GOLD Arg1:Tfdce8195786b5e6337726f3c5e77ba75 Arg2:Tae84c36ad5bc5665cf6788914797bb01
+R886b36cb975548b49f37dfd87ccf8f1f	supports-GOLD Arg1:Tf0510cf23d2cee6912a7a02666593055 Arg2:Tff6538c3fad94179da98ca075f0fadd6

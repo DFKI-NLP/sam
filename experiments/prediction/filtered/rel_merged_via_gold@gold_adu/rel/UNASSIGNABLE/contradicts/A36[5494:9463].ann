@@ -1,0 +1,11 @@
+T8d885ec7b4b1002497682e1dd0eee2bb	background_claim 3704 3745	Their capture setup is appealingly simple
+T8db281c5346a757d64cc8e8cbbf719ce	own_claim 3751 3784	ours is more general and powerful
+T7c8888bdd548e043be08c0d3aa075e0a	background_claim 242 268	simple mass-spring systems
+Td8e5f7da187dfdd0fc3fcc489c2fd903	background_claim 977 1026	Massspring systems typically have four parameters
+T6d20c8028572850c3107ef328608c43a	background_claim 292 316	general particle systems
+T6805ec4d9e64f96b2e37839bb748484b	background_claim 1070 1106;1119 1125;1151 1184;1194 1231	continuum-based methods can have two to six parameters for planar deformation plus another one to three for bending
+Tc9977c88f944a9fa64fc222c842878f5	background_claim 105 146;177 227	Since the first physics-based approach by a multitude of different cloth models have emerged
+Rddb4bfd3e20ff3272fd5319a7d000a2e	contradicts Arg1:Tc9977c88f944a9fa64fc222c842878f5 Arg2:T7c8888bdd548e043be08c0d3aa075e0a
+R4a66857e55fb08af692e90cc179fe5e0	contradicts Arg1:T7c8888bdd548e043be08c0d3aa075e0a Arg2:T6d20c8028572850c3107ef328608c43a
+R3d6f70c953acef52389ec96b2950da30	contradicts Arg1:Td8e5f7da187dfdd0fc3fcc489c2fd903 Arg2:T6805ec4d9e64f96b2e37839bb748484b
+R8cb4116e1b71d1f105e2a2e395be7a7d	contradicts Arg1:T8d885ec7b4b1002497682e1dd0eee2bb Arg2:T8db281c5346a757d64cc8e8cbbf719ce

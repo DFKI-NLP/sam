@@ -1,0 +1,36 @@
+T150069c00024d9076372ddae435efc14	own_claim-GOLD 190 262	One of our major contributions is a data driven approach to hole filling
+Tec1c8fcbc1125e5c783f956a4e0fede2	own_claim-GOLD 322 343	Our work differs from
+T9606fa445871c923d854d968f9cee3d4	own_claim-GOLD 458 514	our procedure estimates a single coefficient per example
+T8c078b7e90b7be657eeacdaa74261659	own_claim-GOLD 516 572	This hole filling procedure has a number of requirements
+T4eb000f3aabbe3621dafa10fc74c1951	own_claim-GOLD 745 799	the splicing method should respect properties of cloth
+Td19568673508a545ac404e456362a644	own_claim-GOLD 1132 1173	This procedure has a number of advantages
+Ta3995d77ca11bebe59857d548fad5203	own_claim-GOLD 1339 1458	By penalizing elements that deviate in this matrix, we have a fairly direct penalty on large changes in scale or strain
+Tb9d00303be811cb30e8f115e76f32237	own_claim-GOLD 3708 3756	we create complete meshes in an iterative method
+T715e1c5a94e7f66bd741dfa53a580d9d	own_claim-GOLD 3917 3939	this gets the job done
+Tb0d1e6bc0dfbe6d4b2c21db0171eef84	own_claim-GOLD 4445 4555	The advantage of this apporach is that the example poses are chosen to capture the relevant degrees of freedom
+T0055b2b1073812c2c5fe726bf343c6f2	own_claim-GOLD 4558 4581	yielding better results
+Tfa4bbe68cc155b9b7c9d5c4fdf96129e	own_claim-GOLD 4772 4817	We introduce flexibility preserving smoothing
+Tb923e02bd3cf7c5ae6b27af588eb104b	own_claim-GOLD 4820 4861	a method similar to anisotropic diffusion
+Ta46162096d37d6cc5dba563cbffe54f1	own_claim-GOLD 4961 5000	Typical temporal smoothing is dangerous
+Td55d1df9318d3e04ba879b5468626698	own_claim-GOLD 5165 5216	small temporal errors are often difficult to notice
+T7cc937325066b3e05e9bf36debc55937	own_claim-GOLD 5231 5315	small errors in regions of the cloth that move rigidly are typically easy to observe
+Tb108c63b45ef7f1229821b04bc85ad2d	own_claim-GOLD 5743 5841	Large variations in location indicate non-rigid movement and consequently receive little smoothing
+Tc4132f8fb209a811e59db7ef03f60f8d	own_claim-GOLD 5843 5930	Smaller variations indicates rigid movement and benefit from more substantial smoothing
+T8cc2b9af373355a1e686ea4aed11b52d	own_claim 190 262	One of our major contributions is a data driven approach to hole filling
+Tbf501ba5f63c3b1795e9e02fe869a169	own_claim 322 343	Our work differs from
+T8a6d2b9de238545497aa81b9748670d5	own_claim 458 514	our procedure estimates a single coefficient per example
+T81a39a20aec8554c34e391d9a4dfabff	own_claim 516 572	This hole filling procedure has a number of requirements
+Te7a5ebd573611f7495fb873d36cc43d5	own_claim 745 799	the splicing method should respect properties of cloth
+T5bf2ddb3d015b63d90bd844fe5ca862b	own_claim 1132 1173	This procedure has a number of advantages
+T1a34b9f53a14779ebf8bf5dc1895f5ff	own_claim 1339 1458	By penalizing elements that deviate in this matrix, we have a fairly direct penalty on large changes in scale or strain
+T2d62a1c5e4b4d0abd093d2a1df280b14	own_claim 3708 3756	we create complete meshes in an iterative method
+Ta0cfb680440aab67d26f97dbe8dfbc47	own_claim 3917 3939	this gets the job done
+T294d30f3362fc1b88521addaa6333377	own_claim 4445 4555	The advantage of this apporach is that the example poses are chosen to capture the relevant degrees of freedom
+Te9de879f2c57b7f9ab8cfcd39562ee08	own_claim 4558 4581	yielding better results
+Tb6b99c4b3b374cd0e6e7da7e7b57f2bd	own_claim 4772 4817	We introduce flexibility preserving smoothing
+Td9ced4cc78c189b4a7977c682c9e97a5	own_claim 4820 4861	a method similar to anisotropic diffusion
+T548401d80bbbe1de86ae88e3f8f23b1a	own_claim 4961 5000	Typical temporal smoothing is dangerous
+Tc8c07f8ca67c6e0ae5bb5313d229a635	own_claim 5165 5216	small temporal errors are often difficult to notice
+T6bfe185f8b035f237d6f0d05d7d1fc11	own_claim 5231 5315	small errors in regions of the cloth that move rigidly are typically easy to observe
+Teccc29d0669efe581ccb222ee303c667	own_claim 5743 5841	Large variations in location indicate non-rigid movement and consequently receive little smoothing
+Tb952b6dcd482ad4bb51ac41cfab49b09	own_claim 5843 5930	Smaller variations indicates rigid movement and benefit from more substantial smoothing

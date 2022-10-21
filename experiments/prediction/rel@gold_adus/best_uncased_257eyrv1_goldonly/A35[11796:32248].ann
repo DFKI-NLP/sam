@@ -1,0 +1,209 @@
+T420792cf3147a01bff11380ace6b60bd	own_claim 32 102	Performance is a key issue in choosing the adequate integration method
+Tcaa9a499c3a05ebc91252c9637d3dbae	background_claim 107 210	cloth simulation usually involves very large mechanical systems described by a huge number of variables
+T4c202bd8ef2f66cb614076e452b9b45e	background_claim 216 257	the numerical resolution of the system is
+T55cecadc9fbfee2d4b57d66d8539bebd	background_claim 268 306	critical to the total computation time
+T53705a3bc85182691a6cebf66190aeb0	own_claim 308 355	Performance actually depends on several factors
+T7e951d0c513ef7726eec18a5b8a6937b	own_claim 359 420	The computation time taken for one iteration of the algorithm
+T8e3c122b44037b83b7b08fc888bff5f3	background_claim 422 601	This depends on the complexity of the method, and also related to the number of times the forces of the system have to de derived from the system state using the laws of mechanics
+Tb06ff576dc2b98e0eeeaba99ae54cd6b	own_claim 605 755	The time step for one iteration, which represents the time discretization required to reach a given accuracy or numerical stability for a given method
+T0313ecfd2aa51de6458f23eb431c6b67	own_claim 759 928	The desired accuracy of the resolution, which may be coarse if only static equilibrium is to be computed, or high if the whole dynamic evolution of the system is desired
+Td1da74e374f51c421ef582fcc71dde3c	background_claim 930 1017	Accuracy increases along with time step reduction as better as the method is high-order
+T45f7d692d779be95fdd4ba93a5816517	own_claim 1021 1140	The numerical stability of the method, which also limits the time step for a given method and a given mechanical system
+Tde01669bad5601511eb318b419fc2503	data 2412 2559	Method Accurate Simplified Midpoint 32 μs 8 μs Runge-Kutta 95 μs 25 μs Back. Euler (No CG iter.) 31 μs 5 μs Back. Euler (Per CG iter.) 16 μs 2.5 μs
+Tb1202e5569ddedccc47fb49ae1c3905d	own_claim 2568 2764	The most important fact to note is that the application of the Backward Euler method with a reduced number of Conjugate Gradient iterations compares very well with the traditional explicit methods
+T4ca1bfaacaf0817d4240312ea196a3b6	own_claim 2766 2855	With one iteration only, it is barely worse than the very simple explicit Midpoint method
+T55483979f00e609ebd8f85f2a9f3e66c	own_claim 2857 2875	Our implementation
+Td1091e306e099029689a9a3ac4cf9bff	data 2892 2898	VOL 00
+T82026719450c9b87a7245e43a40b7078	own_claim 2901 3111	does not explicitly construct the matrix of the system to be resolved by the Conjugate Gradient, but computes “on the fly” the product of this matrix with vectors when needed by the Conjugate Gradient algorithm
+T503f39ebe0abdd364f4b9984037f3bf7	own_claim 3113 3212	This gives a very efficient implementation when using a low number of Conjugate Gradient iterations
+T7c185fb72bc572d63a19cd17a87f3f58	own_claim 3263 3310	which is often sufficient for most applications
+T5dba26d15a23a7290f2255e16f0ffbfd	own_claim 3312 3427	These tests will help us to choose the method that gives the best compromise between accuracy and computation speed
+Tafde3a51d72bcf7797f6c7c4551e6358	own_claim 3524 3777	For measuring accuracy and numerical stability of the algorithms, we need to set up a “standard” material on which the experiments are carried out, as well as the rules allowing to extrapolate the results to any material of different size and parameters
+Td781d31610fd57a39f04cfd26c90b170	own_claim 4152 4511	Thanks to the linearity of the equations describing linear elasticity, we reduce the number of parameters describing a problem using proportionality laws, and we compute a “condition coefficient” K which illustrates the acceleration of a mesh element with normalization to the problem mass, simulation time step and element size, as follows: K = E d 1 l 2 t 2
+T0ad89c3b4b53a3790dc9524f97569c2e	own_claim 4516 4657	This non-dimensional coefficient actually measures the “numerical difficulty” of computing an iteration of time step t with the given problem
+T4f2973bb0b8af19f460f40f9a103b8a9	background_claim 4848 5008	A typical cloth simulation problem could involve a cotton fabric cloth surface, which typically have a density d = 0.1 kg.m -2 and a Young modulus E = 2 0 N . m
+T09d9f6eb69e973157087bbc6046b3fb4	data 5019 5121	a discretization into elements averaging one centimeter and a simulation time step of ten milliseconds
+T8fe801565bbb88bba8e9782926b26ce6	own_claim 5123 5194	the condition coefficient of the problem computed with (1) is K = 2 0 0
+T2cf40fd1762c251248976eaa54d4d8a4	own_claim 5197 5283	It is possible to define similar coefficients related to bending and viscosity modulus
+Tf61961b8d5f3f529f8c3e08121f744f2	background_claim 5380 5539	In simulations that consider simultaneously all these forms of mechanical behaviors, the dominant K coefficient rules the “numerical difficulty” of the problem
+T1bfa70f5437eaee2df8bd503d3a2cc9f	background_claim 5677 5883	In such kind of simulation, the interest is to reproduce exactly the motion of a cloth object along time, the accuracy of its evolution being the key of the realism of an animation involving simulated cloth
+T62cef59e2f6c45c4f0f573db6ef41c59	data 6254 6276	using implicit methods
+T2b3c62d19c16a5d16df4ed0fb0eb33f0	own_claim 6278 6444	we perform a preconditioning of the system state variables of the linear system to be resolved using the inverse square root of the mass of the corresponding particle
+Tb1d1ed0ebbad50c417b5cafdacf99208	own_claim 6446 6692	This allows the iterations of the Conjugate Gradient algorithm to distribute the resolution numerical errors as evenly as possible between the particles, so that to obtain for instance a fall speed that does not depend on the mass of the particle
+T88b148f9ee8e7146fb8d88929361bb8b	data 6771 6820	Without any additional external forces considered
+Tbb7d00e694c47435d8420fde347f170f	own_claim 6852 6905	we expect this to happen in a constant time of 0.45 s
+Tfcfdac21198efa824b97d727eb791bca	own_claim 7086 7138	Several interesting facts arise from this experiment
+Tc809e7b9af86aea41697df486942e560	own_claim 7140 7228	As a matter of numerical stability, the Midpoint method supports K values up to almost 3
+Ta6394fc299c94805a5c6397ee1267938	own_claim 7237 7293	the RungeKutta method supports K values up to almost 100
+Te389a07bdbce57b85610da65fbdec086	own_claim 7315 7429	with Runge-Kutta, it is possible to use simulation time steps which are almost six times larger than with Midpoint
+T40af72d79681d089d0aca49f9222a187	own_claim 7451 7540	a Runge-Kutta iteration takes only three times more computation than a Midpoint iteration
+T058646178daa98711d9494013ef3ea86	data 7542 7547	Fig.1
+Td40a70e058d186cd20d11e1d68627b2c	own_claim 7550 7650	the Runge-Kutta method seems to be computationally two times more efficient than the Midpoint method
+T9e38f1ca62490d32acba99c736654f4f	own_claim 7652 7795	As a matter of simulation accuracy, both Midpoint and Runge-Kutta seem to preserve accuracy correctly within their range of numerical stability
+Tc35389a41c731eabb2a4cc65d1e27f18	own_claim 7803 7857	the implicit Euler method seems stable for any K value
+Ta67eed30aa80934d99e065f07b4c599d	own_claim 7859 7874	its accuracy is
+T8ada2449e36c05277e025db528ade676	own_claim 7883 7966	very degraded by high K values and reduced numbers of Conjugate Gradient iterations
+T513caccc53c6a376acee74bbb4546d5f	own_claim 7996 8081	accuracy is well preserved with one Conjugate Gradient iteration up to a K value of 4
+Ta3b5c1f875fa8b8f24a99b7fdafd7ff5	own_claim 8087 8185	increasing the iteration number n times also increases the K value n 2 times for the same accuracy
+T4b82e59c5ac2f561907ece2f251aaafe	own_claim 8214 8336	the Inverse Euler method needs at least four Conjugate Gradient iterations to reach the accuracy of the Runge-Kutta method
+T494b27fcadc4bb636e476770c21edac7	own_claim 8355 8447	similar requirement of accuracy bring the two methods in parity in terms of computation time
+Tfae9dfd6bc05e22ea47953d17fa99157	data 8449 8454	Fig.1
+T668837850024199a2fc9e3c7dc0885df	own_claim 8490 8590	the experiment was carried out using a uniformly discretized mesh, and uniform mechanical parameters
+T15bcd0edf6a3a3921e63c2d0ee753093	own_claim 8592 8915	Real-world simulations do not have this regularity, and numerical instability with explicit methods occur in the stiffest regions of the mesh, which, even if they are marginal in the whole mechanical system, may totally “explode” and destroy the simulation and therefore will rule the size of the largest time step possible
+T0670e820d0aaa85561877677d59df3e4	own_claim 8917 9040	With implicit methods, the resulting inaccuracies may be unnoticed when taking a time step adapted to the average stiffness
+T6011919ce5fe38fb5caee64be9aed221	data 9090 9141	accurate reproduction of dynamic motion is required
+Tf6813d2496efd1dce5a6a29b8187640f	own_claim 9143 9226	it is not possible to increase the time step of implicit methods as much as desired
+Tc916baa57feedf2cd1812814dd01c522	own_claim 9231 9268	this cause very noticeable inaccuracy
+Tea5b152e7824456c4f056909c1447614	own_claim 9272 9330	weak forces will be “neglected” relatively to stiff forces
+T87a6ea952415f0af62173001191acc7d	own_claim 9338 9417	this is not an issue for draping problems where only the final state is desired
+T3a1df79dbf3dc49e3fdb2346d8c3d936	own_claim 9419 9459	this aspect has to be taken into account
+T166aa0b2ec641b71454d1095b3d38d1c	data 9465 9519	accurate reproduction of the whole evolution is wanted
+T7ee285cca797105042a6e13b2704780d	own_claim 9527 9618	implicit Euler is a good choice for robust simulation where accuracy is not really an issue
+T91edcf0c2543ebd4857aad02261963fa	own_claim 9620 9696	the explicit Runge-Kutta offers good possibilities of ensuring high accuracy
+T83d2484fa732336565c3d2c990aefb45	own_claim 9708 9731	its high-order solution
+Tc75b863956b91bd37c4e0d2c763d13bf	own_claim 9750 9847	is provides good possibilities integration error evaluation for efficient time step control which
+Te65ed3a2b489f24557e762461dd5b611	own_claim 9861 9939	is too context-sensitive for being pre-evaluated using only the knowledge of K
+T217c6b61dc6803d7930372c8f0f59c97	own_claim 9977 10132	The condition coefficient value is a good indicator of the time step and accuracy that can be expected for a given problem with a given iteration time step
+Ta6b4c28510e0d703a080d91f6b17b190	own_claim 10134 10229	Considering a simulation involving elements n times smaller, maintaining accuracy and stability
+Tc5504c84f90c1800c1debda44f4b508f	own_claim 10269 10415	would require a time step n times smaller, and therefore n times as many iterations for simulating the mechanical system along a constant duration
+T7ef7af74cdb45163f2845e206d035f53	own_claim 10437 10485	there are also n 2 times more elements to handle
+T496c138d6c1cca31f4f532ed7bdc28b6	own_claim 10487 10552	the total computation time is finally multiplied by a drastic n 3
+T55dd97a3093107c4b50e1e1d4de156b3	own_claim 10623 10719	this factor is what cause explicit methods to become so inefficient with refined discretizations
+T1ecb99902be7d1db23122e9fbf0d0236	own_claim 10723 10790	this scaling has to be strictly observed for preventing instability
+T8f4be173a9f01ec6c624acff62b30c54	own_claim 10792 10832	implicit methods are a bit more tolerant
+Tf2c94350a864169553505463e5629d00	data 10836 10866	only “visual” accuracy matters
+Tf5d70a96f89da557ae29c69f438f49dd	background_claim 11296 11426	Draping is another context of simulation, where only the final static equilibrium state of the mechanical system is to be computed
+T14901c9bbb882bfaec70fcfe53cbb758	background_claim 11428 11542	Here, the interest is to converge to the equilibrium state as quickly as possible, with minimum computation charge
+T2e6b4e03e626016cdddf398f747afe87	background_claim 11547 11608	the full evolution of the cloth along time is not an interest
+Tb6d485392dc75552eaad6d63312362c9	background_claim 11610 11659	accuracy can be traded away for computation speed
+T71563724fe0f42613e793be959e8c676	own_claim 11701 11754	implicit methods should be quite strong on this point
+Tacb3c7127933c82e2ef66a3673ec37d3	background_claim 11759 11878	they do not suffer from numerical instability, and allow large time steps to be used at the expense of dynamic accuracy
+T5f4158f3b3f426d9d16b140c879aae13	own_claim 13255 13310	the explicit methods seem quite not adapted for draping
+Tc589632e486dc75c500beb7f8208045e	own_claim 13312 13562	Runge-Kutta requires more than 500 iterations for performing the simulation without instability, with the maximum allowed time step t = 0 . 0 0 1 s , which in fact corresponds to the maximum value of K coefficient experimented in the previous section
+Tc2d8a3f6ad17996ca19f766353c09bd7	own_claim 13564 13666	The backward Euler method is robust enough to handle the problem without instability for any time step
+Taaf10a4a6c50a13c2625494537a68e86	own_claim 13689 13782	larger time steps do not proportionally translate into fewer steps for performing the draping
+T3e0dda7eb2b765e18b04dab12857eda0	data 13787 13815	the time step becomes larger
+T967e3e2e3d8a6cc7f230b81b1cc28131	data 13824 13918	the corresponding K coefficient exceeds the theoretical limit observed in the previous section
+T5246e63d650931a39260cc02a62eb956	own_claim 13920 14103	we quickly observe a “saturation” of the number of iterations to a constant which seems to be inversely proportional to the number of Conjugate Gradient iterations that were performed
+T4f7a81b738088eb39ad9e9fcf04a89cb	data 14137 14212	K exceeds the dynamic accuracy limit of a given implicit integration method
+Tbb13f66f2e01ac8d3d69e9f26c98bba0	own_claim 14214 14275	the time step does not really reflect a time interval anymore
+T313dedaa8eda9f5a87d37cf1db2cd954	own_claim 14291 14566	the implicit method will only evaluate an approximation of the rest state of the mechanical system by linear extrapolation from the Hessian matrix, whose accuracy depends on the number of Conjugate Gradient iterations that were used to resolve the corresponding linear system
+T88c834b620cdced79c3ec037e58e6e89	own_claim 14575 14647	there is no real way to “cheat” on the time step for speeding up draping
+Tc4fd79f84fd25435eb560e390460d868	own_claim 14692 14933	The total number of Conjugate Gradient iterations for performing all the simulation iterations of a draping problem cannot go below an incompressible number, related to a kind of “total computational difficulty” for solving a draping problem
+T7eead364f63deeae703afbc8bc379216	own_claim 14996 15086	this experiment shows the drastic advantage of using implicit methods for draping problems
+T286c705b97e532a48f061280898d8cd7	own_claim 15088 15363	With our implementation using the accurate elasticity model and the computation times measured in section 3.1, the draping could be computed in 30 seconds with Backward Euler with any large time step, compared to 150 seconds with Runge-Kutta when using an “optimal” time step
+Tb49dccfc5b92f97d0bbd5ba2b87e484c	background_claim 15439 15516	Most mechanical simulations work with numerical equations that are not linear
+T32ce67691490cfb9d4f6ed69a9be4e44	background_claim 15518 15566	There are two main reasons for such nonlinearity
+T5a14466f474ffcb2f59b8577a97c6041	background_claim 15570 15638	The equations describing the mechanical behavior laws are not linear
+T1d31df297efba8f131a7d0cf6eae5e67	background_claim 15654 15813	the strain-stress relation describing elasticity may actually be complex curves, which furthermore may take into account timedependent and hysteretic behaviors
+Tb4068503fa88e108461afc59dee1dff7	background_claim 15817 15972	During the simulation, the orientation of the mechanical elements change, and this modifies the expressions of the mechanical laws in the world coordinates
+Tc51c94a9d260f3ea4ce093078d307aad	background_claim 15974 16160	While rarely causing numeric “explosions” as with explicit methods, nonlinearity may disrupt the stability of simulations integrated with implicit models with large disturbing vibrations
+T26af24ed1d5ecdf0fff9d9fb1a1229ec	background_claim 16162 16347	particularly when using large time steps that cause iterations to converge to the equilibrium state of the mechanical objects rather than simulating accurately their mechanical behavior
+Tf2b0e47982cf7aedfe46f730e3fe0318	background_claim 16349 16357	This can
+T4a6701324304442a522f244e8d353b81	background_claim 16371 16447	be observed when simulating stretched flat surfaces without curvature forces
+Tc75dbdd3f9e7d51fc693f209d21eef57	background_claim 16477 16644	the hypothetical equilibrium state is derived from the knowledge of the Hessian matrix, which relates the firstorder evolution of the forces as the deformations change
+Tbc6f5ec5566417b5771b1ce07f967826	background_claim 16646 16759	Nonlinearity causes this matrix to change between the successive iterations, and this evaluation to be inaccurate
+T1dede6ae95171439eb270fa528448f38	background_claim 16761 16864	despite high system resolution accuracy that can be reached with numerous Conjugate Gradient iterations
+Tdcd894e94fd52434fe23d42d208d7dc1	background_claim 16866 17047	The solution for this is to approximate the Hessian matrix for taking into account the changes that may be observed from the change of the system state between successive iterations
+T5c9e238314d7336b8ac8b2f393fe5365	background_claim 17055 17196	an underestimation of de derivatives may lead to an equilibrium state valuation too far from the current state, and by this cause instability
+T5c0e271419798a41604cc27d6220e2d6	background_claim 17198 17289	an overestimation of the derivatives will place this evaluation nearer to the current state
+Tb1cd988d6364e9145fa6a76ef7265a17	background_claim 17301 17391	stabilizing the simulation, at the expense of extra numerical damping and slow convergence
+T5935a55209fff29da6fb56cbc6c80fda	background_claim 17393 17468	This is particularly true for drastic linearisations as for example used in
+T648928c26dfc956084b22fde17c0fdb0	data 17471 17477	DES 99
+Td7345911115e3a9dcca1f6a1f7b16986	background_claim 17481 17603	Knowledge of the expected state changes between successive time steps are required to perform this approximation correctly
+Te141928a8157c9c0bc6776bb2cc46500	data 17610 17639	nonlinear mechanical behavior
+T8d77e9093a44d8aef6c6e1a04d1767b5	background_claim 17641 17712	one solution is to take the steepest parts of the curves as derivatives
+T501eac0317d356c05571c02bbf55296b	data 17726 17757	the element orientation problem
+T212c85ec2bd9fcb71fa71ed5b3d437f5	background_claim 17759 17852	isotropic derivatives considering force evolution equally in any directions may be considered
+T516f04a0442b9384e41ccec68632cc38	background_claim 17863 18036	the more drastic these approximations are, the less accurate the simulation will be for dynamic simulations, and the slower the simulation will converge for draping problems
+T414fd3e8ed745e2873582d005f357c3a	background_claim 18038 18066	A nice solution described in
+Tc8cf52320e7ea7ae6bb6a8432fd327d6	data 18069 18075	EBE 00
+Tf340a634524bf46077138e0db3a2088e	background_claim 18079 18351	which makes sense when efficiency relies on the use of a constant Hessian matrix, is to perform the implicit resolution on a linear constant approximation, and to simulate the nonlinear and variable component, unlikely to cause stiffness problems, using an explicit method
+T9ed2805694af9581602617ea92aa3b9a	own_claim 18874 18928	The mesh elements are roughly five centimeters in size
+T6ff707c0f7928cbe7b46559855f59459	own_claim 18944 19041	the resulting condition coefficient K is roughly 8 with a simulation time step of 10 milliseconds
+T0b8f0c220da11bbf4a80019ece434648	own_claim 19185 19284	This is a draping problem involving to obtain a rest position of the garment as quickly as possible
+T791867af0f18df7ac7b6b74af760581f	own_claim 19386 19437	The dynamical motion of the cloth is important here
+Tc0b79581b12ffda172814410a394f269	own_claim 19439 19550	The garment assembly and seaming operations could be performed almost four times faster with the Backward Euler
+T40bfc42a998f71fd090540becbe2a461	data 19552 19561	2 minutes
+T12f436a1e7442201e15ceb5973992905	own_claim 19563 19584	than with Runge-Kutta
+T90b48422db6e41c7a11b979e9899a6a2	data 19586 19595	8 minutes
+T0f5e36d684b68e89ab61e5b31c079cea	own_claim 19611 19789	collision detection and response account for more than the half of the computation time, and actually limits the time step size when contact starts between the cloth and the body
+T54c82afb31ff8c6591eb013af77eaaf7	own_claim 19791 19983	For the dynamical animation, comparable accuracy could be obtained between Runge-Kutta and Backward Euler using eight iterations of the Conjugate Gradient, which gave similar computation times
+T95d8b1c855449f5d5075e75eff03b87a	own_claim 19985 20010	The backward Euler method
+T87cc14acc73ecb88c82ccf687815ec72	own_claim 20019 20111	allowed the increase of the time step up to 0.1 seconds, where inaccuracies began to show up
+T42cf380142233df098b23154b16d4e02	own_claim 20121 20210	excessive “heaviness” of the fabric that failed to follow the motion of the body properly
+T9fab2e277c92b5a3a389cd45d977f52a	own_claim 20212 20259	garments folds that would not disappear quickly
+Te0099407dd0d0478d96676aaa0e00008	own_claim 20272 20332	additional artifacts caused by inaccurate collision response
+R77d0c73783d3e749a9fd5975e6fa1752	parts_of_same Arg1:T4c202bd8ef2f66cb614076e452b9b45e Arg2:T55cecadc9fbfee2d4b57d66d8539bebd
+Ref0a142ec4ab2d9b5a7d20706d7dc3d0	supports Arg1:Tcaa9a499c3a05ebc91252c9637d3dbae Arg2:T4c202bd8ef2f66cb614076e452b9b45e
+Rd531b5bc940deafc27ddc2decc603f6f	supports Arg1:T4c202bd8ef2f66cb614076e452b9b45e Arg2:T420792cf3147a01bff11380ace6b60bd
+Rc174287129426d59dada13abe8b5c259	supports Arg1:T7e951d0c513ef7726eec18a5b8a6937b Arg2:T53705a3bc85182691a6cebf66190aeb0
+Rda72dce028b49403bf8a22cf522866f0	supports Arg1:Tb06ff576dc2b98e0eeeaba99ae54cd6b Arg2:T53705a3bc85182691a6cebf66190aeb0
+R810fdfe71224c4d3f1e422a0cd2ae348	supports Arg1:T0313ecfd2aa51de6458f23eb431c6b67 Arg2:T53705a3bc85182691a6cebf66190aeb0
+Rbbb1037b07d1f6dea8ddc82519041a45	supports Arg1:T45f7d692d779be95fdd4ba93a5816517 Arg2:T53705a3bc85182691a6cebf66190aeb0
+R1939dd4e2102d905c7fbbe1b4adeb8ce	supports Arg1:Tde01669bad5601511eb318b419fc2503 Arg2:Tb1202e5569ddedccc47fb49ae1c3905d
+R3d3471635a1d0b68f2e7bf3c25682c59	supports Arg1:Tde01669bad5601511eb318b419fc2503 Arg2:T4ca1bfaacaf0817d4240312ea196a3b6
+R1e21cad52489c4d97ddf0c9998550ce7	supports Arg1:Td1091e306e099029689a9a3ac4cf9bff Arg2:T55483979f00e609ebd8f85f2a9f3e66c
+Ra82f0172729a36480b4fa8d75adc6fdd	parts_of_same Arg1:T55483979f00e609ebd8f85f2a9f3e66c Arg2:T82026719450c9b87a7245e43a40b7078
+R17adb70a7d08536abd8e114822c384d2	parts_of_same Arg1:T503f39ebe0abdd364f4b9984037f3bf7 Arg2:T7c185fb72bc572d63a19cd17a87f3f58
+Rcceea198e6d32e47abb80544c17bcb3b	supports Arg1:T09d9f6eb69e973157087bbc6046b3fb4 Arg2:T8fe801565bbb88bba8e9782926b26ce6
+Re9015f0e6c3cd1a620ff3f84c133dee6	supports Arg1:T62cef59e2f6c45c4f0f573db6ef41c59 Arg2:T2b3c62d19c16a5d16df4ed0fb0eb33f0
+R079d9fe7ffd183889f002ea6115e5c4d	supports Arg1:T2b3c62d19c16a5d16df4ed0fb0eb33f0 Arg2:Tb1d1ed0ebbad50c417b5cafdacf99208
+R2e48cf17d2cb3bea6cda1524ff22d7ff	supports Arg1:T88b148f9ee8e7146fb8d88929361bb8b Arg2:Tbb7d00e694c47435d8420fde347f170f
+Raf742692c3dc7e0c2fa22a848f60999a	supports Arg1:Tc809e7b9af86aea41697df486942e560 Arg2:Te389a07bdbce57b85610da65fbdec086
+R17fce8512833db390210907b0aefd019	supports Arg1:Ta6394fc299c94805a5c6397ee1267938 Arg2:Te389a07bdbce57b85610da65fbdec086
+R463c3a15981ea255a46e45c01591c61b	supports Arg1:T058646178daa98711d9494013ef3ea86 Arg2:T40af72d79681d089d0aca49f9222a187
+R3390b018fefad397744069a03cd81628	supports Arg1:T40af72d79681d089d0aca49f9222a187 Arg2:Td40a70e058d186cd20d11e1d68627b2c
+R800088d0f6d6b02c6280cf1cdda9bc77	parts_of_same Arg1:Ta67eed30aa80934d99e065f07b4c599d Arg2:T8ada2449e36c05277e025db528ade676
+R516b4335bdd9eef347fcbf8e796ab2b9	contradicts Arg1:Tc35389a41c731eabb2a4cc65d1e27f18 Arg2:Ta67eed30aa80934d99e065f07b4c599d
+R0b86f8b9ad22a14afacbe2b839b7e251	supports Arg1:T513caccc53c6a376acee74bbb4546d5f Arg2:T8ada2449e36c05277e025db528ade676
+R1ceb86424f4abd76d61af3d6159b4f3a	supports Arg1:Ta3b5c1f875fa8b8f24a99b7fdafd7ff5 Arg2:T8ada2449e36c05277e025db528ade676
+R2fcdc6ae024318ea14379ba0deb7c3f4	supports Arg1:Tfae9dfd6bc05e22ea47953d17fa99157 Arg2:T494b27fcadc4bb636e476770c21edac7
+R405069ed54796c96d50d5567da20c41f	contradicts Arg1:T4b82e59c5ac2f561907ece2f251aaafe Arg2:T15bcd0edf6a3a3921e63c2d0ee753093
+Rc84eb9fa6db27d8032af8a629d925adb	contradicts Arg1:T494b27fcadc4bb636e476770c21edac7 Arg2:T15bcd0edf6a3a3921e63c2d0ee753093
+R65e1e54a5a7616fbe3bfbec31af2afe8	supports Arg1:T6011919ce5fe38fb5caee64be9aed221 Arg2:Tf6813d2496efd1dce5a6a29b8187640f
+Rd3536bdc8f1d25d50a8d47b2c1a92fa4	supports Arg1:Tea5b152e7824456c4f056909c1447614 Arg2:Tc916baa57feedf2cd1812814dd01c522
+R16b427395d9de69fa35785dcf219f681	supports Arg1:Tc916baa57feedf2cd1812814dd01c522 Arg2:Tf6813d2496efd1dce5a6a29b8187640f
+Rd96d44e6b22ea152edb09aa2d13f1b63	supports Arg1:T166aa0b2ec641b71454d1095b3d38d1c Arg2:T3a1df79dbf3dc49e3fdb2346d8c3d936
+Ra7547def43c54a4e5706d00e43f41fbe	contradicts Arg1:T87a6ea952415f0af62173001191acc7d Arg2:T3a1df79dbf3dc49e3fdb2346d8c3d936
+R7f8c5ea44a22ebfe9a635be2464c617b	supports Arg1:T83d2484fa732336565c3d2c990aefb45 Arg2:T91edcf0c2543ebd4857aad02261963fa
+R46f205bb5429096ccff104cba63dfb30	parts_of_same Arg1:Tc75b863956b91bd37c4e0d2c763d13bf Arg2:Te65ed3a2b489f24557e762461dd5b611
+Ra21dbddb00782f3edf7b8a2d3443dd7d	supports Arg1:Tc75b863956b91bd37c4e0d2c763d13bf Arg2:T91edcf0c2543ebd4857aad02261963fa
+Re87df247c42e15d8d6d755436cb6d985	parts_of_same Arg1:Ta6b4c28510e0d703a080d91f6b17b190 Arg2:Tc5504c84f90c1800c1debda44f4b508f
+Rb142d4897597f950693d91381abee335	supports Arg1:T7ef7af74cdb45163f2845e206d035f53 Arg2:T496c138d6c1cca31f4f532ed7bdc28b6
+R53a9c8411a36a0ea879e05c55589647f	supports Arg1:T1ecb99902be7d1db23122e9fbf0d0236 Arg2:T55dd97a3093107c4b50e1e1d4de156b3
+R5d32cfe857822bc100a82da157b7eedb	supports Arg1:Tf2c94350a864169553505463e5629d00 Arg2:T8f4be173a9f01ec6c624acff62b30c54
+Rfc611fa65f73cc59afdc7dd942cc9362	supports Arg1:T2e6b4e03e626016cdddf398f747afe87 Arg2:Tb6d485392dc75552eaad6d63312362c9
+R7152c3a066303b268cb3c2b22b983bda	supports Arg1:Tf5d70a96f89da557ae29c69f438f49dd Arg2:T2e6b4e03e626016cdddf398f747afe87
+R2b71f9a10e44f0dc736ce7823f8a9a1e	supports Arg1:Tacb3c7127933c82e2ef66a3673ec37d3 Arg2:T71563724fe0f42613e793be959e8c676
+R035324e38c43619a3ead1d5ca73ec300	supports Arg1:T967e3e2e3d8a6cc7f230b81b1cc28131 Arg2:T5246e63d650931a39260cc02a62eb956
+Rb654a8b82c681bd3105ecd94df17f2d7	supports Arg1:T3e0dda7eb2b765e18b04dab12857eda0 Arg2:T5246e63d650931a39260cc02a62eb956
+R42324065bb146c4e4836de9541d7697b	supports Arg1:T4f7a81b738088eb39ad9e9fcf04a89cb Arg2:Tbb13f66f2e01ac8d3d69e9f26c98bba0
+R1be6a59adb18bae0a90abff8e89e4bb2	supports Arg1:Tbb13f66f2e01ac8d3d69e9f26c98bba0 Arg2:T313dedaa8eda9f5a87d37cf1db2cd954
+Rc88f2de020a994434bf38893b7a0922e	supports Arg1:T313dedaa8eda9f5a87d37cf1db2cd954 Arg2:T88c834b620cdced79c3ec037e58e6e89
+Rab545d4fee2ce3433f3c66fd486247b7	supports Arg1:Tc4fd79f84fd25435eb560e390460d868 Arg2:T88c834b620cdced79c3ec037e58e6e89
+Rd63a8b3ca92f6d86c0e694988c00ee8f	supports Arg1:T286c705b97e532a48f061280898d8cd7 Arg2:T7eead364f63deeae703afbc8bc379216
+Rcf33b79eef798592db35018fe3bdbb4b	supports Arg1:T5a14466f474ffcb2f59b8577a97c6041 Arg2:T32ce67691490cfb9d4f6ed69a9be4e44
+Rdeba6dc888e96f0658ab3e9e0dc9e705	supports Arg1:T1d31df297efba8f131a7d0cf6eae5e67 Arg2:T5a14466f474ffcb2f59b8577a97c6041
+Rd4b89e66a78f405200351f218cdc4fc7	supports Arg1:Tb4068503fa88e108461afc59dee1dff7 Arg2:T32ce67691490cfb9d4f6ed69a9be4e44
+R4a9a4b0f7562a1a0aaa2318248620e13	supports Arg1:T26af24ed1d5ecdf0fff9d9fb1a1229ec Arg2:Tc51c94a9d260f3ea4ce093078d307aad
+R9caabcae7df25b024af939f9084e3f98	parts_of_same Arg1:Tf2b0e47982cf7aedfe46f730e3fe0318 Arg2:T4a6701324304442a522f244e8d353b81
+R55cc75f11606a0e6bf1ef51991fd5861	supports Arg1:Tf2b0e47982cf7aedfe46f730e3fe0318 Arg2:T26af24ed1d5ecdf0fff9d9fb1a1229ec
+R3cd7ef386df109e160574a116cbca240	supports Arg1:Tc75dbdd3f9e7d51fc693f209d21eef57 Arg2:Tc51c94a9d260f3ea4ce093078d307aad
+R98354fe8385722856de301ef087fe7e3	contradicts Arg1:Tbc6f5ec5566417b5771b1ce07f967826 Arg2:T1dede6ae95171439eb270fa528448f38
+R74a5d853f8b50236680b3d355ebf9eef	supports Arg1:Tbc6f5ec5566417b5771b1ce07f967826 Arg2:Tc51c94a9d260f3ea4ce093078d307aad
+Rc2fb426e2a54da67d9013cbdcf70539b	supports Arg1:T5c0e271419798a41604cc27d6220e2d6 Arg2:Tb1cd988d6364e9145fa6a76ef7265a17
+R69e1bceea37f9341944152c8806dfe55	supports Arg1:T648928c26dfc956084b22fde17c0fdb0 Arg2:T5935a55209fff29da6fb56cbc6c80fda
+R73a27efd7b0fd54b6e4ccd1dc267c087	supports Arg1:Te141928a8157c9c0bc6776bb2cc46500 Arg2:T8d77e9093a44d8aef6c6e1a04d1767b5
+Re9d55769bf71eae69ec487d31921e558	supports Arg1:T501eac0317d356c05571c02bbf55296b Arg2:T212c85ec2bd9fcb71fa71ed5b3d437f5
+R716e8d4d75f125e2fe17f90acea8b34e	supports Arg1:Tc8cf52320e7ea7ae6bb6a8432fd327d6 Arg2:T414fd3e8ed745e2873582d005f357c3a
+R21286f4d290f4ecbd6c7c1cbf09ed6ee	parts_of_same Arg1:T414fd3e8ed745e2873582d005f357c3a Arg2:Tf340a634524bf46077138e0db3a2088e
+Rd1bc072b1c1827642ae3a36486c693ed	supports Arg1:T9ed2805694af9581602617ea92aa3b9a Arg2:T6ff707c0f7928cbe7b46559855f59459
+R46e034a20196d1ca8d0658c303f35a8f	supports Arg1:T40bfc42a998f71fd090540becbe2a461 Arg2:Tc0b79581b12ffda172814410a394f269
+R07b6ce4e7bf2cf4f63b6328736e47a5d	parts_of_same Arg1:Tc0b79581b12ffda172814410a394f269 Arg2:T12f436a1e7442201e15ceb5973992905
+Rdd51973ee24b6faaef2b3b3c8dbc1f69	supports Arg1:T90b48422db6e41c7a11b979e9899a6a2 Arg2:T12f436a1e7442201e15ceb5973992905
+R56b2666b3b34229c5902b1fccca2fb1a	parts_of_same Arg1:T95d8b1c855449f5d5075e75eff03b87a Arg2:T87cc14acc73ecb88c82ccf687815ec72
+R66584b01d8490284adf9446f3e65d68a	contradicts Arg1:T54c82afb31ff8c6591eb013af77eaaf7 Arg2:T95d8b1c855449f5d5075e75eff03b87a
+R9a23bdc219c145632741e5462417db7f	supports Arg1:T42cf380142233df098b23154b16d4e02 Arg2:T87cc14acc73ecb88c82ccf687815ec72
+R6614327fbf7d3f8faeef9a816f16b6ad	supports Arg1:T9fab2e277c92b5a3a389cd45d977f52a Arg2:T87cc14acc73ecb88c82ccf687815ec72
+R7e127efe77637cc786c93c9852ab58a2	supports Arg1:Te0099407dd0d0478d96676aaa0e00008 Arg2:T87cc14acc73ecb88c82ccf687815ec72

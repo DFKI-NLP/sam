@@ -1,0 +1,27 @@
+T2192dc606160244f062113bb9e73d1fb	data 6552 6573	improved conditioning
+T47b9754987032315ff94d8a180f3871c	own_claim 28 165	The key question of how well a given model describes a particular piece of cloth is answered by fitting the model to the measurement data
+Tc10bd7f2e69ac0b170278720e1bdd085	data 780 791	Section 3.2
+Tc0d413fe6917f5ff80a4ea3ef29f4523	own_claim 637 776	we have designed an incremental optimization procedure that fits model parameters a few at a time using the isolated deformations described
+T002f683cf7aee330c0dd6fb1b7555d4c	data 2156 2167	equilibrium
+T784d85659dee1dfa3cce4917b583dda4	own_claim 2169 2278	the net force on the clips, produced by cord forces, gravity, and forces from fixed cloth nodes, must be zero
+T9b18b03a59d8ca8d6b90fd25c0dc6e72	own_claim 1562 1581;1594 1746	we wish to know the stress-strain curves for the deformation components of a cloth model, such that a simulated cloth matches known positions and forces as well as possible
+T94934a8905a41019a070c939d76a1fb8	data 167 304	adjusting its parameters to minimize the difference between the model’s predictions and the measured behavior, both in position and force
+T9f5aac6539771338b4b11747c4e70a6c	data 1511 1560	Given a set of captured static deformation frames
+T493448164e4fccf5ecd9de24d130e5d6	own_claim 3559 3606	the clip-parallel forces are dominated by shear
+T5647b1e185f47a1b2d56b5c166788010	data 616 635	achieve stable fits
+T9645f2039866cde9cf8dfd4e39ee4f5d	data 3521 3557	situations of near-homogeneous shear
+Tdb2351ef00b7145fc2e8cf5a2d056492	own_claim 6575 6640	we also use this ∂x n modified stiffness matrix in the outer loop
+R025ae74c506bc204e2037ed322a579a8	supports-GOLD Arg1:T94934a8905a41019a070c939d76a1fb8 Arg2:T47b9754987032315ff94d8a180f3871c
+Rf2e2430e06b20e92405d555f12017336	supports-GOLD Arg1:Tc10bd7f2e69ac0b170278720e1bdd085 Arg2:Tc0d413fe6917f5ff80a4ea3ef29f4523
+R5637244ba2da66f91eb287d6cfdc1af1	supports-GOLD Arg1:T5647b1e185f47a1b2d56b5c166788010 Arg2:Tc0d413fe6917f5ff80a4ea3ef29f4523
+R9f23a95f8a9bd5ce21b05aaadece682b	supports-GOLD Arg1:T9f5aac6539771338b4b11747c4e70a6c Arg2:T9b18b03a59d8ca8d6b90fd25c0dc6e72
+R04ca907499fe6e8592072507bc8d05df	supports-GOLD Arg1:T002f683cf7aee330c0dd6fb1b7555d4c Arg2:T784d85659dee1dfa3cce4917b583dda4
+R82697844027cc6e18737afc25b950a01	supports-GOLD Arg1:T9645f2039866cde9cf8dfd4e39ee4f5d Arg2:T493448164e4fccf5ecd9de24d130e5d6
+Rbc05848f4828cc8782783406d3753b37	supports-GOLD Arg1:T2192dc606160244f062113bb9e73d1fb Arg2:Tdb2351ef00b7145fc2e8cf5a2d056492
+R78a87535e450625861612bb5b61c20a9	supports Arg1:T94934a8905a41019a070c939d76a1fb8 Arg2:T47b9754987032315ff94d8a180f3871c
+R55e862c80d8764fb78598a97bc83438c	supports Arg1:Tc10bd7f2e69ac0b170278720e1bdd085 Arg2:Tc0d413fe6917f5ff80a4ea3ef29f4523
+R1a0962596d0f73d773feedf64b76f4c2	supports Arg1:T5647b1e185f47a1b2d56b5c166788010 Arg2:Tc0d413fe6917f5ff80a4ea3ef29f4523
+Ra0c71a1b2ab7677c7bf90a1ab12b8c77	supports Arg1:T9f5aac6539771338b4b11747c4e70a6c Arg2:T9b18b03a59d8ca8d6b90fd25c0dc6e72
+Rc43c2360f4cf20d821d0ce133b0b5bb5	supports Arg1:T002f683cf7aee330c0dd6fb1b7555d4c Arg2:T784d85659dee1dfa3cce4917b583dda4
+R9a69fea5ae85312fba5dc8e2e0218d7f	supports Arg1:T9645f2039866cde9cf8dfd4e39ee4f5d Arg2:T493448164e4fccf5ecd9de24d130e5d6
+Re6d346e7ea7381c7192f42f9c150a108	supports Arg1:T2192dc606160244f062113bb9e73d1fb Arg2:Tdb2351ef00b7145fc2e8cf5a2d056492

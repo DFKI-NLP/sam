@@ -1,0 +1,27 @@
+<Title>Modelling Effects of Wind Fields in Cloth Animations</Title>
+      
+      M. Keckeisen, S. Kimmerle, B. Thomaszewski, and M. Wacker WSI/GRIS University of Tübingen Sand 14, D-72076 Tübingen, Germany {keckeisen, kimmerle, wacker}@gris.uni-tuebingen.de b.thomaszewski@t-online.de
+      <Abstract>In this paper we show how to incorporate effects of wind fields in cloth animations. We discuss two different approaches to model force fields describing air motion and show how these models can be augmented to exhibit interaction with deformable thin objects such as textiles. The first model is based on the Navier-Stokes equations, while the second method extends simple particle tracing methods by the effect of lee. In each case, we present a method for simulating the interaction of cloth movements with the wind field. Both methods have been integrated in an existing cloth simulation system, and we compare their respective advantages and disadvantages. </Abstract>
+	  Keywords: Wind Simulation, Cloth Animation, Physically Based Modelling, Computer Graphics.
+	  1.
+      
+        
+          WSCG
+          2004
+        
+        
+          February
+          2-6
+          2003
+        
+        
+          Plzen
+        
+        
+          Czech Republic.
+        
+      
+    
+    
+      
+        

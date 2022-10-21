@@ -1,0 +1,23 @@
+T63919b647660bbc6c154c19ca61e705e	data 1200 1233	Volino and Magnenat-Thalmann 2001
+T05a83e46cfb2cbe0b7ace833e3dd61f3	background_claim 1270 1409	the condition number of the implicit system grows with the elastic material stiffness, forcing iterative solvers to perform many iterations
+T021c2925017d4da2607894b9261024bb	background_claim 1107 1138;1149 1197	In the quasiinextensible regime implicit methods encounter numerical limitations
+T58e6c9e4d916f69d6f10f32c86efa57c	background_claim 2069 2160	corrected edge lengths by iteratively displacing the incident vertices on stretched springs
+Tcf47821a5b61a0f5c78fe236c30af870	data 1235 1248	Boxerman 2003
+T07e698e7309d2f585ca99c4dc0f5c865	data 2055 2061;2063 2067	Provot 1995
+T9ea49c3345ebe56515467fd44777eeb7	data 1250 1267	Hauth et al. 2003
+Ta561320ba78bfc86d94655152220ddf6	data 4353 4363;4366 4370	Hong et al 2005
+T7386bb66e9a6292a32a2d99e34fa1348	background_claim 1425 1448;1481 1545	timestepping algorithms introduce undesirable numerical damping when the system is stiff
+T9f8a8cfc5c35f28cbea4bfa86d0c4cd9	background_claim 4725 4829	modeling stretch response with spring-based or strain-limiting approaches is costly and even intractable
+T96b51f6421332614bba7c228be85d36d	background_claim 4240 4351	proposed triangle-based strain limiting together with a global stitching step for stable constraint enforcement
+Tfadb8c272a79999a07c9f20ef33b19a4	background_claim 1894 2011	In the discrete setting, the constraint-based approach may be implemented with various iterative or global algorithms
+T55f214cb5e29a6bb29ff8470a330dcc1	background_claim 503 567;595 662	To address the stiffness of the resulting differential equations proposed implicit integration, allowing for large, stable timesteps
+T30a0e96ad7f0bdd77812113df43338e8	own_claim 4831 4887	constraint-based methods present a promising alternative
+R481b91136ee74d9e705a3dee19ee3096	supports Arg1:T55f214cb5e29a6bb29ff8470a330dcc1 Arg2:T55f214cb5e29a6bb29ff8470a330dcc1
+Rd51b4963b6e031866343f1d727359a9e	supports Arg1:T63919b647660bbc6c154c19ca61e705e Arg2:T021c2925017d4da2607894b9261024bb
+Rc739f23c7d684c2c17a5d24c76f19f81	supports Arg1:Tcf47821a5b61a0f5c78fe236c30af870 Arg2:T021c2925017d4da2607894b9261024bb
+Rf9989b8b061e1348ddc535d80c543065	supports Arg1:T9ea49c3345ebe56515467fd44777eeb7 Arg2:T021c2925017d4da2607894b9261024bb
+R4a81c42bb39a29f3b8d14d4678bde932	supports Arg1:T05a83e46cfb2cbe0b7ace833e3dd61f3 Arg2:T7386bb66e9a6292a32a2d99e34fa1348
+R1e18a9e23e8e583473a8edc6aea123a0	supports Arg1:T58e6c9e4d916f69d6f10f32c86efa57c Arg2:Tfadb8c272a79999a07c9f20ef33b19a4
+R9710b930f9179d458319cf5c73b31a84	supports Arg1:T07e698e7309d2f585ca99c4dc0f5c865 Arg2:Tfadb8c272a79999a07c9f20ef33b19a4
+R4e81e74964c16d762684829249b9ced1	supports Arg1:Ta561320ba78bfc86d94655152220ddf6 Arg2:T96b51f6421332614bba7c228be85d36d
+Rf20503564695dd8fe52d25bc77d4027b	supports Arg1:T9f8a8cfc5c35f28cbea4bfa86d0c4cd9 Arg2:T30a0e96ad7f0bdd77812113df43338e8

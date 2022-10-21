@@ -1,0 +1,20 @@
+T6f55f56948237fd5c9d01b3d2ef18d5f	own_claim 677 737	Our simulator models cloth as a triangular mesh of particles
+T7451e4e03c29a5c1faa36431c6fda256	own_claim 768 829	the position in world-space of the ith particle is x i ∈ IR 3
+T55a7090ac7139cfe56dcf7566e9ca2e5	own_claim 895 940	The same component notation applies to forces
+Ta68be483c438c583827ade1bbee3c515	own_claim 942 1018	a force f ∈ IR 3n acting on the cloth exerts a force f i on the ith particle
+T05fe9eba5a8e40ecfd5c5122e7c0b995	own_claim 1344 1464	Collisions between cloth and solid objects are handled by preventing cloth particles from interpenetrating solid objects
+Tb531c03551cff4cf894113cdbd83b388	own_claim 1466 1545	Our current implementation models solid objects as triangularly faced polyhedra
+Tf4a290b2db57bb3f247cb1f83ba12957	own_claim 1605 1762	particles found to be sufficiently near a face, and on the wrong side, are deemed to have collided with that face, and become subject to a contact constraint
+Tbe9a734e33a15d8ea4900034af8b7e06	own_claim 2017 2155	we detect both face-vertex collisions between cloth particles and triangles, as well as edge/edge collisions between portions of the cloth
+T1b85b5add34eaba1c28d86cbd9f21d2b	own_claim 2183 2269	close proximity or actual intersection of cloth with itself initiates contact handling
+Tb19ff2ac6cccea2b6e897da4da5f34f9	own_claim 2952 2980	The strongest internal force
+T929f2946881e81ccef026889d09a85c9	own_claim 3095 3175	Under normal conditions, cloth does not stretch appreciably under its own weight
+Tc40624e11ff22d507fcd4a9a5ac0cac5	own_claim 3810 3835	value for all simulations
+T3c460463f9618b6a471404df4ad1e757	own_claim 3895 3938	the stretch coefficient can be made smaller
+Td0e0312703ac8b174f316f9810b66d97	own_claim 6015 6118	we deal with an n × n matrix, whose non-zero entries are represented as dense 3 × 3 matrices of scalars
+T64e7911e7f1fdcef64d56d0f9d91ba87	own_claim 6120 6167	The matrix is represented as an array of n rows
+Tf357d2dbe7654f3c013c345298da606c	own_claim 6816 6851	Constraints are either user-defined
+T6c709ff447817a1b16274122784ee687	own_claim 6917 6943	or automatically generated
+Tce89a35c2220f2652f6a584346a8d8ed	own_claim 7006 7141	During cloth/solid contacts, the particle may be attached to the surface, depending on the magnitudes of the frictional forces required
+T7915bb26e473091af435e35b5e57c476	own_claim 7154 7228	the particle is constrained to remain on the surface, with sliding allowed
+T1bad5543085db031ffb69029c35ec7cf	own_claim 7773 7869	we add a stiff spring with damping to pull the particle back to the correct side of the triangle

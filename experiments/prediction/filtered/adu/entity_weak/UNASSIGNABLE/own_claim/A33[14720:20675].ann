@@ -1,0 +1,10 @@
+T80322cdf9d9d0e9fec6a991817907eb5	own_claim 586 623	To be successful, propagation methods
+T438622ca43181ac944c344a9199dd0b0	own_claim 1137 1218	At each stage, the number of recovered bits must stay above the marker complexity
+T311c5f62029cb643b5cda0db6875bb1d	own_claim 1747 1811	color detection – which requires averaging color within a marker
+T668cf4822a87b52d243db938d9570619	own_claim 2045 2172	Our gaussian noise model has a single free parameter, the variance, which must be computed empirically for each recording setup
+Tc869c174300d739a451e3d0901b0bbdd	own_claim 2174 2238	This variance determines the color response for the entire setup
+T15d180c6f2007914d5a1cd6a46a1cbe7	own_claim 2241 2284	smaller variances mean more bits from color
+Tc647ddbbb32e548bb9e59e0cbd77c2ce	own_claim 2989 3055	In the first iteration, we require three neighbors to make a match
+T5a06c83c5e27a3c317863f5e063c691c	own_claim 3057 3166	In heavily folded regions, often neighboring markers on the image do not neighbor on the surface of the cloth
+T63815c19ce857a4805a3c461f2244087	own_claim 3461 3507	are reconstructed in 3D using textbook methods
+Tf8d1733ade8136e76b153845b1c3afc0	own_claim 3822 3985	The first discards reconstructed points that cause physically unrealistic strain on the surface of the mesh and the second constrains our search for correspondence

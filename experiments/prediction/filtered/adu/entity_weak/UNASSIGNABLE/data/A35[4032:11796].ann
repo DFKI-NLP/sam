@@ -1,0 +1,6 @@
+T86a7e89ae58440f89200dc81ef0997a0	data 3458 3464	PRE 92
+T2db584f1bd900e7d52e96607bd35317f	data 4327 4333	VOL 00
+T1aaef5969b4f59e24406b8602acb07b1	data 4433 4514	the actual Hessian matric is used for each current state of the mechanical system
+Tb2724beb29f9f5e4a613a62bceac987d	data 6484 6511	weft and warp Young modulus
+Tc63c0b4cd1358fc12656b5a816b5ac0e	data 6513 6521	shearing
+Ta1393df22e408530f79230e64ca52fef	data 6523 6542	Poisson coefficient

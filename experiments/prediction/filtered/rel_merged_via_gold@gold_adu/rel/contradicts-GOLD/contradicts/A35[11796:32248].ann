@@ -1,0 +1,8 @@
+T0d465cb78c0827a02682da6a60b28676	own_claim 7859 7874;7883 7966	its accuracy is very degraded by high K values and reduced numbers of Conjugate Gradient iterations
+Tc35389a41c731eabb2a4cc65d1e27f18	own_claim 7803 7857	the implicit Euler method seems stable for any K value
+T1dede6ae95171439eb270fa528448f38	background_claim 16761 16864	despite high system resolution accuracy that can be reached with numerous Conjugate Gradient iterations
+Tbc6f5ec5566417b5771b1ce07f967826	background_claim 16646 16759	Nonlinearity causes this matrix to change between the successive iterations, and this evaluation to be inaccurate
+Rb2b51fa2b29deb493dc96f04c2eb7435	contradicts-GOLD Arg1:Tc35389a41c731eabb2a4cc65d1e27f18 Arg2:T0d465cb78c0827a02682da6a60b28676
+Re55972559c910d8267d84b5419b72fc4	contradicts-GOLD Arg1:Tbc6f5ec5566417b5771b1ce07f967826 Arg2:T1dede6ae95171439eb270fa528448f38
+Re6ba5acc00b1e1e50fec4be539a8f020	contradicts Arg1:Tc35389a41c731eabb2a4cc65d1e27f18 Arg2:T0d465cb78c0827a02682da6a60b28676
+R8226b7c9eee665af892e4fac5efef231	contradicts Arg1:Tbc6f5ec5566417b5771b1ce07f967826 Arg2:T1dede6ae95171439eb270fa528448f38

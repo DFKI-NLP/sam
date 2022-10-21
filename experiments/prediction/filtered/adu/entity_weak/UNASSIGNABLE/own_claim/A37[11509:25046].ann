@@ -1,0 +1,25 @@
+Tac81be6838632d4b5c3f54f5b1cbbb89	own_claim 662 707	The corresponding EulerLagrange equations are
+T95158e6705f4b218d85c794e5e401145	own_claim 739 775	M v = −∇V (x) − ∇C(x) T λ , C(x) = 0
+Te7567849ef90f2d8155fdcf2f537b6a3	own_claim 1344 1400	potential forces are split and separately discretized in
+T81c7944cd3b43e4ee93bc07ba6ec16d4	own_claim 2050 2084	This figure is a reproduction from
+T8a3c01efe0337a758c710da621ad1a4e	own_claim 3213 3265	is automatically remedied by decreasing the timestep
+Tb7663ecd9205e0389a91a468bb4345b1	own_claim 3339 3428	v n+1 = v n − hM −1 ∇V (x n ) + ∇C(x n+1 ) T λ n+1 , x n+1 = x n + hv n+1 , C(x n+1 ) = 0
+T4ba1e1aa2e00d6266045fb29e1ea04a2	own_claim 4056 4080	F measures the deviation
+T32c16035b45b365b3b844a6e7ea8658a	own_claim 5420 5485	To define a specific method, we must choose a projection operator
+T345647d8b11b6ea959c37675dfd70e25	own_claim 7118 7195	To solve SAP, one might extremize W ( δ x n+1 , λ n+1 ) using Newton’s method
+T8167aa3129f9f7c4b3ad09d753b34720	own_claim 7197 7320	each iteration would improve upon a guess for the shortest step, δ x n+1 that projects x n+1 0 onto the constraint manifold
+T5c4d1ca8b3dce6f5be8c6bc2dcab805a	own_claim 7398 7521	It combines the robustness of using an implicit constraint direction with the efficiency of approximate manifold projection
+T25ae319baf6ce5c8dfe441662986f917	own_claim 9052 9160;9169 9227	we obtain a quadratic objective function, whose stationary equations with respect to δ x j+1 and δ λ j+1 are C(x j+1 ) = C(x j + δ x j+1 ) ≈ C(x j ) + ∇C(x j ) δ x j+1
+Tf23fb2e28d21adaa61878f659f451d4e	own_claim 9261 9299	δ x j+1 = −h 2 M −1 ∇C(x j ) T δ λ j+1
+T21770b4608d82c02dc16aaa2854e7f83	own_claim 9342 9369	∇C(x j ) δ x j+1 = −C(x j )
+T62dc18a802377c4b15a76cd2071ddb45	own_claim 9416 9473	we eliminate δ x j+1 and solve a linear system in δ λ j+1
+Tf5fcef0aa6065c2e36583eae9fc77a07	own_claim 9507 9552	h 2 ∇C(x j )M −1 ∇C(x j ) T δ λ j+1 = C(x j )
+T27748b25d245ce40cef25e7b8d3e2dc4	own_claim 10309 10424	Fast projection finds a manifold point, x n+1 , that is close, but not closest, to the unconstrained point, x 0 n+1
+T04cd6461105bc3b0aa468307e70003a2	own_claim 10515 10536	it approximates F = 0
+T5a91946879e4d5468bed7307c4b5152d	own_claim 10713 10762	The first iteration of these methods is identical
+Tfae961f78333b063942b0dabc3e173f6	own_claim 10764 10814	At the end of this first iteration, F, C ∈ O(h 2 )
+Tb4517a135f9c98cd2c27b5a7bdeca652	own_claim 10816 10864	Additional fast projection iterations seek C → 0
+Tc8530aeb452948433fe7b59a0e502a54	own_claim 10889 10916	increments in x are O(h 2 )
+Tf314af18d19e22c13728e5b5f0c48cd2	own_claim 10928 10948	F remains in O(h 2 )
+T3daddab3c9c1500dc98f981c1ed182a7	own_claim 12529 12603	Step 3 requires solving a sparse symmetric positive definite linear system
+Tc588a61de2256eabdf9b337795919058	own_claim 12605 12623	we use the PARDISO

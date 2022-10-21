@@ -1,0 +1,34 @@
+T22e2a23fee1a44d154159e372c4355f9	own_claim-GOLD 1131 1232	we must discretize (3) and (4) in time using one of various schemes, each with benefits and drawbacks
+T89e036db705111cb61397f91cb2c81d2	own_claim-GOLD 1234 1331	One may choose differing explicit or implicit schemes for the potential and the constraint forces
+T4b362fdce896de537c66ce7edb66a26d	own_claim-GOLD 3165 3193	resolves (Q1), (Q2) and (Q4)
+T9508a8a0ae78af4e806e805c8628ee6c	own_claim-GOLD 3195 3265	(Q3) remains, but is automatically remedied by decreasing the timestep
+Tb8f1431af6aebf4a6ced2cca4bc5ece4	own_claim-GOLD 4274 4346	the correction of the unconstrained step is due to the constraint forces
+T68058ad9a1af7ddd9f8a8c53736cd29c	own_claim-GOLD 4553 4586	Solving for an ICD step is costly
+T422580ac357075f71981fbf57f7a51e1	own_claim-GOLD 4748 4867	we develop an approximation to ICD that addresses these drawbacks without sacrificing constraint accuracy or robustness
+T1525e91d6407c91bdf1752b6eb510fa3	own_claim-GOLD 7870 7959	Fast projection also uses a sequence of iterations, but it relaxes the requirement of SAP
+T87d53c1d373c15b9d8515823db6fac97	own_claim-GOLD 9619 9677	the assembly of this system is most efficient for diagonal
+Tdddb2d3a8de92ae42b4fe98890344986	own_claim-GOLD 9780 9843	As with ICD/SAP, a fast projection step requires a linear solve
+Tf59b5ee745143bdbe2b1cd0b44163332	own_claim-GOLD 9854 9878	fast projection’s system
+T7a96a498b30df8072086104e63c1c23f	own_claim-GOLD 9885 9895	is smaller
+T2ab0d5b924529c2a8a108a188c72c6d3	own_claim-GOLD 9999 10087	it is considerably cheaper to evaluate, assemble, and solve than its ICD/SAP counterpart
+Td231f67c45883bbf65a7c5ac01c9928a	own_claim-GOLD 10472 10536	fast projection exactly solves C = 0 while it approximates F = 0
+Ta76738728a28f7e83fa24bfdbea267a4	own_claim-GOLD 10538 10618	One important question is whether the fast projection’s error in F is acceptable
+T268c1ab99c38665e51057bf1f998fbd7	own_claim-GOLD 11218 11296	the first iteration of the fast projection method eliminates first-order error
+Ta8bdd9df2c803ac43868ec51513ee06f	own_claim-GOLD 12387 12505	We implement fast projection as a velocity filter, enabling easy integration into our existing cloth simulation system
+Ta4152a198b2c699df3e2c2fecf78a935	own_claim 1131 1232	we must discretize (3) and (4) in time using one of various schemes, each with benefits and drawbacks
+T8d49cb1f0c956570bfc620aa3c3bbcac	own_claim 1234 1331	One may choose differing explicit or implicit schemes for the potential and the constraint forces
+T29277dca606a4c5a539e9262755996ff	own_claim 3165 3193	resolves (Q1), (Q2) and (Q4)
+T54c369befeabc0e03a11511e6647a2cc	own_claim 3195 3265	(Q3) remains, but is automatically remedied by decreasing the timestep
+Tee4aad896e014b53023e2551e0938583	own_claim 4274 4346	the correction of the unconstrained step is due to the constraint forces
+T4ee6ab12b555ae8bbe4c8ba889a2ef45	own_claim 4553 4586	Solving for an ICD step is costly
+T8c3d2f9c082d95bb7ac88fb2ed85523c	own_claim 4748 4867	we develop an approximation to ICD that addresses these drawbacks without sacrificing constraint accuracy or robustness
+Te09145f7a6b6b227906a46b84e7a2440	own_claim 7870 7959	Fast projection also uses a sequence of iterations, but it relaxes the requirement of SAP
+T38e2dc5c9e141955cc899aa1e7ac3aa3	own_claim 9619 9677	the assembly of this system is most efficient for diagonal
+Tedba7a8894d73912f0a169534d8e5087	own_claim 9780 9843	As with ICD/SAP, a fast projection step requires a linear solve
+T90635534fddf0ddb56593ad4c5dbfe18	own_claim 9854 9878	fast projection’s system
+T2f3da528b6f1d454996b5d1d6374c76a	own_claim 9885 9895	is smaller
+Tfa3699aacda934a19c06b4f15f845778	own_claim 9999 10087	it is considerably cheaper to evaluate, assemble, and solve than its ICD/SAP counterpart
+T34aa912c11209bda3a442ed4a4d9cdb5	own_claim 10472 10536	fast projection exactly solves C = 0 while it approximates F = 0
+T3c968675915702ed5cc9f39cf99b6526	own_claim 10538 10618	One important question is whether the fast projection’s error in F is acceptable
+T71777673bbe85b327e8fdba321a4f56b	own_claim 11218 11296	the first iteration of the fast projection method eliminates first-order error
+T9e17ea62194c27a5ede1367d127b1386	own_claim 12387 12505	We implement fast projection as a velocity filter, enabling easy integration into our existing cloth simulation system

@@ -1,0 +1,8 @@
+Tf88aca401db6cac21fe2ea4a6293bed7	data 787 937	Using the stiffness parameters in figure 1 as a reference, we ran the simulation with those bend stiffnesses multiplied by 0.1, 1.0, 10, 100 and 1,000
+T1a204037f3f2780bf0dd7c0023d96f9d	data 1605 1607	14
+Teed534b519e04306a0a49d279ede8ee2	own_claim 1474 1602;1610 1643	This is slightly better than O(n 1.5 ) performance, which is in line with the convergence rates of the conjugate gradient method for systems such as equation (18)
+Tf1fcbf0d15cf32dfe84e091e58288f4a	own_claim 986 1032	The variance in the running times was under 5%
+Rda3a1872837f7bcf6aa17e3a74659011	supports-GOLD Arg1:Tf88aca401db6cac21fe2ea4a6293bed7 Arg2:Tf1fcbf0d15cf32dfe84e091e58288f4a
+R59db2bb0d082e0b13f505397a7c157ba	supports-GOLD Arg1:T1a204037f3f2780bf0dd7c0023d96f9d Arg2:Teed534b519e04306a0a49d279ede8ee2
+R399b190087f5b8975f5d4d84559ee25d	supports Arg1:Tf88aca401db6cac21fe2ea4a6293bed7 Arg2:Tf1fcbf0d15cf32dfe84e091e58288f4a
+Rd5c6ffa0b06f852ffe33932609fcb91a	supports Arg1:T1a204037f3f2780bf0dd7c0023d96f9d Arg2:Teed534b519e04306a0a49d279ede8ee2

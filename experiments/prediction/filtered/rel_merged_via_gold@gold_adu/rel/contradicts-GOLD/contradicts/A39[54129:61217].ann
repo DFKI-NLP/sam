@@ -1,0 +1,8 @@
+T9e20a7fd256ab81f7f91cadb1760fa8f	own_claim 1101 1140	it reasonably emulates dynamic friction
+T1d07e082f4e90e10c2e1d78910a6bdc7	own_claim 1056 1090	it is in actuality a damping force
+Tad6a094be4c8cccc94e33e38460d1572	own_claim 4922 4980	some sort of extra implicit step could be used as a filter
+T29400f870659a4e1e3cf665532f11a0b	own_claim 4986 5067	forming and solving an additional linear system at each step seemed too expensive
+Rbfb59b1672719d65a3814e9d3e38b9ce	contradicts-GOLD Arg1:T1d07e082f4e90e10c2e1d78910a6bdc7 Arg2:T9e20a7fd256ab81f7f91cadb1760fa8f
+R70e453c785bbfaf14d96b3fde550103b	contradicts-GOLD Arg1:Tad6a094be4c8cccc94e33e38460d1572 Arg2:T29400f870659a4e1e3cf665532f11a0b
+R7b23f4d2ef8b3fe9bb26ae67606bd418	contradicts Arg1:T1d07e082f4e90e10c2e1d78910a6bdc7 Arg2:T9e20a7fd256ab81f7f91cadb1760fa8f
+Re86e3a2cebd0d6b36d223172326a96d4	contradicts Arg1:Tad6a094be4c8cccc94e33e38460d1572 Arg2:T29400f870659a4e1e3cf665532f11a0b

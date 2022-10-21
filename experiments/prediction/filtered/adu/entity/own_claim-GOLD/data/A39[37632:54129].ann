@@ -1,0 +1,4 @@
+T01098eb0262e49c674cfd6d5f8dfefd7	own_claim-GOLD 1468 1560	we are constraining the particle’s velocity along either two or one mutually orthogonal axes
+T20f5634f775b59144858bf462d262739	own_claim-GOLD 2539 2658	we must now introduce extra Jacobian matrices that relate a particle’s reduced coordinates to its motion in world-space
+Ta3cc6a7b9af40f5723426958a667622e	data 1468 1560	we are constraining the particle’s velocity along either two or one mutually orthogonal axes
+Tfcac6b5c00fe4111a0d9b14b61242d99	data 2539 2658	we must now introduce extra Jacobian matrices that relate a particle’s reduced coordinates to its motion in world-space

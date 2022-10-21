@@ -1,0 +1,14 @@
+T96a57373728b9424046292441bc04b66	own_claim 1653 1793	we normalize the effects of lighting and material reflectance by projecting a structured light pattern of horizontal stripes onto the fabric
+T2330a369db71f6c6da4d0c0b33f39874	own_claim 2871 2981	The gradient mask is non-zero at regions of high gradients, corresponding to folds, and zero at planar regions
+T3b84828f15dfea7d66a42cea002ec5a7	data 1374 1376	16
+Td5b2627bc06f6a5ac11d62b8600c721e	background_claim 662 831	Studies have shown that the receptive fields of simple cells in the macaque cortex act as edge or line detectors, responding to oriented edges or lines in natural scenes
+T8700eb52b208eaeb2fe8975343ceeec8	data 833 835	19
+Tf6e90f302ee46c3956f7a6789b4c8925	background_claim 1475 1563	Their technique can handle lighting effects caused by diffuse inter-reflections in cloth
+T28c9fd8f6ea1b7cb4c94f335b5befadb	own_claim 2604 2697	We threshold the gradient of the angle map to get a gradient mask M k for each frame of video
+Td15e1833fe3c4c268c48c8d95719c854	data 1369 1371	15
+T0f8bb72e0563eb628a0a781d0e43bcec	background_claim 1574 1631	most fabrics have very complicated reflectance properties
+Rc3cd57a85e862598d42d7c7704bbf03d	supports-GOLD Arg1:T8700eb52b208eaeb2fe8975343ceeec8 Arg2:Td5b2627bc06f6a5ac11d62b8600c721e
+Rf200d13d29bceff1a671f61552771457	supports-GOLD Arg1:Td15e1833fe3c4c268c48c8d95719c854 Arg2:Tf6e90f302ee46c3956f7a6789b4c8925
+R128e673e91305a63cf9397ef2a75c657	supports-GOLD Arg1:T3b84828f15dfea7d66a42cea002ec5a7 Arg2:Tf6e90f302ee46c3956f7a6789b4c8925
+R061c5ecf6833c12c6b78c6da50d97b6d	supports-GOLD Arg1:T0f8bb72e0563eb628a0a781d0e43bcec Arg2:T96a57373728b9424046292441bc04b66
+R34e1b7a8b8918c5fe9dcef68e30c354c	supports-GOLD Arg1:T28c9fd8f6ea1b7cb4c94f335b5befadb Arg2:T2330a369db71f6c6da4d0c0b33f39874

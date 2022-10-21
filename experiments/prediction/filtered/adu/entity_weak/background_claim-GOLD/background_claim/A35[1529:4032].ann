@@ -1,0 +1,26 @@
+T08a9b79db3f367e9d710ffd5b8dcdd5a	background_claim-GOLD 38 184	The correct choice of the simulation method and its implementation is a very important issue in the design of an efficient cloth simulation system
+T5c37a32c50065a316857558479e73fbc	background_claim-GOLD 188 250	Among the available methods, there are finite elements methods
+T73370c6083243d3544df11f428c7a1df	background_claim-GOLD 264 283	continuum mechanics
+T546879fdb17e5ac25ad7a59723d6792c	background_claim-GOLD 296 315	or particle systems
+Td6f06447cc3f560ecbc12148c8a87155	background_claim-GOLD 499 577	A particle system represents the mechanical system as a set of punctual masses
+T398700e62bcc899d14efbfff05afff7a	background_claim-GOLD 579 663	The cloth surface shape is represented by the geometry between neighboring particles
+T24af8fd0b1571152070a1dfabd9d5fd6	background_claim-GOLD 665 858	The mechanical behavior is represented as interaction forces between the particles, which depend on the relative position and speed of the particles, measuring deformation and deformation speed
+Tf3e786d88acf8cdeb048950dcfb1e260	background_claim-GOLD 860 959	Various models exist for this representation, which rank from the simple spring-mass representation
+T8f78b2e5afa93f22392d7a1e85b1ff40	background_claim-GOLD 1049 1085	to accurate surface or volume models
+Tb1d241bcf7526c556983a05b15bede09	background_claim-GOLD 1158 1282	The laws ruling these interactions also rank from linear to highly nonlinear involving discontinuities and hysteretic curves
+T71f2f334008c7ea18974501a373331cf	background_claim-GOLD 1284 1478	The evolution of the system is computed numerically from these equations that form a large and sparse ordinary differential equation system, which, through adequate modeling, is also first-order
+T22abf25a8f83a5c0cef72c1497bc082a	background_claim-GOLD 1480 1697	This numerical system has to be integrated numerically, for finally obtaining the evolution of the mechanical system along time, usually as a sequence of successive positions of the object along regular time intervals
+Tdd640eb53af46906b1e6543694e0ac88	background_claim-GOLD 1700 1733	Various numerical methods related
+T27944a705fd1c188c5148e552c7564de	background_claim 38 184	The correct choice of the simulation method and its implementation is a very important issue in the design of an efficient cloth simulation system
+Tffff12208291d57895b9904574c455ce	background_claim 188 250	Among the available methods, there are finite elements methods
+T6b119f0854f26a93a66789577bfaae71	background_claim 264 283	continuum mechanics
+T772a0b7ed46c8d51eab652e72c88f841	background_claim 296 315	or particle systems
+T5d74464e52ea5e35f17df5267ac4135d	background_claim 499 577	A particle system represents the mechanical system as a set of punctual masses
+T88bf297714debf336ecd8d23ce82a39a	background_claim 579 663	The cloth surface shape is represented by the geometry between neighboring particles
+T28ffcc85398d1a0118b5737bc2ae6e56	background_claim 665 858	The mechanical behavior is represented as interaction forces between the particles, which depend on the relative position and speed of the particles, measuring deformation and deformation speed
+Te73b6c5200459f9857ab347a7f9d418a	background_claim 860 959	Various models exist for this representation, which rank from the simple spring-mass representation
+T43896ad087d4c5cdaaa7cb7b7720ac00	background_claim 1049 1085	to accurate surface or volume models
+Tb01dd2c5d4739b3e64492c8297307d36	background_claim 1158 1282	The laws ruling these interactions also rank from linear to highly nonlinear involving discontinuities and hysteretic curves
+Tee9d4725555b8193c4d325942b24d386	background_claim 1284 1478	The evolution of the system is computed numerically from these equations that form a large and sparse ordinary differential equation system, which, through adequate modeling, is also first-order
+Tccd239c5e6b3a1c2143247753d3f1f0a	background_claim 1480 1697	This numerical system has to be integrated numerically, for finally obtaining the evolution of the mechanical system along time, usually as a sequence of successive positions of the object along regular time intervals
+T71f9f32dd50898f0e76a94d0860660b5	background_claim 1700 1733	Various numerical methods related

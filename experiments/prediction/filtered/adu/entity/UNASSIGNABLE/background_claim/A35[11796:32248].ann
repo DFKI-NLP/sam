@@ -1,0 +1,12 @@
+Ta8c82240a54219a92d7cdd2440046206	background_claim 7859 7966	its accuracy is however very degraded by high K values and reduced numbers of Conjugate Gradient iterations
+T613e10ddacf27295bf08ae7ce0305b90	background_claim 15654 15733	the strain-stress relation describing elasticity may actually be complex curves
+Tada8d832cfa746e0ece5f186e1e3c9f9	background_claim 15817 15889	During the simulation, the orientation of the mechanical elements change
+T5394abf8bf3e2af54ab8d1c999daee19	background_claim 15895 15972	this modifies the expressions of the mechanical laws in the world coordinates
+Tccced60523b9ad34c864bd0c65ff860a	background_claim 15980 16040	rarely causing numeric “explosions” as with explicit methods
+T6e74aff117a02e937e15a004ec00b6d4	background_claim 16042 16160	nonlinearity may disrupt the stability of simulations integrated with implicit models with large disturbing vibrations
+T65dec6ca4fd8c16b4b79ae2ecdd93225	background_claim 16449 16644	The reason for that is that the hypothetical equilibrium state is derived from the knowledge of the Hessian matrix, which relates the firstorder evolution of the forces as the deformations change
+Te56fcc61e6bab1a3a200ba5eefb442db	background_claim 16646 16721	Nonlinearity causes this matrix to change between the successive iterations
+T4c8256cdcd2446d7a28d2df38221d706	background_claim 16769 16864	high system resolution accuracy that can be reached with numerous Conjugate Gradient iterations
+T92f6d8e92336d8c58186e1b6b601c8b8	background_claim 17393 17445	This is particularly true for drastic linearisations
+Td0798a9899f698246039bfa32fddc0f4	background_claim 17863 17970	the more drastic these approximations are, the less accurate the simulation will be for dynamic simulations
+T47b75f27f1ae39fe69a133dcd48485e6	background_claim 17976 18036	the slower the simulation will converge for draping problems

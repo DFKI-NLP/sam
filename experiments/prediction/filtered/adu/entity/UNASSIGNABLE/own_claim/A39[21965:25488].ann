@@ -1,0 +1,8 @@
+T7191314672509789c842b1fa9dda1d48	own_claim 481 517	dt d x x = dt d v x = M −1 f(x, v v)
+Td8779326a825ccf0c89f9e0b57e62f3c	own_claim 1141 1168	x and v are approximated by
+T0430178a64936470dd34289a9ede9ba3	own_claim 1200 1240	v x = h M −1 f(x 0 v + 0 + x, v v 0 + v)
+T9d17dea7e0fd5f13e310a2f563885698	own_claim 1260 1369	The difference in the two methods is that the forward method’s step is based solely on conditions at time t 0
+T56a26fbee812c8c0bdbb0cf4100a7481	own_claim 1376 1471	the backward method’s step is written in terms of conditions at the terminus of the step itself
+T4a74e74efa9ec0e4803acc1a77ab1e77	own_claim 1649 1672	is a nonlinear equation
+Tcdff4e6774f479be94f5b1007513da47	own_claim 1674 1713	rather than solve this equation exactly
+T5d03b399a9e398f909e038d387466695	own_claim 3407 3465	imparting, essentially, an additional layer of consistency

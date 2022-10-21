@@ -1,0 +1,16 @@
+T6f4e05291212eeb526e75420cb6413b8	own_claim 3489 3530	this leads to “rubbery” or “bouncy” cloth
+Tff0511149430bd24f3ad687b18e29a64	own_claim 3666 3752	the shear and bend force stiffness coefficients depend on the material being simulated
+Td0cc44b3b64c784bae7619bb23580cb3	own_claim 7553 7582	the cost is potentially large
+T3abc64a5fa98f245edf21e66ddd07c36	background_claim 3347 3478	A common practice in explicitly integrated cloth systems is to improve running time by decreasing the strength of the stretch force
+T5e7376c34b364f3f497a746c6f5263b3	own_claim 3754 3835	the stretch coefficient is essentially the same (large) value for all simulations
+T1d7f7b11138443fa2e676386b5749c1e	own_claim 7463 7534	we could handle cloth/cloth intersections using the technique described
+Tafac5dcf21dfef0065f796c016f4f237	own_claim 4745 4906	to accommodate pieces of cloth that have been topologically seamed together (such as a sleeve), particles lying on the seam must have multiple (u, v) coordinates
+Tc94fe1d3b75279757df96520df4a43f2	own_claim 4690 4734	each particle has a unique (u, v) coordinate
+Rf139bc0beef225a287da54b140d7cf60	contradicts-GOLD Arg1:T3abc64a5fa98f245edf21e66ddd07c36 Arg2:T6f4e05291212eeb526e75420cb6413b8
+Rcb4473ee33fccfc8dca40017f1687bac	contradicts-GOLD Arg1:Tff0511149430bd24f3ad687b18e29a64 Arg2:T5e7376c34b364f3f497a746c6f5263b3
+R6c8635c072e14fa26d4d99a44551fce9	contradicts-GOLD Arg1:Tc94fe1d3b75279757df96520df4a43f2 Arg2:Tafac5dcf21dfef0065f796c016f4f237
+R113a266ec5f6c5365f49ad8047c8dcb0	contradicts-GOLD Arg1:T1d7f7b11138443fa2e676386b5749c1e Arg2:Td0cc44b3b64c784bae7619bb23580cb3
+Ra744d9ebbd41acf21a165feb37b0be11	contradicts Arg1:T3abc64a5fa98f245edf21e66ddd07c36 Arg2:T6f4e05291212eeb526e75420cb6413b8
+Rd0b679ea14466607281f676626d8c07d	contradicts Arg1:Tff0511149430bd24f3ad687b18e29a64 Arg2:T5e7376c34b364f3f497a746c6f5263b3
+Ra7a4561d5ed1a2b00fcc869a8200a006	contradicts Arg1:Tc94fe1d3b75279757df96520df4a43f2 Arg2:Tafac5dcf21dfef0065f796c016f4f237
+Rf8a4dc22022b7beb942c0315476a0113	contradicts Arg1:T1d7f7b11138443fa2e676386b5749c1e Arg2:Td0cc44b3b64c784bae7619bb23580cb3

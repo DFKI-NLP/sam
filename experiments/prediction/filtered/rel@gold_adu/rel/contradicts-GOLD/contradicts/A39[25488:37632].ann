@@ -1,0 +1,8 @@
+T2892a951c20d7529373cfc5395148bf4	own_claim 11683 11738	we have not observed any ill effects from this omission
+T70fdcd947447cf51c96c3545cc6f1eee	own_claim 436 506	A better approach is decompose E into a sum of sparse energy functions
+Tbf68103be32c045d33f4b680359866fd	own_claim 629 690	even decomposing E into sparse energy functions is not enough
+T472e3314ccf1cb70a56d0ccf3f726d82	own_claim 11620 11677	This simplification is clearly not physically justifiable
+Rf04b046c399ac8a6e74cd68c04cdf50d	contradicts-GOLD Arg1:T70fdcd947447cf51c96c3545cc6f1eee Arg2:Tbf68103be32c045d33f4b680359866fd
+R859a0eed418e127931e59223fca0e8dd	contradicts-GOLD Arg1:T472e3314ccf1cb70a56d0ccf3f726d82 Arg2:T2892a951c20d7529373cfc5395148bf4
+R8865350d370d739606fedf48db6ce7b2	contradicts Arg1:T70fdcd947447cf51c96c3545cc6f1eee Arg2:Tbf68103be32c045d33f4b680359866fd
+R21c5a7c3ee254ace218ddcbe8b4aebda	contradicts Arg1:T472e3314ccf1cb70a56d0ccf3f726d82 Arg2:T2892a951c20d7529373cfc5395148bf4

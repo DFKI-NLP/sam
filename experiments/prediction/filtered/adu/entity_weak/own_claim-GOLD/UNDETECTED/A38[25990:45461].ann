@@ -1,0 +1,7 @@
+Tcd3111554c854d1440a1f1beb0278d23	own_claim-GOLD 613 696	Each trial took approximately 50 hours to converge on a 2.8GHz Intel Xeon processor
+T6242b24e9775ddf183ba195acfa204fc	own_claim-GOLD 769 815	we started the optimizations on the two trials
+Te50467345a043b13511d88f9177027b6	own_claim-GOLD 829 877	with the same initial guess and chose parameters
+T03a6d88090acedad3fceaec7a1a0bd79	own_claim-GOLD 890 938	that minimized the total error on the two trials
+T3f71e374b5f8571b86c7369432e91f2f	own_claim-GOLD 2529 2579	We optimize for nine parameters in the waving test
+T26e84f5083639f9247ba7c6c0dc3563c	own_claim-GOLD 2581 2657	the six cloth stiffness and damping parameters and three air drag parameters
+T5522fe390d5d685b8f3702959c57e625	own_claim-GOLD 4752 4824	a good visual match between corresponding frames in simulation and video

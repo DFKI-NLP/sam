@@ -1,0 +1,50 @@
+T47b9754987032315ff94d8a180f3871c	own_claim 28 165	The key question of how well a given model describes a particular piece of cloth is answered by fitting the model to the measurement data
+T4314e3445ee99d3d7882801c40521482	own_claim 167 276	adjusting its parameters to minimize the difference between the model’s predictions and the measured behavior
+Tb07668b75a0e78e7d900c4d3b84ff667	own_claim 369 434	the cloth is at static equilibrium at the measured configurations
+T964d51198117fb3d786ca44f4db00126	own_claim 449 542	all parameters of a cloth model can be fit to a sufficiently rich single deformation sequence
+Tefa45330d944709102885f3ed9e5a827	own_claim 548 602	this can result in a problem fraught with local minima
+Td350652e047da87e5e9dfac999cb94da	own_claim 1674 1746	a simulated cloth matches known positions and forces as well as possible
+T25c1931440f4b341527f3d41a90ae52c	data 2588 2623	the pieces of cloth are homogeneous
+T58b2996c26107307bca9d34aa2842732	own_claim 2723 2936	the computation of model parameters based on the minimization of position and force errors subject to the static equilibrium condition can be formulated as the following nonlinear constrained least-squares problem
+T354c069201074b57da636e5c6fddeda0	own_claim 2938 2996	k = arg min μ x n (k) − x n 2 + λ F c (x n , k) − F  ̃ c 2
+T9b66d7148069f2fd12bc3fd603e447f7	own_claim 3366 3378	μ = 1, λ = 0
+T60df3dfb486bc52d922c5e115c814cad	data 3384 3395	shear tests
+Tb143bd00f3a2d787a87060b060889c1c	data 3518 3557	in situations of near-homogeneous shear
+T493448164e4fccf5ecd9de24d130e5d6	own_claim 3559 3606	the clip-parallel forces are dominated by shear
+T9959d3a64d10de0432954503a2a1af9b	own_claim 3614 3661	clip-orthogonal forces are dominated by stretch
+T925dcadd4906010db80c15709eabe1f7	own_claim 3669 3772	by fitting only clip-parallel forces we reduce the sensitivity to potential errors in stretch stiffness
+T3744b657fce8ced167f6eb78aff34fcf	data 5260 5278	the residual grows
+T5c416d5992410f98f54c0da731aced93	data 5285 5322	the solution violates some constraint
+Tfcad4c61ab16dfa04b7e5e6d4fe1af13	own_claim 5324 5405	The solution to the linear least squares problem requires solving a system Ak = b
+Te92b698dbd684c662b690d4d5ba23f33	own_claim 5543 5595	we solved the linear systems using LDL factorization
+T85c987831785c784838e935a86414e39	own_claim 5597 5617	The formulation of A
+T3b822b159bb952a92fb296c40f1a358a	own_claim 5638 5747	requires solving |k| linear systems of type ∂F n y = b, which ∂x n we did using the conjugate gradient method
+Te100664f0df50d9621482db35c095911	data 5766 5807	the parameter values k(i + 1) are refined
+T1c259f7a8e2ddb166e5a136d505113d0	own_claim 6165 6259	The quasi-static simulations involve linear-system solves with the cloth stiffness matrix ∂F n
+T00ef36a096bf6b57af1ea1644eaae2b8	own_claim 6277 6369	during inter∂x n mediate iterations, the stiffness matrix may not always be well conditioned
+T1d607a46f79a152a6bda2f4d38f5ada8	own_claim 6381 6468	we have solved the quasi-static equilibrium problems using additive Levenberg-Marquardt
+T8e84b3ab9e343d87fa6a0ab80e7db5fd	own_claim 6476 6546	effectively produces a modified stiffness matrix of the form ∂F n + μI
+Tfb38d72e904d6910f84170d648573e2e	own_claim 6885 6922	The nonlinearity of cloth deformation
+T1d4747830380ae8c3a63a0cc8f3321c7	own_claim 7033 7106	make the optimization problem above extremely complex in the general case
+Tac09c721f9aed7ea0c4eab9f9a82a356	own_claim 7108 7179	prone to falling in local minima and sensitive to initialization values
+T4df38cd96521803e254b3f12e7ce8931	own_claim 7190 7285	we largely alleviate these issues with the design of the five isolated deformation measurements
+Tc7a8d15f3d04308d80d9e4f4921dbcab	data 7299 7310	Section 3.2
+T8150ed00b1be9d41648ad877af6335dd	own_claim 7312 7396	which allow us to separately fit stiffness curves for the six deformation components
+Td3b6aa1a73e09b91ee9e841522246f82	data 7410 7421	Section 4.1
+Td8d99937a53a0b0035c07011b9677b0b	own_claim 7423 7475	following an incremental parameter fitting procedure
+R86d10806996ed8876c74e452c437c380	supports Arg1:T4314e3445ee99d3d7882801c40521482 Arg2:T47b9754987032315ff94d8a180f3871c
+R88d0886134f7e539090fde1418b7fa8a	contradicts Arg1:T964d51198117fb3d786ca44f4db00126 Arg2:Tefa45330d944709102885f3ed9e5a827
+R978a28af23951ada32115e4b0305643f	supports Arg1:T25c1931440f4b341527f3d41a90ae52c Arg2:T58b2996c26107307bca9d34aa2842732
+Rdf46c10db5bfb72d40497ea47ba3064c	parts_of_same Arg1:T58b2996c26107307bca9d34aa2842732 Arg2:T354c069201074b57da636e5c6fddeda0
+Rc62600782c872fc2ce1338bd30349665	supports Arg1:Tb143bd00f3a2d787a87060b060889c1c Arg2:T493448164e4fccf5ecd9de24d130e5d6
+R7f174021bd76ca3838744ba78bad325c	contradicts Arg1:T493448164e4fccf5ecd9de24d130e5d6 Arg2:T9959d3a64d10de0432954503a2a1af9b
+Rcaafd14365e0fbb2e80d4025bb97ce61	supports Arg1:T9959d3a64d10de0432954503a2a1af9b Arg2:T925dcadd4906010db80c15709eabe1f7
+Rd358c739028126b21cfd7a07704ca343	parts_of_same Arg1:T85c987831785c784838e935a86414e39 Arg2:T3b822b159bb952a92fb296c40f1a358a
+R12c11b33c1bf767397cfa443cc90bea6	supports Arg1:T00ef36a096bf6b57af1ea1644eaae2b8 Arg2:T1d607a46f79a152a6bda2f4d38f5ada8
+R583cadd5f9d743e259d6b221c5e71b86	supports Arg1:T1d607a46f79a152a6bda2f4d38f5ada8 Arg2:T8e84b3ab9e343d87fa6a0ab80e7db5fd
+R56595dd3b4bbd32abe9b010797d02a1b	parts_of_same Arg1:Tfb38d72e904d6910f84170d648573e2e Arg2:T1d4747830380ae8c3a63a0cc8f3321c7
+R8a3c19d368eccc9c085e7f7da849ba93	contradicts Arg1:T1d4747830380ae8c3a63a0cc8f3321c7 Arg2:T4df38cd96521803e254b3f12e7ce8931
+R1f886627814929caea585265cbe027e8	parts_of_same Arg1:T1d4747830380ae8c3a63a0cc8f3321c7 Arg2:Tac09c721f9aed7ea0c4eab9f9a82a356
+R91b3ffdb3ed566638e9d0ed391645955	supports Arg1:Tc7a8d15f3d04308d80d9e4f4921dbcab Arg2:T4df38cd96521803e254b3f12e7ce8931
+Re88b3e9b995fc4477c16d1b9d68448eb	parts_of_same Arg1:T4df38cd96521803e254b3f12e7ce8931 Arg2:T8150ed00b1be9d41648ad877af6335dd
+Rf33711292466c6a77f1410e484cdeca3	supports Arg1:Td3b6aa1a73e09b91ee9e841522246f82 Arg2:T8150ed00b1be9d41648ad877af6335dd

@@ -1,0 +1,20 @@
+Tb2129e49d15410287758f59d075c2f75	own_claim 1680 1761;1917 1939	We have evaluated three models for membrane deformation that fit this description and two bending models
+T671273c2cc84cff2c89461f742aacb36	data 6437 6443	VMTF09
+T8f35539ade661f5233aef861f8291be5	data 1835 1875	and the diagonalized St.Venant-Kirchhoff
+T7c8a88dae56f63531f22368c45584bfa	data 2009 2015	GHDS03
+T1ebcd1100025de9ef5d647aaf4fa615c	data 5616 5620	BW98
+T7a6e899e511fcd131ed852aa701bd029	data 1883 1888	model
+T3bdc0453d0d5b0055bc617c2229d6f73	data 1907 1913	VMTF09
+T105bcf74832988c7a38faca26bb0005f	data 3978 3984	VMTF09
+T0e1219183ed3a3efd26c4951bc6531fc	own_claim 5473 5595;5622 5667	With our separation of weft-, warpand diagonal-bending to capture anisotropy, the bending models in Discrete Shells and by are equivalent up to a stiffness scale factor
+Taa5e1854af90f131702fc563e0a4644a	data 1828 1832	BW98
+Tfa5fee1fcb8007616d09d7d329e2ffb6	background_claim 4113 4220	in the diagonalized StVK, each membrane stress component depends only on its corresponding strain component
+T9e7eca04d2199b5dffcea2b31eb4dd05	own_claim 6564 6635	the same construction can easily be built on any of our selected models
+R7551d633043c2b34d3ec1e12a326ac2a	supports Arg1:T8f35539ade661f5233aef861f8291be5 Arg2:Tb2129e49d15410287758f59d075c2f75
+R4649a046425c9a60cba333dc242e6c18	supports Arg1:T7a6e899e511fcd131ed852aa701bd029 Arg2:Tb2129e49d15410287758f59d075c2f75
+R539bd227705f02f0b054e9c0e3c32fff	supports Arg1:Taa5e1854af90f131702fc563e0a4644a Arg2:Tb2129e49d15410287758f59d075c2f75
+R2cc8f8a73167dbc197fc059a0be2acb0	supports Arg1:T3bdc0453d0d5b0055bc617c2229d6f73 Arg2:Tb2129e49d15410287758f59d075c2f75
+Raffd84bf58550b66c16b36a6e9d3d9d3	supports Arg1:T7c8a88dae56f63531f22368c45584bfa Arg2:Tb2129e49d15410287758f59d075c2f75
+Rdec11873e809cc6e86cddfae3a40b1d1	supports Arg1:T105bcf74832988c7a38faca26bb0005f Arg2:Tfa5fee1fcb8007616d09d7d329e2ffb6
+R77398c71677b1836fee283cfe8c658f5	supports Arg1:T1ebcd1100025de9ef5d647aaf4fa615c Arg2:T0e1219183ed3a3efd26c4951bc6531fc
+Rfcd177173b44b0134070786c272792ce	supports Arg1:T671273c2cc84cff2c89461f742aacb36 Arg2:T9e7eca04d2199b5dffcea2b31eb4dd05

@@ -1,0 +1,6 @@
+Tcd0a30a6b2e49ffd1bf52f360d146655	data 1198 1199	9
+Td1cd874a125352dbf70c21e264f82566	background_claim 1259 1363	there is no straightforward way to scale the parameters of these models to meshes of varying resolutions
+T0f4a9068fcba1d6dddedd5d3677f6114	own_claim 329 485	We wanted to use a model that was sophisticated enough to capture the detailed dynamic behavior found in real fabrics but still straightforward to implement
+T36462092a138c8b3d2ef14682460d505	own_claim 245 327	Our choice of a cloth model was guided by two principles, realism and practicality
+R6c3a2dcfb3d7691b3b522e5373fc216b	supports Arg1:T0f4a9068fcba1d6dddedd5d3677f6114 Arg2:T36462092a138c8b3d2ef14682460d505
+Ra68e586331575746312f3ffb9f91cd8b	supports Arg1:Tcd0a30a6b2e49ffd1bf52f360d146655 Arg2:Td1cd874a125352dbf70c21e264f82566

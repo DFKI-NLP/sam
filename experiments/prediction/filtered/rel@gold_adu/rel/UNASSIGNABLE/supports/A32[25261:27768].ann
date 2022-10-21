@@ -1,0 +1,7 @@
+Ta704f9789d74120addcea76c535b1d3e	data 1914 1993	the calculations of the wrinkling coefficients are done on a per triangle basis
+T1c1db2603d14c75d77ff0d9532856bec	own_claim 1995 2063	the computational time is linear with respect to number of triangles
+Tabeef2dc729f783b5c6d1591f70b37f6	own_claim 568 613;644 675	inappropriately placed wrinkles in the region will not animate satisfactorily
+T408e62086c83ade06eed13d266e467d6	own_claim 489 549	it is worthwhile to study the strain patterns in the garment
+R23149e267cb03eb197bfcdf8c1995a14	supports Arg1:Tabeef2dc729f783b5c6d1591f70b37f6 Arg2:Tabeef2dc729f783b5c6d1591f70b37f6
+R2e3cea5acbae8a49cf3323840d52b994	supports Arg1:Ta704f9789d74120addcea76c535b1d3e Arg2:T1c1db2603d14c75d77ff0d9532856bec
+Ra8d316133a2d523ef2235f4defb2ae98	supports Arg1:Tabeef2dc729f783b5c6d1591f70b37f6 Arg2:T408e62086c83ade06eed13d266e467d6

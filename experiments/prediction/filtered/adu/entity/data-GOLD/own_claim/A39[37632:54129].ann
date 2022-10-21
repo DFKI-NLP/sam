@@ -1,0 +1,10 @@
+T68125a67c1ca2b8a3d75411f6e540971	data-GOLD 3524 3547	adds no extra stiffness
+Td4f0f127ded6dc1c624b8bfdaee9efd5	data-GOLD 7593 7623	all directions are constrained
+T16670fe243d81e3ef5a4f046603e5e70	data-GOLD 8555 8601	equation (14) is not a symmetric linear system
+T08df5f4ab79c32ab65d4b6e2096a7f27	data-GOLD 9736 9749	W is singular
+T767372e839f56975d8eb3ac72de80ea6	data-GOLD 15431 15487	The vector r in modified-pcg is equal to filter(A v − b)
+T5798f0db51c5d7ffa3adc29391282520	own_claim 3524 3547	adds no extra stiffness
+T99ace68577f143d33fafd4783f9bf6e5	own_claim 7593 7623	all directions are constrained
+Ta5d5964cc4b86d07f3b5c3bb40246afd	own_claim 8555 8601	equation (14) is not a symmetric linear system
+Tae5a192e78cf48d78b75ba0fe61b2db3	own_claim 9736 9749	W is singular
+T9f810585d229786851d583dcdc734b5f	own_claim 15431 15487	The vector r in modified-pcg is equal to filter(A v − b)

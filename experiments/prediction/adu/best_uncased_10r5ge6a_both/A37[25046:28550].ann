@@ -1,0 +1,60 @@
+T656e3eaa61a4fc30018b9b6c4f59350c	own_claim-GOLD 535 590	The simple 1D chain resists stretching, but not bending
+Tb84c1f0a357ef5c53e78ffce7ade727e	own_claim-GOLD 668 749	Our method shows asymptotically better performance as permissible strain vanishes
+T67389c438f078069999474c8cabc22b5	data-GOLD 755 764	Figure 4a
+Taaa32736cc150e3928e85e76149c1bfb	own_claim-GOLD 778 851	our algorithm exhibits favorable performance as mesh resolution increases
+Tbde0bc06df4cc1f051d65283d9272e68	data-GOLD 857 866	Figure 4b
+Teebe4340e959d6fd3e5238a9703eb415	own_claim-GOLD 964 1072	there exists considerable difficulty in setting spring coefficients a priori to satisfy a given strain limit
+Td1493404aa38172c9fa7e6f43a9ed5fc	data-GOLD 1078 1121	settings more pragmatic than a simple chain
+T412452fbcfa3ecb040b59f536a327647	data-GOLD 1131 1163	the following draping experiment
+Ta41099d1e3bd44805447bc91384df989	own_claim-GOLD 1165 1178	we are unable
+T564af7293b6ed4c7a277c97e088646e1	own_claim-GOLD 1209 1274	to set spring coefficients that achieve a prescribed small strain
+T8a30bd66880d365db3a856ad6bc2f252	own_claim-GOLD 1276 1358	This explains why spring methods are often treated with strain-limiting procedures
+Tceded05ecf99e8f5a39ef5c7ae6021f8	own_claim-GOLD 2086 2146	the algorithm requires extremely small timesteps to converge
+Tb33072ffdf6fdad41f3f8b70dcb271d6	own_claim-GOLD 2152 2191	each timestep is relatively inexpensive
+T73333d906e60fe4d958fc9ff4d4aeda4	data-GOLD 2196 2245	matrix re-assembly and re-factoring is infrequent
+Te7d15035a6f258c76b2dbe6a57cb1392	own_claim-GOLD 2247 2312	ICD is able to use larger timesteps than SHAKE and still converge
+T12b0457efd74460019d406d8b8a8d3d7	data-GOLD 2329 2392	each timestep is substantially more expensive than a SHAKE step
+T6adb2702292b459089723b8de3282858	own_claim-GOLD 2394 2420	the overall time is higher
+Tb032da2ba7f2cb3a913950be46d29132	own_claim-GOLD 2592 2727	All CLM methods scale equally well, asymptotically better than the strain limiting approach, with the fast projection being the fastest
+Tcfbdeb046e5a6c0a108e4c96ffe63ca4	data-GOLD 2732 2756	we refine the resolution
+Td9af0f3f85210d70abd39cb3c7051d52	data-GOLD 2762 2780	allow strain of 1%
+Tfbb4888b3f230f35d26aa02b6f51e995	data-GOLD 2783 2792	Figure 5b
+T517678fe9aa27c435a7fcc30f13b2a08	own_claim-GOLD 2796 2852	the fast projection method outperforms the other methods
+T149bcc689daf1cb4cedbc3d004ddf194	data-GOLD 2983 2992	Figures 7
+Tc057a2d419cd74d848c9b260e537a970	data-GOLD 2997 2998	8
+T69190f3a0487c596e28c90e758a3c249	own_claim-GOLD 3066 3145	fast projection is capable of producing complex, realistic simulations of cloth
+Tbcbd46db99cacaf80d6ecab0de414bca	own_claim 535 590	The simple 1D chain resists stretching, but not bending
+T5929b889b1423fcfd0685086bb36738d	own_claim 668 749	Our method shows asymptotically better performance as permissible strain vanishes
+T2e5a05e7ced05f97117be41f0ec3e382	data 755 764	Figure 4a
+Tcdaa120de1023143c9779fe051c36dec	own_claim 778 851	our algorithm exhibits favorable performance as mesh resolution increases
+T0b2446eb196f2ebd97951fb1fd256755	data 857 866	Figure 4b
+T1d10b0bbbaf42d54b6b1e32bd350b897	data 870 901	Using 80 vertices and 1% strain
+Tfc6677477534c214b9717c6ede50ad9b	own_claim 903 952	the fast projection method achieves a 25× speedup
+T59a67215bff8699dd94649ff18eea347	own_claim 964 1072	there exists considerable difficulty in setting spring coefficients a priori to satisfy a given strain limit
+T314318ad4cad33c5ab38d7361f1d054e	data 1078 1121	settings more pragmatic than a simple chain
+T9d9af9a5355d90fbaaa13dd0bd62f813	data 1131 1163	the following draping experiment
+T87be0c992b5bc90ab114b7da751631bd	own_claim 1165 1178	we are unable
+T53061e586c73c95402e7e903aaa0de3a	own_claim 1209 1274	to set spring coefficients that achieve a prescribed small strain
+Ta1ae88e94e5adf82fda7e252865f1776	own_claim 1294 1358	spring methods are often treated with strain-limiting procedures
+Te3ae30b216680dd743069e9d6b80b4d0	own_claim 1705 1739	For the strain limiting algorithms
+T9cd8b117785d0147a7e6cba524407952	own_claim 1933 1980	For SHAKE, we use the acceleration suggested in
+T6a3ee31890c78b00b3cfadb9c315b9b7	data 1983 2000	Barth et al. 1994
+T0bb160b99e73ce43a72677e7e6c88701	own_claim 2002 2066	to rebuild the matrix once per step or when it fails to converge
+Ta7c067cf645d0ef05b8f076866e495e7	own_claim 2086 2146	the algorithm requires extremely small timesteps to converge
+T251ebd20dac990d8475fa14ea0202695	own_claim 2152 2191	each timestep is relatively inexpensive
+T63a216ffe03dfb7a808a3a6c3cd22066	data 2196 2245	matrix re-assembly and re-factoring is infrequent
+Tae84c36ad5bc5665cf6788914797bb01	own_claim 2247 2312	ICD is able to use larger timesteps than SHAKE and still converge
+T676562ce10303d5fd810a8ee3ae3b088	data 2329 2392	each timestep is substantially more expensive than a SHAKE step
+Tfdce8195786b5e6337726f3c5e77ba75	own_claim 2394 2420	the overall time is higher
+T57dec7503a3995d02d857d994a02fca2	data 2480 2489	Figure 5b
+Td9b74a48d12dbf67ef2bc985ec730f87	own_claim 2490 2590	compares performance as the stiffness is increased for a cloth mesh with approximately 5000 vertices
+T260d6fe9715cb365c983cc082e324384	own_claim 2592 2683	All CLM methods scale equally well, asymptotically better than the strain limiting approach
+T39f793ccdca7340b010cb8d4eb8485c3	own_claim 2690 2727	the fast projection being the fastest
+T8a3cb29da01c1ecd2af509712e0795b3	data 2732 2756	we refine the resolution
+Tff6538c3fad94179da98ca075f0fadd6	data 2762 2780	allow strain of 1%
+Tf0510cf23d2cee6912a7a02666593055	data 2783 2792	Figure 5b
+T138cfc6dc688295508e2760277b912ac	own_claim 2796 2852	the fast projection method outperforms the other methods
+Tb1ee4a65aca1a86ff303b417a32a880a	own_claim 3066 3145	fast projection is capable of producing complex, realistic simulations of cloth
+T8993d2d5cc51388380d4f52d5420e8c9	own_claim 3217 3312	Inextensibility ensures that the tight-fitting pants do not drop past the dancer’s narrow waist
+T0ba3eacb61b2c6f29333387a041f429b	own_claim 3314 3471	Using fast projection, an implicit treatment of shear and bending, and a mesh with 10600 vertices, the average simulation time per (30Hz) frame was 9 seconds
+

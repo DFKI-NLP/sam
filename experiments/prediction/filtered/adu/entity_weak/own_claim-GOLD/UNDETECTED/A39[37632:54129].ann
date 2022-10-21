@@ -1,0 +1,8 @@
+Td77642fe2cc2c3cb6cd4cb597c68da3c	own_claim-GOLD 3904 3923	and extra equations
+Td17738cd161c15bbc6e0bd889d7987a6	own_claim-GOLD 4155 4214	degrading the numerical conditionining of the linear system
+T6e7da2825075345e499eec0e09683c57	own_claim-GOLD 5268 5309	making it ignore all forces exerted on it
+Tfa67c825efb872c3f5a7f16876bf1187	own_claim-GOLD 6341 6465	By allowing constrained particles to have these sorts of inverse masses, we can build constraints directly into equation (6)
+Tbd982a4c6b7d04843703e71110bec051	own_claim-GOLD 11764 11871	the effect of the matrix W in equation (14) is to filter out velocity changes in the constrained directions
+T4e0b304d9ca5adfb3f05926ce643fe4f	own_claim-GOLD 13563 13609	products involving P −1 are trivially computed
+Td85d4e965e8593fbd87fb992450b49ba	own_claim-GOLD 13871 13973	obvious questions are “does it work?” followed by “how does it compare with the unmodified CG method?”
+T79bcc60288eec99a7cfa06f826736810	own_claim-GOLD 15773 15811	We reject this approach as impractical

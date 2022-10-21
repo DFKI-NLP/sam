@@ -1,0 +1,25 @@
+T759fb2fcce297b0a0787cce3e14f3391	own_claim 62 189	We use a perceptually motivated metric to compare the motion of cloth in simulation with a video sequence of real fabric motion
+T79cdd0d8d3bdb5040d97e71645b5be66	own_claim 191 303	Our algorithm compares the two sequences frame by frame and computes an average error across the entire sequence
+T6276c5c5d9130a2cff995f8828d276e0	own_claim 305 380	Real fabrics exhibit a wide variety of motion ranging from soft and flowing
+Tfe1c020e9ec64d7a2a8b3bac302cd052	data 382 387	satin
+Tf2227340eec50ac201d3478e70c31a86	own_claim 407 463	Our metric captures the complex dynamics of cloth motion
+Td66bb8116f589354a191750a4e12b400	own_claim 473 519	helps to distinguish between different fabrics
+Tc325e9028ca51654630aa00388eb99b9	background_claim 521 645	Researchers in computational neurobiology hypothesize that the human perceptual system is sensitive to moving edges in video
+T33a039ce057a080a14f6038ff8d4cf5f	data 647 649	11
+T1ba8b08055e1ddbe6d267dd7772d3db5	data 652 654	12
+Tfd22656c3924f5c2b4b0b3a69147226a	data 657 659	36
+Td5b2627bc06f6a5ac11d62b8600c721e	background_claim 662 831	Studies have shown that the receptive fields of simple cells in the macaque cortex act as edge or line detectors, responding to oriented edges or lines in natural scenes
+T8700eb52b208eaeb2fe8975343ceeec8	data 833 835	19
+T78e090e31cca650d80b9a309cc708abe	data 838 840	35
+Td4407ec86bae1b8be458810f46634cc0	data 843 845	10
+T137027b88c5e43f7774a8eacfaa42b0c	background_claim 848 935	In cloth, these edges correspond to folds, which are regions of high variation in shape
+T966622fa3d161c73f21b22f64c1841a1	own_claim 944 1132	our perceptually motivated metric for cloth compares two video sequences, one from simulation and one from the real world, and returns a number that measures the differences in their folds
+T3be9ec0d2be9e8594a6308c462bd6144	own_claim 1134 1209	The metric also penalizes the silhouette mismatch between the two sequences
+Tfa8de852ca54d568379c685dbc82e6b9	own_claim 1246 1347	Folds appear as soft edges in video whose appearance is dependent on material properties and lighting
+Td15e1833fe3c4c268c48c8d95719c854	data 1369 1371	15
+T3b84828f15dfea7d66a42cea002ec5a7	data 1374 1376	16
+T5b67c9f6bd614455aab8064ed64685c4	background_claim 1377 1438	describe a learning approach for detecting and grouping folds
+Tcdd0fd3f28027b2b7974fd99819b7dbb	background_claim 1453 1473	in images of fabrics
+Tf6e90f302ee46c3956f7a6789b4c8925	background_claim 1475 1563	Their technique can handle lighting effects caused by diffuse inter-reflections in cloth
+T0f8bb72e0563eb628a0a781d0e43bcec	background_claim 1574 1631	most fabrics have very complicated reflectance properties
+

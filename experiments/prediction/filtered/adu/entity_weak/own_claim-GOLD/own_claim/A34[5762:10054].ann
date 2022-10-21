@@ -1,0 +1,24 @@
+Td57e4514ad204b08fd8342453985c767	own_claim-GOLD 1079 1190	we add proximity regions to the normal directions of faces of a swept volume to add proximity violation regions
+T38555d5620a00182e11e88ee368f494f	own_claim-GOLD 1347 1401	detected collisions are reported as pairs of face-face
+T976879a07f028426fe34cfa42e8c82de	own_claim-GOLD 1403 1451	we cannot respond to each collision individually
+T81d7979b8c5573fa2027c96ea4789615	own_claim-GOLD 1589 1640	we save all detected collisions in a data structure
+T93b0d7da70a310410323334195cb7f5a	own_claim-GOLD 1680 1716	during the collision detection phase
+T2188097adc99eb8fde9b8cb765c65ace	own_claim-GOLD 1718 1823	All stored detected collisions will be resolved comprehensively by the rule described in the next section
+T60b3e6ebe0fc5769a0d8d8ad6e3f59b2	own_claim-GOLD 3029 3140	are inserted into a CC, where the CC can be encountered by traversing from the particles in using only edges in
+T9b31a8e847c4bba2bd8afdafa064ce9f	own_claim-GOLD 3169 3181	becomes a CC
+Tedf23ee0b936914f89f8c25dc20a68b4	own_claim-GOLD 3220 3265	these CCs are merged into one CC connected by
+T824db26efabe9c2be377870d95e9fc35	own_claim-GOLD 3887 3926	we rarely have those pass-through cases
+Tccb89b3ee2c04aac9e7e51a8b317e623	own_claim-GOLD 4134 4182	this penetration problem is no longer negligible
+T93d6d5b1f26625e4259e90db9e690978	own_claim-GOLD 4187 4219	we use the swept volume approach
+T18dcb4fc0820488cb5fa4d851e1cda69	own_claim 1079 1190	we add proximity regions to the normal directions of faces of a swept volume to add proximity violation regions
+T224083f55e1e8720ec3a0db930dc4277	own_claim 1347 1401	detected collisions are reported as pairs of face-face
+Tfb169574157c9bc3708e06913d5d59b0	own_claim 1403 1451	we cannot respond to each collision individually
+T8c4080ba1a8668a0d4292d0be2a38a0b	own_claim 1589 1640	we save all detected collisions in a data structure
+Ta4066ee2ea5b9b051fa86d1c6943218c	own_claim 1680 1716	during the collision detection phase
+Te4764906becda549c67e448355547fae	own_claim 1718 1823	All stored detected collisions will be resolved comprehensively by the rule described in the next section
+Te6a6cd41563f615ab5bdf1283099032e	own_claim 3029 3140	are inserted into a CC, where the CC can be encountered by traversing from the particles in using only edges in
+Tf4200ebed768b20d430cce240eafdf1d	own_claim 3169 3181	becomes a CC
+Tc00d9adc81a66d3e78640a87675b7285	own_claim 3220 3265	these CCs are merged into one CC connected by
+Tabaf392eb194b88492e7cf6b98f87193	own_claim 3887 3926	we rarely have those pass-through cases
+T69a91772c21175163f77a24a3eb18202	own_claim 4134 4182	this penetration problem is no longer negligible
+T39cb0226b85c558ccc6a371b89c2cabe	own_claim 4187 4219	we use the swept volume approach

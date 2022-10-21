@@ -1,0 +1,29 @@
+Te6c7592c54d37765ef16bd9d8abe11e1	own_claim-GOLD 1973 2051	The collision resolution module receives collision information as a set of IZs
+Tdc7618025b88b265563fa8fb045779bb	own_claim-GOLD 2078 2173	Within an IZ, where possibly multiple collisions reside, collisions are resolved simultaneously
+T6eaf85d36e4480057ff1188edceee645	own_claim-GOLD 2200 2357	After we handle each IZ separately, we check whether any new collisions between IZs are introduced by collision resolutions, and handle them if there are any
+T33eb4d54e38cbff94d22317c58bd899a	own_claim-GOLD 3519 3546	we divide one CC into parts
+T4345304e4cf58ef2fb931f4389ce7688	own_claim-GOLD 3614 3683	Segmenting one CC into parts is performed by identifying border edges
+T8170bfd0bb1c4c26c98c94700ff0a515	own_claim-GOLD 3906 3914	Eliminat
+Tfd327f944be1515e91a93513353ae95b	own_claim-GOLD 3918 3990	ing the particles in the border edges segments a CC into several sub-CCs
+T562c5d80733a0c526832cea410ccb48a	own_claim-GOLD 4805 4906	Bending between CCs is considered significant in the same way as in the case of bending between faces
+T945e474fe83bb33f06a9896f934d0952	own_claim-GOLD 5327 5382	After merging, we still possibly have more than two CCs
+Tefd014f2a36cceed6610cb050bf21977	own_claim-GOLD 6706 6818	To have the proper average direction, the CC face normals, N 1 and N 2 , have to be properly signed as N 1 N 2 0
+Td1421f97f49b72f2be96de6760032829	own_claim-GOLD 7165 7205	This approach serves us well empirically
+T9080d0642bfc71504359c9787e19aeda	own_claim-GOLD 9296 9305	collision
+T8f84d7d872a6469e1767cfd2de639100	own_claim-GOLD 9321 9331	resolution
+T408b769d67fd5e9babbdeb08649f0b55	own_claim-GOLD 10484 10489	Using
+T676af6abfb64ca6d7206a012ae80925f	own_claim-GOLD 10490 10497	i + for
+Tafe49d2e1acb9a798b013435cea04dcb	own_claim-GOLD 10498 10503	eq. 1
+Td197f5a299bc136a281a3da24d47d8b8	own_claim-GOLD 10504 10507	1 i
+T1c050fa597355794610fac0fc7b57593	own_claim-GOLD 10508 10511	and
+T8dc1d557009d685eda791dc8b38529cc	own_claim-GOLD 10512 10513	N
+T841cf37e844f0332ea08816940d5ffa6	own_claim-GOLD 10514 10515	2
+T44cc36bb1039f9ab3af52851e30d4f1d	own_claim-GOLD 10789 10996	This happens when objects do not move fast enough to penetrate objects outside an IZ, but just fast enough to make the result of collision resolutions penetrate the proximity region of objects outside the IZ
+T4f6254661c0f89ea3a795932076a4ac9	own_claim-GOLD 11587 11731	We find the feasible solution of the linear inequality system, while trying to minimize the energy we introduce into the simulation artificially
+Tda9bc53469c2c885f342ac9228599660	own_claim-GOLD 11903 12063	This inequality relationship between the relative velocities before and after collision is an artificial relationship set up heuristically, not based on physics
+T02f4cabdf064a88d20879235970aafa3	own_claim-GOLD 12385 12419	we define an objective function, X
+Tbc46306a1583799c859f2433f904c1f7	own_claim-GOLD 12448 12488	to be minimized when we solve the system
+T1615d7c641edacffa098cf6b928132a4	own_claim-GOLD 12490 12591	The system of inequalities with an objective function can be solved using a Linear Programming Method
+T38e4391caa4db10d504b79566f8c62bb	own_claim-GOLD 13323 13344	Particles are ignored
+T31701cf1956d400ff73e17c4ec4f033c	own_claim-GOLD 13535 13603	The new particle velocity V new is , C e V normal + C f V tangential
+T7b84ab78a790509bcae457fa2557e799	own_claim-GOLD 14436 14490	have to be handled independently from cloth collisions

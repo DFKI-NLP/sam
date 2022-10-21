@@ -1,0 +1,18 @@
+T5a2ea9a58f53d461954ea6bf4e4b6a19	own_claim-GOLD 2060 2109	the advantage of implicit methods is less obvious
+Tc4db84fa2cf2620d84074f6463f8df7d	own_claim-GOLD 2244 2307	playing back the generated animation, artifacts quickly show up
+Tc916240a65aeacf132f7f27ad7511046	own_claim-GOLD 2576 2683	excessive reduction of the Conjugate Gradient iterations produce additional inaccuracy and slow convergence
+T9ede9bc31e62341afc5553428f93ff89	own_claim-GOLD 2972 3099	Our tests have shown a roughly doubled speed for the accuracy corresponding to the limit of stability of the Runge-Kutta method
+T9aa5fd9fd3522c84b1ee06e1df7119af	own_claim-GOLD 3101 3191	We got substantial improvements through the implementation of the implicit Midpoint method
+T3f5bd45a051a5ca0df4124a5a417c5a8	own_claim-GOLD 3220 3365	had the drawback of increasing the numerical instability problem, forcing additional use of isotropic force gradients, at the expense of accuracy
+Tc7fe1826ed59fd38b2e25653de57c851	own_claim-GOLD 4482 4591	All these considerations should be carefully taken into account when designing a mechanical simulation engine
+Tf2bcc099b570134bfdd5b0a33d5c2f30	own_claim-GOLD 4842 5057	This still remains an important issue to dynamic realism of cloth simulation models, which has to take into account viscosity, the dissipative effect of hysteretic behavior, as well as collision damping and friction
+T085776bafb7ef7cf8e4b361a1a912005	own_claim-GOLD 5059 5144	The integration methods have to be tuned to take precisely these effects into account
+T553d26ca54692bd772d6e927b16a70a7	own_claim 2060 2109	the advantage of implicit methods is less obvious
+T3a22a3cf1dcbadbb2438badce76395b0	own_claim 2244 2307	playing back the generated animation, artifacts quickly show up
+Ta2be8d6f3892eacf34b48505f646acc0	own_claim 2576 2683	excessive reduction of the Conjugate Gradient iterations produce additional inaccuracy and slow convergence
+Te461c52b6a7dd848f93c07e20cdbd8a8	own_claim 2972 3099	Our tests have shown a roughly doubled speed for the accuracy corresponding to the limit of stability of the Runge-Kutta method
+Tbe619eab66147c95221dc9c24c012685	own_claim 3101 3191	We got substantial improvements through the implementation of the implicit Midpoint method
+Tbaa42a36d7f00d7ee2021ae1c314a2ed	own_claim 3220 3365	had the drawback of increasing the numerical instability problem, forcing additional use of isotropic force gradients, at the expense of accuracy
+T4b71d57ee52a6a93d6a2872a8a9b33cf	own_claim 4482 4591	All these considerations should be carefully taken into account when designing a mechanical simulation engine
+T405c72c7f418773517b27202dfec009e	own_claim 4842 5057	This still remains an important issue to dynamic realism of cloth simulation models, which has to take into account viscosity, the dissipative effect of hysteretic behavior, as well as collision damping and friction
+T8928e629b8dd172327e0d9e9b22cf6d3	own_claim 5059 5144	The integration methods have to be tuned to take precisely these effects into account

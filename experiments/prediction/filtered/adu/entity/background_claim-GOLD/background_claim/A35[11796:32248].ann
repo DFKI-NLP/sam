@@ -1,0 +1,20 @@
+Tbb3c5beffd9581c08d2a7bef5eec34ed	background_claim-GOLD 216 257	the numerical resolution of the system is
+T5aebee69bb6a9ad4a868d97e4b11f20a	background_claim-GOLD 268 306	critical to the total computation time
+Tbc781f1cf0572423a6e1d8aa93782217	background_claim-GOLD 15439 15516	Most mechanical simulations work with numerical equations that are not linear
+Td5e0e1ea8063b53bd78c0edf01bf5be3	background_claim-GOLD 15518 15566	There are two main reasons for such nonlinearity
+Tda2730d637df40ae6b44c3309de0372e	background_claim-GOLD 15570 15638	The equations describing the mechanical behavior laws are not linear
+T770f4a45ccf6003fedf63f515ee09f30	background_claim-GOLD 17301 17391	stabilizing the simulation, at the expense of extra numerical damping and slow convergence
+T6a4fc131f073cd88c63058d4580932ed	background_claim-GOLD 17481 17603	Knowledge of the expected state changes between successive time steps are required to perform this approximation correctly
+Tf3870104836abebfbd8717e7d364530b	background_claim-GOLD 17641 17712	one solution is to take the steepest parts of the curves as derivatives
+Tbfab1319c8154af2d7a44f8272fe2f43	background_claim-GOLD 17759 17852	isotropic derivatives considering force evolution equally in any directions may be considered
+T63b08d35e6f8569e9ced51040dfead20	background_claim-GOLD 18038 18066	A nice solution described in
+T4c202bd8ef2f66cb614076e452b9b45e	background_claim 216 257	the numerical resolution of the system is
+T55cecadc9fbfee2d4b57d66d8539bebd	background_claim 268 306	critical to the total computation time
+Tb49dccfc5b92f97d0bbd5ba2b87e484c	background_claim 15439 15516	Most mechanical simulations work with numerical equations that are not linear
+T32ce67691490cfb9d4f6ed69a9be4e44	background_claim 15518 15566	There are two main reasons for such nonlinearity
+T5a14466f474ffcb2f59b8577a97c6041	background_claim 15570 15638	The equations describing the mechanical behavior laws are not linear
+Tb1cd988d6364e9145fa6a76ef7265a17	background_claim 17301 17391	stabilizing the simulation, at the expense of extra numerical damping and slow convergence
+Td7345911115e3a9dcca1f6a1f7b16986	background_claim 17481 17603	Knowledge of the expected state changes between successive time steps are required to perform this approximation correctly
+T8d77e9093a44d8aef6c6e1a04d1767b5	background_claim 17641 17712	one solution is to take the steepest parts of the curves as derivatives
+T212c85ec2bd9fcb71fa71ed5b3d437f5	background_claim 17759 17852	isotropic derivatives considering force evolution equally in any directions may be considered
+T414fd3e8ed745e2873582d005f357c3a	background_claim 18038 18066	A nice solution described in

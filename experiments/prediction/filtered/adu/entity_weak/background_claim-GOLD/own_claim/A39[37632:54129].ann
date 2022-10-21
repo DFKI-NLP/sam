@@ -1,0 +1,14 @@
+Tedaafa6613e1779e6545d1ed9f7c8934	background_claim-GOLD 3349 3399	penalty methods do not enforce constraints exactly
+T1a8d20d47ffbf0940dbb0a12fd5a5870	background_claim-GOLD 3405 3456	they do add some additional stiffness to the system
+T90d971e127fda3f71360852542f1caa3	background_claim-GOLD 4230 4337	an iterative method will generally not enforce the constraints exactly without a large number of iterations
+Tb8d69a9b151b7e4fdc79e1c90ea0dc1e	background_claim-GOLD 8687 8697	CG methods
+Tb2201a1d00a55edbb07eadd2c5f50d22	background_claim-GOLD 8708 8734	require symmetric matrices
+T6fd416416324fd0216f5444a7abaa187	background_claim-GOLD 11663 11695	for information on the CG method
+Tfc0fe0ea10ee105bf6cbcc636b2fe6e5	background_claim-GOLD 13974 14022	Proofs about CG methods are difficult in general
+Tb0f863b2666e87bce5a4ecc7af3493d8	own_claim 3349 3399	penalty methods do not enforce constraints exactly
+T15b631b699c05f31b348f44c53aa52a5	own_claim 3405 3456	they do add some additional stiffness to the system
+Te7bd32a6213a94329df058eb94552261	own_claim 4230 4337	an iterative method will generally not enforce the constraints exactly without a large number of iterations
+T5b477654e4c1aa21c8b7b248f3d9650f	own_claim 8687 8697	CG methods
+T124ca7b12881885fac54408953f40a9f	own_claim 8708 8734	require symmetric matrices
+Tbcb1256bad3e240bab1c856de6591ec7	own_claim 11663 11695	for information on the CG method
+Tb9d38f34d682022fc4e12a5adb34be5c	own_claim 13974 14022	Proofs about CG methods are difficult in general

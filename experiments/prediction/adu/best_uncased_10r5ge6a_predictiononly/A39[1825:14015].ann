@@ -1,0 +1,197 @@
+T2aa7f57723d76ca1fd765865188d68c1	background_claim 37 149	Physically-based cloth animation has been a problem of interest to the graphics community for more than a decade
+Tbe44db08e962a114d99356e39caac9af	background_claim 151 164	Early work by
+T8b65286730d9adea6a5157471a91deea	data 165 183	Terzopoulos et al.
+T642b70bbb4bffcdad986cf3d063f9816	data 186 188	17
+Tf6efdff8055104008522fbb634677bd8	data 195 220	Terzopoulos and Fleischer
+Tf4767655635649b68fdd73bd7cb1809b	data 223 225	15
+T47648dadb5581485cc7a150badbf9af4	data 228 230	16
+T5435afa2c8bf847698e5f5fd4e4d8849	background_claim 234 433	on deformable models correctly characterized cloth simulation as a problem in deformable surfaces, and applied techniques from the mechanical engineering and finite element communities to the problem
+T12525e18e6b043a220f9592f25e9cc0e	background_claim 447 468	other research groups
+T433ac32f92a4541b95f39ac40a1b15d5	data 478 493	Carignan et al.
+Tb147ac0b5eefa4c50801cc7c4e54905c	data 497 498	4
+T3649643f3665c0d7491f3e6034cf232d	data 505 518	Volino et al.
+Tda3c7d5716f7bc93028e465cbc7f2744	data 521 523	20
+T0bca213747f7d63ce368a0ef81e25bc5	data 526 528	21
+Tf47058455d6cfe1cc454ee8de9e797b6	data 533 545	Breen et al.
+Tb1f7ddccd1fb87a3fc7c62d9b4fa3cbd	data 548 549	3
+T51b183402a76ad33329cd7bbcbd0f28b	data 557 573	Eberhardt et al.
+T7c844b7ed450a42e827a0c04b581d823	data 576 577	5
+T13c66ca529e7fb8a0484349a2600e360	background_claim 581 617	have taken up the challenge of cloth
+Tc44f673fd970ae1e42843b4bb20a0a54	background_claim 628 649	specific details vary
+T9430153c3477c33baebe1f857483c188	data 651 677	underlying representations
+T1ade3877df4ded6198b3897cbb510023	data 679 705	numerical solution methods
+Tcf4f5f23931b98cd0afea231214ed421	data 707 726	collision detection
+Tb81e8b5e865679078e9291f4d446ec05	data 731 749	constraint methods
+Tb66bb29e77019aa0df070b329455b1ae	background_claim 758 812	there is a deep commonality amongst all the approaches
+Tac5364bc0387396a309eb77f90a4c167	background_claim 814 997	physically-based cloth simulation is formulated as a time-varying partial differential equation which, after discretization, is numerically solved as an ordinary differential equation
+Tc7eee112757f5f8b040fcc597cba9735	background_claim 1023 1040	ẍ = M −1 − ∂E + F
+Ta83f543ae0baaf9c2011cf6d24646c34	own_claim 1829 1930	we describe a cloth simulation system that is much faster than previously reported simulation systems
+Td5639985897563d1956e595b6d13357b	own_claim 1932 2052	Our system’s faster performance begins with the choice of an implicit numerical integration method to solve equation (1)
+T1ac233f0e1774a27d076cf84ee44c365	own_claim 2082 2159	the use of implicit integration methods in cloth simulation is far from novel
+T59aae3fee929e4636c50dacbdd4ad73a	background_claim 2161 2173	initial work
+T06a9f3aa6e4eee948e49724e73848d80	data 2177 2195	Terzopoulos et al.
+T6d26fe74e529a95e7f4e829f5a6a9ef7	data 2198 2200	15
+T9d3ea0ca7ed704a5c2ec33db2026fdd0	data 2203 2205	16
+T69df0ffaf3fa702ed11ea98a718c63c2	data 2208 2210	17
+Tfd702b8cf59f665a44541328cebf752a	background_claim 2213 2248	applied such methods to the problem
+Tee10cacb8af90c2f08148de5b47e63df	background_claim 2276 2359	research on cloth simulation has generally relied on explicit numerical integration
+T0a2804b1cce29b0170766da6da9acca2	data 2369 2383	Euler’s method
+T9fcce8b4002fba3664b58a55189d934f	data 2387 2406	Runge-Kutta methods
+Tf960b2716596fff3cb101f93fdf7d0a4	data 2408 2433	to advance the simulation
+T5db3921bf1ec6d8a78a42ea4737a5ffd	data 2454 2476	of energy minimization
+Tacfb5d44eb04a3ae4a8a700b11148183	background_claim 2478 2495	analogous methods
+T9e7686c9da376d96161721f416e4c1bc	data 2504 2520	steepest-descent
+T70810bff7e716130b4bf6a4b95b4d182	data 2524 2525	3
+T8350549641b6e781a8cf79c262a2df52	data 2528 2530	10
+T4f6ae6756a80868785ca2c9cd9e13501	background_claim 2534 2553	This is unfortunate
+T4bd8d7384beeee0efe90eb868d460783	background_claim 2555 2673	Cloth strongly resists stretching motions while being comparatively permissive in allowing bending or shearing motions
+T07bb950f3318907865819e0f0ede2a03	background_claim 2675 2743	This results in a “stiff” underlying differential equation of motion
+T3b5958cd91487274599f649832de39a2	data 2747 2749	12
+T108041e10df61d01513f73d7d8197cf5	background_claim 2753 2811	Explicit methods are ill-suited to solving stiff equations
+T2852cc49808b718216e54b20a99223a0	data 2820 2898	they require many small steps to stably advance the simulation forward in time
+T09111dc58a6751f4c4d8045bbb88df89	background_claim 2915 3013	the computational cost of an explicit method greatly limits the realizable resolution of the cloth
+Td052a270affc023eb5d77aa887558107	background_claim 3038 3069	the required spatial resolution
+Tf543ff86e4ed48186852103dcf230363	data 3079 3116	the dimension n of the state vector x
+Td65836402823fd595cb0cb83ecd2ff64	background_claim 3117 3133	can be quite low
+T6bbc3aa893389ef31500eeb556e80bf1	data 3135 3179	a resolution of only a few hundred particles
+T8ba865dd032e70185ffad874fa1bfdb7	data 3184 3196	nodal points
+T299c54c2f6dd7385878005e166fd4adc	background_claim 3241 3258	can be sufficient
+T31f38c0ab01d3efbc203222a589151a4	data 3264 3305	it comes to modeling flags or tablecloths
+Tcadb3062ce2212ade176cccfa15625c9	background_claim 3307 3326	To animate clothing
+T8b1a3aab7123000baa0cb0066a3b6368	own_claim 3355 3428	requires much higher spatial resolution to adequately represent realistic
+Teb8890b3013062724faceed9bed62751	data 3454 3490	wrinkling and folding configurations
+T3d5e2e0291416bcfd57e3daa4d9c9ffe	own_claim 3527 3625	implicit methods for cloth overcome the performance limits inherent in explicit simulation methods
+T080da8c0508e8beffee2697ea2e4143a	own_claim 3627 3841	We describe a simulation system that uses a triangular mesh for cloth surfaces, eliminating topological restrictions of rectangular meshes, and a simple but versatile formulation of the internal cloth energy forces
+Tc503d59e987ac42cc158d104aa0749d6	own_claim 3844 3892	Unlike previous metric-tensor-based formulations
+Tfd99d81b7a4c98dc6efc47106ead1cef	data 3896 3898	15
+T4893144a30fe5c3db166c80d593928ac	data 3901 3903	16
+T2e330c070b52680e9f10eb7d07132f93	data 3906 3908	17
+Ta62dc802f44fc8e40c0ce085d88f8250	data 3911 3912	4
+Tc07027ee3558ba6c13fbd1b71e685c82	background_claim 3916 3987	which model some deformation energies as quartic functions of positions
+T1e2c076e4063afb2f00412bee53318b0	own_claim 3989 4074	we model deformation energies only as quadratic functions with suitably large scaling
+T8a5ff75503950dd3b07b0f3983aad6a7	own_claim 4076 4158	Quadratic energy models mesh well with implicit integration’s numerical properties
+T054bfb8fd86b9894a839e23391f30c71	own_claim 4161 4275	We also introduce a simple, unified treatment of damping forces, a subject which has been largely ignored thus far
+T6ab7867c8e3368903b96c15db4f24c21	own_claim 4277 4419	A key step in our simulation process is the solution of an O(n) × O(n) sparse linear system, which arises from the implicit integration method
+Tfa18b7ba0e1da7cd963071ac76c22afc	own_claim 4423 4501	In this respect, our implementation differs greatly from the implementation by
+Tab165392655c4ad6b05da23e5ea93506	data 4502 4520	Terzopoulos et al.
+Tb8ac5de67a30cf3910baf334070362b8	data 4524 4526	15
+T5ab8a462aa5c1788d542609b4fdee662	data 4529 4531	17
+T1d7c4638d3d7d45bd21de555e9610808	background_claim 4535 4562	which for large simulations
+T40f70bbfde7309dae90de00c80187a30	background_claim 4571 4636	Additional use of implicit methods in animation and dynamics work
+T7acd849147126432aefa93366b19d068	data 4646 4661	Kass and Miller
+T412729188dd42a59b696480556c3cc22	data 4664 4665	8
+T0cb5616045a4b9d44e643831a21dd708	data 4669 4688	Terzopoulos and Qin
+T9ed552007b32b99b2a6db08e335f71d2	data 4692 4694	18
+Tfca911f32cbbd16bbdbb4f92c7e7e63d	data 4702 4704	Tu
+Te869fca72a4373905b4c948a7c41870c	data 4708 4710	19
+Tb060de7c7a72d120970eb918b2cefcf9	background_claim 4728 4832	the number of time steps per frame tends to increase along with the problem size, for an explicit method
+T6df68b9a1383d159227a7f68ded747ae	background_claim 4834 4861	Cloth simulations of size n
+T06dd153f5a4bbf3acd388f12de38b8b2	background_claim 4884 4945	generally require O(n) explicit steps per unit simulated time
+T102494edb0d7d5e115e4b3f13f8facc3	background_claim 4955 4996	the cost of an explicit step is also O(n)
+T98c9f81a8cb827e294f2d13aafb15145	background_claim 5063 5110	explicit methods for cloth require time O(n 2 )
+T51cde6ed872328158aa069903877ab6c	data 5301 5303	12
+T88bcd3da863b6a2e3a2bc239391d2c36	background_claim 5307 5434	An ADI method generates a series of tightly banded (and thus quickly solved) linear systems rather than one large sparse system
+T9c5c55f268b853923123bd9b49e9b8d7	background_claim 5457 5497	is that some of the forces in the system
+T1bc4f1de1cca3436a38c526550096824	data 5498 5584	notably between diagonally-adjacent and non-adjacent nodes involved in self-collisions
+T5b9460069b2e546100ff5142cc33ba42	background_claim 5585 5623	are treated explicitly, not implicitly
+Ta58fa98b1dbdf7471b6419771e72d8be	own_claim 5626 5706	The speed (and ease) with which our sparse linear systems can be robustly solved
+T054b03b1652b58377c5e38fe1377c466	data 5712 5758	for systems involving 25,000 variables or more
+Tc628214498b19c7aca5ce187f0d6be8e	own_claim 5759 5846	has convinced us that there is no benefit to be gained from using an ADI method instead
+T70baacb318e286c8a73bca78ac110ac4	data 5856 5915	ADI methods could be applied to irregular triangular meshes
+Td688f8efad335000e87068484c0eb178	own_claim 5924 6010	regardless of simulation size, we treat all forces as part of the implicit formulation
+T9168aadfc0f4dd8f182d756f0952fab5	data 6021 6044	extremely stiff systems
+Tc316870a9cd1d3478fb9bda200490a62	own_claim 6046 6105	numerical stability has not been an issue for our simulator
+T36bb37777bddea09b065d3324b23033b	own_claim 6166 6336	Much of the performance of our system stems from the development of an implicit integration formulation that handles contact and geometric constraints in a direct fashion
+Tebcb1cf0f760432a9806a089e0955ed2	own_claim 6352 6510	our simulator enforces constraints without introducing additional penalty terms in the energy function E or adding Lagrange-multiplier forces into the force F
+Tecfaba040c4fb2beb18655aeb4f9f1ee	own_claim 6513 6564	This sort of direct constraint treatment is trivial
+T9f510986a7491e394da6303da10e9b91	data 6568 6620	equation (1) is integrated using explicit techniques
+Tc03941a10a7d49e3223a023a85d1735a	own_claim 6626 6661	is problematic for implicit methods
+T08342983eec7efe987e7a58cb4cd4bd0	own_claim 6664 6806	Our formulation for directly imposing and maintaining constraints is harmonious with the use of an extremely fast iterative solution algorithm
+Tbbfd91b5627f140b3683782325b40ad4	data 6807 6851	a modified version of the conjugate gradient
+Ted8394fabe1d646f7600d4011c496ab1	own_claim 6864 6939	to solve the O(n) × O(n) linear system generated by the implicit integrator
+T7c48d872a742ed1821d6789ec8f8d09a	own_claim 6941 7005	Iterative methods do not in general solve linear systems exactly
+T64b13a67135b7e76ff2fbcc8e0dc214c	data 7006 7080	they are run until the solution error drops below some tolerance threshold
+T6933e5ded1877c269d9633446c9ffad0	own_claim 7082 7108	A property of our approach
+T498b77e6094ae75ab338348d61364807	own_claim 7119 7165	is that the constraints are maintained exactly
+Td0f367faf4fe0bcfb794bbbff74bb916	own_claim 7181 7232	the number of iterations taken by the linear solver
+T2ecc933490b3cba927edfd7bb93d267a	own_claim 7248 7387	we introduce a simple method, tailored to cloth simulation, for dynamically adapting the size of time steps over the course of a simulation
+T27e42bc6dc94922659891326c1372e84	own_claim 7389 7480	The combination of implicit integration and direct constraint satisfaction is very powerful
+T9332d0660a523b4d1afc80f33aab1b1c	own_claim 7490 7555	this approach almost always allows us to take large steps forward
+T55f556229c0eb5a8f35efd5a34db1d18	own_claim 7569 7669	most of our simulations require on average from two to three time steps per frame of 30 Hz animation
+Tfe76ce588f2459b1c0a14aba3faabcbd	own_claim 7693 7710	fast moving cloth
+Tef4c35499e8b23b4066dcc09a98433ce	own_claim 7712 7818	The large step sizes complement the fact that the CG solver requires relatively few iterations to converge
+Tcc46fc6dea6e8ea369faaf28714349ff	data 7836 7867	simulating a 6, 000 node system
+T090a5f753c09e9adec5e134d64486f01	own_claim 7869 7973	the solver takes only 50–100 iterations to solve the 18, 000 × 18, 000 linear system formed at each step
+T68d9a081ddfbcf8137634a313996bb9e	own_claim 7989 8083	the running time of our simulator is remarkably insensitive to the cloth’s material properties
+T967a7480cb21b25dfb1c8586b10ad6c8	own_claim 8085 8132	quite the opposite behavior of explicit methods
+Tfa6474e9b12293c70e5f0ca4b0c2f91c	own_claim 8135 8206	All of the above advantages translate directly into a fast running time
+Tc3f232664dce627b2b26cf56b8db267a	own_claim 8222 8261	we demonstrate results similar to those
+T738abdd0021644af71385b18406e05f9	data 8265 8277	Breen et al.
+T669bb67a1273f8202c1600e510239dda	data 8281 8282	3
+T8db5543a2151396562bb429bfa6916f3	data 8289 8305	Eberhardt et al.
+Td896b36cdbad8b222bda1efc0000a395	data 8309 8310	5
+T7f5baddf4d9cd1e7a4981c15134a891c	data 8314 8343	draping of a 2,600 node cloth
+Tb56e0af3bf978286a86afde83156b033	own_claim 8490 8589	exhibiting complex wrinkling and folding behavior on both key-framed and motion-captured characters
+T004584a6041166fbf5a3f4907f51bfad	data 8738 8762	a shirt with 6,450 nodes
+T257be55f14cba9800cd9af98afc3295d	data 8963 8965	15
+T3dc87f582bf1446094d979401f03b8ff	data 8968 8970	17
+Tea0d045c705190cbef925f11c19408dc	background_claim 8974 9013	discretized cloth as a rectangular mesh
+Td046c0937406feb9a695e879ac60e521	background_claim 9015 9074	Energy functions were derived using a continuum formulation
+T14cda858d3bdad7ab50f2480ca862ff8	background_claim 9076 9124	This work recognized the need for damping forces
+T889e20cde4151ab702df73078a9a3e57	background_claim 9135 9181	only a simple viscous drag force −k x was used
+T8a2788e40bb1bd33e7aebf0dfcdf9fef	background_claim 9183 9311	The linear systems result- ing from the use of implicit integration techniques were solved, for small systems, by direct methods
+T908585686470e108a1112e5ba4e407a4	data 9320 9342	Choleski factorization
+T66a562a6100b19ede3a65bcd5ad15bd5	background_claim 9347 9373	using iterative techniques
+Tf6988b6c37581d17b93bdab7571068f5	data 9382 9405	Gauss-Seidel relaxation
+T917c4fb1e2e97f517faa9be758177c73	data 9409 9428	conjugate gradients
+T16c80923b3b1b6dd32064efb947eba8c	data 9435 9463	a square √ system of n nodes
+Taceea4b834439cf35fba5e68bc0d2427	background_claim 9465 9508	the resulting linear system has bandwidth n
+T7296c6e8908f4cceaee083e920d0b75b	background_claim 9524 9553	banded Choleski factorization
+Ta7d1ee8690cf24689409863102f81e7f	data 9557 9558	6
+T4ddd1656cf213e228dd85ee4ae1060c9	background_claim 9561 9582	requires time O(n 2 )
+Tbb58265da85b0c65ad64e592d644d508	background_claim 9610 9683	Terzopoulos et al. made use of an ADI method for larger cloth simulations
+Tc5dcd310a0fbf638cc8aa1f88ece46d8	background_claim 9685 9748	Following Terzopoulos et al.’s treatment of deformable surfaces
+Ta143f93a07c71abd8151562c61544d95	data 9758 9773	Carignan et al.
+Taf2c3ea13822957bada9477d522a3a6b	data 9777 9778	4
+T0f429ba959f069e0bcf14102feada186	background_claim 9782 9896	described a cloth simulation system using rectangular discretization and the same formulation as Terzopoulos et al
+Td07fd53d6504b4301d5e0c13abcdfb77	background_claim 9898 9927	Explicit integration was used
+T86c53378a547b1d40a23b1fdea935b99	background_claim 9956 10039	the need for damping functions which do not penalize rigidbody motions of the cloth
+T29deb68da8ed04d2baacddf984c1deef	background_claim 10077 10131	they added a force which damps cloth stretch and shear
+T197e5b6318bacc6e897603072e4b6183	background_claim 10148 10176	Later work by the same group
+T461b21a637ce223b9935f50616697254	data 10202 10204	20
+Tc271f683629f87b6799675803430b23e	background_claim 10209 10288	which focuses mainly on collision detection/response and uses a triangular mesh
+T493eb8ffd39fd3225fbf5b07b68b749f	background_claim 10290 10326	no mention is made of damping forces
+Tb0e2bd72aebed0fb1c57a66770803996	background_claim 10328 10363	The system uses the midpoint method
+T6f1e74a9eb34a3e62811832b727f136c	background_claim 10385 10410	to advance the simulation
+Tde7ffb2cc3eaafb6c4bcc8b341856464	background_claim 10422 10456	the accumulated work by this group
+T8e4026e0c0510de6c92182e52927988b	data 10462 10475	Volino et al.
+Tb5b26ebf9e3730dd716476410f5b2e1a	data 10479 10481	21
+T46a16bc923ea23d16978f406b83628ed	background_claim 10501 10588	gives the only published results we know of for simulated garments on moving characters
+T4d7e4d30c81bc9f97edb24bdeb4fa702	background_claim 10590 10679	Reported resolutions of the garments are approximately two thousand triangles per garment
+T0f84997766d59dace30945ef28500285	data 10712 10714	21
+Ta2877ba0e3b01302b520817840839a07	background_claim 10718 10816	with running times of several minutes per frame for each garment on an SGI R4400 150 Mhz processor
+Tbea8e04fd1f94df4bc93dc4d64098003	data 10818 10830	Breen et al.
+Tcefbaec39ae5e59bc5ea51200fdcefa1	data 10833 10834	3
+Tbc8f1e3f9c84f5cb6a24b095cf555ba1	background_claim 10838 10977	depart completely from continuum formulations of the energy function, and describe what they call a “particlebased” approach to the problem
+Tf1b3025db89beb8ea387e5ce36c6b55f	background_claim 10979 11032	By making use of real-world cloth material properties
+T9a0cdb9360085c81f58680b82f9e626c	background_claim 11065 11193	they produced highly realistic static images of draped rectangular cloth meshes with reported resolutions of up to 51 × 51 nodes
+T3f673c954d48be39d22624350d6c56a8	own_claim 11195 11271	The focus of this work is on static poses for cloth, as opposed to animation
+T14bd6844a35e8c217c307af615d84ea7	background_claim 11279 11344	their simulation process is best described as energy minimization
+Tf073f28572187e7fd8ef827899848272	background_claim 11355 11401	methods analogous to explicit methods are used
+T67d97e8e0338195217f9f017e06b1aae	own_claim 11403 11446	Speed was of secondary concern in this work
+T5821cfa06f3badcf5c43fefa5ce4fcb3	data 11463 11479	Eberhardt et al.
+Tffe66215b7ff4777137ecc82d904d811	data 11482 11483	5
+T6b8aa56315000ac747c89bc53384f9c3	background_claim 11496 11573	the use of higher-order explicit integration methods and Maple-optimized code
+Tcc1ae4d634032d8eacd5aeacc999864d	background_claim 11586 11632	a dynamic, not static treatment of the problem
+T512efa86a62e7f2be633a42d068f647d	background_claim 11633 11667	obtain similarly realistic results
+T3e4f516b1b56e0a25a97ed7231ed7fef	background_claim 11675 11773	dropping the computational cost to approximately 20–30 minutes per frame on an SGI R8000 processor
+T0c582a17f820e5e2075b649ded7dfe32	background_claim 11775 11810	No mention is made of damping terms
+Td0e24fb4e887758708fca8b650ff19a4	background_claim 11812 11818	Provot
+T48f057f659263d217d1fb93224191db6	data 11821 11823	13
+Tccd84f0d0f61ccf93130d7aaa4ca4a42	background_claim 11827 11930	focuses on improving the performance of explicit methods by a post-step modification of nodal positions
+T7c08eb0023f9aea4f0ffcba79b3241cf	background_claim 11932 12000	He iteratively adjusts nodal positions to eliminate unwanted stretch
+T33287d0956efa4089606b7ab94e6efa7	background_claim 12002 12055	the convergence properties of this method are unclear
+Te9f45d086d56c85f451d24ddc1effde2	background_claim 12057 12142	A more comprehensive discussion on cloth research can be found in the survey paper by
+Tdbb54910b78d62a5252be68ef084dfaf	data 12143 12159	Ng and Grimsdale
+T0d65fe2e3d0e250e7267eb1df0a0de71	data 12163 12164	9
+

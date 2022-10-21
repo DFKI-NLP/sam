@@ -1,0 +1,8 @@
+T42c4e601b63cb26e7168b0681f500ec8	background_claim-GOLD 2082 2159	the use of implicit integration methods in cloth simulation is far from novel
+T2e00f70e2591c51ca212aa5717350718	background_claim-GOLD 3355 3428	requires much higher spatial resolution to adequately represent realistic
+T9047ee917c3e77ee7226c08f041d9594	background_claim-GOLD 6941 7005	Iterative methods do not in general solve linear systems exactly
+T6b3457cc08e149ed549ac40368b75e78	background_claim-GOLD 11403 11446	Speed was of secondary concern in this work
+T1ac233f0e1774a27d076cf84ee44c365	own_claim 2082 2159	the use of implicit integration methods in cloth simulation is far from novel
+T8b1a3aab7123000baa0cb0066a3b6368	own_claim 3355 3428	requires much higher spatial resolution to adequately represent realistic
+T7c48d872a742ed1821d6789ec8f8d09a	own_claim 6941 7005	Iterative methods do not in general solve linear systems exactly
+T67d97e8e0338195217f9f017e06b1aae	own_claim 11403 11446	Speed was of secondary concern in this work

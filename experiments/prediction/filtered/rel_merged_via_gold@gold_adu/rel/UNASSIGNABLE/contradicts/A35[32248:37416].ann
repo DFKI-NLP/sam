@@ -1,0 +1,6 @@
+T261da21511c2851fd76c1d14e40aea4a	own_claim 2435 2568	These artifacts are still augmented by the approximations made to the Hessian matrix, possibly in the purpose of reducing instability
+Ta2be8d6f3892eacf34b48505f646acc0	own_claim 2576 2683	excessive reduction of the Conjugate Gradient iterations produce additional inaccuracy and slow convergence
+T3a22a3cf1dcbadbb2438badce76395b0	own_claim 2244 2307	playing back the generated animation, artifacts quickly show up
+T16ec1fdddf8dc913e9d1b64f4f828988	own_claim 2111 2233	Their stability gives a false sense of efficiency, allowing obtaining quickly a result by “cheating” on the time step size
+Rd365b4efc967abeed0a030bd1b568b71	contradicts Arg1:T16ec1fdddf8dc913e9d1b64f4f828988 Arg2:T3a22a3cf1dcbadbb2438badce76395b0
+Ra63ff44081df318d7638b3c3553ac59d	contradicts Arg1:T261da21511c2851fd76c1d14e40aea4a Arg2:Ta2be8d6f3892eacf34b48505f646acc0

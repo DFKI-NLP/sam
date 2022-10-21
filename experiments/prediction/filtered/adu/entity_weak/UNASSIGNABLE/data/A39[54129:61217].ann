@@ -1,0 +1,6 @@
+Teaa10a092253299322baf9ee9eea11a6	data 390 431	a previous known legal state of the cloth
+Tf51b5f0f54a246393bd55f818c957f58	data 668 669	1
+T986409f32f874625a1a56b24b3e45918	data 712 758	collisions between a cloth vertex and triangle
+T6d16abc7f73228feff4faa47e65e18c1	data 763 791	two cloth edges are detected
+T3d3c0699f0e2b3500f3ac5d074f9b5c1	data 2852 2887	continue to enforce that constraint
+T86d9215836a2dcfba067470175facb41	data 3795 3867	using a multi-step differential equation solver which expects continuity

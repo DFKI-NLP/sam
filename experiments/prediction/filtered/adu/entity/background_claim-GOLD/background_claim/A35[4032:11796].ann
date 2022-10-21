@@ -1,0 +1,14 @@
+T8c86b5a3c0678c10bc9a9384d0d40f06	background_claim-GOLD 1224 1259	the methods requires to compute one
+T3229151ade1a0cd699150ca471706483	background_claim-GOLD 1261 1402	The literature is abundant about various integration methods which aim to solve linear systems of first-order ordinary differential equations
+T9f76774af568076fc1dd250c6981442d	background_claim-GOLD 2063 2225	Low-order methods, which use a reduced number of evaluations for computing simple low-order extrapolations, leading to quickly computed, but inaccurate iterations
+T0fafd2db06e1e0eb70c649fe17409948	background_claim-GOLD 3468 3567	It requires five mechanical derivations per iteration, as well as five storages of the state vector
+T50f591279c76920427c551a0ea35a584	background_claim-GOLD 3678 3709	This method was experimented in
+T667739a12101076edf26becd7912017e	background_claim-GOLD 3739 3836	The Backward Euler method, which is the implicit implementation of its simple forward counterpart
+T470e2bb91a24da1f1e2d70bab7721ab1	background_claim-GOLD 3838 4045	It requires one mechanical evaluation and the resolution of a sparse linear system per iteration, as well as one storage of the system state additionally to those required for the system resolution algorithm
+T25d20c24872ce72c61c13f9862d69900	background_claim 1224 1259	the methods requires to compute one
+Tb1f3758f89120aea1938d9d028e4e1ea	background_claim 1261 1402	The literature is abundant about various integration methods which aim to solve linear systems of first-order ordinary differential equations
+T08b8b8107b68b3ed7796d00b4ef8b42d	background_claim 2063 2225	Low-order methods, which use a reduced number of evaluations for computing simple low-order extrapolations, leading to quickly computed, but inaccurate iterations
+T8d2b35a390e265e13a27717da05bc2c1	background_claim 3468 3567	It requires five mechanical derivations per iteration, as well as five storages of the state vector
+Tfe0c5be2f562b358c4af57f5f359f908	background_claim 3678 3709	This method was experimented in
+T0f58a927cb624bd9fb40f92cc4fc8869	background_claim 3739 3836	The Backward Euler method, which is the implicit implementation of its simple forward counterpart
+Teb6181e538cdb4b0a6389ab6fc739e9f	background_claim 3838 4045	It requires one mechanical evaluation and the resolution of a sparse linear system per iteration, as well as one storage of the system state additionally to those required for the system resolution algorithm

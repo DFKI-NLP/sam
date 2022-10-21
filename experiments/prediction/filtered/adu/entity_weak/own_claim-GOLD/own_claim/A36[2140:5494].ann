@@ -1,0 +1,16 @@
+T678ef7592b59e5ea908caf4e4eebc22d	own_claim-GOLD 422 617	This paper aims to solve this problem by introducing new techniques to measure complete cloth behavior under controlled conditions and to estimate cloth deformation models from these measurements
+T4ed9b5bd95bc08aede2817547e66b15c	own_claim-GOLD 1316 1500	The contributions of this paper are, first, a new, general system for observing cloth properties that measures more complete data than previous work in cloth capture or textile testing
+Tc81e41309aa8a1a51d9765c486c8e6a6	own_claim-GOLD 1506 1577	second, a new method for fitting parametric models to this type of data
+T58a3c9029516728f7e3d350e8c575c5f	own_claim-GOLD 1941 2028	Having deformation and force information makes our data well suited to model validation
+Tb48cb6b348601e0f3dc4aa66c7e65ecd	own_claim-GOLD 2126 2155	we do not need uniform strain
+T227e32d9c505899e7917e64b1f8b0a16	own_claim-GOLD 2282 2441	Our approach to model estimation is to numerically optimize nonlinear stress-strain curves to minimize errors in force and position compared to the measurement
+T718664c6a0df88cc25e9909f81cf37df	own_claim-GOLD 2443 2601	We have designed a general fitting method, suited for the vast majority of existing cloth models, that leverages equilibrium conditions to guide the iteration
+Te9cfdf021f3e2848e2f202f193fe89fe	own_claim-GOLD 2603 2772	By estimating model parameters under a sequence of deformations of increasing complexity, we alleviate problems with convergence in the presence of abundant local minima
+T18abb85011b30063c1fe2d467e58e52f	own_claim 422 617	This paper aims to solve this problem by introducing new techniques to measure complete cloth behavior under controlled conditions and to estimate cloth deformation models from these measurements
+T0c4bc3422195c1f8c875121beaa7f4cb	own_claim 1316 1500	The contributions of this paper are, first, a new, general system for observing cloth properties that measures more complete data than previous work in cloth capture or textile testing
+T93272b7f27cff17bbfeb0912332a73bf	own_claim 1506 1577	second, a new method for fitting parametric models to this type of data
+Tfe2b6c8cd9a7081ac9ec2bcaadacca04	own_claim 1941 2028	Having deformation and force information makes our data well suited to model validation
+T7fc8ebf239653d51c38411ef75835fbd	own_claim 2126 2155	we do not need uniform strain
+Tbcc5c42af12a20361ddafc893a4a1e2c	own_claim 2282 2441	Our approach to model estimation is to numerically optimize nonlinear stress-strain curves to minimize errors in force and position compared to the measurement
+T75df6d5fc625614c28fa8917566929db	own_claim 2443 2601	We have designed a general fitting method, suited for the vast majority of existing cloth models, that leverages equilibrium conditions to guide the iteration
+T12fd4582606fde35cc61411778b49681	own_claim 2603 2772	By estimating model parameters under a sequence of deformations of increasing complexity, we alleviate problems with convergence in the presence of abundant local minima

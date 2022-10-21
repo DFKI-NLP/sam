@@ -1,0 +1,12 @@
+Tf88aca401db6cac21fe2ea4a6293bed7	data 787 937	Using the stiffness parameters in figure 1 as a reference, we ran the simulation with those bend stiffnesses multiplied by 0.1, 1.0, 10, 100 and 1,000
+Tf1fcbf0d15cf32dfe84e091e58288f4a	own_claim 986 1032	The variance in the running times was under 5%
+Tafa987d7a538d94e2b630111970a61d8	own_claim 1034 1123	We doubt that simulators based on explicit integration methods could make a similar claim
+Tecc9ecfabcabeaf373df943cafcfd156	data 1234 1350	We ran the simulation in figure 1 with cloth resolutions of 500, 899, 2,602 (shown in figure 1 ) and 7,359 particles
+T80764f7a6f5b1b366ed8b82df11069ec	data 1352 1472	The running times were, respectively, 0.23 seconds/frame, 0.46 seconds/frame, 2.23 seconds/frame, and 10.3 seconds/frame
+Te588656c23b160438954bc96bc4c6f9b	own_claim 1474 1602	This is slightly better than O(n 1.5 ) performance, which is in line with the convergence rates of the conjugate gradient method
+T1a204037f3f2780bf0dd7c0023d96f9d	data 1605 1607	14
+Td9241f311be9be0cdc43f2c70458872c	own_claim 1610 1643	for systems such as equation (18)
+R9bcf0e9acb6e5ffad5c0a3b674a61abc	supports Arg1:Tf88aca401db6cac21fe2ea4a6293bed7 Arg2:Tf1fcbf0d15cf32dfe84e091e58288f4a
+R90cd7b762878a74fc4d4d9fa1f31bb2c	parts_of_same Arg1:Te588656c23b160438954bc96bc4c6f9b Arg2:Td9241f311be9be0cdc43f2c70458872c
+Re766e5fe2ef1a63c75accdbe76197a58	supports Arg1:T1a204037f3f2780bf0dd7c0023d96f9d Arg2:Te588656c23b160438954bc96bc4c6f9b
+Rdac5cab1377244567f19ff5ff7900563	supports Arg1:Tecc9ecfabcabeaf373df943cafcfd156 Arg2:T80764f7a6f5b1b366ed8b82df11069ec

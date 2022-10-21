@@ -1,0 +1,74 @@
+<H1>3 Collision Resolutions</H1>
+        Numerous approaches 
+[ 14 , 12 , 3 , 15 ] have been introduced for cloth collision resolution: the correct next positions and velocities of colliding cloth particles. So far, however, no cloth collision resolution method which considers cloth-cloth momentum conservation has been introduced, while we cannot achieve realistic cloth interactions in cloth animation without conserving cloth-cloth momentums. Having this characteristic is visually distinctive when cloth surfaces are moving fast and interact with each other. 
+For rigid N-body collisions by graphics and robotics groups 
+[ 11 , 1 , 10 , 9 ] and for flexible-rigid collision resolution 
+[ 2 ], several approaches have been suggested. But they are not directly applicable for deformable N-body collision resolutions, which is the case cloth requires. Cloth resolution methods so far compute non-penetrating positions, velocities or accelerations of particles 
+[ 14 , 3 , 15 ]
+, which work fine for the collisions against fixed bodies. Using these methods, however, we cannot achieve visually satisfying dynamics of cloth-cloth collisions. Adjusting particle orientations after collision resolution as suggested by 
+[ 14 ]
+ to sustain the geometrical consistency of colliding faces also does not warrant reasonable dynamic movements of cloth-cloth collisions. Handling collisions in an IZ as a bundle, proposed by Provot 
+[ 12 ]
+, also does not give a proper visual effect. Since all particles are given the same velocities after collision resolution, particles tend to get stuck once they collide into each other in an IZ. We propose our cloth collision resolution method which resolves simultaneous collisions while ensuring conservation of momentum as accurately as possible. Since simultaneous resolution does not blindly resolve a collision without considering neighboring collisions within an IZ, we do not introduce any new collisions while resolving a collision. The collision resolution module receives collision information as a set of IZs as described in Sec. 2.2. Within an IZ, where possibly multiple collisions reside, collisions are resolved simultaneously as described in Sec. 3.4. After we handle each IZ separately, we check whether any new collisions between IZs are introduced by collision resolutions, and handle them if there are any. In an IZ, we first check whether it has CCs from rigid bodies. In case we do not find any CCs from rigid bodies, the collisions in that IZ are categorized as cloth-cloth collisions. If we find CCs from rigid bodies in an IZ, we extract them temporarily from the IZ so that only cloth-cloth collisions remain in the IZ. After resolving these cloth-cloth collisions, we take care of cloth collisions against rigid bodies so that the resolutions against rigid bodies will be done on top of the result of self-collision resolutions. This sequence of resolutions is chosen to avoid the case where self-collisions are ignored while collisions against rigid bodies are handled.
+        
+          <H2>3.1 Single Collision Cluster in an IZ</H2>
+          
+            
+            Figure 2. Segmenting a Collision Cluster into parts
+          
+          For some cases, an IZ has only one CC (for example, in the case of extreme bending). When an IZ has only one CC, we cannot handle the particles in that CC as a bundle as usual. Since the particles in that CC will stick together after resolution, the movements of cloth would not be natural and satisfactory. Hence we divide one CC into parts so that we can find proper collision responses within these parts. Segmenting one CC into parts is performed by identifying border edges. A border edge is an edge where we identify a “significant” bending between two faces adjoining in that edge. Empirically and N 2 is identified a bending as between significant two when faces N 1 with N 2 face 0 normals . EliminatN 1 ing the particles in the border edges segments a CC into several sub-CCs as shown Fig. 2 .
+        
+        
+          <H2>3.2 Merging Multiple CCs in an IZ</H2>
+          
+            
+            Figure 3. Merging Collision Clusters
+          
+          When an IZ has three or more CCs, we reduce the total number of CCs by merging closely located CCs. This merger is performed to prevent undesirable collision resolution. If CCs are closely located, it means the cloth patches represented by these CCs are closely located. We do not want to handle closely located CCs separately since it might instantly introduce instabilities to the system by allowing closely located CCs to have different velocities. However, there is an exception. When we find a significant bending between these closely located CCs, we have to resolve collisions between these CCs by handling them separately. Bending between CCs is considered significant in the same way as in the case of bending between faces. We do not want to handle closely located CCs separately except for the case where the bending is significant (CCs are considered to be closely located heuristically when they can be connected using at most two edges which are not members of both CCs). Hence the candidates of the CC merger are the CCs closely located, where we do not witness any significant bending between the CCs. Fig. 3 shows this merging process. After merging, we still possibly have more than two CCs. Multiple CC collision resolution is discussed at length in Sec. 3.4.
+        
+        
+          <H2>3.3 Collision resolution for two CCs</H2>
+          
+            
+            Figure 4. Determining the colliding direction. Showing two different colliding directions where the solid arrow shows the direction computed by CC face normals and the dotted arrow shows the direction computed by connecting centers of masses of CCs.
+          
+          By definition, an IZ is a set of CCs. Since we pre-processed a single CC IZ previously, we assume an IZ always has two or more CCs. The important part of the collision resolution of these multiple CCs is to find the proper directions of collisions. Collision direction is a direction to which two CCs collide into each other. Since the velocities of CCs after collision are computed based on this collision direction, finding the correct collision direction is important to achieve proper visual effect of collisions. In the case of the two billiard ball collision, the collision direction is computed by connecting the two ball centers of mass. But in cloth-cloth collisions, connecting two centers of CC masses is not a proper way to decide the collision direction. We choose the collision direction to be the average direction of the two face normals of colliding CCs. To have the proper average direction, the CC face normals, N 1 and N 2 , have to be properly signed as N 1 N 2 0 . The face normal of a CC is the average normal of all faces in the CC. Fig. 4 shows two different colliding directions between two collision clusters CC1 and CC2; one by the average face normal and the other by connecting centers of masses. We handle a CC as a sphere mass where the diameter of the sphere reflects the minimum proximity region. This approach serves us well empirically. The velocity of a CC is defined as the average velocity of all particles in that CC.
+        
+        
+          <H2>3.4 Simultaneous collisions</H2>
+          When we have collisions of three or more CCs in an IZ, it is not straightforward to resolve the collisions. As has been discussed in multiple collisions of rigid bodies, we can think of two ways to solve this multiple cloth collision problem. One way of resolving these multiple collisions is to handle them as staggered collisions [ 11 , 10 ]; the other way is to handle them as simultaneous collisions 
+[ 1 ]. 
+
+The staggered collision approach handles multiple collisions as a series of single collisions 
+[ 11 ] or desynchronized groups of collisions 
+[ 10 ]. The simultaneous collision approach treats multiple collisions as simultaneous collisions within a time-step. The staggered collision approach gives us a more physically correct solution than the other. In the synchronized staggered collision method, we have to find the first collision among multiple collisions. After we resolve it, we march the time step until we find the next collision. Then we repeat the same procedure. This whole process is not only computationally expensive but also we have to consider the possibility that the resolution of a collision can create new multiple collisions, which we have to employ another strategy to resolve. In the desynchronized staggered collision method, we identify groups of collisions, and redefine the integration front-end by allowing time desynchronization. In addition to the substantial computational expense and complexity, the visual advantage of those staggered methods is not considered significant compared to that of the simultaneous collision method. The simultaneous collision handling method, proposed by Baraff 
+[ 1 ]
+, resolves multiple rigid body collisions by solving a system of linear inequalities, where the system of linear inequalities is based on the colliding relationships between rigid objects. As we treat CCs as mass balls, we adapt this approach for the cloth after collision body If collision, N i before is resolution the number collision, given problem. v i of , , and colliding we have v A i + CC is to bodies, the is find considered velocity v v i + i , for is the of all as the velocity i a 1 body. same i of body N the . When CC bodies are considered as vertices, an edge exists between two vertices where the bodies represented by those two vertices collide. We call the resultant graph a collision graph. When the collision graph of an IZ has a loop, we call the collisions in the IZ cyclic. When N bodies are colliding without having any cyclic collision, we can build a system of N , 1 linear equations based on the changes of relative velocities of each colliding pair, such as
+          
+            1
+            v i;j + = , C e v i;j ,
+          
+          and pair where CC after CC j collision, before i is the collision, i th and CC, C e v v is i;j i;j , + an is is elastic the the relative relative coefficient. velocity velocity of of the the same CC i In addition, the law of N-body momentum conservation says,
+          
+            2
+            m 1 v 1 + + m 2 v 2 + + + m N v N + = m 1 v 1 , + m 2 v 2 , + + m N v N , :
+          
+          all v Using i + for eq. 1 1 i and N 2, . we can deterministically find the solution of Since we use swept-volumes of faces to detect collisions, we handle fast moving cloth and rigid body objects. However a problem arises when collision resolutions of an IZ create new collisions against objects around the IZ. This happens when objects do not move fast enough to penetrate objects outside an IZ, but just fast enough to make the result of collision resolutions penetrate the proximity region of objects outside the IZ. To our relief, this case appears to be very rare. However we can resolve this case by maintaining the barycentric relationship between cloth surfaces and the newly introduced colliding entities. Apparently, in the worst case, this involves repetitious processes as we may introduce other new collisions when we resolve the current collisions.
+          
+            <H3>3.4.1 Cyclic Collisions</H3>
+            For the special case where we observe cyclic collisions in an IZ, we build a system of linear inequalities based on the collision rela- tionships between grouped particle parts. We find the feasible solution of the linear inequality system, while trying to minimize the energy we introduce into the simulation artificially. If an IZ has cyclic colliding relationships between CCs, we have N or more linear inequalities such that
+            (3)
+            where the notations are as in eq. 1. This inequality relationship between the relative velocities before and after collision is an artificial relationship set up heuristically, not based on physics. This inequality relationship, first used for rigid body multiple collisions 
+[ 1 ]
+, appears to serve the graphical purpose well. mize When the difference we solve this between system v i;j + of and inequalities, , C e v i;j , , which we want would to minirepresent the extra energy we introduce into the system. Hence, we define an objective function, X
+            (4)
+            to be minimized when we solve the system. The system of inequalities with an objective function can be solved using a Linear Programming Method.
+          
+        
+        
+          <H2>3.5 Moving and Fixed Rigid Bodies</H2>
+          If an IZ has CCs from rigid bodies (rigid CCs) along with CCs from cloth (cloth CCs), the collision resolutions against rigid bodies are performed after cloth-cloth collisions are resolved. When an IZ has rigid CCs, collision responses are different based on whether rigid CCs are moving or fixed or a mixture of both. If the rigid CCs in an IZ are all fixed, we handle particles in that IZ individually. Where N face is the normal of a rigid face, V is a particle velocity, V normal and V tangential are the normal and tangential components of V with respect to the rigid face, particles are considered separating if V normal N face 0 . Particles are ignored if they are not in the vicinity of a face in fixed rigid CCs, where the size of vicinity is the thickness of cloth. Furthermore, particles separating from the rigid bodies are also ignored. The new particle velocity V new is , C e V normal + C f V tangential , where C e is an elastic coefficient and C f is a frictional coefficient. If the rigid CCs in an IZ are all moving, we handle particles as a bundle as long as particles are in the vicinity of moving rigid CCs. We find the x and the velocity V rigid of a moving rigid CC, where V rigid is defined as the translational velocity of the center of mass of the moving rigid CC. Then the positions of all particles we have to handle will be incremented by x and the velocities of the particles will be updated as V rigid . If an IZ has both moving and fixed rigid CCs along with cloth CCs, collision resolutions against rigid bodies are done based on the proximities of particles to the rigid CCs. Cloth collision resolutions against rigid CCs will be computed based on the closest rigid CC. Collisions between rigid bodies (rigid-rigid) have to be handled independently from cloth collisions.
+        
+      
+      
+        

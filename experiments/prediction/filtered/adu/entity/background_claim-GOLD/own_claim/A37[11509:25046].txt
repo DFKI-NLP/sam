@@ -1,0 +1,72 @@
+<H1>4 Constrained Dynamics</H1>
+        Given a quadrilateral mesh with n vertices and m edges, the numerical integration algorithm for constrained dynamics can be developed directly from the augmented Lagrange equation 
+[Marsden 1999], L(x, v) = 1 v T Mv −V (x) − C(x) T λ , 2 where x(t) is the time-varying 3n-vector of vertex positions, v(t) = x(t) is its time derivative, M is the 3n × 3n mass matrix, and V (x) is the stored energy (e.g., bending, shear, and gravity). C(x) is the m-vector of constraints, with the i th entry corresponding to the violation of inextensibility of the i th edge, as computed by (1); λ is the m-vector of Lagrange multipliers. The corresponding EulerLagrange equations are
+        
+          4
+          M v = −∇V (x) − ∇C(x) T λ , C(x) = 0 ,
+        
+        where ∇ ≡ ∇ x is the gradient with respect to position, and −∇V (x) is the potential force. The term −∇C(x) T λ may be viewed as the constraint-maintaining force, where the factors −∇C(x) T and λ determine the direction and scaling for the force, respectively. ∇C(x) is a rectangular matrix whose dimensions are m × 3n. For simulation, we must discretize (3) and (4) in time using one of various schemes, each with benefits and drawbacks. One may choose differing explicit or implicit schemes for the potential and the constraint forces (similarly, potential forces are split and separately discretized in [Ascher et al. 1997]). The discrete equations replace x(t) and v(t) with {x 0 , x 1 , x 2 , . . .} and {v 0 , v 1 , v 2 , . . .}, where x n and v n are the position and velocity of the mesh at time t = nh, and h is the size of the timestep. One widely-used family of discretizations includes SHAKE and RATTLE, which extend the (unconstrained) Verlet scheme 
+[Hairer et al. 2002] by considering a constraint force direction, −∇C(x) T , evaluated at the beginning of the timestep. Unfortunately, enforcing length-preserving constraints with SHAKE fails for four common geometric configurations, which we refer to as (Q1)–(Q4) and depict in Figure 2 . This figure is a reproduction from [Barth et al. 1994]
+, which discusses these drawbacks in SHAKE but does not offer a solution. In the figure, solid and hollow dots represent edge endpoints at the start and end of the timestep, as the particles would evolve if no constraints were applied. If the constraint direction, −∇C(x) T , is evaluated at the beginning of the timestep, x n , as in SHAKE, then no scaling, λ , of the constraint direction yields a satisfied end-of-timestep constraint, C(x n+1 ) = 0. Numerically, for (Q2)–(Q4) this observation manifests as a singular Jacobian in Newton’s method. These four cases correspond to rapid change in edge length or orientation; in practice, they occur often.
+        (Q1) (Q2) (Q3) (Q4)
+        
+          Figure 2: Failure modes of methods using an explicit constraint direction. Reproduced from a discussion of SHAKE in [Barth et al. 1994].
+        
+      
+      
+        <H2>4.1 Implicit constraint direction (ICD)</H2>
+        Consider evaluating the constraint direction, −∇C(x) T , at the end of the timestep. We observe (and prove in Appendix A) that this resolves (Q1), (Q2) and (Q4); (Q3) remains, but is automatically remedied by decreasing the timestep. Consider the ICD timestep, which treats potential forces explicitly 1 : v n+1 = v n − hM −1 ∇V (x n ) + ∇C(x n+1 ) T λ n+1 , x n+1 = x n + hv n+1 , C(x n+1 ) = 0 . Define x 0 n+1 =x n +hv n −h 2 M −1 ∇V (x n ), i.e., x n+1 0 is the position at the end of an unconstrained timestep; define δ x n+1 = x n+1 − x 0 n+1 , i.e., δ x n+1 is the correction of the unconstrained step. Next, eliminate v n+1 by rewriting the above system as two equations, F( δ x n+1 , λ n+1 ) = 0 and C(x n+1 ) = 0, in the free variables δ x n+1 and λ n+1 , keeping in mind that x n+1 is a linear function in δ x n+1 , and defining F( δ x n+1 , λ n+1 ) = δ x n+1 + h 2 M −1 ∇C(x n+1 ) T λ n+1 . F( δ x n+1 , λ n+1 ) and C(x n+1 ) are the residuals of the discretization of (3) and (4), respectively. In particular, F measures the deviation 1 For an implicit treatment, write ∇V (x n+1 ) in place of ∇V (x n ). of the trajectory away from that dictated by the governing (potential and constraint) forces; equivalently, it states that the correction of the unconstrained step is due to the constraint forces. C measures the deviation from the constraint manifold (in our case, the extensibility of the material). To implement ICD, we solve for the roots of F and C up to a desired tolerance using Newton’s method. Solving for an ICD step is costly, because there are many unknowns (≈ 5n), and each Newton step requires the solution of an indefinite linear system, whose matrix is costly to assemble. In §4.3, we develop an approximation to ICD that addresses these drawbacks without sacrificing constraint accuracy or robustness. To arrive at this fast projection method, the following section considers ICD from an alternative, geometric viewpoint.
+      
+      
+        <H2>4.2 Step and project (SAP)</H2>
+        Consider for a moment an alternative approach to constrained integration in two steps: (a) step forward only the potential forces to arrive at the unconstrained position, x n+1 0 ; (b) enforce the constraints by projecting onto the constraint manifold M = {x n+1 |C(x n+1 ) = 0}. Methods of this form are known as manifold-projection methods 
+[Hairer et al. 2002]. To define a specific method, we must choose a projection operator. In the method we refer to as SAP, we write the projection of the unconstrained point onto the constraint manifold as x n+1 0 + δ x n+1 , so that the projected point extremizes the objective function W ( δ x n+1 , λ n+1 ) = 1 ( δ x n+1 ) T M( δ x n+1 ) + C(x n+1 ) T λ n+1 , 2h 2 with respect to the free variables δ x n+1 and λ n+1 . Simply put, we choose the point on the constraint manifold closest to x n+1 0 . To define closest, we need a measure of distance. Take M as the physical mass matrix (usually arising from a finite-basis representation of x and a surface mass density). Then the choice ( δ x n+1 ) T M( δ x n+1 ) corresponds to the L 2 norm of the mass-weighted displacement of the mesh as it moves from x 0 n+1 to x n+1 . Formally, it is a discretization of the smooth integral x n+1 − x 0 n+1 2 ρ d A , S evaluated over the reference (material) domain, S. Here x n+1 and x 0 n+1 are the piecewise linear immersion functions mapping each point of S into R 3 , and ρ is the (possibly nonuniform) surface mass density. We use · to denote the Euclidean norm in R 3 .
+        Theorem 1: ICD ≡ SAP . Proof: The stationary equations for W ( δ x n+1 , λ n+1 ) are the ICD equations, F( δ x n+1 , λ n+1 ) = 0 and C(x n+1 ) = 0.
+        Corollary In 4.1, we interpreted the roots of C and F from the ICD view. We can interpret these roots from the SAP view as follows: C(x n+1 ) = 0 corresponds to finding some point on the constraint manifold. C(x n+1 ) = 0 with F( δ x n+1 , λ n+1 ) = 0 corresponds to finding the closest point on the constraint manifold.
+      
+      
+        <H2>4.3 Fast projection method</H2>
+        To solve SAP, one might extremize W ( δ x n+1 , λ n+1 ) using Newton’s method: each iteration would improve upon a guess for the shortest step, δ x n+1 that projects x n+1 0 onto the constraint manifold. Algorithm 1 Fast projection is a velocity filter that enforces constraints. It combines the robustness of using an implicit constraint direction with the efficiency of approximate manifold projection. Input: v // candidate velocity Input: x // known start-of-step position 1: j ← 0 2: x 0 ← x + h v // unconstrained timestep 3: while strain of x j exceeds threshold do 4: Solve linear system (7) for δ λ j+1 5: Evaluate (5) to obtain δ x j+1 6: x j+1 ← x j + δ x j+1 7: j ← j + 1 8: end while Output: 1 h (x j − x) // constraint-enforcing velocity Fast projection also uses a sequence of iterations, but it relaxes the requirement of SAP: starting with the unconstrained position, x n+1 0 , we propose to find a close, but not necessarily closest, point on the constraint manifold, by taking a sequence of “smallest” steps. Fast projection starts at x n+1 0 , and takes a sequence of steps, δ x n+1 j , j = 1, 2, . . ., toward the constraint manifold, with each step as short as possible. A step of fast projection Projection onto the constraint manifold occurs at a fixed instant in time. Therefore, we omit the superscripts (n + 1), which refer to time, in order to emphasize the subscripts, j, which refer to a specific iteration of fast projection, e.g., we write the input position, x n+1 0 , as x 0 , and progressively closer approximations to the constrained position as x 1 , x 2 , . . .. Formally, the ( j + 1) th step of fast projection, x j+1 = x j + δ x j+1 , extremizes the objective function
+        W ( δ x j+1 , δ λ j+1 ) = 2h 1 2 ( δ x j+1 ) T M( δ x j+1 ) + C(x j+1 ) T δ λ j+1 ,
+        with respect to the step increment, δ x j+1 , and the auxiliary variable δ λ j+1 . Expanding the constraint to first order, we obtain a quadratic objective function, whose stationary equations with respect to δ x j+1 and δ λ j+1 are
+        C(x j+1 ) = C(x j + δ x j+1 ) ≈ C(x j ) + ∇C(x j ) δ x j+1 ,
+        
+          5
+          δ x j+1 = −h 2 M −1 ∇C(x j ) T δ λ j+1 ,
+        
+        
+          6
+          ∇C(x j ) δ x j+1 = −C(x j ) .
+        
+        Substituting (5) into (6), we eliminate δ x j+1 and solve a linear system in δ λ j+1 :
+        
+          7
+          h 2 ∇C(x j )M −1 ∇C(x j ) T δ λ j+1 = C(x j ) .
+        
+        Since the linear system matrix involves M −1 , the assembly of this system is most efficient for diagonal (e.g., lumped) mass matrices. Finally, we compute the increment (5) to obtain x j+1 = x j + δ x j+1 . As with ICD/SAP, a fast projection step requires a linear solve. However, fast projection’s system, (7), is smaller (≈ 2n × 2n compared to ≈ 5n × 5n), positive definite (compared to indefinite) and sparser. As a result it is considerably cheaper to evaluate, assemble, and solve than its ICD/SAP counterpart. Fast projection algorithm We repeatedly take fast projection steps until the maximal strain is below a threshold, i.e., the constraint may be satisfied up to a given tolerance. This process is summarized in Algorithm 1. Fast projection finds a manifold point, x n+1 , that is close, but not closest, to the unconstrained point, x 0 n+1 . Referring to the Corollary, we conclude that fast projection exactly solves C = 0 while it approximates F = 0. One important question is whether the fast projection’s error in F is acceptable. Compare a sequence of fast projection iterations to ICD/SAP’s sequence of Newton iterations. The first iteration of these methods is identical. At the end of this first iteration, F, C ∈ O(h 2 ). Additional fast projection iterations seek C → 0, and since C ∈ O(h 2 ), increments in x are O(h 2 ), therefore F remains in O(h 2 ). Observe that F ∈ O(h 2 ) is considered acceptable in many contexts, e.g., [Baraff and Witkin 1998; Choi and Ko 2002] halt the Newton process after a single iteration. To verify this claim, we measured F throughout the ballet dancer sequence. As recorded in Figure 3 , the first iteration of the fast projection method eliminates first-order error. The remaining iterations perturb F only to higher-order (often decreasing the error further).
+        -4 3.5 x 10 error 2.5 after after last first iteration iteration F vertex 1.5 per 0.5 0.0 0 0.2 0.4 0.6 0.8 1 simulation time
+        
+          Figure 3: Effect of fast projection on the residual. Using the ballet dancer sequence, at each timestep (horizontal axis) we measured the residual, F (vertical axis), after the first and last iterations of fast projection (dashed-red and solid-blue curves, respectively).
+        
+        2 10 40 Fast Projection Implicit Spring (seconds) (seconds) 30 1 10 20 time time 10 0 10 0 10 1 10 0 10 -1 20 40 60 80 allowed strain (%) number of vertices (a) (b)
+        
+          Figure 4: Performance of fast projection vs. implicit springs. For a 1D chain simulated in MATLAB, we plot the computation time of one simulated second, as a function (a) of permissible strain (loglog plot for 80 vertices), and (b) of discretization resolution (linear plot for 1% permissible strain).
+        
+      
+      
+        <H2>4.4 Implementation</H2>
+        We implement fast projection as a velocity filter, enabling easy integration into our existing cloth simulation system; refer to Algorithm 1. Step 3 requires solving a sparse symmetric positive definite linear system; we use the PARDISO 
+[Schenk and Gärtner 2006] solver. Each row of ∇C(x n+1 j ) corresponds to one edge, and is computed using (2). The right-hand side, C(x n+1 j ), is given by (1).
+        10 4 x10 2 15 Fast-Projection ICD Shake (seconds) 10 3 (seconds) 10 SL-Jacobi SL-Gauss-Seidel 2 time 10 time 5 1 10 0 10 1 10 0 10 -1 0 5000 10000 allowed strain (%) number of vertices (a) (b)
+        
+          Figure 5: Performance of several constraint-enforcing methods. For a 2D cloth, simulated in C++, we plot the computation time of one simulated second, as a function (a) of permissible strain (log-log plot for 5041 vertices), and (b) of discretization resolution (linear plot for 1% permissible strain).
+          
+        
+        (a) (b)
+        
+          Figure 6:
+        
+        Qualitative visual comparison. Snapshot of a cloth draped using (a) fast projection and (b) implicit constraint direction.
+      
+      
+        

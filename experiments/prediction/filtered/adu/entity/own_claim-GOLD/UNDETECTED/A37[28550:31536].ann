@@ -1,0 +1,9 @@
+Tc19db4fe76333775290e058feb3bf248	own_claim-GOLD 167 307	In addition to the direct benefit of fast projection on computation times, further benefits can be reaped from the resulting inextensibility
+T372a8b9786b619b4e035974865e1f1eb	own_claim-GOLD 424 575	In adopting the velocity-filtering viewpoint, we gain speed, simplicity, and software modularity—all key to a practical and maintainable implementation
+T2c736b9e01f07158fc067a128785d0f0	own_claim-GOLD 1057 1163	Practically, we observe that this drawback does not cause artifacts in our simulation, for several reasons
+T37fd9d4bafabd49c61e3dae1a2db52cd	own_claim-GOLD 1250 1306	we assert that empirically our strain remains negligible
+T245505ae36c328b4d8fe1f3c66a1dcc5	own_claim-GOLD 1576 1759	Despite the fact that the most common fabrics do not visibly stretch when draped over the body, the trend in our community is to favor stretching formulations based on penalty-springs
+T444d9b8e4d8f1b1c42fa6704971e89b2	own_claim-GOLD 1883 1886	and
+T1222b24d049bd70811be91c245568e50	own_claim-GOLD 1988 2167	With Constrained Lagrangian Mechanics as our alternative point of departure, we demonstrate a straightforward filter, with good convergence behavior, for enforcing inextensibility
+T97bf6d3c02551fae4496d40ca345c21b	own_claim-GOLD 2169 2266	We provide one immediate and pragmatic approach to fast and realistic fabric simulation using CLM
+T55d76eba4db358f4c138ef8c17174070	own_claim-GOLD 2272 2344	we hope that it will spur a renaissance of activity along this direction

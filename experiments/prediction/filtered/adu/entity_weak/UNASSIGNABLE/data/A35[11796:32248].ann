@@ -1,0 +1,23 @@
+Tae8cb2a1fd71b86a5499176be3aa164e	data 822 863	only static equilibrium is to be computed
+Ted32e70d4ef2d807d274a2af235665e3	data 876 928	the whole dynamic evolution of the system is desired
+T0cd86a6d6cdf00a4d3a4c2b6e461069e	data 2271 2276	Fig.1
+Ta187cf1671fa051e1e525d1f4d281727	data 3161 3212	using a low number of Conjugate Gradient iterations
+Tc0c79be665be8d3ac773d27f301849e3	data 3214 3260	no heavy preprocessing for building the matrix
+T242955a0f3182ab0f791f8cf782e9b0e	data 5079 5121	a simulation time step of ten milliseconds
+T5da6aa6c1d60d7436fca6a8e4da3de7e	data 7667 7686	simulation accuracy
+T5299a323f48071b58a8cb5a7b339d473	data 8750 8798	they are marginal in the whole mechanical system
+T5ec172147e0ce18e94a991ba7b85dab2	data 8922 8938	implicit methods
+T9ad30e3e96fac4d13aee57ae6f6cfb3d	data 9386 9417	only the final state is desired
+Te3b5564c1a92827e2340d5c6db5eade0	data 10146 10193	a simulation involving elements n times smaller
+T5d357c03183f2c53fc9bfc5874983df4	data 10231 10267	preserving K constant in formula (1)
+Tdf15a4520df933cdc69f9c1cfeaad21d	data 10566 10614	curvature stiffness rule the simulation accuracy
+T91aa199b58acee2513750b82db948a61	data 11759 11804	they do not suffer from numerical instability
+Tcb4a959f487d10056fc36dbaa7177a4d	data 14657 14690	dynamic accuracy is not a concern
+Ta622e41bab1c781e84ef4b45ee933a9a	data 15088 15147	With our implementation using the accurate elasticity model
+Tb2f34a086e33d6f2c817fc8fa3a24474	data 15152 15173	the computation times
+Te9580861dc036f4fff4321637d9aeb1f	data 15186 15197	section 3.1
+T00cfffd279ebeeb65f5d1e55b70c5dfb	data 15335 15363	using an “optimal” time step
+Ta15afbd0b992b83b6a23ffaae5cd2196	data 16180 16347	using large time steps that cause iterations to converge to the equilibrium state of the mechanical objects rather than simulating accurately their mechanical behavior
+T84f11189f709ab88812477100bcdae47	data 16388 16447	simulating stretched flat surfaces without curvature forces
+T2554760ae812227baa2413a5841800e9	data 18102 18159	efficiency relies on the use of a constant Hessian matrix
+Te8c9543159f8bc30bfc262afad6acebd	data 19795 19818	the dynamical animation

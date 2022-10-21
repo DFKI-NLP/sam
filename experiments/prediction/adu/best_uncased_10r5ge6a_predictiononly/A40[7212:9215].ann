@@ -1,0 +1,8 @@
+Td8576d593dd5da6a7c8cda65d0b36405	own_claim 30 182	To incorporate wind effects in a physically based animation we have to apply additional external forces in the dynamical model of the deformable objects
+T50e5af27ab177800a7246069f383f781	own_claim 191 320	given a wind flow represented by a velocity field in the scene we calculate the forces which are exerted on the simulated objects
+T64b9f38cad8f46cd835e83ef3be9a694	data 478 482	SF92
+T204d7f0cb23c4220803939225f700cd1	own_claim 485 568	The wind force acting on objects in an air stream is decomposed into two components
+T747a94873a5bb666aaf8316fb2da918b	own_claim 1024 1071	we still have air resistance for moving objects
+Ta05b38fc59f2a5600e8763deca5291f8	data 1079 1139	two-dimensional objects do not exhibit an inside and outside
+T118f9df68268d9c3717f6814ae2abd57	data 1141 1196	the unit normal n i of the i-th face of the object mesh
+

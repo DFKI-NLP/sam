@@ -1,0 +1,8 @@
+T707d02bc66eb1c245eba273bb1646176	background_claim 1140 1360	By preserving barycentric relationships of collision entities, their method resolves collisions where numerous cloth surfaces are colliding together as a group, which is a novel way to resolve multiple collisions at once
+T25c829400174f4fc0a54f451bc3db916	background_claim 1621 1657	Provot’s method is easy to implement
+T01779a724e6b7429fd3ff9557a3c82a0	data 998 1000	15
+T96b07b9b2ed1163e33a446036f055f94	background_claim 1718 1813	we cannot get dynamic interactions between particles once the particles collide into each other
+T952516f6764d130418c59ba558ef4401	data 1522 1524	12
+R8e45e3926ac4cad1c8f94ecf8017a9d3	supports-GOLD Arg1:T01779a724e6b7429fd3ff9557a3c82a0 Arg2:T707d02bc66eb1c245eba273bb1646176
+Rafaf4982f7de18677c45d0fb2b1345da	supports-GOLD Arg1:T952516f6764d130418c59ba558ef4401 Arg2:T25c829400174f4fc0a54f451bc3db916
+Rbf1162fe0d08e0ec163a0058a240007d	supports-GOLD Arg1:T952516f6764d130418c59ba558ef4401 Arg2:T96b07b9b2ed1163e33a446036f055f94

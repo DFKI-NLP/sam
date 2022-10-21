@@ -1,0 +1,24 @@
+T3eddd6936ef5cbcafd4ba07ac7e83c62	data 978 998	previously discussed
+T9d7cba03358f4a9b958832b34af90724	own_claim 1080 1139	The implicit backward Euler method appears similar at first
+T401c4693c508886afd386de79dc71333	data 2469 2513	Given v, we trivially compute x = h(v 0 + v)
+T5a2ff2376752e4a2c7a760067d9bc905	own_claim 1000 1078	the step size h must be quite small to ensure stability when using this method
+T216f1dc8cb33ddc9b055eeb1760c2615	own_claim 2901 2938	The method is called “backward” Euler
+Ta9c8323f0367ae8ffc0a4d8334ffbee9	data 1141 1168;1188 1189;1200 1240	x and v are approximated by 4 v x = h M −1 f(x 0 v + 0 + x, v v 0 + v)
+T84262ce10d05d397bf3e8fd5ec0dfd6c	own_claim 2521 2678	the backward Euler step consists of evaluating f 0 , ∂f/∂x and ∂f/∂v; forming the system in equation (6); solving the system for v; and then updating x and v
+Ta20164a66477dc3d726abbeb1cfe61a7	data 46 119	the known position x(t 0 ) and velocity x(t 0 ) of the system at time t 0
+T6f976d251e082be42ae649e72c9a8a57	own_claim 1674 1869	rather than solve this equation exactly (which would require iteration) we apply a Taylor series expansion to f and make the firstorder approximation ∂f ∂f f(x 0 + x, v 0 + v) = f 0 + ∂x x + ∂v v
+T1ec3ecd1fcc08a6fbd4aeb6296e64bad	own_claim 122 212	our goal is to determine a new position x(t 0 + h) and velocity x(t 0 + h) at time t 0 + h
+Ta6c65121bd33befbf7a0a20b7f1cc2a9	data 2947 3062	starting from the output state (x 0 + x, v 0 + v) and using a forward Euler step to run the system backward in time
+Ta54510e8099cbcbebb65d2d3f8ba2007	data 1636 1672	Equation (4) is a nonlinear equation
+R0b27a876a3be84cc02b704eb9387f0d1	supports-GOLD Arg1:Ta20164a66477dc3d726abbeb1cfe61a7 Arg2:T1ec3ecd1fcc08a6fbd4aeb6296e64bad
+R96cf06d82914fcce5a882218119ed3bd	supports-GOLD Arg1:T3eddd6936ef5cbcafd4ba07ac7e83c62 Arg2:T5a2ff2376752e4a2c7a760067d9bc905
+R74b40ea7cbf67930ee4492e7c905f162	supports-GOLD Arg1:Ta9c8323f0367ae8ffc0a4d8334ffbee9 Arg2:T9d7cba03358f4a9b958832b34af90724
+R61b4c2439e6af544e48a89ec51800994	supports-GOLD Arg1:Ta54510e8099cbcbebb65d2d3f8ba2007 Arg2:T6f976d251e082be42ae649e72c9a8a57
+Rdc6069082b0ab5784895219fcaf4d0bf	supports-GOLD Arg1:T401c4693c508886afd386de79dc71333 Arg2:T84262ce10d05d397bf3e8fd5ec0dfd6c
+R1306572f1a5b7905a004db751cb7bec3	supports-GOLD Arg1:Ta6c65121bd33befbf7a0a20b7f1cc2a9 Arg2:T216f1dc8cb33ddc9b055eeb1760c2615
+R0f86758c942daa541598e6bbcc2aab77	supports Arg1:Ta20164a66477dc3d726abbeb1cfe61a7 Arg2:T1ec3ecd1fcc08a6fbd4aeb6296e64bad
+Rfcbb410720e9c1cdfba257d3ad095850	supports Arg1:T3eddd6936ef5cbcafd4ba07ac7e83c62 Arg2:T5a2ff2376752e4a2c7a760067d9bc905
+R1c790f8649cd2959908d724e10c68cef	supports Arg1:Ta9c8323f0367ae8ffc0a4d8334ffbee9 Arg2:T9d7cba03358f4a9b958832b34af90724
+R8e272dee3c3d0e40f6d4ce4536e08b10	supports Arg1:Ta54510e8099cbcbebb65d2d3f8ba2007 Arg2:T6f976d251e082be42ae649e72c9a8a57
+R810ff99363ff4502e069eb54b64fcf35	supports Arg1:T401c4693c508886afd386de79dc71333 Arg2:T84262ce10d05d397bf3e8fd5ec0dfd6c
+Rb6ad750e4bb6d2ccfca5b207e9095ba4	supports Arg1:Ta6c65121bd33befbf7a0a20b7f1cc2a9 Arg2:T216f1dc8cb33ddc9b055eeb1760c2615

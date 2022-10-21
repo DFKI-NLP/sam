@@ -1,0 +1,10 @@
+Tbdc196b35f4bd471204549cfee9ac012	background_claim-GOLD 138 188	One would like to fill these holes with real cloth
+T41e8da0cc18d29edabbe5628f5d82246	background_claim-GOLD 1182 1241	deformation gradients naturally yield cloth like properties
+Te28f8a91873d7ae8507badcc00117546	background_claim-GOLD 1828 1858	don’t allow vertex constraints
+Tc460cf390b6641dfa29a10139752aaf9	background_claim-GOLD 3462 3548	The most restrictive aspect of MeshIK is that it requires example meshes without holes
+T3ac064306e86cfe8a5002ee8faa46920	background_claim-GOLD 5009 5097	fast non-rigid movements can easily become physically implausible when blurred over time
+T5e6a775c69bcac733dc47051eab709f1	own_claim 138 188	One would like to fill these holes with real cloth
+T10416990e31519ed339d1b121c7ee3de	own_claim 1182 1241	deformation gradients naturally yield cloth like properties
+T84f3b1f12ec6283efafcc74a9762f247	own_claim 1828 1858	don’t allow vertex constraints
+T9a456328c581c588dda8c11653780845	own_claim 3462 3548	The most restrictive aspect of MeshIK is that it requires example meshes without holes
+T940a90ed7dfa2aaada3e357dd971290e	own_claim 5009 5097	fast non-rigid movements can easily become physically implausible when blurred over time

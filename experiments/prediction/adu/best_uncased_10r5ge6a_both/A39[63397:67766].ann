@@ -1,0 +1,16 @@
+T0e07e9ce07d71079dd8c2278e1df2f93	data-GOLD 787 937	Using the stiffness parameters in figure 1 as a reference, we ran the simulation with those bend stiffnesses multiplied by 0.1, 1.0, 10, 100 and 1,000
+Tb4c306491038856e380c9066cfbceb3b	own_claim-GOLD 986 1032	The variance in the running times was under 5%
+T635b4995427b0afe46a37fd647a6ffab	own_claim-GOLD 1034 1123	We doubt that simulators based on explicit integration methods could make a similar claim
+Tdf5a89eb5a1debf07c373f6be36eb65d	data-GOLD 1234 1350	We ran the simulation in figure 1 with cloth resolutions of 500, 899, 2,602 (shown in figure 1 ) and 7,359 particles
+T40aef6d03c04022d8ea9184dcab60729	data-GOLD 1352 1472	The running times were, respectively, 0.23 seconds/frame, 0.46 seconds/frame, 2.23 seconds/frame, and 10.3 seconds/frame
+Taa385addffa76dbb59816a1d457ba29b	own_claim-GOLD 1474 1602	This is slightly better than O(n 1.5 ) performance, which is in line with the convergence rates of the conjugate gradient method
+T8bca8db4e2d73c226fff75e3e3d7917a	data-GOLD 1605 1607	14
+Tc3c65ba52f6f1713edf59916d30f69dc	own_claim-GOLD 1610 1643	for systems such as equation (18)
+T2e7ae547621bfb577368a8795471ac45	own_claim 110 148	Unaccounted overhead of the simulation
+T1eb8a50a4ecd798d54f34b2ebe1544f0	own_claim 170 184	includes tasks
+T65005c50a86b1ea2b737ff933c5974cb	data 193 217	geometry transformations
+Ta7b258df96f502ef090159474a0c6db8	data 219 236	memory allocation
+T3eb23a0cd4500ed2b34e11035baa78b3	own_claim 1048 1123	simulators based on explicit integration methods could make a similar claim
+Te588656c23b160438954bc96bc4c6f9b	own_claim 1474 1602	This is slightly better than O(n 1.5 ) performance, which is in line with the convergence rates of the conjugate gradient method
+T1a204037f3f2780bf0dd7c0023d96f9d	data 1605 1607	14
+

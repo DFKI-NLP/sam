@@ -1,0 +1,11 @@
+T3669d1225937b92596fadd94fd5f8396	data 2563 2564	4
+T2fb38757a37507f4e067dac82b9ea7c5	background_claim 2567 2579	and Wu et al
+Td1ca74c710b3b7171c7406278de2fb1a	background_claim 1882 1922	It is characterized by frictional forces
+T05a6d99c710958c47010a04163c0b999	background_claim 2493 2555	Other attempts to model wrinkles include those by Gotoda et al
+T6c5d91840caae31faaff7fb4e46e358c	data 1935 1957	between body and cloth
+T5ea9c2ac39d05522669881e77aa8ef02	data 2559 2560	3
+T2ab854a8146ae584a9390ddac22fe90b	data 2583 2585	14
+Rf470a3e94dd79575f1ee0280a773983f	supports-GOLD Arg1:T6c5d91840caae31faaff7fb4e46e358c Arg2:Td1ca74c710b3b7171c7406278de2fb1a
+R9a7acc36de553a52b0a9b8c406621d4e	supports-GOLD Arg1:T5ea9c2ac39d05522669881e77aa8ef02 Arg2:T05a6d99c710958c47010a04163c0b999
+R443593b71b1088823717b5447bcf6cc6	supports-GOLD Arg1:T3669d1225937b92596fadd94fd5f8396 Arg2:T05a6d99c710958c47010a04163c0b999
+R62cce3a8efa3bfd67d343e5ec47439bc	supports-GOLD Arg1:T2ab854a8146ae584a9390ddac22fe90b Arg2:T2fb38757a37507f4e067dac82b9ea7c5

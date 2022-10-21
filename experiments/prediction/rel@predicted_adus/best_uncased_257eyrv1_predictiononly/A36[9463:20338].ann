@@ -1,0 +1,83 @@
+T298edb79f3075edf1ecb21a52acd7743	own_claim 39 193	The design goals of our measurement system are to create deformations in a sample of cloth that explore a substantial range of the material’s strain space
+Tb07a457f380a6f7cb8a4f5bfe3b72db3	own_claim 199 305	to record complete information about the forces applied to the cloth and the deformation that it undergoes
+T2e39da922e5446ed5dbca42dfefb4795	own_claim 307 377	Like other cloth testing systems, we focus primarily on tensile forces
+T3a0539f8a0a81ee585b57b402924e024	data 387 488	it is hard to repeatably produce and measure compression forces in a sheet that is inclined to buckle
+T2a8e7d8e19005844901d668ae1dd8eba	data 1028 1036	Figure 2
+T4299790a1fd5da327bd01902911625ce	own_claim 1039 1125	Our actuators and load cells are capable of applying and measuring tensions up to 45 N
+T6b6ea5bd964fc9cf03a86da0827f7a3f	own_claim 1131 1201	in our experiments the maximum force is typically on the order of 10 N
+Te6c4c20614e8a231c43531f581fb48b9	own_claim 1918 1978	the actuator positions themselves are not part of the output
+T63945e7ffff719c4e21d3c302253cbcd	data 1986 2048	they are superseded by the displacements measured at the clips
+Td24adf7122e8006abb85ace5a497bdef	own_claim 2050 2199	This prevents stretching of the cord, or other factors affecting the distance between the clip and the actuator, from affecting displacement accuracy
+Tb1f091890b0495d5047a400b7ecc2cb6	own_claim 3474 3563	We compute the per-frame geometry using a state-ofthe-art stereo reconstruction technique
+T1b4a194bc36255a74260f340e1f1d57d	data 3567 3572	BBH08
+Tc528878ee7738c24908ee75d58962dc5	own_claim 3576 3643	which was specifically tailored for reconstructing cloth geome∗ try
+T65767f1de7e497b7e90372ac7db9a0bf	data 3647 3653	BPS 08
+T8a264ad293441d68e010fec1fbaf5304	data 3660 3720	the inherent texture of the cloth is not sufficiently random
+T4455a02b7a6f1923ead42240c7c26986	own_claim 3722 3766	it is printed with a wavelet noise pat∗ tern
+T5d04161969503dc0940157b3f1ce7138	data 3770 3776	AIH 08
+T23898f6adf67f83116073f11ad078142	own_claim 3780 3854	to provide texture that can be used for stereo reconstruction and tracking
+T7bc4eafb8784d7b5046059516d18408d	own_claim 3856 3971	The pattern is printed with a flatbed inkjet printer and does not have a noticeable effect on the material behavior
+Td51046bc55b449ab0a79e45c402ddbd3	own_claim 3973 4089	To represent inter-frame correspondence, we use optical flow to obtain a single triangle mesh that deforms over time
+T18434d6da259edcd187cd5312e4dc72c	data 4149 4155	BHPS10
+Te0f4e78a81ad11481f41aeb6174e7194	background_claim 4581 4670	very small errors can accumulate over time and cause temporal drift in the reconstruction
+T86a2a30e36ed8c837ab44d554eb4a58b	own_claim 4672 4809	To avoid drift, we subsequently match each frame independently back to the rest pose frame using the approach described in Bradley et al.
+Tf154319494a9d808e156ce2733348e88	data 4811 4817	BHPS10
+T4f8daaf2bcb59d617571cc45b1011548	own_claim 4820 4897	The final solution is smoothed using Laplacian regularization to remove noise
+Tb9190e133d8c564816ab4c1ca5c2d99d	background_claim 4899 4923	Tracking Clips and Cords
+Tf210a375dd8e033de07e3688128f216e	own_claim 4925 5084	In order to measure the complete answer that a simulator should predict, we need to determine the interaction between the rigid clips, the cloth, and the cords
+T5d2933f75b446a71f87eea29ba51a12e	own_claim 5086 5154	The clips are produced, using rapid prototyping, with embedded codes
+Tc4514b00e376b8410e58d95a989ab63a	data 5157 5162	Fia05
+T3161058812dd3059faace96c9d371344	own_claim 5164 5246	that allow us to determine their identity, position, and orientation automatically
+T9812d405a7eda5e2023ed54050a82307	own_claim 5248 5368	The area of cloth occluded by the clips is used to automatically determine which cloth vertices are clamped by each clip
+T0f28c62b42cc3f2d1a6bbcb115ae9c70	own_claim 7299 7390	The set of deformations to measure is motivated by the goals of the parameter fitting stage
+T224e93f84c85ecebfb6ddf5b4c446ef0	data 7392 7401	Section 5
+Tbd0454c7de8e4c2e2ca2bbc3998fb946	own_claim 7493 7563	to validate the parameter fits by comparing against other measurements
+Tbeaac7293531b38832bb3b3bf114b665	own_claim 7565 7806	To reduce the risk of falling into local minima during parameter fits, we have designed deformation sequences that produce near-isolated strains, and allow estimating stretch, shear and bending properties in a separate and incremental manner
+T20abf49a8968dce36dd0aec8cdfa336c	background_claim 7817 7861	unlike standard textile evaluation practices
+Te642330a487daaada34c1aba15a68a42	data 7863 7868	Kaw80
+T66c64b07ff4494b71b30c3af661376e9	own_claim 7876 7926	thanks to our full 3D deformation capture solution
+Ta5c250f8dd2eae373e8371865a2def67	own_claim 7928 7971	we relax the requirement of uniform strains
+Tdf9ef85c7fccee47b2c1c822e0b827a8	data 8122 8130	Figure 4
+Td4dca6f7cb7bd0e768ee338de0c435c6	data 8391 8396	Cul79
+T8a6b82a82c5ec9d78c94a64454f5ea44	data 8406 8446	four long clips fix the cloth boundaries
+T4609fe7b87dcf7017133975cd5c1aece	data 8515 8523	Figure 4
+Tc5676b348218808b39e18bf7aa574df4	data 8688 8696	Figure 4
+T17edddb1acada419c438f96793aa1a43	data 8951 8959	Figure 5
+T43bc720b7596e438bf4b8e581e0aea7c	own_claim 9313 9404	our acquisition system is able to recover the 3D cloth geometry including temporal tracking
+T20fe6eb35d29272f8f1a40c1d1fb75d3	own_claim 9554 9669	our method presents the first system able to record such extensive information about the behavior of a cloth sample
+T87bb2bcf22de0bf8b676b6e9c7d4e252	own_claim 10096 10170	In the vision system, the camera calibration accuracy is within 0.3 pixels
+T21ee78943696302ec669db5f3217249e	background_claim 10229 10277	The multi-view stereo algorithm of Bradley et al
+T9874123c0e180b6b4d0bc8422851c81b	data 10281 10286	BBH08
+T9ffdb6d3e24db0ae7bb1583956b38fec	background_claim 10288 10363	is among the most accurate available according to the Middlebury evaluation
+T48214711a858975c898601a8c236ced1	own_claim 10375 10448	It is difficult to quantify the accuracy of the temporal flow computation
+Tea92dd4c9267a7584827f5b7bac6498d	own_claim 10454 10546	it can be visualized by compositing the reconstructed deformation on top of the input images
+Td6352c0f81cf2dcc856e9bd9a4e153fb	data 10552 10570	accompanying video
+T743876051fd40c982c4ba2987340f212	own_claim 10573 10639	The raw repeatability of our force sensors is about 3 millinewtons
+T7abc702928a792e84c41e225274445a0	own_claim 10647 10793	The largest source of error in measuring the force indirectly through the cord is the internal friction in the cord as it bends around the pulleys
+Te8c5c6c62b49407bf3c4704e63aa4019	own_claim 10801 10851	introduces an artificial hysteresis of about 0.1 N
+Radf2e00cddab41cdef1e1b5a006d9b8b	supports Arg1:T3a0539f8a0a81ee585b57b402924e024 Arg2:T2e39da922e5446ed5dbca42dfefb4795
+R3ccd7325836ebe4a3022958f45bd7367	contradicts Arg1:T4299790a1fd5da327bd01902911625ce Arg2:T6b6ea5bd964fc9cf03a86da0827f7a3f
+Ra279da60e2209c40113036520897ee71	supports Arg1:T63945e7ffff719c4e21d3c302253cbcd Arg2:Te6c4c20614e8a231c43531f581fb48b9
+R8be6264b33dc927e362665061b388c36	supports Arg1:Te6c4c20614e8a231c43531f581fb48b9 Arg2:Td24adf7122e8006abb85ace5a497bdef
+R9045d5dd27307facb2db9db95c89e1ed	supports Arg1:T1b4a194bc36255a74260f340e1f1d57d Arg2:Tb1f091890b0495d5047a400b7ecc2cb6
+Rccc78d04be12b6b7fe84f25912b8881f	parts_of_same Arg1:Tb1f091890b0495d5047a400b7ecc2cb6 Arg2:Tc528878ee7738c24908ee75d58962dc5
+R962dce23a3c395cd8e6e318f498228a4	supports Arg1:T65767f1de7e497b7e90372ac7db9a0bf Arg2:Tc528878ee7738c24908ee75d58962dc5
+R4ce37af97187b89337aaee689b627c74	supports Arg1:T8a264ad293441d68e010fec1fbaf5304 Arg2:T4455a02b7a6f1923ead42240c7c26986
+R1a14636a79ded7a71a97953723f9bc4d	supports Arg1:T5d04161969503dc0940157b3f1ce7138 Arg2:T4455a02b7a6f1923ead42240c7c26986
+R3bd8d7a2a30c3700b2ac27cd8b8d858f	parts_of_same Arg1:T4455a02b7a6f1923ead42240c7c26986 Arg2:T23898f6adf67f83116073f11ad078142
+R40a97f6fae54d828d9ffef810c9f4cf4	supports Arg1:T18434d6da259edcd187cd5312e4dc72c Arg2:Td51046bc55b449ab0a79e45c402ddbd3
+R7f43c8a5c2b2b8ee28c7674f08e38129	supports Arg1:Tf154319494a9d808e156ce2733348e88 Arg2:T86a2a30e36ed8c837ab44d554eb4a58b
+R4a01193d54ed0d24f9b8cd672903a028	supports Arg1:T86a2a30e36ed8c837ab44d554eb4a58b Arg2:T4f8daaf2bcb59d617571cc45b1011548
+R8b63af8ffdca43cc5e52c66b7a991890	supports Arg1:Tc4514b00e376b8410e58d95a989ab63a Arg2:T5d2933f75b446a71f87eea29ba51a12e
+Rc863086fe59be4587c8ec5cbd8bcff9a	parts_of_same Arg1:T5d2933f75b446a71f87eea29ba51a12e Arg2:T3161058812dd3059faace96c9d371344
+Rbe5978b96bcf8792147c3a013e8f6dc0	supports Arg1:T224e93f84c85ecebfb6ddf5b4c446ef0 Arg2:T0f28c62b42cc3f2d1a6bbcb115ae9c70
+R3d0a34fbd7704d9ce5fbc4c423c1bde8	parts_of_same Arg1:T0f28c62b42cc3f2d1a6bbcb115ae9c70 Arg2:Tbd0454c7de8e4c2e2ca2bbc3998fb946
+Re9e4ac6070573884ca052a4b56ccbf87	contradicts Arg1:Tbeaac7293531b38832bb3b3bf114b665 Arg2:T20abf49a8968dce36dd0aec8cdfa336c
+R66f6adcd3898a7f6190234e053160c90	supports Arg1:Te642330a487daaada34c1aba15a68a42 Arg2:T20abf49a8968dce36dd0aec8cdfa336c
+R41f79bf76bf9302d6c4891ddbd1f1dc3	parts_of_same Arg1:T20abf49a8968dce36dd0aec8cdfa336c Arg2:T66c64b07ff4494b71b30c3af661376e9
+Re8bcba3b469014fb3cbaab4227e49f60	supports Arg1:T66c64b07ff4494b71b30c3af661376e9 Arg2:Ta5c250f8dd2eae373e8371865a2def67
+R3b22ee4865eaea4e08586ff57ca278ef	supports Arg1:T9874123c0e180b6b4d0bc8422851c81b Arg2:T21ee78943696302ec669db5f3217249e
+R6b74266145a76a5bce38fd7bdd5fc35a	parts_of_same Arg1:T21ee78943696302ec669db5f3217249e Arg2:T9ffdb6d3e24db0ae7bb1583956b38fec
+R6e43d63a98aa6d6a4cce9876bbd14554	contradicts Arg1:T48214711a858975c898601a8c236ced1 Arg2:Tea92dd4c9267a7584827f5b7bac6498d
+R1684eaf4e9a0130ad9d2694e42009f66	supports Arg1:Td6352c0f81cf2dcc856e9bd9a4e153fb Arg2:Tea92dd4c9267a7584827f5b7bac6498d
+R9e9031c5f2c7b6adae80238e8e4086fe	supports Arg1:T7abc702928a792e84c41e225274445a0 Arg2:Te8c5c6c62b49407bf3c4704e63aa4019

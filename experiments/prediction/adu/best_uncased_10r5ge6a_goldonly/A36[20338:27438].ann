@@ -1,0 +1,33 @@
+Tfd353b46f4641c5c2b495e563e9ed056	background_claim 1022 1065	Most elastic cloth models separate membrane
+Tc049799e15f8077cacc2112b4138eea9	data 1073 1080	stretch
+T0c772907aa79247f5021c17197dd2f52	data 1085 1090	shear
+Tde0e07abcf80374ff08154a731218d98	background_claim 1092 1124	and bending deformation energies
+T155e1d7020d9de5df20cd0d79a549e44	own_claim 1680 1761	We have evaluated three models for membrane deformation that fit this description
+T7b69207136a2f7adc42a814b025370df	data 1763 1777	spring systems
+T21a7895f8db148bbe10e780673ee4edb	data 1779 1804	the soft constraint model
+Taa5e1854af90f131702fc563e0a4644a	data 1828 1832	BW98
+T8f35539ade661f5233aef861f8291be5	data 1835 1875	and the diagonalized St.Venant-Kirchhoff
+T7a6e899e511fcd131ed852aa701bd029	data 1883 1888	model
+T3bdc0453d0d5b0055bc617c2229d6f73	data 1907 1913	VMTF09
+Ta2d18c303a97c4b50267a3bc4025f75a	own_claim 1917 1939	and two bending models
+T9e1cebb0970eaa550eb99eaad2d85655	data 1941 1955	spring systems
+T9d6fc5ba1ef5e9ba6ec3f5381c1f31c7	data 1960 2007	the edge-based bending model in Discrete Shells
+T7c8a88dae56f63531f22368c45584bfa	data 2009 2015	GHDS03
+Tfe548e442f849a95426e399ad2f178a7	own_claim 2396 2466	not all force models define the quantities below explicitly as strains
+Tf81a0340eff69d317856882e3b3fb3c3	data 2471 2526	they often rely on the resolution of the discretization
+T1684420e40ea45ae065379d6db727612	data 2531 2608	they differ simply by scale factors that can be embedded in the stiffness k i
+T105bcf74832988c7a38faca26bb0005f	data 3978 3984	VMTF09
+Tf25bd3c25f397e8084a4ee766319c213	background_claim 3986 4097	approximate the standard StVK model zeroing out off-diagonal terms in the matrix that relates strain and stress
+Tc0c3ad74a06dfdae80bfd5aae7db0f23	data 4099 4105	σ = Eε
+Tfa5fee1fcb8007616d09d7d329e2ffb6	background_claim 4113 4220	in the diagonalized StVK, each membrane stress component depends only on its corresponding strain component
+T27850aef6812a116b887840e4e13e6ee	data 4222 4236	σ s,i (ε s,i )
+T8da309cbcd73bf4f51222395c92afb45	data 5044 5050	GHDS03
+Te8985890e9ef147d5b040f850c8a67d3	data 5072 5077	BMF03
+Tb2f0ba6373e03863022f0c503d762acd	background_claim 5080 5245	discovered concurrently the appropriate weighting of the angle change in order to model homogeneous bending on irregular triangle meshes with a homogeneous stiffness
+T9bf44ee9e8a18c87144dc02602b06851	own_claim 5473 5595	With our separation of weft-, warpand diagonal-bending to capture anisotropy, the bending models in Discrete Shells and by
+T1ebcd1100025de9ef5d647aaf4fa615c	data 5616 5620	BW98
+Tcefc8f09c902299df980f0d3c7128ce1	own_claim 5622 5667	are equivalent up to a stiffness scale factor
+T671273c2cc84cff2c89461f742aacb36	data 6437 6443	VMTF09
+Tf4c6dc534d065d6ee7950ab1e55e184f	background_claim 6445 6499	propose a general nonlinear stress-strain relationship
+T9e7eca04d2199b5dffcea2b31eb4dd05	own_claim 6564 6635	the same construction can easily be built on any of our selected models
+

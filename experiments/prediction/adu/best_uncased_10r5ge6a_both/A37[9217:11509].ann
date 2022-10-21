@@ -1,0 +1,43 @@
+Tab44bfc692a0be738102bd695e4c82b0	background_claim-GOLD 31 74	Woven fabrics are not a continuous material
+T8c1bbb9f0ed5b1629fbae91d19a431de	background_claim-GOLD 83 141	they are a complex mechanical network of interleaving yarn
+Td8f65b80be558f731e0dc0a55362a0c7	data-GOLD 143 160	Breen et al. 1994
+T9d208b443a2c1405e97db1f1421fc2b6	data-GOLD 169 217	the constituent yarn is often quasi-inextensible
+T5ff4f25c72b0e35c32dde9a8674ed3fe	background_claim-GOLD 219 285	the material’s warp and weft directions do not stretch perceptibly
+Tab1b2d648df056b7cf001634e9420075	background_claim-GOLD 287 422	In imposing inextensibility on all edges of a triangle mesh, one quickly runs into parasitic stiffness in the bending modes, or locking
+T91fa083e1226a6564d2b09ef8f3dacd8	data-GOLD 425 452	Zienkiewicz and Taylor 1989
+T26f3afd64b1d6f6caabb5e57c454bb58	data-GOLD 461 527	locally-convex regions of a triangle mesh are rigid under isometry
+T92d7967ee68a659d78f71e88fe1c26f3	own_claim-GOLD 538 621	we consider warpweft aligned quadrilateral meshes with a sparse number of triangles
+Te9117f7e6dbceab65962f1c7455f6af9	data-GOLD 623 643	quad-dominant meshes
+Tec5923da4da791bcea4a0f068823e120	own_claim-GOLD 704 808	constraining all edges of a quad mesh may circumvent the rigidification that occurs with triangle meshes
+Ta54268631db025e81d1606e81bfa498c	own_claim-GOLD 1245 1371	under general mesh positions, the constraints are linearly independent, with a full-rank Jacobian treatable by a direct solver
+T07dac458305df34824eea11d2c7646be	data-GOLD 1373 1375	§4
+T09406be75e81dfb06ec4168dc2898808	data-GOLD 1715 1813	shearing modes excite only a mechanical interaction of warp and weft, and not a stretching of yarn
+T54f831a6875f4c0a00a4fd705d53568a	own_claim-GOLD 1815 1851	fabric does indeed shear perceptibly
+T8912809f697fd1cb3c540fab2d9db46e	own_claim-GOLD 1951 2089	The complete model of in-plane deformation is compatible with an existing code’s quador triangle-based treatment of bending and collisions
+T3a27e29adb94603aa29c3c5b09297fd7	own_claim-GOLD 2091 2224	With this simple formulation of inextensibility constraints in place, what is needed is an efficient method for enforcing constraints
+T49b72d773be11207a1b74ab7c8503379	background_claim 31 74	Woven fabrics are not a continuous material
+T4a66c4bd60e5025333f27dd55dc3ba7c	background_claim 83 141	they are a complex mechanical network of interleaving yarn
+T263ed319d78f93ed0ff2d69527151706	data 143 160	Breen et al. 1994
+T5b76712f5de19fcc2ca4815dcb1ea254	data 169 217	the constituent yarn is often quasi-inextensible
+Tedacd6f684954d922dd90330b59c4dd6	background_claim 219 285	the material’s warp and weft directions do not stretch perceptibly
+T860db231ee1edf251fa89ae2cd7c260f	background_claim 287 346	In imposing inextensibility on all edges of a triangle mesh
+Tf69c37510bcf4eab2d7f0da6633a3d80	background_claim 348 422	one quickly runs into parasitic stiffness in the bending modes, or locking
+T8da0c6eac86f5f0399cfe6fd0c873026	data 425 452	Zienkiewicz and Taylor 1989
+Te3cef2d2b6dd6934beb0bb2f6fefdfb8	data 461 527	locally-convex regions of a triangle mesh are rigid under isometry
+Tbff1037ed0851ab4ae597b436259d594	own_claim 538 621	we consider warpweft aligned quadrilateral meshes with a sparse number of triangles
+T36005e137cbc167fe1bd4a906a2813b2	own_claim 646 808	A degree of freedom (DOF) counting argument suggests that constraining all edges of a quad mesh may circumvent the rigidification that occurs with triangle meshes
+T35d5f3c00b90ec6b3f500806477d8cf7	data 810 826	Given n vertices
+Tccc06866ac3d82d4aed7f69610f4f495	own_claim 828 854	we have 3n positional DOFs
+Tdf606ab3a5dcaa83fbdbf5713b907f7a	own_claim 856 992	their triangulation (resp. quadrangulation) introduces approximately 3n (resp. 2n) edges, with corresponding inextensibility constraints
+Td8549f6c969ba6543765bfd9c6d8d528	own_claim 994 1082	Subtracting constraints from positional DOFs leaves nearly zero DOFs for a triangulation
+T5c28c2f19c94391fb8c5bbc99003ae6f	own_claim 1152 1230	in a flat configuration they correspond to the normal direction at each vertex
+Ta7ace980cd47cecad1e5de0c599d96d3	own_claim 1245 1371	under general mesh positions, the constraints are linearly independent, with a full-rank Jacobian treatable by a direct solver
+T48b6da9ff91f67e26b2600d4914339da	data 1373 1375	§4
+Tdc8d36fb92c4b5c5a02d6d0590ad045a	own_claim 1574 1620;1640 1641;1652 1689	The solve will require the constraint gradient 2 ∇ p b C(p a , p b ) = 2(p b − p a )/l
+T1d695b500f71ed52c05b00256eec4d0f	data 1715 1783	shearing modes excite only a mechanical interaction of warp and weft
+T14c8eca3ede6103eec4e17616424ce09	data 1789 1813	not a stretching of yarn
+Tda9bf88e7868e2ef78026879a88fa04d	own_claim 1815 1851	fabric does indeed shear perceptibly
+T94c5749d13fbd655b03ddb95950125b2	own_claim 1864 1949	we model shear using non-stiff stretch springs applied on both diagonals of each quad
+T5a25a0255042063797898314a7136e33	own_claim 1951 2089	The complete model of in-plane deformation is compatible with an existing code’s quador triangle-based treatment of bending and collisions
+T6e70a1f232856a2a6407a859d69a3286	own_claim 2091 2224	With this simple formulation of inextensibility constraints in place, what is needed is an efficient method for enforcing constraints
+

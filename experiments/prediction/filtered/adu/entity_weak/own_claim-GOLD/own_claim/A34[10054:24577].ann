@@ -1,0 +1,106 @@
+T176492836ea16d16fd6faa0876d66471	own_claim-GOLD 1626 1779	We propose our cloth collision resolution method which resolves simultaneous collisions while ensuring conservation of momentum as accurately as possible
+T359274546cfdc38a0c00c6609e587efa	own_claim-GOLD 1905 1971	we do not introduce any new collisions while resolving a collision
+Tf201f1eff7d125b7e251e2707ee1d03b	own_claim-GOLD 2472 2539	the collisions in that IZ are categorized as cloth-cloth collisions
+T0624555010c2e2423a6d65be1003f4e4	own_claim-GOLD 2584 2623	we extract them temporarily from the IZ
+Tf8028e12552b97e231ff159e3ff7d486	own_claim-GOLD 2632 2676	only cloth-cloth collisions remain in the IZ
+T3871ee2e1d113e5c39690c5e29fb2241	own_claim-GOLD 2678 2777	After resolving these cloth-cloth collisions, we take care of cloth collisions against rigid bodies
+Te75c321003934be90f370327c300ba0c	own_claim-GOLD 2786 2886	the resolutions against rigid bodies will be done on top of the result of self-collision resolutions
+Tccec76742dc5c38c9cd5d5c327cf5c8d	own_claim-GOLD 2888 3028	This sequence of resolutions is chosen to avoid the case where self-collisions are ignored while collisions against rigid bodies are handled
+T4752d7e4330556b7055d99256b6e985c	own_claim-GOLD 3205 3242	For some cases, an IZ has only one CC
+Tf9598927e4153661342620b4e68a5c7b	own_claim-GOLD 3318 3380	we cannot handle the particles in that CC as a bundle as usual
+T37ae1dfb5f9111f12f679be4d9a36533	own_claim-GOLD 3451 3511	the movements of cloth would not be natural and satisfactory
+T3da20ef52eec40e046dd06b1e4c7a2f4	own_claim-GOLD 3555 3612	we can find proper collision responses within these parts
+Tb3cd45d8c7bd4addd280aa9682654461	own_claim-GOLD 4208 4272	we reduce the total number of CCs by merging closely located CCs
+T90886ac3475355a6ad116f52c31d6e30	own_claim-GOLD 4274 4342	This merger is performed to prevent undesirable collision resolution
+T4e9776ea76fb988c347ce0accb81be34	own_claim-GOLD 4372 4443	it means the cloth patches represented by these CCs are closely located
+T068daf3460456af213cd9d561488f9c7	own_claim-GOLD 4445 4500	We do not want to handle closely located CCs separately
+Tda7d58aa2589f881ff87e20d7ec4fbd6	own_claim-GOLD 4507 4624	it might instantly introduce instabilities to the system by allowing closely located CCs to have different velocities
+T417bafbf17b32a37b71ffd1508f2b274	own_claim-GOLD 4635 4656	there is an exception
+T3c4aa590017681841c9374623da4210e	own_claim-GOLD 4728 4803	we have to resolve collisions between these CCs by handling them separately
+T0fb58ac89a0196a2bd0d27a092caf147	own_claim-GOLD 4908 5016	We do not want to handle closely located CCs separately except for the case where the bending is significant
+T88a21eb062c68cb763e88cd65b5b3e53	own_claim-GOLD 5166 5290	the candidates of the CC merger are the CCs closely located, where we do not witness any significant bending between the CCs
+Tdf46233efeca4229268998271a77440d	own_claim-GOLD 5922 5964	we assume an IZ always has two or more CCs
+Tc6fdfddce272233d93c0b236fefab3b5	own_claim-GOLD 5966 6081	The important part of the collision resolution of these multiple CCs is to find the proper directions of collisions
+T07bc923c7b38d25abc9c4aebc65eabe3	own_claim-GOLD 6252 6350	finding the correct collision direction is important to achieve proper visual effect of collisions
+Tf69ea5f7e9f13506e05e71e64e6def14	own_claim-GOLD 6400 6478	the collision direction is computed by connecting the two ball centers of mass
+Tf58f03f4f908574b15f3978119f5d9bc	own_claim-GOLD 6484 6600	in cloth-cloth collisions, connecting two centers of CC masses is not a proper way to decide the collision direction
+Tba271700c3181407e5497c6f396bb1ba	own_claim-GOLD 7422 7473	it is not straightforward to resolve the collisions
+Te86802d323870208cce53bc63eaac4d6	own_claim-GOLD 7537 7608	we can think of two ways to solve this multiple cloth collision problem
+Te964155da7ac38ea7936b0dbcbd08d04	own_claim-GOLD 7610 7698	One way of resolving these multiple collisions is to handle them as staggered collisions
+T4a1625e71dcd0dfef8a08a578d03addd	own_claim-GOLD 7712 7770	the other way is to handle them as simultaneous collisions
+Tc3988ea479961842dbcb9b1a93cc529c	own_claim-GOLD 9235 9271	we adapt this approach for the cloth
+T2787a21639f28b9fa612afa9567f0443	own_claim-GOLD 9583 9677	an edge exists between two vertices where the bodies represented by those two vertices collide
+Tb7d0487a364841ac32c2e910ee9a68d6	own_claim-GOLD 9878 9992	we can build a system of N , 1 linear equations based on the changes of relative velocities of each colliding pair
+T1aba10584b971e7951bab73bc561d4cf	own_claim-GOLD 10482 10483	v
+T99a9ea76d05bb103ca24e9c5255dfe9c	own_claim-GOLD 10519 10564	we can deterministically find the solution of
+Ta785fc573ae7eae19161e2c355588244	own_claim-GOLD 10623 10673	we handle fast moving cloth and rigid body objects
+T86fa456be680e39cd4f095293631be7f	own_claim-GOLD 10683 10699	a problem arises
+T0e0f0cb61a238473ca9a6afeeaec8087	own_claim-GOLD 11013 11046	this case appears to be very rare
+T73412d6a2eea6de7cbeca88b20cc8cba	own_claim-GOLD 11056 11191	we can resolve this case by maintaining the barycentric relationship between cloth surfaces and the newly introduced colliding entities
+Tfdd8237a58687bc9a748f5676b440ed6	own_claim-GOLD 11205 11249	in the worst case, this involves repetitious
+T949ae0f0f30d9ed40b6173d4c265c097	own_claim-GOLD 11263 11339	we may introduce other new collisions when we resolve the current collisions
+T274dc4a5ba263dc54cef1e9bc2ffbee7	own_claim-GOLD 11475 11585	we build a system of linear inequalities based on the collision rela- tionships between grouped particle parts
+Tbf443623f604db9f2fd1e25393aebd83	own_claim-GOLD 11790 11827	we have N or more linear inequalities
+Tb291b3fb6f2f347c00103c83cde35d07	own_claim-GOLD 12065 12140	This inequality relationship, first used for rigid body multiple collisions
+Tdb11798ef65d9bdd297b7f81d6f7d83d	own_claim-GOLD 12150 12193	appears to serve the graphical purpose well
+T3638d648d165a484b65fe70dfd9e2ec0	own_claim-GOLD 12195 12376	mize When the difference we solve this between system v i;j + of and inequalities, , C e v i;j , , which we want would to minirepresent the extra energy we introduce into the system
+T943b1883556d46889a167b7def05b013	own_claim-GOLD 12771 12873	the collision resolutions against rigid bodies are performed after cloth-cloth collisions are resolved
+T3122af49ae2c3faa248d9f0525d8d424	own_claim-GOLD 12901 13002	collision responses are different based on whether rigid CCs are moving or fixed or a mixture of both
+T6fe6aff96ef05afa43a36d02a8ab7da2	own_claim-GOLD 13045 13088	we handle particles in that IZ individually
+T4358f04b7e17f04a882a4fb9b5fcdfa6	own_claim-GOLD 13474 13533	particles separating from the rigid bodies are also ignored
+Taf0e7ffea0e1e6e6d808652c83836b7c	own_claim-GOLD 13721 13752	we handle particles as a bundle
+Tfa1aaf1fc0e864d8eb02c987c064496e	own_claim-GOLD 14188 14294	collision resolutions against rigid bodies are done based on the proximities of particles to the rigid CCs
+Tced35d8b4ae5a797052a39345a509f76	own_claim-GOLD 14390 14421	Collisions between rigid bodies
+T5e88a3587765b15056c66cbb7786f12c	own_claim 1626 1779	We propose our cloth collision resolution method which resolves simultaneous collisions while ensuring conservation of momentum as accurately as possible
+Tcf2e907c0d08e36a6026fbef18dd394d	own_claim 1905 1971	we do not introduce any new collisions while resolving a collision
+T763f627783d4c530c051fae043b35a04	own_claim 2472 2539	the collisions in that IZ are categorized as cloth-cloth collisions
+T6b0e40ad2c061679f8d60ad4f9de1ae0	own_claim 2584 2623	we extract them temporarily from the IZ
+T78742a4fa88041b594df3db60ba1ab10	own_claim 2632 2676	only cloth-cloth collisions remain in the IZ
+Ta7111bccf8def1d18ff0b42227d0fbe8	own_claim 2678 2777	After resolving these cloth-cloth collisions, we take care of cloth collisions against rigid bodies
+T02214b5428881144abc9580a707d4fab	own_claim 2786 2886	the resolutions against rigid bodies will be done on top of the result of self-collision resolutions
+T4a618a30184d0affccc520e23f003de8	own_claim 2888 3028	This sequence of resolutions is chosen to avoid the case where self-collisions are ignored while collisions against rigid bodies are handled
+Tfcef413d6a73a3059508b87e36a82764	own_claim 3205 3242	For some cases, an IZ has only one CC
+T9995374dcbdf0bf280e0dfed48e32493	own_claim 3318 3380	we cannot handle the particles in that CC as a bundle as usual
+T0de36704a2b95d84f27add2ea9865b66	own_claim 3451 3511	the movements of cloth would not be natural and satisfactory
+T155661bfc11aef3d767f0495322b5246	own_claim 3555 3612	we can find proper collision responses within these parts
+Tcac5d68a463a86257c9208b2b2b04180	own_claim 4208 4272	we reduce the total number of CCs by merging closely located CCs
+T77f88d96c86954e72ea9302cac4cb4f4	own_claim 4274 4342	This merger is performed to prevent undesirable collision resolution
+T8257edc308bf5355a63676a80e64bf98	own_claim 4372 4443	it means the cloth patches represented by these CCs are closely located
+Tddfb5a778a1dca86dfb04870ccba61cd	own_claim 4445 4500	We do not want to handle closely located CCs separately
+T208aa92b89c417571bb8a1166caacd4d	own_claim 4507 4624	it might instantly introduce instabilities to the system by allowing closely located CCs to have different velocities
+T9bac13d0e7b332f274afad87d59e1bea	own_claim 4635 4656	there is an exception
+Tb5ce425ddf968fe36b6c43a62e6497eb	own_claim 4728 4803	we have to resolve collisions between these CCs by handling them separately
+T9fd7b2cf780348fad82d452b397e6c0b	own_claim 4908 5016	We do not want to handle closely located CCs separately except for the case where the bending is significant
+T57cc6bfbc0ea4ae917be3e794aece3d6	own_claim 5166 5290	the candidates of the CC merger are the CCs closely located, where we do not witness any significant bending between the CCs
+Tc2a02531e78ee78f998d5ac74758763a	own_claim 5922 5964	we assume an IZ always has two or more CCs
+T734c8238829a952b69cac3eafcdf2836	own_claim 5966 6081	The important part of the collision resolution of these multiple CCs is to find the proper directions of collisions
+T8f573586195d0cff4e51de9511ec52db	own_claim 6252 6350	finding the correct collision direction is important to achieve proper visual effect of collisions
+T501a07e6e674d53b75b1e16bfd05f7c8	own_claim 6400 6478	the collision direction is computed by connecting the two ball centers of mass
+T6376cfe5e4e250154613d782d3badfa0	own_claim 6484 6600	in cloth-cloth collisions, connecting two centers of CC masses is not a proper way to decide the collision direction
+T4b2e0fe4ad01f7168110ed3aca925f40	own_claim 7422 7473	it is not straightforward to resolve the collisions
+T1fde87e09862494b43789e61a80cc2e6	own_claim 7537 7608	we can think of two ways to solve this multiple cloth collision problem
+T09809e6f82c11f318d3797d5f948e042	own_claim 7610 7698	One way of resolving these multiple collisions is to handle them as staggered collisions
+T4058dc4df7933c3a92c3c7598e08af20	own_claim 7712 7770	the other way is to handle them as simultaneous collisions
+Tf2077dd28d54610e363a3cca4e7d42f2	own_claim 9235 9271	we adapt this approach for the cloth
+T113abc84844c9b40fc56400af95131ee	own_claim 9583 9677	an edge exists between two vertices where the bodies represented by those two vertices collide
+T0e45eb4b667f01b8106d8e5959cdce18	own_claim 9878 9992	we can build a system of N , 1 linear equations based on the changes of relative velocities of each colliding pair
+T403b1b75787b04658d17bca186359a4d	own_claim 10482 10483	v
+T413c9c90442d870a502275a8520a2866	own_claim 10519 10564	we can deterministically find the solution of
+T9f85d61d286b9c9a21fc3f134d69f9c8	own_claim 10623 10673	we handle fast moving cloth and rigid body objects
+T4bc0898bf77c01e97689df94f51b6122	own_claim 10683 10699	a problem arises
+T15bf49ff31fcf4d52dee1154b69b1b4d	own_claim 11013 11046	this case appears to be very rare
+T8ade289f526cdcddde45db6974e57ba1	own_claim 11056 11191	we can resolve this case by maintaining the barycentric relationship between cloth surfaces and the newly introduced colliding entities
+T1935b0252a9aabeaba4a55b8c7f0b457	own_claim 11205 11249	in the worst case, this involves repetitious
+Tc14782fbc7b1035f72c3e1bcd86f90b3	own_claim 11263 11339	we may introduce other new collisions when we resolve the current collisions
+T43f490ffc4d76b659bdea0060730da3a	own_claim 11475 11585	we build a system of linear inequalities based on the collision rela- tionships between grouped particle parts
+T57bbcb1bb5ebc54bd05cd62bc16c0b8b	own_claim 11790 11827	we have N or more linear inequalities
+T50da5f177e81d5e55e80d452af1f6a53	own_claim 12065 12140	This inequality relationship, first used for rigid body multiple collisions
+T23d615e1dc6175025d72438ee540c07f	own_claim 12150 12193	appears to serve the graphical purpose well
+T8dbdf51bd2ec1622f0d5e3ad2fae96cc	own_claim 12195 12376	mize When the difference we solve this between system v i;j + of and inequalities, , C e v i;j , , which we want would to minirepresent the extra energy we introduce into the system
+T41028b9bc2f42406c59c61a3f2011783	own_claim 12771 12873	the collision resolutions against rigid bodies are performed after cloth-cloth collisions are resolved
+Tc15d25b418401c6ca813042f1dad96cf	own_claim 12901 13002	collision responses are different based on whether rigid CCs are moving or fixed or a mixture of both
+T469d87bdee3d1b83f5da3d9a6ead188b	own_claim 13045 13088	we handle particles in that IZ individually
+T62132fa4909079343b744c048ac74771	own_claim 13474 13533	particles separating from the rigid bodies are also ignored
+Tf442468308af04af9cda2f1e09ad1139	own_claim 13721 13752	we handle particles as a bundle
+T790cdcf1559a15a3deff1ee23c9e2fb7	own_claim 14188 14294	collision resolutions against rigid bodies are done based on the proximities of particles to the rigid CCs
+T88d34d100d60199a413df7eecbfcc1ce	own_claim 14390 14421	Collisions between rigid bodies

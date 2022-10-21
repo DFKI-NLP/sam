@@ -1,0 +1,8 @@
+T2165f0c9a9994e3d7203b0afdcbdde1f	own_claim 253 368	The likelihood that it will take a step in a direction that is not locally optimal is a function of the temperature
+T8bdaec317d0936acae47b84c001d2011	data 661 701	the temperature reduces by a factor of 3
+Tafd9d282353ddbdeccf71c6cf8a14caf	data 371 377	Fig. 5
+T168d5896f43fb09b2ebd5c58351d5880	own_claim 585 655	We found it useful to reset the simplex with the current best solution
+Rbe85431033d91e8c9f0bffa9267969ce	supports-GOLD Arg1:Tafd9d282353ddbdeccf71c6cf8a14caf Arg2:T2165f0c9a9994e3d7203b0afdcbdde1f
+R356d397ebd6f9609ad6085ae46f89147	supports-GOLD Arg1:T8bdaec317d0936acae47b84c001d2011 Arg2:T168d5896f43fb09b2ebd5c58351d5880
+Rd6f64b1307f8201deee588eee681bc18	supports Arg1:Tafd9d282353ddbdeccf71c6cf8a14caf Arg2:T2165f0c9a9994e3d7203b0afdcbdde1f
+R1a35c5f1a2c5df96c8d7dbbf44ffb7a4	supports Arg1:T8bdaec317d0936acae47b84c001d2011 Arg2:T168d5896f43fb09b2ebd5c58351d5880

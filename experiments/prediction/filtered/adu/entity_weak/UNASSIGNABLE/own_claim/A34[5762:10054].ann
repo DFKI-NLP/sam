@@ -1,0 +1,7 @@
+T69dd95a7df5a462a9a7cfcde1ade9919	own_claim 228 311	Connecting these old and new positions of all particles in a face gives us a volume
+T5c6e4886ef19de58de2c7bea0c7ec47f	own_claim 313 419	Any collision happening within an integration time step always can be detected by this swept volume method
+T74df682e83714d5145fc7f736d437ea5	own_claim 472 540	An interesting case is where the faces are not actually intersecting
+T6015fc4a5358d1323e93f80f811a071f	own_claim 545 591	two swept volumes report a intersection anyway
+Td4848d7e12501d2d7f8091f893183c31	own_claim 2812 2839	the area A is non-visitable
+T1ef42b572429a57701d238eeb3a42028	own_claim 3509 3607	the actual collisions are tested with pairs of particle-face or face-face of the current positions
+T3795f9e4feb0b8ac9660fd4a865edfb3	own_claim 3985 4106	have been used times for as cloth large simulations, as to meet the the frame time step rate has of 30 become 1 sec/frame

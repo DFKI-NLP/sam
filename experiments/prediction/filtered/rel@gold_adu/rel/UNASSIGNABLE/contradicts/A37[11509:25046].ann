@@ -1,0 +1,5 @@
+Tdc2aa284a560cf22c36b79c6251d5947	background_claim 1895 1992	enforcing length-preserving constraints with SHAKE fails for four common geometric configurations
+T1089a119f22c1666fa602b38a20cd715	background_claim 2113 2177	discusses these drawbacks in SHAKE but does not offer a solution
+Ta0cb873b1f3ad5b61f0a197de5803890	background_claim 1642 1727;1744 1757;1780 1878	One widely-used family of discretizations includes SHAKE and RATTLE, which extend the Verlet scheme by considering a constraint force direction, −∇C(x) T , evaluated at the beginning of the timestep
+R3922e294648080d4185e5ca0926e10e1	contradicts Arg1:Ta0cb873b1f3ad5b61f0a197de5803890 Arg2:Tdc2aa284a560cf22c36b79c6251d5947
+R121e8a7106473b18b01c19aad2732bf5	contradicts Arg1:Tdc2aa284a560cf22c36b79c6251d5947 Arg2:T1089a119f22c1666fa602b38a20cd715

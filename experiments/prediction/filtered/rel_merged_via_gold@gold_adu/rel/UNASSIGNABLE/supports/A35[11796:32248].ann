@@ -1,0 +1,33 @@
+Tf6813d2496efd1dce5a6a29b8187640f	own_claim 9143 9226	it is not possible to increase the time step of implicit methods as much as desired
+T71563724fe0f42613e793be959e8c676	own_claim 11701 11754	implicit methods should be quite strong on this point
+T53705a3bc85182691a6cebf66190aeb0	own_claim 308 355	Performance actually depends on several factors
+T9f259d13cfc560886c70ddeeb33904a0	own_claim 9750 9847;9861 9939	is provides good possibilities integration error evaluation for efficient time step control which is too context-sensitive for being pre-evaluated using only the knowledge of K
+T513caccc53c6a376acee74bbb4546d5f	own_claim 7996 8081	accuracy is well preserved with one Conjugate Gradient iteration up to a K value of 4
+Ta3b5c1f875fa8b8f24a99b7fdafd7ff5	own_claim 8087 8185	increasing the iteration number n times also increases the K value n 2 times for the same accuracy
+Te141928a8157c9c0bc6776bb2cc46500	data 17610 17639	nonlinear mechanical behavior
+Te0099407dd0d0478d96676aaa0e00008	own_claim 20272 20332	additional artifacts caused by inaccurate collision response
+T212c85ec2bd9fcb71fa71ed5b3d437f5	background_claim 17759 17852	isotropic derivatives considering force evolution equally in any directions may be considered
+Tcaa9a499c3a05ebc91252c9637d3dbae	background_claim 107 210	cloth simulation usually involves very large mechanical systems described by a huge number of variables
+T32ce67691490cfb9d4f6ed69a9be4e44	background_claim 15518 15566	There are two main reasons for such nonlinearity
+Tb6d485392dc75552eaad6d63312362c9	background_claim 11610 11659	accuracy can be traded away for computation speed
+T8e3c122b44037b83b7b08fc888bff5f3	background_claim 422 601	This depends on the complexity of the method, and also related to the number of times the forces of the system have to de derived from the system state using the laws of mechanics
+T42cf380142233df098b23154b16d4e02	own_claim 20121 20210	excessive “heaviness” of the fabric that failed to follow the motion of the body properly
+T1d31df297efba8f131a7d0cf6eae5e67	background_claim 15654 15813	the strain-stress relation describing elasticity may actually be complex curves, which furthermore may take into account timedependent and hysteretic behaviors
+T420792cf3147a01bff11380ace6b60bd	own_claim 32 102	Performance is a key issue in choosing the adequate integration method
+T8f4be173a9f01ec6c624acff62b30c54	own_claim 10792 10832	implicit methods are a bit more tolerant
+T1ecb99902be7d1db23122e9fbf0d0236	own_claim 10723 10790	this scaling has to be strictly observed for preventing instability
+T9fab2e277c92b5a3a389cd45d977f52a	own_claim 20212 20259	garments folds that would not disappear quickly
+T4b82e59c5ac2f561907ece2f251aaafe	own_claim 8214 8336	the Inverse Euler method needs at least four Conjugate Gradient iterations to reach the accuracy of the Runge-Kutta method
+Tc916baa57feedf2cd1812814dd01c522	own_claim 9231 9268	this cause very noticeable inaccuracy
+Ra73c7bbb7c768bc84c7147158953b894	supports Arg1:Tf6813d2496efd1dce5a6a29b8187640f Arg2:Tc916baa57feedf2cd1812814dd01c522
+Rac7066342c0bac2caf1c7bf24bf97dcf	supports Arg1:T9f259d13cfc560886c70ddeeb33904a0 Arg2:T9f259d13cfc560886c70ddeeb33904a0
+Rb2d01bd63b7090418e8c30a4da0cffd2	supports Arg1:Tcaa9a499c3a05ebc91252c9637d3dbae Arg2:T420792cf3147a01bff11380ace6b60bd
+Rf956ef2cf8f78c87a37dcfcfcef8a61c	supports Arg1:T8e3c122b44037b83b7b08fc888bff5f3 Arg2:T53705a3bc85182691a6cebf66190aeb0
+Rfbbee77c9c06889213f0dfa4403e4412	supports Arg1:Ta3b5c1f875fa8b8f24a99b7fdafd7ff5 Arg2:T4b82e59c5ac2f561907ece2f251aaafe
+R1ce11c6097117b7cc4eba5e3a9f3c25b	supports Arg1:T513caccc53c6a376acee74bbb4546d5f Arg2:T4b82e59c5ac2f561907ece2f251aaafe
+R33258cc743e792b89616b28519348165	supports Arg1:T1ecb99902be7d1db23122e9fbf0d0236 Arg2:T8f4be173a9f01ec6c624acff62b30c54
+Ref8b8a6e12d465d367d795015444d6d7	supports Arg1:Tb6d485392dc75552eaad6d63312362c9 Arg2:T71563724fe0f42613e793be959e8c676
+R74d77d56e8fcf5544d7adaa9b35bbb23	supports Arg1:T1d31df297efba8f131a7d0cf6eae5e67 Arg2:T32ce67691490cfb9d4f6ed69a9be4e44
+Rf48486f2970f13d1a4bffb41413d0f3e	supports Arg1:Te141928a8157c9c0bc6776bb2cc46500 Arg2:T212c85ec2bd9fcb71fa71ed5b3d437f5
+Rad09812871c0ff438f7de1353cf9883b	supports Arg1:T42cf380142233df098b23154b16d4e02 Arg2:T9fab2e277c92b5a3a389cd45d977f52a
+Redd99416eb170d4d24dc0af85839cc61	supports Arg1:T9fab2e277c92b5a3a389cd45d977f52a Arg2:Te0099407dd0d0478d96676aaa0e00008

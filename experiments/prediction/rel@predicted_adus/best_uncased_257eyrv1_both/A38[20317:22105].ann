@@ -1,0 +1,6 @@
+T6f036e1888087ef28228b960a2c3d363	own_claim 568 599	the error space is fairly noisy
+T57bbd5c814afa5dc3bc0550d4416c526	data 606 623	many local minima
+Ta4566766c578dd806143ec1ef94294c3	own_claim 625 680	motivating the need for a global optimization technique
+R8ad2fd5ecd03bfdbfa40e883d8cc093a	supports Arg1:T57bbd5c814afa5dc3bc0550d4416c526 Arg2:T6f036e1888087ef28228b960a2c3d363
+Rdb48b7e8c8fee3a9ddf903f714123aca	supports Arg1:T6f036e1888087ef28228b960a2c3d363 Arg2:Ta4566766c578dd806143ec1ef94294c3
+Rc9ed1e22e200b256be88163bff05ade7	supports Arg1:T57bbd5c814afa5dc3bc0550d4416c526 Arg2:Ta4566766c578dd806143ec1ef94294c3

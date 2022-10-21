@@ -1,0 +1,22 @@
+Tb8549d2be5bda9828e291e2cd25f756e	own_claim-GOLD 40 130	our framework for estimating cloth simulation parameters is independent of the cloth model
+T85924d6277ba4aa5910977aacc0d3049	own_claim-GOLD 329 485	We wanted to use a model that was sophisticated enough to capture the detailed dynamic behavior found in real fabrics but still straightforward to implement
+T925e8fb06711a1ef1a950128ef833fa0	own_claim-GOLD 613 708	it was also important that the cloth parameters correctly scale to varying resolutions of cloth
+T5d10ed9f53a84357ed44c8bfce8aff9e	own_claim-GOLD 2627 2703	energy should scale linearly with triangle area to ensure scale independence
+Ta2250e4e1065b44f91716151eb74130f	own_claim-GOLD 2989 3037	was not able to capture dynamic aspects of cloth
+Tf8b88c81fffe3282d2a24a3504cb495a	own_claim-GOLD 3678 3693;3702 3726	The linear term is merely Stokes’s law 1
+T4dbad696ea7b1723326252577cad60b4	own_claim-GOLD 3729 3839	the quadratic term matches better the experimental behavior of macroscopic bodies in low Reynold’s number flow
+T484cccf5059491ffbe5c4cbb867d3d9f	own_claim-GOLD 4393 4493	implicit integration introduced damping which could not be eliminated by optimizing cloth parameters
+T425549fffde77b1f6085721c6a4b2dd0	own_claim-GOLD 4495 4589	We had more success in matching realistic cloth motions by using higher-order explicit methods
+T3bf868bcdb9af03e73f22dd709f55229	own_claim-GOLD 5116 5278	separating repulsion forces from the cloth internal dynamics and applying them outside the Runge-Kutta solver affected stability and resulted in visible artifacts
+T5f5d2e0425d2c87ffa1c8b6f4e48ee98	own_claim-GOLD 5418 5457	The drawback of this technique is speed
+Tef582f44d29e8162cbed0ae739c44532	own_claim 40 130	our framework for estimating cloth simulation parameters is independent of the cloth model
+T0f4a9068fcba1d6dddedd5d3677f6114	own_claim 329 485	We wanted to use a model that was sophisticated enough to capture the detailed dynamic behavior found in real fabrics but still straightforward to implement
+Tb964b41d62e7dd5e8845160080efe2a7	own_claim 613 708	it was also important that the cloth parameters correctly scale to varying resolutions of cloth
+T9ea9830eb59f0877cfc9198167e1426b	own_claim 2627 2703	energy should scale linearly with triangle area to ensure scale independence
+T7049110367bde2c540212f69440ecc65	own_claim 2989 3037	was not able to capture dynamic aspects of cloth
+Tf38fc9fabeb69ba907da6611b5c76bb3	own_claim 3678 3693;3702 3726	The linear term is merely Stokes’s law 1
+T931a86e980a7bbd9cc08839bd752eea3	own_claim 3729 3839	the quadratic term matches better the experimental behavior of macroscopic bodies in low Reynold’s number flow
+T7b6c246832e775829c1db7a2c9e58d14	own_claim 4393 4493	implicit integration introduced damping which could not be eliminated by optimizing cloth parameters
+T91b4b7c239972e396f1fec39b406f444	own_claim 4495 4589	We had more success in matching realistic cloth motions by using higher-order explicit methods
+T62233a5e50ecaba404995e65dafa1fbd	own_claim 5116 5278	separating repulsion forces from the cloth internal dynamics and applying them outside the Runge-Kutta solver affected stability and resulted in visible artifacts
+T39efbdbf3f57af111f3f37cd4244a20f	own_claim 5418 5457	The drawback of this technique is speed

@@ -1,0 +1,25 @@
+{
+  "UNASSIGNABLE": {
+    "contradicts": 87,
+    "parts_of_same": 39,
+    "supports": 370
+  },
+  "contradicts": {
+    "UNDETECTED": 27,
+    "contradicts": 99,
+    "parts_of_same": 2,
+    "supports": 7
+  },
+  "parts_of_same": {
+    "UNDETECTED": 24,
+    "contradicts": 3,
+    "parts_of_same": 236,
+    "supports": 12
+  },
+  "supports": {
+    "UNDETECTED": 242,
+    "contradicts": 4,
+    "parts_of_same": 3,
+    "supports": 1009
+  }
+}

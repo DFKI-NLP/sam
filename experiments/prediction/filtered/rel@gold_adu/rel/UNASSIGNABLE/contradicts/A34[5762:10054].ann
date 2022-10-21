@@ -1,0 +1,9 @@
+Td2c8c477d448a6dac78966610b1a4709	own_claim 897 973	We use this swept volume approach for cloth and the dynamic rigid body alike
+T676f90a6668409c4e9701762b0359df9	background_claim 4109 4115	larger
+Ta5607784d03d6fb11a41e6bb1b54949b	background_claim 600 636	this case is not an actual collision
+T23054c9111a3f7302531ac0bfaec21ca	background_claim 472 591	An interesting case is where the faces are not actually intersecting but two swept volumes report a intersection anyway
+T69a91772c21175163f77a24a3eb18202	own_claim 4134 4182	this penetration problem is no longer negligible
+T59e931447e3c5239adcb03a812c65782	own_claim 979 1064	for the non-moving rigid body only the surface faces are used for collision detection
+R135dac9662513f8b494bca1614535351	contradicts Arg1:T676f90a6668409c4e9701762b0359df9 Arg2:T69a91772c21175163f77a24a3eb18202
+Rfddcef21a69330c8f88f894183cc7ae4	contradicts Arg1:T23054c9111a3f7302531ac0bfaec21ca Arg2:Ta5607784d03d6fb11a41e6bb1b54949b
+R90cb232cb5a84e4dde6422c4172837a0	contradicts Arg1:Td2c8c477d448a6dac78966610b1a4709 Arg2:T59e931447e3c5239adcb03a812c65782

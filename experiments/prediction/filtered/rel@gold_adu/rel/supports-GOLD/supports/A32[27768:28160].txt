@@ -1,0 +1,5 @@
+<H1>6 CONCLUSION AND FUTURE WORK</H1>
+        We have developed a fast and versatile method for animating realistic wrinkles, which is geometric in nature. Hence, it can be applied to general deformable models such as cloth. We would like to extend the method by automatically creating wrinkle patterns from the strain pattern, which is currently a time consuming task.
+      
+      
+        

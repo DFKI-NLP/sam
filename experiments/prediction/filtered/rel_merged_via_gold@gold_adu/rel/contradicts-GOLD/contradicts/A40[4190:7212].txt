@@ -1,0 +1,15 @@
+<H1>PREVIOUS WORK</H1>
+        Models for fluid dynamics can be essentially subdivided into two categories. Simple models which are commonly used in most computer graphics applications describe the wind flow by predefined flow functions. Here, global functions are defined to model the velocity of wind. Either special flow primitives can be combined 
+[ WH91 ; LDG96 ; Li00 ] or visually pleasing functions introducing random turbulence [ SF92 ; SF93 ; Sta97 ] are taken into account to model even complex wind scenes. Many models use this method to move objects in the wind field through the scene [ Ree83 ; Sim90 ; WH91; BLM95 ]. In addition, physically based fluid dynamics solving equations of motions with particle methods were presented recently 
+[ IK03 ]. However, fixed flow functions lack interaction with the user or objects in the scene. Hence, with increasing computer power, computer graphics concentrates on physically more accurate simulations. In many fields the Navier-Stokes equations are the standard mathematical formulation to model fluid dynamics. A vast literature exists on how to solve these equations numerically. CFD are applied in this field for engineering tasks with a high degree of quality requirements. Unfortunately, it is quite difficult to apply these algorithms in computer graphics due to enormous calculation times. Hence, faster fluid solvers were investigated for computer graphics applications. Kajiya et al. [ KvH84 ], Yaeger et al. [ YU86 ], and Gamito et al. [ GLG95 ] worked on fluid dynamics solvers in two dimensions, and many improvements and variants followed [ CdVLHM97 ; KM90 ]. Foster and Metaxas [ FM96 ; FM97 ]
+, and Griebel et al. [ GDN98 ]
+ presented a solver for the fully three dimensional Navier-Stokes equations.
+ Due to explicit integration methods very small step sizes had to be used. 
+To enable faster simulations, a solution with an unconditionally stable solver was introduced by Stam 
+[Sta99 ] and further extended in 
+[ FSJ01 ; Sta01 ; Sta03 ]. Modelling interaction of fluids with solid objects has been investigated by Takahashi et al. [ TFK + 03 ] and Génevaux et al. 
+[ GHD03 ]. Recently, Wei et al. [ WZF + 03 ] presented an interesting approach to simulate lightweight objects like soap bubbles and feathers in a wind flow using a Lattice Boltzmann Model extended with a subgrid model. For interaction of highly deformable objects and especially cloth-like objects only few models have been investigated. Simple models consist in the calculation of lift and drag forces from the surrounding velocity field [SF92; Pro95; KCC + 00; KCCL01]. More complex interaction models calculate the wind force by a panel method [LDG96; Li00] introducing local vortices. In this work, we show how recent results in fluid dynamics for computer graphics can be exploited to simulate interaction of wind flows with textiles. Moreover, we extend the more straightforward approach of global wind field functions by the effect of lee.
+        3.
+      
+      
+        

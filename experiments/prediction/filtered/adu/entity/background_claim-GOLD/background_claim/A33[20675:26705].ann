@@ -1,0 +1,4 @@
+T239786ab308099d2d613b35936c1388f	background_claim-GOLD 1473 1515	methods based on the Laplacian of the mesh
+T8f359e685d237182aa0b78bbb9ed37ff	background_claim-GOLD 1542 1633	do little to penalize these strains and can show many artifacts around the edge of the mesh
+Tf42ec43056954a9e1af5cd7b1093fcbb	background_claim 1473 1515	methods based on the Laplacian of the mesh
+Tc303d34e7a21566ba866254bea611f5c	background_claim 1542 1633	do little to penalize these strains and can show many artifacts around the edge of the mesh

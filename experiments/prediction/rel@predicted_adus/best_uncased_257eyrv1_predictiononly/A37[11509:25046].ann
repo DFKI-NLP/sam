@@ -1,0 +1,126 @@
+Td974ba760b7ec21de41ae84ef46c17e6	background_claim 40 94	Given a quadrilateral mesh with n vertices and m edges
+T5e71828400c0535d429fdb224ee96fb9	background_claim 96 219	the numerical integration algorithm for constrained dynamics can be developed directly from the augmented Lagrange equation
+Td6746bc6a0588c93b4ee31c035e0b775	data 222 234	Marsden 1999
+Tca291d9b0087c004ac3a093206c5359f	own_claim 237 273	L(x, v) = 1 v T Mv −V (x) − C(x) T λ
+T61ff03f5a3134a433b6a4fea881ff5d1	background_claim 739 775	M v = −∇V (x) − ∇C(x) T λ , C(x) = 0
+T3671845d3f7fbc61f2d7929e216b4892	own_claim 1131 1198	we must discretize (3) and (4) in time using one of various schemes
+Ta1322b53dda2cf3a8368f2c02244f329	own_claim 1200 1232	each with benefits and drawbacks
+Tc445181e5582108c7260d252eebaa2f9	background_claim 1234 1331	One may choose differing explicit or implicit schemes for the potential and the constraint forces
+T2bf869adc96bc2cf9fcd6695c6e57a7a	background_claim 1344 1400	potential forces are split and separately discretized in
+Ted4293420158ec4e0df000998350cd98	data 1402 1420	Ascher et al. 1997
+Ta8c238d6469c6a0b8de7e77f5da621b4	background_claim 1424 1529	The discrete equations replace x(t) and v(t) with {x 0 , x 1 , x 2 , . . .} and {v 0 , v 1 , v 2 , . . .}
+Tf1bdf0bdcaff6929b335ded47d7a899e	background_claim 1642 1709	One widely-used family of discretizations includes SHAKE and RATTLE
+T2ce225ee81d7f7aa866954d27264454b	background_claim 1744 1757	Verlet scheme
+Te8e1b43d76dab5f737eecb6b1f3a7b59	data 1760 1778	Hairer et al. 2002
+Ta2860bc0bab93c2978e14c0150a1fccb	background_claim 1780 1878	by considering a constraint force direction, −∇C(x) T , evaluated at the beginning of the timestep
+Tdc2aa284a560cf22c36b79c6251d5947	background_claim 1895 1992	enforcing length-preserving constraints with SHAKE fails for four common geometric configurations
+T07ffb5e7af7e2588f065b331447a7d53	data 2039 2047	Figure 2
+T74b5e6d6fd692e920884034fc02412ee	data 2086 2103	Barth et al. 1994
+Tfccef4781573e4675f240b17b2b937d1	background_claim 2107 2147	which discusses these drawbacks in SHAKE
+Tc5522a52b386052ade0ba4a1bdbdfccf	background_claim 2152 2177	does not offer a solution
+T30f12379642ff1b26402e7fcb310ddb1	data 2344 2431	the constraint direction, −∇C(x) T , is evaluated at the beginning of the timestep, x n
+T26618bc22295d6a38a99367eb9f27248	background_claim 2452 2556	no scaling, λ , of the constraint direction yields a satisfied end-of-timestep constraint, C(x n+1 ) = 0
+T12a4c151e36dbec1b9ba4a33fa0daaab	background_claim 2585 2653	this observation manifests as a singular Jacobian in Newton’s method
+Tc67662f933496a6675c0214409e9f127	background_claim 2655 2728	These four cases correspond to rapid change in edge length or orientation
+T4a6b38f328e34e7734b931065d62990b	background_claim 2730 2759	in practice, they occur often
+T8824132b3e6585f2f38002aee4244d3c	own_claim 3160 3193	this resolves (Q1), (Q2) and (Q4)
+T8a3c01efe0337a758c710da621ad1a4e	own_claim 3213 3265	is automatically remedied by decreasing the timestep
+T4ee6ab12b555ae8bbe4c8ba889a2ef45	own_claim 4553 4586	Solving for an ICD step is costly
+Tca301e6ffb3c73d10d292d3d4fe76bd8	own_claim 4596 4619	there are many unknowns
+T23ef47e758b1758d9069bced1c7a4968	background_claim 4632 4701	each Newton step requires the solution of an indefinite linear system
+T15969ca5e56c3468c867d8e55b23e518	own_claim 4703 4737	whose matrix is costly to assemble
+T91ff1869258f5cd9c087597972415e06	data 4742 4746	§4.3
+T8c3d2f9c082d95bb7ac88fb2ed85523c	own_claim 4748 4867	we develop an approximation to ICD that addresses these drawbacks without sacrificing constraint accuracy or robustness
+Td0d40805ac69d05396c44b57852e791d	own_claim 5146 5233	step forward only the potential forces to arrive at the unconstrained position, x n+1 0
+T80ef2c05f387221af11657f309849184	own_claim 5240 5333	enforce the constraints by projecting onto the constraint manifold M = {x n+1 |C(x n+1 ) = 0}
+Tca8c2eced71edbd6c210bc9d1c85c7a7	background_claim 5335 5396	Methods of this form are known as manifold-projection methods
+Te24a5ed38706141f36293a0593bca047	data 5399 5417	Hairer et al. 2002
+T32c16035b45b365b3b844a6e7ea8658a	own_claim 5420 5485	To define a specific method, we must choose a projection operator
+T345647d8b11b6ea959c37675dfd70e25	own_claim 7118 7195	To solve SAP, one might extremize W ( δ x n+1 , λ n+1 ) using Newton’s method
+T8167aa3129f9f7c4b3ad09d753b34720	own_claim 7197 7320	each iteration would improve upon a guess for the shortest step, δ x n+1 that projects x n+1 0 onto the constraint manifold
+Tb2dad467b29d098d96f422e4666c683d	background_claim 7334 7396	Fast projection is a velocity filter that enforces constraints
+T5c4d1ca8b3dce6f5be8c6bc2dcab805a	own_claim 7398 7521	It combines the robustness of using an implicit constraint direction with the efficiency of approximate manifold projection
+Tfd96f1a00f4f64763c703fae084a1606	own_claim 7870 7920	Fast projection also uses a sequence of iterations
+T1b42843a95c0bb7914c0bae06fee8ba5	own_claim 7926 7959	it relaxes the requirement of SAP
+Tc3c82ec72438d1649159ac3797838be0	own_claim 9578 9616	the linear system matrix involves M −1
+T38e2dc5c9e141955cc899aa1e7ac3aa3	own_claim 9619 9677	the assembly of this system is most efficient for diagonal
+Tcd12f8046326208a36f34ac1c54528dd	own_claim 9693 9706	mass matrices
+T3540e1353ea8674d2aecb0943a9c3128	own_claim 9797 9843	a fast projection step requires a linear solve
+T90635534fddf0ddb56593ad4c5dbfe18	own_claim 9854 9878	fast projection’s system
+T2f3da528b6f1d454996b5d1d6374c76a	own_claim 9885 9895	is smaller
+Ta4ea498654b19073afba168791f6ca61	own_claim 9897 9948	≈ 2n × 2n compared to ≈ 5n × 5n), positive definite
+T2e67ddfcbfd5e2d5f1b91be4f15a0eff	own_claim 9974 9985	and sparser
+Tfa3699aacda934a19c06b4f15f845778	own_claim 9999 10087	it is considerably cheaper to evaluate, assemble, and solve than its ICD/SAP counterpart
+Tf82c7bd4f3058a3df80369996463c938	own_claim 10089 10201	Fast projection algorithm We repeatedly take fast projection steps until the maximal strain is below a threshold
+T196688343e4c51d5582cb1c05330246f	own_claim 10209 10264	the constraint may be satisfied up to a given tolerance
+T00bc817074122b88483aa3bd7a4f55cd	data 10296 10307	Algorithm 1
+T27748b25d245ce40cef25e7b8d3e2dc4	own_claim 10309 10424	Fast projection finds a manifold point, x n+1 , that is close, but not closest, to the unconstrained point, x 0 n+1
+Tc4b9cd2ffe51ba652fbdb7292f53704a	own_claim 10472 10508	fast projection exactly solves C = 0
+T04cd6461105bc3b0aa468307e70003a2	own_claim 10515 10536	it approximates F = 0
+T3c968675915702ed5cc9f39cf99b6526	own_claim 10538 10618	One important question is whether the fast projection’s error in F is acceptable
+T5a91946879e4d5468bed7307c4b5152d	own_claim 10713 10762	The first iteration of these methods is identical
+Tb4517a135f9c98cd2c27b5a7bdeca652	own_claim 10816 10864	Additional fast projection iterations seek C → 0
+T713ff531a1e226013be7a0af25ebe556	data 10876 10887	C ∈ O(h 2 )
+Tc8530aeb452948433fe7b59a0e502a54	own_claim 10889 10916	increments in x are O(h 2 )
+Tf314af18d19e22c13728e5b5f0c48cd2	own_claim 10928 10948	F remains in O(h 2 )
+Tea857e3604340ea65efd88260fb45473	background_claim 10963 11016	F ∈ O(h 2 ) is considered acceptable in many contexts
+T5bf9827582b68bb7be07d6eeadbfd176	data 11025 11047	Baraff and Witkin 1998
+T530404322afd109a0f695634b97dd4b6	data 11049 11065	Choi and Ko 2002
+T00b90779873f8fce72454f315bc230b1	background_claim 11067 11115	halt the Newton process after a single iteration
+Tcc64088ec0b04a3f47ebb8f0b9085ecc	data 11207 11215	Figure 3
+T71777673bbe85b327e8fdba321a4f56b	own_claim 11218 11296	the first iteration of the fast projection method eliminates first-order error
+Tbe7ef85d8d4a2b296490ef082442c091	own_claim 11298 11353	The remaining iterations perturb F only to higher-order
+T9e4f1ab17fed3651cc741f592d35d219	own_claim 12438 12505	enabling easy integration into our existing cloth simulation system
+T3daddab3c9c1500dc98f981c1ed182a7	own_claim 12529 12603	Step 3 requires solving a sparse symmetric positive definite linear system
+Tc588a61de2256eabdf9b337795919058	own_claim 12605 12623	we use the PARDISO
+T974f46bf89257421b2acf06e7a6990c4	data 12626 12649	Schenk and Gärtner 2006
+Re421304e693d58f532f0359d418dbad1	supports Arg1:Td6746bc6a0588c93b4ee31c035e0b775 Arg2:T5e71828400c0535d429fdb224ee96fb9
+Rea9742034acf3fd1e1fcf5499b80e23e	parts_of_same Arg1:T5e71828400c0535d429fdb224ee96fb9 Arg2:Tca291d9b0087c004ac3a093206c5359f
+R24c8b6a060c87bd6afebb076373f33b4	supports Arg1:T2bf869adc96bc2cf9fcd6695c6e57a7a Arg2:Tc445181e5582108c7260d252eebaa2f9
+R3be59c45fb3d803cbeb831240c349dd1	supports Arg1:Ted4293420158ec4e0df000998350cd98 Arg2:T2bf869adc96bc2cf9fcd6695c6e57a7a
+Ree2f1ccdfb86c714b65333aab39373aa	parts_of_same Arg1:Tf1bdf0bdcaff6929b335ded47d7a899e Arg2:T2ce225ee81d7f7aa866954d27264454b
+Ra73f352497fa38520448fce23ed81b81	parts_of_same Arg1:Tf1bdf0bdcaff6929b335ded47d7a899e Arg2:Ta2860bc0bab93c2978e14c0150a1fccb
+Ra09bc4bbfc6d60fb4cead6a3373fc52b	supports Arg1:Te8e1b43d76dab5f737eecb6b1f3a7b59 Arg2:T2ce225ee81d7f7aa866954d27264454b
+R6b8f0883d63bc9a0cdbf061ef35eb406	parts_of_same Arg1:T2ce225ee81d7f7aa866954d27264454b Arg2:Ta2860bc0bab93c2978e14c0150a1fccb
+R92e8f80f536935c17fd29644497bb866	contradicts Arg1:Ta2860bc0bab93c2978e14c0150a1fccb Arg2:Tdc2aa284a560cf22c36b79c6251d5947
+Rf145df5b2f08e87fedfa4b8fd43bdb47	supports Arg1:T07ffb5e7af7e2588f065b331447a7d53 Arg2:Tdc2aa284a560cf22c36b79c6251d5947
+R8910f9770081178cb91caba83d8a6d18	supports Arg1:T74b5e6d6fd692e920884034fc02412ee Arg2:Tdc2aa284a560cf22c36b79c6251d5947
+R0e3d053eb4b6ce05c69243eecf6a19ff	parts_of_same Arg1:Tdc2aa284a560cf22c36b79c6251d5947 Arg2:Tfccef4781573e4675f240b17b2b937d1
+R2446254b4b9ee8d298e117b174c2e639	supports Arg1:T74b5e6d6fd692e920884034fc02412ee Arg2:Tfccef4781573e4675f240b17b2b937d1
+Rda1571e41bc5c7068beec0e38df56d21	supports Arg1:T74b5e6d6fd692e920884034fc02412ee Arg2:Tc5522a52b386052ade0ba4a1bdbdfccf
+R51a8d03f494303acd852c0b5303d94da	supports Arg1:T07ffb5e7af7e2588f065b331447a7d53 Arg2:Tfccef4781573e4675f240b17b2b937d1
+Reb3ce2f9f21c258a284ccd01d92d8038	contradicts Arg1:Tfccef4781573e4675f240b17b2b937d1 Arg2:Tc5522a52b386052ade0ba4a1bdbdfccf
+Rb158e5072585bb74a4f5bcfb95d5d6d1	supports Arg1:T30f12379642ff1b26402e7fcb310ddb1 Arg2:T26618bc22295d6a38a99367eb9f27248
+Rb55f64beadaa691a7a6db2778f2bb394	supports Arg1:T4a6b38f328e34e7734b931065d62990b Arg2:Tc67662f933496a6675c0214409e9f127
+R35f30e29e33b20804ab246b740ffc92b	supports Arg1:Tc67662f933496a6675c0214409e9f127 Arg2:T4a6b38f328e34e7734b931065d62990b
+R53ca4c28dd0902c53dba89194779f480	contradicts Arg1:T8824132b3e6585f2f38002aee4244d3c Arg2:T8a3c01efe0337a758c710da621ad1a4e
+Ra5d9d1e955367c28e137d70de7ed859c	supports Arg1:Tca301e6ffb3c73d10d292d3d4fe76bd8 Arg2:T4ee6ab12b555ae8bbe4c8ba889a2ef45
+Rbb5ef12298377dd511ccd65b430d8bda	supports Arg1:T23ef47e758b1758d9069bced1c7a4968 Arg2:T4ee6ab12b555ae8bbe4c8ba889a2ef45
+Ra74cb97c1051d712f9560f8d3423df9a	supports Arg1:T91ff1869258f5cd9c087597972415e06 Arg2:T8c3d2f9c082d95bb7ac88fb2ed85523c
+R8813affa462a44da031de865b8b33902	supports Arg1:Te24a5ed38706141f36293a0593bca047 Arg2:Tca8c2eced71edbd6c210bc9d1c85c7a7
+R8f33f516c56ea7179d7b7696e6286424	supports Arg1:T8167aa3129f9f7c4b3ad09d753b34720 Arg2:T345647d8b11b6ea959c37675dfd70e25
+Re1300512dfc3517372b37f5031891d02	contradicts Arg1:Tfd96f1a00f4f64763c703fae084a1606 Arg2:T1b42843a95c0bb7914c0bae06fee8ba5
+R70865da7bc395005b210d508400a859b	supports Arg1:Tc3c82ec72438d1649159ac3797838be0 Arg2:T38e2dc5c9e141955cc899aa1e7ac3aa3
+R6bbdacbc6196eb905b5eb4765469d6c2	parts_of_same Arg1:T38e2dc5c9e141955cc899aa1e7ac3aa3 Arg2:Tcd12f8046326208a36f34ac1c54528dd
+R7b1ab0f4edbf0ab1844dc70cae2f7efe	contradicts Arg1:T3540e1353ea8674d2aecb0943a9c3128 Arg2:T90635534fddf0ddb56593ad4c5dbfe18
+R46703bca6d511bea8b2d37f17e7a7764	parts_of_same Arg1:T90635534fddf0ddb56593ad4c5dbfe18 Arg2:T2f3da528b6f1d454996b5d1d6374c76a
+R50f3de8b0d9fd40b57f3fa71dfc1bcc2	supports Arg1:Ta4ea498654b19073afba168791f6ca61 Arg2:T2f3da528b6f1d454996b5d1d6374c76a
+Rd96925cc032634f1e53e83859645a65f	parts_of_same Arg1:T2f3da528b6f1d454996b5d1d6374c76a Arg2:Ta4ea498654b19073afba168791f6ca61
+R60d26502ab12d1aedf78f6fa78ab356c	parts_of_same Arg1:Ta4ea498654b19073afba168791f6ca61 Arg2:T2e67ddfcbfd5e2d5f1b91be4f15a0eff
+R06523b84a2500c8875977cb2af89e9e4	supports Arg1:T2e67ddfcbfd5e2d5f1b91be4f15a0eff Arg2:Tfa3699aacda934a19c06b4f15f845778
+R15378f58a825f139260ea2a3ec127552	supports Arg1:Tf82c7bd4f3058a3df80369996463c938 Arg2:T196688343e4c51d5582cb1c05330246f
+R14d9fdd7229d2fe4f75ef2c2293285c5	supports Arg1:T00bc817074122b88483aa3bd7a4f55cd Arg2:Tf82c7bd4f3058a3df80369996463c938
+R1bcf0e47fefcf24bb7c6936a7d47305f	supports Arg1:T00bc817074122b88483aa3bd7a4f55cd Arg2:T27748b25d245ce40cef25e7b8d3e2dc4
+R7d84635b8c584d18f1ced36e4c11ec1b	contradicts Arg1:Tc4b9cd2ffe51ba652fbdb7292f53704a Arg2:T04cd6461105bc3b0aa468307e70003a2
+Rc915704e4f27e7659027550b21b7c22c	supports Arg1:Tc8530aeb452948433fe7b59a0e502a54 Arg2:Tb4517a135f9c98cd2c27b5a7bdeca652
+Re1e89e391326d80092673ee6861925dc	supports Arg1:Tf314af18d19e22c13728e5b5f0c48cd2 Arg2:Tb4517a135f9c98cd2c27b5a7bdeca652
+R09ed4cb968f790de74d4ad7721b0d52f	supports Arg1:T713ff531a1e226013be7a0af25ebe556 Arg2:Tc8530aeb452948433fe7b59a0e502a54
+R937cd57a6d50c95fbd62adc714eefdf3	supports Arg1:Tc8530aeb452948433fe7b59a0e502a54 Arg2:Tf314af18d19e22c13728e5b5f0c48cd2
+R0b456573d53a39a42e4a99408c34e76f	supports Arg1:T5bf9827582b68bb7be07d6eeadbfd176 Arg2:Tea857e3604340ea65efd88260fb45473
+Ra5038215dd7eaad4894348b1538360b7	supports Arg1:T530404322afd109a0f695634b97dd4b6 Arg2:Tea857e3604340ea65efd88260fb45473
+R3b9a2f04a43e46f1e8f2c4986cd1a528	parts_of_same Arg1:Tea857e3604340ea65efd88260fb45473 Arg2:T00b90779873f8fce72454f315bc230b1
+R1515f5337b78b2b52e268739d000d9c3	supports Arg1:T5bf9827582b68bb7be07d6eeadbfd176 Arg2:T00b90779873f8fce72454f315bc230b1
+R9e6de1cca84c2a4452984b522df94125	supports Arg1:T530404322afd109a0f695634b97dd4b6 Arg2:T00b90779873f8fce72454f315bc230b1
+Rf5eb625717f78f835decda5ae790b5f1	supports Arg1:Tcc64088ec0b04a3f47ebb8f0b9085ecc Arg2:T71777673bbe85b327e8fdba321a4f56b
+R8db55871b887c946e537691b8ec5b22a	supports Arg1:T71777673bbe85b327e8fdba321a4f56b Arg2:Tbe7ef85d8d4a2b296490ef082442c091
+R1152baed3828d569eb1b4df33a03874f	supports Arg1:T974f46bf89257421b2acf06e7a6990c4 Arg2:Tc588a61de2256eabdf9b337795919058

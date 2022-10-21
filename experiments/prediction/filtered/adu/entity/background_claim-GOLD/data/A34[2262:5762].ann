@@ -1,0 +1,6 @@
+T34b8644931ce5781a6569c0d720b157f	background_claim-GOLD 260 294	the number of geometrical entities
+T4ec030dd0f48d5ecd70ed6a421ad5851	background_claim-GOLD 317 380	the collision detection algorithm has to handle is considerable
+Tba415203ceaa87dd20c7e2ba45bc3d2d	background_claim-GOLD 1718 1813	we cannot get dynamic interactions between particles once the particles collide into each other
+Te9a05d7ee7d4adab37875cffeca7ee20	data 260 294	the number of geometrical entities
+Tc9980328e971e1c7b5dab152996e5a89	data 317 380	the collision detection algorithm has to handle is considerable
+Tb0c21784d1a7ddbe47f3d9e090ddaa72	data 1718 1813	we cannot get dynamic interactions between particles once the particles collide into each other

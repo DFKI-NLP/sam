@@ -1,0 +1,4 @@
+T56234d192eaf22d63401818708c0c246	own_claim 3262 3278	found it lacking
+T7c444def780c24eed2aa0e0da65a2ad0	data 3221 3256	We experimented with this technique
+R63fce8081eb3774d1efcf6edd868f982	supports-GOLD Arg1:T7c444def780c24eed2aa0e0da65a2ad0 Arg2:T56234d192eaf22d63401818708c0c246
+Ra6e456a7dc641a1cb6f386d2cc203e86	contradicts Arg1:T7c444def780c24eed2aa0e0da65a2ad0 Arg2:T56234d192eaf22d63401818708c0c246

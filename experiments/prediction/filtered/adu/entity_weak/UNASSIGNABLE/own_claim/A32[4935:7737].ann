@@ -1,0 +1,3 @@
+T364f2a885f71fc5c7b583571534c1e91	own_claim 58 121	We would like to animate the cloth using coarse triangular mesh
+T604f807db8b90ba81d3d6f40f792b6b7	own_claim 1613 1672	the change in area of the triangles due to the deformations
+T016c4e0d804361a03d81bff6cab75baf	own_claim 1724 1830	We propose to capture gross cloth movements and deformations using a coarse mesh and the fine deformations

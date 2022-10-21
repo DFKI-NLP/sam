@@ -1,0 +1,15 @@
+T3ca5a08556e7264416b27697a919ed90	background_claim 105 164	Since the first physics-based approach by Terzopoulos et al
+T0b4d611841697b25ae533d512e447d1e	background_claim 287 316	over general particle systems
+Tdf91d4581bb7966ac30e08bf282387ca	background_claim 415 450	or even the discrete yarn structure
+Tcafe53b47d364c663cb0d202c393d2ba	background_claim 506 598	it is very hard to clearly identify or even quantify the advantages of individual approaches
+Td801a448ae0bf07858354ea7375097f2	background_claim 846 873	this relationship is linear
+Taf1ec3b93f0e09a775685103261fe8be	background_claim 883 975	completely described by a set of material constants, whose number depends on the cloth model
+Ta8d874ab98b86ac41453c09d75dbfffb	background_claim 1070 1184	continuum-based methods can have two (isotropic) to six (completely anisotropic) parameters for planar deformation
+T98fb1af36db4f38d93992719344842db	background_claim 1199 1231	another one to three for bending
+T758f7e5122fc99a3c04a1ceee351204c	background_claim 1380 1532	a single set of material coefficients for the entire deformation range is not sufficient to faithfully capture the nonlinear response of typical fabrics
+T4efbd06df30d2698786afe78f4de27bd	background_claim 1879 2033	A better approximation to the true material response can be obtained by making the material parameters functions of the deformation, rather than constants
+Tfe1c4c1e30869f7643e3a8e07589ffc7	background_claim 2039 2082	by fitting these functions to measured data
+T422d76cc1f1a41ed70c75859ce3b10f6	background_claim 2386 2440	for measuring shear properties and the Cantilever test
+T8455dd3e1f6e8324de7e83bf930ad9e1	background_claim 2719 2729	Bhat et al
+T7c3bb5b891dbd342efe2458feee04cc2	background_claim 3113 3225	In a similar spirit, capture technology can be used to record time-varying geometry of complex cloth mo∗ ∗ tions
+T6f6a47cf72d6187c203cb2177de285fa	background_claim 3309 3399	parameter fitting remains very difficult without explicit control over boundary conditions

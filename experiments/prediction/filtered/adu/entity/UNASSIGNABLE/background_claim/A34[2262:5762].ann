@@ -1,0 +1,9 @@
+Tda37e2db5bb7062faafd8dc27ad86ec6	background_claim 94 121	One is to detect collisions
+Teb301af2580da534de86cdcd88593013	background_claim 126 160	the other is to resolve collisions
+Teb99df7db26cf537c396ec9dc8e80b80	background_claim 192 251	the computation time to detect collisions is not negligible
+T1e48a36e2b0e90c174a8cb45dc672cf7	background_claim 530 624	Collision resolution is to find the correct next positions and velocities of colliding objects
+Td58aa8d6df8a94771b234a0a806af743	background_claim 770 870	This scheme works fine for cloth-rigid collisions and for the special case of cloth-cloth collisions
+T3a125a4f49f029432141aa37fdab2e55	background_claim 1140 1201	By preserving barycentric relationships of collision entities
+T7e2a083bb2a57922452426ab4827c1fd	background_claim 1203 1299	their method resolves collisions where numerous cloth surfaces are colliding together as a group
+T56c195a7d4c7fb9100553f31df54fbd3	background_claim 1307 1360	is a novel way to resolve multiple collisions at once
+Tc60982aa627bce26bf008d9c18d29411	background_claim 1449 1508	Another method for cloth-cloth collisions has been proposed

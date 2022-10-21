@@ -1,0 +1,14 @@
+T79f3b8494414f069a9b14668495deced	own_claim-GOLD 267 339	We suggest markers per megapixel as an appropriate metric for comparison
+Tdc4f98021661d0369876a784df160f19	own_claim-GOLD 1252 1296	The most common errors are marker mismatches
+Te79c67279267452074761d217dd0db72	own_claim-GOLD 1301 1379	are observable in reconstructions by local strain in the reconstructed surface
+Tc78b7288bc04f64d81caa3ff13848bbd	own_claim-GOLD 3710 3796	we improve the color pattern and matching procedure to get more information per marker
+Ta46c9e275188a46cbb2797b1e9d65786	own_claim-GOLD 3798 3856	we introduce strain constraints to simplify correspondence
+T401be8653b6ac3461bf361b4cbd10941	own_claim-GOLD 3861 3960	we create a data driven hole filling technique that splices previously captured cloth into the mesh
+Tc15b39611bd2e175ebb8a83b124b31f9	own_claim-GOLD 3975 4059	our system is capable of capturing a full range of motion with folding and occlusion
+Tcfe7368fe65044bc6177b8e2c95baec4	own_claim 267 339	We suggest markers per megapixel as an appropriate metric for comparison
+T81ff40bec68403cac480051f0cccbe74	own_claim 1252 1296	The most common errors are marker mismatches
+T0cff8dbdd7a610ec667ebf991df772ec	own_claim 1301 1379	are observable in reconstructions by local strain in the reconstructed surface
+Td1eda3a67e2e6638ad2148b67a56f278	own_claim 3710 3796	we improve the color pattern and matching procedure to get more information per marker
+T14942b8327df2fd07d071760caae0a92	own_claim 3798 3856	we introduce strain constraints to simplify correspondence
+Tcb7b96080e8a5cdf13e3ddad3a8554f5	own_claim 3861 3960	we create a data driven hole filling technique that splices previously captured cloth into the mesh
+T0a982806c6831fdecf7a6725d1f328b8	own_claim 3975 4059	our system is capable of capturing a full range of motion with folding and occlusion

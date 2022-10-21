@@ -1,0 +1,18 @@
+Te0500490460f29cac60cf36a68d255e4	own_claim 132 243	we can, in principle, select a specific model that meets a set of criteria such as accuracy or simulation speed
+Taa161b0163deb90e83dd1a1107407f7c	own_claim 245 301	Our choice of a cloth model was guided by two principles
+T8cd4efd1721f64dcb80ca1044c95331b	own_claim 303 327	realism and practicality
+Tb8739c8a97ea9dd2636ef252b39c4c40	own_claim 1200 1257	could potentially capture more realistic details of cloth
+T4e7c1fead7d3cbe26add550f856da9db	own_claim 1516 1748	The model developed by Baraff and Witkin formulates the energy of a particular triangle in terms of so-called condition functions C(x) such that the total potential energy associated with the system is given by E u = k s C(x)C T (x)
+T9c0688ac369b016fd7eebedb66c49475	own_claim 2716 2793	we need to be careful when substituting C(x) for stretch and shear into eq. 1
+T985eb9bc4edab46dbff5be4342fdb96a	own_claim 2799 2857	the resulting formula is linear in a rather than quadratic
+T6cd034b036df2a7e4565bdbafecdda5d	own_claim 2920 2939	a linear drag model
+T9862229d4345fc51a0e4308e8453d83b	own_claim 2948 2980	that used in previous cloth work
+T07ec89b5f73e885e79b59c81def4d627	own_claim 4107 4235	The optimizer is free to eliminate this behavior or other terms of this equation by setting the corresponding parameters to zero
+T586e9ddce34b89336098316f74c687ed	own_claim 4248 4337	we used a first-order implicit Euler time integration scheme similar to the one described
+T2373e384182fc1a55d8a42c7db043f81	own_claim 4591 4705;4707 4708	The results in this paper all use an adaptive 4thorder accurate Runge-Kutta methods with embedded error estimation 2
+Tb8f79fb7c613498452ccfde5f86565b1	own_claim 4822 4905	recent work suggests that using 2nd-order backward differences 9 or Newmark schemes
+T77e160a5a6ec5f5344cf61cc0629547b	own_claim 5007 5105	which combines repulsion forces with impulses to robustly prevent all collisions before they occur
+T23eadc0d9f991d1b11b09a7552d05305	own_claim 5289 5337	we apply repulsion forces inside the solver loop
+Tdabde205bde7f8e8288dd73506619da4	own_claim 5347 5416	the solver’s own internal error estimation can remove these artifacts
+Tb11d2f9430ba277d6da18a19609b107b	own_claim 5623 5706	To achieve acceptable performance, we used a number of collision culling algorithms
+T0e952675c9c34697a95d2912ecd1be75	own_claim 5794 5880	a curvature-based criterion for rejecting self-collisions that was first introduced by

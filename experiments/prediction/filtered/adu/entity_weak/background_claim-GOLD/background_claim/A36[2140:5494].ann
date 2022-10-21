@@ -1,0 +1,16 @@
+T82014e194df7afc31bfd92c432db86d1	background_claim-GOLD 38 169	Today’s cloth simulators for animation, visual effects, games, and apparel design can mimic real cloth to a high degree of fidelity
+Tf9e38afcfa90e97a0d41e22eaf0fb732	background_claim-GOLD 175 287	to fully exploit their capabilities, the constitutive models for cloth deformation must be tuned with great care
+T7c0aaeb24b825e0ee66445548468dd42	background_claim-GOLD 289 420	During this tuning process it is difficult to tell which models and which parameters are giving results more like the real material
+T8395519ab26dd7c60a8907dd6bce2cd8	background_claim-GOLD 619 761	Most methods for testing cloth move the sample into a state of near-uniform strain, exercising one or at most two components of strain at once
+Tf6aa8fb04d0446a954c660040ffea95a	background_claim-GOLD 898 995	the resulting forcedisplacement curves are valuable in studying the differences between materials
+T24f41c35c84f63ff444227fc1d3f27e5	background_claim-GOLD 1006 1043	this approach has certain limitations
+T95107024ef0828208a7538f70b0d1a88	background_claim-GOLD 1045 1182	The inevitable deviations from uniform strain create modeling error that cannot be quantified without knowing the actual strain variation
+T129144f8a4940965a06d89a144ff9a68	background_claim-GOLD 1188 1314	force-displacement curves can be used directly to tune a cloth model, but do not provide any way to validate the resulting fit
+T6726f372b0b4ec29c9c5259759b73660	background_claim 38 169	Today’s cloth simulators for animation, visual effects, games, and apparel design can mimic real cloth to a high degree of fidelity
+Te5c3c02d6414aeb976c38dc16805a6b3	background_claim 175 287	to fully exploit their capabilities, the constitutive models for cloth deformation must be tuned with great care
+Tc70916d3b8cf0899751bac515b0049ad	background_claim 289 420	During this tuning process it is difficult to tell which models and which parameters are giving results more like the real material
+T4e5f4cbb3d4d55ed1e171941272a76a8	background_claim 619 761	Most methods for testing cloth move the sample into a state of near-uniform strain, exercising one or at most two components of strain at once
+T368af24bc982cc8d4b595121bd8dc045	background_claim 898 995	the resulting forcedisplacement curves are valuable in studying the differences between materials
+Tcc35b8420d7222e60e23afe64a21c312	background_claim 1006 1043	this approach has certain limitations
+T2e3592304de9b8404850c1d0de240217	background_claim 1045 1182	The inevitable deviations from uniform strain create modeling error that cannot be quantified without knowing the actual strain variation
+Tb7463df24c99149052e61e00b671f0ea	background_claim 1188 1314	force-displacement curves can be used directly to tune a cloth model, but do not provide any way to validate the resulting fit

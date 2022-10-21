@@ -1,0 +1,19 @@
+T0fe94c00899f5528547f13df2275bb16	own_claim 2594 2667	In a nutshell, #12 is isotropic and very compliant in stretch and bending
+T2eb5f23fcd1e05178107afd0171d0912	own_claim 2743 2820	is stiff and quite isotropic in stretch, but extremely anisotropic in bending
+Ta65f1b504d4684836c2cc2cddad995b3	own_claim 2875 2948	is anisotropic both in stretch (with 10/1 stiffness ratio) and in bending
+T2ffde2f6b13946929e70ed9e2d6c96d8	own_claim 3459 3579	For stretching, all three cloth models fit nicely to the average of the hysteresis bands, even in highly nonlinear cases
+T85ce33e96355d6894653a95a181f8ceb	own_claim 3727 3789	linear and/or isotropic variants reach a reasonable compromise
+Td266b1fed16f618c5b12e2ff9b477bf1	own_claim 3794 3850	are not always able to remain inside the hysteresis band
+Tc5fc2942358c1a462153aa0f2af87d53	own_claim 4228 4275	The fitting residual is similar for all fabrics
+T7827592647879af61737927755dc1b3c	own_claim 4281 4320	distinctly higher for the Springs model
+T4b4cbbc03293e44b0274156190b908b1	own_claim 4322 4406	Often, the residual is dominated by a difference in curl near the edge of the sample
+T3cb63195ef4d0a384bc55dc219804eec	own_claim 4414 4443	the overall shape is well fit
+Tbd36e6a32e59ad4d1d863ef80a12d455	own_claim 4720 4819	the (lower) effective shear stiffness of the sheet when allowed to buckle in the complex shear test
+T2bfaebf92751c97d0ff4a79423455f40	own_claim 5460 5515	the mismatch is more apparent in the complex shear test
+Ta62d72e193f463a64140f665c1820ef2	own_claim 5523 5601	models with underestimated stiffness exhibit wider folds than the real fabrics
+T87e681d4e0ecff4d158b2ec6631dcc86	own_claim 6912 7017	This is probably due to the inherent coupling of stretch and bending deformation components in this model
+T0b31c84ce05aeebd48e01500e4519d2d	own_claim 7132 7214	complex parameter tuning has often been regarded as a caveat of mass-spring models
+Tb101a8cc1b7b4d7ea22dd62dc3a9e629	own_claim 7353 7433	The Soft Constraints and St. VK models produce results with very similar quality
+T7fec06c3d82cac380b03672b36a572de	own_claim 7456 7498	the models present only subtle differences
+Tbdebc82fd2ac45ac9f00c9e0e286699b	own_claim 7954 8127	missing cross-modal stiffening may also be, to a large extent, the reason for stiffness underestimation in the corner pulling test for the Soft Constraints and St. VK models
+T1bdbf783d2a48bfce77183de35774b79	own_claim 8129 8164	An extension to the nonlinear model

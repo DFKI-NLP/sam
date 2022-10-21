@@ -1,0 +1,60 @@
+Tbb146d8b952aefe34354dbfa8d3fe2ae	own_claim-GOLD 56 111	The numerical computation of the formulation is trivial
+T72cadd2cfd3228e4dd07651c1bfda843	own_claim-GOLD 422 451	they differ in implementation
+Tc3d7d04d0d5a535e6d75ba21fc7a0741	own_claim-GOLD 453 522	The wrinkle pattern is gray scale texture image defining the bump map
+T6eb7d5ccebc57c80630fbb54ba53e57c	own_claim-GOLD 633 670	The normalization factor is important
+T54ef78f745adbcb1392f74fa3a9557bd	own_claim-GOLD 772 868	The factor should be some fraction of the overall dimensions of the average triangle of the mesh
+T470fe8cf5f09a0beac147d002a91ed24	own_claim-GOLD 1190 1230	the wrinkling pattern needs to be smooth
+Tb4c55880442856b484da8b2c6b7df296	own_claim-GOLD 1428 1457	solution to equation 4 exists
+T44d82ef4281df60e55b362faff89c91e	own_claim-GOLD 1528 1581	one needs to watch for the invalidity of the solution
+T7015fa07187619f9ce5447585487d305	own_claim-GOLD 1645 1658	eliminates it
+T904e6a97aa4b682ea552f40dd88c3436	own_claim-GOLD 1720 1779	The modulation factor varies significantly across triangles
+Te94d3254898de342d4679fd8121abe17	own_claim-GOLD 1943 2038	the modulation factors are linearly interpolated across triangles to give smooth Modulation Map
+Taa5094566f6fcaf4cc3574a97f319683	own_claim-GOLD 2542 2596	Animating a single wrinkle pattern is not satisfactory
+Tcf614d56cff0ba87601c179e6b8fb059	own_claim-GOLD 2637 2701	the wrinkles are not mere modulations of a fixed wrinkle pattern
+T46683ad94adbbe6d2f66f077cfeaf066	own_claim-GOLD 2711 2759	the pattern changes according to the deformation
+Tf228d15f98ee5e358213c917ff5965a5	own_claim-GOLD 2864 2963	two different wrinkle patterns give different wrinkling coefficients for the same triangle geometry
+T79ae44b008503f0d1cf15e017b2916fd	own_claim-GOLD 3045 3085	the modulation factors will be different
+Tf51422edd7f294d0c3ba5a8a0c1cfe59	own_claim-GOLD 3087 3182	It all depends on how the wrinkle pattern is oriented with respect to the deformation direction
+Tfded11f99db2f7bae2b4b76608555182	own_claim-GOLD 3268 3313	corresponding modulation factor will be small
+T3e8cd2dd53b16be3df4946d938a51d4d	own_claim-GOLD 3331 3397	the direction of the deformation favors one pattern over the other
+Ta5a8bec415f1213e39abc2dd8081f85d	own_claim-GOLD 3883 3939	The wrinkle patterns chosen are orthogonal to each other
+T5587cb49c4ae6fa69ee8482240b7c920	own_claim-GOLD 4045 4135	it may compute different values for the modulation factor for each of the wrinkle patterns
+Ta255045f77d3dd79579e93fac7533778	own_claim-GOLD 4250 4283	both the modulation factors are 1
+T694f4b4a398ccbf27fb1d72995245ebf	own_claim-GOLD 4338 4430	the modulation factors differ significantly, depending upon the direction of the deformation
+Te9d2bdb34233651dd13f69deaf436886	own_claim-GOLD 4521 4612	the corresponding wrinkle pattern is well oriented towards the direction of the deformation
+T4eaf9ee59e1daf8b9b9c410c179e7117	own_claim-GOLD 4750 4796	will give a change of one pattern to the other
+Tef12e374b81b9318277ec49efdcc6088	own_claim-GOLD 4844 4918	in the animation a sudden switch of the pattern is not temporally coherent
+Ta97f6b75b6ec5699f9faf060b487ecf4	own_claim-GOLD 4923 4951	is visually quite disturbing
+T57a70b11747fb35e20db8858df55a297	own_claim-GOLD 5516 5589	There will be a smooth transition between wrinkling patterns in this zone
+T9bdfe9a660cc3c0bde4821d804455665	own_claim-GOLD 5835 5894	M F 1 will be smaller than (1 − variance)(M F 1 + M F 2 )/2
+T6e935bc4589f44c8ff1453db78009bac	own_claim-GOLD 6078 6119	the two patterns will be blended smoothly
+T1c462fe5f0e00e891ccc2a52f72d7293	own_claim 56 111	The numerical computation of the formulation is trivial
+T82d0bb75314d0c6c0016b551ceee191d	own_claim 422 451	they differ in implementation
+T677c9c5628f5ebf817d632f432bf2f10	own_claim 453 522	The wrinkle pattern is gray scale texture image defining the bump map
+T952bcb59245fa32346be4225423f9f9e	own_claim 633 670	The normalization factor is important
+Tc2f8e68253d6c6fa7a825f64b79a4f5e	own_claim 772 868	The factor should be some fraction of the overall dimensions of the average triangle of the mesh
+Tb39f746151fe4e4cb4a95a1385cacab1	own_claim 1190 1230	the wrinkling pattern needs to be smooth
+T06de0f113299a2aeffd1f8f0bf1fae97	own_claim 1428 1457	solution to equation 4 exists
+Tcb0506696ba3a29e93bfce8d1efffa2d	own_claim 1528 1581	one needs to watch for the invalidity of the solution
+Te747f02608bb435d82571c8f87ca39e4	own_claim 1645 1658	eliminates it
+T846014ee27b83ba07de64b6aac648033	own_claim 1720 1779	The modulation factor varies significantly across triangles
+Te63d8be7b9957192cba6ef55b3ccdd40	own_claim 1943 2038	the modulation factors are linearly interpolated across triangles to give smooth Modulation Map
+T5570e163311f236a9747035fd4ffcbb1	own_claim 2542 2596	Animating a single wrinkle pattern is not satisfactory
+Tf2f650941a69cde7688d1c91aed9453b	own_claim 2637 2701	the wrinkles are not mere modulations of a fixed wrinkle pattern
+T6b8160b153c3e30cf75cab40044d0c52	own_claim 2711 2759	the pattern changes according to the deformation
+Tf116c6ea2fbc69e35ac13753430d32c9	own_claim 2864 2963	two different wrinkle patterns give different wrinkling coefficients for the same triangle geometry
+T56b556bb1c0a27d53c349af94b75ef8b	own_claim 3045 3085	the modulation factors will be different
+T7e887f039c2c0dca61c1b667e669d877	own_claim 3087 3182	It all depends on how the wrinkle pattern is oriented with respect to the deformation direction
+Tb365953cb367ceeb17958ecd0b1b48ad	own_claim 3268 3313	corresponding modulation factor will be small
+T0f4287eaa0f6d5ebe8444e5712e10c79	own_claim 3331 3397	the direction of the deformation favors one pattern over the other
+Tba043adb482153f34ef4ece9c2842181	own_claim 3883 3939	The wrinkle patterns chosen are orthogonal to each other
+Taa4ea2b60dd437a319b2b37fa6e838c2	own_claim 4045 4135	it may compute different values for the modulation factor for each of the wrinkle patterns
+T626134d029bb76034563b08d0cc1c5bc	own_claim 4250 4283	both the modulation factors are 1
+Td6a0254e1eacff5bc7f6c65d9cf519df	own_claim 4338 4430	the modulation factors differ significantly, depending upon the direction of the deformation
+Td994f09144bd8627845f55d95919b4b3	own_claim 4521 4612	the corresponding wrinkle pattern is well oriented towards the direction of the deformation
+Tbfb4a95c21a2981a90c3b7a3a6fe34e7	own_claim 4750 4796	will give a change of one pattern to the other
+T9d49d6def403655bb2f3dd0f7c00979e	own_claim 4844 4918	in the animation a sudden switch of the pattern is not temporally coherent
+T666bbf7034bfed58fdd8af9cd6cbd3da	own_claim 4923 4951	is visually quite disturbing
+T59cf4a8e0cde0af2a56a4bde16c4d4de	own_claim 5516 5589	There will be a smooth transition between wrinkling patterns in this zone
+Tb0a8654d3254de589ada76566a50cc36	own_claim 5835 5894	M F 1 will be smaller than (1 − variance)(M F 1 + M F 2 )/2
+Ta02b0f4fb0900bb976b0d0247323e852	own_claim 6078 6119	the two patterns will be blended smoothly

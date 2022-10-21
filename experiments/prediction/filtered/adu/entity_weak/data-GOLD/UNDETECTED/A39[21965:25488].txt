@@ -1,0 +1,31 @@
+<H1>3 Implicit Integration</H1>
+        Given the known position x(t 0 ) and velocity x(t 0 ) of the system at time t 0 , our goal is to determine a new position x(t 0 + h) and velocity x(t 0 + h) at time t 0 + h. To compute the new state and velocity using an implicit technique, we must first transform equation (2) into a first-order differential equation. This is accomplished simply by defining the system’s velocity v as v = x and then writing
+        
+          3
+          dt d x x = dt d v x = M −1 f(x, v v) .
+        
+        To simplify notation, we will define x 0 = x(t 0 ) and v 0 = v(t 0 ). We also define x = x(t 0 + h) − x(t 0 ) and v = v(t 0 + h) − v(t 0 ).
+        45
+        SIGGRAPH 98, Orlando, July 19–24
+        C OMPUTER G RAPHICS Proceedings, Annual Conference Series, 1998
+        The explicit forward Euler method applied to equation (3) approximates x and v as x v = h M v −1 0 f 0
+        where the force f 0 is defined by f 0 = f(x 0 , v 0 ). As previously discussed, the step size h must be quite small to ensure stability when using this method. The implicit backward Euler method appears similar at first: x and v are approximated by
+        
+          4
+          v x = h M −1 f(x 0 v + 0 + x, v v 0 + v) .
+        
+        The difference in the two methods is that the forward method’s step is based solely on conditions at time t 0 while the backward method’s step is written in terms of conditions at the terminus of the step itself. 4 The forward method requires only an evaluation of the function f but the backward method requires that we solve for values of x and v that satisfy equation (4). Equation (4) is a nonlinear equation: rather than solve this equation exactly (which would require iteration) we apply a Taylor series expansion to f and make the firstorder approximation ∂f ∂f f(x 0 + x, v 0 + v) = f 0 + ∂x x + ∂v v. In this equation, the derivative ∂f/∂x is evaluated for the state (x 0 , v 0 ) and similarly for ∂f/∂v. Substituting this approximation into equation (4) yields the linear system
+        
+          5
+          v x = h M −1 (f 0 + v 0 ∂x ∂f + x v + ∂v ∂f v) .
+        
+        Taking the bottom row of equation (5) and substituting x = h(v 0 + v) yields v = hM −1 f 0 + ∂x ∂f h(v 0 + v) + ∂v ∂f v . Letting I denote the identity matrix, and regrouping, we obtain
+        
+          6
+          I − hM −1 ∂v ∂f − h 2 M −1 ∂x ∂f v = hM −1 f 0 + h ∂x ∂f v 0
+        
+        which we then solve for v. Given v, we trivially compute x = h(v 0 + v). Thus, the backward Euler step consists of evaluating f 0 , ∂f/∂x and ∂f/∂v; forming the system in equation (6); solving the system for v; and then updating x and v. We use the sparse data structures described in section 2.3 to store the linear system. The sparsity pattern of equation (6) is described in the next section, while solution techniques are deferred to section 5.
+        4 The method is called “backward” Euler because starting from the output state (x 0 + x, v 0 + v) and using a forward Euler step to run the system backward in time (i.e. taking the step −h(v(t 0 + h), f(x(t 0 + h), v(t 0 + h))) brings you back to (x 0 , v 0 ). What is the value in this? Forward Euler takes no notice of wildly changing derivatives, and proceeds forward quite blindly. Backward Euler, however, forces one to find an output state whose derivative at least points back to where you came from, imparting, essentially, an additional layer of consistency (or sanity-checking, if you will).
+      
+      
+        

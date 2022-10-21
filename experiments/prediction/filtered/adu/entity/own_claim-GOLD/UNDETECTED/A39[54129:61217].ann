@@ -1,0 +1,9 @@
+Te4ab315b335af10b72754f67f9c31050	own_claim-GOLD 1256 1351	The forces, and their derivatives with respect to position and velocity, are of course included
+Tb4f463df22cdec0b5f8c1c2905c2a2ac	own_claim-GOLD 1907 1980	Both cloth/cloth and cloth/solid collisions give rise to the same problem
+T4bad3b634f62f524c39ac26b7eb4a496	own_claim-GOLD 3358 3427	this could be eliminated, but at the cost of decreasing the step size
+Tbbe0445bef1380bb2318c54a59257a9f	own_claim-GOLD 3764 3867	this would be problematic when using a multi-step differential equation solver which expects continuity
+T671b8bd2cad7ce100ec9d9597f827b5d	own_claim-GOLD 4922 4980	some sort of extra implicit step could be used as a filter
+T74f12fac90ec63043aff42d7ac6a0ff8	own_claim-GOLD 5521 5580	changing positions after a step has been taken doesn’t work
+T34c0bf3b12254cbb8c56156f94f46532	own_claim-GOLD 5786 5833	we simply modify the top row of equation (4) to
+Tbe8dad3f59eb54b928d499fc1680cbba	own_claim-GOLD 5866 5892	x i = h(v 0i + v i ) + y i
+Tca5c416b03a8afc82746cbc96c111122	own_claim-GOLD 6103 6137	we must follow this change through

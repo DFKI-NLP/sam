@@ -1,0 +1,107 @@
+T7aba61151aa9b44829aca4e856c91e50	own_claim 33 98	Our goal is to study the fidelity of constitutive models of cloth
+T66863369b1708727f6d35cdd3e794aa2	own_claim 99 179	models that predict the forces produced in the cloth in response to deformations
+Td8d66396ababd54a97c10b2920ed5bc5	own_claim 181 311	The input of such a model is the positions of the vertices x 1 , . . . , x n ∈ IR 3 that define the deformation state of the sheet
+T5171c220fc70258a9fe29a747dee656c	own_claim 361 429	the output is the forces that act between those vertices in response
+T5707a5e25c5d724d7560695bf8d1fc26	own_claim 462 514	some of the models we look at are discrete in nature
+Tfd353b46f4641c5c2b495e563e9ed056	background_claim 1022 1065	Most elastic cloth models separate membrane
+Tadccc5521b0df2b4805d6d2bdad0645a	own_claim 1092 1124	and bending deformation energies
+T18b06e50014c61e40cbb65568744bc39	own_claim 1236 1249	W = 2 1 σ · ε
+T3a5cdea4da088b80adcbe4e3cc88ee69	background_claim 1264 1382	most of these models define separable scalar stress components as linear functions of individual scalar strain metrics
+T9d4c77239d44f440ed530b728c74f87a	own_claim 1398 1486	the energy density of each deformation component i can be written as W i = 1 2 k i ε 2 i
+T308d52066d0f2de9e60152c19e97ac66	own_claim 1595 1677	The force density due to each ε i follows as F i = − W i = −σ i ε i = −k i ε i ε i
+T155e1d7020d9de5df20cd0d79a549e44	own_claim 1680 1761	We have evaluated three models for membrane deformation that fit this description
+T3edc674d4cdf3bb580030e59fc819846	data 1808 1825	Baraff and Witkin
+Taa5e1854af90f131702fc563e0a4644a	data 1828 1832	BW98
+T7fce0b08caf2b951b8200362844dc7a0	own_claim 1839 1875	the diagonalized St.Venant-Kirchhoff
+T8cfa0f5bf2952858bb4e8ae3d6dbcf5c	background_claim 1883 1905	model by Volino et al.
+T3bdc0453d0d5b0055bc617c2229d6f73	data 1907 1913	VMTF09
+T06c91d00de0e23ef6deb47c02125890b	background_claim 1917 1939	and two bending models
+T5b506f8eaaa98177a57309eee44d4a65	background_claim 1941 2007	spring systems and the edge-based bending model in Discrete Shells
+T7c8a88dae56f63531f22368c45584bfa	data 2009 2015	GHDS03
+T0754cff063ed6b93c28090539be69df3	own_claim 2062 2140	we distinguish six different strain components on regularly triangulated cloth
+T36fc683c6073526926983ad27d102e26	own_claim 2249 2271	diagonalbend (ε b,uv )
+Tfe548e442f849a95426e399ad2f178a7	own_claim 2396 2466	not all force models define the quantities below explicitly as strains
+T8c6054857990dd6d8c499d788b2df817	own_claim 2471 2526	they often rely on the resolution of the discretization
+T1da7590deca7252d8872c514e7907ed9	own_claim 2531 2608	they differ simply by scale factors that can be embedded in the stiffness k i
+Tc9f55c9c07cc07e1043da5fb5f04aa9c	data 3482 3488	TPBF87
+Tddfad60c4a34c741226045df451e0e75	background_claim 3491 3608;3617 3652	Given a per-triangle mapping function w from the undeformed 2D configuration (x a,0 , x b,0 , x c,0 ) to the deformed 3D configuration (x a , x b , x c )
+Tbbb9db1f1a9c44e6d1ab568b3b771c4f	background_claim 3654 3764	the deformation gradient can be computed as −1 (w u w v ) = (x b − x a x c − x a ) x b,0 − x a,0 x c,0 − x a,0
+Te0af3a53ce6feaa58e0b8332d1c399bf	own_claim 3881 3939	w u 2 − 1 w v 2 − 1 T ε s,u = , ε s,v = , ε s,uv = w u w v
+Tb6256b2d3ec8f2cc2dc3f28d6c40d640	background_claim 3963 3976	Volino et al.
+T105bcf74832988c7a38faca26bb0005f	data 3978 3984	VMTF09
+Tbaa61ba2fd5d672ea9d4a3254dec0d9e	background_claim 3986 4105	approximate the standard StVK model zeroing out off-diagonal terms in the matrix that relates strain and stress, σ = Eε
+T76696ce4161d9cc46df0702acd306611	background_claim 4113 4236	in the diagonalized StVK, each membrane stress component depends only on its corresponding strain component, σ s,i (ε s,i )
+Tc8813c3c2498b370637dedcb46de734c	own_claim 4797 4820	Discrete Shells Bending
+Tcd5750bbf612f729d774b848a6f8d159	background_claim 5027 5042	Grinspun et al.
+T8da309cbcd73bf4f51222395c92afb45	data 5044 5050	GHDS03
+T162ee134e1c2824dcbfff08983b1a3ba	background_claim 5052 5069	and Bridson et al
+Te8985890e9ef147d5b040f850c8a67d3	data 5072 5077	BMF03
+Tb2f0ba6373e03863022f0c503d762acd	background_claim 5080 5245	discovered concurrently the appropriate weighting of the angle change in order to model homogeneous bending on irregular triangle meshes with a homogeneous stiffness
+T556f0f79e8b6491e41c550c699ecd0aa	background_claim 5247 5356	Grinspun et al. define h 0 as a third of the average of the heights of the two triangles incident to the edge
+T45d86d981bb99f4cd2a996f690f66d20	background_claim 5358 5470	This definition implies that bending energy density is integrated over edgecentered rectangles of size l 0 × h 0
+Td1f2d97e642091393338103f0df6011f	own_claim 5473 5549	With our separation of weft-, warpand diagonal-bending to capture anisotropy
+T8a318b7d55be4391033b0df979aca0e8	background_claim 5551 5613	the bending models in Discrete Shells and by Baraff and Witkin
+T1ebcd1100025de9ef5d647aaf4fa615c	data 5616 5620	BW98
+T7188a07e3d8658a2452ea90756ccb79a	background_claim 5622 5667	are equivalent up to a stiffness scale factor
+Tcb8d3878ab4816120785bed43388de58	own_claim 5744 5842	The generic force density model F = −σ ε defined above assumes a linear stress-strain curve σ = kε
+Tcbea080676eb3cb0e247ec9682091f97	own_claim 5853 5908	stressstrain curves are potentially nonlinear functions
+T5d46ada41d7205ed6260c4c70348a614	own_claim 5916 6067	for each deformation component, we model stress as a function σ i = k i (ε i )ε i , with a strain-dependent stiffness k i encoded using Hermite splines
+T2c3b821edaf20ee474dfc502a6a0b585	own_claim 6148 6254	The resulting nonlinear force density function, F i = −k i (ε i )ε i ε i yields a conservative force field
+Tdc592ec3b6c3c6e164ed8f60942b2a0e	own_claim 6270 6340	the elastic energy density can no longer be defined simply as 1 2 kε 2
+T60aa9e25e8bbd8cc881252a130f4a32e	own_claim 6347 6406	would now require the integration of the stiffness function
+T4a6ed684000bdf5517a9e4823ae6913e	background_claim 6417 6435	only Volino et al.
+T671273c2cc84cff2c89461f742aacb36	data 6437 6443	VMTF09
+Tf4c6dc534d065d6ee7950ab1e55e184f	background_claim 6445 6499	propose a general nonlinear stress-strain relationship
+Tf2a274ade57d8789d09a68bc6dc91fef	background_claim 6508 6561	many systems use some form of strain limiting instead
+Te07b2b278bf08fbc228d98e8b083abc7	background_claim 6564 6635	the same construction can easily be built on any of our selected models
+T346db7d2e62f0cc1d8764ee2b18cde7c	own_claim 6645 6678	linear models fit the data poorly
+T1f46e72c3c2284797f352d78aa743f57	own_claim 6680 6720	we used the nonlinear model in all cases
+Tcecae444bbd4a5252a7da56b5c56dec3	own_claim 6722 6863	resulting in a consistent set of models, parameterized by the number of spline control points, which reduces to the widely used linear models
+T7f4b6a43e4a06cf03d8b5cd3f520fd7e	own_claim 6869 6907	each spline has a single control point
+R7baabd4d1061e8b17ffa4f67d51f6860	supports Arg1:T66863369b1708727f6d35cdd3e794aa2 Arg2:T7aba61151aa9b44829aca4e856c91e50
+R46a6887362414312c7005634a5918de2	parts_of_same Arg1:Tfd353b46f4641c5c2b495e563e9ed056 Arg2:Tadccc5521b0df2b4805d6d2bdad0645a
+R0131a6333cca20695cd4cfccdfb3c17e	supports Arg1:T3a5cdea4da088b80adcbe4e3cc88ee69 Arg2:T9d4c77239d44f440ed530b728c74f87a
+R30697fda4e51a206339fda6db458f49e	supports Arg1:T9d4c77239d44f440ed530b728c74f87a Arg2:T308d52066d0f2de9e60152c19e97ac66
+R53713c0b5e6df692ea0d4973435ff5c7	supports Arg1:T3edc674d4cdf3bb580030e59fc819846 Arg2:T155e1d7020d9de5df20cd0d79a549e44
+R584b521b25d7f95c48142dde3fca9732	supports Arg1:Taa5e1854af90f131702fc563e0a4644a Arg2:T155e1d7020d9de5df20cd0d79a549e44
+R8f9ccec6a7c2d69d83303888167df57d	parts_of_same Arg1:T155e1d7020d9de5df20cd0d79a549e44 Arg2:T7fce0b08caf2b951b8200362844dc7a0
+R8b8983374cd68c087f7a95703164c349	supports Arg1:Taa5e1854af90f131702fc563e0a4644a Arg2:T5b506f8eaaa98177a57309eee44d4a65
+R591d052098b981bc181ec9ff3813b2d5	supports Arg1:T3edc674d4cdf3bb580030e59fc819846 Arg2:T7fce0b08caf2b951b8200362844dc7a0
+Rcfaf72a7cedaa613c326fbc1169847bd	parts_of_same Arg1:T7fce0b08caf2b951b8200362844dc7a0 Arg2:T8cfa0f5bf2952858bb4e8ae3d6dbcf5c
+Re2a2efc0a7fcb1f0abaf0de9e9d73c8d	supports Arg1:T3bdc0453d0d5b0055bc617c2229d6f73 Arg2:T8cfa0f5bf2952858bb4e8ae3d6dbcf5c
+R63524e00694bf8890e88c233a5c20968	parts_of_same Arg1:T8cfa0f5bf2952858bb4e8ae3d6dbcf5c Arg2:T06c91d00de0e23ef6deb47c02125890b
+R11e5ba2367cf6f0d50a2d29069ec839e	supports Arg1:T3bdc0453d0d5b0055bc617c2229d6f73 Arg2:T5b506f8eaaa98177a57309eee44d4a65
+R7a9926ee67b9f44ee7599ddb1d84062e	supports Arg1:T5b506f8eaaa98177a57309eee44d4a65 Arg2:T06c91d00de0e23ef6deb47c02125890b
+Rc0d58fc52fbe5ebe482f2e7974a30ab3	supports Arg1:T7c8a88dae56f63531f22368c45584bfa Arg2:T5b506f8eaaa98177a57309eee44d4a65
+R3631da663d3bf612716f0cedd596d0c5	supports Arg1:T36fc683c6073526926983ad27d102e26 Arg2:T0754cff063ed6b93c28090539be69df3
+R69e4ff4a15c0669f3742b00c9b14e71e	supports Arg1:T8c6054857990dd6d8c499d788b2df817 Arg2:Tfe548e442f849a95426e399ad2f178a7
+R5d939e8c0ba42fb245addd743f1c5ba6	supports Arg1:T1da7590deca7252d8872c514e7907ed9 Arg2:Tfe548e442f849a95426e399ad2f178a7
+R43c4e71667a9ba1dd775a0095995b829	supports Arg1:T8c6054857990dd6d8c499d788b2df817 Arg2:T1da7590deca7252d8872c514e7907ed9
+R22bcf772b5ed1e1df1ea6eb3e2e6fbcf	supports Arg1:Tddfad60c4a34c741226045df451e0e75 Arg2:Tbbb9db1f1a9c44e6d1ab568b3b771c4f
+R75b9eba57bae6848efe35ccc662ef3fc	supports Arg1:T105bcf74832988c7a38faca26bb0005f Arg2:Tb6256b2d3ec8f2cc2dc3f28d6c40d640
+R6c1e4e11398865eceaee5ab7b8624144	parts_of_same Arg1:Tb6256b2d3ec8f2cc2dc3f28d6c40d640 Arg2:Tbaa61ba2fd5d672ea9d4a3254dec0d9e
+R97c814a348e0010c1f9cf5856c77b01f	supports Arg1:T105bcf74832988c7a38faca26bb0005f Arg2:Tbaa61ba2fd5d672ea9d4a3254dec0d9e
+R88ed0a5eb2c73f9ec87254561c27a449	supports Arg1:T105bcf74832988c7a38faca26bb0005f Arg2:T76696ce4161d9cc46df0702acd306611
+R2e9c23f89baab09095b597a75a542afb	supports Arg1:Tbaa61ba2fd5d672ea9d4a3254dec0d9e Arg2:T76696ce4161d9cc46df0702acd306611
+Rfbbbeb6d8841e8c49bcb0321755f169c	supports Arg1:T8da309cbcd73bf4f51222395c92afb45 Arg2:Tcd5750bbf612f729d774b848a6f8d159
+R3cb572b4116f2f391dee67f8d38cd893	parts_of_same Arg1:Tcd5750bbf612f729d774b848a6f8d159 Arg2:T162ee134e1c2824dcbfff08983b1a3ba
+R6840e1de8791d370d862df695d1587c1	supports Arg1:T8da309cbcd73bf4f51222395c92afb45 Arg2:Tb2f0ba6373e03863022f0c503d762acd
+Rc5c5843e75949f9bdd0da4c0f3404cdb	supports Arg1:Te8985890e9ef147d5b040f850c8a67d3 Arg2:T162ee134e1c2824dcbfff08983b1a3ba
+R229d2e5ab217ff57d6b9ff537d71ba05	parts_of_same Arg1:T162ee134e1c2824dcbfff08983b1a3ba Arg2:Tb2f0ba6373e03863022f0c503d762acd
+Rb9577c5585ca9f715e590a3404413251	supports Arg1:Te8985890e9ef147d5b040f850c8a67d3 Arg2:Tb2f0ba6373e03863022f0c503d762acd
+Ra7d030b0a3f196b62c534cf86681bcb8	supports Arg1:T1ebcd1100025de9ef5d647aaf4fa615c Arg2:T8a318b7d55be4391033b0df979aca0e8
+R59aa69b467b4e11b3f825825cc510b83	parts_of_same Arg1:T8a318b7d55be4391033b0df979aca0e8 Arg2:T7188a07e3d8658a2452ea90756ccb79a
+R20516b4c268f1502d2ff4e681f3a769a	supports Arg1:T1ebcd1100025de9ef5d647aaf4fa615c Arg2:T7188a07e3d8658a2452ea90756ccb79a
+R4a10f3ec2f964cdbb1d0c8990388a66e	contradicts Arg1:Tcb8d3878ab4816120785bed43388de58 Arg2:Tcbea080676eb3cb0e247ec9682091f97
+R85f086e13b087f44ed3ebd5a0e7937e3	contradicts Arg1:T2c3b821edaf20ee474dfc502a6a0b585 Arg2:Tdc592ec3b6c3c6e164ed8f60942b2a0e
+R5645a03bb0ced99fdf5efc320588cd58	contradicts Arg1:T2c3b821edaf20ee474dfc502a6a0b585 Arg2:T60aa9e25e8bbd8cc881252a130f4a32e
+R91aec615f8ab530b15b7a2f1647a2afc	supports Arg1:Tdc592ec3b6c3c6e164ed8f60942b2a0e Arg2:T60aa9e25e8bbd8cc881252a130f4a32e
+Rab52409cac46f8530a5365ee696b1a45	supports Arg1:T671273c2cc84cff2c89461f742aacb36 Arg2:T4a6ed684000bdf5517a9e4823ae6913e
+R08a59e6964049fc034decfa3c270448e	contradicts Arg1:T4a6ed684000bdf5517a9e4823ae6913e Arg2:Tf4c6dc534d065d6ee7950ab1e55e184f
+R3d8d2ea9dcbde82aff6a8c96709343e3	supports Arg1:T671273c2cc84cff2c89461f742aacb36 Arg2:Tf4c6dc534d065d6ee7950ab1e55e184f
+R2fa9357e093f74dfefde0e92009e2f10	parts_of_same Arg1:T4a6ed684000bdf5517a9e4823ae6913e Arg2:Tf4c6dc534d065d6ee7950ab1e55e184f
+R452ce0abbfc1d0a17833e9e87d8e2beb	contradicts Arg1:Tf4c6dc534d065d6ee7950ab1e55e184f Arg2:Tf2a274ade57d8789d09a68bc6dc91fef
+Rb4adf09cf32bef563235b1e65d559422	contradicts Arg1:Tf4c6dc534d065d6ee7950ab1e55e184f Arg2:Te07b2b278bf08fbc228d98e8b083abc7
+R46209b6faa8e2eaf3936560624d14507	supports Arg1:T346db7d2e62f0cc1d8764ee2b18cde7c Arg2:T1f46e72c3c2284797f352d78aa743f57
+R18f6fc1edc6a79249d651a0c92fb67ee	supports Arg1:T1f46e72c3c2284797f352d78aa743f57 Arg2:Tcecae444bbd4a5252a7da56b5c56dec3
+R5635c1bdfb69affea21737c8389f35ff	supports Arg1:T7f4b6a43e4a06cf03d8b5cd3f520fd7e Arg2:Tcecae444bbd4a5252a7da56b5c56dec3

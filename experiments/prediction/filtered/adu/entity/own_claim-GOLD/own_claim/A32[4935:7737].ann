@@ -1,0 +1,28 @@
+Te090e076ceae9c684c2f24a425e094fb	own_claim-GOLD 249 326	the geometry of coarse mesh would be unable to capture fine wrinkles on cloth
+T832a2583f8955c9734f36b4730fa663f	own_claim-GOLD 328 375	Real cloth has very little in-plane deformation
+T16daf461d8fe9ba9d9541636f4e94b64	own_claim-GOLD 445 464	setting high metric
+T6534f37b2effcd55edb0d9b37d56c604	own_claim-GOLD 488 522	stiffnesses will not work properly
+T42bcbf9ff51e6feaea8e3cea5abcb610	own_claim-GOLD 626 670	Real cloth would wrinkle to this deformation
+Taecb83c80319e0d73a8346af14a7d82a	own_claim-GOLD 894 946	the buckled edge exerts small forces on the vertices
+Tbd0a95a996121287a6bc6b70ed2c6482	own_claim-GOLD 1075 1142	the real life buckling is attributed to the compression of the edge
+T82d173a9ecbb5ffc3e5d4214526606dd	own_claim-GOLD 1213 1266	the corresponding forces on the vertices will be high
+Tbbddedef7fc31d7511461c7570219c15	own_claim-GOLD 1268 1313	This is in contrast with real cloth situation
+T95cdb481eef8505ae98894a1df9bc2c9	own_claim-GOLD 1321 1415	to animate the cloth realistically with a coarse mesh, we need to set small metric stiffnesses
+T18163a9332b8f4e8d4adf02690564bb7	own_claim-GOLD 1517 1606	Very little in-plane deformations can be looked at as area conservation property of cloth
+T95fc2989e57ed756c4c2af4b72de067a	own_claim-GOLD 2019 2062	there is a change in the area of a triangle
+T02713f2efe515d2561158cfab412abf0	own_claim-GOLD 2092 2153	it is invariant after applying the modulated displacement map
+T064b1ef2a4fe0f5aab308e91da706ff0	own_claim-GOLD 2425 2492	the empiricism introduced later does not actually conserve the area
+T493ab54ca5ff82f9a858239d241b821b	own_claim 249 326	the geometry of coarse mesh would be unable to capture fine wrinkles on cloth
+T91c9c8e26d59ee40ba0d07e43047fb6d	own_claim 328 375	Real cloth has very little in-plane deformation
+T5760dc904509e3dcd9df6d065bb22bea	own_claim 445 464	setting high metric
+T193a0b53278a46744099b43e736bf933	own_claim 488 522	stiffnesses will not work properly
+T6e726346ef242982ca0f17f7671c488a	own_claim 626 670	Real cloth would wrinkle to this deformation
+T513b5c596dfe27e1d7dc86f70107aa58	own_claim 894 946	the buckled edge exerts small forces on the vertices
+T657b3d6922b0c8e4e024d8f503711679	own_claim 1075 1142	the real life buckling is attributed to the compression of the edge
+Tab76f9a04b062820ec2fa38c619fb0a2	own_claim 1213 1266	the corresponding forces on the vertices will be high
+T59617363c91298e61146bdd29ac95d84	own_claim 1268 1313	This is in contrast with real cloth situation
+T215934b3f102d96d636590e13eb0b845	own_claim 1321 1415	to animate the cloth realistically with a coarse mesh, we need to set small metric stiffnesses
+T790f20b33a6979e6c3cda5a2778304ad	own_claim 1517 1606	Very little in-plane deformations can be looked at as area conservation property of cloth
+Te4d98e941318b21fb9453492f6f0eca8	own_claim 2019 2062	there is a change in the area of a triangle
+Tb5b882c30f0e833589834b76a18be12c	own_claim 2092 2153	it is invariant after applying the modulated displacement map
+T3a35196763e15ce3bdc58f056ab29a21	own_claim 2425 2492	the empiricism introduced later does not actually conserve the area

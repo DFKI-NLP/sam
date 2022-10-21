@@ -1,0 +1,8 @@
+T19e9ceaa6bdfa290d65a97e626df6ff9	own_claim 8009 8067	higher order terms in the expansion may become significant
+T510c0bebceac0445dd671b4d631a4724	own_claim 8072 8087	not predominant
+Tf46534d2b32ea43352008bf06ac03d4e	own_claim 2724 2826	The deformation of the triangle can be described by a general 4D homogeneous coordinate transformation
+Td723e5771fd8cf69dff86d7193402c7f	own_claim 2837 2947	the rotational and translational parts of the transformation are irrelevant to the derivation of the algorithm
+Ra5c707cfeed52690bcb88e8f08199aaa	contradicts-GOLD Arg1:Tf46534d2b32ea43352008bf06ac03d4e Arg2:Td723e5771fd8cf69dff86d7193402c7f
+Rbbe47692e599b727f33c20f3f9015a35	contradicts-GOLD Arg1:T19e9ceaa6bdfa290d65a97e626df6ff9 Arg2:T510c0bebceac0445dd671b4d631a4724
+R061ee12d70d94a4fd9477f8479ca17d9	contradicts Arg1:Tf46534d2b32ea43352008bf06ac03d4e Arg2:Td723e5771fd8cf69dff86d7193402c7f
+Rb2e78ca27b1e2f5098a7b9ac40b96d09	contradicts Arg1:T19e9ceaa6bdfa290d65a97e626df6ff9 Arg2:T510c0bebceac0445dd671b4d631a4724

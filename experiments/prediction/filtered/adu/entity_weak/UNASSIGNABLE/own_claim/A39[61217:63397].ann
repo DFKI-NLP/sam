@@ -1,0 +1,9 @@
+Tbcfa1a98fde525541362e9da8e40f58b	own_claim 260 376	There are a large number of methods for altering the size of a time step, for both explicit and implicit integrators
+T68f7c77f4c1ee589b543d5b326664e08	own_claim 615 636	is the deciding voice
+Tbfd6cdaeb85e31d09011e70c5dee84d8	own_claim 709 730	by then it’s too late
+T08edac9ca62d50f1f358fca9bd8ed50b	own_claim 752 847	any potential instability, arises almost completely from the strong stretch forces in the cloth
+Td388e8da2f465e171977833d474f2299	own_claim 1509 1588	Most of our simulations involving human motions use a step size of 0.02 seconds
+Tf16e0cb2cc4d0e549fa4773758873f7b	own_claim 1684 1729	the simulator tries to increase the step size
+T9b0bc46262651615daf46ba99024bfb8	own_claim 1779 1885	it reduces the size again, and waits for a longer period of time before retrying to increase the step size
+T91be82794b5de027f59d6a274c03eb07	own_claim 1887 1963	At its limit, the simulator will try increasing the step size every 40 steps
+Td8c0b4797eb1265f6965f83f0a8da9e2	own_claim 2138 2156	has served us well

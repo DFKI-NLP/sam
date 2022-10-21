@@ -1,0 +1,34 @@
+Tea1089e9684cc59e41a30920f29f429c	own_claim-GOLD 1562 1646	a very good visual match between the simulations with their counterpart real fabrics
+T0706eddf15428d9d234009a25bd6278c	own_claim-GOLD 1657 1739	there is a significant disparity in the final optimized values from the two trials
+T6b281dce33466b470996a1cbed822ac1	own_claim-GOLD 2014 2063	we see that the final error values are very close
+T4abcc1f03779accb000f621d895ed9cf	own_claim-GOLD 2065 2135	We get consistent estimates for parameters that have lower variability
+T60f0de0300812cc8062901872ffecbab	own_claim-GOLD 2159 2212	Parameters with high variability are estimated poorly
+Te0f7ad6ed1101e0074f1627bf962c179	own_claim-GOLD 2222 2278	their values do not contribute sufficiently to the error
+Tedad9e139d0ae8dadcb5f427c8e5e5d8	own_claim-GOLD 2330 2514	static tests cannot be used to estimate dynamic parameters like stretch and shear damping or air drag and motivates the waving test, which excites both the static and waving parameters
+T9310bf205e2412c08535a07484dcd20a	own_claim-GOLD 2998 3067	The final values of the parameters from the two trials differ in part
+Tcea02bf718a7e39fee973bdee203307a	own_claim-GOLD 3076 3130	the variability of the parameters is still fairly high
+T39977bde95438b3d84953304446b2a13	own_claim-GOLD 3144 3235	Different motions or larger sequence might further reduce the variability of the parameters
+Tfa9cc8b6375aa6a1c25845b2a9d0d072	own_claim-GOLD 3530 3623	This approach seems to produce plausible results with skirts and other validation experiments
+Ta250f7ac96a68df493d6b6e798eb2519	own_claim-GOLD 3650 3788	a more general solution for parameter identification using our framework is to simultaneously optimize across multiple trials of different
+T02cef2d399b8bdeef57da188fb05ee57	own_claim-GOLD 4033 4087	the minimum corresponds to a visually compelling match
+T06dd35dc21a31b129676ec5a3c6147fb	own_claim-GOLD 4390 4479	each fabric in simulation has a minimum error when compared to its counterpart in reality
+Te038a404ceb63673b402812d692253aa	own_claim-GOLD 4512 4604	our approach could be potentially useful for recognizing different types of fabrics in video
+T78f89706564a2c34afc8c23975ef74b8	own_claim-GOLD 4922 4996	the parameters obtained from optimization generalize well on new sequences
+T784d1f48652aaf9b81f2b5c778ace370	own_claim-GOLD 5678 5827	the parameters obtained from our optimization approach approximately capture the static shape and dynamic properties of skirts of different materials
+Tde2dca3d01a39563c1def661b705cc67	own_claim 1562 1646	a very good visual match between the simulations with their counterpart real fabrics
+T831ca68a961f28f9ae5c64a55732648f	own_claim 1657 1739	there is a significant disparity in the final optimized values from the two trials
+Tb4373785c8d2aaa429c138b0288d4bd2	own_claim 2014 2063	we see that the final error values are very close
+Tf16e6693ea9b3cafd0ffa6eeaab4ca53	own_claim 2065 2135	We get consistent estimates for parameters that have lower variability
+T70cdf7b53e7bb6645ea6910e010864f1	own_claim 2159 2212	Parameters with high variability are estimated poorly
+Tc23c34f8dd11e0d73ea7d98a3914d851	own_claim 2222 2278	their values do not contribute sufficiently to the error
+T6efa5d1fe4277fc9a2ec5e0275b3170a	own_claim 2330 2514	static tests cannot be used to estimate dynamic parameters like stretch and shear damping or air drag and motivates the waving test, which excites both the static and waving parameters
+T127c11295d194650dc5ad0097cd6b85c	own_claim 2998 3067	The final values of the parameters from the two trials differ in part
+Tda28764083b62523b873743d9bafc487	own_claim 3076 3130	the variability of the parameters is still fairly high
+T67e22859e0680f713347cf2f3165f776	own_claim 3144 3235	Different motions or larger sequence might further reduce the variability of the parameters
+T42d68c0a1e5ddd32c0a02915e39890c3	own_claim 3530 3623	This approach seems to produce plausible results with skirts and other validation experiments
+T0d358eebe4ad18f01cd5b77e757b042a	own_claim 3650 3788	a more general solution for parameter identification using our framework is to simultaneously optimize across multiple trials of different
+T9a033d1d2fef4f11b20261c0a9363c8d	own_claim 4033 4087	the minimum corresponds to a visually compelling match
+T63b8a8e0e1ef41e54bc6674d9addc9cf	own_claim 4390 4479	each fabric in simulation has a minimum error when compared to its counterpart in reality
+T952de4c1860a60a6c3fed11f30c1becd	own_claim 4512 4604	our approach could be potentially useful for recognizing different types of fabrics in video
+T70ec3d4d2d3dae61c26d5b0ce9b22630	own_claim 4922 4996	the parameters obtained from optimization generalize well on new sequences
+Tcc5392ad3b3751fd4e73a019db23730e	own_claim 5678 5827	the parameters obtained from our optimization approach approximately capture the static shape and dynamic properties of skirts of different materials

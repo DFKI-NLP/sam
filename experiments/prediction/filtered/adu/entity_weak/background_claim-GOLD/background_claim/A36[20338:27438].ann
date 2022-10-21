@@ -1,0 +1,8 @@
+Te8cc5a3826fa044113793c32339bb166	background_claim-GOLD 1022 1065	Most elastic cloth models separate membrane
+T97bf301fa552c109d5caa63dd8428582	background_claim-GOLD 3986 4097	approximate the standard StVK model zeroing out off-diagonal terms in the matrix that relates strain and stress
+T3f97c559d3610d8524dd5aa78c5194d4	background_claim-GOLD 5080 5245	discovered concurrently the appropriate weighting of the angle change in order to model homogeneous bending on irregular triangle meshes with a homogeneous stiffness
+Tec24d4a5c566b3831723567ad146a898	background_claim-GOLD 6445 6499	propose a general nonlinear stress-strain relationship
+Tfd353b46f4641c5c2b495e563e9ed056	background_claim 1022 1065	Most elastic cloth models separate membrane
+Tf25bd3c25f397e8084a4ee766319c213	background_claim 3986 4097	approximate the standard StVK model zeroing out off-diagonal terms in the matrix that relates strain and stress
+Tb2f0ba6373e03863022f0c503d762acd	background_claim 5080 5245	discovered concurrently the appropriate weighting of the angle change in order to model homogeneous bending on irregular triangle meshes with a homogeneous stiffness
+Tf4c6dc534d065d6ee7950ab1e55e184f	background_claim 6445 6499	propose a general nonlinear stress-strain relationship

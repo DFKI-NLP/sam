@@ -1,0 +1,23 @@
+{
+  "UNASSIGNABLE": {
+    "background_claim": 4,
+    "data": 20,
+    "own_claim": 18
+  },
+  "background_claim": {
+    "UNDETECTED": 22,
+    "background_claim": 57,
+    "data": 5,
+    "own_claim": 18
+  },
+  "data": {
+    "UNDETECTED": 11,
+    "data": 56
+  },
+  "own_claim": {
+    "UNDETECTED": 25,
+    "background_claim": 2,
+    "data": 3,
+    "own_claim": 52
+  }
+}

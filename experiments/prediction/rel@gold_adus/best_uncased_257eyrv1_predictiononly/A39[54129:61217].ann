@@ -1,0 +1,111 @@
+T6dabc4ec6a70b790733f5aa7d32029c4	background_claim 30 87	Much has been written about collision detection for cloth
+Te40af0456be93a3281e58b3939fba467	own_claim 89 168	we have nothing substantial to add to the subject of collision detection per se
+T6b3557f77d7751fc25975f2ef7d5d669	own_claim 948 964	The force is not
+T0f244f81f2e5c7c3dcffb726142a8db2	own_claim 985 1003	a frictional force
+T80a4b8150439a86e5bbc4606c0fa7b4c	own_claim 1012 1051	it is proportional to the slip velocity
+T1d07e082f4e90e10c2e1d78910a6bdc7	own_claim 1056 1090	it is in actuality a damping force
+T9e20a7fd256ab81f7f91cadb1760fa8f	own_claim 1101 1140	it reasonably emulates dynamic friction
+T7f3b701d8815384ae90f539c565e1224	own_claim 1142 1213	Applying static friction forces to cloth contacts is far more difficult
+T7c646c64b0dde99a320da2569f028551	own_claim 1219 1254	is a problem we have not solved yet
+T941e440295d783f8942e18fe2218b0f1	own_claim 1256 1351	The forces, and their derivatives with respect to position and velocity, are of course included
+Taa7c5548c00ca79745a4067d68ae0e4f	data 1355 1368	equation (15)
+Tddbbf356ccf5b7ea2e6bf9cf8a914077	own_claim 1907 1980	Both cloth/cloth and cloth/solid collisions give rise to the same problem
+Tb5c54eda70b621b53cb6e68540b2abf4	data 1990 2007	two contacts form
+Tda553537609138ee80da7e7f9ae5b645	data 2009 2247	For both types of collisions, our detection algorithm reports an intersection, and then takes action to remedy the situation: either by enforcing a constraint (cloth/solid collisions) or by adding a penalty force (cloth/cloth) collisions.
+T280e7846380908555d81a81a28c214b0	data 2263 2303	our simulator proceeds in discrete steps
+Tb988c1c05d59c3f8d430f062f23e2e9f	own_claim 2305 2416	collisions resulting in a reasonably substantial interpenetration depth can occur between one step and the next
+Tfa921196eb5ea153761fdfb79d2e4e6b	own_claim 2427 2462	this situation needs to be remedied
+T556cb2938e9a489270d87b7f2aee8e9c	data 2468 2490	cloth/cloth collisions
+Tc4864861231b94415a81311f4814b049	own_claim 2492 2529	this would not appear to be a problem
+Tf7a91c8cef373cbd97c33fa2eeafe4e0	data 2531 2634	the spring forces that are added work to counter the colliding velocities and then push the cloth apart
+Tdbbe902d9b181a4bc246dbc0da05e9b7	data 2640 2662	cloth/solid collisions
+Tb42f533b271ce379bb8f81e72f162756	own_claim 2673 2706	the situation is more complicated
+T79d9e0b9a35c3240d4ee9af7e60de50d	data 2711 2887	we simply enforce a constraint which causes the colliding cloth particle to have a velocity consistent with the solid object’s velocity, and continue to enforce that constraint
+Ta29f4f78a2478fb580e980b67e4a4647	own_claim 2889 2983	the cloth particle will continue to remain embedded somewhere below the solid object’s surface
+Td8f9d0d9304e2db208a7187777640294	own_claim 2985 3005	This is unacceptable
+Taf0aadc74ca911487f20c2e75b14a093	own_claim 3007 3053	One solution is to use Baumgarte stabilization
+T1a0acfda629e361e96545d670d7f83dc	data 3056 3058	18
+T17c8e21440cb29e9c7d824121f3d7c14	background_claim 3063 3219	which schedules the particle’s acceleration so that the position and velocity error of the particle with respect to the surface decay asymptotically to zero
+T7c444def780c24eed2aa0e0da65a2ad0	data 3221 3256	We experimented with this technique
+T56234d192eaf22d63401818708c0c246	own_claim 3262 3278	found it lacking
+T53e46e4135e917b3d7b0f798cc4139b2	own_claim 3295 3356	a fast rise to the surface was prone to noise and “jumpiness”
+T6c4244fac628c0ba9962c67f2182d3a0	own_claim 3358 3427	this could be eliminated, but at the cost of decreasing the step size
+T4247e1c653c9b67e3e214476bf67c9bd	own_claim 3429 3481	A slower rise to the surface caused visual artifacts
+T193f3b19a0be2093f1fd5096ea2523c9	own_claim 3483 3510	We tried a simpler solution
+T83361669af285cfa77b0fd935036794b	data 3512 3756	when intersections occurred, rather than wait for a scheduled constraint or a penalty force to eliminate the intersection, we simply altered the positions of the cloth particles, effecting an instantaneous (and discontinuous) change in position
+Tf1efb9c17805708f5b11fe2d4b7b9913	own_claim 3764 3867	this would be problematic when using a multi-step differential equation solver which expects continuity
+T431d304a57bac3530c079e895f20ab1d	data 3877 3896	a RungeKutta method
+T4a5f44632b1fda308fcfbc521fe388d0	own_claim 3899 3945	it should not interfere with a one-step solver
+T6a2ae2ce531b649dedacddadd0a8554a	data 3954 3979	the backward Euler method
+T2ddcdf283914c9dc9bad9de7408cdaca	own_claim 3996 4058	simply changing particle positions produced disastrous results
+Ta1d588dc470687d5340be3c5ef6cfa87	background_claim 4060 4121	The stretch energy term in a cloth system is extremely strong
+T68e7e2c6c2bb911685686eab34c11ef2	data 4127 4254	altering particle positions arbitrarily introduced excessively large deformation energies in an altered particle’s neighborhood
+T75bf7fead17e1e64d2976f23593c2fef	own_claim 4256 4331	This resulted in visibly “jumpy” behavior of the cloth in localized regions
+Tef105484eef6c46e8a37dadbea3426f5	own_claim 4549 4652	the ability to make arbitrary small changes in a particle’s position continued to attract our attention
+T89c5f0a6f6dad437c9feac106b3c7316	own_claim 4654 4740	The entire process of implicit integration can be considered to be a filtering process
+T144d660c5330f8adb5641c75ae39c995	data 4744 4745	7
+T9b382b2f4b256c68b9bd521c8b46025b	own_claim 4772 4893	a mechanism for filtering energy changes caused by displacing particles might make position alteration a viable technique
+Tad6a094be4c8cccc94e33e38460d1572	own_claim 4922 4980	some sort of extra implicit step could be used as a filter
+T29400f870659a4e1e3cf665532f11a0b	own_claim 4986 5067	forming and solving an additional linear system at each step seemed too expensive
+T088ade32b830167b1e0bd6ba18e39ccf	own_claim 5078 5164	we can make use of the filtering effect of implicit integration without any extra work
+Taa0cc4bea37066a053e3c81eab9f4d27	own_claim 5521 5580	changing positions after a step has been taken doesn’t work
+Tedc9b62d393b254b7a1426c880f53a86	own_claim 5592 5674	the particle’s neighbors receive no advance notification of the change in position
+T4c6a497d1e63c1828717bcb04dc8c0df	data 5676 5749	they are confronted with the alteration at the beginning of the next step
+T9ad357bff572817302d9cc3002003884	own_claim 5751 5784	This presents an obvious solution
+T686ec9788b244ef5151baeddd857887b	own_claim 5786 5833	we simply modify the top row of equation (4) to
+Tefff5b8799dc842c51950feb1f4f3265	own_claim 5866 5892	x i = h(v 0i + v i ) + y i
+Tb09db1559f4b9c58cea64d6af9e7b8ef	data 6065 6101	modified the top row of equation (4)
+T486c4ef437f4cd528a47180007901769	own_claim 6103 6137	we must follow this change through
+Tf24ee576c86b1b2d196f263efc313a91	data 6145 6158	equation (17)
+T8e9142dc3bdbf20cbc950ee9e66e93cd	data 6177 6200	derivation of section 3
+T1df5bb9f7469c8725fee2c30b3b64a02	data 6209 6243	symmetric transform from section 5
+T992ed719132cdd904bb26ad2e9695270	own_claim 6313 6370	M − h ∂v ∂f − h 2 ∂x ∂f v = h f 0 + h ∂x ∂f v 0 + ∂x ∂f y
+T60d9c5122f591562d9755d07e4fc3de8	own_claim 6390 6550	This modification gives us complete control over both the position and velocity of a constrained particle in just one step, without any extra computational cost
+T4cff2015e1e287f4d7a8b958a4f27146	own_claim 6715 6795	We can also add correction terms to particles involved in cloth/cloth collisions
+T2ba4f5da96e95293ce8affefd73bc1db	own_claim 6797 6922	Without a constraint on those particles’ velocities there is no guarantee that they will go exactly where we want in one step
+T2af369b3af31fdfd5e577989f0c33c2d	own_claim 6928 7064	the ability to induce sizeable jumps in position without excessively stiff spring forces adds greatly to the stability of the simulation
+R6f90ebda2305c26e9e309977ce885c06	parts_of_same Arg1:T6b3557f77d7751fc25975f2ef7d5d669 Arg2:T0f244f81f2e5c7c3dcffb726142a8db2
+R8b3e359f5d4e541673376636baba04cc	supports Arg1:T80a4b8150439a86e5bbc4606c0fa7b4c Arg2:T0f244f81f2e5c7c3dcffb726142a8db2
+Rdacd40e9b1bf5cd2796f37074f84eef5	supports Arg1:T80a4b8150439a86e5bbc4606c0fa7b4c Arg2:T1d07e082f4e90e10c2e1d78910a6bdc7
+R382791a6a5466f96c997d5894eee649e	contradicts Arg1:T1d07e082f4e90e10c2e1d78910a6bdc7 Arg2:T9e20a7fd256ab81f7f91cadb1760fa8f
+R6259e0ce44a2006898408d196f1e88c2	supports Arg1:Taa7c5548c00ca79745a4067d68ae0e4f Arg2:T941e440295d783f8942e18fe2218b0f1
+R4a7836c1a457c350db36ec3fef22fbf7	supports Arg1:Tb5c54eda70b621b53cb6e68540b2abf4 Arg2:Tddbbf356ccf5b7ea2e6bf9cf8a914077
+R7f5626f2d8f5c793c1eb2dc3cde8cea6	supports Arg1:T280e7846380908555d81a81a28c214b0 Arg2:Tb988c1c05d59c3f8d430f062f23e2e9f
+Raaed1392b986c11511df14537ae5e0d3	supports Arg1:Tda553537609138ee80da7e7f9ae5b645 Arg2:Tb988c1c05d59c3f8d430f062f23e2e9f
+R2dbea35941368db5a144ef36281fa05b	supports Arg1:T556cb2938e9a489270d87b7f2aee8e9c Arg2:Tc4864861231b94415a81311f4814b049
+R67734b602ac719559b86c54d5757e495	supports Arg1:Tdbbe902d9b181a4bc246dbc0da05e9b7 Arg2:Tb42f533b271ce379bb8f81e72f162756
+R7c43681559f65b22a2586014b284c20f	supports Arg1:Tf7a91c8cef373cbd97c33fa2eeafe4e0 Arg2:Tc4864861231b94415a81311f4814b049
+R9931b4118aa446cd2e3e201ceb6d1afe	supports Arg1:T79d9e0b9a35c3240d4ee9af7e60de50d Arg2:Ta29f4f78a2478fb580e980b67e4a4647
+R0601f974aae6766216280d08036f8aea	supports Arg1:Ta29f4f78a2478fb580e980b67e4a4647 Arg2:Td8f9d0d9304e2db208a7187777640294
+R06f21d7ad7c68051747b08a4df10c69d	supports Arg1:T1a0acfda629e361e96545d670d7f83dc Arg2:Taf0aadc74ca911487f20c2e75b14a093
+R2c36c297b5bb9e3801c8a4a731a4a115	parts_of_same Arg1:Taf0aadc74ca911487f20c2e75b14a093 Arg2:T17c8e21440cb29e9c7d824121f3d7c14
+R250873cb4862fd67cce609826046090b	contradicts Arg1:T7c444def780c24eed2aa0e0da65a2ad0 Arg2:T56234d192eaf22d63401818708c0c246
+Rb4ef8e68810a9c44b619c623be09425d	supports Arg1:T53e46e4135e917b3d7b0f798cc4139b2 Arg2:T56234d192eaf22d63401818708c0c246
+Rd8582f95315074d0a582d22680fe83a5	supports Arg1:T6a2ae2ce531b649dedacddadd0a8554a Arg2:T4a5f44632b1fda308fcfbc521fe388d0
+R53438995d41d9108b30175af411cf7bb	supports Arg1:T431d304a57bac3530c079e895f20ab1d Arg2:Tf1efb9c17805708f5b11fe2d4b7b9913
+R5b4a83b3db16bc7424f1b391fd2a5bcc	supports Arg1:T83361669af285cfa77b0fd935036794b Arg2:T193f3b19a0be2093f1fd5096ea2523c9
+R53ca35f81e0c2577cb208474794e7dbe	supports Arg1:Ta1d588dc470687d5340be3c5ef6cfa87 Arg2:T75bf7fead17e1e64d2976f23593c2fef
+R116900d2082ed38add0c2fe2e0f0d4ba	supports Arg1:T68e7e2c6c2bb911685686eab34c11ef2 Arg2:T75bf7fead17e1e64d2976f23593c2fef
+R98296ccf4ca3ece621a3337fae7931d0	supports Arg1:T144d660c5330f8adb5641c75ae39c995 Arg2:T89c5f0a6f6dad437c9feac106b3c7316
+R07ab41835c980a752804f74569b88334	contradicts Arg1:Tad6a094be4c8cccc94e33e38460d1572 Arg2:T29400f870659a4e1e3cf665532f11a0b
+R63b2d7584234a9d849176508b9970193	supports Arg1:T686ec9788b244ef5151baeddd857887b Arg2:T9ad357bff572817302d9cc3002003884
+R059e60d77d9d8da25d0d7373bd5ce616	supports Arg1:T4c6a497d1e63c1828717bcb04dc8c0df Arg2:Tedc9b62d393b254b7a1426c880f53a86
+R2c524432226e2871c552e510d0c2e45d	supports Arg1:Tedc9b62d393b254b7a1426c880f53a86 Arg2:Taa0cc4bea37066a053e3c81eab9f4d27
+R4468c6c584879c10a0fe6795410a00e0	parts_of_same Arg1:T686ec9788b244ef5151baeddd857887b Arg2:Tefff5b8799dc842c51950feb1f4f3265
+R5d2333f75b02aed5997fd6b900dddaf0	supports Arg1:Tb09db1559f4b9c58cea64d6af9e7b8ef Arg2:T486c4ef437f4cd528a47180007901769
+R797db264f0d487a3913f83478657afcb	supports Arg1:T6dabc4ec6a70b790733f5aa7d32029c4 Arg2:Te40af0456be93a3281e58b3939fba467
+R96523b6f26289bd5ff0f6477206d0f1e	supports Arg1:T9e20a7fd256ab81f7f91cadb1760fa8f Arg2:T0f244f81f2e5c7c3dcffb726142a8db2
+Rb86e89d5f62337b0625a90ae85a883aa	supports Arg1:T1d07e082f4e90e10c2e1d78910a6bdc7 Arg2:T0f244f81f2e5c7c3dcffb726142a8db2
+R1d17182d68e11cb9abfdcd1f22e5abff	supports Arg1:T0f244f81f2e5c7c3dcffb726142a8db2 Arg2:T1d07e082f4e90e10c2e1d78910a6bdc7
+R378cb5dbbf77fcd90fee6a0c88b50d00	supports Arg1:T7f3b701d8815384ae90f539c565e1224 Arg2:T7c646c64b0dde99a320da2569f028551
+R2d6257fc596b804a456c150da8db7056	supports Arg1:Tda553537609138ee80da7e7f9ae5b645 Arg2:Tddbbf356ccf5b7ea2e6bf9cf8a914077
+R863050491db5a433d86e8622122128e6	contradicts Arg1:Tb988c1c05d59c3f8d430f062f23e2e9f Arg2:Tfa921196eb5ea153761fdfb79d2e4e6b
+Rdfe30072e94b1a7330a942aaf5e31aab	supports Arg1:Tb988c1c05d59c3f8d430f062f23e2e9f Arg2:Tfa921196eb5ea153761fdfb79d2e4e6b
+R15115300849176bbc51f6bce26f9667f	supports Arg1:Ta29f4f78a2478fb580e980b67e4a4647 Arg2:Tb42f533b271ce379bb8f81e72f162756
+Rd556b489dd491a0b563c49d1c84e094d	parts_of_same Arg1:Tf1efb9c17805708f5b11fe2d4b7b9913 Arg2:T4a5f44632b1fda308fcfbc521fe388d0
+Rb3dc323ae7efbf6a62e66207fc2b41fa	supports Arg1:T68e7e2c6c2bb911685686eab34c11ef2 Arg2:Ta1d588dc470687d5340be3c5ef6cfa87
+Rc3b30e08ee923eb70d4245b3924e11c1	supports Arg1:T89c5f0a6f6dad437c9feac106b3c7316 Arg2:T9b382b2f4b256c68b9bd521c8b46025b
+R4c8234d7446f1c18ce0bce8cb26d42b4	supports Arg1:Tf24ee576c86b1b2d196f263efc313a91 Arg2:T486c4ef437f4cd528a47180007901769
+R8c790f4236102648a6a97e92b29ee34e	supports Arg1:T8e9142dc3bdbf20cbc950ee9e66e93cd Arg2:T486c4ef437f4cd528a47180007901769
+Rd50ea478d43a51b15be22b6870fe4a92	supports Arg1:T1df5bb9f7469c8725fee2c30b3b64a02 Arg2:T486c4ef437f4cd528a47180007901769
+Rafc3507419dde8654eb34fac1269a33c	contradicts Arg1:T2ba4f5da96e95293ce8affefd73bc1db Arg2:T2af369b3af31fdfd5e577989f0c33c2d

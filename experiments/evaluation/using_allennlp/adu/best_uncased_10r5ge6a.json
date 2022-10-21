@@ -1,0 +1,20 @@
+{
+  "token/accuracy": 0.7902525180199532,
+  "token/accuracy3": 0.7957062389612869,
+  "token/overall-micro/precision": 0.6294546127319336,
+  "token/overall-micro/recall": 0.6355429291725159,
+  "token/overall-micro/fscore": 0.6324841380119324,
+  "token/overall-macro/precision": 0.5268415808677673,
+  "token/overall-macro/recall": 0.5176716446876526,
+  "token/overall-macro/fscore": 0.5184546709060669,
+  "span/overall/precision": 0.520703933747412,
+  "span/overall/recall": 0.5467391304347826,
+  "span/overall/f1": 0.533404029692421,
+  "span_weak/overall-macro/precision": 0.6737261059901568,
+  "span_weak/overall-macro/recall": 0.6725833498719305,
+  "span_weak/overall-macro/f1": 0.6682225063309497,
+  "span_weak/overall-micro/precision": 0.6525189786059351,
+  "span_weak/overall-micro/recall": 0.6851449275362319,
+  "span_weak/overall-micro/f1": 0.6684340756450543,
+  "loss": 917.8275867808949
+}

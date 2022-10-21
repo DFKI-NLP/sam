@@ -1,0 +1,16 @@
+T41ff08f909bacacfd0e8e86f3c2639ba	own_claim 3221 3242	an IZ has only one CC
+T5e709d8c619be04838813f183cad84d7	own_claim 4908 4963	We do not want to handle closely located CCs separately
+Te0742d2337b2171fd6ea05425672b6e2	own_claim 5166 5225	the candidates of the CC merger are the CCs closely located
+Tc336f94c05e1761e25cc11524b212c2f	own_claim 6083 6158	Collision direction is a direction to which two CCs collide into each other
+T0ddbd8cb160e4053f68ddedb08f04c29	own_claim 8134 8243	In the synchronized staggered collision method, we have to find the first collision among multiple collisions
+T6e35413bbfbb1568c1dc88712c7b3931	own_claim 8358 8414	This whole process is not only computationally expensive
+Te55dd966c7c15d1c25f5253741d4a2d7	own_claim 8424 8529	we have to consider the possibility that the resolution of a collision can create new multiple collisions
+Td0670472b368f654ce15d71759e5722d	own_claim 8537 8582	we have to employ another strategy to resolve
+T1205b819cc43314a7739ebb3cd7de3bf	own_claim 8743 8810	In addition to the substantial computational expense and complexity
+T23b7396eb3730baa1ce3415bf9ec04f2	own_claim 8812 8943	the visual advantage of those staggered methods is not considered significant compared to that of the simultaneous collision method
+T068bfabe7752cd22a78d2dd7d6da1895	own_claim 9235 9287	we adapt this approach for the cloth after collision
+Td6d37b91b776d420ddf6852bf72ab160	own_claim 9772 9811	we call the collisions in the IZ cyclic
+T2ad861392e8310e47e8dbdb9f6632e23	own_claim 10478 10516	all v Using i + for eq. 1 1 i and N 2,
+T64a94ef7b90566dfd8cf2ecb319da714	own_claim 11224 11259	this involves repetitious processes
+T72c801d5bcd20e8cb3b05bac431b91c9	own_claim 11790 11837	we have N or more linear inequalities such that
+T505a0558ec3c0ccddffffc6feaf0d40c	own_claim 14296 14388	Cloth collision resolutions against rigid CCs will be computed based on the closest rigid CC

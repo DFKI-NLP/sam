@@ -1,0 +1,5 @@
+<H1>5 Acknowledgments</H1>
+        We sincerely appreciate Dr. Turteltaub for the discussion about rigid N-body momentum conservations, and also appreciate Koji Ashida for helping in video production. This work was supported in part by NSF grants IRI-9624604. The work of the second author was supported in part by NSF-Career Award (Interactive Virtual Environment for Modeling Anatomy and Physiology).
+      
+      
+        

@@ -1,0 +1,16 @@
+T0a982806c6831fdecf7a6725d1f328b8	own_claim 3975 4059	our system is capable of capturing a full range of motion with folding and occlusion
+T7aff331709c715edc42863ebabf66742	data 868 886	Hasler et al. 2006
+Tf49213a153c4ade6eec82b3b7b65fc74	background_claim 787 812	complex surface gradients
+T2e5fcedd7723db8d4f72443cea014c58	background_claim 946 964	intersecting lines
+Td1bb4e60c697001d2d6a3f1f004012a9	background_claim 736 785	These markers can be broken into three categories
+T0bdf76c4b073d30591e763e72991709e	data 3065 3082	White et al. 2006
+Tcb7b96080e8a5cdf13e3ddad3a8554f5	own_claim 3861 3960	we create a data driven hole filling technique that splices previously captured cloth into the mesh
+T728c109c4c5db445461eb90fe6f715c7	data 1042 1060	Guskov et al. 2003
+T59b63f97c7514605402c90f988f6443b	background_claim 2859 3062	introduce a combined strain reduction/bundle adjustment that improves the quality of the reconstruction by minimizing strain while reconstructing the 3D location of the points on the surface of the cloth
+T7ad719463e3cd4b568d0a8146d90884b	data 1062 1080	Scholz et al. 2005
+R10bfa17abb0a45382444d69acd0b6190	supports Arg1:T7aff331709c715edc42863ebabf66742 Arg2:Td1bb4e60c697001d2d6a3f1f004012a9
+R64ba3747f72cbe5054856014a5f791a9	supports Arg1:T7ad719463e3cd4b568d0a8146d90884b Arg2:Td1bb4e60c697001d2d6a3f1f004012a9
+R56ad54ea9403769908ad6d6eb57f91c9	supports Arg1:T2e5fcedd7723db8d4f72443cea014c58 Arg2:Tf49213a153c4ade6eec82b3b7b65fc74
+R2a0fb72db14e0c24d1d3aab9ab4315b8	supports Arg1:T728c109c4c5db445461eb90fe6f715c7 Arg2:Td1bb4e60c697001d2d6a3f1f004012a9
+R9eb8c96743563bdc32596315b4926af5	supports Arg1:T0bdf76c4b073d30591e763e72991709e Arg2:T59b63f97c7514605402c90f988f6443b
+Rb6efed6d41c402c3427ead636376c008	supports Arg1:Tcb7b96080e8a5cdf13e3ddad3a8554f5 Arg2:T0a982806c6831fdecf7a6725d1f328b8

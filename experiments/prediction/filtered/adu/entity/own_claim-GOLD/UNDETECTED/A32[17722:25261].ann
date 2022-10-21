@@ -1,0 +1,17 @@
+Tae94b682552937f190c657b09b8876d6	own_claim-GOLD 390 420	referred to as the same entity
+T80b6613a0146576fafef5292ef467e8c	own_claim-GOLD 870 927	The wrinkle function is a continuous real valued function
+T54cfff81768d938a95f936fb4fe93b8b	own_claim-GOLD 929 986	which is a spline approximation of the normalized texture
+Te94d3254898de342d4679fd8121abe17	own_claim-GOLD 1943 2038	the modulation factors are linearly interpolated across triangles to give smooth Modulation Map
+T8e5995de4fecb9042847291cd47ec8bb	own_claim-GOLD 2288 2382	The final bump/displacement map is the product of the modulation map and the wrinkling pattern
+Tcf614d56cff0ba87601c179e6b8fb059	own_claim-GOLD 2637 2701	the wrinkles are not mere modulations of a fixed wrinkle pattern
+T0bf1849c889d1347d3591d3d12bc619e	own_claim-GOLD 3831 3881	the methodology is developed for multiple patterns
+Tdafe2d58c29badf2427f377b92c8e5e0	own_claim-GOLD 4672 4721	This selective application of the wrinkle pattern
+T4eaf9ee59e1daf8b9b9c410c179e7117	own_claim-GOLD 4750 4796	will give a change of one pattern to the other
+T4b64809db6a862830e779d2cb3564ca8	own_claim-GOLD 5243 5282	there is a sudden switch in the pattern
+Te4371ceae09baa1d9d710a93976232f2	own_claim-GOLD 5337 5447	a user definable variance around the mean value of the wrinkling coefficients, which defines a transition zone
+Tcc185f738c8157dc3161f2585c2ba3fc	own_claim-GOLD 5693 5773	This is in fact a simple power function with an appropriate scaling and clipping
+T9bdfe9a660cc3c0bde4821d804455665	own_claim-GOLD 5835 5894	M F 1 will be smaller than (1 − variance)(M F 1 + M F 2 )/2
+Tae9e5e84af1756568f60f15bda8b301b	own_claim-GOLD 5899 5957	M F 2 will be bigger than (1 + variance)(M F 1 + M F 2 )/2
+T77193084cf42d226a8fd4f55de8b66ba	own_claim-GOLD 5959 6015	This gives maximum weight (W 1 = 1,W 2 = 0) to pattern 1
+Tae6d91f4df2d982322f4506095f10e55	own_claim-GOLD 6121 6189	The user definable power n is representative of the tightness of the
+T1735dc4b162cbd5311738b074883f4e3	own_claim-GOLD 6205 6240	n = ∞ is a sudden switch of pattern

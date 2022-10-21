@@ -1,0 +1,4 @@
+Tc639584076c72bdb13b3c038d4a5b27d	background_claim 1140 1234	CFD are applied in this field for engineering tasks with a high degree of quality requirements
+Tcd594313cc23126ba20e5d2ec3b0fb68	background_claim 1251 1319	it is quite difficult to apply these algorithms in computer graphics
+Rd87da2a9f3c2b423bf5578d8a76dc6bf	contradicts-GOLD Arg1:Tc639584076c72bdb13b3c038d4a5b27d Arg2:Tcd594313cc23126ba20e5d2ec3b0fb68
+R712f08d4e127dcf90e655508cff1f160	contradicts Arg1:Tc639584076c72bdb13b3c038d4a5b27d Arg2:Tcd594313cc23126ba20e5d2ec3b0fb68

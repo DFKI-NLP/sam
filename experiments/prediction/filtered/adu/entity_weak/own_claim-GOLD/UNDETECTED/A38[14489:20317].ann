@@ -1,0 +1,9 @@
+T27373ca201e61ce94aa8eaa9370c333d	own_claim-GOLD 1653 1793	we normalize the effects of lighting and material reflectance by projecting a structured light pattern of horizontal stripes onto the fabric
+Td0830b7fd3a336da419ec6bd6addccd2	own_claim-GOLD 2380 2437	We define the resulting orientation image as an angle map
+Tb3a2e1e41c0c3128d0b2f1def0fb01f6	own_claim-GOLD 2604 2697	We threshold the gradient of the angle map to get a gradient mask M k for each frame of video
+T6946e7c4e31f021e3abbed24cfa9e97d	own_claim-GOLD 2871 2981	The gradient mask is non-zero at regions of high gradients, corresponding to folds, and zero at planar regions
+T968bbf72d170f7dfeef0717b54425aab	own_claim-GOLD 3000 3122	Our metric computes the frame by frame sum of squared differences (SSD) between masked angle maps in simulation with video
+T8c601451793f30b4d3b7527c94ce8fee	own_claim-GOLD 3534 3666	We pre-multiply this difference with the gradient mask, which helps to emphasize the differences in fold regions over planar regions
+T63b0016b4557de26e098f0fd77578b2e	own_claim-GOLD 4115 4201	we penalize the silhouette mismatch between the simulation and the video of real cloth
+T9d9cd4cd1597f18de3300c6a17cea4c8	own_claim-GOLD 4203 4277	This penalty is proportional to the difference between the two silhouettes
+Teaf449e719125ad8c7ba0f366e7fef0e	own_claim-GOLD 4655 4744	The error across the entire sequence of length N frames is given by N E = ∑ E k ( 9 ) k=1

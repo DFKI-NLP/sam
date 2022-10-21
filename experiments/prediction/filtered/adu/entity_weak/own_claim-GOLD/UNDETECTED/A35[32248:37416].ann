@@ -1,0 +1,10 @@
+Ta1dc298358d85b3adab67bdc70201be6	own_claim-GOLD 123 203	The implicit Euler method seems effectively a good candidate for most situations
+Tf853f0cbd216e45536b4d0c854aea792	own_claim-GOLD 1070 1139	this is still done at the expense of accuracy of the whole simulation
+Tf753e85ab976167fed22e73b8c1f2ae3	own_claim-GOLD 2328 2369	wrinkles and folds that fail to disappear
+Td4bb6a59ed794b8bac6695314018cd99	own_claim-GOLD 2827 2970	the reduced time it takes to compute one iteration, which also only requires one derivation of the particle forces from the state of the system
+T58577c7c906491b81804bfbbfe0d0366	own_claim-GOLD 3808 3816	This may
+T04fa4bb2e2a1bd073ac6d6d8a504620b	own_claim-GOLD 3825 3900	require prohibitive computation times for very stiff and discretized models
+Tb47c830c89b705f844102e494363fcbe	own_claim-GOLD 4034 4036	it
+Ta9d86812325e0049f3290d3c9944a4ac	own_claim-GOLD 4049 4183	provides integration error evaluation, which is a very good hint to the very sensitive problem of optimal time step size determination
+T71b4aaa8f1d9a3739c04435b7195fcc8	own_claim-GOLD 4185 4409	The simpler Midpoint method may have some interest only in very particular cases involving very loose materials with rough discretization, or when numerous fast iterations with small time steps are required for other reasons
+T6dac6cde0f5a01389af5043167215e8e	own_claim-GOLD 4596 4752	they are the keys to efficient simulation, and therefore complex models that, for garment simulation, express fully visual experience of real fashion models

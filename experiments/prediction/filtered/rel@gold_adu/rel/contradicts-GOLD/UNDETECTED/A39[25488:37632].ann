@@ -1,0 +1,3 @@
+T1f03401c00bd612ad67516565e31fdd9	own_claim 9370 9478	we describe a general treatment for damping that is independent of the specific energy function being damped
+T0b8830c5c2a2b41b9311c274c82bcab9	background_claim 9225 9247;9278 9352	their damping function does not match the quartic energy functions of their continuum formulation
+R74ebb3907e2f37a785a5492930888b10	contradicts-GOLD Arg1:T0b8830c5c2a2b41b9311c274c82bcab9 Arg2:T1f03401c00bd612ad67516565e31fdd9

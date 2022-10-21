@@ -1,0 +1,62 @@
+T6a4d98da8b4d768f1e6a8428a2f75e4b	own_claim-GOLD 332 374	We use the automated calibration technique
+Tca177eb39a184aab86ddd75936c761b8	own_claim-GOLD 409 443	any standard calibration will work
+T3d35e502603780344f64c1bbcfbab704	own_claim-GOLD 588 617	Adequate lighting is critical
+T84c92ec56d680fd4f96d96aa7bb533ed	own_claim-GOLD 639 671	fewer lights degrade performance
+T39851426b362be36231415d8e85da493	own_claim-GOLD 1084 1166	Our capture results are best evaluated by looking at our video and figures 1,12,13
+Te3953ad633741e15d7b4db3a13d874ca	own_claim-GOLD 1222 1309	it is also necessary to evaluate on several numerical criteria for each capture session
+T45f1bff69f33bc415bcce89be6bafa81	own_claim-GOLD 1599 1627	The sleeve example is unique
+Td6637217abd021dcbe36bfa12205bb2d	own_claim-GOLD 1679 1742	Much of the cloth is in contact with the floor and unobservable
+T882236595e80806d40eff48fda14907c	own_claim-GOLD 1745 1774	yielding fewer bits of strain
+T38ede82e9405b1278696dbd4858b13fb	own_claim-GOLD 1789 1846	the camera images were not output in a linear color space
+T1c6b1f523f4124957830a21819d3d27b	own_claim-GOLD 1949 1999	Our pants animation is by far the most challenging
+T632afc9d2b2c4ba88a28980b6d8c9147	own_claim-GOLD 2101 2140	there were 979 3D markers per megapixel
+T658ff00c3ab9ed9f9b78285c412dc0a7	own_claim-GOLD 2190 2286	we get 3500 3D markers per foreground megapixel or 282 foreground pixels per recovered 3D marker
+Tfd9ddff89ccf895537f6d81f86d5c394	own_claim-GOLD 2288 2350	Our marker observations average 56 pixels per marker per image
+T0e8f3ee3e96b63553bcbb3a8461b2192	own_claim-GOLD 2352 2397	There are several reasons for the discrepancy
+T846e8c9d41d5b239c286fa03e072c46e	own_claim-GOLD 2499 2546	some markers are observed but not reconstructed
+Td610189bbfd61bc3d7126f2e575b4863	own_claim-GOLD 2594 2641	many pixels are not considered part of a marker
+T5101e7150132ecd95c885b857c169f58	own_claim-GOLD 2976 3031	This approach covers a reasonably large range of motion
+Tbb5772803893ea570d6e0761ebb5952e	own_claim-GOLD 3037 3059	ignores cloth dynamics
+T49313731ea5f4c1f0f48af50d08e4c80	own_claim-GOLD 3061 3153	The largest challenge is that captured cloth meshes contain only points on the cloth surface
+T329a40bfff9af8b4cee106b4242dd334	own_claim-GOLD 3158 3188	we do not know joint locations
+Tbe504c986192c50e0ccd7f34d7a92a07	own_claim-GOLD 3199 3273	we insert proxy points for knee and hip joints in each of our basis meshes
+Taddf457e42b72555173cf9ebcab9e62f	own_claim-GOLD 3595 3686	Using our MATLAB implementation of MeshIK, this process takes around 5-10 seconds per frame
+T8b15909044b67b6581fc677806413f40	own_claim-GOLD 3825 3859	each basis pose must be an extreme
+T7d4a27558789cf8863cee69b1a182329	own_claim-GOLD 3914 3926	a small bend
+T6025aa45b89c63cb7c772ac57c9aacaf	own_claim-GOLD 3941 3986	is sufficient to extrapolate to a larger bend
+T6c675529f62310e221c38d18623bbe41	own_claim-GOLD 4019 4061	for pants the relationship is more complex
+Tdfab65dc8fba8ce44b42f29cc3f9126e	own_claim-GOLD 4238 4299	we do not expect extreme folds in a corresponding larger bend
+T1110bd49f9ad9f9f5b5affc27d9689ce	own_claim-GOLD 4314 4403	MeshIK is most useful when a basis is carefully chosen to prevent extrapolation artifacts
+Ted71b06d1294fb7b6f197d22893261e5	own_claim-GOLD 4405 4475	One drawback to our approach is the loss of secondary kinematic motion
+T0ba2efc82e961ac939b43b34d3551b7e	own_claim-GOLD 4560 4598	the resulting animation appears damped
+Tb6331d8c78e9b572d3919fc18cf4573b	own_claim 332 374	We use the automated calibration technique
+Tdc805218f19f56ebe340d564d26085d4	own_claim 409 443	any standard calibration will work
+T0e49f8bf468a1b8d1011628ddd746bd4	own_claim 588 617	Adequate lighting is critical
+T5e5177bbb7758f851636acd72becad7a	own_claim 639 671	fewer lights degrade performance
+T75cce08e3e34194c5162638423a558da	own_claim 1084 1166	Our capture results are best evaluated by looking at our video and figures 1,12,13
+T07bd6ca3f46cacc7a045d24b3d7b200c	own_claim 1222 1309	it is also necessary to evaluate on several numerical criteria for each capture session
+T49f33cc4eaf496a1cff521d5681637ed	own_claim 1599 1627	The sleeve example is unique
+T3f925310f407f390a69cd9f89e42055d	own_claim 1679 1742	Much of the cloth is in contact with the floor and unobservable
+T420aa512cddb17596ac23fb1ddc484e4	own_claim 1745 1774	yielding fewer bits of strain
+T17a83b57642e68d6e67a8a6cc3a08f2a	own_claim 1789 1846	the camera images were not output in a linear color space
+Tf2f779a15bcf3e181fcc0616105d62d1	own_claim 1949 1999	Our pants animation is by far the most challenging
+Ta9cd4cab2d177fc8970cb9564bf28263	own_claim 2101 2140	there were 979 3D markers per megapixel
+T30cadcd31b94139dfce53dabdf6187d8	own_claim 2190 2286	we get 3500 3D markers per foreground megapixel or 282 foreground pixels per recovered 3D marker
+T1eec272bce501e6561250bba37dcd61a	own_claim 2288 2350	Our marker observations average 56 pixels per marker per image
+T6f06ff2c66c030e1d0468168d1843c14	own_claim 2352 2397	There are several reasons for the discrepancy
+T33cab6e64e36a40a2662c7064ca53971	own_claim 2499 2546	some markers are observed but not reconstructed
+Tabe7b0032164d83f91dceb8d1aa6b709	own_claim 2594 2641	many pixels are not considered part of a marker
+T6280e5639d8b431d433a158a9948f3cd	own_claim 2976 3031	This approach covers a reasonably large range of motion
+Tec2057e91731a5a0d9eaf92a48a0529d	own_claim 3037 3059	ignores cloth dynamics
+T75984dac5de69f0f7af6fcd860c3f8c2	own_claim 3061 3153	The largest challenge is that captured cloth meshes contain only points on the cloth surface
+Tf734b3fbc144cfda38f60ce196c2dace	own_claim 3158 3188	we do not know joint locations
+T27ca34e57da6308ded05daca65fea78e	own_claim 3199 3273	we insert proxy points for knee and hip joints in each of our basis meshes
+T2aceb301e42dbd5f88cf7a54ddfb50b5	own_claim 3595 3686	Using our MATLAB implementation of MeshIK, this process takes around 5-10 seconds per frame
+Tf6a739ca0bf7df375769c2e20ac3f52b	own_claim 3825 3859	each basis pose must be an extreme
+T9e0ce0e9396a85a10ea02acde4e3fa6a	own_claim 3914 3926	a small bend
+T27e8540e5030b53f333f6d4510b0edef	own_claim 3941 3986	is sufficient to extrapolate to a larger bend
+T3d657f6bda24eda30b93e8cd9307097e	own_claim 4019 4061	for pants the relationship is more complex
+Tb799167d09918f8b9d9e11ccedb98338	own_claim 4238 4299	we do not expect extreme folds in a corresponding larger bend
+Tf02e880e332571c2be09af2eaa4eda8e	own_claim 4314 4403	MeshIK is most useful when a basis is carefully chosen to prevent extrapolation artifacts
+T9263a61a156699833a507d4c4b1c0553	own_claim 4405 4475	One drawback to our approach is the loss of secondary kinematic motion
+Tc26969116ffdc009a953c192876e5267	own_claim 4560 4598	the resulting animation appears damped

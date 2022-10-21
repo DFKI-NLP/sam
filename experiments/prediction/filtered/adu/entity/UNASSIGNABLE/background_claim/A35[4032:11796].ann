@@ -1,0 +1,4 @@
+T22f674dd8189911e2c1b43d70ef13e24	background_claim 1022 1076	practically causes inaccuracy and instability problems
+T479a90320b909dba1b5842e62f015caf	background_claim 1416 1626	One can easily turn the second-order systems relating dynamical mechanical systems into first-order systems by constructing a state vector defined by the concatenation of position and speed states of the system
+Td20ad3c3bd26383dbd5e59aad7a0f602	background_claim 3361 3454	The explicit Runge-Kutta method, implemented in its fifth-order version with error evaluation
+Te50fc8ef0c57e841514b6960123aff64	background_claim 3625 3676	increases significantly as the time step is reduced

@@ -1,0 +1,60 @@
+program: training_scripts/cross_validation/train-cross-validation.py
+method: random
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - "train"
+  - "-f"
+  - "allennlp_configs/rel_sciarg_scibert_cnn_split_window_sym_hpt.jsonnet"
+  - "--include-package"
+  - "sam"
+  - "-s"
+  - "experiments/rel/hpt_trials/hpt_multiple_parameters"
+  - "--num_folds"
+  - "5"
+  - ${args}
+
+metric:
+  name: best_validation_micro-f1/fscore_mean
+  goal: maximize
+parameters:
+  ENV_TRANSFORMER_MODEL:
+    distribution: categorical
+    values:
+      - "allenai/scibert_scivocab_uncased"
+      - "allenai/scibert_scivocab_cased"
+  ENV_SEQ2SEQ_HIDDEN_SIZE:
+    min: 128
+    max: 512
+  trainer.optimizer.lr:
+    values: [0.003,0.001,0.0006,0.0003,0.0001,0.00006,0.00003,0.00001]
+  dataset_reader.add_negative_relations_portion:
+    min: 2.0
+    max: 6.0
+  dataset_reader.max_argument_distance:
+    min: 130
+    max: 200
+  dataset_reader.token_window_size:
+    min: 256
+    max: 512
+  model.seq2seq_encoder.num_layers:
+    min: 1
+    max: 3
+  model.seq2seq_encoder.dropout:
+    distribution: uniform
+    min: 0.2
+    max: 0.8
+  model.seq2vec_encoder.num_filters:
+    min: 128
+    max: 512
+  model.dropout:
+    distribution: uniform
+    min: 0.8
+    max: 0.2
+  trainer.grad_norm:
+    distribution: uniform
+    min: 4
+    max: 8
+  trainer.patience:
+    value: 20

@@ -1,0 +1,18 @@
+T0798395d83dc25b4d7277e411cd37db3	own_claim 57 146	the Geometric Wrinkle formulation is developed keeping in mind a general deformable model
+Te445930e14db4da6608b3fb549d381ed	own_claim 165 217	we apply the method specifically for cloth animation
+Tce3da3fb1cc1d7eadb694895eb6d11d8	own_claim 433 487	the user can design the wrinkles according to her wish
+T408e62086c83ade06eed13d266e467d6	own_claim 489 549	it is worthwhile to study the strain patterns in the garment
+Tf2b01f707951cc64140b757867db154e	own_claim 568 675	inappropriately placed wrinkles in the region where there is no deformation will not animate satisfactorily
+Tc6cfbc829e1d4e9a30965b61b429bc4c	own_claim 690 753	the pattern should be orthogonal to the deformations in general
+Tdff12be0a26e872e06e569a55025b232	own_claim 1061 1096	two wrinkling patterns are designed
+Td90b73211205eaf959f02294b685b36e	own_claim 1239 1298	Each pattern represents a distinct direction of deformation
+T8b1bd890fbcd2246527e5290a6044bbe	own_claim 1310 1342	they are considerably orthogonal
+Tdd6753a0fe5bb5a03891713f877ff610	own_claim 1424 1509	It is interesting to see the smooth switch of the wrinkling patterns in the animation
+Ta704f9789d74120addcea76c535b1d3e	data 1914 1993	the calculations of the wrinkling coefficients are done on a per triangle basis
+T1c1db2603d14c75d77ff0d9532856bec	own_claim 1995 2063	the computational time is linear with respect to number of triangles
+Tfe424f52230f30052a984c621624d23d	own_claim 2076 2152	it takes 5 minutes per thousand triangles on a MIPS R10000 200 MHz processor
+T59ba9e1bb5554b28cdda7dc778848321	data 2159 2198	the wrinkling coefficients are computed
+Tbc1a6dc9e3fe206e9b773125308c3381	own_claim 2200 2285	the time spent on modulating wrinkle pattern is negligible compared to rendering time
+T62747455d0c14fb8ab2eb2788fc97c68	own_claim 2296 2312	for small meshes
+T2b98e76b6d41772d333a2030a060ec46	own_claim 2339 2389	the modulation of wrinkle pattern can be real time
+

@@ -1,0 +1,30 @@
+<H1>5 Mesh Processing</H1>
+        In the acquisition process, occlusion inevitably creates holes in the reconstructed mesh ( figure 8 ). One would like to fill these holes with real cloth. One of our major contributions is a data driven approach to hole filling: we fill holes with previously observed sections of cloth. Our work differs from 
+[Anguelov et al. 2005] because our hole filling procedure does not assume a skeleton that drives the surface and our procedure estimates a single coefficient per example. This hole filling procedure has a number of requirements: the missing section needs to be replaced by a section with the same topology; the new section needs to obey a number of point constraints around the edge of the hole, and the splicing method should respect properties of cloth (specifically strain). We select a reconstruction technique based on deformation gradients [Sumner and Popovic 2004]. In this approach, we fit deformation gradients for the missing section to a combination of deformation gradients in other observed sections. Then, we reconstruct the point locations from the deformation gradients. This procedure has a number of advantages. First, deformation gradients naturally yield cloth like properties. Deformation gradients are the transformation matrix between triangles in two poses of the mesh. By penalizing elements that deviate in this matrix, we have a fairly direct penalty on large changes in scale or strain. In contrast, methods based on the Laplacian of the mesh (
+[Sorkine et al. 2004]
+) do little to penalize these strains and can show many artifacts around the edge of the mesh. Second, deformation gradients can be converted into vertex locations by inverting a linear system, allowing us to specify vertex locations as constraints. Methods such as [Lipman et al. 2005]
+ don’t allow vertex constraints. Our subsequent discussion is divided into three sections: constructing a mesh from the point cloud, filling the holes in the mesh using deformation gradients, and temporally smoothing the results.
+        Example Meshes
+        constraints examples
+        triangles: multiview single view (unused) unobserved errors (discarded) seam backface
+        
+          
+        
+        
+          <H2>5.1 Meshing and Seams</H2>
+          We produce a mesh by forming equilateral triangles for sections of cloth that are printed with a contiguous pattern by referencing the triangle stucture of markers on the cloth. Our recovered markers are at the center of each triangle – so we average points to get out the vertices and subsequently the original mesh. We insert artificial points where two pieces of fabric come together. These points are created once per garment by hand clicking on photos of the each seam. The 3D locations of these points are recreated in each frame by averaging points near the seam.
+        
+        
+          <H2>5.2 Hole Filling</H2>
+          We use occlusion free meshes from other frames to automatically interpolate holes. For each hole in each frame, we cut out the missing region plus a ring of two triangles around the region. We select a set of examples of the enlarged region, then use MeshIK (
+[Sumner et al. 2005]) to reconstruct the surface. MeshIK works by choosing a combination of deformation gradients from the examples and then solving for the missing point locations. We use the points from the ring of known triangles around the hole as constriants in MeshIK. The most restrictive aspect of MeshIK is that it requires example meshes without holes. In practice, we never observe complete ex- ample meshes – each mesh is missing some triangles. These holes appear in different places in different meshes and we create complete meshes in an iterative method. First, we fill all holes with a naive linear algorithm (specifically, we triangulate across gaps and use barycentric coordinates to place the missing points – this gets the job done, but works poorly). Then, we do another pass through all the data, where we replace the linear sections with sections created using MeshIK on the linearly filled data. To downweight the linear data, we select the examples with the highest percentage of viewed points in the missing section. These frames are then used as examples in MeshIK to hole fill in the rest of the sequence. For the pants capture, we iteratively refine a set of 27 extreme poses which were captured specifically for filling holes. The advantage of this apporach is that the example poses are chosen to capture the relevant degrees of freedom – yielding better results. For the cloth toss sequence, we chose the simpler approach: iteratively refine the entire sequence.
+          solution ? MeshIK
+        
+        
+          <H2>5.3 Smoothing</H2>
+          We introduce flexibility preserving smoothing – a method similar to anisotropic diffusion 
+[Perona and Malik 1990] that smoothes near-rigid movement without effecting flexible deformation. Typical temporal smoothing is dangerous because fast non-rigid movements can easily become physically implausible when blurred over time. However, because fast non-rigid regions of the cloth are complex, small temporal errors are often difficult to notice. In contrast, small errors in regions of the cloth that move rigidly are typically easy to observe. As a result we use flexibility preserving smoothing, a procedure that smoothes rigid movement more heavily than non-rigid movement. To do this, we take a local region around each vertex in the mesh (typically 25 points) and compute a rigid transformation to previous and subsequent frames. Aligning the regions with this transformation, we compute the movement of the vertices in this reference frame as a proxy for rigidity. Large variations in location indicate non-rigid movement and consequently receive little smoothing. Smaller variations indicates rigid movement and benefit from more substantial smoothing. We use a size adjusted gaussian to smooth in this reference frame.
+        
+      
+      
+        

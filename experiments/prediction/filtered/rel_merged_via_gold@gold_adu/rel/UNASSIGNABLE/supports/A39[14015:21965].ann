@@ -1,0 +1,13 @@
+Tff3e8914423a2f95bd03e6b7db49d0f4	background_claim 5830 5880	require only rudimentary sparse storage techniques
+Tc7043ab42f0ac3d543c151e8ca03b8af	background_claim 5727 5767	CG methods exploit sparsity quite easily
+Tce318d77209fadf284673d2c0343e0b6	own_claim 1808 1849	this simple test may miss some collisions
+Tb89e9db29ee148c46e0e4878eb947e36	own_claim 3263 3345	it is the stretch force that is most responsible for the stiffness of equation (1)
+Ta00e46b7f43c51b7f70267955f6e9557	own_claim 3177 3248	This requires the stretch force to have a high coefficient of stiffness
+T28253bf460f1afb6555dd3b05f5a6037	own_claim 1865 1986	analytically checking for intersection between previous and current positions can guarantee that no collisions are missed
+T22c2c8b0e366f3c2cdfbc1bd0db263ea	own_claim 7601 7670	we have chosen to deal with cloth/cloth contacts using penalty forces
+T1d7f7b11138443fa2e676386b5749c1e	own_claim 7463 7534	we could handle cloth/cloth intersections using the technique described
+Rbeccbbce5c48a0bc2080e601827dff49	supports Arg1:Tce318d77209fadf284673d2c0343e0b6 Arg2:T28253bf460f1afb6555dd3b05f5a6037
+R564fcf368a63e0a7de57371067e082a4	supports Arg1:Ta00e46b7f43c51b7f70267955f6e9557 Arg2:Tb89e9db29ee148c46e0e4878eb947e36
+R9f42e1cf119653cc12795d9f404f0839	supports Arg1:Tff3e8914423a2f95bd03e6b7db49d0f4 Arg2:Tc7043ab42f0ac3d543c151e8ca03b8af
+Ra144605a111ccf556a27dcb93179897a	supports Arg1:Tc7043ab42f0ac3d543c151e8ca03b8af Arg2:Tff3e8914423a2f95bd03e6b7db49d0f4
+R6e23d29944eae83439479cd785b5b72f	supports Arg1:T1d7f7b11138443fa2e676386b5749c1e Arg2:T22c2c8b0e366f3c2cdfbc1bd0db263ea

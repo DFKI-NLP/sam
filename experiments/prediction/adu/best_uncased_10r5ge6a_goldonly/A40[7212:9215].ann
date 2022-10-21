@@ -1,0 +1,22 @@
+Td8576d593dd5da6a7c8cda65d0b36405	own_claim 30 182	To incorporate wind effects in a physically based animation we have to apply additional external forces in the dynamical model of the deformable objects
+T50e5af27ab177800a7246069f383f781	own_claim 191 320	given a wind flow represented by a velocity field in the scene we calculate the forces which are exerted on the simulated objects
+Ta324bbaa72805a020b5ae6cce56e30af	own_claim 339 475	we briefly describe the model we use to compute the effective aerodynamic forces such as wind force and air resistance, mainly following
+T64b9f38cad8f46cd835e83ef3be9a694	data 478 482	SF92
+T204d7f0cb23c4220803939225f700cd1	own_claim 485 568	The wind force acting on objects in an air stream is decomposed into two components
+T6aa3c1409bbe88b66653b263832c6b37	data 570 588	the lift force F L
+T60b34710bc804c7be762d6023dc80bc6	data 593 611	the drag force F D
+Tb5f7ad87843f8ccfdb9a81d0d183382d	data 617 625	figure 1
+T36a3da096029c2f1e08790f8a15b189a	own_claim 788 882	The direction of the drag force F D is diametral to the relative velocity v rel = v object − u
+Ta77e88d095690acc495e9e84a5229b89	data 990 1010	a windless situation
+T747a94873a5bb666aaf8316fb2da918b	own_claim 1024 1071	we still have air resistance for moving objects
+Ta05b38fc59f2a5600e8763deca5291f8	data 1079 1139	two-dimensional objects do not exhibit an inside and outside
+Te06c1dc564f6939eed0a0aba539f5e22	own_claim 1141 1196	the unit normal n i of the i-th face of the object mesh
+T1327de4e738ed82f3113d47416c2f28d	data 1202 1210	figure 1
+Tbafbee1b6dff04a80fb00c7fd9ba16a1	own_claim 1213 1227	is replaced by
+T49fde32573e6955cd6b0eaa03f76dee4	own_claim 1261 1283	n i = n − i n i if n i
+T9d2b014e79023c4f02f51b5f68c5ef62	own_claim 1286 1302	· v i,rel &gt; 0
+T576323c8965634ba38f5debf7e96dea0	own_claim 1322 1348	The drag force per face is
+Te22a2d90e5ebde2a8340ae68e7b70015	own_claim 1354 1429	given by F i,D = 2 1 C D ρ|v i,rel | 2 A · ( n i · v i,rel ) · (− v i,rel )
+Tb20706c03ab8a958368230ad46861be2	own_claim 1616 1779	The direction of the lift force, which is perpendicular to v i,rel and lies in the plane spanned by v i,rel and n i , is given by u i = ( n i × v i,rel ) × v i,rel
+T024c2cf9260aa5b2a7b3314d1a88de2d	own_claim 1795 1870	the lift force is calculated as F i,L = 1 2 C L ρ|v i,rel | 2 A cos θ · u i
+

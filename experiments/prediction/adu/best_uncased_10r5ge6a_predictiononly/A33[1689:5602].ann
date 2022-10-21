@@ -1,0 +1,43 @@
+T3c9d08f97d509ceb62b5e65f9836099d	own_claim 37 128	We capture the motion of cloth using multiple video cameras and specially tailored garments
+Tdcd74c1ad6134a2ed86f43d847841747	own_claim 130 236	The resulting surface meshes have an isometric parameterization and maintain static connectivity over time
+T9154332b07fca893720167dc2f56b41f	own_claim 238 335	Over the course of roughly half a dozen papers on cloth capture a prevailing strategy has emerged
+T3d4a541760847eee08ebd429636b72af	data 344 435	a pattern is printed on the cloth surface such that small regions of the pattern are unique
+T09035d45b1744c9896ae6df583f9d9dc	data 636 644	figure 4
+T8ae2c73174ce0462f43e3fbede830cb1	background_claim 764 777	Previous work
+Tf69b9755cc1df6bcacd8c9fab11b9f25	data 788 806	Scholz et al. 2005
+Te20c2153796dffa1fc84817e0e7a71d5	background_claim 809 832	yields pleasing results
+Tdbd941ec7d92b13c376e99ff0bf74a5e	background_claim 863 945	Little work has been done to capture garments with folds and scenes with occlusion
+T43dc0219fbc800357a41a4ce894a540d	own_claim 1128 1158	Folds and occlusion are common
+T6ef2ee356316da08d0dce3262b476bd4	data 1176 1202	dealing with real garments
+T46964853a44a13dfc5c42fef9639fa9e	data 1211 1249	pants where limbs block interior views
+T4088cbf17c88a27cbd310a5dd7355fb6	data 1254 1282	cloth collects around joints
+T2239f52e0c21312edd031d3466dd85fb	own_claim 1284 1331	Both phenomena are symptoms of the same problem
+T393b0e8a4ee14aa8f948bcd1884aab15	data 1333 1395	views of the surface are blocked by other parts of the surface
+T3256316d1ca18c92a30d804ea2fca2cc	own_claim 1406 1437	there is a distinction in scale
+T8312a9f99127a125fac848d606e927b9	own_claim 1442 1494	different methods are required to solve each problem
+T8240c3cfa3c46d4ceaac149d8f392a43	data 1501 1528	a surface is heavily folded
+Te4da069480a6443cdab4015045bfaeb9	own_claim 1530 1589	contiguous visible regions are often small and oddly shaped
+Te06a9619e83e0eec0fd7d5fd58955218	own_claim 1591 1663	In these regions correspondence is essential for detailed reconstruction
+Tdd8f77e8c0fca6a91797777ab6e5e461	own_claim 1668 1698	can be challenging to identify
+T4741f7510692b8cfff6fd2437d9c3703	own_claim 1853 2016	Our method gets more information per pixel than previous methods by drawing from the full colorspace instead of a small finite set of colors in the printed pattern
+T70524a97bd9c40146f2bd201320cbb91	data 2040 2080	cloth cannot stretch much before ripping
+T64f6e7fa49a9cd3711d8c32c46b652b4	own_claim 2082 2173	we use strain constraints to eliminate candidates in an iterative search for correspondence
+T70d37126c66704dff2720bd397e05b36	own_claim 2191 2302	these two modifications eliminate the need for neighborhood information in the final iteration of our algorithm
+T70dde8c2756fbc454bb56ab30e773882	own_claim 2317 2406	we determine correspondence using regions that are 25 times smaller than in previous work
+T2c56aea463a60fe3dfd59ee5c54e787f	data 2409 2417	figure 6
+Tc7c2a52a0cbc4648a4c4840dd9124a4d	own_claim 2421 2474	Many regions on the surface are impossible to observe
+T94f449b8ab4689792916b00b051c5f99	own_claim 2609 2615	MeshIK
+Td53b18d831963118906aa63ebf7081ac	data 2618 2636	Sumner et al. 2005
+T1b4234115f6329d1d686edc9ed18955a	own_claim 2640 2740	a tool originally developed for mesh posing and animation, is appropriate for filling holes in cloth
+Teb27732105fe487b874a6748fdc31231	own_claim 2751 2786	MeshIK is well-suited to cloth data
+Te4a0e840abff67e4065e84e8afd96e62	own_claim 2791 2859	we use it to bind reconstruction of our pants to motion capture data
+Tb3d7c854721c24eb9af648574c084cb2	own_claim 2861 2922	We suggest two tools to evaluate marker-based capture systems
+Tb574c7af9e10ce2cf0c2ade303723ca6	own_claim 2924 3003	The first, markers per megapixel, is a measure of efficiency in capture systems
+T6b2cd7a6cdf1606be671f89e3dd62e86	own_claim 3005 3028	Efficiency is important
+T71e427d89b1eeaf16d8b32c1e1af4d7c	data 3037 3082	camera resolution and bandwidth are expensive
+T270ca199ff3ea03598f7a0b535461e02	data 3084 3152	the goal is to get more performance from the same level of equipment
+T57f552eefcbf5e2960ce75a478bba016	own_claim 3154 3265	This metric is designed to predict scaling as technology moves from the research lab to the professional studio
+T8d8b97e76ede2b0ddc23fb4eea4da464	own_claim 3267 3304	The second tool is information theory
+Td051b2c62800cb405ef55d3cdc19f560	data 3306 3375	we look at the predictive power of different cues in a capture system
+Te1c7e06c8df90f5a82e58f051860dfe1	own_claim 3377 3458	By doing simple bit calculations, we direct our design efforts more appropriately
+

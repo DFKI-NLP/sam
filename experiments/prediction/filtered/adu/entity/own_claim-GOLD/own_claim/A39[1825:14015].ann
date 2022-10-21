@@ -1,0 +1,32 @@
+T1ff4fcef438aba7530d82866180f12e1	own_claim-GOLD 1829 1930	we describe a cloth simulation system that is much faster than previously reported simulation systems
+T7563b15e54824db9773d1b2aabe13090	own_claim-GOLD 1932 2052	Our system’s faster performance begins with the choice of an implicit numerical integration method to solve equation (1)
+T7c688a459d69773b1ba6113b43f2fdeb	own_claim-GOLD 3527 3625	implicit methods for cloth overcome the performance limits inherent in explicit simulation methods
+T9c9490067749069d13ca6bfc7b55721e	own_claim-GOLD 5759 5846	has convinced us that there is no benefit to be gained from using an ADI method instead
+Ta4dfbaae1760dd266e127bf63c46c96e	own_claim-GOLD 6352 6510	our simulator enforces constraints without introducing additional penalty terms in the energy function E or adding Lagrange-multiplier forces into the force F
+T7b7997054bb98110fe4667efe08a6276	own_claim-GOLD 6513 6564	This sort of direct constraint treatment is trivial
+Tf03cdbc6c4728ff26a1a9cbc41e3e71e	own_claim-GOLD 6664 6806	Our formulation for directly imposing and maintaining constraints is harmonious with the use of an extremely fast iterative solution algorithm
+T3e2f76466771a4668ad74441d6bc1f51	own_claim-GOLD 7082 7108	A property of our approach
+T224082a26750c1cbc14aa2a5601e8b2f	own_claim-GOLD 7119 7165	is that the constraints are maintained exactly
+T1cd813b1f3adf82dc891f2163f4c7ad1	own_claim-GOLD 7389 7480	The combination of implicit integration and direct constraint satisfaction is very powerful
+T8eb6ac7d1a02b518bf7cb688b95447e3	own_claim-GOLD 7490 7555	this approach almost always allows us to take large steps forward
+Tec556e8b3a17691c28c42898e566b146	own_claim-GOLD 7569 7669	most of our simulations require on average from two to three time steps per frame of 30 Hz animation
+Te4335439f4e4ce6a662762e9995ae295	own_claim-GOLD 7712 7818	The large step sizes complement the fact that the CG solver requires relatively few iterations to converge
+Tf06d839723d29cd3a1e3587413f61386	own_claim-GOLD 7989 8083	the running time of our simulator is remarkably insensitive to the cloth’s material properties
+T4dbe4bfa14f5308fe016a4c1ed211775	own_claim-GOLD 8135 8206	All of the above advantages translate directly into a fast running time
+T2c36a3985a503bb7f486d256b4a8910d	own_claim-GOLD 8490 8589	exhibiting complex wrinkling and folding behavior on both key-framed and motion-captured characters
+Ta83f543ae0baaf9c2011cf6d24646c34	own_claim 1829 1930	we describe a cloth simulation system that is much faster than previously reported simulation systems
+Td5639985897563d1956e595b6d13357b	own_claim 1932 2052	Our system’s faster performance begins with the choice of an implicit numerical integration method to solve equation (1)
+T3d5e2e0291416bcfd57e3daa4d9c9ffe	own_claim 3527 3625	implicit methods for cloth overcome the performance limits inherent in explicit simulation methods
+Tc628214498b19c7aca5ce187f0d6be8e	own_claim 5759 5846	has convinced us that there is no benefit to be gained from using an ADI method instead
+Tebcb1cf0f760432a9806a089e0955ed2	own_claim 6352 6510	our simulator enforces constraints without introducing additional penalty terms in the energy function E or adding Lagrange-multiplier forces into the force F
+Tecfaba040c4fb2beb18655aeb4f9f1ee	own_claim 6513 6564	This sort of direct constraint treatment is trivial
+T08342983eec7efe987e7a58cb4cd4bd0	own_claim 6664 6806	Our formulation for directly imposing and maintaining constraints is harmonious with the use of an extremely fast iterative solution algorithm
+T6933e5ded1877c269d9633446c9ffad0	own_claim 7082 7108	A property of our approach
+T498b77e6094ae75ab338348d61364807	own_claim 7119 7165	is that the constraints are maintained exactly
+T27e42bc6dc94922659891326c1372e84	own_claim 7389 7480	The combination of implicit integration and direct constraint satisfaction is very powerful
+T9332d0660a523b4d1afc80f33aab1b1c	own_claim 7490 7555	this approach almost always allows us to take large steps forward
+T55f556229c0eb5a8f35efd5a34db1d18	own_claim 7569 7669	most of our simulations require on average from two to three time steps per frame of 30 Hz animation
+Tef4c35499e8b23b4066dcc09a98433ce	own_claim 7712 7818	The large step sizes complement the fact that the CG solver requires relatively few iterations to converge
+T68d9a081ddfbcf8137634a313996bb9e	own_claim 7989 8083	the running time of our simulator is remarkably insensitive to the cloth’s material properties
+Tfa6474e9b12293c70e5f0ca4b0c2f91c	own_claim 8135 8206	All of the above advantages translate directly into a fast running time
+Tb56e0af3bf978286a86afde83156b033	own_claim 8490 8589	exhibiting complex wrinkling and folding behavior on both key-framed and motion-captured characters

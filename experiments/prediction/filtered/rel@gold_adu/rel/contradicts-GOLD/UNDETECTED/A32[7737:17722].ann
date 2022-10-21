@@ -1,0 +1,3 @@
+T306974905f558a981868a4d25dd701ac	own_claim 6449 6510	The algorithm is computationally inexpensive during animation
+Td70bf061c170371b592af3094c584186	own_claim 6719 6794	The wrinkling coefficients on the other hand, are computationally expensive
+R412194574aa34e6eb77c4985b2ee235f	contradicts-GOLD Arg1:T306974905f558a981868a4d25dd701ac Arg2:Td70bf061c170371b592af3094c584186

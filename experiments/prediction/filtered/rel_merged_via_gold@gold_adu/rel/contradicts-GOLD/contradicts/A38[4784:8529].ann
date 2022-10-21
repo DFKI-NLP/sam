@@ -1,0 +1,12 @@
+T7097bd993b9e4fb21f5072bdb99547d8	background_claim 1515 1599	such methods have not yet enjoyed wide-spread use in the computer graphics community
+T29c28e40d2d5d09ae757012cd61160ce	background_claim 1937 2035	these measurements are problematic for computer graphics cloth simulation problems for two reasons
+Td295020f8794c3b79c37629a34ce86bd	background_claim 2622 2747	they attacked the problem of measuring the 3D geometry of an object from the resting shape of a piece of cloth draped over it
+T4aabd3f510a635f122ebe5243efbec43	background_claim 1391 1459	Cloth parameter estimation has been studied in the textile community
+T3c4e1525374e5f7c8585869508e38181	background_claim 1882 1935	the Kawabata system can provide accurate measurements
+Tfbd1bd7255486e552a1f9e9caabd223e	background_claim 2807 2880	Jojic and Huang did not treat the problem of measuring dynamic parameters
+Ra5d069d6fdf0d6feb8ddaff12c95ff84	contradicts-GOLD Arg1:T4aabd3f510a635f122ebe5243efbec43 Arg2:T7097bd993b9e4fb21f5072bdb99547d8
+R6a38ecf277398472b1eced552e2f0a9c	contradicts-GOLD Arg1:T3c4e1525374e5f7c8585869508e38181 Arg2:T29c28e40d2d5d09ae757012cd61160ce
+R2cb9d696e4307d45042ade2a38a65927	contradicts-GOLD Arg1:Td295020f8794c3b79c37629a34ce86bd Arg2:Tfbd1bd7255486e552a1f9e9caabd223e
+Re9aef14e6853384431b98d617e53c9c4	contradicts Arg1:T4aabd3f510a635f122ebe5243efbec43 Arg2:T7097bd993b9e4fb21f5072bdb99547d8
+R4964d9c9f40940c39352764a65dcb34d	contradicts Arg1:T3c4e1525374e5f7c8585869508e38181 Arg2:T29c28e40d2d5d09ae757012cd61160ce
+R8c6c18376efaa54787872d9e4250e742	contradicts Arg1:Td295020f8794c3b79c37629a34ce86bd Arg2:Tfbd1bd7255486e552a1f9e9caabd223e

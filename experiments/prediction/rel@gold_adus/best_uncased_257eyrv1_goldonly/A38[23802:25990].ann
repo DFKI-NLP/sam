@@ -1,0 +1,24 @@
+T4d982f18adc1fbef1fa1ee5b1daf8e69	own_claim 158 214	The experiments are easy to perform, capture, and repeat
+T7dd839081a1e01becd0d8b0a07651583	own_claim 220 273	they demonstrate the complex dynamics of cloth motion
+Tbad08334986814b26355dcaeec85311d	own_claim 402 527	our experiments were designed to be a calibration setup for estimating the static and dynamic parameters of a cloth simulator
+Ta8f0b8616a949ed4c4516b30769c42c8	own_claim 677 781	These fabrics exhibit a wide range of static and dynamic behavior and span a large range of real fabrics
+Tb6a285885efe8e7f0794dc9805c998a3	data 983 1025	a fixed separation between the top corners
+T16b4f5574545a966360d305cc76d1758	own_claim 1027 1075	different fabrics attain different static shapes
+T28612be665e48b30524d0e23d058a9b1	data 1088 1094	Fig. 6
+T62a7a1f885e02c6a5a1c3e61f1adb691	own_claim 1097 1178	The static test give a good estimate for the static stiffness and bend parameters
+Td8ff994d792ffa34af85fae36a0a421c	data 1403 1422	accompanying videos
+Tbb99a2684ecacba8386868fe879bebff	own_claim 1428 1484	real fabrics exhibit a wide range of interesting motions
+T9e28ab8f73642db7af871a1c2896be44	own_claim 1486 1572	Different fabrics also exhibit different types of motion for the same input excitation
+Tf2e2307cd65fcfecf228b22c41c49a01	own_claim 1574 1667	We designed the waving motion to roughly match the types of motion occurring in real garments
+Tdac8d0cb1ff713b4b4f82046d98fd879	data 1676 1682	skirts
+T85691728e957236c714ecad477743b55	own_claim 1684 1810	This gives reasonable estimates for cloth parameters while avoiding the need to optimize directly on complex fabric geometries
+T3fe97479ff8138d8cb3a7a4f84e255df	data 1817 1823	skirts
+Tc6857cdc5403a2be2e4dc00be8a209c1	own_claim 1825 1850	involving many collisions
+Rf6b184482ee1edda794ed172e009b641	contradicts Arg1:T4d982f18adc1fbef1fa1ee5b1daf8e69 Arg2:T7dd839081a1e01becd0d8b0a07651583
+R91e1f219fb97112fa1e41bf5c5e3c218	supports Arg1:Tb6a285885efe8e7f0794dc9805c998a3 Arg2:T16b4f5574545a966360d305cc76d1758
+Rde95664efd7ffb2ad1f18377c792a133	supports Arg1:T28612be665e48b30524d0e23d058a9b1 Arg2:T16b4f5574545a966360d305cc76d1758
+R2f45e420f670b9d364294ad038a71610	supports Arg1:Td8ff994d792ffa34af85fae36a0a421c Arg2:Tbb99a2684ecacba8386868fe879bebff
+R1fdd44a34e2fec41df664b7336d9a09b	supports Arg1:Tdac8d0cb1ff713b4b4f82046d98fd879 Arg2:Tf2e2307cd65fcfecf228b22c41c49a01
+Rcc3df5cf17c3eb895bd37bc618290a7c	supports Arg1:T85691728e957236c714ecad477743b55 Arg2:Tf2e2307cd65fcfecf228b22c41c49a01
+R17a30ab90c14e3be144f4bd9fec11b4b	parts_of_same Arg1:T85691728e957236c714ecad477743b55 Arg2:Tc6857cdc5403a2be2e4dc00be8a209c1
+R11011a53fe1d6f48c88ad636b5767c1b	supports Arg1:T3fe97479ff8138d8cb3a7a4f84e255df Arg2:T85691728e957236c714ecad477743b55

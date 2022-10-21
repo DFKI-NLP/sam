@@ -1,0 +1,32 @@
+<H1>3. Cloth Model</H1>
+        Because our framework for estimating cloth simulation parameters is independent of the cloth model, we can, in principle, select a specific model that meets a set of criteria such as accuracy or simulation speed. Our choice of a cloth model was guided by two principles, realism and practicality. We wanted to use a model that was sophisticated enough to capture the detailed dynamic behavior found in real fabrics but still straightforward to implement. Because our intention was to apply the learned cloth model parameters to arbitrary garments with varying triangle resolution, it was also important that the cloth parameters correctly scale to varying resolutions of cloth. We used the model described by Baraff and Witkin as the basis for our cloth simulator 
+4 . This model has sufficient richness to produce a wide variety of cloth behaviors. The underlying meshing is triangular, making clothing modelling easier. More importantly, its input parameters are independent of meshing, so that parameters recovered on one mesh (the test swatch) can safely be transferred to another (the skirt). While nonlinear models such as the buckling behavior of Choi and Ko 9 could potentially capture more realistic details of cloth, there is no straightforward way to scale the parameters of these models to meshes of varying resolutions. We expect that future application of our parameterestimation framework to other scale-invariant cloth models will provide even more realistic results. The model developed by Baraff and Witkin formulates the energy of a particular triangle in terms of so-called condition functions C(x) such that the total potential energy associated with the system is given by E u = k s C(x)C T (x) ( 1 ) 2 where k s is a stiffness coefficient associated with the particular condition function. Forces are then simply calculated by
+        c The Eurographics Association 2003.
+        Bhat et al. / Estimating Cloth Simulation Parameters from Video
+        F = ∇ x E u ( 2 )
+        Damping forces are similarly fomulated in terms of the
+      
+      
+        C(x), d = −k C(x)
+         ̇
+         ( 3 )
+        dC d dx
+        We thus associate a stiffness coefficient k s and a damping coefficient k d with each of the C(x). In their paper, Baraff and Witkin describe a set of C(x) consisting of an in-plane stretch term, an in-plane shear term, and an out-of-plane bending term, giving a total of six parameters we can use to tune the internal cloth model. We refer the reader to their paper 4
+ for the full details. We note, however, that (as they allude to in footnote 5) energy should scale linearly with triangle area to ensure scale independence. Therefore, we need to be careful when substituting C(x) for stretch and shear into eq. 1 that the resulting formula is linear in a rather than quadratic. In the course of running our experiments, we discovered that a linear drag model such as that used in previous cloth work 
+4 , 9
+ was not able to capture dynamic aspects of cloth. In order to add additional air-drag degrees of freedom to our cloth model without resorting to fully modeling aerodynamics 
+25 , we developed a simple nonlinear alternative. To calculate the drag force on a triangle, we decompose the average velocity on the face into two components, one normal to the surface (v N ) and one tangential (v T ). Total drag force is then a linear function of tangential velocity and a quadratic function of normal velocity, with an additional term k f that controls the degree of nonlinearity,
+        f drag = −a 1 + k N k |v f |v N | N 2 | 2 |v v N N | + k T v T where a is the area of the given triangle. The linear term
+        is merely Stokes’s law 1 ; the quadratic term matches better the experimental behavior of macroscopic bodies in low Reynold’s number flow 
+14 . The addition of the |v N | 2 term in the denominator which makes the force asymptotic as v N → ∞ was partially motivated by the observed phenomenon of drag crisis 14
+ , where under certain circumstances the drag can actually drop at the onset of turbulence 1 . The optimizer is free to eliminate this behavior or other terms of this equation by setting the corresponding parameters to zero. Initially, we used a first-order implicit Euler time integration scheme similar to the one described by Baraff and Witkin 
+4 . Unfortunately, we found that implicit integration introduced damping which could not be eliminated by optimizing cloth parameters. We had more success in matching realistic cloth motions by using higher-order explicit methods. The results in this paper all use an adaptive 4thorder accurate Runge-Kutta methods with embedded error estimation 
+2 . While this method offers the advantages of familiarity and automatic bounding of error, it is rather slow, and recent work suggests that using 2nd-order backward differences 9 or Newmark schemes 7 may be a better choice. For collision handling, we use a model similar to Bridson and colleagues 6 which combines repulsion forces with impulses to robustly prevent all collisions before they occur. However, separating repulsion forces from the cloth internal dynamics and applying them outside the Runge-Kutta solver affected stability and resulted in visible artifacts. Instead, we apply repulsion forces inside the solver loop, so that the solver’s own internal error estimation can remove these artifacts. The drawback of this technique is speed, because the system must check for collisions every time it evaluates the state derivatives (as opposed to once every collision timestep as in Bridson et al. 6 ). 
+
+To achieve acceptable performance, we used a number of collision culling algorithms, including hybrid top-down/bottom-up update 
+24 , fast triangle reject tests 
+26 , and a curvature-based criterion for rejecting self-collisions that was first introduced by Volino and Thalmann 38 and later refined by Provot 
+30 .
+      
+      
+        

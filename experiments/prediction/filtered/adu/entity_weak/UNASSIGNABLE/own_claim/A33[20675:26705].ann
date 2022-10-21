@@ -1,0 +1,13 @@
+Te11d7ad8179a98532caa48d6beb80970	own_claim 823 890	We select a reconstruction technique based on deformation gradients
+T424a5020458ea9960e10b722002f996e	own_claim 1243 1337	Deformation gradients are the transformation matrix between triangles in two poses of the mesh
+T46fe285f8b62f2ea804dddfb967ffaf7	own_claim 1734 1788	allowing us to specify vertex locations as constraints
+Tc9d651367d3a6648018b9fb29c6cc0c2	own_claim 2292 2468	We produce a mesh by forming equilateral triangles for sections of cloth that are printed with a contiguous pattern by referencing the triangle stucture of markers on the cloth
+Td5a5d7e505abdf5b87ca2c43f3acb9d9	own_claim 2470 2526	Our recovered markers are at the center of each triangle
+Tf9fcd2722aff43a72cb691604ab1be16	own_claim 2532 2608	we average points to get out the vertices and subsequently the original mesh
+T0da3c25d2c5d35b293f136d3890b9fab	own_claim 2927 3008	We use occlusion free meshes from other frames to automatically interpolate holes
+T61510b99016763169cc49e39ec6e4594	own_claim 3117 3184	We select a set of examples of the enlarged region, then use MeshIK
+T365eb21b18d2025d94017a9174d2b206	own_claim 3209 3235	to reconstruct the surface
+Tdc93cc90ea74c5f1daa86876b2c68df5	own_claim 3237 3367	MeshIK works by choosing a combination of deformation gradients from the examples and then solving for the missing point locations
+T490dc17be250a5d53a2b7bac431e7dc7	own_claim 3550 3605	In practice, we never observe complete ex- ample meshes
+Tcda28af96bf4da6621edfbecfea5c041	own_claim 3645 3703	These holes appear in different places in different meshes
+Ted352346e6cae7c873415da1559a8285	own_claim 4887 4959	that smoothes near-rigid movement without effecting flexible deformation

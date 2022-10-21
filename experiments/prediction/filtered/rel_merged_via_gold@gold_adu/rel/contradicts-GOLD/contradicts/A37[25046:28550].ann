@@ -1,0 +1,4 @@
+T251ebd20dac990d8475fa14ea0202695	own_claim 2152 2191	each timestep is relatively inexpensive
+Ta7c067cf645d0ef05b8f076866e495e7	own_claim 2086 2146	the algorithm requires extremely small timesteps to converge
+R45079bf2208545847adaf52e7079c1a1	contradicts-GOLD Arg1:Ta7c067cf645d0ef05b8f076866e495e7 Arg2:T251ebd20dac990d8475fa14ea0202695
+R99c281dcf8509820ef42c105773d9c16	contradicts Arg1:Ta7c067cf645d0ef05b8f076866e495e7 Arg2:T251ebd20dac990d8475fa14ea0202695

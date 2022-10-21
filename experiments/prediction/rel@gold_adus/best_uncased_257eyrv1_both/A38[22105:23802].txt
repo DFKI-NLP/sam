@@ -1,0 +1,13 @@
+<H1>6. Optimization Framework</H1>
+        We use simulated annealing to find the parameters that minimize the error function given in eq. 9. Simulated annealing initially explores the space in a semi-random fashion and eventually takes downhill steps. The likelihood that it will take a step in a direction that is not locally optimal is a function of the temperature ( Fig. 5 ). We chose to use the continuous simulated annealing method presented in Press et al. 
+28
+ , which combines the Metropolis algorithm with the downhill simplex method for continuous n-variable optimization. We found it useful to reset the simplex with the current best solution when the temperature reduces by a factor of 3. Prior to optimization, we perform an exhaustive search for each fabric, where we choose four values for each cloth parameter across its entire range. This corresponds to a very coarse sampling of the parameter space. We simulate the fabric for all points in this coarse set and compute the error for each point by comparing against the real fabric. We initialize the optimizer with the point corresponding to the minimum error. We have found that this strategy allows the optimizer to locate a good minimum of the space.
+        c The Eurographics Association 2003.
+        Bhat et al. / Estimating Cloth Simulation Parameters from Video
+        1000 Temperature 900 350 800 300 700 250 600 Temperature 500 200 Error 400 150 300 100 200 50 100 0 0 50 100 150 200 250 300 350 400 Iteration Number
+        
+          Figure 5: Progress of the simulated annealing optimizer as measured by error. The temperature decrease is governed by a geometric cooling schedule.
+        
+      
+      
+        

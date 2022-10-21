@@ -1,0 +1,20 @@
+T0b8705ba922cb0250ceebfb24a787f73	own_claim 1130 1201	neighboring markers are observed only when the cloth is relatively flat
+T741965deeb2f84736dbda278a7cedb48	own_claim 724 783	we opt for the smallest markers that we can reliably detect
+T286780ea7ce25e5caab34615a3577ef1	own_claim 2658 2705	This neighbor is one of four possible neighbors
+T4f28fe19f4c56418a891b6f063fdd239	own_claim 611 661	we cannot increase camera resolution without bound
+T9d82188c490d30ff46cfe52f88ff79a6	own_claim 4809 4865	These comparisons must be made in the proper color space
+Ta37ed7f00e29c3f51868a7882882d92a	own_claim 976 1052	Marker color and strain constraints are more useful than neighboring markers
+T49bfa05216bbb48525c47de55fc7b1e3	own_claim 4342 4357	takes two forms
+T944b868a4cd013535e12eca36932d1f2	own_claim 2713 2765;2767 2772	it takes two bits to specify which neighbor we found A = 2
+T7dbd8994428f7486136938924353f822	own_claim 2789 2829	the equation reduces to I = 2 ∗C − 2 + S
+T8953b7d90c641d8fae5898d308e9a2fc	own_claim 4305 4337	Illumination is also problematic
+Te7e69ed124faed524517ae6db9e2c98d	own_claim 788 826	we make small markers more distinctive
+T29f8c151149ab6a9d85b1f755f5420b5	own_claim 4867 5002	we photograph the surface of the printed cloth with our video cameras to minimize the effect of non-linearities in the printing process
+R22412d2a9387edb8b10feac68f4ece09	supports Arg1:T286780ea7ce25e5caab34615a3577ef1 Arg2:T944b868a4cd013535e12eca36932d1f2
+R1ce8a1353cdfa11db792510b06dc25fc	supports Arg1:T29f8c151149ab6a9d85b1f755f5420b5 Arg2:T9d82188c490d30ff46cfe52f88ff79a6
+R90da5a039fef9b87503ab426dd4bafb7	supports Arg1:T4f28fe19f4c56418a891b6f063fdd239 Arg2:T741965deeb2f84736dbda278a7cedb48
+Rcae8029ce61d5a3872d223322395e44e	supports Arg1:T4f28fe19f4c56418a891b6f063fdd239 Arg2:Te7e69ed124faed524517ae6db9e2c98d
+R8c84c2c1b1cfa7959c963d5d133d1db4	supports Arg1:T741965deeb2f84736dbda278a7cedb48 Arg2:Te7e69ed124faed524517ae6db9e2c98d
+Rd08bf80843e9c633770670c6309b3a92	supports Arg1:T0b8705ba922cb0250ceebfb24a787f73 Arg2:Ta37ed7f00e29c3f51868a7882882d92a
+R7ba945cc660e7ed9323efba9ee7e3c7a	supports Arg1:T944b868a4cd013535e12eca36932d1f2 Arg2:T7dbd8994428f7486136938924353f822
+Rcb12d2de87de692012c86ce2c20f2b97	supports Arg1:T49bfa05216bbb48525c47de55fc7b1e3 Arg2:T8953b7d90c641d8fae5898d308e9a2fc

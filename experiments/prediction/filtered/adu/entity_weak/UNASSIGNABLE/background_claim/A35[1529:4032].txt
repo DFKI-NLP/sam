@@ -1,0 +1,19 @@
+<H1>1. Introduction</H1>
+      
+      The correct choice of the simulation method and its implementation is a very important issue in the design of an efficient cloth simulation system. 
+
+Among the available methods, there are finite elements methods 
+[ EIS 96 ], continuum mechanics 
+[ TER 87 ] or particle systems 
+[ BRE 94 ]. 
+We will focus on the latter, which has shown to bring the best compromise between accuracy and speed for highly deformable objects such as cloth 
+[ VOL 95 ] [ VOL 97 ]. A particle system represents the mechanical system as a set of punctual masses. The cloth surface shape is represented by the geometry between neighboring particles. The mechanical behavior is represented as interaction forces between the particles, which depend on the relative position and speed of the particles, measuring deformation and deformation speed. Various models exist for this representation, which rank from the simple spring-mass representation (spring forces between particle couples depending on the distance between the particles) to accurate surface or volume models (involving complex interactions between several neighboring particles). The laws ruling these interactions also rank from linear to highly nonlinear involving discontinuities and hysteretic curves. The evolution of the system is computed numerically from these equations that form a large and sparse ordinary differential equation system, which, through adequate modeling, is also first-order. This numerical system has to be integrated numerically, for finally obtaining the evolution of the mechanical system along time, usually as a sequence of successive positions of the object along regular time intervals. 
+Various numerical methods related
+      Fax:
+      to integration of numerical ordinary first-order differential systems are available for this purpose 
+[ PRE 92 ]. 
+The aim of this study is not to describe the implementation of these methods, which has already been carried out extensively in 
+[ EBE 96 ] [ VOL 97 ] [ BAR 98 ] [ VOL 00 ], and with some adaptations in 
+[ DES 99 ] [ EBE 00 ] [ KAN 00 ]. It rather intends to evaluate quantitatively the performance of the main integration methods in terms of speed and accuracy. Using a “typical” cloth object made of a common fabric material, we compare the computation speed and accuracy of each integration methods depending several simulation contexts, giving the reader an overview of the performance he can expect from each method.
+      
+        

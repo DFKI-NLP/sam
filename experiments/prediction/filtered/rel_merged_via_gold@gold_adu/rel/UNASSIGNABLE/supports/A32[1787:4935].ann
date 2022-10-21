@@ -1,0 +1,9 @@
+T7e313fcbd1f7f7caaf1fa613493cfbb7	background_claim 394 527	Such a large number of triangles put cloth simulation off from interactive speeds, even with adaptive time steps, introduced recently
+T534588ec49fdab9a02a4c797c1948b94	background_claim 992 1087	Cloth has very large in-plane deformation stiffnesses compared to its ability to bend and shear
+Ta5ac38536c3dcb914fb23357a63d5b5a	background_claim 322 392	the number of triangles required can be easily upto a hundred thousand
+Tc292ab326cc258855c5ebccfda415b64	background_claim 564 644	the large triangle count increases the rendering time and the cost significantly
+Tf167091fa55c08169da832de1f6149f4	background_claim 1089 1138	This gives rise to very stiff equations of motion
+T2203df61fdb9058666e5c526b1ceb9de	background_claim 671 767	one can increase fineness of triangles only in the potential regions where wrinkling might occur
+R21c9dfa7b36de6890fbb1edc83938e2c	supports Arg1:Ta5ac38536c3dcb914fb23357a63d5b5a Arg2:T7e313fcbd1f7f7caaf1fa613493cfbb7
+R146bcee259137c2e082a1b4c83c9bae6	supports Arg1:Tc292ab326cc258855c5ebccfda415b64 Arg2:T2203df61fdb9058666e5c526b1ceb9de
+Rae11daaf6c822774f2aeb932fef652d1	supports Arg1:T534588ec49fdab9a02a4c797c1948b94 Arg2:Tf167091fa55c08169da832de1f6149f4

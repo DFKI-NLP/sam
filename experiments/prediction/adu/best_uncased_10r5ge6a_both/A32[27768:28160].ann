@@ -1,0 +1,9 @@
+T11705e8e36cf71beda043f813621e06c	own_claim-GOLD 46 124	We have developed a fast and versatile method for animating realistic wrinkles
+Ta0d84d55f631fe94b5b0ebdb1a0172a8	own_claim-GOLD 126 154	which is geometric in nature
+Tc37c02099cfa2275a45121604bd0e2e2	own_claim-GOLD 163 209	it can be applied to general deformable models
+T8f7ce7bf02c391cddab5090c751e053d	data-GOLD 218 223	cloth
+Tf593e93045fbe700be161ee763d10831	own_claim-GOLD 277 368	creating wrinkle patterns from the strain pattern, which is currently a time consuming task
+T0ca1471feaa927fec8cfee5ace3cea52	own_claim 46 154	We have developed a fast and versatile method for animating realistic wrinkles, which is geometric in nature
+Tb857c966a57528ed68f503381e0350c7	own_claim 163 223	it can be applied to general deformable models such as cloth
+T3a7f90812a039f5cceec055f8ebf5a62	own_claim 225 368	We would like to extend the method by automatically creating wrinkle patterns from the strain pattern, which is currently a time consuming task
+

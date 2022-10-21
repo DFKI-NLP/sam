@@ -1,0 +1,3 @@
+Te5817baaf21bbd013f9b230310f3b072	own_claim 1401 1563	the inextensibility filter does not assume that the constraint is maintained at the beginning of the timestep and errors are not accumulated during the simulation
+T2d96af05b7176f269092b276d9b4aec5	background_claim 1329 1369	unlike constraint-enforcement approaches
+Rbbdfd53016b650dcdcf55a17b4d52425	contradicts-GOLD Arg1:T2d96af05b7176f269092b276d9b4aec5 Arg2:Te5817baaf21bbd013f9b230310f3b072

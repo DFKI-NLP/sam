@@ -1,0 +1,123 @@
+T8283a7e1577ce209ef11b35beb3aa816	background_claim-GOLD 33 155	Previous work in cloth motion capture has focused on placing high density markers in correspondence between multiple views
+T485ca43b7e04a6092e891ba775b8a689	background_claim-GOLD 157 265	The primary challenge is to increase marker density while correctly assigning correspondence between markers
+Ta85bc50698c8bf988b8dd9e4f151a498	own_claim-GOLD 267 339	We suggest markers per megapixel as an appropriate metric for comparison
+T2766396ae2512581fd632af18f47831a	data-GOLD 342 350	figure 3
+Td27b5982c104ed9384ca12b8102b48bb	own_claim-GOLD 361 408	it measures the method instead of the equipment
+T0e7344b3dd7dfbd1b3cc85c05ae326fa	background_claim-GOLD 410 472	Most high density full frame-rate capture has focused on cloth
+Tdb5597d2610347a46dd93e79a6b12f70	background_claim-GOLD 483 545	there has been some recent work enhancing human motion capture
+T90f5bc4e18014951f2d0a03b41681537	data-GOLD 548 569	Park and Hodgins 2006
+T2b491500a81dbe514b508cd92fe753d7	background_claim-GOLD 572 608	These methods have far fewer markers
+Tdd8b39978cf0ed7b8a992936f84e1fb5	data-GOLD 631 660	they affix individual markers
+Tc8e3cee25ec54ce576918f2ec5476db9	background_claim-GOLD 736 785	These markers can be broken into three categories
+T696a57943299aa4633c502abd0939554	background_claim-GOLD 787 812	complex surface gradients
+T9b77f0609e02b94a6d91dafab3cf5656	data-GOLD 815 842	Pritchard and Heidrich 2003
+Tafc3daa8154744a556e9346c9ac71d37	data-GOLD 844 866	Scholz and Magnor 2004
+T61e863a5fb94b3cfb67b27cfb1798a87	data-GOLD 868 886	Hasler et al. 2006
+T750e78028b139888a88c05c6b607942a	background_claim-GOLD 946 964	intersecting lines
+T15fddd5abeff5a02c5d3a9373ecc4575	data-GOLD 967 984	Tanie et al. 2005
+Tcfacc6c1c1114443e7c35ea9027a1c0b	background_claim-GOLD 990 1015	regions of constant color
+Teb2521f6f147fd7454c16b0d4ba64494	data-GOLD 1018 1040	Guskov and Zhukov 2002
+T1ecfc58091401e4d9c54aec5ccbbc76a	data-GOLD 1042 1060	Guskov et al. 2003
+T4ccdafe2de9522ad254556835853283e	data-GOLD 1062 1080	Scholz et al. 2005
+T20fb192dc622e257245bf1fc86c4d412	own_claim-GOLD 1083 1145	Our work falls in the third category: regions of contant color
+T695f7cf3296603b90ffd5b43d76b211f	own_claim-GOLD 1252 1296	The most common errors are marker mismatches
+Ta5259e6580670d5cd08cd1ba2e2275f8	own_claim-GOLD 1301 1379	are observable in reconstructions by local strain in the reconstructed surface
+T0113ae91bd62d1b31dabcd1fcfd7b442	own_claim-GOLD 1406 1445	constant color markers perform the best
+T6268f82f8553a4e89e02bf313a8ed10c	data-GOLD 1448 1475	Pritchard and Heidrich 2003
+T794e6e65f61840a1682b5ef8ba450fad	background_claim-GOLD 1478 1525	used cloth with unique line drawings as markers
+T5142fb941b39fcf1f6a366576060b44a	background_claim-GOLD 1527 1608	Their work identifies parameterization as one of the key aspects of cloth capture
+Tfcb2a1aede07600d86c623c978301d04	background_claim-GOLD 1699 1737	These descriptors are often mismatched
+Tcccd5b412835e5cc3c55118d7fe107bb	background_claim-GOLD 1742 1769	require significant pruning
+T6379b15b2130e563fedfae1e64d6f6a8	background_claim-GOLD 1883 1893	successful
+T49fbd0f1e3a7289cd93c63ed5ccd7799	background_claim-GOLD 1895 1959	their static reconstructions show numerous correspondence errors
+Tb2e3720808dfea936c71bdac492f96eb	background_claim-GOLD 1961 1981	The real-time system
+Td5cf2d60777a9d3d56f8d9e73ad357ce	data-GOLD 1997 2015	Guskov et al. 2003
+T6eb5d72c18c48017009331cb63469d74	background_claim-GOLD 2018 2054	introduces markers of constant color
+T3a4f11615b724f7dc2b635cc8f1b734f	background_claim-GOLD 2056 2110	resulting in significantly fewer correspondence errors
+Tf138625a332daf1636b472070607bddf	background_claim-GOLD 2230 2302	the complexity of the color pattern limits the method to simple geometry
+T347d2d5d37fb7c3d8bf62389cac1ca95	data-GOLD 2305 2323	Scholz et al. 2005
+Tc264fac06c6109c31e1a30bd8782a4c9	background_claim-GOLD 2326 2409	improve upon [Guskov et al. 2003] by creating a non-repeating grid of color markers
+T92d1e65cdea4d0dfde71c708255b5701	background_claim-GOLD 2490 2540	This allows substantially larger sections of cloth
+T01bb420447e9befb252428a766fdafdd	background_claim-GOLD 2545 2587	virtually eliminates correspondence errors
+Tc4ac9f68b9fdd7e0eabc574dabf00c1f	background_claim-GOLD 2688 2737	the range of motion is limited to avoid occlusion
+T17092562dc9630cbaa91efd297abb917	data-GOLD 2745 2792	arms are always held at 90 degrees to the torso
+Te529f8d1822b828c5944981365b4237c	data-GOLD 2839 2856	White et al. 2005
+Te1c4d0bc359900799d5cbc58f0408fa6	background_claim-GOLD 2859 3062	introduce a combined strain reduction/bundle adjustment that improves the quality of the reconstruction by minimizing strain while reconstructing the 3D location of the points on the surface of the cloth
+T6c2b7ccc166bc68debc49f5e16d0cfef	data-GOLD 3065 3082	White et al. 2006
+T508f0448e57a3ecea95c81e4d836bda6	background_claim-GOLD 3085 3178	introduce the use of silhoutte cues to improve reconstruction of difficult to observe regions
+T47e68685f91daf8d09278d24a1f79ba1	background_claim-GOLD 3186 3224	silhouette cues improve reconstruction
+T527aaf78a8615fa7b061cb48d6b03f64	background_claim-GOLD 3226 3241	hole filling is
+T4fe436c8abaf65d2d66707d44c51ef10	background_claim-GOLD 3571 3607	more effective in many circumstances
+T3e8be30e6ec8ab43a53d60ba0e3c5095	background_claim-GOLD 3616 3674	it enforces an appropriate prior on the shape of the cloth
+Td78179421e3c40b6a2f5dad30ccfe5b7	own_claim-GOLD 3710 3796	we improve the color pattern and matching procedure to get more information per marker
+Te5fe913403d87cb9c4b7177398969ab8	own_claim-GOLD 3798 3856	we introduce strain constraints to simplify correspondence
+T7eb50ff9de7c68b1b0022b0fd6786424	own_claim-GOLD 3861 3960	we create a data driven hole filling technique that splices previously captured cloth into the mesh
+T90764900823ce1b2fdfebfca963f7a71	own_claim-GOLD 3975 4059	our system is capable of capturing a full range of motion with folding and occlusion
+Tfa611b04110cb0aa24e150a1f8148750	background_claim 33 155	Previous work in cloth motion capture has focused on placing high density markers in correspondence between multiple views
+T69b255880956cd0d411a65745de52536	background_claim 157 265	The primary challenge is to increase marker density while correctly assigning correspondence between markers
+Tcfe7368fe65044bc6177b8e2c95baec4	own_claim 267 339	We suggest markers per megapixel as an appropriate metric for comparison
+T6e8ead4ce604f42b633ba386519fb3ef	data 342 350	figure 3
+Td601fbaf32c15abb1504c726b2b7a66f	data 361 408	it measures the method instead of the equipment
+T41491468e66587c4a3b9ef54a3f48c1c	background_claim 410 472	Most high density full frame-rate capture has focused on cloth
+T000c6ea1b67a4e1554c9b842ed9ede76	background_claim 483 545	there has been some recent work enhancing human motion capture
+T951f8dcb7631ddcf4776b6c15ee06c28	data 548 569	Park and Hodgins 2006
+Taebda86ffd6dcc63955abb655381098c	background_claim 572 622	These methods have far fewer markers per megapixel
+Tf402ee8d63a0ed37c976334b501f7bfb	data 631 660	they affix individual markers
+T878da403389cd4c56a7894c3c38a89cf	data 667 685	working with cloth
+T4997982bc13fe000559baf51ebaa8846	background_claim 687 731	markers are typically painted on the surface
+Td1bb4e60c697001d2d6a3f1f004012a9	background_claim 736 785	These markers can be broken into three categories
+Tf49213a153c4ade6eec82b3b7b65fc74	background_claim 787 812	complex surface gradients
+T45b3be206a5b00f99fbc9e1612fa8474	data 815 842	Pritchard and Heidrich 2003
+T6532a31b20d36d3258b02e14385c7414	data 844 866	Scholz and Magnor 2004
+T7aff331709c715edc42863ebabf66742	data 868 886	Hasler et al. 2006
+Tc61cab016de622b4c79b7f0f68d4b19e	background_claim 889 930	typically detected using SIFT descriptors
+T42c16df65be3a7233bd1c242fb263a7a	data 933 942	Lowe 2004
+T2e5fcedd7723db8d4f72443cea014c58	background_claim 946 964	intersecting lines
+T442597a45822ff7c5e32ab973b0c40bc	data 967 984	Tanie et al. 2005
+T5c18fdc637bd0672c933b89b8185c6ee	background_claim 990 1015	regions of constant color
+Tb1e524c317957f2a563c1bd4f039298d	data 1018 1040	Guskov and Zhukov 2002
+T728c109c4c5db445461eb90fe6f715c7	data 1042 1060	Guskov et al. 2003
+T7ad719463e3cd4b568d0a8146d90884b	data 1062 1080	Scholz et al. 2005
+T7ae1daba242a3837c74fccca7fec75e1	own_claim 1083 1119	Our work falls in the third category
+Tb4d688c83327d2b57fef5661790b9c8a	own_claim 1121 1145	regions of contant color
+T81ff40bec68403cac480051f0cccbe74	own_claim 1252 1296	The most common errors are marker mismatches
+T0cff8dbdd7a610ec667ebf991df772ec	own_claim 1301 1379	are observable in reconstructions by local strain in the reconstructed surface
+T4bec72b9f7cf3eba63442d35123e0dc6	own_claim 1390 1445	we observe that constant color markers perform the best
+T852b396e3a979136d8263866c5ee6d21	data 1448 1475	Pritchard and Heidrich 2003
+Tf9a437255d2fe4ab877b549de3656ca3	background_claim 1478 1525	used cloth with unique line drawings as markers
+T56df90a10202968f0a88b981d5c87e82	background_claim 1527 1608	Their work identifies parameterization as one of the key aspects of cloth capture
+T9ee9c4324a30c6217e9a33cf7066b8e5	background_claim 1610 1697	They use a stereo camera to acquire 3D and SIFT descriptors to establish correspondence
+Te58b38326279900a43a245b47778b2cc	background_claim 1699 1769	These descriptors are often mismatched and require significant pruning
+Tddbfe11db114151417139f586713b909	background_claim 1771 1813	They introduce a rudimentary strain metric
+Tbf198828ea396357c5b97074d6dbef74	data 1818 1844	measured along the surface
+Tc3efd10e67b7eb786ab7a2c543630292	background_claim 1846 1875	to rule out incorrect matches
+T0a13bab7e0571c8d638d81ccfcd4d509	background_claim 1895 1959	their static reconstructions show numerous correspondence errors
+Te4741d12de086f918b3dfff1f8e7b785	background_claim 1961 1991	The real-time system described
+Td2ae319dbc09423052d5ea379eb607c3	data 1997 2015	Guskov et al. 2003
+T866c1e397547d2e7d908933c02fdbb38	background_claim 2018 2054	introduces markers of constant color
+T26b153c1840e107d93fac8dafd2337cf	background_claim 2056 2118	resulting in significantly fewer correspondence errors than in
+Tc9624807f62891b4825c0b1c2f9c01a3	data 2120 2147	Pritchard and Heidrich 2003
+Ta51da9ad49eeae98c3217ea18b6b3368	background_claim 2150 2192	This system uses a Kalman smoothing filter
+T6789335f1e8fcae65e26ae00886abaf5	background_claim 2197 2214	is heavily damped
+Tdef7282359b0143798bdb76c3f3c73b7	background_claim 2230 2302	the complexity of the color pattern limits the method to simple geometry
+Teec52ce805f13bac53368ac3ddd423d8	data 2305 2323	Scholz et al. 2005
+Tc6e7bfe331321548642899bb064e7beb	background_claim 2326 2338	improve upon
+T629ecd31f60fe0eb0ea03915d7ba994c	data 2340 2358	Guskov et al. 2003
+Ta1ec3b3d00288b4680dc64184d44a3a0	background_claim 2360 2409	by creating a non-repeating grid of color markers
+Te862ce2cdd1176352db863563be10eea	background_claim 2411 2488	Each marker has five possible colors and all three by three groups are unique
+T0e0b5a0dad2ec5f928b6785affc0ada1	background_claim 2490 2587	This allows substantially larger sections of cloth and virtually eliminates correspondence errors
+T70f32d4ea05c3f67db82194029d3133c	background_claim 2688 2737	the range of motion is limited to avoid occlusion
+Tcb1fba4e52caa91ac2e7ca610e6ee61b	background_claim 2795 2836	They use thin-plate splines to fill holes
+Ta17062c8996e76689f1d069d40cd0243	data 2839 2856	White et al. 2005
+T59b63f97c7514605402c90f988f6443b	background_claim 2859 3062	introduce a combined strain reduction/bundle adjustment that improves the quality of the reconstruction by minimizing strain while reconstructing the 3D location of the points on the surface of the cloth
+T0bdf76c4b073d30591e763e72991709e	data 3065 3082	White et al. 2006
+Taf1bd641d19b74d1cd32edc7b0bd7aa6	background_claim 3085 3178	introduce the use of silhoutte cues to improve reconstruction of difficult to observe regions
+T7eb81f4f4bdcc2ae4144430d7e527c40	background_claim 3186 3224	silhouette cues improve reconstruction
+T62e7aa1d9c97c271a92125af6e0f1237	background_claim 3571 3607	more effective in many circumstances
+T9c9e5d838b6da98c34a50aafcf51f065	data 3616 3674	it enforces an appropriate prior on the shape of the cloth
+T1c273e3ab033d3eb16ccef020d7b31e0	own_claim 3676 3708	We make three main contributions
+Td1eda3a67e2e6638ad2148b67a56f278	own_claim 3710 3796	we improve the color pattern and matching procedure to get more information per marker
+T14942b8327df2fd07d071760caae0a92	own_claim 3798 3856	we introduce strain constraints to simplify correspondence
+Tcb7b96080e8a5cdf13e3ddad3a8554f5	own_claim 3861 3960	we create a data driven hole filling technique that splices previously captured cloth into the mesh
+T0a982806c6831fdecf7a6725d1f328b8	own_claim 3975 4059	our system is capable of capturing a full range of motion with folding and occlusion
+

@@ -1,0 +1,69 @@
+Tdcd74c1ad6134a2ed86f43d847841747	own_claim 130 236	The resulting surface meshes have an isometric parameterization and maintain static connectivity over time
+Te62983f7742390fe70bee790618e962a	background_claim 238 335	Over the course of roughly half a dozen papers on cloth capture a prevailing strategy has emerged
+T378f2053fbb0e6fd20afe75a6340638f	own_claim 396 435	small regions of the pattern are unique
+T3f35dd1dab3d481f0ae593a62864caf5	own_claim 515 633	The 3D location of a region is determined by intersecting rays through the corresponding observations in the image set
+T09035d45b1744c9896ae6df583f9d9dc	data 636 644	figure 4
+T8ae2c73174ce0462f43e3fbede830cb1	background_claim 764 777	Previous work
+Tf69b9755cc1df6bcacd8c9fab11b9f25	data 788 806	Scholz et al. 2005
+Te20c2153796dffa1fc84817e0e7a71d5	background_claim 809 832	yields pleasing results
+Tdbd941ec7d92b13c376e99ff0bf74a5e	background_claim 863 945	Little work has been done to capture garments with folds and scenes with occlusion
+Tfc1704c7546b7f19ab1a9ee061773c75	data 1012 1034	wrinkles around a knee
+T43dc0219fbc800357a41a4ce894a540d	own_claim 1128 1158	Folds and occlusion are common
+T6ef2ee356316da08d0dce3262b476bd4	data 1176 1202	dealing with real garments
+T8c7431549cf9075ffb4c75339d7897bc	data 1211 1216	pants
+Tead1869d654bc67216e06d1c373a7968	data 1223 1249	limbs block interior views
+T4088cbf17c88a27cbd310a5dd7355fb6	data 1254 1282	cloth collects around joints
+T2239f52e0c21312edd031d3466dd85fb	own_claim 1284 1331	Both phenomena are symptoms of the same problem
+T84f09c7d04cfbc4c0a638e080e70936b	own_claim 1333 1395	views of the surface are blocked by other parts of the surface
+T3256316d1ca18c92a30d804ea2fca2cc	own_claim 1406 1437	there is a distinction in scale
+T8312a9f99127a125fac848d606e927b9	own_claim 1442 1494	different methods are required to solve each problem
+T8240c3cfa3c46d4ceaac149d8f392a43	data 1501 1528	a surface is heavily folded
+Te4da069480a6443cdab4015045bfaeb9	own_claim 1530 1589	contiguous visible regions are often small and oddly shaped
+T551a479219a73595636dcc13eb24f918	background_claim 1591 1663	In these regions correspondence is essential for detailed reconstruction
+Tdd8f77e8c0fca6a91797777ab6e5e461	own_claim 1668 1698	can be challenging to identify
+T86e4e6e5ffc1fe5b8463bf76bc939687	own_claim 1700 1851	We solve the correspondence problem both by improving the pattern printed on the surface of the cloth and by improving the method used to match regions
+T4741f7510692b8cfff6fd2437d9c3703	own_claim 1853 2016	Our method gets more information per pixel than previous methods by drawing from the full colorspace instead of a small finite set of colors in the printed pattern
+T70524a97bd9c40146f2bd201320cbb91	data 2040 2080	cloth cannot stretch much before ripping
+T64f6e7fa49a9cd3711d8c32c46b652b4	own_claim 2082 2173	we use strain constraints to eliminate candidates in an iterative search for correspondence
+T70d37126c66704dff2720bd397e05b36	own_claim 2191 2302	these two modifications eliminate the need for neighborhood information in the final iteration of our algorithm
+T70dde8c2756fbc454bb56ab30e773882	own_claim 2317 2406	we determine correspondence using regions that are 25 times smaller than in previous work
+T2c56aea463a60fe3dfd59ee5c54e787f	data 2409 2417	figure 6
+Tc7c2a52a0cbc4648a4c4840dd9124a4d	own_claim 2421 2474	Many regions on the surface are impossible to observe
+Tfb3838451a555560320136988b12703c	background_claim 2609 2615	MeshIK
+Td53b18d831963118906aa63ebf7081ac	data 2618 2636	Sumner et al. 2005
+T1b4234115f6329d1d686edc9ed18955a	own_claim 2640 2740	a tool originally developed for mesh posing and animation, is appropriate for filling holes in cloth
+Teb27732105fe487b874a6748fdc31231	own_claim 2751 2786	MeshIK is well-suited to cloth data
+Te4a0e840abff67e4065e84e8afd96e62	own_claim 2791 2859	we use it to bind reconstruction of our pants to motion capture data
+Tb3d7c854721c24eb9af648574c084cb2	own_claim 2861 2922	We suggest two tools to evaluate marker-based capture systems
+Td2008e23fda4a4e6efb72a4e304d7a52	data 2935 2956	markers per megapixel
+T72f99d9eb523c2ea69720ed0ff9952ed	own_claim 2958 3003	is a measure of efficiency in capture systems
+T6b2cd7a6cdf1606be671f89e3dd62e86	own_claim 3005 3028	Efficiency is important
+T71e427d89b1eeaf16d8b32c1e1af4d7c	data 3037 3082	camera resolution and bandwidth are expensive
+T270ca199ff3ea03598f7a0b535461e02	data 3084 3152	the goal is to get more performance from the same level of equipment
+T57f552eefcbf5e2960ce75a478bba016	own_claim 3154 3265	This metric is designed to predict scaling as technology moves from the research lab to the professional studio
+T8d8b97e76ede2b0ddc23fb4eea4da464	own_claim 3267 3304	The second tool is information theory
+R39d336ea6a53ebb3227019e8e4e320a5	supports Arg1:T378f2053fbb0e6fd20afe75a6340638f Arg2:Te62983f7742390fe70bee790618e962a
+R054118964465a4c67b3f93fc8028c2af	supports Arg1:T09035d45b1744c9896ae6df583f9d9dc Arg2:T3f35dd1dab3d481f0ae593a62864caf5
+R556bb445f61372f0614774efd98d1795	supports Arg1:Tf69b9755cc1df6bcacd8c9fab11b9f25 Arg2:T8ae2c73174ce0462f43e3fbede830cb1
+R2597b0c4fd592bba626a58f38aad8b23	parts_of_same Arg1:T8ae2c73174ce0462f43e3fbede830cb1 Arg2:Te20c2153796dffa1fc84817e0e7a71d5
+R1bab422aa10cd2aaf3d463a9a58d60b8	supports Arg1:T6ef2ee356316da08d0dce3262b476bd4 Arg2:T43dc0219fbc800357a41a4ce894a540d
+Re035438fbc890e750affd3cb8ef723fe	supports Arg1:T8c7431549cf9075ffb4c75339d7897bc Arg2:T43dc0219fbc800357a41a4ce894a540d
+R3a50048d6bc049cc7756e4ed3990122c	supports Arg1:Tead1869d654bc67216e06d1c373a7968 Arg2:T43dc0219fbc800357a41a4ce894a540d
+R52cadf9527467c9162cfdd8e899a8aca	supports Arg1:T4088cbf17c88a27cbd310a5dd7355fb6 Arg2:T43dc0219fbc800357a41a4ce894a540d
+R856b9f7dc741db2e10a93b5cca978440	supports Arg1:T84f09c7d04cfbc4c0a638e080e70936b Arg2:T2239f52e0c21312edd031d3466dd85fb
+R988b69d234d0b6a1c52b49c5ca5e3554	contradicts Arg1:T2239f52e0c21312edd031d3466dd85fb Arg2:T3256316d1ca18c92a30d804ea2fca2cc
+R0604ac8c2ce195cbf904ca37e4d989ae	contradicts Arg1:T2239f52e0c21312edd031d3466dd85fb Arg2:T8312a9f99127a125fac848d606e927b9
+Rb822abe9b07baf825f6ddbce9533b648	contradicts Arg1:T84f09c7d04cfbc4c0a638e080e70936b Arg2:T3256316d1ca18c92a30d804ea2fca2cc
+R7e17c01363827a06271c4ef7d21d3c07	supports Arg1:T3256316d1ca18c92a30d804ea2fca2cc Arg2:T8312a9f99127a125fac848d606e927b9
+R8e864c210a7c55441ba8a34d898a927b	supports Arg1:T8240c3cfa3c46d4ceaac149d8f392a43 Arg2:Te4da069480a6443cdab4015045bfaeb9
+R02f793c20edb45e512bbe810580ddea2	supports Arg1:T551a479219a73595636dcc13eb24f918 Arg2:Tdd8f77e8c0fca6a91797777ab6e5e461
+R7d9019ffe5e731c4bd610ff190c92c13	supports Arg1:T70524a97bd9c40146f2bd201320cbb91 Arg2:T64f6e7fa49a9cd3711d8c32c46b652b4
+R673e85c55b56f1ece1c184fe15593f22	supports Arg1:T70d37126c66704dff2720bd397e05b36 Arg2:T70dde8c2756fbc454bb56ab30e773882
+R7d19a7be988c1e328faffef8e9cb3dd4	supports Arg1:T2c56aea463a60fe3dfd59ee5c54e787f Arg2:T70dde8c2756fbc454bb56ab30e773882
+R64d53153407a5791cf0e73593da5ad5a	supports Arg1:T70dde8c2756fbc454bb56ab30e773882 Arg2:Tc7c2a52a0cbc4648a4c4840dd9124a4d
+R96109e557681218c31d5ade7ebff4264	supports Arg1:Td53b18d831963118906aa63ebf7081ac Arg2:Tfb3838451a555560320136988b12703c
+Re3d634a20e01ff34ac9962f77ba86c07	parts_of_same Arg1:Tfb3838451a555560320136988b12703c Arg2:T1b4234115f6329d1d686edc9ed18955a
+Rbd8c15463138084184013fd16b6164e5	supports Arg1:Td2008e23fda4a4e6efb72a4e304d7a52 Arg2:Tb3d7c854721c24eb9af648574c084cb2
+R5b7a56556adb8485bacab418115b2049	supports Arg1:T72f99d9eb523c2ea69720ed0ff9952ed Arg2:Tb3d7c854721c24eb9af648574c084cb2
+Rf6d128fc98f3551521cd8f85589849f2	supports Arg1:T71e427d89b1eeaf16d8b32c1e1af4d7c Arg2:T6b2cd7a6cdf1606be671f89e3dd62e86
+R2214277f0afc02c2a2060a5ebb16a1a0	supports Arg1:T270ca199ff3ea03598f7a0b535461e02 Arg2:T6b2cd7a6cdf1606be671f89e3dd62e86

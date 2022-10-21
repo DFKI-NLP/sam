@@ -1,0 +1,6 @@
+Td688d16c128aed7b7f7934e3911d210f	own_claim-GOLD 63 123	occlusion inevitably creates holes in the reconstructed mesh
+Te260f72725729152043bf91373796f9b	own_claim-GOLD 1643 1788	deformation gradients can be converted into vertex locations by inverting a linear system, allowing us to specify vertex locations as constraints
+T31278319eaf9af7604e37b2fa45ebf8e	own_claim-GOLD 3945 3957	works poorly
+Td690016c3a045d5abb9b56c39f9982e4	own_claim-GOLD 4612 4641	we chose the simpler approach
+T7e08d396c67b6cdeb4c89206507f49f6	own_claim-GOLD 5329 5368	we use flexibility preserving smoothing
+T9c8d4969c6084f0a34f4ff8c61a8e96f	own_claim-GOLD 5370 5447	a procedure that smoothes rigid movement more heavily than non-rigid movement

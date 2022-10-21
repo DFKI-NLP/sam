@@ -1,0 +1,31 @@
+T4cf260bb0c5cbe8c82dde2516d870834	own_claim 37 91	Our eyes are very sensitive to the behavior of fabrics
+Ta05803c52873318b14d21a646fac1672	own_claim 112 179	we can identify the kind of fabric simply from its shape and motion
+T67046fd932f4e1076410adf8cf0f1073	data 182 206	Griffiths and Kulke 2002
+T055669b84cc4a5bd0607144efcc6fee9	background_claim 209 286	One important fact is that most fabrics do not stretch under their own weight
+T3fcd0156a52cb9384690d14316ff86e5	background_claim 303 333	for many popular cloth solvers
+Te49a4a8bbbf53fd2df31799e1a2b53ce	background_claim 335 418	a reduction of permissible stretching is synonymous with degradation in performance
+T59daf8d8c0f399adbc608defd3bd7b9c	data 424 503	tractable simulation times one may settle for an unrealistic 10% or more strain
+T804d5cb33825071518e721c9e23e33e5	data 505 523	compare 1% and 10%
+Ta91f2aa746e8c0883722d9188f5844bb	data 525 533	Figure 1
+T2e4959247502f60be506374dbde1d287	own_claim 537 659	Our work alleviates this problem by introducing a numerical solver that excels at timestepping quasi-inextensible surfaces
+Te5053ce0104bab159341ac717e62305a	own_claim 683 751	The solver builds on a framework of Constrained Lagrangian Mechanics
+Td62a89021e4a98b70c9e36cc239c7c24	data 760 772	Marsden 1999
+T86aa3b18c66db6cdfa569471e3670d0c	own_claim 775 946	Warp and weft, the perpendicular sets of strands that make up a textile, are prohibited from stretching by enforcing constraint equations, not by integrating spring forces
+T3bdf55cbe5d3eef062aadd1d1ecf2e75	own_claim 948 1105	We present numerical evidence supporting the observation that a constraint-based method is inherently well-suited to operate in the quasi-inextensible regime
+Tfdc7b11c5d60f99dfd0e5da59b9bdd6d	own_claim 1120 1204	for this regime spring-based methods are known to experience a range of difficulties
+T6864e01214a3f0250317d71068d8a2ae	background_claim 1206 1256	leading to the adoption of various strain limiting
+Te8d0d6c2ea902e4b159b6bc71ba069f6	data 1259 1270	Provot 1995
+Ted296a3ed4d77a92884b7a040eeca58f	own_claim 1272 1307	and strain rate limiting algorithms
+T7e128ac0ca96f8f03a3a4d377c7591e0	own_claim 1309 1340	We are motivated by the work of
+T32b6793d0817ee7ab8be97b91a1937d5	data 1341 1355	Bridson et al.
+T1acad754a9c7b455a2fbcc3028e48793	data 1357 1361	2002
+T4f84c4005ca0aa58f73d6b92fa84eff6	own_claim 1365 1436	who viewed strain limiting as one of multiple velocity filtering passes
+Teeac27a00d87a8dc338964f1bcb12c23	own_claim 1473 1570	The velocity filter paradigm enables the design of modular systems with mix-and-match flexibility
+T0df318feaff1436c5bb4445491adf115	own_claim 1663 1711	many simulation methods allow 10% or more strain
+Tceafcd77a2bc6692c2b93d840c2e45b0	own_claim 1721 1756	many fabrics do not visibly stretch
+T4a093d50d2446c8249ea5df074074e37	own_claim 2090 2168	the implicit method’s nonlinear equations correspond to a minimization problem
+Tc7e2f261e3417449bfe2b80311cc938d	own_claim 2177 2253	this result motivates a fast projection method for enforcing inextensibility
+Tfc14ca301549558242155fe1a0674603	own_claim 2262 2443	We describe an implementation of fast projection as a simple and efficient velocity filter, as part of a framework that decouples timestepping, inextensibility, and collision passes
+Td88e0b9504192927a405b8612df5f187	own_claim 2466 2608	the fast projection method easily incorporates with a code’s existing bending, damping, and collision models, to yield accelerated performance
+T648e706cd01604ece26820819fb85879	data 2610 2612	§5
+

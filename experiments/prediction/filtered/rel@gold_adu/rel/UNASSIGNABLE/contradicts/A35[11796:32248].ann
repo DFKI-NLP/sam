@@ -1,0 +1,27 @@
+T8d77e9093a44d8aef6c6e1a04d1767b5	background_claim 17641 17712	one solution is to take the steepest parts of the curves as derivatives
+T5383d80c33f2f59e0f864f7e6eae5a63	background_claim 16349 16357;16371 16447	This can be observed when simulating stretched flat surfaces without curvature forces
+T212c85ec2bd9fcb71fa71ed5b3d437f5	background_claim 17759 17852	isotropic derivatives considering force evolution equally in any directions may be considered
+T87cc14acc73ecb88c82ccf687815ec72	own_claim 20019 20111	allowed the increase of the time step up to 0.1 seconds, where inaccuracies began to show up
+Tf33740a34c7e046309c01a99cb7d4c52	background_claim 16646 16759;16761 16864	Nonlinearity causes this matrix to change between the successive iterations, and this evaluation to be inaccurate despite high system resolution accuracy that can be reached with numerous Conjugate Gradient iterations
+Tc809e7b9af86aea41697df486942e560	own_claim 7140 7228	As a matter of numerical stability, the Midpoint method supports K values up to almost 3
+T7ee285cca797105042a6e13b2704780d	own_claim 9527 9618	implicit Euler is a good choice for robust simulation where accuracy is not really an issue
+Ta6394fc299c94805a5c6397ee1267938	own_claim 7237 7293	the RungeKutta method supports K values up to almost 100
+T26af24ed1d5ecdf0fff9d9fb1a1229ec	background_claim 16162 16347	particularly when using large time steps that cause iterations to converge to the equilibrium state of the mechanical objects rather than simulating accurately their mechanical behavior
+Taaf10a4a6c50a13c2625494537a68e86	own_claim 13689 13782	larger time steps do not proportionally translate into fewer steps for performing the draping
+Tc51c94a9d260f3ea4ce093078d307aad	background_claim 15974 16160	While rarely causing numeric “explosions” as with explicit methods, nonlinearity may disrupt the stability of simulations integrated with implicit models with large disturbing vibrations
+T91edcf0c2543ebd4857aad02261963fa	own_claim 9620 9696	the explicit Runge-Kutta offers good possibilities of ensuring high accuracy
+T516f04a0442b9384e41ccec68632cc38	background_claim 17863 18036	the more drastic these approximations are, the less accurate the simulation will be for dynamic simulations, and the slower the simulation will converge for draping problems
+T5c0e271419798a41604cc27d6220e2d6	background_claim 17198 17289	an overestimation of the derivatives will place this evaluation nearer to the current state
+Tc2d8a3f6ad17996ca19f766353c09bd7	own_claim 13564 13666	The backward Euler method is robust enough to handle the problem without instability for any time step
+T5c9e238314d7336b8ac8b2f393fe5365	background_claim 17055 17196	an underestimation of de derivatives may lead to an equilibrium state valuation too far from the current state, and by this cause instability
+T95d8b1c855449f5d5075e75eff03b87a	own_claim 19985 20010	The backward Euler method
+R5f2d09796851d5334bfde18920a90b3a	contradicts Arg1:Tc51c94a9d260f3ea4ce093078d307aad Arg2:T26af24ed1d5ecdf0fff9d9fb1a1229ec
+R105ad9e17eb3e32212729543c3e61e57	contradicts Arg1:T26af24ed1d5ecdf0fff9d9fb1a1229ec Arg2:T5383d80c33f2f59e0f864f7e6eae5a63
+R324e22b7d2669711219f65602c05aa63	contradicts Arg1:Tf33740a34c7e046309c01a99cb7d4c52 Arg2:Tf33740a34c7e046309c01a99cb7d4c52
+Radb4d6627714a38da3340d146205644d	contradicts Arg1:T95d8b1c855449f5d5075e75eff03b87a Arg2:T87cc14acc73ecb88c82ccf687815ec72
+R3f550c9a07caeaaddefc0f542aa8698e	contradicts Arg1:Tc809e7b9af86aea41697df486942e560 Arg2:Ta6394fc299c94805a5c6397ee1267938
+Rcbdbad06415470e9310e11b1a8ebf5ce	contradicts Arg1:T7ee285cca797105042a6e13b2704780d Arg2:T91edcf0c2543ebd4857aad02261963fa
+R1fe0c1faddce646b33d6a142f177234d	contradicts Arg1:Tc2d8a3f6ad17996ca19f766353c09bd7 Arg2:Taaf10a4a6c50a13c2625494537a68e86
+R479b3c7143dbdcb533bbe27a634a9a21	contradicts Arg1:T5c9e238314d7336b8ac8b2f393fe5365 Arg2:T5c0e271419798a41604cc27d6220e2d6
+R79970cce3ceaba526e2bd42442d97114	contradicts Arg1:T8d77e9093a44d8aef6c6e1a04d1767b5 Arg2:T212c85ec2bd9fcb71fa71ed5b3d437f5
+Rdb5d1610f8bef7a27a9a7734ec86db0d	contradicts Arg1:T212c85ec2bd9fcb71fa71ed5b3d437f5 Arg2:T516f04a0442b9384e41ccec68632cc38

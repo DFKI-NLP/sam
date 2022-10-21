@@ -1,0 +1,8 @@
+<H1>RESULTS</H1>
+        In this section we present some practical results of the previously described methods. We implemented the wind models described in sections 4.1 and 4.2 in a cloth animation system that employs a fast finite element method to simulate the drape of textiles with measured material properties 
+[EKS03]. For collision detection (between deformable objects, rigid objects, and wind particles) we use k-DOP hierarchies as described in 
+[MKE03]. Figure 3 shows a flag blowing in the wind. We used the particle tracing method described in section 4.2 to model the effects of a directional wind field on the flag. In figures 4 and 5 we show the ability of both the Navier-Stokes equations model (section 4.1) and the particle tracing method (section 4.2) to model the effect of lee. Two flags are exposed to a wind field, but the wind is blocked by a wall, so one of the flags is not affected by the wind. The images in figure 6 show a character wearing a shirt and standing in a wind stream coming from the front. Images (a) and (b) are snapshots from the beginning of the animation, images (c) and (d) show the result after the wind field has affected the clothes. To show the improved realism when simulating lee effects, we let the the wind act on all polygons of the shirt on the right (no lee effect). For the shirt on the left we used the Particle Tracing Method to simulate lee effects which, we think, gives more realistic results (see also the accompanying video).
+        6.
+      
+      
+        

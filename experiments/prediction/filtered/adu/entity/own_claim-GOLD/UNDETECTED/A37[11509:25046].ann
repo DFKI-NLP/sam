@@ -1,0 +1,14 @@
+T22e2a23fee1a44d154159e372c4355f9	own_claim-GOLD 1131 1232	we must discretize (3) and (4) in time using one of various schemes, each with benefits and drawbacks
+T3fc24f74f1c456346d19ff260b5031f6	own_claim-GOLD 3042 3116	evaluating the constraint direction, −∇C(x) T , at the end of the timestep
+T4b362fdce896de537c66ce7edb66a26d	own_claim-GOLD 3165 3193	resolves (Q1), (Q2) and (Q4)
+T9508a8a0ae78af4e806e805c8628ee6c	own_claim-GOLD 3195 3265	(Q3) remains, but is automatically remedied by decreasing the timestep
+Tb8f1431af6aebf4a6ced2cca4bc5ece4	own_claim-GOLD 4274 4346	the correction of the unconstrained step is due to the constraint forces
+T1525e91d6407c91bdf1752b6eb510fa3	own_claim-GOLD 7870 7959	Fast projection also uses a sequence of iterations, but it relaxes the requirement of SAP
+T79d7416a3a1a1e48d727e99d8dd060be	own_claim-GOLD 8337 8410	Projection onto the constraint manifold occurs at a fixed instant in time
+T9634508c875d143d8fc4c24a111b04b5	own_claim-GOLD 9693 9706	mass matrices
+Tdddb2d3a8de92ae42b4fe98890344986	own_claim-GOLD 9780 9843	As with ICD/SAP, a fast projection step requires a linear solve
+T7a96a498b30df8072086104e63c1c23f	own_claim-GOLD 9885 9895	is smaller
+Teb9ae885c04068bcc8c38baaa8b57d19	own_claim-GOLD 9931 9948	positive definite
+T93db35556f2387b43c18aab1bd78cb16	own_claim-GOLD 9974 9985	and sparser
+Td231f67c45883bbf65a7c5ac01c9928a	own_claim-GOLD 10472 10536	fast projection exactly solves C = 0 while it approximates F = 0
+T7880ecd6ff388e01ca013c56542d4fee	own_claim-GOLD 11298 11353	The remaining iterations perturb F only to higher-order

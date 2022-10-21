@@ -1,0 +1,6 @@
+Td21c43761ca6372bf177817cda08dd38	own_claim 1287 1356	resulting in quite large errors for any given point in the experiment
+Ta98abcb0e31d964a4deeac84e76c0876	own_claim 1166 1205	The most obvious of these is hysteresis
+T57d755b318907733c2272db62aba19d8	own_claim 1358 1409;1522 1536	There are many paths for future work in measurement and in fitting
+T6431754e25b433fcec6e272d65c102d7	own_claim 1544 1673	new ways of evaluating fitting error are needed that can work when the cloth’s equilibrium state is unstable or non-deterministic
+R1d8a9f844855d906bdb7ba484fc91abb	supports-GOLD Arg1:Td21c43761ca6372bf177817cda08dd38 Arg2:Ta98abcb0e31d964a4deeac84e76c0876
+Re94e5fd5e9fc85425dbe2463b94009d6	supports-GOLD Arg1:T6431754e25b433fcec6e272d65c102d7 Arg2:T57d755b318907733c2272db62aba19d8

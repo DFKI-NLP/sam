@@ -1,0 +1,10 @@
+Tdcbfb29eba7d03fb70a72fd88b60de81	own_claim 2026 2063	the final error values are very close
+T088e298ee90b963dc0d53b60bc5db8e3	own_claim 2280 2514	This result is consistent with our intuition that static tests cannot be used to estimate dynamic parameters like stretch and shear damping or air drag and motivates the waving test, which excites both the static and waving parameters
+T6a48ed09851a1c332fd33a403c1a6a9e	own_claim 3528 3623	5 This approach seems to produce plausible results with skirts and other validation experiments
+T3b225825269d4f94b64e2568996f1835	own_claim 3650 3800	a more general solution for parameter identification using our framework is to simultaneously optimize across multiple trials of different experiments
+T902886e3bf4d8d3a3a459d2d09040f4a	own_claim 4390 4435	each fabric in simulation has a minimum error
+Tc9acb97a1e4a194abf77dce1615d89a4	own_claim 10666 10698	Parameters with high variability
+Tb70b078d1c8e829e28535b75b2ca6e7f	own_claim 10723 10801	are estimated poorly and vary significantly across the different optimizations
+T3a3b421892b9ca82f2b694fd26e8eb3d	own_claim 10812 10843	parameters with low variability
+Td3bbd645d8f6862d2aab700519fc5465	own_claim 10857 10901	are consistent across multiple optimizations
+Taf39dc7877bdaf0ec46e1f6862053aae	own_claim 19355 19438	The four curves have a minimum when they are compared to their correct counterparts

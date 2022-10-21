@@ -1,0 +1,9 @@
+T2b5c86d1db6eb49bedae159a7ce1f04a	own_claim 1322 1348;1354 1429	The drag force per face is given by F i,D = 2 1 C D ρ|v i,rel | 2 A · ( n i · v i,rel ) · (− v i,rel )
+Tb20706c03ab8a958368230ad46861be2	own_claim 1616 1779	The direction of the lift force, which is perpendicular to v i,rel and lies in the plane spanned by v i,rel and n i , is given by u i = ( n i × v i,rel ) × v i,rel
+Ta05b38fc59f2a5600e8763deca5291f8	data 1079 1139	two-dimensional objects do not exhibit an inside and outside
+T024c2cf9260aa5b2a7b3314d1a88de2d	own_claim 1795 1870	the lift force is calculated as F i,L = 1 2 C L ρ|v i,rel | 2 A cos θ · u i
+Td8576d593dd5da6a7c8cda65d0b36405	own_claim 30 182	To incorporate wind effects in a physically based animation we have to apply additional external forces in the dynamical model of the deformable objects
+T50e5af27ab177800a7246069f383f781	own_claim 191 320	given a wind flow represented by a velocity field in the scene we calculate the forces which are exerted on the simulated objects
+Redda8a1b3ae4c6a149342a156a15e413	supports Arg1:Td8576d593dd5da6a7c8cda65d0b36405 Arg2:T50e5af27ab177800a7246069f383f781
+R4141ffcd3b015f9754b80dfa7d3fa416	supports Arg1:Ta05b38fc59f2a5600e8763deca5291f8 Arg2:T2b5c86d1db6eb49bedae159a7ce1f04a
+R2f2c686bbfe4538e38514b096487caef	supports Arg1:Tb20706c03ab8a958368230ad46861be2 Arg2:T024c2cf9260aa5b2a7b3314d1a88de2d

@@ -1,0 +1,3 @@
+T6c101adff63efd9828ae4b9bb05c277f	own_claim 29 118	We presented two models for including advanced wind effects into cloth simulation systems
+T7eb31a945c21c53ac96dfc61ff44b649	own_claim 120 248	The first concentrates on physically accurate computations using a semi-Lagrangian approach to solve the Navier-Stokes equations
+T09eef226ae3781ff8f1a7fb84fc9a0f0	own_claim 250 328	the second model incorporates a particle tracing method for global wind fields

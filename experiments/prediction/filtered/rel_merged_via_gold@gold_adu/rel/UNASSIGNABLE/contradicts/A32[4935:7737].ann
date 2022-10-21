@@ -1,0 +1,3 @@
+Tb5b882c30f0e833589834b76a18be12c	own_claim 2092 2153	it is invariant after applying the modulated displacement map
+Te4d98e941318b21fb9453492f6f0eca8	own_claim 2019 2062	there is a change in the area of a triangle
+Rf7b568db5f232491dfe9fb377a6f9430	contradicts Arg1:Te4d98e941318b21fb9453492f6f0eca8 Arg2:Tb5b882c30f0e833589834b76a18be12c

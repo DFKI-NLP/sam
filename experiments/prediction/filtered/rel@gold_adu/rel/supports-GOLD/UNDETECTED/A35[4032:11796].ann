@@ -1,0 +1,14 @@
+Ta9ad237beb2eb239b977da698ecae011	background_claim 340 505	The desired accuracy, which reflects the allowable numerical tolerance between the computed solution and the theoretical evolution expected from the mechanical model
+T6bdd4a0bd16c2afd5eee49b2149e7107	background_claim 1688 1757	Among all the available methods, we can identify several main classes
+T4c40b1a6ee08f61ba374ca589d28c194	background_claim 2229 2366	High-order methods, which use several evaluations to compute high-order solutions that get much more accurate as the time step is reduced
+Te0b0e5dcca092d80fee15d0a6c1ef23e	background_claim 1080 1160;1224 1259	The time an iteration takes to compute, and the number of mechanical derivations the methods requires to compute one
+T4868befdfff64e3220d0039be0075280	background_claim 231 336	The size of the problem, mostly related to the number of particles used to describe the mechanical system
+Tf63c39af140876ec16b8c7aca7ab76bf	background_claim 782 1076	The stiffness of the problem, mainly related to the rigidity of the particle interactions and the size of the chosen time step, which translated into the “difficulty” the numerical method has to compute the evolution numerically, and which practically causes inaccuracy and instability problems
+Teb45c20805e3f53bf4db60cc2bbf051f	background_claim 45 188	The choice of the adequate integration method has to be carried out using various considerations related to the kind of problem to be simulated
+T9b28e71e117dc13e96c8ca6b4cd234ea	background_claim 509 778	The simulation context, which can either be an extensive computation of the motion along time requiring accurate evaluation of all the dynamical factors, or a simple relaxation process where the simulation has to converge to the static rest state as quickly as possible
+R67c91bc8139ccd55b64138d1079de144	supports-GOLD Arg1:T4868befdfff64e3220d0039be0075280 Arg2:Teb45c20805e3f53bf4db60cc2bbf051f
+R591e650647c1d1069113a239ad389e1c	supports-GOLD Arg1:Ta9ad237beb2eb239b977da698ecae011 Arg2:Teb45c20805e3f53bf4db60cc2bbf051f
+R2fe3038741b5287e62fb6d89c17fe472	supports-GOLD Arg1:T9b28e71e117dc13e96c8ca6b4cd234ea Arg2:Teb45c20805e3f53bf4db60cc2bbf051f
+Rcf66e1828c5b2d720f5af31a5d470af0	supports-GOLD Arg1:Tf63c39af140876ec16b8c7aca7ab76bf Arg2:Teb45c20805e3f53bf4db60cc2bbf051f
+R39c7ee5db7efdcea1b3f2c4f004a6598	supports-GOLD Arg1:Te0b0e5dcca092d80fee15d0a6c1ef23e Arg2:Teb45c20805e3f53bf4db60cc2bbf051f
+R2e1cb9a250db19a732d5f0856fd445a4	supports-GOLD Arg1:T4c40b1a6ee08f61ba374ca589d28c194 Arg2:T6bdd4a0bd16c2afd5eee49b2149e7107

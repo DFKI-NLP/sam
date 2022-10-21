@@ -1,0 +1,12 @@
+T6c22a53a74decac1720bb30a8c12709f	own_claim 6307 6360	overall force-displacement behavior is nicely matched
+Tc69ea9291ca30a4b0b76cc5dee0501ce	own_claim 3055 3109	#14 is 10 times stiffer in shear than any other fabric
+T84998cb97540a529e445f126c6287b40	own_claim 3307 3351	all other three fabrics exhibit nonlinearity
+T6c612b55fb880dbc2e577050709c9e7c	own_claim 3242 3299	Sample #12 is nearly linear in the test deformation range
+T211fa3b3abb70f08d3d9ec09dbbbdbac	own_claim 3727 3850	linear and/or isotropic variants reach a reasonable compromise but are not always able to remain inside the hysteresis band
+T9ba9767e1c72ad0ecc674fb4a8f56000	own_claim 6362 6450	the actual folding shapes of simulated cloth may deviate largely from the captured cloth
+T04166e67e1ae1a84fd7b0ea6c9dff92f	own_claim 2978 3047	The maximum stretch stiffness for #4 is 250 times higher than for #12
+T7d3eef2183a6405add4a0037a02cb41b	own_claim 3637 3706	the nonlinear orthotropic model variants fit anisotropic fabrics best
+R85b275a1b940b097056a6c3026244968	contradicts Arg1:T04166e67e1ae1a84fd7b0ea6c9dff92f Arg2:Tc69ea9291ca30a4b0b76cc5dee0501ce
+R3c45458e66aa57ee5e9a20ba0b4132cc	contradicts Arg1:T6c612b55fb880dbc2e577050709c9e7c Arg2:T84998cb97540a529e445f126c6287b40
+Ra46de60a0bee1140c0b041fccccdfb5a	contradicts Arg1:T7d3eef2183a6405add4a0037a02cb41b Arg2:T211fa3b3abb70f08d3d9ec09dbbbdbac
+R910a3ec77b5f30c38b1571f04fd8b492	contradicts Arg1:T6c22a53a74decac1720bb30a8c12709f Arg2:T9ba9767e1c72ad0ecc674fb4a8f56000

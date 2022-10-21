@@ -1,0 +1,8 @@
+T02bf0e2a1ed02a9a3667dd7bd0f50561	own_claim 46 124	We have developed a fast and versatile method for animating realistic wrinkles
+T6a293bb289ec67cf645ef3ebb8127156	own_claim 132 154	is geometric in nature
+T47fa2c9cff381a3a8d0aeeaac890375b	own_claim 163 209	it can be applied to general deformable models
+Ta70a4e8ac4a311559f871a85984f7fd5	own_claim 225 326	We would like to extend the method by automatically creating wrinkle patterns from the strain pattern
+T076af43038fd0f0676c251a98a2254e1	own_claim 334 368	is currently a time consuming task
+R74f71b5583df032d25b7114ef2d43d54	supports Arg1:T6a293bb289ec67cf645ef3ebb8127156 Arg2:T02bf0e2a1ed02a9a3667dd7bd0f50561
+R04dd31bd5c5515415d3f82db78ab26d9	supports Arg1:T6a293bb289ec67cf645ef3ebb8127156 Arg2:T47fa2c9cff381a3a8d0aeeaac890375b
+Rb8ec2b463c02f089a8664c98c8356434	supports Arg1:Ta70a4e8ac4a311559f871a85984f7fd5 Arg2:T076af43038fd0f0676c251a98a2254e1

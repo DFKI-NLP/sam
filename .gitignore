@@ -1,0 +1,10 @@
+/.idea/
+
+/corpora
+/experiments/*
+!/experiments/prediction
+!/experiments/evaluation
+!/experiments/prediction_filtered
+!/experiments/error_analysis
+
+runs_state.jsonl

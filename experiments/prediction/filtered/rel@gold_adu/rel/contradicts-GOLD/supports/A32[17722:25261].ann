@@ -1,0 +1,4 @@
+T6b8160b153c3e30cf75cab40044d0c52	own_claim 2711 2759	the pattern changes according to the deformation
+Tf2f650941a69cde7688d1c91aed9453b	own_claim 2637 2701	the wrinkles are not mere modulations of a fixed wrinkle pattern
+R60108b7bdd200fe1606291678ffcbdbf	contradicts-GOLD Arg1:Tf2f650941a69cde7688d1c91aed9453b Arg2:T6b8160b153c3e30cf75cab40044d0c52
+R0aed311023f32f36049843defe9e9672	supports Arg1:Tf2f650941a69cde7688d1c91aed9453b Arg2:T6b8160b153c3e30cf75cab40044d0c52

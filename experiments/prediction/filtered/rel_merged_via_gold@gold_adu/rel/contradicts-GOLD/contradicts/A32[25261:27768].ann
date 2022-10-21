@@ -1,0 +1,4 @@
+Tce3da3fb1cc1d7eadb694895eb6d11d8	own_claim 433 487	the user can design the wrinkles according to her wish
+T408e62086c83ade06eed13d266e467d6	own_claim 489 549	it is worthwhile to study the strain patterns in the garment
+R27254f071334a8b61bcbfefce120a0bd	contradicts-GOLD Arg1:Tce3da3fb1cc1d7eadb694895eb6d11d8 Arg2:T408e62086c83ade06eed13d266e467d6
+R55787c54380ad5bbffac816c9078baa9	contradicts Arg1:Tce3da3fb1cc1d7eadb694895eb6d11d8 Arg2:T408e62086c83ade06eed13d266e467d6

@@ -1,0 +1,36 @@
+Tfcfcf0d7257a70953437dcb391eae418	background_claim-GOLD 33 155	Previous work in cloth motion capture has focused on placing high density markers in correspondence between multiple views
+T776abb6763272b47958a1853d55bb9aa	background_claim-GOLD 157 265	The primary challenge is to increase marker density while correctly assigning correspondence between markers
+T63183b7f2ebb449d89ce926611e0a96b	background_claim-GOLD 410 472	Most high density full frame-rate capture has focused on cloth
+T4b228004b38226d6a30557bf9f5f42f7	background_claim-GOLD 483 545	there has been some recent work enhancing human motion capture
+Tb34a3fcfa4e662bed337cd6c6011d0f4	background_claim-GOLD 736 785	These markers can be broken into three categories
+Tae13fd425d200a0d025b5fe76c82d410	background_claim-GOLD 787 812	complex surface gradients
+T0ae7257dbd14f861610a5a74c407f5a8	background_claim-GOLD 946 964	intersecting lines
+T4543a09beba99d6e875a8d599d764b8e	background_claim-GOLD 990 1015	regions of constant color
+T68d13f64cbb12a4b2189f4ee0b61bd31	background_claim-GOLD 1478 1525	used cloth with unique line drawings as markers
+Tbb85ddf6ea27f89b1411ab20684c7fee	background_claim-GOLD 1527 1608	Their work identifies parameterization as one of the key aspects of cloth capture
+T72563ce1e89dc42010d37dfd33f0f1a8	background_claim-GOLD 1895 1959	their static reconstructions show numerous correspondence errors
+Tf82b94696b50b1b14f35b45d44ba3a9c	background_claim-GOLD 2018 2054	introduces markers of constant color
+Te0644dab8323e7d2b2472db93c757a3a	background_claim-GOLD 2230 2302	the complexity of the color pattern limits the method to simple geometry
+T2b4b9ffa188b3c782b0d565b053dcbb0	background_claim-GOLD 2688 2737	the range of motion is limited to avoid occlusion
+T21a69b373bec7248923915130cbcd095	background_claim-GOLD 2859 3062	introduce a combined strain reduction/bundle adjustment that improves the quality of the reconstruction by minimizing strain while reconstructing the 3D location of the points on the surface of the cloth
+T9d10d01468bb6a965cbb7473f06e8e66	background_claim-GOLD 3085 3178	introduce the use of silhoutte cues to improve reconstruction of difficult to observe regions
+T7c73be648b82791dadc1ac4b62c2bfe0	background_claim-GOLD 3186 3224	silhouette cues improve reconstruction
+T6f28f6cd97da6b1fdbb62f4dd2394b96	background_claim-GOLD 3571 3607	more effective in many circumstances
+Tfa611b04110cb0aa24e150a1f8148750	background_claim 33 155	Previous work in cloth motion capture has focused on placing high density markers in correspondence between multiple views
+T69b255880956cd0d411a65745de52536	background_claim 157 265	The primary challenge is to increase marker density while correctly assigning correspondence between markers
+T41491468e66587c4a3b9ef54a3f48c1c	background_claim 410 472	Most high density full frame-rate capture has focused on cloth
+T000c6ea1b67a4e1554c9b842ed9ede76	background_claim 483 545	there has been some recent work enhancing human motion capture
+Td1bb4e60c697001d2d6a3f1f004012a9	background_claim 736 785	These markers can be broken into three categories
+Tf49213a153c4ade6eec82b3b7b65fc74	background_claim 787 812	complex surface gradients
+T2e5fcedd7723db8d4f72443cea014c58	background_claim 946 964	intersecting lines
+T5c18fdc637bd0672c933b89b8185c6ee	background_claim 990 1015	regions of constant color
+Tf9a437255d2fe4ab877b549de3656ca3	background_claim 1478 1525	used cloth with unique line drawings as markers
+T56df90a10202968f0a88b981d5c87e82	background_claim 1527 1608	Their work identifies parameterization as one of the key aspects of cloth capture
+T0a13bab7e0571c8d638d81ccfcd4d509	background_claim 1895 1959	their static reconstructions show numerous correspondence errors
+T866c1e397547d2e7d908933c02fdbb38	background_claim 2018 2054	introduces markers of constant color
+Tdef7282359b0143798bdb76c3f3c73b7	background_claim 2230 2302	the complexity of the color pattern limits the method to simple geometry
+T70f32d4ea05c3f67db82194029d3133c	background_claim 2688 2737	the range of motion is limited to avoid occlusion
+T59b63f97c7514605402c90f988f6443b	background_claim 2859 3062	introduce a combined strain reduction/bundle adjustment that improves the quality of the reconstruction by minimizing strain while reconstructing the 3D location of the points on the surface of the cloth
+Taf1bd641d19b74d1cd32edc7b0bd7aa6	background_claim 3085 3178	introduce the use of silhoutte cues to improve reconstruction of difficult to observe regions
+T7eb81f4f4bdcc2ae4144430d7e527c40	background_claim 3186 3224	silhouette cues improve reconstruction
+T62e7aa1d9c97c271a92125af6e0f1237	background_claim 3571 3607	more effective in many circumstances

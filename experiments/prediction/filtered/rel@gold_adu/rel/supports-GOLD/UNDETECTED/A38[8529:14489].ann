@@ -1,0 +1,18 @@
+T65c5acf08c03c8199005aaea795f66ce	data 4707 4708	2
+T91b4b7c239972e396f1fec39b406f444	own_claim 4495 4589	We had more success in matching realistic cloth motions by using higher-order explicit methods
+T3ab1cffb32e0aab635a9e3dd29e3b951	own_claim 4591 4705	The results in this paper all use an adaptive 4thorder accurate Runge-Kutta methods with embedded error estimation
+T4ec8e24b441f931746144a2e1f48048c	data 3841 3843	14
+T73ed87db5307c1f96dd9fb5831f7ead1	background_claim 4822 4884;4890 4905;4908 4930	recent work suggests that using 2nd-order backward differences Newmark schemes may be a better choice
+Te770adf1d94c0817b2f0b98fa143688c	background_claim 801 880	This model has sufficient richness to produce a wide variety of cloth behaviors
+T931a86e980a7bbd9cc08839bd752eea3	own_claim 3729 3839	the quadratic term matches better the experimental behavior of macroscopic bodies in low Reynold’s number flow
+Te42bd4ef38bed53b100b79df2c8d809b	data 797 798	4
+Tf3c3a0f997039e8343bc8072f369349b	background_claim 4717 4797	this method offers the advantages of familiarity and automatic bounding of error
+Tb7f185498b69d1ea2dd9f7da75884fc0	own_claim 710 795	We used the model described by Baraff and Witkin as the basis for our cloth simulator
+T0b8191ef757227fd516519d578c71c40	background_claim 4799 4816	it is rather slow
+Rc2f96beda9a74a010b1e736c2317a0ff	supports-GOLD Arg1:Te42bd4ef38bed53b100b79df2c8d809b Arg2:Tb7f185498b69d1ea2dd9f7da75884fc0
+Rc2bdc16097bc151ca2443479ea82f6ef	supports-GOLD Arg1:Te42bd4ef38bed53b100b79df2c8d809b Arg2:Te770adf1d94c0817b2f0b98fa143688c
+R38cc75c5057a46dc4b82910474d5881e	supports-GOLD Arg1:T4ec8e24b441f931746144a2e1f48048c Arg2:T931a86e980a7bbd9cc08839bd752eea3
+Rd766bdf8fa0dae54e767c99d0e44959a	supports-GOLD Arg1:T91b4b7c239972e396f1fec39b406f444 Arg2:T3ab1cffb32e0aab635a9e3dd29e3b951
+R2a1107dbfbd474e8a4bda0e276252e01	supports-GOLD Arg1:T65c5acf08c03c8199005aaea795f66ce Arg2:T3ab1cffb32e0aab635a9e3dd29e3b951
+R8583559ab773d12c49d722f9ee873002	supports-GOLD Arg1:T0b8191ef757227fd516519d578c71c40 Arg2:T73ed87db5307c1f96dd9fb5831f7ead1
+R30116314869da60c925736d176cdf25a	supports-GOLD Arg1:T65c5acf08c03c8199005aaea795f66ce Arg2:Tf3c3a0f997039e8343bc8072f369349b

@@ -1,0 +1,36 @@
+<H1>4 Acquisition</H1>
+        The goal of our acquisition pipeline is to compute correspondence using minimal neighborhoods. We accomplish this through an iterative algorithm where we alternate between computing correspondence and pruning bad matches based on those correspondences. After each iteration we shrink the size of the neighborhood used to match. We start with N = 3 and end with N = 0. In the final iteration, markers are matched using color and strain alone. This iterative approach allows us to match without neighborhoods. This is better than label propagation methods. To be successful, propagation methods [Guskov et al. 2003; Scholz et al. 2005; Lin
+        parametric domain
+        1 st 2 nd 4 th [Scholz iteration iteration iteration 2005]
+        Relative Area 15.8 11.8 4.0 100
+        
+          C
+          Color ≥ 5 ≥ 5 ≥ 5 1.93
+        
+        Neighbors (N) 3 2 0 8
+        
+          S
+          Strain 0 ∼ 7 ∼ 9 –
+        
+        Ambiguities (A) 1.6 1.6 0 3 Total bits (I ) 18.4 20.4 14 14.4
+        
+          Figure 6:
+        
+        Our correspondence algorithm iterates from large to small regions. At each stage, the number of recovered bits must stay above the marker complexity (11.6 bits for our pants). We are able to obtain significantly more information per unit cloth surface area than previous work. See section 3.1 for the entropy equation and appendix B for detailed analysis.
+        and Liu 2006] require large sections of unoccluded cloth and must stop at occluding contours. As shown in figure 5 , occluding contours are both common and difficult to detect. In contrast, our iterative approach relies on strain constraints – which require computing the distance between a point and a line, and color detection – which requires averaging color within a marker. Both of these computations are easier than detecting occluding contours. We describe our acquisition pipeline, shown in figure 2 , below. Color Processing: We compare observed colors with stored values using a gaussian noise model. Our gaussian noise model has a single free parameter, the variance, which must be computed empirically for each recording setup. This variance determines the color response for the entire setup — smaller variances mean more bits from color. At this stage, we compute color information for each marker and eliminate hypothetical correspondences from further consideration that have large color differences. Neighborhood Matching: At each iteration, we match highly distinctive neighborhoods by combining information across cues. The size of the neighborhood is chosen so that we get more than enough bits to meet our information budget (log 2 M bits – typically 11 to 13). The analysis in figure 6 shows that we can set N = 3 at the start and continue until N = 0. Because the identity of the marker is overspecified, there are few mistakes. This approach works from flat regions in the first iteration to foldy regions in the later iterations. In the first iteration, we require three neighbors to make a match. In heavily folded regions, often neighboring markers on the image do not neighbor on the surface of the cloth. As such, these regions are not going to match. In contrast, in the last iteration, no neighbors are necessary. Occluding contours, which are common in heavily folded regions, no longer disrupt the matching procedure. 3D Reconstruction: Markers that are observed in multiple views (at least 2) are reconstructed in 3D using textbook methods 
+[Hartley and Zisserman 2000]. We use reprojection error to prune bad matches (reprojection errors average 0.3 pixels and we discard points with errors larger than 2 pixels). Pruning with Strain: We do two separate strain pruning steps: one on reconstructed 3D points and one on marker observations in each image. The first discards reconstructed points that cause physically unrealistic strain on the surface of the mesh and the second constrains our search for correspondence. Our strain constraint is based on the work of 
+[Provot 1995]
+ who noted that strain in cloth does not exceed 20% in practice. Relaxing the constraint to distances in 3D (surface distance is always more than the distance in 3D), we can use strain to exclude possible correspondences. Strain naturally fits in to our information theory framework: if strain excludes 87.5% of the possible correspondences, then strain has added 3 bits (because log 2 (1 − 0.875) = −3). The strain cue is described in figure 7 .
+        A A B = possible identities for B = locations too close to A
+        
+          Figure 7: Top: we compute the shortest distance between a known point A and the eye ray through unidentified image point B. Bottom: in the parametric domain, this distance restricts the possible identities of B to the green region. The distance from A to B along the surface can be no shorter than the shortest distance in 3D.
+        
+        
+          <H2>4.1 Representation</H2>
+          To find correspondence, we match each image marker to a marker in the parametric domain. To do this, we define affinities a i, j between image marker i and parametric marker j. Each affinity is a product over different cues. We write c i, j ∈ [0, 1] for the color affinity, d(C i ,C j ) for the color distance between i and j, s i, j ∈ {0, 1} for the strain constraint, n i for the image neighbors of marker i and N j for the parametric neighbors of marker j:
+          a i, j = c i, j s i, j ∏ max c k,l l∈N j k∈n i d(C i ,C j ) 2 c i, j = exp (− 2 σ 2 ) 0 if a strain constraint is violated s i, j = 1 if not
+          When only one affinity for image marker i is above a theshold, then we declare a correspondence. Initially, we learned this threshold from labelled data, but we found that changing it by several orders of magnitude had little effect on our results. Subsequently, we use the value 10 −5(N+1) where N is the number of neighbors.
+        
+      
+      
+        

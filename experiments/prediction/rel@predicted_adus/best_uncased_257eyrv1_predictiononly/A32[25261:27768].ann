@@ -1,0 +1,36 @@
+T0798395d83dc25b4d7277e411cd37db3	own_claim 57 146	the Geometric Wrinkle formulation is developed keeping in mind a general deformable model
+Te445930e14db4da6608b3fb549d381ed	own_claim 165 217	we apply the method specifically for cloth animation
+Tce3da3fb1cc1d7eadb694895eb6d11d8	own_claim 433 487	the user can design the wrinkles according to her wish
+T408e62086c83ade06eed13d266e467d6	own_claim 489 549	it is worthwhile to study the strain patterns in the garment
+Tf2b01f707951cc64140b757867db154e	own_claim 568 675	inappropriately placed wrinkles in the region where there is no deformation will not animate satisfactorily
+Tc6cfbc829e1d4e9a30965b61b429bc4c	own_claim 690 753	the pattern should be orthogonal to the deformations in general
+T65b7d9feba4ec25b4819d8ff9bfb16c8	data 771 782	section 4.1
+Tcaea54b055f1ea449c9e822810e07134	data 1048 1057	Figure 12
+T3de9815b9a63470df30e7920ede5f86e	data 1113 1122	Figure 14
+T29ce9f63eab00265e577cad39c8f6c6e	own_claim 1125 1237	The patterns have distinct wrinkles and additional irregularities to smooth out the sharp appearance of wrinkles
+Td90b73211205eaf959f02294b685b36e	own_claim 1239 1298	Each pattern represents a distinct direction of deformation
+T8b1bd890fbcd2246527e5290a6044bbe	own_claim 1310 1342	they are considerably orthogonal
+T7f1c99ad28e8c7a3d47effd9628c2b5c	data 1344 1353	Figure 17
+Tdd6753a0fe5bb5a03891713f877ff610	own_claim 1424 1509	It is interesting to see the smooth switch of the wrinkling patterns in the animation
+Tbefa143f63ba4c1438260ff1d5f5bb0f	own_claim 1521 1541	multi-fold wrinkling
+T8b91699d4ee72dc5b79ea883bdd8c161	data 1557 1566	Figure 16
+T79d9ad222308cbb43689f799f12e8db9	own_claim 1735 1783	there are very few wrinkles in the second figure
+T5d82e9f66fd9a12f82155b922fde3f62	own_claim 1787 1831	there is very little deformation of the mesh
+Tc2b9a25894372ff3e9c4f73b5f87608f	own_claim 1914 1993	the calculations of the wrinkling coefficients are done on a per triangle basis
+T1c1db2603d14c75d77ff0d9532856bec	own_claim 1995 2063	the computational time is linear with respect to number of triangles
+Tfe424f52230f30052a984c621624d23d	own_claim 2076 2152	it takes 5 minutes per thousand triangles on a MIPS R10000 200 MHz processor
+T59ba9e1bb5554b28cdda7dc778848321	data 2159 2198	the wrinkling coefficients are computed
+Tbc1a6dc9e3fe206e9b773125308c3381	own_claim 2200 2285	the time spent on modulating wrinkle pattern is negligible compared to rendering time
+T62747455d0c14fb8ab2eb2788fc97c68	own_claim 2296 2312	for small meshes
+T2b98e76b6d41772d333a2030a060ec46	own_claim 2339 2389	the modulation of wrinkle pattern can be real time
+R208cfbb8817da110edca6db39829f8e0	contradicts Arg1:Tce3da3fb1cc1d7eadb694895eb6d11d8 Arg2:T408e62086c83ade06eed13d266e467d6
+R304695da54748daf5ec254db7b03c17a	supports Arg1:Tf2b01f707951cc64140b757867db154e Arg2:T408e62086c83ade06eed13d266e467d6
+Raf4cd707339d38e2eebd69874643b98a	supports Arg1:T65b7d9feba4ec25b4819d8ff9bfb16c8 Arg2:Tc6cfbc829e1d4e9a30965b61b429bc4c
+R406a5122a21fbb8e9870039de8f20c78	supports Arg1:T3de9815b9a63470df30e7920ede5f86e Arg2:T29ce9f63eab00265e577cad39c8f6c6e
+Ree10efbfbb1433ed7c3d168479991d6f	supports Arg1:T7f1c99ad28e8c7a3d47effd9628c2b5c Arg2:T8b1bd890fbcd2246527e5290a6044bbe
+R4c9b0bb1b489d32e98eeb4f47a0f283d	supports Arg1:Tbefa143f63ba4c1438260ff1d5f5bb0f Arg2:Tdd6753a0fe5bb5a03891713f877ff610
+Raa8ceefd066d8a69566c377ea9a2547f	supports Arg1:T5d82e9f66fd9a12f82155b922fde3f62 Arg2:T79d9ad222308cbb43689f799f12e8db9
+Ra29803cd68dc0b8cd724a43b0a17de3c	supports Arg1:Tc2b9a25894372ff3e9c4f73b5f87608f Arg2:T1c1db2603d14c75d77ff0d9532856bec
+R00c5ef306dd8cc32f1bdc994d7c46f09	supports Arg1:T59ba9e1bb5554b28cdda7dc778848321 Arg2:Tbc1a6dc9e3fe206e9b773125308c3381
+Rbfd15c1c3cdc609e9ce9455c75de61eb	contradicts Arg1:Tbc1a6dc9e3fe206e9b773125308c3381 Arg2:T2b98e76b6d41772d333a2030a060ec46
+R65b1d2c0482a93805de52d92b68dd782	parts_of_same Arg1:T62747455d0c14fb8ab2eb2788fc97c68 Arg2:T2b98e76b6d41772d333a2030a060ec46

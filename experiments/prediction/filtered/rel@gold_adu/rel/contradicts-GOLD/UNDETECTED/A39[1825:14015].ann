@@ -1,0 +1,9 @@
+Tf6a8b1c9f1228873fa94d1b318d9c2ed	background_claim 2555 2596	Cloth strongly resists stretching motions
+T07c946ad69f9d6e6b2c20bdfc37f0275	own_claim 5626 5635;5647 5706;5759 5846	The speed with which our sparse linear systems can be robustly solved has convinced us that there is no benefit to be gained from using an ADI method instead
+T4a735a5787937599a419c4adf5bf559b	background_claim 2603 2673	being comparatively permissive in allowing bending or shearing motions
+T1f76a068c386141f8a76bbc7be07a5ea	own_claim 4161 4224	We also introduce a simple, unified treatment of damping forces
+T3294a5f18acda13290a69f4de25d3afa	background_claim 4226 4275	a subject which has been largely ignored thus far
+T6bcf4f86a12328240ef21e28d9cc7d14	background_claim 5437 5446;5457 5497;5585 5623	The price is that some of the forces in the system are treated explicitly, not implicitly
+Ra3e97b22d2ac029217f044a46afba2c4	contradicts-GOLD Arg1:Tf6a8b1c9f1228873fa94d1b318d9c2ed Arg2:T4a735a5787937599a419c4adf5bf559b
+R6061b13badbb5bcdfff265b180889be0	contradicts-GOLD Arg1:T1f76a068c386141f8a76bbc7be07a5ea Arg2:T3294a5f18acda13290a69f4de25d3afa
+R9edb4e24809af0419cbb95a1f5b80546	contradicts-GOLD Arg1:T6bcf4f86a12328240ef21e28d9cc7d14 Arg2:T07c946ad69f9d6e6b2c20bdfc37f0275

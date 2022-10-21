@@ -1,0 +1,16 @@
+<H1>3 Cloth Model</H1>
+        Woven fabrics are not a continuous material, rather they are a complex mechanical network of interleaving yarn [Breen et al. 1994]. Since the constituent yarn is often quasi-inextensible, the material’s warp and weft directions do not stretch perceptibly. In imposing inextensibility on all edges of a triangle mesh, one quickly runs into parasitic stiffness in the bending modes, or locking 
+[Zienkiewicz and Taylor 1989], since locally-convex regions of a triangle mesh are rigid under isometry. Instead, we consider warpweft aligned quadrilateral meshes with a sparse number of triangles (quad-dominant meshes). A degree of freedom (DOF) counting argument suggests that constraining all edges of a quad mesh may circumvent the rigidification that occurs with triangle meshes: Given n vertices, we have 3n positional DOFs; their triangulation (resp. quadrangulation) introduces approximately 3n (resp. 2n) edges, with corresponding inextensibility constraints. Subtracting constraints from positional DOFs leaves nearly zero DOFs for a triangulation. In the case of a quadrangulation, O(n) DOFs remain, and we see that in a flat configuration they correspond to the normal direction at each vertex. Furthermore, under general mesh positions, the constraints are linearly independent, with a full-rank Jacobian treatable by a direct solver (§4). We ask that a warpor weft-aligned quad edge, (p a , p b ), maintain its undeformed length, l, by enforcing
+        
+          1
+          C(p a , p b ) = p b − p a 2 /l − l = 0 .
+        
+        The solve will require the constraint gradient
+        
+          2
+          ∇ p b C(p a , p b ) = 2(p b − p a )/l .
+        
+        Since shearing modes excite only a mechanical interaction of warp and weft, and not a stretching of yarn, fabric does indeed shear perceptibly. Therefore, we model shear using non-stiff stretch springs applied on both diagonals of each quad. The complete model of in-plane deformation is compatible with an existing code’s quador triangle-based treatment of bending and collisions. With this simple formulation of inextensibility constraints in place, what is needed is an efficient method for enforcing constraints. In the following, we develop such a method.
+      
+      
+        

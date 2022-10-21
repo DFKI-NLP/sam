@@ -1,0 +1,10 @@
+T9d5ab8093d8283b7ad85b1c1e8d62945	data 1416 1422	Provot
+T51623e9d851803362fc668e755240836	data 3272 3287	extreme bending
+Tec7d25ff339d02ea91f1c9b1c918d6be	data 4990 5016	the bending is significant
+T2c19fe7a342a3617998af6e3544511b6	data 5078 5157	they can be connected using at most two edges which are not members of both CCs
+Tf007a7581ce0d7dd532a1764dbb20a4d	data 7500 7535	multiple collisions of rigid bodies
+T25d85e088dcc43f324eb3ac05ef8846d	data 9001 9007	Baraff
+T0c153eb5a977745689f6aa103a1c5a76	data 9731 9770	the collision graph of an IZ has a loop
+Tce05000296f7dd1ab52277e1cfc0f540	data 10099 10122	CC after CC j collision
+T05007fc87d86709df86ceb4fdb6480fc	data 10807 10873	objects do not move fast enough to penetrate objects outside an IZ
+T180369fbf59574d02fe63d7f58e6ef90	data 10879 10996	just fast enough to make the result of collision resolutions penetrate the proximity region of objects outside the IZ

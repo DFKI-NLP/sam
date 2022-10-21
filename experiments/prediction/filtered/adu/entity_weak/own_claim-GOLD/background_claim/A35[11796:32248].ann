@@ -1,0 +1,4 @@
+Tb3b9aa44ef6da4a71737d7c7fd8c4d31	own_claim-GOLD 308 355	Performance actually depends on several factors
+T09e1868ee17facc1b42fcce16a662c07	own_claim-GOLD 7803 7857	the implicit Euler method seems stable for any K value
+Ta519b38a981a94acf49f372d89053815	background_claim 308 355	Performance actually depends on several factors
+Tfe2cae72dc1a3d292fe0aedae4344b3c	background_claim 7803 7857	the implicit Euler method seems stable for any K value

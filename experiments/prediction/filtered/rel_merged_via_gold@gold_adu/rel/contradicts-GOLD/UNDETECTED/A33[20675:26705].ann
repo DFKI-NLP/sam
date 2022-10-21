@@ -1,0 +1,6 @@
+Tc8c07f8ca67c6e0ae5bb5313d229a635	own_claim 5165 5216	small temporal errors are often difficult to notice
+T9b95ae4c6006d1d54385129efaa67e41	own_claim 1643 1788	deformation gradients can be converted into vertex locations by inverting a linear system, allowing us to specify vertex locations as constraints
+T04765b27c7f8da09d34f271573983ae6	background_claim 1790 1797;1828 1858	Methods don’t allow vertex constraints
+T548401d80bbbe1de86ae88e3f8f23b1a	own_claim 4961 5000	Typical temporal smoothing is dangerous
+R374e30215c1277999386544b8a15e249	contradicts-GOLD Arg1:T9b95ae4c6006d1d54385129efaa67e41 Arg2:T04765b27c7f8da09d34f271573983ae6
+R651564ae6af0fe554c92d9c86b3bb387	contradicts-GOLD Arg1:T548401d80bbbe1de86ae88e3f8f23b1a Arg2:Tc8c07f8ca67c6e0ae5bb5313d229a635

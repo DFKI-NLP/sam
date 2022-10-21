@@ -1,0 +1,63 @@
+T0742874389ab1e4ff814c21b616d5c6b	background_claim-GOLD 38 184	The correct choice of the simulation method and its implementation is a very important issue in the design of an efficient cloth simulation system
+T10da3e95ad6428a9c8d662043a7df7b0	background_claim-GOLD 188 250	Among the available methods, there are finite elements methods
+Teee7acb964ed61de27cbfbcbc7ec2ced	data-GOLD 254 260	EIS 96
+T197d2a826a8530b8c5d36064fdd96844	background_claim-GOLD 264 283	continuum mechanics
+Ta53ed796ed5bf567c23bba4cf61d3dc9	data-GOLD 287 293	TER 87
+Tb3a3bbfa9e748f7909ef1c9f958b62cd	background_claim-GOLD 296 315	or particle systems
+T05ba9ce3846fde84f86328e514905ddc	data-GOLD 319 325	BRE 94
+T709085641c967544695be6b2242a95c6	background_claim-GOLD 347 474	the latter, which has shown to bring the best compromise between accuracy and speed for highly deformable objects such as cloth
+T3813b40b2dff254670c4c2a1f9dcd626	data-GOLD 478 484	VOL 95
+Tc363431007ceb80447aeb8291c0b3476	data-GOLD 489 495	VOL 97
+T765af2a737fb945d77694827684f921f	background_claim-GOLD 499 577	A particle system represents the mechanical system as a set of punctual masses
+T122ad4a7d565302021255f966078bd04	background_claim-GOLD 579 663	The cloth surface shape is represented by the geometry between neighboring particles
+T754f51f56129d6da6c900e9b29218566	background_claim-GOLD 665 858	The mechanical behavior is represented as interaction forces between the particles, which depend on the relative position and speed of the particles, measuring deformation and deformation speed
+T239b10dddd8d704cf9479fb8eeaec56b	background_claim-GOLD 860 959	Various models exist for this representation, which rank from the simple spring-mass representation
+Tab7d671c04c88752eb0d2e063f345691	background_claim-GOLD 1049 1085	to accurate surface or volume models
+T6015d9d1dacf558fbe6333beb86324ca	background_claim-GOLD 1158 1282	The laws ruling these interactions also rank from linear to highly nonlinear involving discontinuities and hysteretic curves
+Te958de06958bc20e04293cd48d871a3e	background_claim-GOLD 1284 1478	The evolution of the system is computed numerically from these equations that form a large and sparse ordinary differential equation system, which, through adequate modeling, is also first-order
+T84668361bb1c1a921d16f46502b33f06	background_claim-GOLD 1480 1697	This numerical system has to be integrated numerically, for finally obtaining the evolution of the mechanical system along time, usually as a sequence of successive positions of the object along regular time intervals
+T4a0368faaf67bea4953faac31acb067c	background_claim-GOLD 1700 1733	Various numerical methods related
+Ta50c3db142ec301163d286882a87188d	background_claim-GOLD 1751 1851	to integration of numerical ordinary first-order differential systems are available for this purpose
+T32ea265f0f190ac9a9c51137792da012	data-GOLD 1855 1861	PRE 92
+T9b422e2cf5deab81ec5175c496ecd634	background_claim-GOLD 1907 1990	the implementation of these methods, which has already been carried out extensively
+T1da0d692a95f6edd1dfd6cf17b34fe37	data-GOLD 1997 2003	EBE 96
+T569f63d7a5fa102fd50985fe019532d2	data-GOLD 2008 2014	VOL 97
+T210ca2e3fc430c1f0a9e454b3591b271	data-GOLD 2019 2025	BAR 98
+T24b0283086e420d853a9c10c7721931e	data-GOLD 2030 2036	VOL 00
+Ta8e33448a4eceb15521e65c648e0bd6e	background_claim-GOLD 2040 2065	and with some adaptations
+T697bbc4b645a45a35790fd3ea7c73c78	data-GOLD 2072 2078	DES 99
+T2a406b1df83c53456709b92d611dec7b	data-GOLD 2083 2089	EBE 00
+Tfcb76c42652ab11a9cc21344fdec9442	data-GOLD 2094 2100	KAN 00
+T18b87c143b061cd8667cac72cb9b67c1	own_claim-GOLD 2104 2227	It rather intends to evaluate quantitatively the performance of the main integration methods in terms of speed and accuracy
+T243b8ca2da3d249aa4f56d75b741e574	own_claim-GOLD 2229 2486	Using a “typical” cloth object made of a common fabric material, we compare the computation speed and accuracy of each integration methods depending several simulation contexts, giving the reader an overview of the performance he can expect from each method
+T27944a705fd1c188c5148e552c7564de	background_claim 38 184	The correct choice of the simulation method and its implementation is a very important issue in the design of an efficient cloth simulation system
+Tbcc7c76c805b132f3c07d61456884e8f	background_claim 188 215	Among the available methods
+Td9b8ee97414f0b39540db0c0795fd240	background_claim 217 250	there are finite elements methods
+Tcf52e73ba116c7f4eee49c876baa2ece	data 254 260	EIS 96
+T6b119f0854f26a93a66789577bfaae71	background_claim 264 283	continuum mechanics
+T3228e217f4885b189bce7ae26ecab03f	data 287 293	TER 87
+Tfab1945123f5a9c4e4b660f4f749dea9	background_claim 299 315	particle systems
+T558c485e8a615be9b36eff5950ed168a	data 319 325	BRE 94
+T79b1d11f652fff1f96a3677262962e0d	own_claim 330 474	We will focus on the latter, which has shown to bring the best compromise between accuracy and speed for highly deformable objects such as cloth
+T1b2f291be397456f8ef137bb48bb06b4	data 478 484	VOL 95
+T7081bb8f427c584dd2842cbac329059d	data 489 495	VOL 97
+T5d74464e52ea5e35f17df5267ac4135d	background_claim 499 577	A particle system represents the mechanical system as a set of punctual masses
+T88bf297714debf336ecd8d23ce82a39a	background_claim 579 663	The cloth surface shape is represented by the geometry between neighboring particles
+T28ffcc85398d1a0118b5737bc2ae6e56	background_claim 665 858	The mechanical behavior is represented as interaction forces between the particles, which depend on the relative position and speed of the particles, measuring deformation and deformation speed
+Te73b6c5200459f9857ab347a7f9d418a	background_claim 860 959	Various models exist for this representation, which rank from the simple spring-mass representation
+T43896ad087d4c5cdaaa7cb7b7720ac00	background_claim 1049 1085	to accurate surface or volume models
+Tb01dd2c5d4739b3e64492c8297307d36	background_claim 1158 1282	The laws ruling these interactions also rank from linear to highly nonlinear involving discontinuities and hysteretic curves
+T7bcdaf0e0041d0b33ae449e2d623730f	background_claim 1284 1423	The evolution of the system is computed numerically from these equations that form a large and sparse ordinary differential equation system
+T2f6ce2e640f060a87ce63d99d82703ce	background_claim 1459 1478	is also first-order
+T01dd386811904c5a0417138490d96d5b	background_claim 1480 1534	This numerical system has to be integrated numerically
+T98b2df69512ff7147f2e5c0e4766a8aa	background_claim 1700 1733;1740 1744;1751 1851	Various numerical methods related Fax: to integration of numerical ordinary first-order differential systems are available for this purpose
+Tce79854bb101a9670819e4dbd9975bee	data 1855 1861	PRE 92
+Taf5e4b31e255c2e4a1c7e27755005922	own_claim 1866 1993	The aim of this study is not to describe the implementation of these methods, which has already been carried out extensively in
+Tcc632ebfc2afea5a782f5c722bee444e	data 1997 2003	EBE 96
+T29247093d127ff5a363f81677a76a0ed	data 2008 2014	VOL 97
+T97d087a464708ce3c9959814654c107c	data 2019 2025	BAR 98
+Tdca0be544e91364387c061d40850aadf	data 2030 2036	VOL 00
+Tacca8be35cba875c07b4f923327895f1	data 2072 2078	DES 99
+T2020d67cab9319b9bf9f18b55c17b614	data 2083 2089	EBE 00
+T836a7cadbbe869d691848f79e2ae8355	data 2094 2100	KAN 00
+

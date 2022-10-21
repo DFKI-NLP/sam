@@ -1,0 +1,124 @@
+T13869530b5e47574b89fc7515825a369	own_claim 83 125	a knit and the three common weave patterns
+T61343d7da11f064b4919bba5c4c34e92	own_claim 159 180	and three fiber types
+T8052622c527e259efbe870946391dcda	data 190 194	wool
+Tf5a295ab3302374a8ad8d83ecad87aea	own_claim 212 224	cotton satin
+T77895f53702fbadf548318fba0a6cabb	data 226 228	#4
+Tb9a87e053b850a118147ca031e1226c3	data 231 236	rayon
+T5ab867a81ca75787bb20a761f51c3ad5	data 237 249	spandex knit
+Td52990a28e76e9a2aa806bdb6a16a6f5	data 300 303	#18
+T0ecccf204f0c8c98c63eaf44f733687b	data 358 369	Section 3.2
+T46e007c599ce8318d257aed03781f424	own_claim 648 708	The measurement shows the typical behavior of a woven fabric
+Tb5a373ead7d2baf71473a81fd3166f28	own_claim 710 793	a nonlinear curve with increasing stiffness for higher strain, and large hysteresis
+T68fea305c49abf3b1b8833867195f98c	own_claim 1750 1864	the behavior of the variants of the Soft Constraints model for denim, a largely nonlinear and anisotropic material
+T1e99687cb3eaa663551e439ebb45b407	own_claim 2520 2592	The four selected fabrics span a large range of possible cloth behaviors
+Te5d8a502eed5a35d29d88b4c97381a65	own_claim 2609 2667	#12 is isotropic and very compliant in stretch and bending
+T5f114d3c6db72ee776790824f2719808	own_claim 2669 2737	#4 is also isotropic, very stiff in stretch but compliant in bending
+T94d5c5e94488cdf915d35f3abba2da88	own_claim 2739 2782	#14 is stiff and quite isotropic in stretch
+T361451f71603aa67420090a58352afa1	own_claim 2788 2820	extremely anisotropic in bending
+Taf320da56e09a28b9ea7949d1771b600	own_claim 2871 2905	#18 is anisotropic both in stretch
+T5949ea088e732152f6b2fe1101f40714	own_claim 2934 2975	and in bending (with 13/1 stiffness ratio
+T04166e67e1ae1a84fd7b0ea6c9dff92f	own_claim 2978 3047	The maximum stretch stiffness for #4 is 250 times higher than for #12
+Tc69ea9291ca30a4b0b76cc5dee0501ce	own_claim 3055 3109	#14 is 10 times stiffer in shear than any other fabric
+Tcd0c3088fe2210ba2fad010e38d31a51	own_claim 3111 3160	All four fabrics show similar hysteresis behavior
+T0f0a6c86408013d8bd13f25ba12dff60	own_claim 3167 3240	loading-to-unloading stretch stiffness ratios ranging from 1.4/1 to 1.8/1
+T6c612b55fb880dbc2e577050709c9e7c	own_claim 3242 3299	Sample #12 is nearly linear in the test deformation range
+T84998cb97540a529e445f126c6287b40	own_claim 3307 3351	all other three fabrics exhibit nonlinearity
+T4ccd4d1634cbddd00bdef16c352c9634	own_claim 3368 3457	nonlinearity may arise in some deformation modes but not in others, with no clear pattern
+T99552c346782185d027682fbbd74fbb9	own_claim 3475 3547	all three cloth models fit nicely to the average of the hysteresis bands
+T6f38e830e9c5d3931744823ce2d529d8	own_claim 3554 3579	in highly nonlinear cases
+T10e39fe5930031dec72f67ed3eb17073	own_claim 3581 3631	The fitting residual is larger for stiffer fabrics
+T7d3eef2183a6405add4a0037a02cb41b	own_claim 3637 3706	the nonlinear orthotropic model variants fit anisotropic fabrics best
+T211fa3b3abb70f08d3d9ec09dbbbdbac	own_claim 3727 3850	linear and/or isotropic variants reach a reasonable compromise but are not always able to remain inside the hysteresis band
+Taad055ab197462229417e31e4ecbfb00	data 3856 3864	shearing
+T1ca0fb8b1980002c18986c620dca7f7f	own_claim 3866 3931	the fitting force residual is larger for #14, the stiffest fabric
+T59e37a85fd8d6beaba8cbc64a691ed86	own_claim 3948 3975	the Soft Constraints and St
+Tfe760a07379f6fb84bfa72bbb0588bd7	own_claim 3977 4037	VK models fit to the average of the shearing hysteresis band
+T1add7c1b30ad433ee9d1c5774fe68121	own_claim 4045 4080	the Springs model deviates at times
+T40c79c643287bdc8969f174bb4f8921a	own_claim 4095 4118	no forces are available
+Tc5fc2942358c1a462153aa0f2af87d53	own_claim 4228 4275	The fitting residual is similar for all fabrics
+T7827592647879af61737927755dc1b3c	own_claim 4281 4320	distinctly higher for the Springs model
+T4189a1ae8086c14bfdee7ac96a0f7e35	own_claim 4329 4406	the residual is dominated by a difference in curl near the edge of the sample
+T3cb63195ef4d0a384bc55dc219804eec	own_claim 4414 4443	the overall shape is well fit
+T7c259b27f12989f1a82599013b6fa642	data 4466 4474	Figure 7
+T9146d1dfd9c1a85c1b56050dcb57ac4f	own_claim 4550 4576	The behavior of sample #12
+T92c503cd60dccf2031f9f3f9a336139b	own_claim 4578 4632	the most linear fabric, is predicted well in all cases
+T986e70e9f74316d225f48c8735a36187	own_claim 4675 4714	the buckling behavior in corner pulling
+T9184d9adf9aa68f1c59c9b5858069995	own_claim 4732 4819	effective shear stiffness of the sheet when allowed to buckle in the complex shear test
+T8b9d498b7d81cf26b0a10cee3dbff9b1	own_claim 4821 4847	In the three other samples
+T5a2321af671764241d342b7f8bda7f23	own_claim 4858 4986;4995 5012	the force-displacement plot of the corner pulling test reveals that the stiffness is underestimated for the Soft Constraints and c 2012 The Author
+T2bfaebf92751c97d0ff4a79423455f40	own_claim 5460 5515	the mismatch is more apparent in the complex shear test
+Ta62d72e193f463a64140f665c1820ef2	own_claim 5523 5601	models with underestimated stiffness exhibit wider folds than the real fabrics
+T7803e03e0c3fd6575d704068016339d6	own_claim 6116 6208	The evaluation plots for the simulation models behave similar for the test and fitting cases
+T20f655f739cf5f235929b68e6e8b63d8	own_claim 6214 6287	the matching quality depends on the actual disparity across cloth samples
+T6c22a53a74decac1720bb30a8c12709f	own_claim 6307 6360	overall force-displacement behavior is nicely matched
+T9ba9767e1c72ad0ecc674fb4a8f56000	own_claim 6362 6450	the actual folding shapes of simulated cloth may deviate largely from the captured cloth
+T0614caca986b950939ec276fa227babe	own_claim 6460 6561	even a small change in material properties may lead to distant stable configurations in the L 2 sense
+T88ae744687dac58213766414791a2e23	own_claim 6580 6659	the traditional L 2 metric is not appropriate for evaluating error in this case
+Tdf66c9ca3490b2bab83e0179c1361fb1	own_claim 6661 6772	The discontinuity of stable configurations is also the cause of flickering and twitches in some of our examples
+T2e6be9caf23cf167ce16ff1c45e02ecd	own_claim 6774 6910	The Springs model exhibits the worst fitting quality in shearing force-displacement curves, and the highest fitting residual for bending
+T4b27f0ca25579bb310253a78ec7cabab	own_claim 6936 7017	the inherent coupling of stretch and bending deformation components in this model
+T308224ce4a7c39b4feb120fce37389b3	own_claim 7033 7097	the overall deformations in complex shearing fit reasonably well
+Tea26b0b3b9b8e3f8ed4cb5db2fbe5c3c	background_claim 7132 7214	complex parameter tuning has often been regarded as a caveat of mass-spring models
+T289ca3b9e687ca1ecee3e06614d678b2	own_claim 7246 7351	satisfactory parameter estimation is possible by incorporating anisotropy and nonlinearity into the model
+Tb101a8cc1b7b4d7ea22dd62dc3a9e629	own_claim 7353 7433	The Soft Constraints and St. VK models produce results with very similar quality
+T7fec06c3d82cac380b03672b36a572de	own_claim 7456 7498	the models present only subtle differences
+T2c6748e7c5719aabdb589ced1b4b5768	data 7515 7526	Section 4.1
+T2bffb6eaaaa70944f6b566b6d84a6458	own_claim 7528 7582	At least three effects are missed by the tested models
+Tb14fc9d25d6c5be85fa59d61e8b74d75	own_claim 7584 7610	hysteresis, Poisson effect
+T38cc8af95778c5981e789346c8eca459	data 7619 7665	the diagonalization of the standard StVK model
+Tf0194a4fdb1931539191b9cada006121	own_claim 7672 7694	cross-modal stiffening
+Ta9e3eb4aea94627783fddf4102ca40ce	own_claim 7739 7807	We indeed identified stretch stiffening in the shearing deformations
+Tbdebc82fd2ac45ac9f00c9e0e286699b	own_claim 7954 8127	missing cross-modal stiffening may also be, to a large extent, the reason for stiffness underestimation in the corner pulling test for the Soft Constraints and St. VK models
+Tef2e1b35cefe22809e7067a644888176	background_claim 8129 8167	An extension to the nonlinear model of
+T718e14c8321e5a279f983dbb8eeb63c9	data 8168 8179	Wang et al.
+T22ec4d0d5a2c7e618720790e018abd86	data 8181 8186	WRO11
+T7a1ad1d3e890dce3e80a91435ad5a1da	own_claim 8189 8224	could help alleviate these problems
+Rf2053058831d64fc0bb3b77d4e0fbf32	parts_of_same Arg1:T13869530b5e47574b89fc7515825a369 Arg2:T61343d7da11f064b4919bba5c4c34e92
+Rcdef8593b2127d016ca282c6aa090667	supports Arg1:T8052622c527e259efbe870946391dcda Arg2:T61343d7da11f064b4919bba5c4c34e92
+R7e1b98ec3be816cbbeb97795a6219e03	supports Arg1:Tf5a295ab3302374a8ad8d83ecad87aea Arg2:T61343d7da11f064b4919bba5c4c34e92
+Rf7a6f41895cd1813f658056c3dcf5909	supports Arg1:T5ab867a81ca75787bb20a761f51c3ad5 Arg2:T61343d7da11f064b4919bba5c4c34e92
+R6e3eb1d58c93f07828b79323c1520494	supports Arg1:Td52990a28e76e9a2aa806bdb6a16a6f5 Arg2:T61343d7da11f064b4919bba5c4c34e92
+R26f09e94d62f3f763963564f286db7e6	parts_of_same Arg1:T61343d7da11f064b4919bba5c4c34e92 Arg2:Tf5a295ab3302374a8ad8d83ecad87aea
+R133f9edc39bcb43458bd70032f4fad04	supports Arg1:T77895f53702fbadf548318fba0a6cabb Arg2:Tf5a295ab3302374a8ad8d83ecad87aea
+R918c4f80d2cfb250043c8eac964d290a	supports Arg1:Tb9a87e053b850a118147ca031e1226c3 Arg2:Tf5a295ab3302374a8ad8d83ecad87aea
+R9f49eeb1fbd67a8d5a10a13271b2bd37	supports Arg1:T5ab867a81ca75787bb20a761f51c3ad5 Arg2:Tf5a295ab3302374a8ad8d83ecad87aea
+Rcadb5e15a101e058f1f4dba6e9c926c9	supports Arg1:Td52990a28e76e9a2aa806bdb6a16a6f5 Arg2:Tf5a295ab3302374a8ad8d83ecad87aea
+R17bbd3f4f62759cd63137c6f19fd2939	supports Arg1:Tb5a373ead7d2baf71473a81fd3166f28 Arg2:T46e007c599ce8318d257aed03781f424
+Rbad93a2a2631670ff893447ec6c2a27d	supports Arg1:Te5d8a502eed5a35d29d88b4c97381a65 Arg2:T5f114d3c6db72ee776790824f2719808
+R1fb2734601ae8086fa494ef70bbe3130	supports Arg1:T5f114d3c6db72ee776790824f2719808 Arg2:T94d5c5e94488cdf915d35f3abba2da88
+R8bd5dffe5f658e8c23b930a7acd22b4c	contradicts Arg1:T94d5c5e94488cdf915d35f3abba2da88 Arg2:T361451f71603aa67420090a58352afa1
+R3694a089376a05d63925195ff22c2a79	parts_of_same Arg1:Taf320da56e09a28b9ea7949d1771b600 Arg2:T5949ea088e732152f6b2fe1101f40714
+Rc977e9ae25bd4a387b60e2dcc2056b8c	contradicts Arg1:T04166e67e1ae1a84fd7b0ea6c9dff92f Arg2:Tc69ea9291ca30a4b0b76cc5dee0501ce
+R72308fd86ea6b7d12ec0ed79a3d59990	contradicts Arg1:Tcd0c3088fe2210ba2fad010e38d31a51 Arg2:T0f0a6c86408013d8bd13f25ba12dff60
+Rfff3ea008930bf307cc0ef73f5f773f8	supports Arg1:T0f0a6c86408013d8bd13f25ba12dff60 Arg2:Tcd0c3088fe2210ba2fad010e38d31a51
+R61027a6cf7ce912716cdf6421c59cbf7	contradicts Arg1:T6c612b55fb880dbc2e577050709c9e7c Arg2:T84998cb97540a529e445f126c6287b40
+R0a149a9468ee00c34c3ecb784b9c9ae1	contradicts Arg1:T99552c346782185d027682fbbd74fbb9 Arg2:T6f38e830e9c5d3931744823ce2d529d8
+R0bb6c403663da2925da698327cc4d1d2	supports Arg1:T10e39fe5930031dec72f67ed3eb17073 Arg2:T7d3eef2183a6405add4a0037a02cb41b
+R669134f480476d2ec954a40e18798470	contradicts Arg1:T7d3eef2183a6405add4a0037a02cb41b Arg2:T211fa3b3abb70f08d3d9ec09dbbbdbac
+Rce0783060cd808afccb2096d793c85ca	supports Arg1:Taad055ab197462229417e31e4ecbfb00 Arg2:T1ca0fb8b1980002c18986c620dca7f7f
+R7f83ef1f44a1cfd0f930391c4caed11a	parts_of_same Arg1:T59e37a85fd8d6beaba8cbc64a691ed86 Arg2:Tfe760a07379f6fb84bfa72bbb0588bd7
+R45e6c765f899b8314cbe27ec6899e53c	contradicts Arg1:Tfe760a07379f6fb84bfa72bbb0588bd7 Arg2:T1add7c1b30ad433ee9d1c5774fe68121
+Rdc4e142c52ad92e69c59d9c0ab9e920e	contradicts Arg1:Tc5fc2942358c1a462153aa0f2af87d53 Arg2:T7827592647879af61737927755dc1b3c
+R4b15f0c926d6f7f94e932fda6affd765	contradicts Arg1:T4189a1ae8086c14bfdee7ac96a0f7e35 Arg2:T3cb63195ef4d0a384bc55dc219804eec
+R162bcbe27ba050bc3c08ccc37a66522c	supports Arg1:T7c259b27f12989f1a82599013b6fa642 Arg2:T4189a1ae8086c14bfdee7ac96a0f7e35
+R381aa21a3e4072a30bddfccb0056e278	supports Arg1:T7c259b27f12989f1a82599013b6fa642 Arg2:T9146d1dfd9c1a85c1b56050dcb57ac4f
+Rcd1e38e617dd7495d4539f034b6a4bf7	parts_of_same Arg1:T92c503cd60dccf2031f9f3f9a336139b Arg2:T986e70e9f74316d225f48c8735a36187
+Rd422a5375c4530874ef7bc1a8bce1797	parts_of_same Arg1:T8b9d498b7d81cf26b0a10cee3dbff9b1 Arg2:T5a2321af671764241d342b7f8bda7f23
+Rcb257dd8464421f643dae13d5e015586	supports Arg1:Ta62d72e193f463a64140f665c1820ef2 Arg2:T2bfaebf92751c97d0ff4a79423455f40
+R14c52e96bdd1b683692381cb1022dd5d	contradicts Arg1:T7803e03e0c3fd6575d704068016339d6 Arg2:T20f655f739cf5f235929b68e6e8b63d8
+Reabcefc7d06d9e0154aeb00acf067818	contradicts Arg1:T6c22a53a74decac1720bb30a8c12709f Arg2:T9ba9767e1c72ad0ecc674fb4a8f56000
+R791c4f900f9c6354ff4c129b0a8448db	supports Arg1:T0614caca986b950939ec276fa227babe Arg2:T9ba9767e1c72ad0ecc674fb4a8f56000
+R962c0ec91f684826dd68c5d1570eadf9	supports Arg1:T0614caca986b950939ec276fa227babe Arg2:T88ae744687dac58213766414791a2e23
+R23a8a2e842234fb648789d0f279b3024	contradicts Arg1:T4b27f0ca25579bb310253a78ec7cabab Arg2:T308224ce4a7c39b4feb120fce37389b3
+Rca4ccd53b59bc0a83c9280f5aa06637a	contradicts Arg1:Tea26b0b3b9b8e3f8ed4cb5db2fbe5c3c Arg2:T289ca3b9e687ca1ecee3e06614d678b2
+Rf8671a5d1fbce18b6e9f04ff7aa15829	supports Arg1:T7fec06c3d82cac380b03672b36a572de Arg2:Tb101a8cc1b7b4d7ea22dd62dc3a9e629
+Ra5b67e5bdc2df1e285cbe28056d64f7c	supports Arg1:T2c6748e7c5719aabdb589ced1b4b5768 Arg2:Tb101a8cc1b7b4d7ea22dd62dc3a9e629
+Rc3c4021d014a17eb0e75949892089f8a	supports Arg1:T2c6748e7c5719aabdb589ced1b4b5768 Arg2:T7fec06c3d82cac380b03672b36a572de
+Ra9ff90601da7ca6252fbc4ea9e483117	supports Arg1:Tb14fc9d25d6c5be85fa59d61e8b74d75 Arg2:T2bffb6eaaaa70944f6b566b6d84a6458
+R0a879d40796cdc71d4352e9d3eae68ad	supports Arg1:T38cc8af95778c5981e789346c8eca459 Arg2:Tb14fc9d25d6c5be85fa59d61e8b74d75
+Raa4c7aa8fae4780f666d9874a2dfc2c8	parts_of_same Arg1:Tb14fc9d25d6c5be85fa59d61e8b74d75 Arg2:Tf0194a4fdb1931539191b9cada006121
+R2d8dc598a9114a31bf86a70f7bfebd9f	supports Arg1:T718e14c8321e5a279f983dbb8eeb63c9 Arg2:Tef2e1b35cefe22809e7067a644888176
+Rfdaaa6f03e394349f27628656c087e8f	supports Arg1:T22ec4d0d5a2c7e618720790e018abd86 Arg2:Tef2e1b35cefe22809e7067a644888176
+R177e257d9b2411ae19f8356d810b3b8b	parts_of_same Arg1:Tef2e1b35cefe22809e7067a644888176 Arg2:T7a1ad1d3e890dce3e80a91435ad5a1da
+R8e8bab1e373c105191205d229e961e57	parts_of_same Arg1:T718e14c8321e5a279f983dbb8eeb63c9 Arg2:T22ec4d0d5a2c7e618720790e018abd86
+Rc9ed34f86117f5d151ecb4b8aa379f0c	supports Arg1:T718e14c8321e5a279f983dbb8eeb63c9 Arg2:T7a1ad1d3e890dce3e80a91435ad5a1da

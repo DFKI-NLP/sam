@@ -1,0 +1,43 @@
+T6726f372b0b4ec29c9c5259759b73660	background_claim 38 169	Today’s cloth simulators for animation, visual effects, games, and apparel design can mimic real cloth to a high degree of fidelity
+Te5c3c02d6414aeb976c38dc16805a6b3	background_claim 175 287	to fully exploit their capabilities, the constitutive models for cloth deformation must be tuned with great care
+Tc70916d3b8cf0899751bac515b0049ad	background_claim 289 420	During this tuning process it is difficult to tell which models and which parameters are giving results more like the real material
+T18abb85011b30063c1fe2d467e58e52f	own_claim 422 617	This paper aims to solve this problem by introducing new techniques to measure complete cloth behavior under controlled conditions and to estimate cloth deformation models from these measurements
+T4e5f4cbb3d4d55ed1e171941272a76a8	background_claim 619 761	Most methods for testing cloth move the sample into a state of near-uniform strain, exercising one or at most two components of strain at once
+Tf76a5c316ebc004e4302a6e4d4e7a749	data 763 778	pure stretching
+Ta19b7c1d16a3b0cf221af789f700c72e	data 780 793	pure shearing
+Tc03ab32a805d170a8ef528e060284f8e	data 798 810	pure bending
+Ta8b6224a92565d01f2cf4e066e26ecd0	background_claim 812 892	One or two forces are measured to quantify the cloth’s resistance to deformation
+T368af24bc982cc8d4b595121bd8dc045	background_claim 898 995	the resulting forcedisplacement curves are valuable in studying the differences between materials
+Tcc35b8420d7222e60e23afe64a21c312	background_claim 1006 1043	this approach has certain limitations
+T2e3592304de9b8404850c1d0de240217	background_claim 1045 1182	The inevitable deviations from uniform strain create modeling error that cannot be quantified without knowing the actual strain variation
+T1ef518db0b1cfa3d58eb91b1f562efe4	background_claim 1188 1256	force-displacement curves can be used directly to tune a cloth model
+T3911d45328b81a63d0092b8695bd3040	background_claim 1262 1314	do not provide any way to validate the resulting fit
+Tfa412cb26cab399343db1bc0b8e0c885	own_claim 1360 1500	a new, general system for observing cloth properties that measures more complete data than previous work in cloth capture or textile testing
+T9e1dae430a75909c5883ebfb2ca8fbf6	own_claim 1514 1577	a new method for fitting parametric models to this type of data
+T9ed5afc50ef34320dd0c9ba078f46eaa	own_claim 1623 1670	performance of several widely used cloth models
+T236156c2d34da2a333e32a717af30201	own_claim 1672 1815	Our measurement system applies forces to a sample of cloth using actuators and force sensors that let us know the complete applied force, in 3D
+Tb8b61a0100d03c7d787711f545b3cc78	own_claim 1817 1939	The resulting deformation is tracked by a stereo computer vision system that captures the complete deformation, also in 3D
+Tfe2b6c8cd9a7081ac9ec2bcaadacca04	own_claim 1941 2028	Having deformation and force information makes our data well suited to model validation
+Td066b27176e0fd703c4cc074a7997ee1	own_claim 2029 2118	the experiment measures the complete answer that should be predicted by a cloth simulator
+T7fc8ebf239653d51c38411ef75835fbd	own_claim 2126 2155	we do not need uniform strain
+T3e0c935e66af24abf68e08801a895df8	own_claim 2207 2280	some that mimic traditional tests and some with more complex deformations
+Tbcc5c42af12a20361ddafc893a4a1e2c	own_claim 2282 2441	Our approach to model estimation is to numerically optimize nonlinear stress-strain curves to minimize errors in force and position compared to the measurement
+T12b444808226595476c70d37eec04a3d	own_claim 2546 2601	leverages equilibrium conditions to guide the iteration
+T35319b9ffdb70f688c3717da5a53e18f	data 2606 2691	estimating model parameters under a sequence of deformations of increasing complexity
+Tfa53a0956912bc46ba07ed616d007613	own_claim 2693 2772	we alleviate problems with convergence in the presence of abundant local minima
+Rd51f9412c4a8c84a5083ea643843b440	contradicts Arg1:T6726f372b0b4ec29c9c5259759b73660 Arg2:Te5c3c02d6414aeb976c38dc16805a6b3
+R98fd2152dd8f1636c3a01a84b065ceba	supports Arg1:Tf76a5c316ebc004e4302a6e4d4e7a749 Arg2:T4e5f4cbb3d4d55ed1e171941272a76a8
+R05951409a6c8300732a31e237281307d	supports Arg1:Ta19b7c1d16a3b0cf221af789f700c72e Arg2:T4e5f4cbb3d4d55ed1e171941272a76a8
+Rba0e90a6f256837cf3af72b6616d5565	supports Arg1:Tc03ab32a805d170a8ef528e060284f8e Arg2:T4e5f4cbb3d4d55ed1e171941272a76a8
+Rab7b0c10806a58e7efa064aee2530bb6	contradicts Arg1:T368af24bc982cc8d4b595121bd8dc045 Arg2:Tcc35b8420d7222e60e23afe64a21c312
+Rfaed2136853a0a42005c7f17aa5abb8f	contradicts Arg1:Ta8b6224a92565d01f2cf4e066e26ecd0 Arg2:Tcc35b8420d7222e60e23afe64a21c312
+R9343618999bea2714aceec58e2a82418	supports Arg1:T2e3592304de9b8404850c1d0de240217 Arg2:Tcc35b8420d7222e60e23afe64a21c312
+Rc2f6dca6ce88de0d1bdeb0ab3b8fb7d8	supports Arg1:T1ef518db0b1cfa3d58eb91b1f562efe4 Arg2:Tcc35b8420d7222e60e23afe64a21c312
+R422627c0a6ec97d895194134b98237b8	supports Arg1:T3911d45328b81a63d0092b8695bd3040 Arg2:Tcc35b8420d7222e60e23afe64a21c312
+R87e3d7ed32a4ab7da7e331f30cfd9d8e	contradicts Arg1:T1ef518db0b1cfa3d58eb91b1f562efe4 Arg2:T3911d45328b81a63d0092b8695bd3040
+R4bdc045a19975be89a21af3080038640	supports Arg1:T236156c2d34da2a333e32a717af30201 Arg2:Tb8b61a0100d03c7d787711f545b3cc78
+R125ffbbe91d0815c9f02096aed5297cb	supports Arg1:Td066b27176e0fd703c4cc074a7997ee1 Arg2:Tfe2b6c8cd9a7081ac9ec2bcaadacca04
+R1280d5e41b24c73f7a7890b6b1c3661b	contradicts Arg1:Tfe2b6c8cd9a7081ac9ec2bcaadacca04 Arg2:T7fc8ebf239653d51c38411ef75835fbd
+Rc3b16febfd544641264509329dc5c4c8	supports Arg1:Tfe2b6c8cd9a7081ac9ec2bcaadacca04 Arg2:T7fc8ebf239653d51c38411ef75835fbd
+R758c0553e01d11d6cb20afab19c8b687	supports Arg1:T7fc8ebf239653d51c38411ef75835fbd Arg2:T3e0c935e66af24abf68e08801a895df8
+R31b23a6bc6b72a45010f93c3d003d56d	supports Arg1:T35319b9ffdb70f688c3717da5a53e18f Arg2:Tfa53a0956912bc46ba07ed616d007613

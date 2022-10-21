@@ -1,0 +1,14 @@
+Tb2129e49d15410287758f59d075c2f75	own_claim 1680 1761;1917 1939	We have evaluated three models for membrane deformation that fit this description and two bending models
+T7c8a88dae56f63531f22368c45584bfa	data 2009 2015	GHDS03
+Tb2f0ba6373e03863022f0c503d762acd	background_claim 5080 5245	discovered concurrently the appropriate weighting of the angle change in order to model homogeneous bending on irregular triangle meshes with a homogeneous stiffness
+T5a0a891408f38f94d59a542b23335471	data 1835 1875;1883 1888	and the diagonalized St.Venant-Kirchhoff model
+T21a7895f8db148bbe10e780673ee4edb	data 1779 1804	the soft constraint model
+T1ebcd1100025de9ef5d647aaf4fa615c	data 5616 5620	BW98
+T9d6fc5ba1ef5e9ba6ec3f5381c1f31c7	data 1960 2007	the edge-based bending model in Discrete Shells
+T3bdc0453d0d5b0055bc617c2229d6f73	data 1907 1913	VMTF09
+Taa5e1854af90f131702fc563e0a4644a	data 1828 1832	BW98
+Rcee000dfceb21f7dd77112bf789ba7fe	supports-GOLD Arg1:T3bdc0453d0d5b0055bc617c2229d6f73 Arg2:T5a0a891408f38f94d59a542b23335471
+R637a698659b493ae8333a71fe43b12cb	supports-GOLD Arg1:Taa5e1854af90f131702fc563e0a4644a Arg2:T21a7895f8db148bbe10e780673ee4edb
+R2d489ce2c92c50e079ae7b96abaa26e3	supports-GOLD Arg1:T5a0a891408f38f94d59a542b23335471 Arg2:Tb2129e49d15410287758f59d075c2f75
+R9ffb5319cc61a93c37389c2fb0f5eba6	supports-GOLD Arg1:T7c8a88dae56f63531f22368c45584bfa Arg2:T9d6fc5ba1ef5e9ba6ec3f5381c1f31c7
+Re5dea6a31c87eb5a605591d869680474	supports-GOLD Arg1:T1ebcd1100025de9ef5d647aaf4fa615c Arg2:Tb2f0ba6373e03863022f0c503d762acd

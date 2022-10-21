@@ -1,0 +1,8 @@
+T0a99545ec855fbcbdb6b631f63f17213	own_claim 4248 4358	we used a first-order implicit Euler time integration scheme similar to the one described by Baraff and Witkin
+T6b3bc6870b8ecf96ff1c834af3d28514	own_claim 5289 5416	we apply repulsion forces inside the solver loop, so that the solver’s own internal error estimation can remove these artifacts
+T7b6c246832e775829c1db7a2c9e58d14	own_claim 4393 4493	implicit integration introduced damping which could not be eliminated by optimizing cloth parameters
+T62233a5e50ecaba404995e65dafa1fbd	own_claim 5116 5278	separating repulsion forces from the cloth internal dynamics and applying them outside the Runge-Kutta solver affected stability and resulted in visible artifacts
+Rb5eeba1c8e098507b61a7041915b7cde	supports-GOLD Arg1:T0a99545ec855fbcbdb6b631f63f17213 Arg2:T7b6c246832e775829c1db7a2c9e58d14
+Rbc7a04d261c102f5f899821c7a95e809	supports-GOLD Arg1:T62233a5e50ecaba404995e65dafa1fbd Arg2:T6b3bc6870b8ecf96ff1c834af3d28514
+Rf215152021e1f9753ed51b438afd7bbe	contradicts Arg1:T0a99545ec855fbcbdb6b631f63f17213 Arg2:T7b6c246832e775829c1db7a2c9e58d14
+Re1dbd189c60a82af5662b3ff63c17161	contradicts Arg1:T62233a5e50ecaba404995e65dafa1fbd Arg2:T6b3bc6870b8ecf96ff1c834af3d28514

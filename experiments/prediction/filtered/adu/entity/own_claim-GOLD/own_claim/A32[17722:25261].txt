@@ -1,0 +1,45 @@
+<H1>4 IMPLEMENTATION OF GEOMETRIC WRINKLES</H1>
+        The numerical computation of the formulation is trivial. For the numerical integrals of the wrinkling coefficients, we use adaptive sampling in the triangular domain to give a fixed user defined error. The following issues are worth mentioning about the implementation.
+        1. The wrinkle function and the wrinkle pattern, though referred to as the same entity, they differ in implementation. The wrinkle pattern is gray scale texture image defining the bump map. The user defines an overall normalization factor for the texture to map wrinkle pattern to wrinkle function. The normalization factor is important as the formulation assumes real distances for the bump map (or more precisely the displacement map). The factor should be some fraction of the overall dimensions of the average triangle of the mesh. The wrinkle function is a continuous real valued function, which is a spline approximation of the normalized texture as described in next item. 2. The wrinkling coefficient computation involves partial derivatives of wrinkle function f (x, y) with respect to (x, y). For the reasonable numerical accuracy and stability, the wrinkling pattern needs to be smooth. We fit a spline function to the pattern to smooth out any discontinuities in the input. In addition to this, the user is advised to blur the pattern. 3. As stated in the formulation (Appendix A), solution to equation 4 exists if the input pattern is not constant. As the pattern is user defined, one needs to watch for the invalidity of the solution (constant C 4 in equation 5 turn out to be zero) and therefore eliminates it. In this case, we define the modulation factor to be one. 4. The modulation factor varies significantly across triangles. If we treat a constant modulation factor for a triangle (see Figure 6), wrinkles appear patchy and one can distinctly see the triangular granules. To avoid this, the modulation factors are linearly interpolated across triangles to give smooth Modulation Map ( Figure 6 ).
+        
+          
+          Figure 6: Smoothing modulation factors gives modulation map
+        
+        5. The user is given additional control for the animation by transforming the modulation map by a scale factor, clip, and bias. The final bump/displacement map is the product of the modulation map and the wrinkling pattern.
+        The implementation of multi-fold wrinkling is discussed in detail in the next section.
+        
+          <H2>4.1 Multi-fold Wrinkling</H2>
+          Animating a single wrinkle pattern is not satisfactory (particularly for cloth). In real-life, the wrinkles are not mere modulations of a fixed wrinkle pattern. Rather, the pattern changes according to the deformation. Hence, we would like to apply the technique using multiple wrinkle patterns. As stated in Section 3.3, two different wrinkle patterns give different wrinkling coefficients for the same triangle geometry. Hence, for the same deformation of the triangle, corresponding to each pattern, the modulation factors will be different. It all depends on how the wrinkle pattern is oriented with respect to the deformation direction. If a pattern is orthogonal to the deformation direction (as compared to the other), corresponding modulation factor will be small. In other words, the direction of the deformation favors one pattern over the other. To illustrate this, let us consider simple cloth animation as shown in the Figure 7 . In Stage 1 cloth is undeformed. It is then stretched to the bottom left corner (Stage 2). Comes back to the neutral position (Stage 3) and finally in Stage 4, stretches to the bottom right corner. We would like to apply multiple wrinkle patterns for this animation. For simplicity of the discussion, we consider only two wrinkle patterns, though the methodology is developed for multiple patterns. The wrinkle patterns chosen are orthogonal to each other as shown in Figure 8 . As the marked triangle undergoes a series of deformations (Figure 7, Stages 1-4), it may compute different values for the modulation factor for each of the wrinkle patterns ( Figure 8 ). These two modulation factors are then plotted against each other in Figure 9 . For Stages 1 &amp; 3 both the modulation factors are 1 as cloth is undeformed. However, for Stages 2 &amp; 4 the modulation factors differ significantly, depending upon the direction of the deformation. The relatively small modulation factor (say M F 1 is smaller for Stage 2) indicates that the corresponding wrinkle pattern is well oriented towards the direction of the deformation. We choose this pattern for wrinkling for the deformation. This selective application of the wrinkle pattern (along with its modulation) will give a change of one pattern to the other as the deformation direction changes. However, in the animation a sudden switch of the pattern is not temporally coherent and is visually quite disturbing. Figure 10 shows typical the movement of the wrinkle functions in the situation (the movement does not refer to the animation in Figure 7 ). The dotted line (when two modulation factors are equal) indicates the boundary between the patterns. As the modulation factors cross the dotted line, there is a sudden switch in the pattern. To avoid this sudden switch of pattern, we introduce a user definable variance around the mean value of the wrinkling coefficients, which defines a transition zone. This is indicated by a gray area around dotted line in Figure 10 . There will be a smooth transition between wrinkling patterns in this zone. We employ a wrinkling pattern weight function as shown in Figure 11 to achieve the smooth transition. This is in fact a simple power function with an appropriate scaling and clipping. If M F 1 is much smaller than M F 2 (stage 1 in Figure 7 ), M F 1 will be smaller than (1 − variance)(M F 1 + M F 2 )/2 and M F 2 will be bigger than (1 + variance)(M F 1 + M F 2 )/2. This gives maximum weight (W 1 = 1,W 2 = 0) to pattern 1. In the transition zone, when M F 1 and M F 2 are comparable, the two patterns will be blended smoothly. The user definable power n is representative of the tightness of the transition and n = ∞ is a sudden switch of pattern. Figure 7 shows the two patterns animated according to deformation. Note that for lower left triangles in Stage 2 of the animation, both wrinkle patterns get blended. On the other hand, for lower right triangle in Stage 2, the deformation direction favors one pattern clearly.
+          
+            
+            Figure 7: Simple two-fold wrinkling
+          
+          
+            
+            Figure 8: Orthogonal patterns for two-fold wrinkling
+          
+          &gt; 2) compression 2 (pattern 2 4 MF 3 1 (1,1) compression &gt; MF 1 (pattern 1)
+          
+            Figure 9: Movement of wrinkling coefficients
+          
+          &gt; MF 1 + MF 2 2) compression stage 1 va ria nc 2 e (pattern transition zone 2 MF stage 2 (1,1) compression &gt; MF 1 (pattern 1)
+          
+            Figure 10: Transition of the patterns
+          
+          variance 1 W 1 n=4 n=2 W 2 n=1 0 compression MF 1 MF 2 MF 1 + MF 2 2
+          
+            Figure 11: Smooth switch between two coefficients
+          
+          
+            
+            Figure 12: Animated garment without wrinkles
+          
+          
+            
+            Figure 13: Visualizing strains in the garment
+          
+          pattern modulated = (M F 1 W 1 pattern 1 +M F 2 W 2 pattern 2 )
+        
+      
+      
+        

@@ -1,0 +1,13 @@
+T4a186e68adb0923c5de28c79d9b9ec1d	own_claim-GOLD 336 436	Our goal is high marker density in the 3D reconstruction – especially in regions with high curvature
+T305705df46345e1aa303366bcc9d2678	own_claim-GOLD 455 525	we need markers that are both small in scale and highly discriminative
+Td4a178dd68a549694349f2b23079363f	own_claim-GOLD 1345 1477	we adopt the following strategy: maximize information obtained from marker color and eliminate the information needed from neighbors
+Ta0f1ebaf32716fb0433f0516cbdfee7e	own_claim-GOLD 1693 1796	we can accurately minimize the number of neighbors required for correspondence and observe folds better
+T30a61ec189438ac8ac8458c6991829ba	own_claim-GOLD 1798 1862	We can compare our work to previous methods using this framework
+Tea091320997c95c2a55a147616393596	own_claim-GOLD 2292 2334;2345 2527	we compute our information budget (I ) as: N = number of observed neighbors C = color information per marker A = information lost to structural ambiguities S = information gained from strain constraints I = (N + 1) ∗C + S − A
+T376724c979e4cf2b372b2f9c3f367e65	own_claim-GOLD 2767 2772	A = 2
+T970061907d413bf5de12ca13640304c0	own_claim-GOLD 3076 3109	Our best efforts are to improve C
+Tbbec5a60ab777234dce7aeb3a53015c6	own_claim-GOLD 3678 3784	To maximize the density of reconstructed points, we print the smallest markers that we can reliably detect
+T1975b47b26f7c0b001e6421e4797f8be	own_claim-GOLD 4305 4337	Illumination is also problematic
+T742ed996524cc7dc18d1b768d547c961	own_claim-GOLD 4342 4357	takes two forms
+Td1083408a2815c581b9ccd8e2bc2eb65	own_claim-GOLD 4753 4807	we detect markers by comparing colors to a known color
+Tc573c81e6c935bc507a54913ad858113	own_claim-GOLD 4867 5002	we photograph the surface of the printed cloth with our video cameras to minimize the effect of non-linearities in the printing process

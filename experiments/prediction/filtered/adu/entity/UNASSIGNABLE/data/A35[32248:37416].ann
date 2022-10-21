@@ -1,0 +1,20 @@
+Tc4555aa04581514126c2002ac9b388f5	data 346 394	simulating very heterogeneous mechanical systems
+T59853444610a1e9d5d339b2ac9c0ee44	data 396 421	elements of various sizes
+Ta6b1dfa97ee2975628ff0177cd74dd01	data 426 455	various mechanical properties
+T070bca755ad522ef9a00cc610460cdba	data 464 485	using explicit models
+Ta2ea6783a2a5f21f09017d6dc78fb2e7	data 1245 1313	limiting the potential inaccuracies that become particularly visible
+T47145d337e61443070a64cd0d8086a75	data 1319 1373	an accurate simulation of a dynamical system is wanted
+T46878f97d28ae4bf107482b879e4f342	data 1449 1473	the inverse Euler method
+Tef2872a134d435f720bcfb6965fc79ba	data 1479 1495	draping problems
+T331afb9172b1434944e71fbed09c4a38	data 1502 1558	quick convergence to a rest position is required quickly
+T2b5d5d96785bc06daaaf5212e878f354	data 2328 2336	wrinkles
+T81e06c1618aa1bea56fe98972d06635f	data 2341 2369	folds that fail to disappear
+Tba8d939fcbdc323eda5410e0bb9a0629	data 2827 2877	the reduced time it takes to compute one iteration
+T3cd4ca2ba8811e9f1aa0d869ad99fbb1	data 2890 2970	only requires one derivation of the particle forces from the state of the system
+T4daeaba0423e2e66b338574321309df5	data 3550 3593	mechanical energy conservation is important
+T6aaf4727149f6f55f487ab83de79389c	data 4034 4086	it furthermore provides integration error evaluation
+T3a94e4c88c56a9847038783c6a2e6522	data 4332 4409	numerous fast iterations with small time steps are required for other reasons
+T22851eb1e8981ecb5829ce58d4bbfd43	data 4411 4431	high motion sampling
+T47c0992ffd5f15c5f5b3c09b6ba742c0	data 4433 4452	collision detection
+Tb6c333ffe1c4ce9f663802fc0d902e68	data 4454 4479	very discontinuous models
+T1c830551d01899ce482656dea711f0b2	data 4596 4637	they are the keys to efficient simulation

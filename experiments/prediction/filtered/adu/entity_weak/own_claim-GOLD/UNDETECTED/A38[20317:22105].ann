@@ -1,0 +1,6 @@
+Tf97ab5c2f71ea815bc31a42f35a73d74	own_claim-GOLD 45 125	We use optimization to estimate the parameters of the cloth simulator from video
+T36ad97ef37d1d65dc1659893b7375815	own_claim-GOLD 176 292	we look at the error space of the angle map metric, which gives us useful insight about the parameters of the system
+T508d0d0508d9dd801ae3f1a592f766d2	own_claim-GOLD 719 855	we estimate the relative importance of each parameter for a given experiment by performing a perturbation analysis at the solution point
+T2bb62cb00180c2f9fe93f028d62cf756	own_claim-GOLD 1054 1125	we robustly compute the variability of the param∂p eters, defined as ∂E
+T2004fff6ab302bd57fa968fd2c3bfd7a	own_claim-GOLD 1128 1288	To compute the variability, we perturb each parameter of the simulator individually up to ±0.20% of its value, compute the error and fit a quadratic to the data
+T5d0deaa160c2aa349b098a554aaa8fab	own_claim-GOLD 1321 1423	the variability is computed as the change in parameter values that results in a 1% change in the error

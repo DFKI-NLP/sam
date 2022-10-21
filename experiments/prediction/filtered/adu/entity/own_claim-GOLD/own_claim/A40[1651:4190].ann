@@ -1,0 +1,10 @@
+T5dd0a93ef7e668a224700157926d689f	own_claim-GOLD 887 968	The first method is based on modelling air flows with the Navier-Stokes equations
+T26ee8b88bd9801d64adc59f873c5c06f	own_claim-GOLD 1142 1311	the solution of the sophisticated NavierStokes equations is not desired and not necessary in all situations where wind effects shall be integrated into cloth simulations
+T1a0e641aec116fe0d7600fcfd3f3c3b8	own_claim-GOLD 1328 1428	we present a much simpler model based on tracing wind particles that move along a global force field
+T6dfb45707c5a6d9ae7394b66aaa4794c	own_claim-GOLD 1647 1813	By detecting collisions between the wind particles and objects in the scene, we are able to simulate the important effect of lee even with this straightforward method
+T5ec6ec22971222b2c9b036aa5c3c9c86	own_claim-GOLD 1826 1926	both approaches have different characteristics and aim at different applications for wind simulation
+T3e2b7844a8f4ea78ae7bbe025cbc263c	own_claim 887 968	The first method is based on modelling air flows with the Navier-Stokes equations
+Tcd8cbe0c81e5d3c8064110fcba7ab28f	own_claim 1142 1311	the solution of the sophisticated NavierStokes equations is not desired and not necessary in all situations where wind effects shall be integrated into cloth simulations
+T1f3c4c8e490d2fb1a0906ee973cb0bf1	own_claim 1328 1428	we present a much simpler model based on tracing wind particles that move along a global force field
+Tf2de11ad1b41dc5700bba503a0e9cdf4	own_claim 1647 1813	By detecting collisions between the wind particles and objects in the scene, we are able to simulate the important effect of lee even with this straightforward method
+Tbd5a87badcc0406eaaf2cd55d9633898	own_claim 1826 1926	both approaches have different characteristics and aim at different applications for wind simulation

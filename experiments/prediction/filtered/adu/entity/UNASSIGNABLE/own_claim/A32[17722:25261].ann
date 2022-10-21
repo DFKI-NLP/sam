@@ -1,0 +1,8 @@
+T289c29f251bd699623a8ec49552883cb	own_claim 524 631	The user defines an overall normalization factor for the texture to map wrinkle pattern to wrinkle function
+Td2f55cdf1fa8bb98a8976844b1a0c478	own_claim 1853 1875	wrinkles appear patchy
+T13eacc2a1194d32d8c48e89c0865278c	own_claim 1880 1926	one can distinctly see the triangular granules
+T7f7e531e793e5a86e608ebd329ca4a54	own_claim 1928 2038	To avoid this, the modulation factors are linearly interpolated across triangles to give smooth Modulation Map
+Tf69570c4e2cc9689080c5be7089a1748	own_claim 2623 2701	In real-life, the wrinkles are not mere modulations of a fixed wrinkle pattern
+T879666a33023cc335721cb630fd71164	own_claim 2768 2836	we would like to apply the technique using multiple wrinkle patterns
+T3974c7f9ae80c6e73d23ab3a52f3e547	own_claim 4750 4833	will give a change of one pattern to the other as the deformation direction changes
+T919018bfb1104a9181e1c1c77731c898	own_claim 5835 5957	M F 1 will be smaller than (1 − variance)(M F 1 + M F 2 )/2 and M F 2 will be bigger than (1 + variance)(M F 1 + M F 2 )/2

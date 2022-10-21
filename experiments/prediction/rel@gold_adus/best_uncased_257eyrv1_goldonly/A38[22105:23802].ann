@@ -1,0 +1,13 @@
+Ta8f5746b7e22507e51073a43a45d999f	own_claim 43 140	We use simulated annealing to find the parameters that minimize the error function given in eq. 9
+T2165f0c9a9994e3d7203b0afdcbdde1f	own_claim 253 368	The likelihood that it will take a step in a direction that is not locally optimal is a function of the temperature
+Tafd9d282353ddbdeccf71c6cf8a14caf	data 371 377	Fig. 5
+Tbb2a4111584ace13d14f8888e331a8fc	own_claim 381 460	We chose to use the continuous simulated annealing method presented in Press et
+T856e1a619837f0ce3553030b4e1150a4	data 466 468	28
+T59567e875dc8f5ae4d626bdf9ed4507f	background_claim 478 583	combines the Metropolis algorithm with the downhill simplex method for continuous n-variable optimization
+T168d5896f43fb09b2ebd5c58351d5880	own_claim 585 655	We found it useful to reset the simplex with the current best solution
+T8bdaec317d0936acae47b84c001d2011	data 661 701	the temperature reduces by a factor of 3
+T2fb69c3ad33970aec377fa00fdd8be27	own_claim 853 918	This corresponds to a very coarse sampling of the parameter space
+Tb614f128bab7a0ec844d4656b2f8358b	own_claim 1150 1222	this strategy allows the optimizer to locate a good minimum of the space
+R18d6f9a6618a93511ce9f9141828d3f6	supports Arg1:Tafd9d282353ddbdeccf71c6cf8a14caf Arg2:T2165f0c9a9994e3d7203b0afdcbdde1f
+Rb370b0e78a180edba9c2d1f1330d9368	supports Arg1:T8bdaec317d0936acae47b84c001d2011 Arg2:T168d5896f43fb09b2ebd5c58351d5880
+R96237c9e515e9155f9b65ad85276abbb	supports Arg1:T856e1a619837f0ce3553030b4e1150a4 Arg2:T59567e875dc8f5ae4d626bdf9ed4507f

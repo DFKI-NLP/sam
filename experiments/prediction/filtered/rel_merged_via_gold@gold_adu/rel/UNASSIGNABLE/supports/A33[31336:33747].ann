@@ -1,0 +1,9 @@
+T8a034b9e5e51a397f38ea354ce0abe78	own_claim 1888 1915	capture is relatively quick
+T6aacf878101f184df7c0623af87233b7	own_claim 1961 2010	parameters are set by selecting the type of cloth
+T22d7dcd3e7cf961311477ba711eb8ccc	own_claim 346 437	once these obstacles have been overcome, capturing large amounts of data is relatively easy
+T5bf22a5a19cba5144e5bb7b0ee8fd3c7	own_claim 260 307	Camera setup and calibration are time consuming
+Ta586ac7399e363e06dc6557f2012b024	own_claim 492 525	we are releasing our capture data
+T15ec319f0c39489f2fe6aeaaa3d31105	own_claim 312 335	the equipment is costly
+Rfc8f9cdaeabc06194f82d0d83134d45d	supports Arg1:T5bf22a5a19cba5144e5bb7b0ee8fd3c7 Arg2:T15ec319f0c39489f2fe6aeaaa3d31105
+R3cd53c9cde36b8d9d2b8a5419e4bb97d	supports Arg1:T22d7dcd3e7cf961311477ba711eb8ccc Arg2:Ta586ac7399e363e06dc6557f2012b024
+R15587684e2f367c3ed806fee8588c22a	supports Arg1:T8a034b9e5e51a397f38ea354ce0abe78 Arg2:T6aacf878101f184df7c0623af87233b7

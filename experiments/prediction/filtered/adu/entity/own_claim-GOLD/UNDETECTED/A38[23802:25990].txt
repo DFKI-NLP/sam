@@ -1,0 +1,13 @@
+<H1>7. Experiments</H1>
+        We designed a few simple experiments to capture the dynamics of the different types of fabrics and the air/cloth interaction. The experiments are easy to perform, capture, and repeat; yet they demonstrate the complex dynamics of cloth motion. The parameters obtained from the simple experiments were used to simulate skirts and other complex fabric motions. In essence, our experiments were designed to be a calibration setup for estimating the static and dynamic parameters of a cloth simulator. We perform two estimation experiments for each fabric, a static test and waving test. We used four types of fabrics: linen, fleece, satin and knit. These fabrics exhibit a wide range of static and dynamic behavior and span a large range of real fabrics. We perform the static and waving tests on a small swatch of each fabric. In the static test, the two top corners of the fabric are held stationary, and the fabric is allowed to sag under gravity. For a fixed separation between the top corners, different fabrics attain different static shapes as shown in Fig. 6 . The static test give a good estimate for the static stiffness and bend parameters. In the waving test, one of the top corners of the fabric is fixed and the other corner is moved back and forth ( Fig. 7 ). The waving motion of fabrics in simulation is affected by their dynamic parameters. We see from the accompanying videos that real fabrics exhibit a wide range of interesting motions. Different fabrics also exhibit different types of motion for the same input excitation. We designed the waving motion to roughly match the types of motion occurring in real garments such as skirts. This gives reasonable estimates for cloth parameters while avoiding the need to optimize directly on complex fabric geometries (e.g. skirts) involving many collisions.
+        
+          
+          Figure 6: The static test with four real fabrics. Top row (left to right): linen and fleece. Bottom row: satin and knit. Top corner separation is identical across all four fabrics.
+        
+        
+          
+          Figure 7: Three frames from the waving test for satin.
+        
+      
+      
+        

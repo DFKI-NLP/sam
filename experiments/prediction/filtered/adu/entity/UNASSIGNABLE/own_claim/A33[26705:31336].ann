@@ -1,0 +1,10 @@
+T4cbd4cb6f3a79d016d918245cc4f6fbf	own_claim 332 377	We use the automated calibration technique in
+Ta54d4877d210ba8fde550723c4055b1f	own_claim 619 671	from our experience fewer lights degrade performance
+Tf8f82f98a2ea223fa4eb77fa4038cfe6	own_claim 1084 1146	Our capture results are best evaluated by looking at our video
+T3982d015a2c16c42c45fc2cabef740a9	own_claim 1177 1309	to compare against other capture techniques, it is also necessary to evaluate on several numerical criteria for each capture session
+T3f5a25f3cc92987b6ffe42d0237cebe5	own_claim 1789 1881	the camera images were not output in a linear color space, reducing the number of color bits
+Tb8d60220f037810098d74e1919274061	own_claim 2005 2057	we analyze some of the details a little more closely
+Tad58f6f8c57254a074346ff260b7097a	own_claim 2059 2140	With an average of 2405 observed markers, there were 979 3D markers per megapixel
+T0486358d4a6d67aad96d667ab031a7ff	own_claim 3825 3873	each basis pose must be an extreme configuration
+Tfba8d8806b918598e8e4b7f61b2dfbab	own_claim 3875 3893	For simple objects
+T9d01ee0f7e775d4c4d656ba848584958	own_claim 4314 4335	MeshIK is most useful

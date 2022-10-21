@@ -1,0 +1,20 @@
+Tc0141d0d015ec045c91987baf5013cc0	own_claim 3272 3338	found it to be a not unreasonable constraint enforcement mechanism
+Tb0c97ff43d9bb1d13f3cbd50c80a3356	own_claim 1902 1961	A completely constrained particle would have no coordinates
+T6c427d58ec47dd2ae6de6b96d99f0b0c	own_claim 1969 2039	a particle with one dimension of constraint would have two coordinates
+T17d91962c45afd1e1638f980ae04461e	own_claim 15847 15985	we allow contacts to release when the constraint force between a particle and a solid switches from a repulsive force to an attractive one
+Tcb58cada5b013a0beededda01b34d4eb	own_claim 10812 10890	these two conditions imply that unconstrained particles have r i close to zero
+T55eb98d139d9fda6edc425b229d56238	own_claim 8445 8553	we planned to use the iterative, sparsity-exploiting CG method, which immediately presents us with a problem
+Tfe5382863d6fa5032b1bd5775e07d656	background_claim 8687 8697;8708 8734	CG methods require symmetric matrices
+Te3e7b1ca058f9d44036b4969c9dc3928	background_claim 3405 3456	they do add some additional stiffness to the system
+T49b2faff44d66c0b2b05adc4ffebe634	background_claim 3349 3399	penalty methods do not enforce constraints exactly
+T7148c87a020e734595212d7b55822a76	own_claim 8028 8139	partially constrained particles will have a v i whose component in the constrained direction(s) is equal to z i
+T73f4333d719b35a4f23bcc30ce51f4da	own_claim 7967 8019	Completely constrained particles will have v i = z i
+T5b6758fdfc5ee3932d3ee74d902f8df7	own_claim 10898 10945	completely constrained particles have v i = z i
+T48bf4b0339c2b846a97e471ff63a92db	own_claim 16000 16028	this has proven to work well
+Ra9858f8408438f574c4f8cf57f3b8697	contradicts Arg1:Tb0c97ff43d9bb1d13f3cbd50c80a3356 Arg2:T6c427d58ec47dd2ae6de6b96d99f0b0c
+R45cb32e4f6a348f86b7e1a8a13cc47c3	contradicts Arg1:Tc0141d0d015ec045c91987baf5013cc0 Arg2:T49b2faff44d66c0b2b05adc4ffebe634
+R25a373b980337c0b24df8d9c9cf2d70c	contradicts Arg1:Tc0141d0d015ec045c91987baf5013cc0 Arg2:Te3e7b1ca058f9d44036b4969c9dc3928
+Rfb4922833b3a9735ba1a33714490964f	contradicts Arg1:T73f4333d719b35a4f23bcc30ce51f4da Arg2:T7148c87a020e734595212d7b55822a76
+R0675b4cb7440118ad4cd3b5fb7af41a0	contradicts Arg1:T55eb98d139d9fda6edc425b229d56238 Arg2:Tfe5382863d6fa5032b1bd5775e07d656
+R50c6ffb5439e99388b04a88417e66cf9	contradicts Arg1:Tcb58cada5b013a0beededda01b34d4eb Arg2:T5b6758fdfc5ee3932d3ee74d902f8df7
+R4a303818d1e021c72a59260ba0668c9e	contradicts Arg1:T17d91962c45afd1e1638f980ae04461e Arg2:T48bf4b0339c2b846a97e471ff63a92db

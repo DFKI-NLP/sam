@@ -1,0 +1,6 @@
+T3fc24f74f1c456346d19ff260b5031f6	own_claim-GOLD 3042 3116	evaluating the constraint direction, −∇C(x) T , at the end of the timestep
+T79d7416a3a1a1e48d727e99d8dd060be	own_claim-GOLD 8337 8410	Projection onto the constraint manifold occurs at a fixed instant in time
+T9634508c875d143d8fc4c24a111b04b5	own_claim-GOLD 9693 9706	mass matrices
+Teb9ae885c04068bcc8c38baaa8b57d19	own_claim-GOLD 9931 9948	positive definite
+T93db35556f2387b43c18aab1bd78cb16	own_claim-GOLD 9974 9985	and sparser
+T7880ecd6ff388e01ca013c56542d4fee	own_claim-GOLD 11298 11353	The remaining iterations perturb F only to higher-order

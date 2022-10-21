@@ -1,0 +1,9 @@
+Tb0109718203aa318107a1d539dc4972f	own_claim-GOLD 126 282	We accomplish this through an iterative algorithm where we alternate between computing correspondence and pruning bad matches based on those correspondences
+Tb96eefe3d480df4b2b90577bb0e3154a	own_claim-GOLD 2886 2987	This approach works from flat regions in the first iteration to foldy regions in the later iterations
+T0b58a74ecc25da1c6103f776cf4275a6	own_claim-GOLD 3251 3277	no neighbors are necessary
+Te78faa40a33faef040f1053b620fe777	own_claim-GOLD 3279 3297	Occluding contours
+Tfa60b01ee1b291e9f7571e068da73d99	own_claim-GOLD 3343 3383	no longer disrupt the matching procedure
+T414b9e4f0ad8fed1ae2ea0f638f5a4ab	own_claim-GOLD 4113 4155	Relaxing the constraint to distances in 3D
+T65641650b85677283870ca2471a95ff0	own_claim-GOLD 5000 5063	we match each image marker to a marker in the parametric domain
+T2446bfdb531ba5011d2f47c0547f906e	own_claim-GOLD 5153 5199	Each affinity is a product over different cues
+Tf873ed455434a8a3c65a28d277ca131a	own_claim-GOLD 5705 5749	we learned this threshold from labelled data

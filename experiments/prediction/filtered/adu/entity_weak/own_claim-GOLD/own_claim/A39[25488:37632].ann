@@ -1,0 +1,88 @@
+Td9df507d817cf3d90318931439ca896c	own_claim-GOLD 244 299	Expressing the energy E as a single monolithic function
+T2b6a86c325cbdbbd96264b3001377076	own_claim-GOLD 358 400	and then taking derivatives is impractical
+T8c628f29520f86912ab10023737c61ef	own_claim-GOLD 436 506	A better approach is decompose E into a sum of sparse energy functions
+Tc84eb34ee6281950b8cb3b959f60858d	own_claim-GOLD 629 690	even decomposing E into sparse energy functions is not enough
+Td75d810996abe4c1d73804f189729899	own_claim-GOLD 692 742	Energy functions are an undesirable starting point
+Tdb2a1c61637a29a02bde06ad377b6c93	own_claim-GOLD 1114 1357	An added bonus is that starting from this vector-based energy description tends to result in a simpler, more compact, and more easily coded formulation for ∂f/∂x than proceeding from an energy function in which the structure of C has been lost
+T62d0759c7e2007362fb1d5bcb3c44d7c	own_claim-GOLD 3027 3169	it will be convenient to pretend momentarily that we have a single continuous function w(u, v) that maps from plane coordinates to world space
+T67730e3a6d1cae58f827c0d0bf7be1ed	own_claim-GOLD 3651 3686	We find this to be needlessly stiff
+Tedffd667c845bbfdaa65729d58b86dad	own_claim-GOLD 3695 3734	near the rest state, the force gradient
+T6f54e278375115292a7d45c6be552df9	own_claim-GOLD 3768 3892	is quite small, which partially negates the advantage implicit integration has in exploiting knowledge of the force gradient
+T2391e1b47bc2e7b99ed4e6dcc8104816	own_claim-GOLD 3894 3955	A quadratic model for energy is, numerically, a better choice
+T2835287379ba3c9e178d8c81d8240fb6	own_claim-GOLD 5399 5468	we might decrease b v near the end of a sleeve, inducing a tight cuff
+T6ef84b28b2c9e26bae52c9d6fd143873	own_claim-GOLD 5490 5594	We have found the ability to control shrink/stretch anisotropically to be an indispensable modeling tool
+T6d05ca65d90139857f7392bcfc955b01	own_claim-GOLD 5707 5816	We can measure the extent to which cloth has sheared in a triangle by considering the inner product w u T w v
+T2c638d02bf1ab3ec269aca52ca3321ea	own_claim-GOLD 5838 5858	this product is zero
+T9c0f295e9961ee857a132e02a71e3001	own_claim-GOLD 5949 5970	we need not normalize
+Td052cdb879b6fd55b85820421e9b8b64	own_claim-GOLD 6006 6076	the product w u T w v is a reasonable approximation to the shear angle
+T4d4310ac5df366493ce8a918a7ca6483	own_claim-GOLD 7089 7149	the condition C should not be scaled by the triangles’ areas
+Ta6a9a682bdc23541503a643fced355d2	own_claim-GOLD 7373 7439	Rectangular meshes make it simple to treat bending anisotropically
+T43af5d69937aa7c55012013907054699	own_claim-GOLD 7441 7534	The uv coordinates associated with particles make this possible for triangular meshes as well
+T78914c13c79c6e84c9c342e917f421b6	own_claim-GOLD 8236 8287	These forces and their gradients are easily derived
+Tf999d77603b9a13c758584c90bc85a0a	own_claim-GOLD 8340 8406	The energies we have just described are functions of position only
+T4203e1ba0e9a728b6269c1c09c61dd61	own_claim-GOLD 8568 8647	the strong stretch force must be accompanied by a suitably strong damping force
+Tcf1d0575fff5832ece5b2da9980813d7	own_claim-GOLD 8752 8855	this strong damping force must confine itself solely to damping in-plane stretching/compressing motions
+T8daac8dee8ce887753aae06208f41a49	own_claim-GOLD 8857 8948	stretch damping should not arise due to motions that are not causing stretch or compression
+Tde29b70f11a4cbb8a473be16156a6645	own_claim-GOLD 9480 9594	It is tempting to formulate a damping function for an energy function E(x) by measuring the velocity of the energy
+Tfa0d159e11351f44409b0b2da1cdbc47	own_claim-GOLD 9614 9647	This is an easy trap to fall into
+Ta419446913fd392dc632107a4d3654ef	own_claim-GOLD 9653 9681	it gives nonsensical results
+Tbda3157c974348da606c84ba9495863a	own_claim-GOLD 9683 9740	At an equilibrium point of E, the gradient ∂E/∂x vanishes
+Tb2c0b7af2e58eaaea107fe641f72b12f	own_claim-GOLD 9781 9861	E  ̇ is zero when E is at its minimum, regardless of the system’s velocity x = v
+Tc5cbf7301a758d0c3107991974e0bcc4	own_claim-GOLD 9875 9928	E  ̇ is always too small near the system’s rest state
+Td20f0908356c7c32cd09ceab4f3fc982	own_claim-GOLD 9939 9997	basing the damping force on E  ̇ is not what we want to do
+Te88d77bd6d95da1ce47dbb2393d74617	own_claim-GOLD 10015 10156	the damping function should be defined not in terms of the energy E, but in terms of the condition C(x) we have been using to define energies
+T9b76f555fa6738effaf582b647d00adc	own_claim-GOLD 10278 10377	the damping force should depend on the component of the system’s velocity in the ∂C(x)/∂x direction
+T580b8b8ea9829612b44d6fdabc671b97	own_claim-GOLD 10395 10454	the damping strength should depend on (∂C(x)/∂x) T x = C(x)
+T00f1a09465f91b77482b3c1e51a5e11d	own_claim-GOLD 10594 10616	d = −k d ∂C(x) ∂x C(x)
+T11b44192ee44f5d581f4d4c96732aa8d	own_claim-GOLD 11193 11261	∂x ∂d i j = −k d ∂C(x) ∂x i ∂ C(x) ∂x  ̇ j T + ∂ ∂x C(x) i ∂x j C(x)
+T4d17dd1acddc0467b148d959d0ae87ae	own_claim-GOLD 11379 11407	we cannot expect ∂d/∂x to be
+Teba7753d740fa8544ec89963324eedc2	own_claim-GOLD 11540 11618	we find it expedient simply to leave this term out, thereby restoring symmetry
+Tce7eba65a6ec56ada5ce960c7dec7c04	own_claim-GOLD 11620 11677	This simplification is clearly not physically justifiable
+T50c09dd1f3a8a9ad74c207ae9930c895	own_claim-GOLD 11683 11738	we have not observed any ill effects from this omission
+T75a51576fd1c85a5aae876308a9f49e3	own_claim-GOLD 11900 11931	∂ C(x)  ̇ ∂ ∂C(x) T ∂C(x) = v =
+Tcd66c5dd19e3d93e02f25dec6afa8798	own_claim-GOLD 11976 12051	∂v ∂d i j = −k d ∂C(x) ∂x i ∂ C(x) ∂v  ̇ j T = −k d ∂C(x) ∂x i ∂C(x) ∂x j T
+Tb724619fb34555653d8606c540b9f825	own_claim-GOLD 12068 12120	the result is symmetrical without dropping any terms
+Td03e6ef48c135dabd0b39807d64e79ab	own_claim 244 299	Expressing the energy E as a single monolithic function
+T7dd8ef513003ef4a1b9f02606fe8ddcf	own_claim 358 400	and then taking derivatives is impractical
+T70fdcd947447cf51c96c3545cc6f1eee	own_claim 436 506	A better approach is decompose E into a sum of sparse energy functions
+Tbf68103be32c045d33f4b680359866fd	own_claim 629 690	even decomposing E into sparse energy functions is not enough
+Ta197c39849db2b688cc71537cd7aec24	own_claim 692 742	Energy functions are an undesirable starting point
+Ta9899781e044a8e80ce92f42fb365682	own_claim 1114 1357	An added bonus is that starting from this vector-based energy description tends to result in a simpler, more compact, and more easily coded formulation for ∂f/∂x than proceeding from an energy function in which the structure of C has been lost
+Tacbe9b617b5e1e466046c941c75cc7e3	own_claim 3027 3169	it will be convenient to pretend momentarily that we have a single continuous function w(u, v) that maps from plane coordinates to world space
+Tad01daf9ca20e78121386c28ae6d0d1a	own_claim 3651 3686	We find this to be needlessly stiff
+Tde9c95df9ed5889cae3dfce10d1cd805	own_claim 3695 3734	near the rest state, the force gradient
+T50e078f2d92425869c491408370772e1	own_claim 3768 3892	is quite small, which partially negates the advantage implicit integration has in exploiting knowledge of the force gradient
+T51d3151159719b6fa01297de138fb538	own_claim 3894 3955	A quadratic model for energy is, numerically, a better choice
+Tcdbadfe58475ff8a5e35c4d535760107	own_claim 5399 5468	we might decrease b v near the end of a sleeve, inducing a tight cuff
+T5067e1722dc600eca42e4f7fd9e223de	own_claim 5490 5594	We have found the ability to control shrink/stretch anisotropically to be an indispensable modeling tool
+Tdc617cd50e92a1434deeb31e62859314	own_claim 5707 5816	We can measure the extent to which cloth has sheared in a triangle by considering the inner product w u T w v
+T94fe0521fd5a4b93f9334a3db41047c6	own_claim 5838 5858	this product is zero
+Tbbca59b1cb89ca316764464105657d7a	own_claim 5949 5970	we need not normalize
+T5eeca9a349f0799363e71853de510405	own_claim 6006 6076	the product w u T w v is a reasonable approximation to the shear angle
+T78c580d94a5991edb4fd50a0210eb345	own_claim 7089 7149	the condition C should not be scaled by the triangles’ areas
+Tcb4568097b7b166217851175b6dc8c6c	own_claim 7373 7439	Rectangular meshes make it simple to treat bending anisotropically
+Tca1d249738d9930a47c7aeba86c85da4	own_claim 7441 7534	The uv coordinates associated with particles make this possible for triangular meshes as well
+Td1be0dafb16fcb7e383cad8774773614	own_claim 8236 8287	These forces and their gradients are easily derived
+Tb17fc61b19c90ed97d872073405e9caf	own_claim 8340 8406	The energies we have just described are functions of position only
+Td6d20ae53e3d56dd044ff0a33a7f1886	own_claim 8568 8647	the strong stretch force must be accompanied by a suitably strong damping force
+T4afc721af6cfac8cc15a158648b30b1b	own_claim 8752 8855	this strong damping force must confine itself solely to damping in-plane stretching/compressing motions
+T18ecd309b1922d2e34e643c47f197e3c	own_claim 8857 8948	stretch damping should not arise due to motions that are not causing stretch or compression
+T9c9d04d16a3f8d7b34803bc808bc8379	own_claim 9480 9594	It is tempting to formulate a damping function for an energy function E(x) by measuring the velocity of the energy
+Tb27e1d43ad754852ead4a030860da9ec	own_claim 9614 9647	This is an easy trap to fall into
+Td9a7db70dd8e688972ea7fe859219680	own_claim 9653 9681	it gives nonsensical results
+Te8d442f8a5d92ac41d72bd55a44488b7	own_claim 9683 9740	At an equilibrium point of E, the gradient ∂E/∂x vanishes
+T3c910148924c0d162897b1e685e20758	own_claim 9781 9861	E  ̇ is zero when E is at its minimum, regardless of the system’s velocity x = v
+Tad0306effe92ed32758dafcdfc1c435b	own_claim 9875 9928	E  ̇ is always too small near the system’s rest state
+T01614cde884cf09d2448d5215063132b	own_claim 9939 9997	basing the damping force on E  ̇ is not what we want to do
+T8f38086f3941024bf530c3759ba78070	own_claim 10015 10156	the damping function should be defined not in terms of the energy E, but in terms of the condition C(x) we have been using to define energies
+Tb1623e21ba3376dd9006cad525a5e49f	own_claim 10278 10377	the damping force should depend on the component of the system’s velocity in the ∂C(x)/∂x direction
+T35aed5daad58d10690f3e0ca8c7e6567	own_claim 10395 10454	the damping strength should depend on (∂C(x)/∂x) T x = C(x)
+T5da082b0bff17ee85af4364a588d2ed0	own_claim 10594 10616	d = −k d ∂C(x) ∂x C(x)
+T4a4bf6ff633a4741f964861e715557e2	own_claim 11193 11261	∂x ∂d i j = −k d ∂C(x) ∂x i ∂ C(x) ∂x  ̇ j T + ∂ ∂x C(x) i ∂x j C(x)
+T3e2b3909ae66b835061af9e801945fbd	own_claim 11379 11407	we cannot expect ∂d/∂x to be
+Tc246a0489e020e9bd5f3da74b348c31a	own_claim 11540 11618	we find it expedient simply to leave this term out, thereby restoring symmetry
+T472e3314ccf1cb70a56d0ccf3f726d82	own_claim 11620 11677	This simplification is clearly not physically justifiable
+T2892a951c20d7529373cfc5395148bf4	own_claim 11683 11738	we have not observed any ill effects from this omission
+T76eb1b1707d95da5c37c7c11ad753390	own_claim 11900 11931	∂ C(x)  ̇ ∂ ∂C(x) T ∂C(x) = v =
+Ta9c5a947b1760d7a11aa60a19874779a	own_claim 11976 12051	∂v ∂d i j = −k d ∂C(x) ∂x i ∂ C(x) ∂v  ̇ j T = −k d ∂C(x) ∂x i ∂C(x) ∂x j T
+T9f674e4d6b77c3d523b9b53249fee3e7	own_claim 12068 12120	the result is symmetrical without dropping any terms

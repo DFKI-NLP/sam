@@ -1,0 +1,75 @@
+<H1>References</H1>
+        
+          [1] D. Baraff. Analytical methods for dynamic simulation of non-penetrating rigid bodies. Computer Graphics (Proc. SIGGRAPH), 23(3):223–232, 1989.
+          [2] D. Baraff and A. Witkin. Dynamic simulation of non-penetrating flexible body simulation. Computer Graphics (Proc. SIGGRAPH), 26(2):303–308, 1992.
+          [3] D. Baraff and A. Witkin. Large steps in cloth simulation. Computer Graphics (Proc. SIGGRAPH), pages 43–53, 1998.
+          [4] D. Breen, D. House, and M. Wozny. Predicting the drape of woven cloth using interacting particles. Computer Graphics (Proc. SIGGRAPH), pages 365–372, 1994.
+          [5] M. Desbrun, P. Schroder, and A. Barr. Interactive animation of structured deformable objects. Graphics Interface, Kingston, Canada, June 1999.
+          [6] B. Eberhardt, A. Weber, and W. Strasser. A fast, flexible particle-system model for cloth draping. IEEE Computer Graphics and Applications, 1996.
+          [7] Y.-M. Kang, J.-H. Choi, and H.-G. Cho. Fast and stable animation of cloth with an approximated implicit method. Computer Graphics International, Geneva, Switzerland, June 2000.
+          [8] E.-A. Karabassi, G. Papaioannou, T. Theoharis, and A. Boehm. Interaction test for collision detection in particle systems. ACM Journal of Graphics Tools, AK Peters, Ltd., 4(1):25–37, 1999.
+          [9] D. Marhefka and D. Orin. Simulation of contact using a nonlinear damping model. Proc. IEEE Int. Conf. On Robotics and Automation, Minneapolis, MN, 1996.
+          [10] B. Mirtich and J. Canny. Impulse-based real-time dynamic simulation. Proc. Workshop on Algorithmic Foundations of Robotics, K. Goldberg et al. (eds.). AK Peters, 1994.
+          [11] M. Moore and J. Wilhelms. Collision detection and response for computer animation. Computer Graphics (Proc. SIGGRAPH), 22:289–298, 1988.
+          [12] X. Provot. Collision and self-collision handling in cloth model dedicated to design garments. Proc. Graphics Interface, pages 177–189, 1997.
+          [13] S. Raab. Controlled perturbation for arrangements of polyhedral surfaces with application to swept volumes. Anuual Symposium of Computational Geometry, Miami, FL, pages 163–172, June 1999.
+          [14] P. Volino, M. Courchesne, and N. Magnenat-Thalmann. Versatile and efficient techniques for simulating cloth and other deformable objects. Computer Graphics (Proc. SIGGRAPH), pages 137–144, 1995.
+          [15] P. Volino, M. Courchesne, and N. Magnenat-Thalmann. Accurate collision response on polygonal meshes. Proc. of Computer Graphics, pages 179–188, 2000.
+          [16] P. Volino and N. Magnenat-Thalmann. Efficient self-collision detection on smoothly discretized surface animations using geometrical shape regularity. Eurographics, 13(3):155–166, 1994.
+        
+        
+          
+            
+              
+                
+                   Simulation
+                  
+                   ST ST
+                   CD(%) CD(%)
+                
+              
+              
+                
+                   Fig. 5(above)
+                   0.0005 0.0005
+                   0.36 0.36
+                   .20(56) .20(56)
+                
+                
+                   Fig. 5(below)
+                   0.0001 0.0001
+                   0.22 0.22
+                   .099(45) .099(45)
+                
+                
+                   Fig. 6(above)
+                   0.0005 0.0005
+                   1.22 1.22
+                   .98(80) .98(80)
+                
+                
+                   Fig. 6(below)
+                   0.0001 0.0001
+                   1.15 1.15
+                   .90(78) .90(78)
+                
+              
+            
+          
+          Simulation ST CD(%) Fig. 5 (above) 0.0005 0.36 .20(56) Fig. 5 (below) 0.0001 0.22 .099(45) Fig. 6 (above) 0.0005 1.22 .98(80) Fig. 6 (below) 0.0001 1.15 .90(78)
+          Table 1. Simulation logs Units are in seconds unless noted otherwise. ST is the average Simulation Time for one time step, CD is the average Collision Detection time, CH is the average Collision Handling time(including re-integration), Int is the average Integration time, Leftover time is used for displaying and saving frames, etc., N p is the number of particles used. l edge is the length of a warp or weft directional edge.
+        
+        
+          
+          Figure 5. Movements of two different types of fabrics
+        
+        
+          
+          Figure 6. Dropping balls onto two different types of fabrics
+        
+        CH(%) Int edge (cm) 0.07(19) 0.07(20) 961 1 0.039(18) 0.07(32) 961 1 0.12(10) 0.1(8) 1681 1 0.10(9) 0.1(9) 1681 1
+      
+    
+  
+
+</Document>

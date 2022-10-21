@@ -1,0 +1,6 @@
+Tcc05057857a8213cb47c053db412d620	own_claim 4982 5039	preliminary experiments have shown very deceptive results
+T713ab89c3ee0e0053fba83b1b86d80d6	own_claim 5145 5266	increased instability problems did not allow time steps much larger than those used for good accuracy with backward Euler
+T460d45355d970f8b239302ac7ab76e84	own_claim 5045 5135	the gain of accuracy did not compensate the large calculations required for each iteration
+Te5eb15ee23d05a23d13915909b8e107d	own_claim 4904 4963	We implemented this method using the algorithm described in
+R71150f21696b0b77bd1dfda7088037bc	contradicts Arg1:Te5eb15ee23d05a23d13915909b8e107d Arg2:Tcc05057857a8213cb47c053db412d620
+R1ad5b134258797b3be12fd38f7f8dbe8	contradicts Arg1:T460d45355d970f8b239302ac7ab76e84 Arg2:T713ab89c3ee0e0053fba83b1b86d80d6

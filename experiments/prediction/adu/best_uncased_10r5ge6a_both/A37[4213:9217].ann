@@ -1,0 +1,189 @@
+Te607cdd76da1dc5ae601c3b5e0f56f22	background_claim-GOLD 88 129	for broad surveys on cloth simulation see
+Tfaf19c4d59b5db481ba7fcb5f9048617	data-GOLD 132 152	House and Breen 2000
+Te635d63a549ebf8ea4fa5780c09a4e4e	data-GOLD 154 170	Choi and Ko 2005
+T2d3038086caa4be6b755a437f41d7f23	background_claim-GOLD 173 239	The most general approach is to treat cloth as an elastic material
+T738b2463c0ff3c188aa0f627ab18bb81	data-GOLD 241 264	Terzopoulos et al. 1987
+T8f6eeb26913582856a06da52975f59db	data-GOLD 266 283	Breen et al. 1994
+T8190b663702dc26d85d69b13f8c75f77	data-GOLD 285 306	Eberhardt et al. 1996
+T259ee13aeb50fc6fad466fb0c428dde8	data-GOLD 308 330	Baraff and Witkin 1998
+Tef8c0bf62679ea4293cd7a3817a75053	data-GOLD 332 348	Choi and Ko 2002
+T7e2dff0fdfe6867e56120bfc099b685a	background_claim-GOLD 351 480	To reduce visible stretching, elastic models typically adopt large elastic moduli or stiff springs, degrading numerical stability
+T582f76833510a40768ee43dcdfbb7736	data-GOLD 483 500	Hauth et al. 2003
+Tea755c2560bb52950bc58f46c1fae87c	background_claim-GOLD 503 567	To address the stiffness of the resulting differential equations
+Te5566eb6561438cdded30d6e3df63b88	data-GOLD 569 586	Baraff and Witkin
+T644948ed6c8c604907712824de3ad8ec	data-GOLD 588 592	1998
+T1980cca29d7d91b0c93134225ba8195a	background_claim-GOLD 595 662	proposed implicit integration, allowing for large, stable timesteps
+Tf15a9340100367ad0a1e95492eb8c3ec	background_claim-GOLD 664 725	adaptive timestepping was required to prevent over-stretching
+Ta879eb5e45cb1fad7ab13b70426b9e33	data-GOLD 727 736	Eberhardt
+Tcba9a6ea7a7578d0db47e62a4952c166	data-GOLD 738 742	2000
+T7a99376de70986bd8d8b1b5b17fcbffe	data-GOLD 748 763	Boxerman et al.
+Te238046d1427601c14d533f95c8ea397	data-GOLD 765 769	2003
+T4d4033561491398a5e60e34717c17cdc	background_claim-GOLD 771 796	adopted implicit-explicit
+T014552bba429a86cb787c1ad95796344	background_claim-GOLD 804 864	formulations, which treat only a subset of forces implicitly
+Td70bf46d934611d2c7d68ccedd6726b7	own_claim-GOLD 866 916	Our method is closely related to the IMEX approach
+Tf86a537f8fceb995c47bdf3aa440c338	data-GOLD 936 991	stretching forces are singled out for special treatment
+Tb18fd015c317d921dbce887d050d72f5	background_claim-GOLD 993 1104	These works, and many of their sequels, improved performance by allowing some perceptible stretch of the fabric
+T96cb1219baee3fbc12dda5ca5802b9e1	background_claim-GOLD 1107 1138	In the quasiinextensible regime
+T7440c80f8a50687fcd1b37515479be76	background_claim-GOLD 1149 1197	implicit methods encounter numerical limitations
+Tcbde0b6cff75466433337553c0dbd843	data-GOLD 1200 1233	Volino and Magnenat-Thalmann 2001
+T78dacbff7c36b7f0ce3ee530d0574026	data-GOLD 1235 1248	Boxerman 2003
+Tf59aaa4aa93befd736c24c2e19f2b1bd	data-GOLD 1250 1267	Hauth et al. 2003
+T623da69a31433832edf4cb5f082121c4	background_claim-GOLD 1270 1409	the condition number of the implicit system grows with the elastic material stiffness, forcing iterative solvers to perform many iterations
+T4c3eb9af1ceb2a96a1a0f2671eda0734	background_claim-GOLD 1425 1448	timestepping algorithms
+T9ebb8780fad64e4e0217124cc71d5c01	data-GOLD 1457 1471	Backward Euler
+Tf7c605f69407c3e3b01d575d37d058be	data-GOLD 1476 1480	BDF2
+T9bbb15559f20dc1c31439173b08657fe	background_claim-GOLD 1481 1545	introduce undesirable numerical damping when the system is stiff
+Te96986e26d6f5749258fee96e5a354b8	data-GOLD 1548 1561	Boxerman 2003
+T9f890ce32ea0da5699f89e44f045dd68	data-GOLD 1570 1599	a stiff differential equation
+Td76754657e51c82f691640d8da982991	background_claim-GOLD 1601 1707	an alternative to implicit integration is to reduce the stiff component and reformulate it as a constraint
+Tdc21564d2593bb1a25bea8ad28e78aa6	data-GOLD 1709 1727	Hairer et al. 2002
+T0fc27cf8da4aa27b9ab196431902b615	background_claim-GOLD 1730 1866	In the smooth setting, the penalty-force and constraint-based approaches are equivalent in the limit of an infinitely stiff penalty term
+Td79686ce3c4f3f42e6457b9f59d70a58	data-GOLD 1869 1891	Bercovier and Pat 1984
+Td120de45dbb852813727c97027d51d82	background_claim-GOLD 1894 2011	In the discrete setting, the constraint-based approach may be implemented with various iterative or global algorithms
+T9129d21dd2bf6997d0515e929dc410db	data-GOLD 2055 2061	Provot
+T1259cdaeed82acd034be56aa10a598a9	data-GOLD 2063 2067	1995
+T15e43788d4d90067697d8ab48ee9c690	background_claim-GOLD 2069 2160	corrected edge lengths by iteratively displacing the incident vertices on stretched springs
+Tbf5b233bf08e23e28c66174a76ab7bde	background_claim-GOLD 2168 2187	simple to implement
+T16d4bf8e667d455a2643f7a0048d294c	background_claim-GOLD 2189 2232	this approach suffers from poor convergence
+Tdbbed792993f699101c22f6c03304cb6	data-GOLD 2239 2291	each displacement may stretch other incident springs
+Tcc0a4fc1b0a00e82f40cf3814b2f785d	background_claim-GOLD 2304 2376	Provot’s method is used in cases where tight tolerances are not required
+T7bdd3b949fb547bd9063f8532fbbfa44	data-GOLD 2386 2405	Desbrun et al. 1999
+Tac7b06923eb210e4f074099928736a8d	data-GOLD 2407 2424	Meyer et al. 2001
+T0003e1039a51ad19f7bfc8294b98091e	data-GOLD 2426 2446	Fuhrmann et al. 2003
+T8cbd023ff9c8c4a313b2c48704dc66a2	data-GOLD 2449 2463	Bridson et al.
+Tcddb0fd157fcace2a05d5fbbd593b37c	data-GOLD 2465 2469	2002
+Tb0d4f064a76fed924c3f417e78b8a6af	data-GOLD 2471 2475	2003
+T0d896487b6ba02b336363219e5980205	background_claim-GOLD 2477 2628	used Provot’s approach in conjunction with strain rate limiting, bounding the rate of change of spring length per timestep to 10% of the current length
+Tfc37f168b2dd7db83a2a3c4c8fe9081d	data-GOLD 2630 2642	Müller et al
+T7c7950b8b243657a0c52befab7f27d2f	data-GOLD 2645 2649	2006
+T0af024048da6f36c8c6e165532fb64bb	background_claim-GOLD 2651 2747	used a non-linear Gauss-Seidel approach to enforce inextensibility on each constraint separately
+T3784d627f2101569ebb356dcc9b3c142	data-GOLD 2749 2763	Bridson et al.
+Tb4f7197db9cf4c17e064214911348f38	background_claim-GOLD 2778 2867	iterative strain limiting algorithms behave essentially as Jacobi or Gauss-Seidel solvers
+Tb40a8cfe713e3b728243f095c1a7a456	data-GOLD 2914 2959	finely-discretized quasi-inextensible fabrics
+Tdec87bd1d11b8b500991a144161b492d	background_claim-GOLD 2961 3037	iterative constraint enforcement requires a prohibitive number of iterations
+T7c5eac6ef9ddcbbe461ff1b41f469506	data-GOLD 3043 3045	§5
+T6c31a35b6025ec6c312d02926166b06f	data-GOLD 3117 3128	House et al
+T2cee48321578d31c2dc117ed3152f730	data-GOLD 3131 3135	1996
+T764f1b77109b68c0e66f5904fbe095c3	background_claim-GOLD 3137 3191	used Lagrange multipliers with CLM to treat stretching
+T41f65196a080532b8383a290f5f52ed2	background_claim-GOLD 3197 3256	presented a hierarchical treatment of the constraint forces
+T756fe3c0d81b8dd3ec4cba31e71c9da7	background_claim-GOLD 3258 3385	The Lagrange multiplier approach alleviates the difficulties associated with poor numerical conditioning and artificial damping
+Tca531c0206fa103282241a985563bc2b	data-GOLD 3387 3399	House et al.
+T22ff7db5f23cef4cfbd98838e23d5d2d	background_claim-GOLD 3400 3491	later encountered difficulties in handling collision response within the proposed framework
+T58b15e5dcdab5c852a8075c3efc43872	data-GOLD 3493 3497	2000
+Te808919ef03b1980e232eb107e79c743	own_claim-GOLD 3500 3607	By building on the velocity-filter paradigm, our method handles both inextensibility and complex collisions
+T253711f1259c4526b236c6b48605dae8	data-GOLD 3609 3620	House et al
+Tdbcca9a09b44b98b7328b521253a2a6e	background_claim-GOLD 3622 3650	formulated constraints as in
+Tadf74db57de35be492f972f73de0eeee	data-GOLD 3652 3670	Witkin et al. 1990
+Ta7cde4f7864ab780a8ce024aa1d76964	background_claim-GOLD 3673 3792	which is subject to numerical drift that may be exacerbated by the discontinuities introduced during collision response
+Tff255dc0fc0e80b1a67414890263dd6c	background_claim-GOLD 3794 3852	Drift may be attenuated using constraint-restoring springs
+T30703b268d42073765e59129bdbf02f0	background_claim-GOLD 3858 3926	the authors reported difficulty in adjusting the spring coefficients
+T9098062d8bf4fd3487e88afd491b5e25	own_claim-GOLD 3946 4114	one reason for their difficulties with drift was consequent to the linearization of the constraint equation, which permitted higher order errors to accumulate over time
+Tb5cb501f5c63a91ab0677ef78a458e15	own_claim-GOLD 4116 4170	Our method does not linearize the constraint equations
+Td2da360532be39e50bc0a1871a889516	own_claim-GOLD 4186 4212	it is not subject to drift
+Tb012b887145e0530310fbb972ff1540e	data-GOLD 4224 4231	Tsiknis
+T75df07a2bec3af49b5b3d7e7a62cde21	data-GOLD 4233 4237	2006
+T4688677535d283aa4f33555ed1f89f72	background_claim-GOLD 4240 4351	proposed triangle-based strain limiting together with a global stitching step for stable constraint enforcement
+T35f3ecd77a97eac6108a5de2fcd74d13	data-GOLD 4353 4363	Hong et al
+Tdb8aebbbbc38a54fc9bc3a58c667e4e9	data-GOLD 4366 4370	2005
+Td96b04e6ed874f62d52f74a1edd62842	background_claim-GOLD 4373 4465	used a linearized implicit formulation in order to improve stability of constrained dynamics
+T3512633072b99c5287a2ac9da8230080	background_claim-GOLD 4467 4582	This allowed for larger timesteps and reduced the need for springs to maintain the cloth on the constraint manifold
+T99a73f88fa26174a533be622b35523e9	background_claim-GOLD 4584 4662	Both of these approaches enforce inextensibility only for strain exceeding 10%
+Te796f6fa9e2cd69830d8021c98339eb1	data-GOLD 4681 4723	the tolerance for stretching is very small
+Tabcf9db1a027040e2aa292b46d0d8f7d	background_claim-GOLD 4725 4829	modeling stretch response with spring-based or strain-limiting approaches is costly and even intractable
+Tfa0bd5dea68ab3650782dd7c3951bd1e	own_claim-GOLD 4831 4887	constraint-based methods present a promising alternative
+T368e75128824a618ff539c3edcdc29f6	background_claim 88 129	for broad surveys on cloth simulation see
+T6683e149bf3b167cd88f973a9185e758	data 132 152	House and Breen 2000
+Tf235ebb6667fc2125b13075620cb90e4	data 154 170	Choi and Ko 2005
+T6e2f9fdd1b71eba071840a2c594f85ef	background_claim 173 239	The most general approach is to treat cloth as an elastic material
+Tc78c9f7ad22740e8e0357dccfa3bcfc8	data 241 264	Terzopoulos et al. 1987
+Tb05296c232ec11858588d5b585de5789	data 266 283	Breen et al. 1994
+T32dbef352ea62e24ad89dc73b84755d9	data 285 306	Eberhardt et al. 1996
+T1281bad9a6929d275520fdea60f856f8	data 308 330	Baraff and Witkin 1998
+T655fb677a8a6c927d6df5d82c669cabd	data 332 348	Choi and Ko 2002
+T2d63b491af46b57f186d686f2da29014	background_claim 351 379	To reduce visible stretching
+T0e5e49d3f7500322f324bdd4e25fc18d	background_claim 381 449	elastic models typically adopt large elastic moduli or stiff springs
+Tc7b0eaa1c51c87184578fc1c02d5c1c3	background_claim 451 480	degrading numerical stability
+Tbec0a684e4736f44743fc71c19fe9be5	data 483 500	Hauth et al. 2003
+T8f71576bc578b29a95275258a88fb792	background_claim 503 567	To address the stiffness of the resulting differential equations
+T7d3cdd256bf23b8d8b8287d5eb5c3146	data 569 586	Baraff and Witkin
+T33ee85ab6ecbcc5165bbf1dcb3251f1e	data 588 592	1998
+Td3759c9fe1c59f3dfab2e391d3f4c1fc	background_claim 595 662	proposed implicit integration, allowing for large, stable timesteps
+T7702be54c1a9aafffc2b24f27024d265	background_claim 664 725	adaptive timestepping was required to prevent over-stretching
+Tc9f628a5aed0cdc64f3b7dbfbf07d0c8	data 727 736	Eberhardt
+T97de30c770eaedabaa15e5ed5b835386	data 738 742	2000
+Tb3b0ec5cb71be6786d6b683392974fe5	data 748 763	Boxerman et al.
+T1db4e994f4be90477691d44e5eb8b597	data 765 769	2003
+T1640c369747d65d75dee1ae78e94bcd2	background_claim 771 796	adopted implicit-explicit
+T3b94a5a92c2824c1621c4bdc8123f83d	background_claim 804 864	formulations, which treat only a subset of forces implicitly
+Tad20f48425fc1dcf2d9fd06dabbf802d	own_claim 866 916	Our method is closely related to the IMEX approach
+Tcb45ece2780fc701fd721484156f957d	own_claim 936 991	stretching forces are singled out for special treatment
+T32871769d7f616cc00f577e1d8e2c3a4	background_claim 993 1104	These works, and many of their sequels, improved performance by allowing some perceptible stretch of the fabric
+Tb1cf8c6052479cd50f5da41b4a7ebbc7	background_claim 1107 1138	In the quasiinextensible regime
+Tbcfa966d6fd09be59893c9d5daf4f4ec	background_claim 1149 1197	implicit methods encounter numerical limitations
+T63919b647660bbc6c154c19ca61e705e	data 1200 1233	Volino and Magnenat-Thalmann 2001
+Tcf47821a5b61a0f5c78fe236c30af870	data 1235 1248	Boxerman 2003
+T9ea49c3345ebe56515467fd44777eeb7	data 1250 1267	Hauth et al. 2003
+Tebddaded42df6ad7da730df6384700cb	background_claim 1270 1355	the condition number of the implicit system grows with the elastic material stiffness
+T52ad57cfdb571009d7ad1cc4c5f10333	background_claim 1357 1409	forcing iterative solvers to perform many iterations
+T12bdcc270cc600e4653b00e3926c6b9b	background_claim 1425 1448	timestepping algorithms
+T774728f35c72391e3281d5ffe202051f	data 1457 1471	Backward Euler
+Ta75715cb2b3b571c885589917c2b966a	data 1476 1520	BDF2 introduce undesirable numerical damping
+T80f25a35c8c259645456b93e759c28e9	data 1526 1545	the system is stiff
+T8f46b1ae33b247581c880cf6ffc2d9fb	data 1548 1561	Boxerman 2003
+T67e89af17ab4da553cc46cbf4597adde	data 1570 1599	a stiff differential equation
+Td5592586e1b9aef6c2113a7984ea9edf	background_claim 1601 1707	an alternative to implicit integration is to reduce the stiff component and reformulate it as a constraint
+T6a74a0c853a3fbfa337104f812efa086	data 1709 1727	Hairer et al. 2002
+T12ecae9be222151c15b11226fdd3fbf4	background_claim 1730 1866	In the smooth setting, the penalty-force and constraint-based approaches are equivalent in the limit of an infinitely stiff penalty term
+Tb3384c8739edb43d58f91d1349af35b5	data 1869 1891	Bercovier and Pat 1984
+Tfadb8c272a79999a07c9f20ef33b19a4	background_claim 1894 2011	In the discrete setting, the constraint-based approach may be implemented with various iterative or global algorithms
+Teb4a21b20f403c645a9dbdeefb9f5b3d	background_claim 2033 2061	Iterative enforcement Provot
+Tbf27ab145d71ea1098d45908230196f1	data 2063 2067	1995
+T58e6c9e4d916f69d6f10f32c86efa57c	background_claim 2069 2160	corrected edge lengths by iteratively displacing the incident vertices on stretched springs
+T54d91af6c52b2dbf3ff919fb72c67d76	background_claim 2168 2187	simple to implement
+T79f1201a41c27260f51f55e4535e8bc9	background_claim 2189 2232	this approach suffers from poor convergence
+T96ef540dcaeb5d5cdf9dd0bd82c95cc4	data 2239 2291	each displacement may stretch other incident springs
+Tfc3df77f132c183bf68573d90409d0c9	background_claim 2304 2376	Provot’s method is used in cases where tight tolerances are not required
+T864d6d1e38b3f2a9fbe7d21c78a9faab	data 2386 2405	Desbrun et al. 1999
+T1b2948ca30a71170bf95241eddfd8fea	data 2407 2424	Meyer et al. 2001
+T96ad8840605cbe425430d60ebf757c6e	data 2426 2446	Fuhrmann et al. 2003
+T8ccfccd1cc50b17fa0284913b41624e3	data 2449 2463	Bridson et al.
+T2768542728945011d7720830279fc5ab	data 2465 2469	2002
+Tbc101d2f47bb4faecdf83b36db54fa5f	data 2471 2475	2003
+T1cc8088a9249a7e8c2d35a5174e4360e	background_claim 2477 2628	used Provot’s approach in conjunction with strain rate limiting, bounding the rate of change of spring length per timestep to 10% of the current length
+T0abb2bfde246a986ca0bfd901a6f8c91	data 2630 2643	Müller et al.
+T20825e7e0c725dffded24f389dd614ec	data 2645 2649	2006
+T5fb6f2e68314bb30c5c70491bb6fa5b8	background_claim 2651 2747	used a non-linear Gauss-Seidel approach to enforce inextensibility on each constraint separately
+Ted34eaacbf8aae24086ecf496d183350	background_claim 2778 2867	iterative strain limiting algorithms behave essentially as Jacobi or Gauss-Seidel solvers
+T0b7c9434763d40ecd06c6237bfee5fac	background_claim 2884 2959	it is not surprising that for finely-discretized quasi-inextensible fabrics
+Tc105afd89f61ea19047c293c671ab54a	background_claim 2961 3037	iterative constraint enforcement requires a prohibitive number of iterations
+T4172d0fe704dbd6d4d13fc87ca4960be	data 3043 3045	§5
+T3e24e9b4c6dab9b15b8f157124509fdd	background_claim 3048 3114	Global enforcement In contrast to iterative constraint enforcement
+Tdb51aa6df9e5f0267a669e74fc17db9e	data 3117 3129	House et al.
+T1713bbf9d9348343f3eafdd44a19c346	data 3131 3135	1996
+Teca2a67f2355bc3b678ef25613195c1d	background_claim 3137 3256	used Lagrange multipliers with CLM to treat stretching, and presented a hierarchical treatment of the constraint forces
+Td481ee6407809a165441e571d14f1dec	background_claim 3258 3385	The Lagrange multiplier approach alleviates the difficulties associated with poor numerical conditioning and artificial damping
+Tb559536f9efc69373b66586b04cd8a90	background_claim 3387 3491	House et al. later encountered difficulties in handling collision response within the proposed framework
+T53a3558f4d22a9fc2a9fa7badee3c32f	data 3493 3497	2000
+T7f8cf53bbd5f8131bb227bd68a528ced	background_claim 3500 3543	By building on the velocity-filter paradigm
+T88d665ecfc0182aa89fba2c5eb2295ab	own_claim 3545 3607	our method handles both inextensibility and complex collisions
+Td9d162cdd714f2ec38ef1b1a88ed7a62	background_claim 3609 3650	House et al. formulated constraints as in
+Tb02aa6e3b8cd491733945bc30ad47f29	data 3652 3670	Witkin et al. 1990
+T41275e6289bc1e46f48e38f1acc10356	background_claim 3673 3792	which is subject to numerical drift that may be exacerbated by the discontinuities introduced during collision response
+Tffea95f4f890a6dfaa74a9faaea7b73a	background_claim 3794 3852	Drift may be attenuated using constraint-restoring springs
+T55931e3543982cc990ef9aaa2cee15ed	background_claim 3858 3926	the authors reported difficulty in adjusting the spring coefficients
+Te0a53f78244644151533ab38882b67e2	own_claim 3946 4114	one reason for their difficulties with drift was consequent to the linearization of the constraint equation, which permitted higher order errors to accumulate over time
+T960d11c9c85a73e6a1918bf48cd8b759	own_claim 4116 4170	Our method does not linearize the constraint equations
+Tb80fb8d37bb9dc5aa414fa110a3d6657	own_claim 4186 4212	it is not subject to drift
+T442bd5affa5e54e5db84a42e8f732390	data 4224 4231	Tsiknis
+T2ab91546a744fd49515572caf551d153	data 4233 4237	2006
+T96b51f6421332614bba7c228be85d36d	background_claim 4240 4351	proposed triangle-based strain limiting together with a global stitching step for stable constraint enforcement
+Ta8f2e742b9dcb7e84ee2580e6f05f562	data 4353 4364	Hong et al.
+Td4f756f42e51b1da8ecac7ca8fe92831	data 4366 4370	2005
+Tb71178b97a20c0315159d56dd562b12d	background_claim 4373 4465	used a linearized implicit formulation in order to improve stability of constrained dynamics
+T9856f06402454fc9ec452e372a94c823	background_claim 4467 4582	This allowed for larger timesteps and reduced the need for springs to maintain the cloth on the constraint manifold
+T03e28316ebc679228c7e7c15da035e07	background_claim 4584 4662	Both of these approaches enforce inextensibility only for strain exceeding 10%
+Tb3917edb43becb6396c464d858c43abe	data 4681 4723	the tolerance for stretching is very small
+T9f8a8cfc5c35f28cbea4bfa86d0c4cd9	background_claim 4725 4829	modeling stretch response with spring-based or strain-limiting approaches is costly and even intractable
+T5febb67c9bf820a2a5c287aed1990ff3	background_claim 4831 4887	constraint-based methods present a promising alternative
+Teca9b792051f860526cd9ae34b7a7368	own_claim 4889 4987	The remainder of this paper discusses algorithms that excel at simulating quasi-inextensible cloth
+

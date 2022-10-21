@@ -1,0 +1,29 @@
+T135cbc8999acb887b56f55c822a7b3c9	own_claim-GOLD 30 182	To incorporate wind effects in a physically based animation we have to apply additional external forces in the dynamical model of the deformable objects
+Tb798f25a3d8b23a777ba060daac6a6d0	own_claim-GOLD 191 320	given a wind flow represented by a velocity field in the scene we calculate the forces which are exerted on the simulated objects
+T880080b72c0d5ef9fc6a7fac579f215c	own_claim-GOLD 339 475	we briefly describe the model we use to compute the effective aerodynamic forces such as wind force and air resistance, mainly following
+T0bede198d14dca1c67ffed81e06c5800	data-GOLD 478 482	SF92
+T0e6e5711840abed8336a3cf7f1da2e67	own_claim-GOLD 485 568	The wind force acting on objects in an air stream is decomposed into two components
+T9e862d89b79b049e1c23f34f9d54a673	data-GOLD 570 588	the lift force F L
+Tedc35932a93713a0d348b3b49490a6ae	data-GOLD 593 611	the drag force F D
+T0e2c2a8b552a16856a4f11bcfb031fcd	data-GOLD 617 625	figure 1
+T1f31fc72b25d386e7c7b7dd2be693a4b	own_claim-GOLD 788 882	The direction of the drag force F D is diametral to the relative velocity v rel = v object − u
+T142ec822077f8cdabd57370cb02ea822	data-GOLD 990 1010	a windless situation
+T72e522b914f40452aea1de6982b21828	own_claim-GOLD 1024 1071	we still have air resistance for moving objects
+T0ab976d80f4a346637dc848b4d0a308a	data-GOLD 1079 1139	two-dimensional objects do not exhibit an inside and outside
+T4cda5dc7096ce45a237225c52fc8948e	own_claim-GOLD 1141 1196	the unit normal n i of the i-th face of the object mesh
+T6d540b2d5cb64974fb9379e8ea349438	data-GOLD 1202 1210	figure 1
+T12d5fc0f1f45074e0dc18c27f7ef3c2d	own_claim-GOLD 1213 1227	is replaced by
+Tf9274eff0c6f648a558cb4cdb3316aa8	own_claim-GOLD 1261 1283	n i = n − i n i if n i
+Te8e980e99505c0949cccc1c4eedfabf0	own_claim-GOLD 1286 1302	· v i,rel &gt; 0
+Tf6e6e5c06f34c934892eb6918aa353b3	own_claim-GOLD 1322 1348	The drag force per face is
+Tf2dce2c2772181f10a281a60283034fa	own_claim-GOLD 1354 1429	given by F i,D = 2 1 C D ρ|v i,rel | 2 A · ( n i · v i,rel ) · (− v i,rel )
+Tf937d79e6d15d6d20fd45788c9a7c7d3	own_claim-GOLD 1616 1779	The direction of the lift force, which is perpendicular to v i,rel and lies in the plane spanned by v i,rel and n i , is given by u i = ( n i × v i,rel ) × v i,rel
+Tcd338938328b190f769399a386e55436	own_claim-GOLD 1795 1870	the lift force is calculated as F i,L = 1 2 C L ρ|v i,rel | 2 A cos θ · u i
+Td8576d593dd5da6a7c8cda65d0b36405	own_claim 30 182	To incorporate wind effects in a physically based animation we have to apply additional external forces in the dynamical model of the deformable objects
+T50e5af27ab177800a7246069f383f781	own_claim 191 320	given a wind flow represented by a velocity field in the scene we calculate the forces which are exerted on the simulated objects
+T64b9f38cad8f46cd835e83ef3be9a694	data 478 482	SF92
+T204d7f0cb23c4220803939225f700cd1	own_claim 485 568	The wind force acting on objects in an air stream is decomposed into two components
+T747a94873a5bb666aaf8316fb2da918b	own_claim 1024 1071	we still have air resistance for moving objects
+Ta05b38fc59f2a5600e8763deca5291f8	data 1079 1139	two-dimensional objects do not exhibit an inside and outside
+T118f9df68268d9c3717f6814ae2abd57	data 1141 1196	the unit normal n i of the i-th face of the object mesh
+

@@ -1,0 +1,7 @@
+T36005e137cbc167fe1bd4a906a2813b2	own_claim 646 808	A degree of freedom (DOF) counting argument suggests that constraining all edges of a quad mesh may circumvent the rigidification that occurs with triangle meshes
+Tccc06866ac3d82d4aed7f69610f4f495	own_claim 828 854	we have 3n positional DOFs
+Tdf606ab3a5dcaa83fbdbf5713b907f7a	own_claim 856 992	their triangulation (resp. quadrangulation) introduces approximately 3n (resp. 2n) edges, with corresponding inextensibility constraints
+Td8549f6c969ba6543765bfd9c6d8d528	own_claim 994 1082	Subtracting constraints from positional DOFs leaves nearly zero DOFs for a triangulation
+T5c28c2f19c94391fb8c5bbc99003ae6f	own_claim 1152 1230	in a flat configuration they correspond to the normal direction at each vertex
+Tdc8d36fb92c4b5c5a02d6d0590ad045a	own_claim 1574 1620;1640 1641;1652 1689	The solve will require the constraint gradient 2 ∇ p b C(p a , p b ) = 2(p b − p a )/l
+T94c5749d13fbd655b03ddb95950125b2	own_claim 1864 1949	we model shear using non-stiff stretch springs applied on both diagonals of each quad

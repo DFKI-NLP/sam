@@ -1,0 +1,68 @@
+T64c2e3b444bf6118b16182038581db95	background_claim-GOLD 37 149	Physically-based cloth animation has been a problem of interest to the graphics community for more than a decade
+Ta2fa53d75361bf3bf07f5dd2faa94cec	background_claim-GOLD 447 468	other research groups
+Tec45efceca7e7d79b19a8940760cdf6d	background_claim-GOLD 581 617	have taken up the challenge of cloth
+T7d6c4d5169e1ff95a5eea1974b694763	background_claim-GOLD 628 649	specific details vary
+T301f198ef140b886def3b6da9350be1e	background_claim-GOLD 758 812	there is a deep commonality amongst all the approaches
+T86f090c5812cfb754a7a6cb8e5bdee60	background_claim-GOLD 814 997	physically-based cloth simulation is formulated as a time-varying partial differential equation which, after discretization, is numerically solved as an ordinary differential equation
+T71785477c19a2a15304169ded6b8640c	background_claim-GOLD 2213 2248	applied such methods to the problem
+Tdcdbddb263c1e3cbcfb9c12607600b03	background_claim-GOLD 2276 2359	research on cloth simulation has generally relied on explicit numerical integration
+Te9b5dd6e35e9215d2382e597d990e267	background_claim-GOLD 2478 2495	analogous methods
+T0fe7a8cd257d1d8af4ef2f5d341c323e	background_claim-GOLD 2675 2743	This results in a “stiff” underlying differential equation of motion
+T0f7790b01a48230c39a78fe0d910d689	background_claim-GOLD 2753 2811	Explicit methods are ill-suited to solving stiff equations
+T9d85a9e2eeb3f63683e1e7e97b937d6b	background_claim-GOLD 2915 3013	the computational cost of an explicit method greatly limits the realizable resolution of the cloth
+Tca6bb4b90c13da15e47bb2ad4b4fc6dc	background_claim-GOLD 3117 3133	can be quite low
+Ta2fda3fc1dc682d5d72e59ae22bf5296	background_claim-GOLD 3307 3326	To animate clothing
+T27ec424acb36df85fafa9c1e204e0fb0	background_claim-GOLD 4535 4562	which for large simulations
+T2c3b02a8c7d8a5e95100f7818a7fc4eb	background_claim-GOLD 4728 4832	the number of time steps per frame tends to increase along with the problem size, for an explicit method
+T62e8753c17265affb78e6582b754fc77	background_claim-GOLD 5457 5497	is that some of the forces in the system
+T82ad5f809c6f3f6dbbacbee0720e3b4c	background_claim-GOLD 5585 5623	are treated explicitly, not implicitly
+Teeea879e5b7b7d6246feda039d1790e4	background_claim-GOLD 8974 9013	discretized cloth as a rectangular mesh
+T6e2724aee64f34512ad75dd60ed051f7	background_claim-GOLD 9076 9124	This work recognized the need for damping forces
+T70dce44eeb9aaaf2c8ca51447d975ff5	background_claim-GOLD 9135 9181	only a simple viscous drag force −k x was used
+T8306a40298934f77bb1bb5dc05df4377	background_claim-GOLD 10077 10131	they added a force which damps cloth stretch and shear
+T7d7f3b3e61d8ac8a0269294330aa52ab	background_claim-GOLD 10209 10288	which focuses mainly on collision detection/response and uses a triangular mesh
+Tc20cbd16707671dfa982a7f526f0d908	background_claim-GOLD 10290 10326	no mention is made of damping forces
+T92b039b8a223bbbc90c48f3305e1a922	background_claim-GOLD 10422 10456	the accumulated work by this group
+Tc305299167262cc066427a15bf4686fc	background_claim-GOLD 10501 10588	gives the only published results we know of for simulated garments on moving characters
+Teb726aaa026eaa15fff3da5329e6160f	background_claim-GOLD 10979 11032	By making use of real-world cloth material properties
+T153802d311293f423c6a4dbf462e2a04	background_claim-GOLD 11065 11193	they produced highly realistic static images of draped rectangular cloth meshes with reported resolutions of up to 51 × 51 nodes
+Ta6f79232f65907d68051705fac05d6ec	background_claim-GOLD 11633 11667	obtain similarly realistic results
+T1d0614366a8ae533a77b3c72966f9254	background_claim-GOLD 11675 11773	dropping the computational cost to approximately 20–30 minutes per frame on an SGI R8000 processor
+Tb0b8b2acb3ac2c0ac61542989cc3d7aa	background_claim-GOLD 11812 11818	Provot
+Tb0fe129aac8b03587bdbe400b86e1921	background_claim-GOLD 11827 11930	focuses on improving the performance of explicit methods by a post-step modification of nodal positions
+Tc2e7c2459e1ede4e9a11b7ecb94bd266	background_claim-GOLD 11932 12000	He iteratively adjusts nodal positions to eliminate unwanted stretch
+Teb8247185f288ca70e1afcee195821b8	background_claim-GOLD 12002 12055	the convergence properties of this method are unclear
+T2aa7f57723d76ca1fd765865188d68c1	background_claim 37 149	Physically-based cloth animation has been a problem of interest to the graphics community for more than a decade
+T12525e18e6b043a220f9592f25e9cc0e	background_claim 447 468	other research groups
+T13c66ca529e7fb8a0484349a2600e360	background_claim 581 617	have taken up the challenge of cloth
+Tc44f673fd970ae1e42843b4bb20a0a54	background_claim 628 649	specific details vary
+Tb66bb29e77019aa0df070b329455b1ae	background_claim 758 812	there is a deep commonality amongst all the approaches
+Tac5364bc0387396a309eb77f90a4c167	background_claim 814 997	physically-based cloth simulation is formulated as a time-varying partial differential equation which, after discretization, is numerically solved as an ordinary differential equation
+Tfd702b8cf59f665a44541328cebf752a	background_claim 2213 2248	applied such methods to the problem
+Tee10cacb8af90c2f08148de5b47e63df	background_claim 2276 2359	research on cloth simulation has generally relied on explicit numerical integration
+Tacfb5d44eb04a3ae4a8a700b11148183	background_claim 2478 2495	analogous methods
+T07bb950f3318907865819e0f0ede2a03	background_claim 2675 2743	This results in a “stiff” underlying differential equation of motion
+T108041e10df61d01513f73d7d8197cf5	background_claim 2753 2811	Explicit methods are ill-suited to solving stiff equations
+T09111dc58a6751f4c4d8045bbb88df89	background_claim 2915 3013	the computational cost of an explicit method greatly limits the realizable resolution of the cloth
+Td65836402823fd595cb0cb83ecd2ff64	background_claim 3117 3133	can be quite low
+Tcadb3062ce2212ade176cccfa15625c9	background_claim 3307 3326	To animate clothing
+T1d7c4638d3d7d45bd21de555e9610808	background_claim 4535 4562	which for large simulations
+Tb060de7c7a72d120970eb918b2cefcf9	background_claim 4728 4832	the number of time steps per frame tends to increase along with the problem size, for an explicit method
+T9c5c55f268b853923123bd9b49e9b8d7	background_claim 5457 5497	is that some of the forces in the system
+T5b9460069b2e546100ff5142cc33ba42	background_claim 5585 5623	are treated explicitly, not implicitly
+Tea0d045c705190cbef925f11c19408dc	background_claim 8974 9013	discretized cloth as a rectangular mesh
+T14cda858d3bdad7ab50f2480ca862ff8	background_claim 9076 9124	This work recognized the need for damping forces
+T889e20cde4151ab702df73078a9a3e57	background_claim 9135 9181	only a simple viscous drag force −k x was used
+T29deb68da8ed04d2baacddf984c1deef	background_claim 10077 10131	they added a force which damps cloth stretch and shear
+Tc271f683629f87b6799675803430b23e	background_claim 10209 10288	which focuses mainly on collision detection/response and uses a triangular mesh
+T493eb8ffd39fd3225fbf5b07b68b749f	background_claim 10290 10326	no mention is made of damping forces
+Tde7ffb2cc3eaafb6c4bcc8b341856464	background_claim 10422 10456	the accumulated work by this group
+T46a16bc923ea23d16978f406b83628ed	background_claim 10501 10588	gives the only published results we know of for simulated garments on moving characters
+Tf1b3025db89beb8ea387e5ce36c6b55f	background_claim 10979 11032	By making use of real-world cloth material properties
+T9a0cdb9360085c81f58680b82f9e626c	background_claim 11065 11193	they produced highly realistic static images of draped rectangular cloth meshes with reported resolutions of up to 51 × 51 nodes
+T512efa86a62e7f2be633a42d068f647d	background_claim 11633 11667	obtain similarly realistic results
+T3e4f516b1b56e0a25a97ed7231ed7fef	background_claim 11675 11773	dropping the computational cost to approximately 20–30 minutes per frame on an SGI R8000 processor
+Td0e24fb4e887758708fca8b650ff19a4	background_claim 11812 11818	Provot
+Tccd84f0d0f61ccf93130d7aaa4ca4a42	background_claim 11827 11930	focuses on improving the performance of explicit methods by a post-step modification of nodal positions
+T7c08eb0023f9aea4f0ffcba79b3241cf	background_claim 11932 12000	He iteratively adjusts nodal positions to eliminate unwanted stretch
+T33287d0956efa4089606b7ab94e6efa7	background_claim 12002 12055	the convergence properties of this method are unclear

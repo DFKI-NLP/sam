@@ -1,0 +1,4 @@
+T3178dcbe279e67c4131b5c624966474b	background_claim-GOLD 1448 1526	require large sections of unoccluded cloth and must stop at occluding contours
+Tbffd903be86861c3e0c70087cbb3c899	background_claim-GOLD 4064 4111	strain in cloth does not exceed 20% in practice
+Tbc079ce14a6193054e81d38537acf112	own_claim 1448 1526	require large sections of unoccluded cloth and must stop at occluding contours
+T6609461d41f61b5b6568b4a432b18fb3	own_claim 4064 4111	strain in cloth does not exceed 20% in practice

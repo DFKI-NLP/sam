@@ -1,0 +1,22 @@
+<Title>Efficient Simulation of Inextensible Cloth</Title>
+      
+      
+        
+          Rony Goldenthal
+        
+        
+          David Harmon 1 Raanan Fattal 3 Michel Bercovier 2 Eitan Grinspun 1 1 Columbia University 2 The Hebrew University of Jerusalem 3 University of California
+          2
+        
+        
+          Berkeley
+        
+      
+      <Abstract>Many textiles do not noticeably stretch under their own weight. Unfortunately, for better performance many cloth solvers disregard this fact. We propose a method to obtain very low strain along the warp and weft direction using Constrained Lagrangian Mechanics and a novel fast projection method. The resulting algorithm acts as a velocity filter that easily integrates into existing simulation code.</Abstract>
+	  CR Categories: I.3.7 [Computer Graphics]: Three-Dimensional Graphics and Realism—Animation I.6.8 [Simulation and Modeling]: Types of Simulation—Animation Keywords: Physically-based Modeling, Cloth simulation, Constrained Lagrangian Mechanics, Constraints, Stretching, Inextensibility, Isometry.
+	  
+	  
+    
+    
+      
+        

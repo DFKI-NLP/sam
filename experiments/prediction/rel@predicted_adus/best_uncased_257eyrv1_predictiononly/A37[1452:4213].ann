@@ -1,0 +1,55 @@
+T4cf260bb0c5cbe8c82dde2516d870834	own_claim 37 91	Our eyes are very sensitive to the behavior of fabrics
+T09fa62d5971286eb78a823fe6a59b164	background_claim 112 179	we can identify the kind of fabric simply from its shape and motion
+T67046fd932f4e1076410adf8cf0f1073	data 182 206	Griffiths and Kulke 2002
+T573ea4937bed6c5c651dd6244d21cb63	background_claim 236 286	most fabrics do not stretch under their own weight
+T627fafad0d9dfc238a473cbe5372ab08	background_claim 303 418	for many popular cloth solvers, a reduction of permissible stretching is synonymous with degradation in performance
+Tb2977382e9820faaa9ba7e9669b68172	background_claim 420 503	for tractable simulation times one may settle for an unrealistic 10% or more strain
+T804d5cb33825071518e721c9e23e33e5	data 505 523	compare 1% and 10%
+Ta91f2aa746e8c0883722d9188f5844bb	data 525 533	Figure 1
+T2e4959247502f60be506374dbde1d287	own_claim 537 659	Our work alleviates this problem by introducing a numerical solver that excels at timestepping quasi-inextensible surfaces
+Te5053ce0104bab159341ac717e62305a	own_claim 683 751	The solver builds on a framework of Constrained Lagrangian Mechanics
+Td62a89021e4a98b70c9e36cc239c7c24	data 760 772	Marsden 1999
+T86aa3b18c66db6cdfa569471e3670d0c	own_claim 775 946	Warp and weft, the perpendicular sets of strands that make up a textile, are prohibited from stretching by enforcing constraint equations, not by integrating spring forces
+Tdb202b74be579dc95334d87d09f0c710	own_claim 1010 1105	a constraint-based method is inherently well-suited to operate in the quasi-inextensible regime
+T06b9a172f74dfa856a76b2b20d82ad09	background_claim 1120 1204	for this regime spring-based methods are known to experience a range of difficulties
+T6864e01214a3f0250317d71068d8a2ae	background_claim 1206 1256	leading to the adoption of various strain limiting
+Te8d0d6c2ea902e4b159b6bc71ba069f6	data 1259 1270	Provot 1995
+T7822e5976755b5a29bd10e1a805ac210	background_claim 1272 1307	and strain rate limiting algorithms
+T4561dacda1e758e8dfdb083f1b7d4756	own_claim 1309 1337	We are motivated by the work
+T32b6793d0817ee7ab8be97b91a1937d5	data 1341 1355	Bridson et al.
+T1acad754a9c7b455a2fbcc3028e48793	data 1357 1361	2002
+Te4235df007f2ccd6a246a0b9562fb110	background_claim 1365 1436	who viewed strain limiting as one of multiple velocity filtering passes
+Tab5b3e40a26456ecec8cb2b19a2ef0d8	background_claim 1473 1570	The velocity filter paradigm enables the design of modular systems with mix-and-match flexibility
+T7be5764e8273ed04cdcb7ec65ed9e37f	background_claim 1663 1711	many simulation methods allow 10% or more strain
+T4fda28bd566876531abc8ae7c5128be6	background_claim 1721 1756	many fabrics do not visibly stretch
+T17d2a7afee9a19a2905991fca2f3b116	own_claim 1975 2067	Contributions We propose a novel CLM formulation that is implicit on the constraint gradient
+T4a093d50d2446c8249ea5df074074e37	own_claim 2090 2168	the implicit method’s nonlinear equations correspond to a minimization problem
+Tc7e2f261e3417449bfe2b80311cc938d	own_claim 2177 2253	this result motivates a fast projection method for enforcing inextensibility
+T0b69c45d51b7924be78354626cfee65a	data 2255 2259	§4.3
+Tfc14ca301549558242155fe1a0674603	own_claim 2262 2443	We describe an implementation of fast projection as a simple and efficient velocity filter, as part of a framework that decouples timestepping, inextensibility, and collision passes
+T0f8e138bf105c879001149028b20084b	data 2445 2449	§4.4
+T295347e4f73c6851c3fbb87bd374f050	own_claim 2466 2574	the fast projection method easily incorporates with a code’s existing bending, damping, and collision models
+T0da85e44cae00a35c0e039d29e83ce0c	own_claim 2576 2608	to yield accelerated performance
+T648e706cd01604ece26820819fb85879	data 2610 2612	§5
+Rf2e93e78408cbd595e134efa36315320	supports Arg1:T4cf260bb0c5cbe8c82dde2516d870834 Arg2:T09fa62d5971286eb78a823fe6a59b164
+R2e9fe4695a708b2b5046b75041c32b5e	supports Arg1:T67046fd932f4e1076410adf8cf0f1073 Arg2:T09fa62d5971286eb78a823fe6a59b164
+R7a33fe1f5704e41e35645fd6c7459d37	supports Arg1:Tb2977382e9820faaa9ba7e9669b68172 Arg2:T627fafad0d9dfc238a473cbe5372ab08
+R74e52e4b9f3f8613223e13fe08328efb	supports Arg1:T804d5cb33825071518e721c9e23e33e5 Arg2:Tb2977382e9820faaa9ba7e9669b68172
+R3ddf152ecfacd554a76c931188a47667	supports Arg1:Ta91f2aa746e8c0883722d9188f5844bb Arg2:Tb2977382e9820faaa9ba7e9669b68172
+R32927f76b83ecd923c933cb52a3d43e2	supports Arg1:Td62a89021e4a98b70c9e36cc239c7c24 Arg2:Te5053ce0104bab159341ac717e62305a
+Rcf16c1d72cc66a811d2a332867d81158	contradicts Arg1:Tdb202b74be579dc95334d87d09f0c710 Arg2:T06b9a172f74dfa856a76b2b20d82ad09
+R3b205b94a8a3adb6e58a4fc0f5cf4353	supports Arg1:T06b9a172f74dfa856a76b2b20d82ad09 Arg2:T6864e01214a3f0250317d71068d8a2ae
+R63bf7100d8ff9c55e014eb813fc224b6	supports Arg1:Te8d0d6c2ea902e4b159b6bc71ba069f6 Arg2:T6864e01214a3f0250317d71068d8a2ae
+R66d8fe33bb581e49bcd021404111e8c8	parts_of_same Arg1:T6864e01214a3f0250317d71068d8a2ae Arg2:T7822e5976755b5a29bd10e1a805ac210
+Rcfe16cf1ace545ccf9abc043aeb239d3	supports Arg1:T32b6793d0817ee7ab8be97b91a1937d5 Arg2:T4561dacda1e758e8dfdb083f1b7d4756
+Rf904063882f492fb329bdf7ae3475ed5	supports Arg1:T1acad754a9c7b455a2fbcc3028e48793 Arg2:T4561dacda1e758e8dfdb083f1b7d4756
+Reeabb67186bcf47df6fc2f1a117cd618	parts_of_same Arg1:T4561dacda1e758e8dfdb083f1b7d4756 Arg2:Te4235df007f2ccd6a246a0b9562fb110
+R76772ed60c7a788bafddb2612fa52f43	parts_of_same Arg1:T32b6793d0817ee7ab8be97b91a1937d5 Arg2:T1acad754a9c7b455a2fbcc3028e48793
+R34d0b4d9af3fc00d841666a017f21cfd	supports Arg1:T32b6793d0817ee7ab8be97b91a1937d5 Arg2:Te4235df007f2ccd6a246a0b9562fb110
+Recef9406bed8d8905b5a6cfe13c50d48	contradicts Arg1:T7be5764e8273ed04cdcb7ec65ed9e37f Arg2:T4fda28bd566876531abc8ae7c5128be6
+Rf8058150b75efb4219c6a9cb5c6c9f25	supports Arg1:T0b69c45d51b7924be78354626cfee65a Arg2:Tc7e2f261e3417449bfe2b80311cc938d
+R8e3dac1b72e0cf1f87a075b6ca5eec0c	supports Arg1:T0f8e138bf105c879001149028b20084b Arg2:Tfc14ca301549558242155fe1a0674603
+R5031fd203607472af8338b254e06598c	supports Arg1:Tfc14ca301549558242155fe1a0674603 Arg2:T295347e4f73c6851c3fbb87bd374f050
+R90121421b193aff68f7cea1184d65fb1	supports Arg1:T0f8e138bf105c879001149028b20084b Arg2:T295347e4f73c6851c3fbb87bd374f050
+R42275688c56298a4fa94c331d55b2ef2	supports Arg1:T648e706cd01604ece26820819fb85879 Arg2:T295347e4f73c6851c3fbb87bd374f050
+R50df9f9b101757bf557fe19b2250dc0a	supports Arg1:T648e706cd01604ece26820819fb85879 Arg2:T0da85e44cae00a35c0e039d29e83ce0c

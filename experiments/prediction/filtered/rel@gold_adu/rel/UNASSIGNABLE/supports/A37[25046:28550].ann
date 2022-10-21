@@ -1,0 +1,9 @@
+Tae84c36ad5bc5665cf6788914797bb01	own_claim 2247 2312	ICD is able to use larger timesteps than SHAKE and still converge
+T138cfc6dc688295508e2760277b912ac	own_claim 2796 2852	the fast projection method outperforms the other methods
+T9d9af9a5355d90fbaaa13dd0bd62f813	data 1131 1163	the following draping experiment
+T92a070d26677b230c2798938ca328022	own_claim 1165 1178;1209 1274	we are unable to set spring coefficients that achieve a prescribed small strain
+T676562ce10303d5fd810a8ee3ae3b088	data 2329 2392	each timestep is substantially more expensive than a SHAKE step
+Tf0510cf23d2cee6912a7a02666593055	data 2783 2792	Figure 5b
+R73d8b3514e5913b1f208bdd0149e26af	supports Arg1:T9d9af9a5355d90fbaaa13dd0bd62f813 Arg2:T92a070d26677b230c2798938ca328022
+Rc696bd5654ee9fac0984730d7b897b07	supports Arg1:T676562ce10303d5fd810a8ee3ae3b088 Arg2:Tae84c36ad5bc5665cf6788914797bb01
+Reabbb10e5f18710e2f1874b43eb67bfc	supports Arg1:Tf0510cf23d2cee6912a7a02666593055 Arg2:T138cfc6dc688295508e2760277b912ac

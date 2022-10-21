@@ -1,0 +1,26 @@
+Tbcbd46db99cacaf80d6ecab0de414bca	own_claim 535 590	The simple 1D chain resists stretching, but not bending
+T5929b889b1423fcfd0685086bb36738d	own_claim 668 749	Our method shows asymptotically better performance as permissible strain vanishes
+T2e5a05e7ced05f97117be41f0ec3e382	data 755 764	Figure 4a
+Tcdaa120de1023143c9779fe051c36dec	own_claim 778 851	our algorithm exhibits favorable performance as mesh resolution increases
+T0b2446eb196f2ebd97951fb1fd256755	data 857 866	Figure 4b
+T59a67215bff8699dd94649ff18eea347	own_claim 964 1072	there exists considerable difficulty in setting spring coefficients a priori to satisfy a given strain limit
+T314318ad4cad33c5ab38d7361f1d054e	data 1078 1121	settings more pragmatic than a simple chain
+T9d9af9a5355d90fbaaa13dd0bd62f813	data 1131 1163	the following draping experiment
+T87be0c992b5bc90ab114b7da751631bd	own_claim 1165 1178	we are unable
+T53061e586c73c95402e7e903aaa0de3a	own_claim 1209 1274	to set spring coefficients that achieve a prescribed small strain
+Tb84956929ff2cbe9a89ab2f04946ff63	own_claim 1276 1358	This explains why spring methods are often treated with strain-limiting procedures
+Ta7c067cf645d0ef05b8f076866e495e7	own_claim 2086 2146	the algorithm requires extremely small timesteps to converge
+T251ebd20dac990d8475fa14ea0202695	own_claim 2152 2191	each timestep is relatively inexpensive
+T63a216ffe03dfb7a808a3a6c3cd22066	data 2196 2245	matrix re-assembly and re-factoring is infrequent
+Tae84c36ad5bc5665cf6788914797bb01	own_claim 2247 2312	ICD is able to use larger timesteps than SHAKE and still converge
+T676562ce10303d5fd810a8ee3ae3b088	data 2329 2392	each timestep is substantially more expensive than a SHAKE step
+Tfdce8195786b5e6337726f3c5e77ba75	own_claim 2394 2420	the overall time is higher
+Td662bc3b0f5ffc4fd0202af964d6d79b	own_claim 2592 2727	All CLM methods scale equally well, asymptotically better than the strain limiting approach, with the fast projection being the fastest
+T8a3cb29da01c1ecd2af509712e0795b3	data 2732 2756	we refine the resolution
+Tff6538c3fad94179da98ca075f0fadd6	data 2762 2780	allow strain of 1%
+Tf0510cf23d2cee6912a7a02666593055	data 2783 2792	Figure 5b
+T138cfc6dc688295508e2760277b912ac	own_claim 2796 2852	the fast projection method outperforms the other methods
+Td01ef72c05b8c51c5adb04f780d85c15	data 2983 2992	Figures 7
+Tb65d94c21edc3fdac2dfc3b58b28d5af	data 2997 2998	8
+Tb1ee4a65aca1a86ff303b417a32a880a	own_claim 3066 3145	fast projection is capable of producing complex, realistic simulations of cloth
+

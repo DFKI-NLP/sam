@@ -1,0 +1,4 @@
+T551a479219a73595636dcc13eb24f918	background_claim 1591 1663	In these regions correspondence is essential for detailed reconstruction
+Tda96020c4ae97051b822223f755d3513	background_claim 1668 1698	can be challenging to identify
+R5e65a4b05a46f8a1e50cf6d10e19bbce	contradicts-GOLD Arg1:T551a479219a73595636dcc13eb24f918 Arg2:Tda96020c4ae97051b822223f755d3513
+R1d12b2b6f37be0f0d5c05b4aa1019af5	supports Arg1:T551a479219a73595636dcc13eb24f918 Arg2:Tda96020c4ae97051b822223f755d3513

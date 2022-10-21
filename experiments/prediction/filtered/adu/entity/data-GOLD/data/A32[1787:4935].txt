@@ -1,0 +1,21 @@
+<H1>1 INTRODUCTION</H1>
+      
+      Wrinkles add life to garments in fashion. Figure 1 illustrates how wrinkles are important for visual realism. In this section we outline the problem and the motivation behind the work. In order to capture realistic wrinkles on a real-life garment, from a mere geometric point of view, the number of triangles required can be easily upto a hundred thousand. Such a large number of triangles put cloth simulation off from interactive speeds, even with adaptive time steps, introduced recently 
+[ 1 ]. Apart from simulation time, the large triangle count increases the rendering time and the cost significantly. In order to avoid these, one can increase fineness of triangles only in the potential regions where wrinkling might occur. This is very well possible due to advances in the triangulation and interactive systems developed 
+[ 2 , 7 , 8 , 13 ]. Even then, a significant problem remains: how to estimate the regions and the orientations of wrinkles. Cloth has very large in-plane deformation stiffnesses compared to its ability to bend and shear. This gives rise to very stiff equations of motion. The problem of solving stiff equations is successfully dealt with by the use of an implicit method for numerical integration by Baraff et al
+[ 1 ]. Here, though the problem of stiff equations has been tackled, it has been the strong motivation for the authors behind developing the methodology specifically for wrinkles. Even if one wishes to have a fine triangular mesh, using robust and fast numerical solvers and having patience for long computations, it is not guaranteed that the wrinkles will be satisfactory. 
+
+Accurate and fast collision detection methods
+[ 12 ], constraint methods
+[ 5 , 6 ] and good deformable models
+[ 6 , 9 , 10 ] have proved to give quality cloth animation. However, real-life wrinkling is a complex phenomenon. It is characterized by frictional forces (especially between body and cloth) which are difficult to model. Collision response methods and friction models developed so far have been rather simple for such a complex problem and robust numerics too. We take a geometric and texture based approach to wrinkling. As it is difficult to physically simulate real life wrinkles, the user designs them interactively as a bump map on a coarse mesh cloth/garment. It is then animated by modulating it as per cloth deformation. The key theme is conservation of cloth area. The work is continuation of earlier work 
+[ 11 ]. 
+Other attempts to model wrinkles include those by Gotoda et al 
+[ 3 , 4 ] and Wu et al 
+[ 14 ]. The following section dwells on issues of animating cloth using a coarse mesh and describes how a geometric wrinkling method can be developed based on area conservation. Section 3 introduces the algorithm, leaving mathematical details of the formulation to Appendix A. Section 4 describes implementation issues of the algorithm and extends it for practical use. Section 5 gives a case study of a typical animation using the algorithm. Finally a conclusion and future work are given.
+      
+        
+        Figure 1: Wrinkles in fashion
+      
+      
+        

@@ -1,0 +1,8 @@
+T831ca68a961f28f9ae5c64a55732648f	own_claim 1657 1739	there is a significant disparity in the final optimized values from the two trials
+T0d358eebe4ad18f01cd5b77e757b042a	own_claim 3650 3788	a more general solution for parameter identification using our framework is to simultaneously optimize across multiple trials of different
+Tde2dca3d01a39563c1def661b705cc67	own_claim 1562 1646	a very good visual match between the simulations with their counterpart real fabrics
+T42d68c0a1e5ddd32c0a02915e39890c3	own_claim 3530 3623	This approach seems to produce plausible results with skirts and other validation experiments
+R64736980b606a29c19233ebb04264a27	contradicts-GOLD Arg1:Tde2dca3d01a39563c1def661b705cc67 Arg2:T831ca68a961f28f9ae5c64a55732648f
+R267478bf723b54003623700f53b5b663	contradicts-GOLD Arg1:T42d68c0a1e5ddd32c0a02915e39890c3 Arg2:T0d358eebe4ad18f01cd5b77e757b042a
+Rf99d7962f37dd2196254b0e425438a88	contradicts Arg1:Tde2dca3d01a39563c1def661b705cc67 Arg2:T831ca68a961f28f9ae5c64a55732648f
+R05f03cc5753782a79077b488c402da23	contradicts Arg1:T42d68c0a1e5ddd32c0a02915e39890c3 Arg2:T0d358eebe4ad18f01cd5b77e757b042a

@@ -1,0 +1,53 @@
+<H1>4. Cloth Models</H1>
+        Our goal is to study the fidelity of constitutive models of cloth—models that predict the forces produced in the cloth in response to deformations. The input of such a model is the positions of the vertices x 1 , . . . , x n ∈ IR 3 that define the deformation state of the sheet (analogous to strain in continuum mechanics) and the output is the forces that act between those vertices in response (analogous to stress). Although some of the models we look at are discrete in nature, we will use the convenient terms stress and strain to describe them.
+        
+          
+          Figure 5: Selected frames from more elaborate cloth manipulation, demonstrating complex deformations. Input image (left) and 3D reconstruction shown from two viewpoints.
+        
+        c 2012 The Author(s) c 2012 The Eurographics Association and Blackwell Publishing Ltd.
+        Miguel et al. / Data-Driven Estimation of Cloth Simulation Models
+      
+      
+        <H2>4.1. Strain Metrics</H2>
+        Most elastic cloth models separate membrane (i.e., stretch and shear) and bending deformation energies. In both cases, deformation energy density can be described by the product of strain (ε) and stress (σ), i.e., W = 2 1 σ · ε. Furthermore, most of these models define separable scalar stress components as linear functions of individual scalar strain metrics. In that case, the energy density of each deformation component i can be written as W i = 1 2 k i ε 2 i , where k i ε i = σ i and k i is the stiffness coefficient corresponding to the deformation component ε i . The force density due to each ε i follows as F i = − W i = −σ i ε i = −k i ε i ε i . We have evaluated three models for membrane deformation that fit this description (spring systems, the soft constraint model by Baraff and Witkin 
+[BW98]
+ and the diagonalized St.Venant-Kirchhoff (StVK) model by Volino et al. [VMTF09]), and two bending models (spring systems and the edge-based bending model in Discrete Shells [GHDS03]). Considering possible anisotropic behavior, we distinguish six different strain components on regularly triangulated cloth: weft-stretch (ε s,u ), warp-stretch (ε s,v ), shear (ε s,uv ), weft-bend (ε b,u ), warp-bend (ε b,v ), and diagonalbend (ε b,uv ). Next, we describe in detail the strain metrics for the individual deformation components in the selected models. Note that not all force models define the quantities below explicitly as strains, as they often rely on the resolution of the discretization, or they differ simply by scale factors that can be embedded in the stiffness k i . We use continuum strain definitions in all cases to fit them in a common formulation that allows us to easily compare the models. The details about the computation of strain gradients for the various cloth models, needed in the force computation, are given in their respective original papers. Spring Membrane. All deformation components are modeled based on springs, with weft and warp ring-1 springs for stretch, and diagonal ring-1 springs for shear. The springbased strain for each deformation component i can be defined as the relative change of edge length,
+        
+          1
+          ε s,i = l / l 0 − 1,
+        
+        with l the current length of the spring, and l 0 its rest length.
+        Diagonalized StVK. The membrane deformation is defined using the Green-Lagrange strain tensor, a formulation introduced to computer graphics by Terzopoulos et al. [TPBF87]. Given a per-triangle mapping function w from the undeformed 2D configuration (x a,0 , x b,0 , x c,0 ) to the deformed
+        3D configuration (x a , x b , x c ), the deformation gradient can be computed as −1 (w u w v ) = (x b − x a x c − x a ) x b,0 − x a,0 x c,0 − x a,0 .
+        Then, the components of the membrane Green-Lagrange strain are defined as:
+        
+          3
+          w u 2 − 1 w v 2 − 1 T ε s,u = , ε s,v = , ε s,uv = w u w v . 2 2
+        
+        Volino et al. [VMTF09] approximate the standard StVK model zeroing out off-diagonal terms in the matrix that relates strain and stress, σ = Eε. Then, in the diagonalized StVK, each membrane stress component depends only on its corresponding strain component, σ s,i (ε s,i ). Soft Constraints. Weftand warp-stretch are measured through a subtle modification of the Green-Lagrange strain tensor, defining terms that are quadratic in positions instead of quartic:
+        
+          4
+          ε s,u = w u − 1, ε s,v = w v − 1, ε s,uv = w u T w v .
+        
+        Spring Bending. The deformation is measured based on weft and warp ring-2 springs for weftand warp-bend, and diagonal ring-2 springs for diagonal-bend. Same as for membrane deformation, strain is measured as the relative change of edge length (1).
+      
+      
+        Discrete Shells Bending.
+        It is measured as the change of
+        dihedral angle at edges:
+        
+          5
+          ε b,i = 1 / h 0 (θ − θ 0 ),
+        
+        with θ the current angle, and θ 0 the undeformed angle. Grinspun et al. [GHDS03] and Bridson et al. [BMF03]
+ discovered concurrently the appropriate weighting of the angle change in order to model homogeneous bending on irregular triangle meshes with a homogeneous stiffness. Grinspun et al. define h 0 as a third of the average of the heights of the two triangles incident to the edge. This definition implies that bending energy density is integrated over edgecentered rectangles of size l 0 × h 0 . With our separation of weft-, warpand diagonal-bending to capture anisotropy, the bending models in Discrete Shells and by Baraff and Witkin 
+[BW98] are equivalent up to a stiffness scale factor.
+      
+      
+        <H2>4.2. Nonlinear Stress-Strain Curves</H2>
+        The generic force density model F = −σ ε defined above assumes a linear stress-strain curve σ = kε. However, stressstrain curves are potentially nonlinear functions. Then, for each deformation component, we model stress as a function σ i = k i (ε i )ε i , with a strain-dependent stiffness k i encoded using Hermite splines. We enforce non-negative constraints on the stiffness values at control points. The resulting nonlinear force density function, F i = −k i (ε i )ε i ε i yields a conservative force field, but note that the elastic energy density can no longer be defined simply as 1 2 kε 2 , and would now require the integration of the stiffness function. Although only Volino et al. [VMTF09] propose a general nonlinear stress-strain relationship (though many systems use some form of strain limiting instead), the same construction can easily be built on any of our selected models. Because linear models fit the data poorly, we used the nonlinear model in all cases, resulting in a consistent set of models, parameterized by the number of spline control points, which reduces to the widely used linear models when each spline has a single control point.
+        c 2012 The Author(s) c 2012 The Eurographics Association and Blackwell Publishing Ltd.
+        Miguel et al. / Data-Driven Estimation of Cloth Simulation Models
+      
+      
+        

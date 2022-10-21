@@ -1,0 +1,36 @@
+Tbb3c5beffd9581c08d2a7bef5eec34ed	background_claim-GOLD 216 257	the numerical resolution of the system is
+T5aebee69bb6a9ad4a868d97e4b11f20a	background_claim-GOLD 268 306	critical to the total computation time
+Tbc781f1cf0572423a6e1d8aa93782217	background_claim-GOLD 15439 15516	Most mechanical simulations work with numerical equations that are not linear
+Td5e0e1ea8063b53bd78c0edf01bf5be3	background_claim-GOLD 15518 15566	There are two main reasons for such nonlinearity
+Tda2730d637df40ae6b44c3309de0372e	background_claim-GOLD 15570 15638	The equations describing the mechanical behavior laws are not linear
+T558087649508c4fa0362098e45a41191	background_claim-GOLD 15654 15813	the strain-stress relation describing elasticity may actually be complex curves, which furthermore may take into account timedependent and hysteretic behaviors
+T8a6718354c16611e4d6da77894fa7dfd	background_claim-GOLD 15817 15972	During the simulation, the orientation of the mechanical elements change, and this modifies the expressions of the mechanical laws in the world coordinates
+T216bd78c36b3441fbf1c8b2db716cad7	background_claim-GOLD 15974 16160	While rarely causing numeric “explosions” as with explicit methods, nonlinearity may disrupt the stability of simulations integrated with implicit models with large disturbing vibrations
+Tfde3cb5bd7074247137e8a0b70ae33c9	background_claim-GOLD 16477 16644	the hypothetical equilibrium state is derived from the knowledge of the Hessian matrix, which relates the firstorder evolution of the forces as the deformations change
+Tc4c34551ebcdfb54584765d3c48578cf	background_claim-GOLD 16646 16759	Nonlinearity causes this matrix to change between the successive iterations, and this evaluation to be inaccurate
+T165621aa94940da08c6773d61c00b394	background_claim-GOLD 16761 16864	despite high system resolution accuracy that can be reached with numerous Conjugate Gradient iterations
+T770f4a45ccf6003fedf63f515ee09f30	background_claim-GOLD 17301 17391	stabilizing the simulation, at the expense of extra numerical damping and slow convergence
+T1635c3be71129387145dc498ee5ce8a5	background_claim-GOLD 17393 17468	This is particularly true for drastic linearisations as for example used in
+T6a4fc131f073cd88c63058d4580932ed	background_claim-GOLD 17481 17603	Knowledge of the expected state changes between successive time steps are required to perform this approximation correctly
+Tf3870104836abebfbd8717e7d364530b	background_claim-GOLD 17641 17712	one solution is to take the steepest parts of the curves as derivatives
+Tbfab1319c8154af2d7a44f8272fe2f43	background_claim-GOLD 17759 17852	isotropic derivatives considering force evolution equally in any directions may be considered
+T121aeb55fd1dc97448ce65a506baf63a	background_claim-GOLD 17863 18036	the more drastic these approximations are, the less accurate the simulation will be for dynamic simulations, and the slower the simulation will converge for draping problems
+T63b08d35e6f8569e9ced51040dfead20	background_claim-GOLD 18038 18066	A nice solution described in
+T4c202bd8ef2f66cb614076e452b9b45e	background_claim 216 257	the numerical resolution of the system is
+T55cecadc9fbfee2d4b57d66d8539bebd	background_claim 268 306	critical to the total computation time
+Tb49dccfc5b92f97d0bbd5ba2b87e484c	background_claim 15439 15516	Most mechanical simulations work with numerical equations that are not linear
+T32ce67691490cfb9d4f6ed69a9be4e44	background_claim 15518 15566	There are two main reasons for such nonlinearity
+T5a14466f474ffcb2f59b8577a97c6041	background_claim 15570 15638	The equations describing the mechanical behavior laws are not linear
+T1d31df297efba8f131a7d0cf6eae5e67	background_claim 15654 15813	the strain-stress relation describing elasticity may actually be complex curves, which furthermore may take into account timedependent and hysteretic behaviors
+Tb4068503fa88e108461afc59dee1dff7	background_claim 15817 15972	During the simulation, the orientation of the mechanical elements change, and this modifies the expressions of the mechanical laws in the world coordinates
+Tc51c94a9d260f3ea4ce093078d307aad	background_claim 15974 16160	While rarely causing numeric “explosions” as with explicit methods, nonlinearity may disrupt the stability of simulations integrated with implicit models with large disturbing vibrations
+Tc75dbdd3f9e7d51fc693f209d21eef57	background_claim 16477 16644	the hypothetical equilibrium state is derived from the knowledge of the Hessian matrix, which relates the firstorder evolution of the forces as the deformations change
+Tbc6f5ec5566417b5771b1ce07f967826	background_claim 16646 16759	Nonlinearity causes this matrix to change between the successive iterations, and this evaluation to be inaccurate
+T1dede6ae95171439eb270fa528448f38	background_claim 16761 16864	despite high system resolution accuracy that can be reached with numerous Conjugate Gradient iterations
+Tb1cd988d6364e9145fa6a76ef7265a17	background_claim 17301 17391	stabilizing the simulation, at the expense of extra numerical damping and slow convergence
+T5935a55209fff29da6fb56cbc6c80fda	background_claim 17393 17468	This is particularly true for drastic linearisations as for example used in
+Td7345911115e3a9dcca1f6a1f7b16986	background_claim 17481 17603	Knowledge of the expected state changes between successive time steps are required to perform this approximation correctly
+T8d77e9093a44d8aef6c6e1a04d1767b5	background_claim 17641 17712	one solution is to take the steepest parts of the curves as derivatives
+T212c85ec2bd9fcb71fa71ed5b3d437f5	background_claim 17759 17852	isotropic derivatives considering force evolution equally in any directions may be considered
+T516f04a0442b9384e41ccec68632cc38	background_claim 17863 18036	the more drastic these approximations are, the less accurate the simulation will be for dynamic simulations, and the slower the simulation will converge for draping problems
+T414fd3e8ed745e2873582d005f357c3a	background_claim 18038 18066	A nice solution described in

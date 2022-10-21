@@ -1,0 +1,36 @@
+T67b6b548cf278a9709001a1acb02e7e0	background_claim-GOLD 1194 1232	compressibility effects are negligible
+T381f1dc8bae47ca5f50dcd771750565b	background_claim-GOLD 1238 1302	the wind is modelled as an incompressible constant density fluid
+T01d758aa8b7a4da690dc53ed6c7e2531	background_claim-GOLD 1304 1355	This notably simplifies the numerical approximation
+Td6e2d6be1d9884dbd26d2d68691d6a91	background_claim-GOLD 2302 2372	To solve these equations numerically they first have to be discretised
+T06a9db3dac127f648f5d17b9860b9299	background_claim-GOLD 3295 3358	Equation (4.2) does not provide a divergent-free velocity field
+T6d44928e1db0294f9e2a668129de5997	background_claim-GOLD 3625 3712	It enables us to model global effects like convection and diffusion on a physical basis
+T50020f27c9bd3fbed740be2e4bda6765	background_claim-GOLD 4416 4523	Rigid objects like walls will influence the fluid field but will not be affected by fluid forces themselves
+T4ef3b09abc0e5a8b919c1ad199732e45	background_claim-GOLD 4525 4635	Deformable objects like cloth are supposed to both experience fluid forces and itself influence the fluid flow
+T942f99f4bc907166c7519ba3df3021c0	background_claim-GOLD 4650 4671	is a major difficulty
+T410e1960fe90602ba7195aca118458b2	background_claim-GOLD 4937 5032	the wind velocity orthogonal to the object’s surface is just what causes the aerodynamic forces
+Tc1b81ec151a1e7f7bda18d9a6ba0c39b	background_claim-GOLD 5034 5184	Without further remedial action setting the boundary according to the Neumann condition would mean that the fluid will not exert forces on the objects
+T6e7dc937d22b121c75369f9025056825	background_claim-GOLD 7101 7260	A simple approach to generate complex air flows is to define a wind field by mathematical functions which assign to each point in space a unique velocity value
+T91549620a28beec44f3505ece8dfa8f2	background_claim-GOLD 8512 8624	Another more serious drawback of this model for our application consists in the lack of interaction with objects
+T8a2cc0687dac1ebbc7be7b4f5d3fd66c	background_claim-GOLD 8626 8704	The wind flow defined by the primitives will not react on objects in the scene
+T6a9098fce38e7b978d3db594e559747b	background_claim-GOLD 13173 13358	For physically accurate simulations based on the common method in fluid dynamics the model introduced by Stam produces realistic effects which global wind field models can never achieve
+T001f48d121207207534439df418a363d	background_claim-GOLD 13360 13448	It produces nice swirls and vortices derived from dynamical characteristics of the fluid
+T34ac06c7c2684c04f4d63e2a7618ac0e	background_claim-GOLD 13458 13504	implementing the fluid solver is quite complex
+Te61a8b5931d83e4a710da9b3fba9e322	background_claim-GOLD 13509 13566	using a high grid resolution is computationally expensive
+Tf9851966934d887e7988d0537880065b	own_claim 1194 1232	compressibility effects are negligible
+T722b7994721905d3251b63a013df8a04	own_claim 1238 1302	the wind is modelled as an incompressible constant density fluid
+T1ab0bf8d551bbd6c818c3fc089e9411c	own_claim 1304 1355	This notably simplifies the numerical approximation
+T8f7fc381383dded988f53eff6bafe61a	own_claim 2302 2372	To solve these equations numerically they first have to be discretised
+T7f96189a40344b1e9b7486c368d082be	own_claim 3295 3358	Equation (4.2) does not provide a divergent-free velocity field
+T1ced165cea58ed8102c626f72d24c420	own_claim 3625 3712	It enables us to model global effects like convection and diffusion on a physical basis
+T0d68c53688ae8b7a6fdc3912590fa74d	own_claim 4416 4523	Rigid objects like walls will influence the fluid field but will not be affected by fluid forces themselves
+T43a7e2b925387e9fdedb199e188a8380	own_claim 4525 4635	Deformable objects like cloth are supposed to both experience fluid forces and itself influence the fluid flow
+Te2f7a772e5da6306295d4dc43a206b77	own_claim 4650 4671	is a major difficulty
+Tada8ddefd237e4a49365a98d86c00b76	own_claim 4937 5032	the wind velocity orthogonal to the object’s surface is just what causes the aerodynamic forces
+T873e352a04b9bae8ff9895a767a50049	own_claim 5034 5184	Without further remedial action setting the boundary according to the Neumann condition would mean that the fluid will not exert forces on the objects
+Taca7b4aa23314e18b99ed82c033d0f7b	own_claim 7101 7260	A simple approach to generate complex air flows is to define a wind field by mathematical functions which assign to each point in space a unique velocity value
+T5b82149df0d4737853efacc6c2ff46db	own_claim 8512 8624	Another more serious drawback of this model for our application consists in the lack of interaction with objects
+Tc2aeca4c9131eeec0f36208d28224a83	own_claim 8626 8704	The wind flow defined by the primitives will not react on objects in the scene
+Tc9989aa15b8164cc05d148bd6f2c6f8c	own_claim 13173 13358	For physically accurate simulations based on the common method in fluid dynamics the model introduced by Stam produces realistic effects which global wind field models can never achieve
+Tc1736a59751011cab2b19c6fd6366112	own_claim 13360 13448	It produces nice swirls and vortices derived from dynamical characteristics of the fluid
+Te0aab8573b70afff1b1678b16681026a	own_claim 13458 13504	implementing the fluid solver is quite complex
+Tb58c79d74bf202e6dfd4d287b551d15a	own_claim 13509 13566	using a high grid resolution is computationally expensive

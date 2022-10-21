@@ -1,0 +1,5 @@
+Td3b6aa1a73e09b91ee9e841522246f82	data 7410 7421	Section 4.1
+Tc7a8d15f3d04308d80d9e4f4921dbcab	data 7299 7310	Section 3.2
+T75b6f61337b2709f54edbeeecf0d97e9	own_claim 7190 7285;7312 7406	we largely alleviate these issues with the design of the five isolated deformation measurements which allow us to separately fit stiffness curves for the six deformation components described
+R6377febe535903796cac68d66ff37b9a	supports Arg1:Tc7a8d15f3d04308d80d9e4f4921dbcab Arg2:T75b6f61337b2709f54edbeeecf0d97e9
+R036adb807cbed9c78c696675bef895ff	supports Arg1:Td3b6aa1a73e09b91ee9e841522246f82 Arg2:T75b6f61337b2709f54edbeeecf0d97e9

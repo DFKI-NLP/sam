@@ -1,0 +1,96 @@
+T3888dd7a3eab88db6c5f7d4044501acc	background_claim-GOLD 37 77	Wrinkles add life to garments in fashion
+Tf20f04c569bd0b85d2922ac0b3b4e44e	data-GOLD 222 320	In order to capture realistic wrinkles on a real-life garment, from a mere geometric point of view
+T5f1cabc15d06294856d2b3360d91154f	background_claim-GOLD 322 392	the number of triangles required can be easily upto a hundred thousand
+T782d3ec051ef6dd6c333f4cd13312da7	background_claim-GOLD 394 527	Such a large number of triangles put cloth simulation off from interactive speeds, even with adaptive time steps, introduced recently
+Tf9f20be5aa6416ce9059b4986257ae87	data-GOLD 531 532	1
+Tecf6d77fdc504c4dba5c86c3f47491cd	background_claim-GOLD 564 644	the large triangle count increases the rendering time and the cost significantly
+Tf43a68c250e466914965d026b402758c	background_claim-GOLD 671 767	one can increase fineness of triangles only in the potential regions where wrinkling might occur
+Tfe3a9ad3e45f9a00cef3bf16bb67bde5	background_claim-GOLD 769 795	This is very well possible
+Te8ad9801e10a942fc30a5663b6badae3	data-GOLD 803 866	advances in the triangulation and interactive systems developed
+T97a3568dadc0a491ce3e5ba966b4439b	data-GOLD 870 871	2
+T74b9173256cedb574293b6fc07ebcab5	data-GOLD 874 875	7
+T930fd382145a650b6e101bf732150efa	data-GOLD 878 879	8
+Tefd677aaabbdc15fb061d2ada6dd4fe4	data-GOLD 882 884	13
+Tedbb46f66b9f8c8c2c5a221e3010a28f	background_claim-GOLD 899 928	a significant problem remains
+Tfd8cf16f532f53d32ac80ba836dc1710	background_claim-GOLD 992 1087	Cloth has very large in-plane deformation stiffnesses compared to its ability to bend and shear
+T2bb29bd18cc2e6d0da9fb84a8645b1e3	background_claim-GOLD 1089 1138	This gives rise to very stiff equations of motion
+T1b1f156c72b3259613d4469203c30530	background_claim-GOLD 1140 1280	The problem of solving stiff equations is successfully dealt with by the use of an implicit method for numerical integration by Baraff et al
+T647adf98be8793f2c641379d32df420a	data-GOLD 1283 1284	1
+Tcd35762dcb0ed872bfed101a0bd518a3	background_claim-GOLD 1350 1459	it has been the strong motivation for the authors behind developing the methodology specifically for wrinkles
+Te1e1c6997d5a84d3523ca2098d5bb3ec	background_claim-GOLD 1595 1654	it is not guaranteed that the wrinkles will be satisfactory
+Tc6db5046a474b7eaf7ecce865fa66e2d	background_claim-GOLD 1658 1703	Accurate and fast collision detection methods
+Ta1372874106f19d0643f34fe6c54be4f	data-GOLD 1706 1708	12
+T51c5d85d4554f24ba86e824ec68751b1	background_claim-GOLD 1712 1730	constraint methods
+T5b727f28f48f99977186722c37242f02	data-GOLD 1733 1734	5
+T818ea7ce7ede2a8a00049896a980dc7a	data-GOLD 1737 1738	6
+T3e802de642730f61692a6395ab9b1e31	background_claim-GOLD 1745 1767	good deformable models
+Tb03175506c753f5f2e56152e7d376b18	data-GOLD 1770 1771	6
+Tb990076d124eece838b5b7c5a2412a3f	data-GOLD 1774 1775	9
+T1845f098f32e19d529db9cbc34083388	data-GOLD 1778 1780	10
+T86111a6fc26e5e4d51865b01b0bd9b36	background_claim-GOLD 1783 1826	have proved to give quality cloth animation
+Ta16edb4de45b4d39304051b8dd5e76c0	background_claim-GOLD 1837 1880	real-life wrinkling is a complex phenomenon
+T74f43ecb83e0d8ad059b249e0d22c68c	background_claim-GOLD 1882 1922	It is characterized by frictional forces
+Tf3caf3ef068f03b8ef0850dca36b572f	data-GOLD 1935 1957	between body and cloth
+Tf431212cd17f44a19ea36fcbcc79edb3	background_claim-GOLD 1959 1987	which are difficult to model
+Tdfb1a2585b1b9da9ee0949af6acf8b4b	background_claim-GOLD 1989 2035	Collision response methods and friction models
+T873ce2660f66d111c0869056bfa8d822	background_claim-GOLD 2053 2127	have been rather simple for such a complex problem and robust numerics too
+Te631a5a362a10d11a428b34e07566d23	background_claim-GOLD 2193 2250	it is difficult to physically simulate real life wrinkles
+Tc4d95755d00adabf0e380c588e7a1764	background_claim-GOLD 2397 2440	The key theme is conservation of cloth area
+T7830cda4b7016b780aaa4712e093a13b	background_claim-GOLD 2442 2482	The work is continuation of earlier work
+Te71150ec88cff9844966ceced7b3f63e	data-GOLD 2486 2488	11
+Tba9e4eb5e6dcefe5d6a47ff6cccf1a02	background_claim-GOLD 2493 2555	Other attempts to model wrinkles include those by Gotoda et al
+T4b8a8e42a7241c2e304b9fa93e3c0cee	data-GOLD 2559 2560	3
+Te3d0ca2e4f7c8ef9c234014a993e0c6a	data-GOLD 2563 2564	4
+T942c6da67dab3da2798264b288ecc696	background_claim-GOLD 2567 2579	and Wu et al
+T5bfb61b5d7a3e07b59f0736021d7d2e9	data-GOLD 2583 2585	14
+Tcc7aa65a12dfda652f09a66b066b6587	background_claim 37 77	Wrinkles add life to garments in fashion
+T22edfa16f21ecfe6b65e3f9a82c52a02	data 79 87	Figure 1
+T7ad520f946ae7b8a1f6f1817458e3092	background_claim 104 145	wrinkles are important for visual realism
+Tdbfe0567caefc8a2f2d893bb9247f566	own_claim 322 392	the number of triangles required can be easily upto a hundred thousand
+T7adf7e78d76e4cddb50793c37c5f0446	background_claim 394 506	Such a large number of triangles put cloth simulation off from interactive speeds, even with adaptive time steps
+Tcdcb560675222a8a94654a333661d044	data 531 532	1
+Tc292ab326cc258855c5ebccfda415b64	background_claim 564 644	the large triangle count increases the rendering time and the cost significantly
+T79b11312a7f7257f93be8b98de4e66fc	own_claim 646 767	In order to avoid these, one can increase fineness of triangles only in the potential regions where wrinkling might occur
+T280713b79d909483c2c1d79a13805d7d	background_claim 769 866	This is very well possible due to advances in the triangulation and interactive systems developed
+T814a039881f2aa31e6a2355349b25a31	data 870 871	2
+Tc864bd456639ac2438a220c05cc5c1ff	data 874 875	7
+T6d343b61f373ee6fb51bd80788c5bb41	data 878 879	8
+T05a8bd428470d9798e2e2e31beacda4e	data 882 884	13
+Ta16b6210c35dfea4c6b7f5b49cc72498	background_claim 899 990	a significant problem remains: how to estimate the regions and the orientations of wrinkles
+T534588ec49fdab9a02a4c797c1948b94	background_claim 992 1087	Cloth has very large in-plane deformation stiffnesses compared to its ability to bend and shear
+Tf167091fa55c08169da832de1f6149f4	background_claim 1089 1138	This gives rise to very stiff equations of motion
+T78dea6cfcfc812cdd665de69df3a42ba	background_claim 1140 1280	The problem of solving stiff equations is successfully dealt with by the use of an implicit method for numerical integration by Baraff et al
+T4a6f1ed0580a379ae8384089697287c7	data 1283 1284	1
+Tc94ec5088ccc46834b1ae9093fddc7cb	background_claim 1301 1348	the problem of stiff equations has been tackled
+Tad70cb44c206964973c47ececc851ff2	background_claim 1350 1459	it has been the strong motivation for the authors behind developing the methodology specifically for wrinkles
+T802d29abd2770ce2b02f17fd646d76c7	data 1469 1510	one wishes to have a fine triangular mesh
+Td0d04f9f9b2dd70c00c9484c5c3ebd32	data 1512 1551	using robust and fast numerical solvers
+T23db99f053ea3e5a11dada9329686dd7	data 1556 1593	having patience for long computations
+T73490205937a324539d86fd0200087e4	background_claim 1595 1654	it is not guaranteed that the wrinkles will be satisfactory
+Tfc867475ba02662c5ea418b9578fcfc1	background_claim 1658 1703	Accurate and fast collision detection methods
+Td440e38c7752a7aac8e376daff098d4a	data 1706 1708	12
+T1c762a35bd605b6d08904ec7ac958132	background_claim 1712 1730	constraint methods
+T533c35fbe9104cfd90af37841ba81edb	data 1733 1734	5
+Tdbf03edf9d12f8d2907c9b8c7cc793f9	data 1737 1738	6
+T4a5494d288981fb480bd68218036dd6e	background_claim 1745 1767	good deformable models
+T6eb486c7dd1c2923fb69188f50b2f505	data 1770 1771	6
+T8fc69ad162f1371ca6df5ca2d974771d	data 1774 1775	9
+T33acc53928ce2253216111d6ee1cd57a	data 1778 1780	10
+Ta7f9734c0fc255110af642cbd98b49f3	background_claim 1783 1826	have proved to give quality cloth animation
+T5f375b67f185caad98f2a1ceffde22a7	background_claim 1837 1880	real-life wrinkling is a complex phenomenon
+Td1ca74c710b3b7171c7406278de2fb1a	background_claim 1882 1922	It is characterized by frictional forces
+Taac2f056c30c2c568648776ef4dc1fb7	background_claim 1959 1987	which are difficult to model
+Taa108b6bfe460494a294c4fbba571913	background_claim 1989 2127	Collision response methods and friction models developed so far have been rather simple for such a complex problem and robust numerics too
+Tf7708b971b34ec5c37a018e6ec9a7fe1	data 2193 2250	it is difficult to physically simulate real life wrinkles
+Td33d7f69419f9d199147b68712ca0803	data 2252 2332	the user designs them interactively as a bump map on a coarse mesh cloth/garment
+T7275d6e65be9b9e423e71b13eb540839	own_claim 2334 2395	It is then animated by modulating it as per cloth deformation
+T6bd717bb3b7588fdb75fb3a436e4c511	own_claim 2397 2440	The key theme is conservation of cloth area
+T649ab65b39eef01555ac04def7f228b7	own_claim 2442 2482	The work is continuation of earlier work
+T30da7a78813c261e2f5ab056298b583c	data 2486 2488	11
+T6011a25cbaba9ffa0c4c35a034550bee	background_claim 2493 2539	Other attempts to model wrinkles include those
+T3a999ecfb5cae0f42777e1ef14bfb756	data 2543 2555	Gotoda et al
+T5ea9c2ac39d05522669881e77aa8ef02	data 2559 2560	3
+T3669d1225937b92596fadd94fd5f8396	data 2563 2564	4
+T1d9132a4e0cc2408069f8e38cd141ef6	data 2571 2579	Wu et al
+T2ab854a8146ae584a9390ddac22fe90b	data 2583 2585	14
+

@@ -1,0 +1,10 @@
+Tdc997554a88ab20ee320f11fa2c3452a	own_claim 30 165	Our experiments focus on measuring the performance of enforcing inextensibility using CLM compared to strain limiting and stiff springs
+T97216f1f20c9faf6a94725957a0a1fad	own_claim 167 240	In addition to the direct benefit of fast projection on computation times
+Tf242f22faae6477e79149bade4e2c0a0	own_claim 242 307	further benefits can be reaped from the resulting inextensibility
+T2c7815312e2950c2139f490f828951e5	own_claim 424 520	In adopting the velocity-filtering viewpoint, we gain speed, simplicity, and software modularity
+Tcc2165edd05731e1ac53ac3b486a7104	own_claim 521 575	all key to a practical and maintainable implementation
+T92e77c8a6be98c589fceb7b5b68233b1	own_claim 1086 1142	this drawback does not cause artifacts in our simulation
+Tb35e0c8722a7881f2f1e643abf947592	own_claim 1265 1306	empirically our strain remains negligible
+T6976f60ada588b52ba2c6b7debdd613b	own_claim 1672 1759	the trend in our community is to favor stretching formulations based on penalty-springs
+Tbc223c6cd0667465cfc69798d06e36fb	own_claim 2065 2167	we demonstrate a straightforward filter, with good convergence behavior, for enforcing inextensibility
+Tcffdb938ff7c1f37877b5127f941df27	own_claim 2285 2344	it will spur a renaissance of activity along this direction

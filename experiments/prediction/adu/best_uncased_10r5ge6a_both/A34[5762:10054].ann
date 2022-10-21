@@ -1,0 +1,104 @@
+T083e342599328d00741079f159fab36a	background_claim-GOLD 313 470	Any collision happening within an integration time step always can be detected by this swept volume method, unless the motions of faces are highly rotational
+Te649e91cd7a157223ce7d74464c41ba3	background_claim-GOLD 472 591	An interesting case is where the faces are not actually intersecting but two swept volumes report a intersection anyway
+T4a50317a2204415e514b6793c5550301	background_claim-GOLD 600 636	this case is not an actual collision
+T60f784b699c089f147fc71d943f92add	background_claim-GOLD 638 683	it happens only when two faces are very close
+Tc5c33241043e17bc9a6a752603a39649	own_claim-GOLD 691 737	we resort to the collision report of this case
+T4edadb6b807ce2f93a8ccef119ee89bb	own_claim-GOLD 745 802	we consider this case as a violation of the proximity law
+Tbc609d052f727da7b4fde6d43abe0713	own_claim-GOLD 804 895	We use classical edge-polygon detection algorithms to detect collisions among swept volumes
+Te1876e8ab163ab161b8d06da02e77b58	own_claim-GOLD 897 973	We use this swept volume approach for cloth and the dynamic rigid body alike
+Ta13e51dcacbe23ae5d7025781741414e	own_claim-GOLD 979 1064	for the non-moving rigid body only the surface faces are used for collision detection
+T8e3f37d1ecfcd62dd5dab8619f5febc0	own_claim-GOLD 1079 1190	we add proximity regions to the normal directions of faces of a swept volume to add proximity violation regions
+T583d3da6983d68a3fe74c7d436c15a6d	own_claim-GOLD 1347 1401	detected collisions are reported as pairs of face-face
+Tc26eb41d5951715685b5246ced84997e	own_claim-GOLD 1403 1451	we cannot respond to each collision individually
+T92ddf213996ead8b4883d3d1bba8e38d	own_claim-GOLD 1458 1520	these individual responses may introduce another new collision
+T136cafe5f729fd411d4d3c4d1b1e72e3	own_claim-GOLD 1524 1584	one face may possibly be related to several other collisions
+T06570c33291c1f5781c123f2b18477c7	own_claim-GOLD 1589 1640	we save all detected collisions in a data structure
+T2e29e30011f5dd0161f340388bbab357	data-GOLD 1675 1677	12
+T93012ab8aedd4e75a63acb9ac6cd99a0	own_claim-GOLD 1680 1716	during the collision detection phase
+T8d52356f79db48e120e4c7da484ab63e	own_claim-GOLD 1718 1823	All stored detected collisions will be resolved comprehensively by the rule described in the next section
+T9f7f9bec35d503ca7c6c70caa82c26ba	background_claim-GOLD 1825 1852	Originally a zone of impact
+Tbae385cef56c566937625ae47e1d867f	background_claim-GOLD 1858 1899	is an area where multiple self-collisions
+T3404682888d6173a3c5d4168906c47e5	data-GOLD 1909 1911	12
+T5f4a55f592b25bbe88a10c4fe59d6cdb	own_claim-GOLD 1915 1988	We extend Provot’s definition of an IZ to an area where collisions happen
+T5785b8cae97d91185576d7b213f7fe65	data-GOLD 2913 2946	a face-face collision is detected
+T10daed6b87bdef973d0b8a06fa5b9127	own_claim-GOLD 2948 2983	the entities of each colliding face
+T1297151e94b991d1b5df338db3eb90a5	own_claim-GOLD 3029 3140	are inserted into a CC, where the CC can be encountered by traversing from the particles in using only edges in
+Ta84a795af7af8f7949ed1a79d84396ac	data-GOLD 3148 3167	there is no such CC
+T40146ca04e131174e56ae0a998791f3d	own_claim-GOLD 3169 3181	becomes a CC
+Td7636ccf0e34c91147614a6ca05c8415	data-GOLD 3188 3218	two or more such CCs are found
+Te3aae0b84d5864e9d75311d759294ccf	own_claim-GOLD 3220 3265	these CCs are merged into one CC connected by
+T25b64aa91bcf6fa27954bfcd79cc12f1	background_claim-GOLD 3336 3487	A widely used method for detecting cloth collisions is to put small repellent proximity forces between the cloth surface and the rigid or cloth surface
+T76d043aae5513c4ccab893d227fd0d82	data-GOLD 3490 3491	4
+T54d8fa90a32c7b003cf4d0b6a8ecab52	data-GOLD 3494 3496	14
+T47701ae0d411840dc3a4133c79fa09f8	data-GOLD 3499 3500	3
+T727af7e84378afd8d99c32e42715efdc	background_claim-GOLD 3503 3607	while the actual collisions are tested with pairs of particle-face or face-face of the current positions
+T5a02b751dec98a8bcae179aad3a1752f	data-GOLD 3614 3637	objects are moving fast
+T7265a8beeff64c1a0bddffb6fbc4d723	background_claim-GOLD 3648 3707	these preventive proximity forces cannot prevent collisions
+T2e937554358ec88f876f173681f89782	background_claim-GOLD 3714 3805	a particle can pass through the proximity violation region during one integration time step
+T2783ee0cb742a04d823659fb380393b1	background_claim-GOLD 3807 3837	This problem can be negligible
+T3fe9cd48a05c8b38ce0ea6ea5f17567c	data-GOLD 3843 3882	the integration time step is very small
+T7a06b0abc509bb0552477f816a13733d	own_claim-GOLD 3887 3926	we rarely have those pass-through cases
+Tffbb852699ff38da304fa2a10266d50a	background_claim-GOLD 3942 3970	implicit integration methods
+Tfe7a72b541052c3d8633a60feeb40e91	data-GOLD 3973 3974	3
+T36a2570cc658389aaff5b6bb2f2bb233	data-GOLD 3977 3978	5
+T56f396474c10360abf66fe66850b250a	data-GOLD 3981 3982	7
+T81f859d11132f6f064269311fded7914	background_claim-GOLD 3985 3999	have been used
+T98ab6f5423d679582dda7536761b872d	background_claim-GOLD 4006 4009	for
+T2a4f921971543cbf0353714a05144a44	background_claim-GOLD 4013 4018	cloth
+Tf6f216bd57c6ff1b68e3bddd7845e26e	background_claim-GOLD 4025 4036	simulations
+T35c2ef8f43c85e5a0e18b4a42cd2ac6c	background_claim-GOLD 4053 4056	the
+T81814b53ca93bcfb803f8fc0e863be2b	background_claim-GOLD 4063 4072	time step
+T668917fad25e18663780d538c608bd88	background_claim-GOLD 4078 4081	has
+T2aaddb80f6b26e88455eabfb162d49ca	background_claim-GOLD 4088 4094	become
+Tb10710289fbf0eff32e88e9c3611a24e	background_claim-GOLD 4109 4115	larger
+T03c656b0125d66bfb72d9a967877a3aa	own_claim-GOLD 4134 4182	this penetration problem is no longer negligible
+T0406473dbab9dde4fa2f00109f954841	own_claim-GOLD 4187 4219	we use the swept volume approach
+T2b3281322f80a138c19b5193f0f8b0db	data-GOLD 4223 4225	13
+T3ac9ed34449728df07f5671a953bd08b	data-GOLD 4228 4229	8
+T69dd95a7df5a462a9a7cfcde1ade9919	own_claim 228 311	Connecting these old and new positions of all particles in a face gives us a volume
+T5c6e4886ef19de58de2c7bea0c7ec47f	own_claim 313 419	Any collision happening within an integration time step always can be detected by this swept volume method
+Tf6efedd76f3bcdb45b20f9bd9c8cac68	data 428 470	the motions of faces are highly rotational
+T74df682e83714d5145fc7f736d437ea5	own_claim 472 540	An interesting case is where the faces are not actually intersecting
+T6015fc4a5358d1323e93f80f811a071f	own_claim 545 591	two swept volumes report a intersection anyway
+T76f364f258b1404342914f075924c9bd	own_claim 600 636	this case is not an actual collision
+T9ecb19fe2ceb087ffccaf6a5267c9bd8	own_claim 638 683	it happens only when two faces are very close
+T18dcb4fc0820488cb5fa4d851e1cda69	own_claim 1079 1190	we add proximity regions to the normal directions of faces of a swept volume to add proximity violation regions
+T224083f55e1e8720ec3a0db930dc4277	own_claim 1347 1401	detected collisions are reported as pairs of face-face
+Tfb169574157c9bc3708e06913d5d59b0	own_claim 1403 1451	we cannot respond to each collision individually
+T31eb6f18c33385262d9e085e983fe5f7	data 1458 1520	these individual responses may introduce another new collision
+Tcf58897e4eadc61b303f9528b9dd0334	data 1524 1584	one face may possibly be related to several other collisions
+T8c4080ba1a8668a0d4292d0be2a38a0b	own_claim 1589 1640	we save all detected collisions in a data structure
+Ta4066ee2ea5b9b051fa86d1c6943218c	own_claim 1680 1716	during the collision detection phase
+Tc4c0d5ff49facbc69b8cd8687c4808c8	own_claim 1718 1793	All stored detected collisions will be resolved comprehensively by the rule
+T0c8f4abc5b0c851bcbf7979c1afd874c	data 1909 1911	12
+T347791049cc270432ff0e9b494fcee43	data 2692 2715	for all particles P 2 A
+Td1a6c51b91b6874ec6a7ec29fea25ca3	data 2718 2798	P can be encountered by traversing from any other particle in A using edges in A
+Td4848d7e12501d2d7f8091f893183c31	own_claim 2812 2839	the area A is non-visitable
+T85d3b9424fafe59be5aca0f5ca05dc2a	data 2913 2946	a face-face collision is detected
+Te2824e1780d4e672853e886741efc571	data 2948 2983	the entities of each colliding face
+T965e56da6a05836176f5ca130f06be88	own_claim 3029 3051	are inserted into a CC
+Td67a7a96471e095a2d77fd637c0158d3	data 3148 3167	there is no such CC
+Tf4200ebed768b20d430cce240eafdf1d	own_claim 3169 3181	becomes a CC
+Td61ca9f87f51bcb631e2834dd71fbb9f	data 3188 3218	two or more such CCs are found
+Tc00d9adc81a66d3e78640a87675b7285	own_claim 3220 3265	these CCs are merged into one CC connected by
+T2e980abc31d075fef30b20a3c7e4d4d0	background_claim 3336 3487	A widely used method for detecting cloth collisions is to put small repellent proximity forces between the cloth surface and the rigid or cloth surface
+T79b86e10c0c062d2b6c1eb6ff16b295d	data 3490 3491	4
+T46df1d68aabb19921c3a7e533cad3496	data 3494 3496	14
+T42b06230868bc321310ca4170df18b62	data 3499 3500	3
+T1ef42b572429a57701d238eeb3a42028	own_claim 3509 3607	the actual collisions are tested with pairs of particle-face or face-face of the current positions
+T0782582d47220a9c0edf99b8383b83a3	data 3614 3637	objects are moving fast
+Td8af313a4ddc4998d5b6aa84e1a250cc	own_claim 3648 3707	these preventive proximity forces cannot prevent collisions
+Tca8c4580be8341c6c1e7eea71813fc81	data 3714 3805	a particle can pass through the proximity violation region during one integration time step
+Tc98abda372b00ceafccdd3044c664234	own_claim 3807 3837	This problem can be negligible
+Te28d24264ba398c89f97502dde773ecf	data 3843 3882	the integration time step is very small
+Tabaf392eb194b88492e7cf6b98f87193	own_claim 3887 3926	we rarely have those pass-through cases
+Tcb3c18ca127b8dafba17e3af36295967	own_claim 3942 3970	implicit integration methods
+T90544b2e9c697917f92c01d815e24d0c	data 3973 3974	3
+T90e533edb4ee5786bf0060c76b87cfac	data 3977 3978	5
+T91e8822cdb96632ef47399555d731eec	data 3981 3982	7
+T3795f9e4feb0b8ac9660fd4a865edfb3	own_claim 3985 4106	have been used times for as cloth large simulations, as to meet the the frame time step rate has of 30 become 1 sec/frame
+Tf3c96fca0a5b993267b99025c663f491	own_claim 4109 4182	larger, Consesomequently this penetration problem is no longer negligible
+T39cb0226b85c558ccc6a371b89c2cabe	own_claim 4187 4219	we use the swept volume approach
+Td0b5b8325739ceca6fab90def21288b4	data 4223 4225	13
+Tac079e3647aa41e8b988ac520256b64a	data 4228 4229	8
+
